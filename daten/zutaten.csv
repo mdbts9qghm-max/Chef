@@ -1,0 +1,98 @@
+# Nährwerte pro 100 g Rohgewicht bzw. wie verwendet. Quellen: BLS, USDA, typische Herstellerangaben (Lidl/Aldi/REWE).
+# Plausibilität: 4*P + 4*KH + 9*F + 2*Ballaststoffe ≈ kcal (±5 % oder ±5 kcal). Gewürze sind daran angeglichen.
+# typ: Proteinquelle (haehnchen, pute, rind, schwein, fisch, garnelen, ei, milchprotein, pflanzlich) bzw. sonstiges; Suffix -hack = Hackfleisch (Frische-Regel).
+# Whey: typischer Wert deutscher Supermarkt-/Onlineprodukte, Streuung je Marke ca. ±5 g Protein.
+zutat,kcal,protein,fett,gesaettigt,kh,zucker,ballaststoffe,salz,garfaktor,typ
+Hähnchenbrustfilet roh,105,23.5,1.2,0.3,0,0,0,0.15,0.75,haehnchen
+Hähnchenoberkeule ohne Haut roh,118,19.7,4.1,1.1,0,0,0,0.2,0.72,haehnchen
+Putenbrustfilet roh,107,24,1.0,0.3,0,0,0,0.13,0.75,pute
+Putenhackfleisch roh,148,20,7.5,2.3,0,0,0,0.2,0.75,pute-hack
+Rinderhackfleisch 5 % Fett roh,128,21,5,2.1,0,0,0,0.15,0.72,rind-hack
+Rinderhackfleisch 15 % Fett roh,209,18.5,15,6.3,0,0,0,0.15,0.7,rind-hack
+Rinderhüftsteak roh,120,22,3.5,1.4,0,0,0,0.13,0.72,rind
+Rindergulasch roh,129,21,5,2.1,0,0,0,0.13,0.65,rind
+Schweinefilet roh,104,21.5,2,0.7,0,0,0,0.13,0.75,schwein
+Lachsfilet ohne Haut roh,197,20,13,2.5,0,0,0,0.12,0.8,fisch
+Kabeljaufilet roh,79,18,0.7,0.1,0,0,0,0.2,0.8,fisch
+Garnelen roh geschält,81,18,1,0.2,0,0,0,0.5,0.8,garnelen
+Thunfisch in eigenem Saft abgetropft,110,25.5,0.8,0.2,0,0,0,0.9,1.0,fisch
+Ei Gr. M ohne Schale,140,12.6,9.9,3.1,0.7,0.4,0,0.35,1.0,ei
+Eiklar flüssig,48,10.9,0.2,0,0.7,0.7,0,0.4,1.0,ei
+Magerquark,67,12,0.3,0.2,4,4,0,0.1,1.0,milchprotein
+Skyr natur,63,11,0.2,0.1,4,4,0,0.1,1.0,milchprotein
+Körniger Frischkäse,98,12.6,4.3,2.8,2.6,2.6,0,0.7,1.0,milchprotein
+"Milch 1,5 % Fett",47,3.4,1.5,1.0,4.8,4.8,0,0.1,0.9,sonstiges
+Frischkäse light,143,7,11,7.5,4,4,0,0.8,1.0,sonstiges
+Mozzarella light,160,19,9,6,1,1,0,0.5,1.0,milchprotein
+Parmesan gerieben,380,32,28,18,0,0,0,1.6,1.0,sonstiges
+Feta 45 % Fett i. Tr.,259,17,21,14,0.5,0.5,0,2.8,1.0,sonstiges
+Reibekäse light,264,30,16,10,0,0,0,1.8,1.0,milchprotein
+Butter,743,0.7,82,52,0.6,0.6,0,0.02,1.0,sonstiges
+# Whey Protein: Molkenprotein-Konzentrat mit Aroma
+Whey Protein Vanille,386,75,6,3.5,8,6,0,0.5,1.0,milchprotein
+Whey Protein Schoko,386,72,6.5,4,9,5,2,0.6,1.0,milchprotein
+Haferflocken zart,372,13.5,7,1.3,58.7,0.7,10,0.02,1.0,sonstiges
+Basmatireis ungekocht,352,8,0.6,0.2,78,0.2,1.4,0.01,2.8,sonstiges
+Milchreis ungekocht,352,7,0.6,0.2,79,0.2,1.4,0.01,1.0,sonstiges
+Spaghetti ungekocht,361,12.5,1.5,0.3,71,3,3,0.01,2.4,sonstiges
+Lasagneplatten ungekocht,350,12,1.5,0.3,70,2,3,0.01,1.0,sonstiges
+Mie-Nudeln ungekocht,350,11,2,0.4,70,2,3,0.1,2.4,sonstiges
+Kartoffeln festkochend roh,75,2,0.1,0,15.6,0.8,2.1,0.01,0.95,sonstiges
+Kartoffelgnocchi Kühlregal,155,4,0.3,0.1,33,0.5,2,1.2,1.0,sonstiges
+Weizen-Tortilla-Wraps,303,8.5,7,2.5,50,3,3,1.2,1.0,sonstiges
+Burger-Brötchen,283,9,5,1,49,6,3,1.1,1.0,sonstiges
+Vollkorntoast,256,9,4.5,0.5,42,4,6,1.2,1.0,sonstiges
+Weizenmehl Type 405,345,10,1,0.2,72,0.7,4,0,1.0,sonstiges
+Weichweizengrieß,337,11,1,0.2,69,0.5,4,0,1.0,sonstiges
+Paniermehl,365,12,2.5,0.5,72,4,4,1.3,1.0,sonstiges
+Speisestärke,348,0.4,0.1,0,86,0,1,0,1.0,sonstiges
+Backpulver,50,0,0,0,12,0,0,25,1.0,sonstiges
+Kakaopulver stark entölt,287,20,11,6.5,12,1,30,0.05,1.0,sonstiges
+Zartbitterschokolade 70 %,559,8,41,25,34,28,11,0.03,1.0,sonstiges
+Erdnussbutter 100 % Erdnüsse,609,26,49,8.5,12,6,8,0.02,1.0,pflanzlich
+Mandeln gehobelt,600,21,52,4,6,4,12.5,0.01,1.0,pflanzlich
+Knuspermüsli,430,9,15,3,62,18,7,0.2,1.0,sonstiges
+Honig,322,0.4,0,0,80,80,0,0,1.0,sonstiges
+Vanillezucker,398,0,0,0,99.5,99.5,0,0,1.0,sonstiges
+# Erythrit: Polyol, KH ohne verwertbare kcal (Ausnahme in config.POLYOLE)
+Erythrit,0,0,0,0,100,0,0,0,1.0,sonstiges
+Banane geschält,94,1.1,0.2,0.1,21,17,2,0,1.0,sonstiges
+Heidelbeeren TK,47,0.6,0.6,0,7.4,7.4,4.9,0,1.0,sonstiges
+Himbeeren TK,37,1.3,0.3,0,4.8,4.4,4.7,0,1.0,sonstiges
+Beerenmischung TK,42,0.9,0.4,0,6.5,6,4,0,1.0,sonstiges
+Apfel,54,0.3,0.2,0,11.4,10.3,2.4,0,0.85,sonstiges
+Sauerkirschen Glas abgetropft,62,0.7,0.1,0,14,13,1,0,1.0,sonstiges
+Zitronensaft,24,0.4,0.1,0,4.5,2.5,0.1,0,1.0,sonstiges
+Zwiebel,30,1.2,0.2,0,4.9,4.3,1.8,0,0.7,sonstiges
+Knoblauch,141,6.1,0.1,0,28.4,1.3,1.8,0,0.9,sonstiges
+Ingwer frisch,80,1.8,0.8,0.2,15.8,1.7,2,0,0.9,sonstiges
+Paprika rot,34,1,0.3,0,6,5.5,2,0,0.8,sonstiges
+Tomaten,18,0.9,0.2,0,2.6,2.6,1.2,0,0.8,sonstiges
+Salatgurke,12,0.6,0.1,0,1.8,1.7,0.5,0,1.0,sonstiges
+Babyspinat,21,2.9,0.4,0.1,0.6,0.4,2.6,0.1,0.3,sonstiges
+Frühlingszwiebeln,32,1.8,0.2,0,4.7,3,2.6,0,0.8,sonstiges
+Petersilie frisch,51,3,0.8,0.1,6.3,0.9,3.3,0.1,1.0,sonstiges
+Gehackte Tomaten Dose,23,1.2,0.2,0,3.5,3.5,1,0.3,0.9,sonstiges
+Tomatenmark,82,4.3,0.5,0.1,13,12,4,0.1,1.0,sonstiges
+Getrocknete Tomaten in Öl abgetropft,250,5,14,1.7,23,14,6,2.5,1.0,sonstiges
+Kidneybohnen abgetropft,112,8.7,0.5,0.1,15,1,7,0.5,1.0,pflanzlich
+Kichererbsen abgetropft,122,7.2,2.6,0.3,15.6,0.5,5.4,0.5,1.0,pflanzlich
+Mais abgetropft,90,2.9,1.2,0.2,16,4,2.7,0.6,1.0,sonstiges
+Kokosmilch light,94,1,9,8,2.5,1.5,0,0.05,0.9,sonstiges
+Gemüsebrühe zubereitet,6,0.2,0.3,0.1,0.6,0.3,0,0.9,0.7,sonstiges
+Sojasauce,58,8,0.5,0.1,5,0.4,0.8,14.5,1.0,sonstiges
+Sriracha,96,1.9,0.9,0.1,19,15,2.2,5.6,1.0,sonstiges
+BBQ-Sauce,167,1,0.3,0.1,40,35,0,2,1.0,sonstiges
+Senf mittelscharf,86,6,4.5,0.3,4.5,2,3.3,4,1.0,sonstiges
+Olivenöl,900,0,100,14,0,0,0,0,1.0,sonstiges
+Rapsöl,900,0,100,7,0,0,0,0,1.0,sonstiges
+Sesamöl geröstet,900,0,100,14,0,0,0,0,1.0,sonstiges
+Salz,0,0,0,0,0,0,0,100,1.0,sonstiges
+Pfeffer schwarz gemahlen,276,10.4,3.3,1.4,38.6,0.6,25.3,0.05,1.0,sonstiges
+Paprikapulver edelsüß,315,14.1,12.9,2.1,19.1,10,34.9,0.2,1.0,sonstiges
+Kreuzkümmel gemahlen,425,17.8,22.3,1.5,33.7,2.3,10.5,0.4,1.0,sonstiges
+Currypulver,341,12.7,13.8,2.2,25,2.8,33,0.1,1.0,sonstiges
+Garam Masala,400,13,15,2,45,3,20,0.2,1.0,sonstiges
+Zimt gemahlen,243,4,1.2,0.3,27.5,2.2,53.1,0,1.0,sonstiges
+Oregano getrocknet,265,9,4.3,1.6,26.4,4.1,42.5,0.1,1.0,sonstiges
+Chiliflocken,329,12,17,3,15,10,34,0.1,1.0,sonstiges

@@ -1,0 +1,94 @@
+# Packungsgrößen und Preise orientiert an Lidl/Aldi (Stand 10/2026, Schätzwerte), REWE wo Discounter nichts führt.
+# haltbar_tage_offen: nach dem Öffnen im Kühlschrank bzw. bei Trockenware lange (365).
+zutat,abteilung,packung_g,packung_text,preis_eur,haltbar_tage_offen
+Hähnchenbrustfilet roh,Fleisch & Fisch,400,400-g-Schale,4.99,2
+Hähnchenoberkeule ohne Haut roh,Fleisch & Fisch,600,600-g-Schale,5.49,2
+Putenbrustfilet roh,Fleisch & Fisch,400,400-g-Schale,5.29,2
+Putenhackfleisch roh,Fleisch & Fisch,400,400-g-Schale,3.99,1
+Rinderhackfleisch 5 % Fett roh,Fleisch & Fisch,400,400-g-Schale,5.49,1
+Rinderhackfleisch 15 % Fett roh,Fleisch & Fisch,500,500-g-Schale,4.99,1
+Rinderhüftsteak roh,Fleisch & Fisch,400,400-g-Schale (2 Steaks),8.99,2
+Rindergulasch roh,Fleisch & Fisch,500,500-g-Schale,6.99,2
+Schweinefilet roh,Fleisch & Fisch,500,500-g-Stück,6.99,2
+Lachsfilet ohne Haut roh,Tiefkühl,500,500-g-Beutel TK (4 Filets),7.99,1
+Kabeljaufilet roh,Tiefkühl,400,400-g-Packung TK,5.49,1
+Garnelen roh geschält,Tiefkühl,400,400-g-Beutel TK,6.49,1
+Thunfisch in eigenem Saft abgetropft,Konserven & Saucen,130,Dose 185 g (130 g abgetropft),1.29,2
+Ei Gr. M ohne Schale,Kühlregal & Milchprodukte,600,10er-Packung Gr. M (ca. 600 g ohne Schale),2.99,21
+Eiklar flüssig,Kühlregal & Milchprodukte,500,500-g-Flasche,2.49,3
+Magerquark,Kühlregal & Milchprodukte,500,500-g-Becher,1.29,4
+Skyr natur,Kühlregal & Milchprodukte,500,500-g-Becher,1.49,4
+Körniger Frischkäse,Kühlregal & Milchprodukte,200,200-g-Becher,0.99,4
+"Milch 1,5 % Fett",Kühlregal & Milchprodukte,1000,1-l-Packung,1.09,4
+Frischkäse light,Kühlregal & Milchprodukte,200,200-g-Packung,1.19,5
+Mozzarella light,Kühlregal & Milchprodukte,125,125-g-Kugel,0.99,2
+Parmesan gerieben,Kühlregal & Milchprodukte,100,100-g-Beutel,1.99,14
+Feta 45 % Fett i. Tr.,Kühlregal & Milchprodukte,200,200-g-Packung,1.79,4
+Reibekäse light,Kühlregal & Milchprodukte,200,200-g-Beutel,1.99,5
+Butter,Kühlregal & Milchprodukte,250,250-g-Stück,2.29,30
+Whey Protein Vanille,Sonstiges,1000,1-kg-Dose,24.99,365
+Whey Protein Schoko,Sonstiges,1000,1-kg-Dose,24.99,365
+Haferflocken zart,Trockenwaren,500,500-g-Packung,0.89,365
+Basmatireis ungekocht,Trockenwaren,1000,1-kg-Packung,2.49,365
+Milchreis ungekocht,Trockenwaren,500,500-g-Packung,1.19,365
+Spaghetti ungekocht,Trockenwaren,500,500-g-Packung,0.99,365
+Lasagneplatten ungekocht,Trockenwaren,500,500-g-Packung,1.29,365
+Mie-Nudeln ungekocht,Trockenwaren,250,250-g-Packung,1.49,365
+Kartoffeln festkochend roh,Obst & Gemüse,2000,2-kg-Netz,2.49,14
+Kartoffelgnocchi Kühlregal,Kühlregal & Milchprodukte,500,500-g-Packung,1.49,3
+Weizen-Tortilla-Wraps,Brot & Backwaren,370,6er-Packung (370 g),1.49,5
+Burger-Brötchen,Brot & Backwaren,300,4er-Packung (300 g),1.29,3
+Vollkorntoast,Brot & Backwaren,500,500-g-Packung,1.19,5
+Weizenmehl Type 405,Trockenwaren,1000,1-kg-Packung,0.79,365
+Weichweizengrieß,Trockenwaren,500,500-g-Packung,0.89,365
+Paniermehl,Trockenwaren,400,400-g-Packung,0.89,365
+Speisestärke,Trockenwaren,400,400-g-Packung,0.99,365
+Backpulver,Trockenwaren,75,5er-Pack à 15 g,0.59,365
+Kakaopulver stark entölt,Trockenwaren,250,250-g-Dose,2.49,365
+Zartbitterschokolade 70 %,Trockenwaren,100,100-g-Tafel,1.19,180
+Erdnussbutter 100 % Erdnüsse,Trockenwaren,350,350-g-Glas,2.99,90
+Mandeln gehobelt,Trockenwaren,200,200-g-Beutel,2.29,90
+Knuspermüsli,Trockenwaren,500,500-g-Packung,2.29,60
+Honig,Trockenwaren,500,500-g-Glas,3.99,365
+Vanillezucker,Trockenwaren,40,5er-Pack à 8 g,0.49,365
+Erythrit,Trockenwaren,500,500-g-Packung,3.99,365
+Banane geschält,Obst & Gemüse,800,Bund ca. 1 kg (ca. 800 g geschält),1.49,5
+Heidelbeeren TK,Tiefkühl,500,500-g-Beutel TK,2.99,2
+Himbeeren TK,Tiefkühl,500,500-g-Beutel TK,2.99,2
+Beerenmischung TK,Tiefkühl,750,750-g-Beutel TK,3.49,2
+Apfel,Obst & Gemüse,1000,1-kg-Beutel,1.99,14
+Sauerkirschen Glas abgetropft,Konserven & Saucen,350,720-ml-Glas (350 g abgetropft),1.49,4
+Zitronensaft,Konserven & Saucen,200,200-ml-Flasche,0.79,60
+Zwiebel,Obst & Gemüse,1000,1-kg-Netz,1.29,30
+Knoblauch,Obst & Gemüse,200,Netz mit 4 Knollen (ca. 200 g),1.29,30
+Ingwer frisch,Obst & Gemüse,100,1 Stück (ca. 100 g),0.69,14
+Paprika rot,Obst & Gemüse,150,1 Schote (ca. 150 g),0.79,5
+Tomaten,Obst & Gemüse,500,500-g-Schale,1.49,5
+Salatgurke,Obst & Gemüse,400,1 Gurke (ca. 400 g),0.69,4
+Babyspinat,Obst & Gemüse,200,200-g-Beutel,1.49,3
+Frühlingszwiebeln,Obst & Gemüse,100,1 Bund (ca. 100 g),0.69,5
+Petersilie frisch,Obst & Gemüse,30,1 Topf/Bund (ca. 30 g),0.99,4
+Gehackte Tomaten Dose,Konserven & Saucen,400,400-g-Dose,0.59,3
+Tomatenmark,Konserven & Saucen,200,200-g-Tube,0.99,30
+Getrocknete Tomaten in Öl abgetropft,Konserven & Saucen,170,280-g-Glas (170 g abgetropft),1.99,14
+Kidneybohnen abgetropft,Konserven & Saucen,250,400-g-Dose (250 g abgetropft),0.69,3
+Kichererbsen abgetropft,Konserven & Saucen,240,400-g-Dose (240 g abgetropft),0.69,3
+Mais abgetropft,Konserven & Saucen,285,340-g-Dose (285 g abgetropft),0.79,3
+Kokosmilch light,Konserven & Saucen,400,400-ml-Dose,1.29,3
+Gemüsebrühe zubereitet,Gewürze & Öle,6000,Glas Brühpulver für 6 l,1.49,365
+Sojasauce,Konserven & Saucen,250,250-ml-Flasche,1.79,365
+Sriracha,Konserven & Saucen,200,200-ml-Flasche,2.49,180
+BBQ-Sauce,Konserven & Saucen,500,500-ml-Flasche,1.49,60
+Senf mittelscharf,Konserven & Saucen,200,200-ml-Tube,0.69,90
+Olivenöl,Gewürze & Öle,500,500-ml-Flasche,5.99,365
+Rapsöl,Gewürze & Öle,1000,1-l-Flasche,1.99,365
+Sesamöl geröstet,Gewürze & Öle,250,250-ml-Flasche,2.99,180
+Salz,Gewürze & Öle,500,500-g-Packung,0.39,9999
+Pfeffer schwarz gemahlen,Gewürze & Öle,50,50-g-Dose,1.29,365
+Paprikapulver edelsüß,Gewürze & Öle,50,50-g-Dose,0.99,365
+Kreuzkümmel gemahlen,Gewürze & Öle,40,40-g-Dose,1.29,365
+Currypulver,Gewürze & Öle,50,50-g-Dose,0.99,365
+Garam Masala,Gewürze & Öle,40,40-g-Dose,1.49,365
+Zimt gemahlen,Gewürze & Öle,50,50-g-Dose,0.99,365
+Oregano getrocknet,Gewürze & Öle,15,15-g-Dose,0.99,365
+Chiliflocken,Gewürze & Öle,40,40-g-Dose,1.29,365

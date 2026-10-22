@@ -57,7 +57,7 @@ python3 -m pytest                        # Tests (SPEC 12.2)
 
 ## Fortschritt
 - [x] **Phase 1 – Planung & Onboarding** (22.10.2026): Onboarding, SPEC.md, CLAUDE.md, profil.yaml, Ordnergerüst, Git
-- [ ] **Phase 2 – Grundlagen:** zutaten.csv, packungen.csv, config.py, naehrwerte.py, pruefen.py, generieren.py (Markdown), Tests, 2 Beispielrezepte zur Abnahme
+- [ ] **Phase 2 – Grundlagen** (22.10.2026, wartet auf Abnahme der Beispielrezepte): ✓ zutaten.csv (91 Zutaten, alle plausibel), ✓ packungen.csv, ✓ config.py, ✓ naehrwerte.py, ✓ pruefen.py, ✓ generieren.py (Markdown), ✓ 44 Tests, ✓ Beispielrezepte `fruehstuecks-brownie` + `marry-me-chicken`. Offen: Zutatenbestand nach Phase 4 auf ≤ 90 genutzte Zutaten trimmen.
 - [ ] **Phase 3 – Rezeptliste:** rezeptplan.md mit 50 Gerichten, Abgleich 5.1–5.3, OK abwarten
 - [ ] **Phase 4 – Rezepte schreiben:** Runde 1/5 · 2/5 · 3/5 · 4/5 · 5/5, Abschlussübersicht
 - [ ] **Phase 5 – Wochenplanung & Einkauf:** einkauf.py, Wochenplan-Generierung, Tests, erster echter Wochenplan

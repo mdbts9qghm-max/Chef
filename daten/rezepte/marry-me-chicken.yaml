@@ -1,0 +1,89 @@
+id: marry-me-chicken
+name: Marry Me Chicken mit Reis
+hauptkategorie: high-protein
+kategorien_manuell: [Meal Prep]
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Marry Me Chicken“"
+  link: null
+  aenderungen: "Schlagsahne (meist 200 ml) durch Milch 1,5 % und Frischkäse light ersetzt, Butter weggelassen und Öl auf 10 g reduziert. Spart gegenüber einer Version mit 200 g Schlagsahne und 20 g Butter ca. 275 kcal pro Portion."
+schwierigkeit: mittel
+zeit: {vorbereitung: 10, kochen: 25, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm mit Deckel", "Topf ca. 2 l mit Deckel", Fleischthermometer]
+zutaten:
+  - gruppe: Reis
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150, hinweis: "ungekocht"}
+  - {id: salz_reis, zutat: Salz, g: 1.5, anzeige: "¼ TL", hinweis: "für den Reis"}
+  - gruppe: Hähnchen
+  - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilets, g: 400, anzeige: "2 Hähnchenbrustfilets", hinweis: "roh"}
+  - {id: paprika, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 2, anzeige: "1 TL"}
+  - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 1, anzeige: "1 TL", hinweis: "getrocknet"}
+  - {id: salz_h, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise", hinweis: "schwarz, gemahlen"}
+  - {id: oel_h, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - gruppe: Sauce
+  - {id: oel_s, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 60, anzeige: "½ mittelgroße Zwiebel"}
+  - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
+  - {id: tomaten, zutat: Getrocknete Tomaten in Öl abgetropft, name: getrocknete Tomaten in Öl, g: 40, anzeige: "ca. 6 Stück", hinweis: "gut abgetropft"}
+  - {id: tomatenmark, zutat: Tomatenmark, g: 15, anzeige: "1 EL"}
+  - {id: bruehe, zutat: Gemüsebrühe zubereitet, name: Gemüsebrühe, g: 100, hinweis: "100 ml, aus Pulver"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 200, hinweis: "200 ml"}
+  - {id: staerke, zutat: Speisestärke, g: 5, anzeige: "1 TL"}
+  - {id: frischkaese, zutat: Frischkäse light, g: 60, anzeige: "2 EL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}
+  - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
+  - {id: spinat, zutat: Babyspinat, g: 50, anzeige: "2 Handvoll"}
+mise_en_place:
+  - "{reis} in einem Sieb unter kaltem Wasser waschen, bis das Wasser fast klar ist (ca. 30 Sekunden). 270 ml Wasser abmessen."
+  - "{haehnchen:n} trocken tupfen. Jedes Filet waagerecht halbieren (Schmetterlingsschnitt), sodass 4 gleich dünne Schnitzel von ca. 1,5 cm entstehen; so garen sie gleichmäßig."
+  - "{paprika}, {oregano}, {salz_h} und {pfeffer} mischen und die Schnitzel von beiden Seiten damit einreiben."
+  - "{zwiebel} fein würfeln (5 mm). {knoblauch} fein hacken. {tomaten} abtropfen lassen und in feine Streifen schneiden."
+  - "{milch}, {staerke} und {bruehe} in einem Messbecher glatt rühren (die Stärke vorher mit 2 EL der Milch klümpchenfrei anrühren)."
+schritte:
+  - titel: Reis aufsetzen
+    text: "Reis, 270 ml Wasser und {salz_reis} im Topf (ca. 2 l) mit Deckel auf Stufe 9 von 9 aufkochen (ca. 3–4 min). Sobald es sprudelt, auf Stufe 2 von 9 herunterschalten und 12 Minuten mit Deckel quellen lassen, nicht umrühren. Dann vom Herd ziehen und 5 Minuten zugedeckt ruhen lassen. Fertig, wenn das Wasser vollständig aufgesogen ist und sich Dampflöcher an der Oberfläche zeigen."
+    timer_min: 12
+  - titel: Hähnchen anbraten
+    text: "{oel_h} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen, bis es schimmert (ca. 2 min auf Ceran). Schnitzel nebeneinander einlegen und 3 Minuten nicht bewegen, bis die Unterseite goldbraun ist, dann wenden und weitere 2 Minuten braten. Innen sind sie jetzt noch nicht durch. Auf einen Teller legen."
+    timer_min: 5
+  - titel: Sauce ansetzen
+    text: "Pfanne auf Stufe 5 von 9 zurückschalten (Ceran braucht ca. 1 Minute, um herunterzukühlen). {oel_s} hineingeben, Zwiebel 3 Minuten glasig dünsten. Knoblauch, Tomatenstreifen, {tomatenmark} und {chili} dazu und 1 Minute unter Rühren anrösten, bis das Tomatenmark dunkler wird und duftet."
+    timer_min: 4
+  - titel: Ablöschen und binden
+    text: "Die Milch-Brühe-Mischung noch einmal umrühren (die Stärke setzt sich ab) und angießen, dabei den Bratensatz vom Pfannenboden lösen. Auf Stufe 6 von 9 unter Rühren aufkochen, bis die Sauce sämig wird (ca. 2 min). Auf Stufe 4 von 9 zurückschalten, {frischkaese} und {parmesan} einrühren, bis alles geschmolzen und glatt ist."
+    timer_min: 2
+  - titel: Hähnchen fertig garen
+    text: "Hähnchen samt ausgetretenem Fleischsaft zurück in die Sauce legen, Deckel auf, auf Stufe 4 von 9 4–6 Minuten leise köcheln lassen. Fertig, wenn das Fleischthermometer an der dicksten Stelle 74 °C Kerntemperatur zeigt; ohne Thermometer: beim Anschneiden kein rosa Kern mehr und klarer Fleischsaft."
+    timer_min: 5
+  - titel: Spinat unterheben
+    text: "Vom Herd ziehen, {spinat} unterheben und 1 Minute zusammenfallen lassen. Abschmecken: Die Sauce soll kräftig, leicht süß-säuerlich (von den Tomaten) und cremig sein. Ist sie zu dick, 2–3 EL Wasser einrühren."
+    timer_min: 1
+zeitablauf:
+  - "Reis zuerst aufsetzen; er braucht mit Ruhezeit ca. 20 Minuten."
+  - "Während der Reis quillt: Hähnchen anbraten, Sauce ansetzen und Hähnchen in der Sauce fertig garen. Beides ist gleichzeitig fertig."
+fehler:
+  - "**Hähnchen trocken und zäh:** Filets nicht halbiert oder zu lange gegart. Lösung: Schmetterlingsschnitt machen und bei 74 °C Kerntemperatur sofort vom Herd nehmen."
+  - "**Sauce flockt aus:** Frischkäse bei starker Hitze eingerührt. Lösung: erst auf Stufe 4 von 9 zurückschalten, dann Frischkäse und Parmesan einrühren, danach nicht mehr sprudelnd kochen."
+  - "**Sauce zu dünn:** Stärke hat sich im Messbecher abgesetzt. Lösung: direkt vor dem Angießen umrühren und richtig aufkochen lassen; Stärke bindet erst ab ca. 90 °C."
+  - "**Reis matschig:** zu viel Wasser oder umgerührt. Lösung: Verhältnis 1 : 1,8 einhalten und den Deckel beim Quellen geschlossen lassen."
+anrichten: "Reis mit einer Gabel auflockern und halbieren: ca. 210 g gekochter Reis pro Teller. Daneben 2 Hähnchenstücke legen und die Hälfte der Sauce (ca. 230 g) darübergeben. Für Meal Prep: Reis und Hähnchen mit Sauce nebeneinander in eine Box mit Trennsteg."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Mikrowelle 600 W, 2½–3 Minuten mit 1 EL Wasser über dem Reis, abgedeckt, nach der Hälfte umrühren. Die Sauce kann nach dem Einfrieren leicht körnig werden; kräftig umrühren."
+  separat: "Reis innerhalb von 1 Stunde abkühlen (flach auf einem Teller ausbreiten) und in den Kühlschrank stellen."
+varianten:
+  - "**Mit Putenbrust:** 400 g Putenbrustfilet statt Hähnchen (+4 kcal, +1 g Protein pro Portion), Garzeit gleich, ebenfalls 74 °C Kerntemperatur."
+  - "**Mit Spaghetti statt Reis:** 150 g Spaghetti statt Basmatireis (+7 kcal, +3,4 g Protein pro Portion), nach Packung in Salzwasser kochen."
+  - "**Weniger kcal:** Reis auf 100 g reduzieren (−88 kcal, −2 g Protein pro Portion): wird zu einem kalorienärmeren Abendessen mit ca. 650 kcal."
+  - "**Mehr Gemüse-Feeling ohne Mehraufwand:** 100 g zusätzlicher Babyspinat (+10 kcal, +1,4 g Protein pro Portion)."
+tipps:
+  - "Ein Teelöffel vom Öl der getrockneten Tomaten statt Olivenöl in der Sauce gibt deutlich mehr Aroma (kcal bleiben gleich)."
+  - "Den Bratensatz vom Hähnchen nicht wegwischen: Er ist die Geschmacksbasis der Sauce."
+  - "Wer es schärfer mag: Chiliflocken auf 2 Prisen erhöhen und mit 1 TL Zitronensaft abschmecken."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

@@ -1,0 +1,71 @@
+id: fruehstuecks-brownie
+name: Frühstücks-Brownie
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Breakfast Brownie“ (Baked Oats Schoko)"
+  link: null
+  aenderungen: "Mehl durch Haferflocken ersetzt, Zucker und Butter weggelassen (Süße aus Banane und Schoko-Whey), Skyr für Saftigkeit und +27 g Protein im ganzen Blech, Schokolade nur als Topping."
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 25, wartezeit: 10}
+ausstattung: [Backofen, Standmixer, "Auflaufform 20 × 20 cm", Backpapier]
+zutaten:
+  - gruppe: Teig
+  - {id: hafer, zutat: Haferflocken zart, g: 90, hinweis: "zarte, damit der Teig fein wird"}
+  - {id: banane, zutat: Banane geschält, name: Banane, g: 100, anzeige: "1 kleine, sehr reife Banane", hinweis: "braun gesprenkelt = süßer"}
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M", hinweis: "Zimmertemperatur"}
+  - {id: skyr, zutat: Skyr natur, g: 250, hinweis: "½ Becher"}
+  - {id: whey, zutat: Whey Protein Schoko, g: 40, anzeige: "ca. 1⅓ Messlöffel", hinweis: "Schoko- oder Brownie-Geschmack"}
+  - {id: kakao, zutat: Kakaopulver stark entölt, name: Backkakao, g: 20, anzeige: "2 gehäufte EL"}
+  - {id: backpulver, zutat: Backpulver, g: 4, anzeige: "1 TL"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise", hinweis: "verstärkt den Schokogeschmack"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 80, hinweis: "80 ml"}
+  - gruppe: Topping
+  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 15, anzeige: "3 Rippchen", hinweis: "grob gehackt"}
+  - {id: pb, zutat: Erdnussbutter 100 % Erdnüsse, name: Erdnussbutter, g: 20, anzeige: "1 gehäufter EL"}
+mise_en_place:
+  - "Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "Auflaufform 20 × 20 cm mit Backpapier auslegen (Papier an zwei Seiten überstehen lassen, dann lässt sich der Brownie später herausheben)."
+  - "{eier:n} 10 Minuten vorher aus dem Kühlschrank nehmen. {schoko} grob hacken (ca. 5 mm Stücke)."
+  - "{banane:n} schälen und in 3 Stücke brechen."
+schritte:
+  - titel: Teig mixen
+    text: "{hafer}, {banane}, {eier}, {skyr}, {whey}, {kakao}, {backpulver}, {salz} und {milch} in den Standmixer geben. 30–40 Sekunden auf höchster Stufe mixen, bis keine Haferstücke mehr zu sehen sind. Der Teig ist dickflüssig wie Pancake-Teig; ist er zu fest zum Gießen, 1–2 EL Wasser dazu."
+    timer_min: null
+  - titel: Einfüllen und Topping
+    text: "Teig in die vorbereitete Form gießen und mit einem Löffelrücken glatt streichen (ca. 1,5 cm hoch). Die gehackte {schoko:n} gleichmäßig darüberstreuen und leicht andrücken."
+    timer_min: null
+  - titel: Backen
+    text: "Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 20–22 Minuten backen. Fertig, wenn der Rand fest ist und sich leicht von der Form löst, die Mitte auf Fingerdruck noch leicht federt und an einem Holzstäbchen in der Mitte noch ein paar feuchte Krümel hängen. Die Mitte darf saftig sein, dann wird er brownie-artig statt kuchig."
+    timer_min: 22
+  - titel: Abkühlen und Erdnussbutter
+    text: "Form herausnehmen und den Brownie 10 Minuten in der Form ruhen lassen; in der Zeit zieht er nach und wird fester. {pb} in einer kleinen Tasse 15–20 Sekunden bei 600 W in der Mikrowelle verflüssigen und mit einem Teelöffel in feinen Linien über den Brownie ziehen."
+    timer_min: 10
+zeitablauf:
+  - "Während der Ofen vorheizt (ca. 10 min): Form auslegen, Schokolade hacken, Teig mixen. Der Teig wartet problemlos 5 Minuten im Mixer."
+  - "Während der Brownie ruht: Erdnussbutter verflüssigen, Kaffee kochen."
+fehler:
+  - "**Trocken und kuchig:** zu lange gebacken. Ursache sind meist Öfen, die heißer laufen als angezeigt. Lösung: ab Minute 18 prüfen, lieber 2 Minuten früher raus, er gart in der Form nach."
+  - "**Haferstückchen im Teig:** zu kurz gemixt. Lösung: mindestens 30 Sekunden auf höchster Stufe, dabei einmal mit dem Spatel nach unten schieben."
+  - "**Schmeckt nach Eiweiß statt nach Schokolade:** Whey ohne Kakao-Anteil oder Salz vergessen. Lösung: Backkakao nicht weglassen, die Prise Salz rundet ab."
+  - "**Bleibt in der Form kleben:** ohne Backpapier gebacken. Lösung: immer auslegen, Whey-Teige haften stark."
+anrichten: "Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes Wasser getauchten Messer halbieren: eine Hälfte (ca. 330 g) ist eine Portion. Für Meal Prep jede Hälfte in 4 Stücke schneiden und in eine Box legen. Dazu passen ein Kaffee oder ein Glas Milch (nicht mitgerechnet)."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: true
+  einfrieren_monate: 1
+  aufwaermen: "Kalt essen oder 30–40 Sekunden bei 600 W in der Mikrowelle anwärmen; dann wird die Schokolade wieder weich. Gefroren: über Nacht im Kühlschrank auftauen."
+  separat: "Erdnussbutter-Linien erst nach dem Abkühlen ziehen; die Stücke mit Backpapier zwischen den Lagen stapeln."
+varianten:
+  - "**Mehr Protein:** Skyr auf 350 g erhöhen und Milch weglassen (+13 kcal, +4,1 g Protein pro Portion)."
+  - "**Weniger kcal:** Erdnussbutter weglassen (−61 kcal, −2,6 g Protein, −4,9 g Fett pro Portion)."
+  - "**Himbeer-Brownie:** 80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter (−46 kcal, −2,1 g Protein pro Portion), 2 Minuten länger backen."
+  - "**Vanille statt Schoko:** Whey Protein Vanille und Backkakao weglassen, dafür 1 TL Zimt (−26 kcal, −1,4 g Protein pro Portion): wird ein Bananenbrot-Blondie."
+tipps:
+  - "Je reifer die Banane, desto weniger merkt man, dass kein Zucker drin ist. Bananen mit braunen Flecken einfrieren und für diesen Brownie aufheben."
+  - "Über Nacht im Kühlschrank wird der Brownie noch fudgiger. Wer es dessertartig mag, isst ihn kalt mit 1 Prise Meersalzflocken obendrauf."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}
