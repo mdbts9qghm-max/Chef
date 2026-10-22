@@ -1,0 +1,86 @@
+# Persönliches Profil – Grundlage für alle Berechnungen und Prüfungen.
+# Änderungen hier wirken auf Prüfungen, Wochenpläne und Einkaufslisten.
+# Nach jeder Änderung: python3 tools/pruefen.py && python3 tools/generieren.py
+
+person:
+  ziel: Body Recomposition (Muskelaufbau bei gleichzeitigem Fettabbau)
+  gewicht_kg: 82
+  tracking: MacroFactor (iPhone)
+
+# Tagesziele aus MacroFactor
+tagesziele:
+  stand: 2026-10-20
+  kcal: 2275
+  protein_g: 149
+  fett_g: 101
+  kh_g: 191
+
+haushalt:
+  personen: 2
+  portionen_pro_rezept: 2       # Nährwerte gelten pro Portion = meine Portion
+
+mahlzeiten: [Frühstück, Mittag, Abend]   # Snacks nur zum Auffüllen
+
+# Harte Vorlieben (SPEC 2.1)
+vorlieben:
+  fruehstueck_geschmack: süß    # herzhaft nur auf ausdrücklichen Wunsch
+  fruehstueck_zucker_max_g: 20  # Richtwert pro Frühstücksportion (Warnung)
+  gemuese: wenig                # nie Hauptbestandteil; Zwiebel, Knoblauch, Tomate, etwas Paprika okay
+  alltagstauglich: true         # normale deutsche Supermärkte; Exotisches nur lange haltbar und mehrfach genutzt
+  geschmack_zaehlt: true
+
+# Korridore pro Portion (SPEC 3)
+mahlzeit_korridore:
+  fruehstueck:   {kcal_min: 500, kcal_max: 650, protein_min: 35}
+  hauptgericht:  {kcal_min: 600, kcal_max: 850, protein_min: 45}
+  kalorienarm:   {kcal_min: null, kcal_max: 550, protein_min: 35}
+  snack:         {kcal_min: 200, kcal_max: 350, protein_min: 20}
+
+# Planungsregeln (SPEC 8.2)
+planung:
+  protein_min_g: 145            # Priorität 1
+  kcal_toleranz: 100            # Priorität 2: Ziel ± 100
+  fett_toleranz_g: 15
+  fett_min_g: 70                # nie darunter
+  kh_toleranz_g: 20
+  faktor_schritt: 0.25
+  faktor_max: 1.5
+  frisch_max_tage_nach_einkauf: 2   # Fisch, Garnelen, Hack; sonst TK + Auftau-Erinnerung
+  drei_sterne_max_pro_woche: 1
+  auswaerts_platzhalter: {kcal: 950, protein_g: 40, fett_g: 45, kh_g: 90}
+
+# Küchenausstattung (Onboarding 22.10.2026)
+ausstattung:
+  herd: {art: Ceran, stufen: 9}           # Angaben als „Stufe X von 9“; Ceran reagiert träge
+  ofen: {modi: [Ober-/Unterhitze, Umluft]}
+  geraete: [Airfryer, Standmixer, Waffeleisen, Mikrowelle]
+  pfannen: ["Pfanne 28 cm", "Pfanne 24 cm"]
+  formen: ["Auflaufform 20 × 20 cm", "Auflaufform ca. 30 × 20 cm"]
+  # Töpfe, Pürierstab, Reiskocher: nicht abgefragt – bei Bedarf ergänzen
+
+einkauf:
+  supermaerkte: [REWE, Lidl/Aldi]
+  tage: [{tag: Sa, art: gross}]           # 1× pro Woche
+  budget_eur_pro_woche: 100
+  # Reihenfolge der Abteilungen in der Einkaufsliste – an den eigenen Laden anpassbar
+  abteilungen:
+    - Obst & Gemüse
+    - Fleisch & Fisch
+    - Kühlregal & Milchprodukte
+    - Brot & Backwaren
+    - Trockenwaren
+    - Konserven & Saucen
+    - Gewürze & Öle
+    - Tiefkühl
+    - Sonstiges
+
+# Was auf GitHub Pages veröffentlicht wird (SPEC 10.4)
+veroeffentlichen:
+  rezeptbuch: true
+  wochenplaene: true
+  einkaufslisten: true
+
+region:
+  sprache: de
+  zeitzone: Europe/Berlin
+  datumsformat: TT.MM.JJJJ
