@@ -1,0 +1,65 @@
+id: wrap-hack-putenhack
+name: Wrap-Hack aus der Pfanne mit Putenhack & Käse
+hauptkategorie: schnell
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Mexikanisch
+inspiration:
+  quelle: "TikTok-Trend „Tortilla Wrap Hack“ (Wrap viertelweise füllen und falten)"
+  link: null
+  aenderungen: "Rinderhack und Cheddar durch Putenhack und Reibekäse light ersetzt, Sour Cream durch Skyr, ohne Öl in der Pfanne getoastet."
+schwierigkeit: leicht
+zeit: {vorbereitung: 8, kochen: 15, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm", Pfannenwender, Fleischthermometer]
+zutaten:
+  - gruppe: Füllung
+  - {id: hack, zutat: Putenhackfleisch roh, name: Putenhackfleisch, g: 300}
+  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: tomatenmark, zutat: Tomatenmark, g: 15, anzeige: "1 EL"}
+  - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
+  - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 2, anzeige: "1 TL"}
+  - {id: knoblauch, zutat: Knoblauch, g: 3, anzeige: "1 Zehe"}
+  - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
+  - {id: salz, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: bohnen, zutat: Kidneybohnen abgetropft, name: Kidneybohnen, g: 100, hinweis: "abgespült, grob zerdrückt"}
+  - {id: mais, zutat: Mais abgetropft, name: Mais, g: 60}
+  - gruppe: Wraps
+  - {id: wraps, zutat: Weizen-Tortilla-Wraps, name: Weizen-Tortillas, g: 124, anzeige: "2 große Weizen-Tortillas"}
+  - {id: kaese, zutat: Reibekäse light, g: 60}
+  - {id: tomaten, zutat: Tomaten, g: 100, anzeige: "1 Tomate"}
+  - {id: skyr, zutat: Skyr natur, g: 100}
+mise_en_place:
+  - "{knoblauch} fein hacken. {tomaten} in 1 cm Würfel schneiden. {bohnen} abspülen und mit einer Gabel grob zerdrücken."
+  - "{wraps} bereitlegen. Jede Tortilla vom Mittelpunkt bis zum unteren Rand einmal gerade einschneiden (ein Radius)."
+schritte:
+  - titel: Füllung braten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. {hack} 2 Minuten anbraten, dann zerkrümeln und 4 Minuten weiterbraten. Knoblauch, {tomatenmark}, {paprikapulver}, {kreuzkuemmel}, {chili} und {salz} 1 Minute mitrösten, 3 EL Wasser dazu. Bohnen und {mais} unterrühren und 1 Minute erhitzen. Garprobe: Das Hack ist durch, 72 °C Kerntemperatur, kein rosa mehr. In eine Schüssel geben, Pfanne auswischen."
+    timer_min: 8
+  - titel: Wraps belegen
+    text: "Tortilla gedanklich in 4 Viertel teilen (der Schnitt liegt zwischen den unteren beiden). Unten links: ein Viertel der Hackfüllung. Oben links: 30 g {kaese:n} (von insgesamt {kaese}). Oben rechts: Tomatenwürfel. Unten rechts: Rest der Füllung. Viertel für Viertel im Uhrzeigersinn übereinanderklappen, bis ein dreieckiges Paket entsteht. Mit der zweiten Tortilla genauso."
+    timer_min: null
+  - titel: Toasten
+    text: "Pakete in der trockenen Pfanne auf Stufe 6 von 9 2–3 Minuten pro Seite toasten, mit dem Pfannenwender andrücken, bis die Tortilla goldbraun und knusprig ist und der Käse schmilzt."
+    timer_min: 6
+zeitablauf:
+  - "Während das Hack brät: Tortillas einschneiden und Tomaten würfeln."
+fehler:
+  - "**Wrap reißt beim Falten:** kalte Tortilla. Lösung: 10 Sekunden in der Mikrowelle erwärmen, dann ist sie biegsam."
+  - "**Füllung läuft aus:** zu viel Flüssigkeit. Lösung: Füllung kurz abkühlen lassen und nur 3 EL Wasser verwenden."
+  - "**Käse schmilzt nicht:** zu hohe Hitze, Tortilla verbrennt vorher. Lösung: Stufe 6 von 9, andrücken."
+anrichten: "Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 50 g Skyr als Dip ({skyr} insgesamt): {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: true
+  einfrieren_monate: 1
+  aufwaermen: "In der Pfanne ohne Fett auf Stufe 5 von 9 2 Minuten pro Seite oder im Airfryer bei 180 °C 5 Minuten; Mikrowelle macht die Tortilla weich."
+  separat: "Skyr-Dip getrennt."
+varianten:
+  - {titel: Mit Rinderhack, text: "300 g Rinderhack 5 % statt Pute.", aenderung: {"Putenhackfleisch roh": -300, "Rinderhackfleisch 5 % Fett roh": 300}}
+  - {titel: Doppel-Wrap, text: "2 Wraps pro Person (Füllung reicht für 4 schlanke Pakete) für mehr kcal.", aenderung: {"Weizen-Tortilla-Wraps": 124}}
+  - {titel: Scharf, text: "1 EL Sriracha in den Skyr-Dip.", aenderung: {"Sriracha": 15}}
+tipps:
+  - "Pakete beim Toasten mit einem kleinen Topf beschweren: Sie werden gleichmäßig knusprig."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

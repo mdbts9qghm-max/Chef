@@ -1,7 +1,7 @@
 <!-- Generiert aus daten/rezeptplan.yaml – nicht von Hand bearbeiten. -->
 # Rezeptplan: Startbestand mit 50 Rezepten
 
-Stand: 31 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
+Stand: 41 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
 
 ## Frühstück, süß (15)
 
@@ -47,16 +47,16 @@ Stand: 31 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | 28 | Knoblauch-Garnelen-Pasta mit Tomaten | `knoblauch-garnelen-pasta` | Italienisch | Fisch & Garnelen | 540 | ja | S, KA | ✓ geschrieben (493 kcal) |
 | 29 | Tagliata vom Hüftsteak mit Parmesan-Kartoffeln | `tagliata-hueftsteak` | Italienisch | Rind | 540 | nein | S, KA | ✓ geschrieben (462 kcal) |
 | 30 | Teriyaki-Hähnchen-Bowl mit Reis | `teriyaki-haehnchen-bowl` | Asiatisch | Hähnchen | 740 | nein | MP | ✓ geschrieben (637 kcal) |
-| 31 | Korean Beef Bowl | `korean-beef-bowl` | Asiatisch | Rind | 720 | ja | S | offen |
-| 32 | Rotes Thai-Curry mit Garnelen & Reis | `thai-curry-garnelen` | Asiatisch | Fisch & Garnelen | 540 | nein | KA | offen |
-| 33 | Gebratene Mie-Nudeln mit Pute | `mie-nudeln-pute` | Asiatisch | Pute | 540 | nein | S, KA | offen |
-| 34 | Lachs-Reis-Bowl mit Sriracha-Skyr | `lachs-reis-bowl` | Asiatisch | Lachs | 760 | ja | S | offen |
-| 35 | Hähnchen-Burrito-Bowl | `haehnchen-burrito-bowl` | Mexikanisch | Hähnchen | 760 | ja | MP | offen |
-| 36 | Chili con Carne mit Reis | `chili-con-carne` | Mexikanisch | Rind | 740 | nein | MP | offen |
-| 37 | Wrap-Hack aus der Pfanne mit Putenhack & Käse | `wrap-hack-putenhack` | Mexikanisch | Pute | 700 | ja | S | offen |
-| 38 | Butter Chicken mit Skyr & Reis | `butter-chicken` | Indisch | Hähnchen | 760 | ja | MP | offen |
-| 39 | Kabeljau-Curry mit Reis | `kabeljau-curry` | Indisch | Kabeljau | 530 | nein | KA | offen |
-| 40 | Keema-Curry mit Putenhack & Kichererbsen | `keema-curry-pute` | Indisch | Pute | 720 | nein | MP | offen |
+| 31 | Korean Beef Bowl | `korean-beef-bowl` | Asiatisch | Rind | 720 | ja | S | ✓ geschrieben (627 kcal) |
+| 32 | Rotes Thai-Curry mit Garnelen & Reis | `thai-curry-garnelen` | Asiatisch | Fisch & Garnelen | 540 | nein | KA | ✓ geschrieben (514 kcal) |
+| 33 | Gebratene Mie-Nudeln mit Pute | `mie-nudeln-pute` | Asiatisch | Pute | 540 | nein | S, KA | ✓ geschrieben (476 kcal) |
+| 34 | Lachs-Reis-Bowl mit Sriracha-Skyr | `lachs-reis-bowl` | Asiatisch | Lachs | 760 | ja | S | ✓ geschrieben (696 kcal) |
+| 35 | Hähnchen-Burrito-Bowl | `haehnchen-burrito-bowl` | Mexikanisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (704 kcal) |
+| 36 | Chili con Carne mit Reis | `chili-con-carne` | Mexikanisch | Rind | 740 | nein | MP | ✓ geschrieben (775 kcal) |
+| 37 | Wrap-Hack aus der Pfanne mit Putenhack & Käse | `wrap-hack-putenhack` | Mexikanisch | Pute | 700 | ja | S | ✓ geschrieben (653 kcal) |
+| 38 | Butter Chicken mit Skyr & Reis | `butter-chicken` | Indisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (690 kcal) |
+| 39 | Kabeljau-Curry mit Reis | `kabeljau-curry` | Indisch | Kabeljau | 530 | nein | KA | ✓ geschrieben (504 kcal) |
+| 40 | Keema-Curry mit Putenhack & Kichererbsen | `keema-curry-pute` | Indisch | Pute | 720 | nein | MP | ✓ geschrieben (780 kcal) |
 | 41 | Gyros-Bowl mit Skyr-Tzatziki & Reis | `gyros-bowl` | Griechisch & Mediterran | Schweinefilet | 750 | ja | – | offen |
 | 42 | Puten-Souvlaki mit Ofenkartoffeln & Feta | `puten-souvlaki` | Griechisch & Mediterran | Pute | 540 | nein | KA | offen |
 | 43 | Ofen-Lachs mediterran mit Kartoffeln & Tomaten | `ofen-lachs-mediterran` | Griechisch & Mediterran | Lachs | 720 | nein | – | offen |
@@ -99,34 +99,34 @@ Stand: 31 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
 
-## Ist-Stand der geschriebenen Rezepte (31)
+## Ist-Stand der geschriebenen Rezepte (41)
 
 Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.
 
 | Anforderung | Soll | Ist | |
 |---|---:|---:|---|
-| Rezepte gesamt | 50 | 31 | ✓ |
+| Rezepte gesamt | 50 | 41 | ✓ |
 | Bereich Frühstück | 15 | 15 | ✓ |
 | Bereich Snack | 5 | 5 | ✓ |
-| Bereich Hauptgericht | 30 | 11 | ✓ |
+| Bereich Hauptgericht | 30 | 21 | ✓ |
 | Frühstück Meal Prep | ≥ 4 | 7 | ✓ |
 | Frühstück Schnelle Rezepte | ≥ 5 | 10 | ✓ |
 | Küche Deutsch | 4 | 4 | ✓ |
 | Küche Italienisch | 5 | 5 | ✓ |
-| Küche Asiatisch | 5 | 1 | ✓ |
-| Küche Mexikanisch | 3 | 0 | ✓ |
-| Küche Indisch | 3 | 0 | ✓ |
+| Küche Asiatisch | 5 | 5 | ✓ |
+| Küche Mexikanisch | 3 | 3 | ✓ |
+| Küche Indisch | 3 | 3 | ✓ |
 | Küche Griechisch & Mediterran | 3 | 0 | ✓ |
 | Küche Türkisch & Orientalisch | 3 | 0 | ✓ |
 | Küche Amerikanisch | 3 | 1 | ✓ |
 | Küche International / Fusion | 1 | 0 | ✓ |
-| Meal Prep | ≥ 12 | 15 | ✓ |
-| Schnelle Rezepte | ≥ 15 | 18 | ✓ |
-| Kalorienarme Hauptgerichte | ≥ 6 | 3 | offen |
-| High Protein | ≥ 45 | 31 | offen |
-| Inspiration | ≥ 15 | 12 | offen |
-| Hauptprotein Rind | ≤ 10 | 4 | ✓ |
-| Hauptprotein Hähnchen | ≤ 10 | 3 | ✓ |
-| Hauptprotein Pute | ≤ 10 | 2 | ✓ |
-| Hauptprotein Fisch & Garnelen | ≤ 10 | 1 | ✓ |
+| Meal Prep | ≥ 12 | 19 | ✓ |
+| Schnelle Rezepte | ≥ 15 | 22 | ✓ |
+| Kalorienarme Hauptgerichte | ≥ 6 | 6 | ✓ |
+| High Protein | ≥ 45 | 41 | offen |
+| Inspiration | ≥ 15 | 17 | ✓ |
+| Hauptprotein Rind | ≤ 10 | 6 | ✓ |
+| Hauptprotein Hähnchen | ≤ 10 | 5 | ✓ |
+| Hauptprotein Pute | ≤ 10 | 5 | ✓ |
+| Hauptprotein Fisch & Garnelen | ≤ 10 | 4 | ✓ |
 | Hauptprotein Schwein | ≤ 10 | 1 | ✓ |

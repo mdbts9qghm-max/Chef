@@ -1,7 +1,7 @@
 <!-- Generiert – nicht von Hand bearbeiten. -->
 # Rezeptbuch
 
-31 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
+41 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
 
 ## High Protein
 
@@ -15,14 +15,21 @@
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
 | [Hähnchen-Piccata mit Zitronen-Pasta](rezepte/schnell/haehnchen-piccata.md) | Mittag/Abend | Italienisch | 699 | 62,2 g | 25 min | High Protein, Schnelle Rezepte | – |
+| [Korean Beef Bowl](rezepte/schnell/korean-beef-bowl.md) | Mittag/Abend | Asiatisch | 627 | 50 g | 25 min | High Protein, Schnelle Rezepte | – |
+| [Lachs-Reis-Bowl mit Sriracha-Skyr](rezepte/schnell/lachs-reis-bowl.md) | Mittag/Abend | Asiatisch | 696 | 48,1 g | 25 min | High Protein, Schnelle Rezepte | – |
+| [Wrap-Hack aus der Pfanne mit Putenhack & Käse](rezepte/schnell/wrap-hack-putenhack.md) | Mittag/Abend | Mexikanisch | 653 | 56,3 g | 23 min | High Protein, Schnelle Rezepte | – |
 
 ## Meal Prep
 
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
+| [Butter Chicken mit Skyr & Reis](rezepte/meal-prep/butter-chicken.md) | Mittag/Abend | Indisch | 690 | 66,2 g | 35 min | High Protein, Meal Prep | – |
+| [Chili con Carne mit Reis](rezepte/meal-prep/chili-con-carne.md) | Mittag/Abend | Mexikanisch | 775 | 59,2 g | 50 min | High Protein, Meal Prep | – |
 | [Frikadellen mit Kartoffelpüree](rezepte/meal-prep/frikadellen-kartoffelpueree.md) | Mittag/Abend | Deutsch | 707 | 61,1 g | 40 min | High Protein, Meal Prep | – |
 | [Gnocchi al Forno mit Putenhack & Mozzarella](rezepte/meal-prep/gnocchi-al-forno.md) | Mittag/Abend | Italienisch | 706 | 51 g | 40 min | High Protein, Meal Prep | – |
 | [High-Protein-Lasagne mit Magerquark](rezepte/meal-prep/protein-lasagne.md) | Mittag/Abend | Italienisch | 802 | 81 g | 75 min | High Protein, Meal Prep | – |
+| [Hähnchen-Burrito-Bowl](rezepte/meal-prep/haehnchen-burrito-bowl.md) | Mittag/Abend | Mexikanisch | 704 | 71,5 g | 32 min | High Protein, Meal Prep | – |
+| [Keema-Curry mit Putenhack & Kichererbsen](rezepte/meal-prep/keema-curry-pute.md) | Mittag/Abend | Indisch | 780 | 62,3 g | 40 min | High Protein, Meal Prep | – |
 | [Rindergulasch mit Salzkartoffeln](rezepte/meal-prep/rindergulasch.md) | Mittag/Abend | Deutsch | 658 | 61,1 g | 120 min | High Protein, Meal Prep | – |
 | [Teriyaki-Hähnchen-Bowl mit Reis](rezepte/meal-prep/teriyaki-haehnchen-bowl.md) | Mittag/Abend | Asiatisch | 637 | 56 g | 32 min | High Protein, Meal Prep | – |
 
@@ -30,7 +37,10 @@
 
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
+| [Gebratene Mie-Nudeln mit Pute](rezepte/kalorienarm/mie-nudeln-pute.md) | Mittag/Abend | Asiatisch | 476 | 49,8 g | 20 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
+| [Kabeljau-Curry mit Reis](rezepte/kalorienarm/kabeljau-curry.md) | Mittag/Abend | Indisch | 504 | 44 g | 30 min | High Protein, Kalorienarm | – |
 | [Knoblauch-Garnelen-Pasta mit Tomaten](rezepte/kalorienarm/knoblauch-garnelen-pasta.md) | Mittag/Abend | Italienisch | 493 | 41,7 g | 22 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
+| [Rotes Thai-Curry mit Garnelen & Reis](rezepte/kalorienarm/thai-curry-garnelen.md) | Mittag/Abend | Asiatisch | 514 | 43,1 g | 30 min | High Protein, Kalorienarm | – |
 | [Schweinefilet in Senf-Rahm mit Kartoffeln](rezepte/kalorienarm/schweinefilet-senf-rahm.md) | Mittag/Abend | Deutsch | 479 | 52,1 g | 35 min | High Protein, Kalorienarm | – |
 | [Tagliata vom Hüftsteak mit Parmesan-Kartoffeln](rezepte/kalorienarm/tagliata-hueftsteak.md) | Mittag/Abend | Italienisch | 462 | 50,7 g | 25 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
 

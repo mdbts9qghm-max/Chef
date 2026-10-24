@@ -1,0 +1,62 @@
+id: mie-nudeln-pute
+name: Gebratene Mie-Nudeln mit Pute
+hauptkategorie: kalorienarm
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Asiatisch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 8, kochen: 12, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm mit hohem Rand oder Wok", "Topf ca. 2 l", Fleischthermometer]
+zutaten:
+  - gruppe: Nudeln
+  - {id: mie, zutat: Mie-Nudeln ungekocht, name: Mie-Nudeln, g: 100, anzeige: "2 Nudelnester"}
+  - gruppe: Pfanne
+  - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 350}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: paprika, zutat: Paprika rot, name: rote Paprika, g: 100, anzeige: "⅔ Paprika"}
+  - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 30, anzeige: "2 Stangen"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 5, anzeige: "1 cm Stück"}
+  - gruppe: Sauce
+  - {id: soja, zutat: Sojasauce, g: 30, anzeige: "2 EL"}
+  - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
+  - {id: sriracha, zutat: Sriracha, g: 5, anzeige: "1 TL"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 3, anzeige: "½ TL"}
+mise_en_place:
+  - "1,5 l Wasser im Topf auf Stufe 9 von 9 aufkochen."
+  - "{pute} in 1 cm dünne Streifen schneiden. {paprika} in feine Streifen, {fruehlingszwiebeln} in 3 cm Stücke. {knoblauch} und {ingwer} fein hacken."
+  - "{soja}, {honig}, {sriracha} und {sesamoel} mit 2 EL Wasser verrühren."
+schritte:
+  - titel: Nudeln garen
+    text: "{mie} ins kochende Wasser geben, vom Herd ziehen und 4 Minuten ziehen lassen (nach Packung). Mit zwei Gabeln auflockern, abgießen und kalt abschrecken, damit sie nicht weitergaren und nicht kleben."
+    timer_min: 4
+  - titel: Pute anbraten
+    text: "{oel} in der Pfanne auf Stufe 8 von 9 stark erhitzen. Putenstreifen in einer Lage hineingeben, 2 Minuten nicht bewegen, dann wenden und 2 Minuten weiterbraten, bis sie rundum gebräunt sind und 74 °C Kerntemperatur erreicht haben. Herausnehmen."
+    timer_min: 4
+  - titel: Gemüse
+    text: "Paprika, Frühlingszwiebeln, Knoblauch und Ingwer in die Pfanne geben und auf Stufe 8 von 9 2 Minuten unter ständigem Rühren braten, bis die Paprika leicht gebräunt, aber noch knackig ist."
+    timer_min: 2
+  - titel: Alles schwenken
+    text: "Nudeln, Pute und Sauce dazugeben und 1–2 Minuten auf Stufe 7 von 9 schwenken, bis die Sauce aufgesogen ist und die Nudeln an manchen Stellen leicht knusprig werden."
+    timer_min: 2
+zeitablauf:
+  - "Während das Wasser aufkocht: Fleisch und Gemüse schneiden, Sauce anrühren."
+fehler:
+  - "**Nudeln kleben zusammen:** nicht abgeschreckt. Lösung: kalt abbrausen und gut abtropfen lassen."
+  - "**Pute zäh:** zu dick geschnitten oder zu lange. Lösung: 1 cm Streifen und bei 74 °C sofort raus."
+  - "**Pfanne zu voll, nichts brät:** alles auf einmal. Lösung: Fleisch zuerst separat braten."
+anrichten: "Pro Teller die Hälfte der Nudelpfanne: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "In der Pfanne auf Stufe 6 von 9 mit 1 EL Wasser 3 Minuten oder Mikrowelle 600 W, 2 Minuten."
+varianten:
+  - {titel: Mit Ei, text: "2 Eier zum Schluss in die Pfanne schlagen und unter Rühren stocken lassen.", aenderung: {"Ei Gr. M ohne Schale": 120}}
+  - {titel: Mit Garnelen, text: "350 g Garnelen statt Pute (nur 2 Tage haltbar).", aenderung: {"Putenbrustfilet roh": -350, "Garnelen roh geschält": 350}}
+  - {titel: Mehr kcal, text: "Mie-Nudeln auf 150 g erhöhen.", aenderung: {"Mie-Nudeln ungekocht": 50}}
+tipps:
+  - "Die Pfanne richtig heiß werden lassen: Das gibt das typische Wok-Aroma, auch auf Ceran."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

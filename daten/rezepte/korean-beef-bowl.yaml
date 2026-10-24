@@ -1,0 +1,68 @@
+id: korean-beef-bowl
+name: Korean Beef Bowl
+hauptkategorie: schnell
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Asiatisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Korean Ground Beef Bowl“"
+  link: null
+  aenderungen: "Rinderhack 20 % durch 5 % Fett ersetzt, braunen Zucker durch weniger Honig, Gochujang durch Sriracha (lange haltbar, auch in anderen Rezepten im Einsatz). Spart ca. 200 kcal pro Portion."
+schwierigkeit: leicht
+zeit: {vorbereitung: 5, kochen: 20, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l mit Deckel", Reibe]
+zutaten:
+  - gruppe: Reis
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150}
+  - gruppe: Beef
+  - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 400}
+  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
+  - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
+  - gruppe: Sauce
+  - {id: soja, zutat: Sojasauce, g: 30, anzeige: "2 EL"}
+  - {id: honig, zutat: Honig, g: 20, anzeige: "1 EL"}
+  - {id: sriracha, zutat: Sriracha, g: 10, anzeige: "2 TL"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 5, anzeige: "1 TL"}
+  - {id: chili, zutat: Chiliflocken, g: 1, anzeige: "2 Prisen"}
+  - gruppe: Topping
+  - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 30, anzeige: "2 Stangen"}
+mise_en_place:
+  - "{reis} waschen, bis das Wasser fast klar ist."
+  - "{knoblauch} und {ingwer} fein reiben. {fruehlingszwiebeln} in Ringe schneiden (weiße und grüne Teile getrennt)."
+  - "{soja}, {honig}, {sriracha}, {sesamoel} und {chili} in einer Tasse verrühren."
+schritte:
+  - titel: Reis kochen
+    text: "Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten zugedeckt neben dem Herd ruhen lassen."
+    timer_min: 12
+  - titel: Hack krümelig braten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. {hack} hineingeben und 2 Minuten nicht bewegen, damit eine Kruste entsteht. Dann zerkrümeln und 4–5 Minuten weiterbraten, bis es durchgehend braun und an den Rändern knusprig ist (72 °C Kerntemperatur, kein rosa mehr)."
+    timer_min: 7
+  - titel: Aromaten
+    text: "Auf Stufe 6 von 9 schalten, Knoblauch, Ingwer und die weißen Frühlingszwiebel-Ringe 1 Minute mitbraten, bis es duftet."
+    timer_min: 1
+  - titel: Glasieren
+    text: "Sauce angießen und auf Stufe 6 von 9 1–2 Minuten unter Rühren einköcheln, bis das Hack glänzend überzogen ist und keine Flüssigkeit mehr am Pfannenboden steht."
+    timer_min: 2
+zeitablauf:
+  - "Reis zuerst aufsetzen. Während er quillt: Hack braten und glasieren (ca. 10 Minuten)."
+fehler:
+  - "**Hack grau und wässrig:** zu früh zerkrümelt oder Pfanne nicht heiß. Lösung: Stufe 8, 2 Minuten liegen lassen."
+  - "**Sauce brennt an:** Honig bei zu viel Hitze. Lösung: auf Stufe 6 von 9 zurück, bevor die Sauce dazukommt."
+  - "**Zu scharf:** Sriracha-Sorten unterscheiden sich. Lösung: mit 1 TL starten und nachwürzen."
+anrichten: "Pro Bowl die Hälfte des Reises, daneben die Hälfte des Beefs, mit den grünen Frühlingszwiebel-Ringen bestreut: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Mikrowelle 600 W, 2½ Minuten abgedeckt mit 1 EL Wasser über dem Reis."
+  separat: "Reis innerhalb von 1 Stunde abkühlen und kühlen."
+varianten:
+  - {titel: Mit Putenhack, text: "400 g Putenhack statt Rinderhack.", aenderung: {"Rinderhackfleisch 5 % Fett roh": -400, "Putenhackfleisch roh": 400}}
+  - {titel: Mit Spiegelei, text: "Pro Bowl 1 Spiegelei obendrauf (in 1 TL Öl gebraten).", aenderung: {"Ei Gr. M ohne Schale": 120, "Rapsöl": 5}}
+  - {titel: Mit Gurke, text: "150 g Salatgurke in Scheiben als frische Beilage.", aenderung: {"Salatgurke": 150}}
+tipps:
+  - "Gurkenscheiben mit einer Prise Salz und 1 TL Zitronensaft 5 Minuten ziehen lassen: schneller Pickle-Ersatz."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

@@ -1,0 +1,65 @@
+id: kabeljau-curry
+name: Kabeljau-Curry mit Reis
+hauptkategorie: kalorienarm
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Indisch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 20, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm mit hohem Rand und Deckel", "Topf ca. 2 l mit Deckel"]
+zutaten:
+  - gruppe: Reis
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 100}
+  - gruppe: Curry
+  - {id: kabeljau, zutat: Kabeljaufilet roh, name: Kabeljaufilet, g: 400, hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
+  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
+  - {id: curry, zutat: Currypulver, g: 6, anzeige: "2 TL"}
+  - {id: garam, zutat: Garam Masala, g: 2, anzeige: "½ TL"}
+  - {id: tomaten, zutat: Gehackte Tomaten Dose, name: gehackte Tomaten, g: 200, anzeige: "½ Dose"}
+  - {id: kokosmilch, zutat: Kokosmilch light, g: 150, hinweis: "gut geschüttelt"}
+  - {id: salz, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: spinat, zutat: Babyspinat, g: 50, anzeige: "2 Handvoll"}
+  - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
+mise_en_place:
+  - "{kabeljau} am Vorabend im Kühlschrank auftauen, trocken tupfen und in 4 cm Stücke schneiden."
+  - "{zwiebel} fein würfeln, {knoblauch} und {ingwer} fein reiben. {reis} waschen."
+schritte:
+  - titel: Reis kochen
+    text: "Reis mit 180 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    timer_min: 12
+  - titel: Currybasis
+    text: "{oel} in der Pfanne auf Stufe 5 von 9 erhitzen. Zwiebel 4 Minuten glasig dünsten, Knoblauch, Ingwer, {curry} und {garam} 1 Minute mitrösten, bis es duftet."
+    timer_min: 5
+  - titel: Sauce
+    text: "{tomaten}, {kokosmilch} und {salz} dazugeben, aufkochen und auf Stufe 4 von 9 4 Minuten köcheln, bis die Sauce leicht eindickt."
+    timer_min: 4
+  - titel: Fisch garziehen
+    text: "Fischstücke in die Sauce legen, mit Sauce beschöpfen, Deckel auflegen und auf Stufe 3 von 9 5–6 Minuten gar ziehen lassen; nicht umrühren, sonst zerfällt der Fisch. Garprobe: Der Fisch ist weiß, nicht mehr glasig und lässt sich mit der Gabel in Lamellen teilen (Kerntemperatur ca. 60 °C)."
+    timer_min: 6
+  - titel: Spinat
+    text: "{spinat} am Rand unterheben und 1 Minute zusammenfallen lassen. Mit {zitrone} abschmecken."
+    timer_min: 1
+zeitablauf:
+  - "Reis zuerst aufsetzen; das Curry ist in derselben Zeit fertig."
+fehler:
+  - "**Fisch zerfällt:** umgerührt oder zu stark gekocht. Lösung: nur ziehen lassen, mit Sauce beschöpfen statt rühren."
+  - "**Wässrige Sauce:** Fisch nicht aufgetaut oder nicht abgetupft. Lösung: komplett auftauen und trocken tupfen."
+  - "**Currypulver schmeckt staubig:** nicht angeröstet. Lösung: 1 Minute im Öl rösten."
+anrichten: "Pro Teller die Hälfte des Reises und die Hälfte des Currys mit Fischstücken: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: false
+  aufwaermen: "Am besten frisch. Reste am nächsten Tag vorsichtig im Topf auf Stufe 3 von 9 3–4 Minuten erwärmen."
+varianten:
+  - {titel: Mit Garnelen, text: "400 g Garnelen statt Kabeljau, 3–4 Minuten ziehen lassen.", aenderung: {"Kabeljaufilet roh": -400, "Garnelen roh geschält": 400}}
+  - {titel: Mehr kcal, text: "Reis auf 150 g erhöhen.", aenderung: {"Basmatireis ungekocht": 50}}
+  - {titel: Mit Kichererbsen, text: "120 g Kichererbsen mit in die Sauce.", aenderung: {"Kichererbsen abgetropft": 120}}
+tipps:
+  - "1 TL Skyr pro Portion als kühlender Klecks obendrauf (nicht mitgerechnet: +6 kcal)."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}
