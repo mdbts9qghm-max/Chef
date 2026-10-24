@@ -15,7 +15,6 @@ Schweinefilet roh,104,21.5,2,0.7,0,0,0,0.13,0.75,schwein
 Lachsfilet ohne Haut roh,197,20,13,2.5,0,0,0,0.12,0.8,fisch
 Kabeljaufilet roh,79,18,0.7,0.1,0,0,0,0.2,0.8,fisch
 Garnelen roh geschält,81,18,1,0.2,0,0,0,0.5,0.8,garnelen
-Thunfisch in eigenem Saft abgetropft,110,25.5,0.8,0.2,0,0,0,0.9,1.0,fisch
 Ei Gr. M ohne Schale,140,12.6,9.9,3.1,0.7,0.4,0,0.35,1.0,ei
 Eiklar flüssig,48,10.9,0.2,0,0.7,0.7,0,0.4,1.0,ei
 Magerquark,67,12,0.3,0.2,4,4,0,0.1,1.0,milchprotein
@@ -53,7 +52,6 @@ Erdnussbutter 100 % Erdnüsse,609,26,49,8.5,12,6,8,0.02,1.0,pflanzlich
 Mandeln gehobelt,600,21,52,4,6,4,12.5,0.01,1.0,pflanzlich
 Knuspermüsli,430,9,15,3,62,18,7,0.2,1.0,sonstiges
 Honig,322,0.4,0,0,80,80,0,0,1.0,sonstiges
-Vanillezucker,398,0,0,0,99.5,99.5,0,0,1.0,sonstiges
 # Erythrit: Polyol, KH ohne verwertbare kcal (Ausnahme in config.POLYOLE)
 Erythrit,0,0,0,0,100,0,0,0,1.0,sonstiges
 Banane geschält,94,1.1,0.2,0.1,21,17,2,0,1.0,sonstiges
@@ -83,7 +81,6 @@ Gemüsebrühe zubereitet,6,0.2,0.3,0.1,0.6,0.3,0,0.9,0.7,sonstiges
 Sojasauce,58,8,0.5,0.1,5,0.4,0.8,14.5,1.0,sonstiges
 Rote Currypaste,118,2.6,5.6,0.8,12,6,4,15,1.0,sonstiges
 Sriracha,96,1.9,0.9,0.1,19,15,2.2,5.6,1.0,sonstiges
-BBQ-Sauce,167,1,0.3,0.1,40,35,0,2,1.0,sonstiges
 Senf mittelscharf,86,6,4.5,0.3,4.5,2,3.3,4,1.0,sonstiges
 Olivenöl,900,0,100,14,0,0,0,0,1.0,sonstiges
 Rapsöl,900,0,100,7,0,0,0,0,1.0,sonstiges

@@ -1,0 +1,64 @@
+id: shakshuka-feta
+name: Shakshuka mit Feta & Toast
+hauptkategorie: schnell
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Türkisch & Orientalisch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 5, kochen: 20, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm mit Deckel", Toaster]
+zutaten:
+  - gruppe: Tomatensauce
+  - {id: oel, zutat: Olivenöl, g: 8, anzeige: "2 TL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
+  - {id: paprika, zutat: Paprika rot, name: rote Paprika, g: 150, anzeige: "1 Paprika"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 2, anzeige: "1 TL"}
+  - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
+  - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
+  - {id: tomaten, zutat: Gehackte Tomaten Dose, name: gehackte Tomaten, g: 400, anzeige: "1 Dose"}
+  - {id: salz, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - gruppe: Eier & Topping
+  - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 150, hinweis: "150 ml, für extra Protein"}
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 360, anzeige: "6 Eier Gr. M"}
+  - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 40}
+  - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 5, anzeige: "1 EL gehackt"}
+  - gruppe: Beilage
+  - {id: toast, zutat: Vollkorntoast, g: 160, anzeige: "4 Scheiben Vollkorntoast"}
+mise_en_place:
+  - "{zwiebel} fein würfeln, {paprika} in 1 cm Würfel schneiden, {knoblauch} hacken."
+  - "{feta} zerbröseln, {petersilie} hacken."
+schritte:
+  - titel: Gemüse anschwitzen
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen. Zwiebel und Paprika 5 Minuten weich dünsten, bis die Zwiebel glasig ist. Knoblauch, {kreuzkuemmel}, {paprikapulver} und {chili} 1 Minute mitrösten."
+    timer_min: 6
+  - titel: Sauce köcheln
+    text: "{tomaten} und {salz} dazugeben und auf Stufe 4 von 9 6 Minuten köcheln, bis die Sauce etwas eindickt. {eiklar} unterrühren und 1 Minute unter Rühren stocken lassen: Es verteilt sich als feine Flocken in der Sauce."
+    timer_min: 7
+  - titel: Eier pochieren
+    text: "Mit einem Löffel 6 Mulden in die Sauce drücken und {eier} einzeln hineingleiten lassen. Deckel auflegen und auf Stufe 3 von 9 6–8 Minuten garen. Garprobe: Das Eiweiß ist komplett weiß und fest, das Eigelb noch weich (wer es durch mag: 2 Minuten länger). Eier sind Ei, kein Fleisch: keine Kerntemperatur nötig."
+    timer_min: 8
+  - titel: Toast und Topping
+    text: "Während die Eier garen: {toast} im Toaster goldbraun rösten. Shakshuka mit Feta und Petersilie bestreuen."
+    timer_min: null
+zeitablauf:
+  - "Toast erst in den letzten Minuten rösten, damit er knusprig bleibt."
+fehler:
+  - "**Eiweiß bleibt glibberig:** ohne Deckel gegart. Lösung: Deckel drauf, der Dampf gart die Oberseite."
+  - "**Eigelb hart:** zu heiß. Lösung: Stufe 3 von 9 und ab Minute 6 prüfen."
+  - "**Sauce zu flüssig:** zu kurz geköchelt. Lösung: erst eindicken lassen, dann die Eier."
+anrichten: "Direkt aus der Pfanne servieren: pro Person 3 Eier mit der Hälfte der Sauce und 2 Scheiben Toast zum Dippen: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: false
+  aufwaermen: "Am besten frisch. Die Sauce ohne Eier hält 3 Tage; dann aufkochen und frische Eier hineingeben."
+varianten:
+  - {titel: Mit Putenhack, text: "150 g Putenhack mit dem Gemüse anbraten, 2 Eier weniger (72 °C Kerntemperatur).", aenderung: {"Putenhackfleisch roh": 150, "Ei Gr. M ohne Schale": -120}}
+  - {titel: Weniger kcal, text: "Nur 2 Scheiben Toast.", aenderung: {"Vollkorntoast": -80}}
+  - {titel: Mit Spinat, text: "100 g Babyspinat in die Sauce, bevor die Eier hineinkommen (grüne Shakshuka-Variante).", aenderung: {"Babyspinat": 100}}
+tipps:
+  - "Ein Klecks Skyr mit Knoblauch dazu (nicht mitgerechnet: ca. +20 kcal) kühlt die Schärfe."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

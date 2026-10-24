@@ -1,0 +1,75 @@
+id: smash-burger
+name: Smash Burger mit Ofen-Kartoffelspalten
+hauptkategorie: high-protein
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Smash Burger“"
+  link: null
+  aenderungen: "Rinderhack 20 % durch 5 % ersetzt, Cheddar durch Reibekäse light, Burgersauce aus Skyr, Senf, Tomatenmark und Honig statt Mayonnaise; Kartoffelspalten aus dem Ofen statt Pommes aus der Fritteuse. Spart ca. 450 kcal pro Portion."
+schwierigkeit: mittel
+zeit: {vorbereitung: 15, kochen: 35, wartezeit: 0}
+ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", "Pfanne 28 cm (Edelstahl oder Gusseisen)", "breiter, stabiler Pfannenwender", Backpapier]
+zutaten:
+  - gruppe: Kartoffelspalten
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 400, hinweis: "mit Schale, gut gewaschen"}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 2, anzeige: "1 TL"}
+  - {id: salz_k, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - gruppe: Patties
+  - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 360, hinweis: "eiskalt"}
+  - {id: salz_p, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: kaese, zutat: Reibekäse light, g: 40}
+  - gruppe: Burger
+  - {id: buns, zutat: Burger-Brötchen, g: 150, anzeige: "2 Burger-Brötchen"}
+  - {id: tomaten, zutat: Tomaten, g: 60, anzeige: "½ Tomate", hinweis: "in Scheiben"}
+  - {id: zwiebel, zutat: Zwiebel, g: 40, anzeige: "½ kleine Zwiebel", hinweis: "in sehr feinen Ringen"}
+  - gruppe: Burgersauce
+  - {id: skyr, zutat: Skyr natur, g: 50, anzeige: "2 EL"}
+  - {id: senf, zutat: Senf mittelscharf, name: Senf, g: 10, anzeige: "2 TL"}
+  - {id: tomatenmark, zutat: Tomatenmark, g: 10, anzeige: "2 TL"}
+  - {id: honig, zutat: Honig, g: 5, anzeige: "1 TL"}
+mise_en_place:
+  - "Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "{kartoffeln} in Spalten schneiden (8 pro Kartoffel), mit {oel}, {paprikapulver} und {salz_k} mischen."
+  - "{hack} in 4 Kugeln à 90 g teilen, nicht kneten, kalt stellen."
+  - "Burgersauce: {skyr}, {senf}, {tomatenmark} und {honig} verrühren (schmeckt wie Burger-Ketchup-Sauce). {tomaten} in Scheiben, {zwiebel} in hauchdünne Ringe schneiden."
+  - "2 Quadrate Backpapier (ca. 15 × 15 cm) zum Smashen zuschneiden."
+schritte:
+  - titel: Kartoffelspalten
+    text: "Spalten mit der Schale nach unten in die Auflaufform legen und auf mittlerer Schiene bei 220 °C Ober-/Unterhitze (200 °C Umluft) 30–35 Minuten backen, nach 20 Minuten wenden, bis sie goldbraun und knusprig sind."
+    timer_min: 35
+  - titel: Brötchen rösten
+    text: "10 Minuten vor Ende der Kartoffeln: Pfanne (28 cm) auf Stufe 9 von 9 3–4 Minuten sehr heiß werden lassen. {buns} aufschneiden und mit der Schnittfläche 30–40 Sekunden ohne Fett rösten, bis sie goldbraun sind. Herausnehmen."
+    timer_min: 1
+  - titel: Smashen
+    text: "2 Hackkugeln in die heiße Pfanne (weiter Stufe 9 von 9) legen, Backpapier darauf und mit dem Pfannenwender (mit der anderen Hand nachdrücken) kräftig auf 1 cm Dicke flach drücken. Backpapier abziehen, mit der Hälfte von {salz_p} und {pfeffer} würzen. 2 Minuten nicht bewegen, bis der Rand dunkelbraun und kross ist."
+    timer_min: 2
+  - titel: Wenden und Käse
+    text: "Patties mit dem Pfannenwender vom Boden schaben (die Kruste muss mit) und wenden. Je 10 g {kaese:n} darauf verteilen und 1 Minute braten, bis der Käse schmilzt. Bei 1 cm dünnen Patties ist 72 °C Kerntemperatur nach 3 Minuten erreicht; Garprobe: kein rosa Fleischsaft mehr. Mit den anderen 2 Kugeln und dem Rest von {kaese} genauso."
+    timer_min: 2
+  - titel: Bauen
+    text: "Unterseite der Brötchen mit der Hälfte der Burgersauce bestreichen, 2 Patties übereinander stapeln (Double Smash), Tomate und Zwiebelringe darauf, restliche Sauce auf den Deckel."
+    timer_min: null
+zeitablauf:
+  - "Kartoffeln zuerst in den Ofen. Während sie backen: Sauce, Tomaten und Zwiebeln vorbereiten. 10 Minuten vor Ende Pfanne aufheizen und smashen."
+fehler:
+  - "**Patty klebt am Wender:** ohne Backpapier gesmasht. Lösung: Backpapier zwischen Fleisch und Wender."
+  - "**Keine Kruste:** Pfanne nicht heiß genug oder zu früh bewegt. Lösung: Stufe 9 von 9, 3–4 Minuten vorheizen, 2 Minuten liegen lassen."
+  - "**Trocken:** zu lange gebraten. Lösung: 2 Minuten + 1 Minute reicht bei 1 cm dünnen Patties."
+anrichten: "Pro Teller 1 Double Smash Burger und die Hälfte der Kartoffelspalten: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: false
+  aufwaermen: "Burger frisch essen. Kartoffelspalten im Airfryer bei 200 °C 4 Minuten. Rohe Hackkugeln nicht aufbewahren, am Einkaufstag oder Tag danach verarbeiten."
+varianten:
+  - {titel: Mit Putenhack, text: "360 g Putenhack statt Rind (smasht weniger kross, wird aber saftig).", aenderung: {"Rinderhackfleisch 5 % Fett roh": -360, "Putenhackfleisch roh": 360}}
+  - {titel: Saftiger, text: "Hälfte des Hacks durch Rinderhack 15 % ersetzen (klassischer Smash-Geschmack).", aenderung: {"Rinderhackfleisch 5 % Fett roh": -180, "Rinderhackfleisch 15 % Fett roh": 180}}
+  - {titel: Weniger kcal, text: "Kartoffelspalten auf 250 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -150}}
+tipps:
+  - "Das Hack eiskalt und ungeknetet in die Pfanne: Nur so entsteht die lacey crust mit Spitzenrand."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

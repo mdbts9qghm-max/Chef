@@ -1,0 +1,67 @@
+id: cottage-cheese-mac-and-cheese
+name: Cottage-Cheese-Mac-and-Cheese mit Putenbrust
+hauptkategorie: schnell
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: International / Fusion
+inspiration:
+  quelle: "TikTok-Trend „Cottage Cheese Mac and Cheese“"
+  link: null
+  aenderungen: "Käsesauce aus Butter, Mehl, Sahne und Cheddar durch gemixten körnigen Frischkäse, Milch und Reibekäse light ersetzt, dazu gebratene Putenbrust. Ca. 70 g Protein pro Portion statt 25 g."
+schwierigkeit: leicht
+zeit: {vorbereitung: 5, kochen: 18, wartezeit: 0}
+ausstattung: ["Topf ca. 3 l", "Pfanne 24 cm", Standmixer, Fleischthermometer]
+zutaten:
+  - gruppe: Pasta
+  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Makkaroni, g: 160}
+  - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
+  - gruppe: Käsesauce
+  - {id: huettenkaese, zutat: Körniger Frischkäse, name: körniger Frischkäse, g: 200, anzeige: "1 Becher"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 100, hinweis: "100 ml"}
+  - {id: kaese, zutat: Reibekäse light, g: 60}
+  - {id: senf, zutat: Senf mittelscharf, name: Senf, g: 5, anzeige: "1 TL"}
+  - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 1, anzeige: "½ TL"}
+  - gruppe: Putenbrust
+  - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 300}
+  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: knoblauch, zutat: Knoblauch, g: 3, anzeige: "1 Zehe"}
+  - {id: salz, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: spinat, zutat: Babyspinat, g: 50, anzeige: "2 Handvoll"}
+mise_en_place:
+  - "3 l Wasser mit {salz_wasser} auf Stufe 9 von 9 aufkochen."
+  - "{pute} in 2 cm Würfel schneiden, mit {salz} und {pfeffer} würzen. {knoblauch} fein hacken."
+  - "{huettenkaese}, {milch}, {kaese}, {senf} und {paprikapulver} in den Standmixer geben."
+schritte:
+  - titel: Pasta kochen
+    text: "{pasta} nach Packungsangabe bissfest kochen (meist 9–10 Minuten). 100 ml Nudelwasser abnehmen, dann abgießen."
+    timer_min: 10
+  - titel: Pute braten
+    text: "{oel} in der Pfanne (24 cm) auf Stufe 8 von 9 erhitzen. Putenwürfel 5–6 Minuten rundum goldbraun braten, in der letzten Minute den Knoblauch dazu. Fertig bei 74 °C Kerntemperatur. Herd aus."
+    timer_min: 6
+  - titel: Sauce mixen
+    text: "Den Mixerinhalt 30 Sekunden zu einer glatten, cremigen Sauce mixen. Sie ist kalt dickflüssig und wird beim Erwärmen samtig."
+    timer_min: null
+  - titel: Zusammenführen
+    text: "Abgegossene Pasta zurück in den heißen Topf geben, auf Stufe 3 von 9 die Sauce und 3–4 EL Nudelwasser einrühren und 1–2 Minuten unter Rühren erhitzen, bis die Sauce die Nudeln cremig überzieht (nicht kochen, sonst wird sie körnig). {spinat} und Pute unterheben."
+    timer_min: 2
+zeitablauf:
+  - "Während das Wasser aufkocht und die Pasta kocht: Pute braten und Sauce mixen. Alles ist nach ca. 18 Minuten fertig."
+fehler:
+  - "**Sauce körnig:** zu stark erhitzt. Lösung: Stufe 3 von 9, nur bis heiß, nicht kochen."
+  - "**Sauce zu dick:** Pasta zieht Flüssigkeit. Lösung: mehr Nudelwasser einrühren."
+  - "**Schmeckt nach Quark:** zu wenig Würze. Lösung: Senf und Paprika nicht weglassen, mit einer Prise Salz abschmecken."
+anrichten: "Pro Teller die Hälfte der Mac and Cheese mit Putenwürfeln: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "Im Topf auf Stufe 3 von 9 mit 3 EL Milch oder Wasser (nicht mitgerechnet) 3–4 Minuten unter Rühren, oder Mikrowelle 600 W, 2 Minuten mit 2 EL Wasser."
+varianten:
+  - {titel: Überbacken, text: "In die 20 × 20-Form füllen, 20 g Reibekäse extra darüber und im Backofen auf mittlerer Schiene bei 220 °C Ober-/Unterhitze (200 °C Umluft) 8 Minuten gratinieren.", aenderung: {"Reibekäse light": 20}}
+  - {titel: Mit Hähnchen, text: "300 g Hähnchenbrust statt Pute.", aenderung: {"Putenbrustfilet roh": -300, "Hähnchenbrustfilet roh": 300}}
+  - {titel: Weniger kcal, text: "Pasta auf 110 g reduzieren.", aenderung: {"Hartweizennudeln ungekocht": -50}}
+tipps:
+  - "Eine Prise Muskat oder Knoblauchpulver in der Sauce (falls vorhanden) macht sie noch käsiger."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

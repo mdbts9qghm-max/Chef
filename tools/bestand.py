@@ -117,9 +117,11 @@ def rezeptplan_markdown(plan, rezepte, db):
     out += ["## Abgleich des Plans mit SPEC 5.1–5.3", ""]
     out += tabelle(auswerten([eintrag_aus_plan(p) for p in plan]))
     ist = [eintrag_aus_rezept(r, db) for r in rezepte.values()]
-    out += ["", f"## Ist-Stand der geschriebenen Rezepte ({len(ist)})", "",
-            "Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.", ""]
-    out += tabelle(auswerten(ist, vollstaendig=len(ist) >= config.BESTAND_GESAMT))
+    vollstaendig = len(ist) >= config.BESTAND_GESAMT
+    hinweis = ("Bestand vollständig: alle Vorgaben werden exakt geprüft." if vollstaendig else
+               "Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.")
+    out += ["", f"## Ist-Stand der geschriebenen Rezepte ({len(ist)})", "", hinweis, ""]
+    out += tabelle(auswerten(ist, vollstaendig=vollstaendig))
     plan_ids = {p["id"] for p in plan}
     extra = sorted(vorhanden - plan_ids)
     if extra:

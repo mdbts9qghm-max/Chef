@@ -82,7 +82,7 @@ Pro Glas ca. 380 g: die Oats mit Apfel, darauf 15 g geröstete Mandeln.
 
 ## Tipps
 
-- Ein halber Teelöffel Vanillezucker (4 g) macht es noch strudeliger, kostet aber 4 g Zucker pro Glas.
+- Ein paar Tropfen Vanillearoma (falls im Vorrat) machen es noch strudeliger, ohne nennenswerte kcal.
 - Den Apfel mit Schale raspeln: mehr Aroma und Ballaststoffe.
 
 ## Nährwert-Berechnung

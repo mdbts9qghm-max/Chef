@@ -1,0 +1,61 @@
+id: puten-souvlaki
+name: Puten-Souvlaki mit Ofenkartoffeln & Feta
+hauptkategorie: kalorienarm
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Griechisch & Mediterran
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 15, kochen: 35, wartezeit: 30}
+ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", "Pfanne 28 cm", "6 Holzspieße", Fleischthermometer]
+zutaten:
+  - gruppe: Souvlaki
+  - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 350}
+  - {id: oel_s, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - {id: zitrone, zutat: Zitronensaft, g: 15, anzeige: "1 EL"}
+  - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 2, anzeige: "2 TL"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: salz_s, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - gruppe: Ofenkartoffeln
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 300, hinweis: "mit Schale, gut gewaschen"}
+  - {id: oel_k, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: salz_k, zutat: Salz, g: 1, anzeige: "2 Prisen"}
+  - gruppe: Beilage
+  - {id: skyr, zutat: Skyr natur, g: 100}
+  - {id: gurke, zutat: Salatgurke, g: 80, anzeige: "¼ Gurke"}
+  - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 40}
+mise_en_place:
+  - "Holzspieße 20 Minuten in Wasser einweichen, damit sie nicht verbrennen."
+  - "{pute} in 3 cm Würfel schneiden. {knoblauch} fein reiben und mit {oel_s}, {zitrone}, {oregano}, {salz_s} und {pfeffer} mischen, das Fleisch darin wenden und 30 Minuten im Kühlschrank marinieren. Dann auf 6 Spieße stecken."
+  - "Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "{kartoffeln} in Spalten (8 pro Kartoffel) schneiden, mit {oel_k} und {salz_k} mischen."
+  - "{gurke} fein würfeln und mit {skyr} verrühren. {feta} zerbröseln."
+schritte:
+  - titel: Ofenkartoffeln
+    text: "Kartoffelspalten mit der Schale nach unten in die Auflaufform legen und auf mittlerer Schiene bei 220 °C Ober-/Unterhitze (200 °C Umluft) 30–35 Minuten backen, nach 20 Minuten wenden. Fertig, wenn sie goldbraun und am Rand knusprig sind und ein Messer leicht hineingleitet."
+    timer_min: 35
+  - titel: Spieße braten
+    text: "10 Minuten vor Ende der Kartoffeln: Pfanne (28 cm) auf Stufe 7 von 9 ohne weiteres Öl erhitzen (das Öl der Marinade reicht). Spieße 8–10 Minuten braten, alle 2 Minuten wenden, bis sie rundum goldbraun sind. Fertig bei 74 °C Kerntemperatur."
+    timer_min: 10
+zeitablauf:
+  - "Während das Fleisch mariniert: Ofen vorheizen und Kartoffeln schneiden. Kartoffeln in den Ofen, nach 25 Minuten die Spieße braten."
+fehler:
+  - "**Spieße trocken:** zu kleine Würfel oder zu lange. Lösung: 3 cm Würfel, bei 74 °C raus."
+  - "**Kartoffeln weich statt knusprig:** Form überfüllt. Lösung: in einer Lage, mit der Schale nach unten."
+  - "**Holzspieße verkohlt:** nicht eingeweicht. Lösung: 20 Minuten wässern."
+anrichten: "Pro Teller 3 Spieße, die Hälfte der Ofenkartoffeln mit Feta bestreut und die Hälfte der Skyr-Gurke: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "Spieße und Kartoffeln im Airfryer bei 180 °C 5 Minuten oder im Backofen auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 8 Minuten."
+  separat: "Skyr-Gurke und Feta getrennt lagern."
+varianten:
+  - {titel: Mit Hähnchen, text: "350 g Hähnchenbrust statt Pute.", aenderung: {"Putenbrustfilet roh": -350, "Hähnchenbrustfilet roh": 350}}
+  - {titel: Mehr kcal, text: "Kartoffeln auf 500 g erhöhen.", aenderung: {"Kartoffeln festkochend roh": 200}}
+  - {titel: Mit Paprika, text: "1 rote Paprika (150 g) in Stücken mit auf die Spieße stecken.", aenderung: {"Paprika rot": 150}}
+tipps:
+  - "Zum Schluss ein paar Tropfen Zitronensaft über die Spieße: typisch griechisch."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

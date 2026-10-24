@@ -1,22 +1,29 @@
 <!-- Generiert – nicht von Hand bearbeiten. -->
 # Rezeptbuch
 
-41 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
+50 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
 
 ## High Protein
 
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
+| [Döner-Bowl mit Hähnchen](rezepte/high-protein/doener-bowl.md) | Mittag/Abend | Türkisch & Orientalisch | 625 | 59,8 g | 45 min | High Protein | – |
+| [Gyros-Bowl mit Skyr-Tzatziki & Reis](rezepte/high-protein/gyros-bowl.md) | Mittag/Abend | Griechisch & Mediterran | 702 | 65,5 g | 35 min | High Protein | – |
 | [Marry Me Chicken mit Reis](rezepte/high-protein/marry-me-chicken.md) | Mittag/Abend | Amerikanisch | 741 | 64,7 g | 35 min | High Protein, Meal Prep | – |
+| [Ofen-Lachs mediterran mit Kartoffeln & Tomaten](rezepte/high-protein/ofen-lachs-mediterran.md) | Mittag/Abend | Griechisch & Mediterran | 664 | 48,1 g | 45 min | High Protein | – |
 | [Putenschnitzel aus dem Airfryer mit Bratkartoffeln](rezepte/high-protein/putenschnitzel-airfryer.md) | Mittag/Abend | Deutsch | 653 | 56,6 g | 40 min | High Protein | – |
+| [Smash Burger mit Ofen-Kartoffelspalten](rezepte/high-protein/smash-burger.md) | Mittag/Abend | Amerikanisch | 738 | 58,5 g | 50 min | High Protein | – |
 
 ## Schnelle Rezepte
 
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
+| [Cottage-Cheese-Mac-and-Cheese mit Putenbrust](rezepte/schnell/cottage-cheese-mac-and-cheese.md) | Mittag/Abend | International / Fusion | 684 | 70,4 g | 23 min | High Protein, Schnelle Rezepte | – |
 | [Hähnchen-Piccata mit Zitronen-Pasta](rezepte/schnell/haehnchen-piccata.md) | Mittag/Abend | Italienisch | 699 | 62,2 g | 25 min | High Protein, Schnelle Rezepte | – |
 | [Korean Beef Bowl](rezepte/schnell/korean-beef-bowl.md) | Mittag/Abend | Asiatisch | 627 | 50 g | 25 min | High Protein, Schnelle Rezepte | – |
 | [Lachs-Reis-Bowl mit Sriracha-Skyr](rezepte/schnell/lachs-reis-bowl.md) | Mittag/Abend | Asiatisch | 696 | 48,1 g | 25 min | High Protein, Schnelle Rezepte | – |
+| [Philly-Cheesesteak-Wrap](rezepte/schnell/philly-cheesesteak-wrap.md) | Mittag/Abend | Amerikanisch | 623 | 61,1 g | 22 min | High Protein, Schnelle Rezepte | – |
+| [Shakshuka mit Feta & Toast](rezepte/schnell/shakshuka-feta.md) | Mittag/Abend | Türkisch & Orientalisch | 679 | 45,8 g | 25 min | High Protein, Schnelle Rezepte | – |
 | [Wrap-Hack aus der Pfanne mit Putenhack & Käse](rezepte/schnell/wrap-hack-putenhack.md) | Mittag/Abend | Mexikanisch | 653 | 56,3 g | 23 min | High Protein, Schnelle Rezepte | – |
 
 ## Meal Prep
@@ -30,6 +37,7 @@
 | [High-Protein-Lasagne mit Magerquark](rezepte/meal-prep/protein-lasagne.md) | Mittag/Abend | Italienisch | 802 | 81 g | 75 min | High Protein, Meal Prep | – |
 | [Hähnchen-Burrito-Bowl](rezepte/meal-prep/haehnchen-burrito-bowl.md) | Mittag/Abend | Mexikanisch | 704 | 71,5 g | 32 min | High Protein, Meal Prep | – |
 | [Keema-Curry mit Putenhack & Kichererbsen](rezepte/meal-prep/keema-curry-pute.md) | Mittag/Abend | Indisch | 780 | 62,3 g | 40 min | High Protein, Meal Prep | – |
+| [Köfte mit Joghurt-Knoblauch-Sauce & Reis](rezepte/meal-prep/koefte-reis.md) | Mittag/Abend | Türkisch & Orientalisch | 674 | 61,4 g | 35 min | High Protein, Meal Prep | – |
 | [Rindergulasch mit Salzkartoffeln](rezepte/meal-prep/rindergulasch.md) | Mittag/Abend | Deutsch | 658 | 61,1 g | 120 min | High Protein, Meal Prep | – |
 | [Teriyaki-Hähnchen-Bowl mit Reis](rezepte/meal-prep/teriyaki-haehnchen-bowl.md) | Mittag/Abend | Asiatisch | 637 | 56 g | 32 min | High Protein, Meal Prep | – |
 
@@ -40,6 +48,7 @@
 | [Gebratene Mie-Nudeln mit Pute](rezepte/kalorienarm/mie-nudeln-pute.md) | Mittag/Abend | Asiatisch | 476 | 49,8 g | 20 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
 | [Kabeljau-Curry mit Reis](rezepte/kalorienarm/kabeljau-curry.md) | Mittag/Abend | Indisch | 504 | 44 g | 30 min | High Protein, Kalorienarm | – |
 | [Knoblauch-Garnelen-Pasta mit Tomaten](rezepte/kalorienarm/knoblauch-garnelen-pasta.md) | Mittag/Abend | Italienisch | 493 | 41,7 g | 22 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
+| [Puten-Souvlaki mit Ofenkartoffeln & Feta](rezepte/kalorienarm/puten-souvlaki.md) | Mittag/Abend | Griechisch & Mediterran | 465 | 54,5 g | 50 min | High Protein, Kalorienarm | – |
 | [Rotes Thai-Curry mit Garnelen & Reis](rezepte/kalorienarm/thai-curry-garnelen.md) | Mittag/Abend | Asiatisch | 514 | 43,1 g | 30 min | High Protein, Kalorienarm | – |
 | [Schweinefilet in Senf-Rahm mit Kartoffeln](rezepte/kalorienarm/schweinefilet-senf-rahm.md) | Mittag/Abend | Deutsch | 479 | 52,1 g | 35 min | High Protein, Kalorienarm | – |
 | [Tagliata vom Hüftsteak mit Parmesan-Kartoffeln](rezepte/kalorienarm/tagliata-hueftsteak.md) | Mittag/Abend | Italienisch | 462 | 50,7 g | 25 min | High Protein, Schnelle Rezepte, Kalorienarm | – |

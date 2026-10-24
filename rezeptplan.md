@@ -1,7 +1,7 @@
 <!-- Generiert aus daten/rezeptplan.yaml – nicht von Hand bearbeiten. -->
 # Rezeptplan: Startbestand mit 50 Rezepten
 
-Stand: 41 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
+Stand: 50 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
 
 ## Frühstück, süß (15)
 
@@ -57,16 +57,16 @@ Stand: 41 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | 38 | Butter Chicken mit Skyr & Reis | `butter-chicken` | Indisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (690 kcal) |
 | 39 | Kabeljau-Curry mit Reis | `kabeljau-curry` | Indisch | Kabeljau | 530 | nein | KA | ✓ geschrieben (504 kcal) |
 | 40 | Keema-Curry mit Putenhack & Kichererbsen | `keema-curry-pute` | Indisch | Pute | 720 | nein | MP | ✓ geschrieben (780 kcal) |
-| 41 | Gyros-Bowl mit Skyr-Tzatziki & Reis | `gyros-bowl` | Griechisch & Mediterran | Schweinefilet | 750 | ja | – | offen |
-| 42 | Puten-Souvlaki mit Ofenkartoffeln & Feta | `puten-souvlaki` | Griechisch & Mediterran | Pute | 540 | nein | KA | offen |
-| 43 | Ofen-Lachs mediterran mit Kartoffeln & Tomaten | `ofen-lachs-mediterran` | Griechisch & Mediterran | Lachs | 720 | nein | – | offen |
-| 44 | Köfte mit Joghurt-Knoblauch-Sauce & Reis | `koefte-reis` | Türkisch & Orientalisch | Rind | 760 | nein | MP | offen |
-| 45 | Döner-Bowl mit Hähnchen | `doener-bowl` | Türkisch & Orientalisch | Hähnchen | 760 | ja | – | offen |
-| 46 | Shakshuka mit Feta & Toast | `shakshuka-feta` | Türkisch & Orientalisch | Eier | 700 | nein | S | offen |
+| 41 | Gyros-Bowl mit Skyr-Tzatziki & Reis | `gyros-bowl` | Griechisch & Mediterran | Schweinefilet | 750 | ja | – | ✓ geschrieben (702 kcal) |
+| 42 | Puten-Souvlaki mit Ofenkartoffeln & Feta | `puten-souvlaki` | Griechisch & Mediterran | Pute | 540 | nein | KA | ✓ geschrieben (465 kcal) |
+| 43 | Ofen-Lachs mediterran mit Kartoffeln & Tomaten | `ofen-lachs-mediterran` | Griechisch & Mediterran | Lachs | 720 | nein | – | ✓ geschrieben (664 kcal) |
+| 44 | Köfte mit Joghurt-Knoblauch-Sauce & Reis | `koefte-reis` | Türkisch & Orientalisch | Rind | 760 | nein | MP | ✓ geschrieben (674 kcal) |
+| 45 | Döner-Bowl mit Hähnchen | `doener-bowl` | Türkisch & Orientalisch | Hähnchen | 760 | ja | – | ✓ geschrieben (625 kcal) |
+| 46 | Shakshuka mit Feta & Toast | `shakshuka-feta` | Türkisch & Orientalisch | Eier | 700 | nein | S | ✓ geschrieben (679 kcal) |
 | 47 | Marry Me Chicken mit Reis | `marry-me-chicken` | Amerikanisch | Hähnchen | 741 | ja | MP | ✓ geschrieben (741 kcal) |
-| 48 | Smash Burger mit Ofen-Kartoffelspalten | `smash-burger` | Amerikanisch | Rind | 800 | ja | – | offen |
-| 49 | Philly-Cheesesteak-Wrap | `philly-cheesesteak-wrap` | Amerikanisch | Rind | 720 | ja | S | offen |
-| 50 | Cottage-Cheese-Mac-and-Cheese mit Putenbrust | `cottage-cheese-mac-and-cheese` | International / Fusion | Pute | 760 | ja | S | offen |
+| 48 | Smash Burger mit Ofen-Kartoffelspalten | `smash-burger` | Amerikanisch | Rind | 800 | ja | – | ✓ geschrieben (738 kcal) |
+| 49 | Philly-Cheesesteak-Wrap | `philly-cheesesteak-wrap` | Amerikanisch | Rind | 720 | ja | S | ✓ geschrieben (623 kcal) |
+| 50 | Cottage-Cheese-Mac-and-Cheese mit Putenbrust | `cottage-cheese-mac-and-cheese` | International / Fusion | Pute | 760 | ja | S | ✓ geschrieben (684 kcal) |
 
 ## Abgleich des Plans mit SPEC 5.1–5.3
 
@@ -99,16 +99,16 @@ Stand: 41 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
 
-## Ist-Stand der geschriebenen Rezepte (41)
+## Ist-Stand der geschriebenen Rezepte (50)
 
-Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.
+Bestand vollständig: alle Vorgaben werden exakt geprüft.
 
 | Anforderung | Soll | Ist | |
 |---|---:|---:|---|
-| Rezepte gesamt | 50 | 41 | ✓ |
+| Rezepte gesamt | 50 | 50 | ✓ |
 | Bereich Frühstück | 15 | 15 | ✓ |
 | Bereich Snack | 5 | 5 | ✓ |
-| Bereich Hauptgericht | 30 | 21 | ✓ |
+| Bereich Hauptgericht | 30 | 30 | ✓ |
 | Frühstück Meal Prep | ≥ 4 | 7 | ✓ |
 | Frühstück Schnelle Rezepte | ≥ 5 | 10 | ✓ |
 | Küche Deutsch | 4 | 4 | ✓ |
@@ -116,17 +116,18 @@ Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst be
 | Küche Asiatisch | 5 | 5 | ✓ |
 | Küche Mexikanisch | 3 | 3 | ✓ |
 | Küche Indisch | 3 | 3 | ✓ |
-| Küche Griechisch & Mediterran | 3 | 0 | ✓ |
-| Küche Türkisch & Orientalisch | 3 | 0 | ✓ |
-| Küche Amerikanisch | 3 | 1 | ✓ |
-| Küche International / Fusion | 1 | 0 | ✓ |
-| Meal Prep | ≥ 12 | 19 | ✓ |
-| Schnelle Rezepte | ≥ 15 | 22 | ✓ |
-| Kalorienarme Hauptgerichte | ≥ 6 | 6 | ✓ |
-| High Protein | ≥ 45 | 41 | offen |
-| Inspiration | ≥ 15 | 17 | ✓ |
-| Hauptprotein Rind | ≤ 10 | 6 | ✓ |
-| Hauptprotein Hähnchen | ≤ 10 | 5 | ✓ |
-| Hauptprotein Pute | ≤ 10 | 5 | ✓ |
-| Hauptprotein Fisch & Garnelen | ≤ 10 | 4 | ✓ |
-| Hauptprotein Schwein | ≤ 10 | 1 | ✓ |
+| Küche Griechisch & Mediterran | 3 | 3 | ✓ |
+| Küche Türkisch & Orientalisch | 3 | 3 | ✓ |
+| Küche Amerikanisch | 3 | 3 | ✓ |
+| Küche International / Fusion | 1 | 1 | ✓ |
+| Meal Prep | ≥ 12 | 20 | ✓ |
+| Schnelle Rezepte | ≥ 15 | 25 | ✓ |
+| Kalorienarme Hauptgerichte | ≥ 6 | 7 | ✓ |
+| High Protein | ≥ 45 | 50 | ✓ |
+| Inspiration | ≥ 15 | 22 | ✓ |
+| Hauptprotein Rind | ≤ 10 | 9 | ✓ |
+| Hauptprotein Pute | ≤ 10 | 7 | ✓ |
+| Hauptprotein Hähnchen | ≤ 10 | 6 | ✓ |
+| Hauptprotein Fisch & Garnelen | ≤ 10 | 5 | ✓ |
+| Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
+| Hauptprotein Eier | ≤ 10 | 1 | ✓ |

@@ -1,0 +1,56 @@
+id: ofen-lachs-mediterran
+name: Ofen-Lachs mediterran mit Kartoffeln & Tomaten
+hauptkategorie: high-protein
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Griechisch & Mediterran
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 35, wartezeit: 0}
+ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", Fleischthermometer]
+zutaten:
+  - gruppe: Gemüse & Kartoffeln
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 400, hinweis: "mit Schale, gut gewaschen"}
+  - {id: zwiebel, zutat: Zwiebel, g: 60, anzeige: "½ Zwiebel", hinweis: "am besten rot"}
+  - {id: tomaten, zutat: Tomaten, name: Kirschtomaten, g: 200}
+  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 2, anzeige: "2 TL"}
+  - {id: salz_k, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - gruppe: Lachs
+  - {id: lachs, zutat: Lachsfilet ohne Haut roh, name: Lachsfilets, g: 400, anzeige: "4 Lachsfilets à 100 g", hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
+  - {id: zitrone, zutat: Zitronensaft, g: 15, anzeige: "1 EL"}
+  - {id: salz_l, zutat: Salz, g: 1, anzeige: "2 Prisen"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 30}
+mise_en_place:
+  - "Backofen auf 200 °C Ober-/Unterhitze (180 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "{lachs} am Vorabend im Kühlschrank auftauen und trocken tupfen."
+  - "{kartoffeln} in 1 cm dicke Scheiben schneiden. {zwiebel} in Spalten. {tomaten} ganz lassen. {knoblauch} in Scheiben."
+schritte:
+  - titel: Kartoffeln vorbacken
+    text: "Kartoffeln, Zwiebel, Knoblauch, {oel}, {oregano} und {salz_k} in der Auflaufform mischen und in einer Lage verteilen. Auf mittlerer Schiene bei 200 °C Ober-/Unterhitze (180 °C Umluft) 20 Minuten backen, bis die Kartoffeln am Rand goldbraun werden."
+    timer_min: 20
+  - titel: Lachs dazu
+    text: "Form herausnehmen, Kartoffeln wenden und an den Rand schieben. Lachs in die Mitte legen, mit {zitrone}, {salz_l} und {pfeffer} würzen, Kirschtomaten drumherum verteilen und {feta} darüberbröseln. Zurück auf die mittlere Schiene und bei 200 °C Ober-/Unterhitze (180 °C Umluft) 12–15 Minuten backen. Fertig bei 52–55 °C Kerntemperatur (glasig-saftig) bzw. 60 °C (durch); der Lachs blättert dann leicht auf."
+    timer_min: 15
+zeitablauf:
+  - "Während die Kartoffeln vorbacken: Lachs würzen und alles bereitstellen. Insgesamt ein Blech, kaum Abwasch."
+fehler:
+  - "**Lachs trocken:** zu lange im Ofen. Lösung: ab Minute 10 messen, bei 55 °C raus; er gart nach."
+  - "**Kartoffeln noch hart:** zu dick geschnitten. Lösung: 1 cm Scheiben und 20 Minuten vorbacken."
+  - "**Weiße Flocken am Lachs:** austretendes Eiweiß, Zeichen für zu starke Hitze. Lösung: früher herausnehmen."
+anrichten: "Pro Teller 2 Lachsfilets mit der Hälfte der Kartoffeln, Tomaten und Feta: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: false
+  aufwaermen: "Am besten frisch. Reste am nächsten Tag kalt oder 1½ Minuten bei 400 W in der Mikrowelle."
+varianten:
+  - {titel: Mit Kabeljau, text: "400 g Kabeljau statt Lachs, 10–12 Minuten backen (deutlich weniger Fett).", aenderung: {"Lachsfilet ohne Haut roh": -400, "Kabeljaufilet roh": 400}}
+  - {titel: Weniger kcal, text: "Kartoffeln auf 250 g und Feta weglassen.", aenderung: {"Kartoffeln festkochend roh": -150, "Feta 45 % Fett i. Tr.": -30}}
+  - {titel: Mit Spinat, text: "100 g Babyspinat unter die heißen Kartoffeln heben.", aenderung: {"Babyspinat": 100}}
+tipps:
+  - "Abgeriebene Zitronenschale über den fertigen Lachs: noch mediterraner."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

@@ -51,7 +51,7 @@ varianten:
   - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -15}}
   - {titel: Schoko-Apfel, text: "Whey Protein Schoko statt Vanille und 1 TL Backkakao (5 g) dazu.", aenderung: {"Whey Protein Vanille": -40, "Whey Protein Schoko": 40, "Kakaopulver stark entölt": 5}}
 tipps:
-  - "Ein halber Teelöffel Vanillezucker (4 g) macht es noch strudeliger, kostet aber 4 g Zucker pro Glas."
+  - "Ein paar Tropfen Vanillearoma (falls im Vorrat) machen es noch strudeliger, ohne nennenswerte kcal."
   - "Den Apfel mit Schale raspeln: mehr Aroma und Ballaststoffe."
 gargewicht_g: null
 bewertung: {sterne: null, kommentar: null, datum: null}

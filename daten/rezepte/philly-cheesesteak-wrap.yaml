@@ -1,0 +1,61 @@
+id: philly-cheesesteak-wrap
+name: Philly-Cheesesteak-Wrap
+hauptkategorie: schnell
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Philly Cheesesteak Wrap / Cheesesteak Bowl“"
+  link: null
+  aenderungen: "Hoagie-Brötchen durch Weizen-Tortilla, Provolone durch Reibekäse light und Frischkäse light ersetzt, Ribeye durch mageres Hüftsteak; ca. 300 kcal weniger als ein Original-Cheesesteak."
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 12, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm", Pfannenwender, scharfes Messer]
+zutaten:
+  - gruppe: Füllung
+  - {id: steak, zutat: Rinderhüftsteak roh, name: Hüftsteak, g: 400, hinweis: "15 Minuten angefroren schneidet es sich hauchdünn"}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 100, anzeige: "1 große Zwiebel"}
+  - {id: paprika, zutat: Paprika rot, name: Paprika, g: 150, anzeige: "1 Paprika", hinweis: "klassisch grün, rot geht auch"}
+  - {id: salz, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
+  - gruppe: Käse & Wrap
+  - {id: frischkaese, zutat: Frischkäse light, g: 40, anzeige: "1 gehäufter EL"}
+  - {id: kaese, zutat: Reibekäse light, g: 60}
+  - {id: wraps, zutat: Weizen-Tortilla-Wraps, name: Weizen-Tortillas, g: 124, anzeige: "2 große Weizen-Tortillas"}
+mise_en_place:
+  - "{steak} 15 Minuten ins Gefrierfach legen, dann quer zur Faser in hauchdünne Scheiben (2–3 mm) schneiden."
+  - "{zwiebel} und {paprika} in feine Streifen schneiden."
+schritte:
+  - titel: Gemüse braten
+    text: "Die Hälfte von {oel} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen. Zwiebel und Paprika 5 Minuten braten, bis sie weich und an den Rändern gebräunt sind. An den Pfannenrand schieben."
+    timer_min: 5
+  - titel: Steak braten
+    text: "Auf Stufe 9 von 9 schalten, restliches Öl in die Mitte geben und das Fleisch in einer Lage hineinlegen. 1 Minute scharf anbraten, wenden, mit {salz} und {pfeffer} würzen und 1 weitere Minute braten. Die dünnen Scheiben sind dann durch (Garprobe: kein rotes Fleisch mehr, Kerntemperatur bei 2 mm Scheiben sofort über 60 °C). Mit dem Gemüse mischen."
+    timer_min: 2
+  - titel: Käse schmelzen
+    text: "Auf Stufe 3 von 9 zurückschalten, {frischkaese} und {kaese} über die Füllung geben und 1 Minute schmelzen lassen, dabei einmal durchheben, bis alles cremig zusammenhält."
+    timer_min: 1
+  - titel: Wraps rollen und toasten
+    text: "Füllung auf {wraps} verteilen (in die untere Hälfte), Seiten einschlagen und fest aufrollen. Pfanne auswischen und die Wraps mit der Naht nach unten auf Stufe 6 von 9 ohne Fett 1½ Minuten pro Seite toasten, bis sie goldbraun sind."
+    timer_min: 3
+zeitablauf:
+  - "Während das Fleisch anfriert: Zwiebel und Paprika schneiden."
+fehler:
+  - "**Fleisch zäh:** zu dick geschnitten oder zu lange. Lösung: angefroren hauchdünn schneiden, insgesamt nur 2 Minuten braten."
+  - "**Wrap reißt:** zu voll. Lösung: Füllung nur auf die untere Hälfte, Seiten zuerst einschlagen."
+  - "**Fleisch kocht im Saft:** Pfanne nicht heiß. Lösung: Stufe 9 von 9, Fleisch in einer Lage."
+anrichten: "Pro Teller 1 Wrap, schräg halbiert: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "In der Pfanne ohne Fett auf Stufe 5 von 9 2 Minuten pro Seite oder im Airfryer bei 180 °C 5 Minuten."
+varianten:
+  - {titel: Als Bowl, text: "Statt Wrap auf 120 g gekochtem Basmatireis (Rohgewicht) anrichten.", aenderung: {"Weizen-Tortilla-Wraps": -124, "Basmatireis ungekocht": 120}}
+  - {titel: Mit Hähnchen, text: "400 g Hähnchenbrust in dünnen Streifen statt Rind, bis 74 °C Kerntemperatur braten.", aenderung: {"Rinderhüftsteak roh": -400, "Hähnchenbrustfilet roh": 400}}
+  - {titel: Weniger kcal, text: "Reibekäse auf 30 g reduzieren.", aenderung: {"Reibekäse light": -30}}
+tipps:
+  - "Ein Spritzer Senf in die Käsemischung: schmeckt mehr nach Original."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

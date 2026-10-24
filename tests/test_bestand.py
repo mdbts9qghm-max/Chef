@@ -70,6 +70,7 @@ def test_bestand_gegen_spec(echte_rezepte, db):
 
 
 def test_zutaten_der_rezepte_existieren_und_limit(echte_rezepte, db):
+    """SPEC 5.3: max. ca. 90 verschiedene Zutaten (Wasser wird nicht eingekauft, zählt nicht)."""
     genutzt = {z["zutat"] for r in echte_rezepte.values() for z in nw.zutaten_eintraege(r)}
     assert genutzt <= set(db)
-    assert len(genutzt) <= config.ZUTATEN_MAX
+    assert len(genutzt - config.NICHT_EINKAUFEN) <= config.ZUTATEN_MAX
