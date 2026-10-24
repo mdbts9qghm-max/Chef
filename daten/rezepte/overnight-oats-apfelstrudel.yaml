@@ -1,0 +1,57 @@
+id: overnight-oats-apfelstrudel
+name: Overnight Oats „Apfelstrudel“
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Deutsch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 4, wartezeit: 480}
+ausstattung: ["2 Schraubgläser à 500 ml", "Pfanne 24 cm", Reibe]
+zutaten:
+  - gruppe: Oats
+  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: quark, zutat: Magerquark, g: 300}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 200, hinweis: "200 ml"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
+  - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 3, anzeige: "1½ TL"}
+  - gruppe: Apfel & Streusel
+  - {id: apfel, zutat: Apfel, g: 120, anzeige: "1 kleiner Apfel", hinweis: "z. B. Elstar, entkernt gewogen"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
+mise_en_place:
+  - "{apfel} waschen, vierteln, entkernen und mit Schale grob raspeln."
+schritte:
+  - titel: Mandeln rösten
+    text: "{mandeln} ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 unter Schwenken 3 Minuten goldbraun rösten, auf einen Teller geben und abkühlen lassen."
+    timer_min: 3
+  - titel: Oats anrühren
+    text: "{hafer}, {quark}, {milch}, {whey} und {zimt} in einer Schüssel 30 Sekunden glatt rühren. Zwei Drittel des geraspelten Apfels unterheben."
+    timer_min: null
+  - titel: Abfüllen und ziehen lassen
+    text: "Masse auf die 2 Gläser verteilen, restlichen Apfel obenauf legen, verschließen und mindestens 8 Stunden (über Nacht) in den Kühlschrank stellen. Fertig, wenn die Flocken weich und die Masse löffelfest ist."
+    timer_min: null
+  - titel: Streusel drauf
+    text: "Morgens die gerösteten Mandeln als „Strudelkruste“ darüberstreuen."
+    timer_min: null
+zeitablauf:
+  - "Während die Mandeln rösten: Apfel raspeln und die Oats anrühren."
+fehler:
+  - "**Apfel wird braun:** ganz unten nicht bedeckt. Lösung: Raspeln sofort unterrühren; die Säure vom Quark verhindert das Bräunen."
+  - "**Zu fest:** Quark bindet viel Flüssigkeit. Lösung: morgens 2–3 EL Wasser unterrühren."
+  - "**Fade:** Zimt zu sparsam. Lösung: die 1½ TL wirklich nehmen, eine Prise Salz hilft zusätzlich."
+anrichten: "Pro Glas {portion_g}: die Oats mit Apfel, darauf 15 g geröstete Mandeln."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "Kalt oder als „Apfelstrudel-Porridge“ 2 Minuten bei 600 W, nach 1 Minute umrühren."
+  separat: "Geröstete Mandeln im Schraubglas, nicht im Kühlschrank."
+varianten:
+  - {titel: Süßer mit Banane, text: "1 kleine Banane (100 g) zerdrückt unterrühren.", aenderung: {"Banane geschält": 100}}
+  - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -15}}
+  - {titel: Schoko-Apfel, text: "Whey Protein Schoko statt Vanille und 1 TL Backkakao (5 g) dazu.", aenderung: {"Whey Protein Vanille": -40, "Whey Protein Schoko": 40, "Kakaopulver stark entölt": 5}}
+tipps:
+  - "Ein halber Teelöffel Vanillezucker (4 g) macht es noch strudeliger, kostet aber 4 g Zucker pro Glas."
+  - "Den Apfel mit Schale raspeln: mehr Aroma und Ballaststoffe."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

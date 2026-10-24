@@ -1,0 +1,67 @@
+id: protein-french-toast
+name: Protein-French-Toast mit Beeren
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Protein French Toast“"
+  link: null
+  aenderungen: "Weißbrot durch Vollkorntoast, Sahne-Eiermilch durch Eier, Eiklar, Milch und Vanille-Whey ersetzt; Butter in der Pfanne durch 8 g Öl, Sirup durch Skyr-Topping mit etwas Honig."
+schwierigkeit: leicht
+zeit: {vorbereitung: 5, kochen: 12, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm (beschichtet)", "flache Schale", Mikrowelle]
+zutaten:
+  - gruppe: Eiermilch
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
+  - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 150, hinweis: "150 ml"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 80, hinweis: "80 ml"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
+  - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 2, anzeige: "1 TL"}
+  - gruppe: Toast
+  - {id: toast, zutat: Vollkorntoast, g: 160, anzeige: "4 Scheiben Vollkorntoast"}
+  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - gruppe: Topping
+  - {id: skyr, zutat: Skyr natur, g: 200}
+  - {id: beeren, zutat: Beerenmischung TK, g: 150}
+  - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+mise_en_place:
+  - "{beeren} 1½ Minuten bei 600 W in der Mikrowelle auftauen."
+  - "{toast} bereitlegen; leicht angetrocknetes Brot vom Vortag saugt besser und zerfällt nicht."
+schritte:
+  - titel: Eiermilch
+    text: "{eier}, {eiklar}, {milch}, {whey} und {zimt} in der flachen Schale mit einer Gabel 30 Sekunden verquirlen, bis keine Whey-Klümpchen mehr schwimmen."
+    timer_min: null
+  - titel: Einweichen
+    text: "Toastscheiben nacheinander je 15 Sekunden pro Seite in die Eiermilch legen, bis sie vollgesogen, aber noch formstabil sind. Restliche Eiermilch gleichmäßig über die Scheiben in der Schale gießen, damit nichts übrig bleibt."
+    timer_min: null
+  - titel: Ausbraten
+    text: "Die Hälfte von {oel} in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). 2 Scheiben hineinlegen und 2½–3 Minuten pro Seite braten, bis sie goldbraun sind und sich in der Mitte fest anfühlen (Ei gestockt). Mit dem restlichen Öl die anderen 2 Scheiben braten."
+    timer_min: 6
+  - titel: Topping
+    text: "{skyr} glatt rühren. Je 2 Scheiben auf einen Teller, Skyr und Beeren mit Saft darauf, mit {honig} beträufeln und {mandeln} bestreuen."
+    timer_min: null
+zeitablauf:
+  - "Während die erste Ladung brät: die zweite Ladung Toast einweichen."
+fehler:
+  - "**Innen noch flüssig:** Hitze zu hoch, außen schnell braun. Lösung: Stufe 6 von 9, lieber 30 Sekunden länger."
+  - "**Toast zerfällt:** zu lange eingeweicht oder sehr frisches Brot. Lösung: 15 Sekunden pro Seite, Brot vom Vortag."
+  - "**Schmeckt nach Rührei:** Zimt und Vanille fehlen. Lösung: Zimt nicht weglassen, Vanille-Whey verwenden."
+anrichten: "Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, 1 TL Honig und 7 g Mandeln: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: true
+  einfrieren_monate: 1
+  aufwaermen: "Im Toaster oder in der Pfanne ohne Fett auf Stufe 5 von 9, 1 Minute pro Seite."
+  separat: "Topping getrennt lagern."
+varianten:
+  - {titel: Mehr Protein, text: "Skyr-Topping auf 300 g erhöhen.", aenderung: {"Skyr natur": 100}}
+  - {titel: Bananen-Zimt, text: "1 kleine Banane (100 g) in Scheiben statt Beeren, Honig weglassen.", aenderung: {"Beerenmischung TK": -150, "Banane geschält": 100, "Honig": -10}}
+  - {titel: Weniger kcal, text: "Mandeln weglassen und nur 1 TL Öl verwenden.", aenderung: {"Mandeln gehobelt": -15, "Rapsöl": -4}}
+tipps:
+  - "Eine Prise Salz in der Eiermilch macht den Geschmack runder und süßer."
+  - "Für Extra-Crunch die Scheiben vor dem Braten auf einer Seite in gehobelte Mandeln drücken."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

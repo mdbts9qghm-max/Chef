@@ -89,6 +89,8 @@ Olivenöl,900,0,100,14,0,0,0,0,1.0,sonstiges
 Rapsöl,900,0,100,7,0,0,0,0,1.0,sonstiges
 Sesamöl geröstet,900,0,100,14,0,0,0,0,1.0,sonstiges
 Salz,0,0,0,0,0,0,0,100,1.0,sonstiges
+# Wasser: nur für Mengen und Gargewicht, kommt nicht auf die Einkaufsliste
+Wasser,0,0,0,0,0,0,0,0,0.9,sonstiges
 Pfeffer schwarz gemahlen,276,10.4,3.3,1.4,38.6,0.6,25.3,0.05,1.0,sonstiges
 Paprikapulver edelsüß,315,14.1,12.9,2.1,19.1,10,34.9,0.2,1.0,sonstiges
 Kreuzkümmel gemahlen,425,17.8,22.3,1.5,33.7,2.3,10.5,0.4,1.0,sonstiges

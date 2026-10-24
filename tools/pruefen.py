@@ -92,6 +92,8 @@ def pruefe_rezept(rezept, db, dateiname=None):
     benutzt = set()
     for t in texte(rezept):
         for m in PLATZHALTER.finditer(t):
+            if m.group(1) in config.SONDER_PLATZHALTER:
+                continue
             if m.group(1) not in ids:
                 e.fehler.append(f"Platzhalter {{{m.group(1)}}} verweist auf keine Zutat")
             benutzt.add(m.group(1))
@@ -173,6 +175,15 @@ def pruefe_rezept(rezept, db, dateiname=None):
         e.fehler.append("Mise en place ist leer")
     if not schritte:
         e.fehler.append("Keine Zubereitungsschritte")
+
+    # Varianten: strukturierte brauchen titel/text, Zutaten der Änderung müssen existieren
+    for v in rezept["varianten"] or []:
+        if isinstance(v, dict):
+            if not (v.get("titel") and v.get("text")):
+                e.fehler.append("Variante braucht titel und text")
+            fremd = [z for z in (v.get("aenderung") or {}) if z not in db]
+            if fremd:
+                e.fehler.append(f"Variante „{v.get('titel')}“: Zutaten nicht in zutaten.csv: {', '.join(fremd)}")
 
     # Inspiration vollständig
     insp = rezept.get("inspiration")

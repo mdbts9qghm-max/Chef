@@ -88,7 +88,7 @@
 
 ## Anrichten
 
-Reis mit einer Gabel auflockern und halbieren: ca. 210 g gekochter Reis pro Teller. Daneben 2 Hähnchenstücke legen und die Hälfte der Sauce (ca. 230 g) darübergeben. Für Meal Prep: Reis und Hähnchen mit Sauce nebeneinander in eine Box mit Trennsteg.
+Reis mit einer Gabel auflockern und halbieren. Pro Teller die Hälfte des Reises, 2 Hähnchenstücke und die Hälfte der Sauce: ca. 600 g pro Portion. Für Meal Prep: Reis und Hähnchen mit Sauce nebeneinander in eine Box mit Trennsteg.
 
 ## Meal Prep & Aufbewahrung
 
@@ -99,10 +99,10 @@ Reis mit einer Gabel auflockern und halbieren: ca. 210 g gekochter Reis pro Tell
 
 ## Varianten & Austausch
 
-- **Mit Putenbrust:** 400 g Putenbrustfilet statt Hähnchen (+4 kcal, +1 g Protein pro Portion), Garzeit gleich, ebenfalls 74 °C Kerntemperatur.
-- **Mit Spaghetti statt Reis:** 150 g Spaghetti statt Basmatireis (+7 kcal, +3,4 g Protein pro Portion), nach Packung in Salzwasser kochen.
-- **Weniger kcal:** Reis auf 100 g reduzieren (−88 kcal, −2 g Protein pro Portion): wird zu einem kalorienärmeren Abendessen mit ca. 650 kcal.
-- **Mehr Gemüse-Feeling ohne Mehraufwand:** 100 g zusätzlicher Babyspinat (+10 kcal, +1,4 g Protein pro Portion).
+- **Mit Putenbrust:** 400 g Putenbrustfilet statt Hähnchen; Garzeit gleich, ebenfalls 74 °C Kerntemperatur. (+4 kcal, +1 g Protein, −0,4 g Fett pro Portion)
+- **Mit Pasta statt Reis:** 150 g Spaghetti oder Penne statt Basmatireis, nach Packung in Salzwasser kochen. (+7 kcal, +3,4 g Protein, +0,7 g Fett pro Portion)
+- **Weniger kcal:** Reis auf 100 g reduzieren; ergibt ein leichteres Abendessen mit ca. 650 kcal. (−88 kcal, −2 g Protein, −0,2 g Fett pro Portion)
+- **Mehr Grün ohne Mehraufwand:** 100 g zusätzlicher Babyspinat. (+11 kcal, +1,5 g Protein, +0,2 g Fett pro Portion)
 
 ## Tipps
 

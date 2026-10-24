@@ -52,7 +52,7 @@ fehler:
   - "**Haferstückchen im Teig:** zu kurz gemixt. Lösung: mindestens 30 Sekunden auf höchster Stufe, dabei einmal mit dem Spatel nach unten schieben."
   - "**Schmeckt nach Eiweiß statt nach Schokolade:** Whey ohne Kakao-Anteil oder Salz vergessen. Lösung: Backkakao nicht weglassen, die Prise Salz rundet ab."
   - "**Bleibt in der Form kleben:** ohne Backpapier gebacken. Lösung: immer auslegen, Whey-Teige haften stark."
-anrichten: "Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes Wasser getauchten Messer halbieren: eine Hälfte (ca. 330 g) ist eine Portion. Für Meal Prep jede Hälfte in 4 Stücke schneiden und in eine Box legen. Dazu passen ein Kaffee oder ein Glas Milch (nicht mitgerechnet)."
+anrichten: "Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes Wasser getauchten Messer halbieren: eine Hälfte ({portion_g}) ist eine Portion. Für Meal Prep jede Hälfte in 4 Stücke schneiden und in eine Box legen. Dazu passen ein Kaffee oder ein Glas Milch (nicht mitgerechnet)."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: true
@@ -60,10 +60,10 @@ aufbewahrung:
   aufwaermen: "Kalt essen oder 30–40 Sekunden bei 600 W in der Mikrowelle anwärmen; dann wird die Schokolade wieder weich. Gefroren: über Nacht im Kühlschrank auftauen."
   separat: "Erdnussbutter-Linien erst nach dem Abkühlen ziehen; die Stücke mit Backpapier zwischen den Lagen stapeln."
 varianten:
-  - "**Mehr Protein:** Skyr auf 350 g erhöhen und Milch weglassen (+13 kcal, +4,1 g Protein pro Portion)."
-  - "**Weniger kcal:** Erdnussbutter weglassen (−61 kcal, −2,6 g Protein, −4,9 g Fett pro Portion)."
-  - "**Himbeer-Brownie:** 80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter (−46 kcal, −2,1 g Protein pro Portion), 2 Minuten länger backen."
-  - "**Vanille statt Schoko:** Whey Protein Vanille und Backkakao weglassen, dafür 1 TL Zimt (−26 kcal, −1,4 g Protein pro Portion): wird ein Bananenbrot-Blondie."
+  - {titel: Mehr Protein, text: "Skyr auf 350 g erhöhen und die Milch weglassen.", aenderung: {"Skyr natur": 100, "Milch 1,5 % Fett": -80}}
+  - {titel: Weniger kcal, text: "Erdnussbutter weglassen.", aenderung: {"Erdnussbutter 100 % Erdnüsse": -20}}
+  - {titel: Himbeer-Brownie, text: "80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter, 2 Minuten länger backen.", aenderung: {"Himbeeren TK": 80, "Erdnussbutter 100 % Erdnüsse": -20}}
+  - {titel: Vanille statt Schoko, text: "Whey Protein Vanille statt Schoko, Backkakao weglassen, dafür 1 TL Zimt (2 g): wird ein Bananenbrot-Blondie.", aenderung: {"Whey Protein Schoko": -40, "Whey Protein Vanille": 40, "Kakaopulver stark entölt": -20, "Zimt gemahlen": 2}}
 tipps:
   - "Je reifer die Banane, desto weniger merkt man, dass kein Zucker drin ist. Bananen mit braunen Flecken einfrieren und für diesen Brownie aufheben."
   - "Über Nacht im Kühlschrank wird der Brownie noch fudgiger. Wer es dessertartig mag, isst ihn kalt mit 1 Prise Meersalzflocken obendrauf."

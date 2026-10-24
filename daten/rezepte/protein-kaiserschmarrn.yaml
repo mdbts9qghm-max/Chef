@@ -1,0 +1,64 @@
+id: protein-kaiserschmarrn
+name: Protein-Kaiserschmarrn mit Apfel-Beeren-Kompott
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Deutsch
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 8, kochen: 15, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm (beschichtet) mit Deckel", "kleiner Topf ca. 1 l", Schneebesen, "2 Pfannenwender"]
+zutaten:
+  - gruppe: Teig
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 180, anzeige: "3 Eier Gr. M", hinweis: "getrennt"}
+  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 80}
+  - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 80, hinweis: "80 ml"}
+  - {id: backpulver, zutat: Backpulver, g: 3, anzeige: "½ TL"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+  - {id: butter, zutat: Butter, g: 10, anzeige: "2 TL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+  - {id: erythrit, zutat: Erythrit, g: 10, anzeige: "1 EL", hinweis: "im Mixer zu Puder gemahlen"}
+  - gruppe: Kompott
+  - {id: apfel, zutat: Apfel, g: 150, anzeige: "1 Apfel", hinweis: "entkernt gewogen"}
+  - {id: beeren, zutat: Beerenmischung TK, g: 100}
+  - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 1, anzeige: "½ TL"}
+mise_en_place:
+  - "{eier:n} trennen: Eiweiß in eine fettfreie Schüssel, Eigelb in eine zweite."
+  - "{apfel} vierteln, entkernen und in 1 cm Würfel schneiden."
+schritte:
+  - titel: Kompott kochen
+    text: "Apfelwürfel, {beeren}, {zimt} und 3 EL Wasser im kleinen Topf auf Stufe 6 von 9 aufkochen, dann auf Stufe 3 von 9 zugedeckt 6–8 Minuten köcheln, bis die Äpfel weich sind, aber noch Form haben."
+    timer_min: 8
+  - titel: Teig anrühren
+    text: "Eigelbe mit {quark}, {mehl}, {whey}, {milch} und {backpulver} glatt rühren. Eiweiß mit {salz} 2 Minuten mit dem Schneebesen (oder 1 Minute mit dem Handrührgerät) steif schlagen, bis Spitzen stehen bleiben. Eischnee in zwei Portionen locker unterheben, nicht rühren."
+    timer_min: 2
+  - titel: Anbacken
+    text: "{butter} in der Pfanne (28 cm) auf Stufe 5 von 9 schmelzen, bis sie schäumt. Teig hineingeben, glatt streichen, Deckel auflegen und 5–6 Minuten backen, bis die Unterseite goldbraun und die Oberfläche fast gestockt ist."
+    timer_min: 6
+  - titel: Wenden und zerreißen
+    text: "Teig mit dem Pfannenwender vierteln, die Viertel wenden und weitere 2 Minuten backen. Dann mit zwei Pfannenwendern in mundgerechte Stücke reißen, {mandeln} dazugeben und auf Stufe 6 von 9 noch 2 Minuten schwenken, bis die Stücke rundum leicht karamellisiert sind und innen nicht mehr feucht."
+    timer_min: 4
+zeitablauf:
+  - "Kompott zuerst aufsetzen; während es köchelt, den Teig rühren und backen."
+fehler:
+  - "**Schmarrn fällt zusammen:** Eischnee kaputtgerührt. Lösung: nur unterheben, Schüssel muss fettfrei sein."
+  - "**Unten schwarz, oben flüssig:** Hitze zu hoch. Lösung: Stufe 5 von 9 und Deckel drauf, damit er auch von oben stockt."
+  - "**Trocken:** zu lange geschwenkt. Lösung: nach dem Zerreißen nur 2 Minuten."
+anrichten: "Schmarrn halbieren, mit {erythrit} bestäuben und je die Hälfte des Kompotts daneben geben: {portion_g} pro Teller."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: false
+  aufwaermen: "In der Pfanne auf Stufe 5 von 9 mit 1 TL Wasser 2 Minuten schwenken; Kompott kalt oder warm."
+  separat: "Kompott separat, hält 4 Tage."
+varianten:
+  - {titel: Mehr Protein, text: "Dazu je 100 g Skyr als Dip.", aenderung: {"Skyr natur": 200}}
+  - {titel: Mit Kirschen, text: "120 g abgetropfte Sauerkirschen statt Apfel-Beeren-Kompott, kalt dazu.", aenderung: {"Apfel": -150, "Beerenmischung TK": -100, "Sauerkirschen Glas abgetropft": 120}}
+  - {titel: Weniger kcal, text: "Butter auf 5 g und Mandeln weglassen.", aenderung: {"Butter": -5, "Mandeln gehobelt": -15}}
+tipps:
+  - "Erythrit im Mixer 10 Sekunden zu Puder mahlen: sieht aus wie Puderzucker und klumpt nicht."
+  - "Der Kaiserschmarrn wird luftiger, wenn die Eier Zimmertemperatur haben."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

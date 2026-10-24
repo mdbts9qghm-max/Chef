@@ -8,7 +8,8 @@ Jedes Rezept so genau, dass man es ohne Nachdenken nachkochen kann. **Jede Zahl 
 ## Datenmodell
 - **Single Source of Truth:** `daten/` (YAML/CSV). Rezepte in `daten/rezepte/<id>.yaml`, Pläne in `daten/wochenplaene/KW-XX-JJJJ.yaml`, Vorrat in `daten/vorrat.yaml`.
 - **Generiert, nie von Hand bearbeiten:** `rezepte/`, `rezeptbuch.md`, `wochenplaene/*.md`, `einkaufslisten/`, `web/`.
-- Mengen in Texten nur über Platzhalter: `{zutat_id}` = Menge + Name, `{zutat_id:n}` = nur Name. Jede Zutat kommt mindestens einmal im Text vor.
+- Mengen in Texten nur über Platzhalter: `{zutat_id}` = Menge + Name, `{zutat_id:n}` = nur Name, `{portion_g}` = berechnetes Gewicht pro Portion (in „Anrichten“ statt geschätzter Gramm). Jede Zutat kommt mindestens einmal im Text vor.
+- Varianten strukturiert mit `aenderung: {Zutat: ±g}`; die Makro-Änderung rechnet der Generator. Ofenschritte nennen immer die Schiene (daran erkennt die Prüfung sie).
 - Schwellenwerte/Toleranzen nur in `tools/config.py` (liest Ziele aus `profil.yaml`), nie hart im Code verteilt.
 
 ## Harte Regeln (Kurzfassung)
@@ -61,7 +62,7 @@ python3 -m pytest                        # Tests (SPEC 12.2)
 - [x] **Phase 1 – Planung & Onboarding** (22.10.2026): Onboarding, SPEC.md, CLAUDE.md, profil.yaml, Ordnergerüst, Git
 - [x] **Phase 2 – Grundlagen** (22.10.2026, Beispielrezepte abgenommen 24.10.2026): ✓ zutaten.csv (91 Zutaten, alle plausibel), ✓ packungen.csv, ✓ config.py, ✓ naehrwerte.py, ✓ pruefen.py, ✓ generieren.py (Markdown), ✓ 44 Tests, ✓ Beispielrezepte `fruehstuecks-brownie` + `marry-me-chicken`. Offen: Zutatenbestand nach Phase 4 auf ≤ 90 genutzte Zutaten trimmen.
 - [x] **Phase 3 – Rezeptliste** (24.10.2026): 50 Gerichte in `daten/rezeptplan.yaml` → `rezeptplan.md`, Abgleich 5.1–5.3 per `tools/bestand.py` (Plan erfüllt alle Vorgaben), „Spaghetti“ → „Hartweizennudeln ungekocht“, „Rote Currypaste“ neu
-- [ ] **Phase 4 – Rezepte schreiben:** Runde 1/5 · 2/5 · 3/5 · 4/5 · 5/5, Abschlussübersicht
+- [ ] **Phase 4 – Rezepte schreiben:** ✓ Runde 1/5 (Nr. 1–10) · 2/5 · 3/5 · 4/5 · 5/5, Abschlussübersicht
 - [ ] **Phase 5 – Wochenplanung & Einkauf:** einkauf.py, Wochenplan-Generierung, Tests, erster echter Wochenplan
 - [ ] **Phase 6 – Web-App:** Ansichten 10.2, JSON-LD, MacroFactor-Button, PWA, Playwright-Screenshots
 - [ ] **Phase 7 – Import & Komfort:** Import, Kühlschrank-Modus, Bewertungen

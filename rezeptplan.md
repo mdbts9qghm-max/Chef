@@ -1,22 +1,22 @@
 <!-- Generiert aus daten/rezeptplan.yaml – nicht von Hand bearbeiten. -->
 # Rezeptplan: Startbestand mit 50 Rezepten
 
-Stand: 2 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
+Stand: 11 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
 
 ## Frühstück, süß (15)
 
 | Nr. | Gericht | id | Küche | Hauptprotein | Ziel-kcal | Inspiration | Tags | Status |
 |---:|---|---|---|---|---:|---|---|---|
 | 1 | Frühstücks-Brownie | `fruehstuecks-brownie` | Amerikanisch | Skyr + Whey | 606 | ja | MP | ✓ geschrieben (606 kcal) |
-| 2 | Protein-Joghurt-Bowl mit Knuspermüsli & Beeren | `protein-joghurt-bowl` | International / Fusion | Skyr + Whey | 560 | nein | S | offen |
-| 3 | Protein-Pancakes mit Heidelbeeren & Honig | `protein-pancakes` | Amerikanisch | Magerquark + Ei | 590 | ja | S | offen |
-| 4 | Protein-Waffeln mit Kirschen & Vanille-Skyr | `protein-waffeln` | Amerikanisch | Magerquark + Whey | 600 | nein | S | offen |
-| 5 | Overnight Oats „Himbeer-Cheesecake“ | `overnight-oats-cheesecake` | Amerikanisch | Skyr + Whey | 570 | ja | MP, S | offen |
-| 6 | Overnight Oats „Apfelstrudel“ | `overnight-oats-apfelstrudel` | Deutsch | Magerquark + Whey | 570 | nein | MP, S | offen |
-| 7 | Quark-Auflauf mit Kirschen | `quark-auflauf-kirschen` | Deutsch | Magerquark + Ei | 580 | nein | MP | offen |
-| 8 | Protein-French-Toast mit Beeren | `protein-french-toast` | Amerikanisch | Ei + Eiklar + Skyr | 580 | ja | S | offen |
-| 9 | Protein-Kaiserschmarrn mit Apfel-Beeren-Kompott | `protein-kaiserschmarrn` | Deutsch | Magerquark + Ei | 600 | nein | S | offen |
-| 10 | Protein-Milchreis mit Zimt & Kirschen | `protein-milchreis` | Deutsch | Milch + Whey | 580 | nein | MP | offen |
+| 2 | Protein-Joghurt-Bowl mit Knuspermüsli & Beeren | `protein-joghurt-bowl` | International / Fusion | Skyr + Whey | 560 | nein | S | ✓ geschrieben (579 kcal) |
+| 3 | Protein-Pancakes mit Heidelbeeren & Honig | `protein-pancakes` | Amerikanisch | Magerquark + Ei | 590 | ja | S | ✓ geschrieben (567 kcal) |
+| 4 | Protein-Waffeln mit Kirschen & Vanille-Skyr | `protein-waffeln` | Amerikanisch | Magerquark + Whey | 600 | nein | S | ✓ geschrieben (591 kcal) |
+| 5 | Overnight Oats „Himbeer-Cheesecake“ | `overnight-oats-cheesecake` | Amerikanisch | Skyr + Whey | 570 | ja | MP, S | ✓ geschrieben (564 kcal) |
+| 6 | Overnight Oats „Apfelstrudel“ | `overnight-oats-apfelstrudel` | Deutsch | Magerquark + Whey | 570 | nein | MP, S | ✓ geschrieben (537 kcal) |
+| 7 | Quark-Auflauf mit Kirschen | `quark-auflauf-kirschen` | Deutsch | Magerquark + Ei | 580 | nein | MP | ✓ geschrieben (562 kcal) |
+| 8 | Protein-French-Toast mit Beeren | `protein-french-toast` | Amerikanisch | Ei + Eiklar + Skyr | 580 | ja | S | ✓ geschrieben (576 kcal) |
+| 9 | Protein-Kaiserschmarrn mit Apfel-Beeren-Kompott | `protein-kaiserschmarrn` | Deutsch | Magerquark + Ei | 600 | nein | S | ✓ geschrieben (570 kcal) |
+| 10 | Protein-Milchreis mit Zimt & Kirschen | `protein-milchreis` | Deutsch | Milch + Whey | 580 | nein | MP | ✓ geschrieben (556 kcal) |
 | 11 | Protein-Grießbrei mit Zimt-Apfel | `protein-griessbrei` | Deutsch | Milch + Whey | 560 | nein | S | offen |
 | 12 | Protein-Bananenbrot | `protein-bananenbrot` | Amerikanisch | Skyr + Ei + Whey | 590 | ja | MP | offen |
 | 13 | Heidelbeer-Protein-Muffins | `heidelbeer-protein-muffins` | Amerikanisch | Magerquark + Ei | 570 | nein | MP | offen |
@@ -99,18 +99,18 @@ Stand: 2 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = s
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
 
-## Ist-Stand der geschriebenen Rezepte (2)
+## Ist-Stand der geschriebenen Rezepte (11)
 
 Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.
 
 | Anforderung | Soll | Ist | |
 |---|---:|---:|---|
-| Rezepte gesamt | 50 | 2 | ✓ |
-| Bereich Frühstück | 15 | 1 | ✓ |
+| Rezepte gesamt | 50 | 11 | ✓ |
+| Bereich Frühstück | 15 | 10 | ✓ |
 | Bereich Snack | 5 | 0 | ✓ |
 | Bereich Hauptgericht | 30 | 1 | ✓ |
-| Frühstück Meal Prep | ≥ 4 | 1 | offen |
-| Frühstück Schnelle Rezepte | ≥ 5 | 0 | offen |
+| Frühstück Meal Prep | ≥ 4 | 5 | ✓ |
+| Frühstück Schnelle Rezepte | ≥ 5 | 7 | ✓ |
 | Küche Deutsch | 4 | 0 | ✓ |
 | Küche Italienisch | 5 | 0 | ✓ |
 | Küche Asiatisch | 5 | 0 | ✓ |
@@ -120,9 +120,9 @@ Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst be
 | Küche Türkisch & Orientalisch | 3 | 0 | ✓ |
 | Küche Amerikanisch | 3 | 1 | ✓ |
 | Küche International / Fusion | 1 | 0 | ✓ |
-| Meal Prep | ≥ 12 | 2 | offen |
-| Schnelle Rezepte | ≥ 15 | 0 | offen |
+| Meal Prep | ≥ 12 | 6 | offen |
+| Schnelle Rezepte | ≥ 15 | 7 | offen |
 | Kalorienarme Hauptgerichte | ≥ 6 | 0 | offen |
-| High Protein | ≥ 45 | 2 | offen |
-| Inspiration | ≥ 15 | 2 | offen |
+| High Protein | ≥ 45 | 11 | offen |
+| Inspiration | ≥ 15 | 5 | offen |
 | Hauptprotein Hähnchen | ≤ 10 | 1 | ✓ |

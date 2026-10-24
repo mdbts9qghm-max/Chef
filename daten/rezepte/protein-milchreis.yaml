@@ -1,0 +1,60 @@
+id: protein-milchreis
+name: Protein-Milchreis mit Zimt & Kirschen
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Deutsch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 3, kochen: 30, wartezeit: 10}
+ausstattung: ["Topf ca. 2 l mit schwerem Boden und Deckel", Kochlöffel]
+zutaten:
+  - gruppe: Milchreis
+  - {id: reis, zutat: Milchreis ungekocht, name: Milchreis, g: 100}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 450, hinweis: "450 ml"}
+  - {id: wasser, zutat: Wasser, g: 150, hinweis: "150 ml"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+  - gruppe: Protein-Creme
+  - {id: quark, zutat: Magerquark, g: 150}
+  - {id: whey, zutat: Whey Protein Vanille, g: 60, anzeige: "2 Messlöffel"}
+  - gruppe: Topping
+  - {id: kirschen, zutat: Sauerkirschen Glas abgetropft, name: Sauerkirschen, g: 50}
+  - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 2, anzeige: "1 TL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
+mise_en_place:
+  - "{milch} und {wasser} abmessen. {quark} und {whey} in einer Schüssel bereitstellen."
+schritte:
+  - titel: Aufkochen
+    text: "Milch, Wasser, {reis} und {salz} im Topf auf Stufe 7 von 9 unter Rühren aufkochen (ca. 5 Minuten). Sofort herunterschalten, sobald es am Rand blubbert; Milch kocht schnell über."
+    timer_min: 5
+  - titel: Quellen
+    text: "Auf Stufe 2 von 9 zurückschalten, Deckel schräg auflegen und 25 Minuten quellen lassen. Alle 5 Minuten umrühren, dabei über den Boden kratzen. Fertig, wenn die Körner weich sind und der Reis cremig, aber noch leicht flüssig ist (er dickt beim Abkühlen nach)."
+    timer_min: 25
+  - titel: Abkühlen und Protein unterrühren
+    text: "Topf vom Herd nehmen und 10 Minuten ohne Deckel abkühlen lassen (unter 60 °C, sonst flockt das Whey). {quark} mit {whey} und 3 EL vom Milchreis glatt rühren, dann unter den restlichen Milchreis heben."
+    timer_min: 10
+  - titel: Anrichten
+    text: "Auf 2 Schalen verteilen, {kirschen} daraufgeben und mit {zimt} und {mandeln} bestreuen."
+    timer_min: null
+zeitablauf:
+  - "Gut als Meal Prep am Vorabend: Während der Reis quillt, kann nebenbei anderes vorbereitet werden; nur alle 5 Minuten umrühren."
+fehler:
+  - "**Angebrannt:** Hitze zu hoch oder nicht umgerührt. Lösung: Stufe 2 von 9, Topf mit schwerem Boden, regelmäßig über den Boden kratzen."
+  - "**Whey klumpt:** in heißen Reis gerührt. Lösung: 10 Minuten abkühlen lassen und mit Quark vorrühren."
+  - "**Zu fest nach dem Kühlen:** normal. Lösung: vor dem Essen 2–3 EL Wasser oder Milch unterrühren (Milch nicht mitgerechnet)."
+anrichten: "Pro Schale {portion_g} Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und 15 g Mandeln."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "Kalt essen oder mit 2 EL Wasser 1½–2 Minuten bei 600 W, nach der Hälfte umrühren."
+  separat: "Milchreis nach dem Kochen innerhalb von 1 Stunde in den Kühlschrank. Kirschen und Mandeln erst beim Essen dazugeben."
+varianten:
+  - {titel: Apfel-Zimt, text: "120 g geriebenen Apfel statt Kirschen.", aenderung: {"Sauerkirschen Glas abgetropft": -50, "Apfel": 120}}
+  - {titel: Schoko-Milchreis, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao unterrühren.", aenderung: {"Whey Protein Vanille": -60, "Whey Protein Schoko": 60, "Kakaopulver stark entölt": 10}}
+  - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -15}}
+tipps:
+  - "Ein Stück Zitronenschale (ohne Weißes) mitkochen und vor dem Unterrühren entfernen: klassisches Milchreis-Aroma."
+  - "Eine Prise Salz ist wichtig, sie macht den Milchreis süßer, ohne Zucker."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

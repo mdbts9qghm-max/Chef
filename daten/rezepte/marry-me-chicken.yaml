@@ -69,7 +69,7 @@ fehler:
   - "**Sauce flockt aus:** Frischkäse bei starker Hitze eingerührt. Lösung: erst auf Stufe 4 von 9 zurückschalten, dann Frischkäse und Parmesan einrühren, danach nicht mehr sprudelnd kochen."
   - "**Sauce zu dünn:** Stärke hat sich im Messbecher abgesetzt. Lösung: direkt vor dem Angießen umrühren und richtig aufkochen lassen; Stärke bindet erst ab ca. 90 °C."
   - "**Reis matschig:** zu viel Wasser oder umgerührt. Lösung: Verhältnis 1 : 1,8 einhalten und den Deckel beim Quellen geschlossen lassen."
-anrichten: "Reis mit einer Gabel auflockern und halbieren: ca. 210 g gekochter Reis pro Teller. Daneben 2 Hähnchenstücke legen und die Hälfte der Sauce (ca. 230 g) darübergeben. Für Meal Prep: Reis und Hähnchen mit Sauce nebeneinander in eine Box mit Trennsteg."
+anrichten: "Reis mit einer Gabel auflockern und halbieren. Pro Teller die Hälfte des Reises, 2 Hähnchenstücke und die Hälfte der Sauce: {portion_g} pro Portion. Für Meal Prep: Reis und Hähnchen mit Sauce nebeneinander in eine Box mit Trennsteg."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: true
@@ -77,10 +77,10 @@ aufbewahrung:
   aufwaermen: "Mikrowelle 600 W, 2½–3 Minuten mit 1 EL Wasser über dem Reis, abgedeckt, nach der Hälfte umrühren. Die Sauce kann nach dem Einfrieren leicht körnig werden; kräftig umrühren."
   separat: "Reis innerhalb von 1 Stunde abkühlen (flach auf einem Teller ausbreiten) und in den Kühlschrank stellen."
 varianten:
-  - "**Mit Putenbrust:** 400 g Putenbrustfilet statt Hähnchen (+4 kcal, +1 g Protein pro Portion), Garzeit gleich, ebenfalls 74 °C Kerntemperatur."
-  - "**Mit Spaghetti statt Reis:** 150 g Spaghetti statt Basmatireis (+7 kcal, +3,4 g Protein pro Portion), nach Packung in Salzwasser kochen."
-  - "**Weniger kcal:** Reis auf 100 g reduzieren (−88 kcal, −2 g Protein pro Portion): wird zu einem kalorienärmeren Abendessen mit ca. 650 kcal."
-  - "**Mehr Gemüse-Feeling ohne Mehraufwand:** 100 g zusätzlicher Babyspinat (+10 kcal, +1,4 g Protein pro Portion)."
+  - {titel: Mit Putenbrust, text: "400 g Putenbrustfilet statt Hähnchen; Garzeit gleich, ebenfalls 74 °C Kerntemperatur.", aenderung: {"Hähnchenbrustfilet roh": -400, "Putenbrustfilet roh": 400}}
+  - {titel: Mit Pasta statt Reis, text: "150 g Spaghetti oder Penne statt Basmatireis, nach Packung in Salzwasser kochen.", aenderung: {"Basmatireis ungekocht": -150, "Hartweizennudeln ungekocht": 150}}
+  - {titel: Weniger kcal, text: "Reis auf 100 g reduzieren; ergibt ein leichteres Abendessen mit ca. 650 kcal.", aenderung: {"Basmatireis ungekocht": -50}}
+  - {titel: Mehr Grün ohne Mehraufwand, text: "100 g zusätzlicher Babyspinat.", aenderung: {"Babyspinat": 100}}
 tipps:
   - "Ein Teelöffel vom Öl der getrockneten Tomaten statt Olivenöl in der Sauce gibt deutlich mehr Aroma (kcal bleiben gleich)."
   - "Den Bratensatz vom Hähnchen nicht wegwischen: Er ist die Geschmacksbasis der Sauce."

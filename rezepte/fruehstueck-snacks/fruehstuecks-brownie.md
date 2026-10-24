@@ -75,7 +75,7 @@
 
 ## Anrichten
 
-Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes Wasser getauchten Messer halbieren: eine Hälfte (ca. 330 g) ist eine Portion. Für Meal Prep jede Hälfte in 4 Stücke schneiden und in eine Box legen. Dazu passen ein Kaffee oder ein Glas Milch (nicht mitgerechnet).
+Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes Wasser getauchten Messer halbieren: eine Hälfte (ca. 370 g) ist eine Portion. Für Meal Prep jede Hälfte in 4 Stücke schneiden und in eine Box legen. Dazu passen ein Kaffee oder ein Glas Milch (nicht mitgerechnet).
 
 ## Meal Prep & Aufbewahrung
 
@@ -86,10 +86,10 @@ Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes
 
 ## Varianten & Austausch
 
-- **Mehr Protein:** Skyr auf 350 g erhöhen und Milch weglassen (+13 kcal, +4,1 g Protein pro Portion).
-- **Weniger kcal:** Erdnussbutter weglassen (−61 kcal, −2,6 g Protein, −4,9 g Fett pro Portion).
-- **Himbeer-Brownie:** 80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter (−46 kcal, −2,1 g Protein pro Portion), 2 Minuten länger backen.
-- **Vanille statt Schoko:** Whey Protein Vanille und Backkakao weglassen, dafür 1 TL Zimt (−26 kcal, −1,4 g Protein pro Portion): wird ein Bananenbrot-Blondie.
+- **Mehr Protein:** Skyr auf 350 g erhöhen und die Milch weglassen. (+13 kcal, +4,1 g Protein, −0,5 g Fett pro Portion)
+- **Weniger kcal:** Erdnussbutter weglassen. (−61 kcal, −2,6 g Protein, −4,9 g Fett pro Portion)
+- **Himbeer-Brownie:** 80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter, 2 Minuten länger backen. (−46 kcal, −2,1 g Protein, −4,8 g Fett pro Portion)
+- **Vanille statt Schoko:** Whey Protein Vanille statt Schoko, Backkakao weglassen, dafür 1 TL Zimt (2 g): wird ein Bananenbrot-Blondie. (−26 kcal, −1,4 g Protein, −1,2 g Fett pro Portion)
 
 ## Tipps
 

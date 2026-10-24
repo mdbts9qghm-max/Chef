@@ -41,10 +41,16 @@ def platzhalter_text(eintrag, faktor=1.0):
     return f"{g} {name}"
 
 
-def ersetze_platzhalter(text, rezept, faktor=1.0):
+def portion_text(gargewicht_portion):
+    return f"ca. {gramm(round(gargewicht_portion, -1))}"
+
+
+def ersetze_platzhalter(text, rezept, faktor=1.0, portion_g=None):
     idx = {e["id"]: e for e in nw.zutaten_eintraege(rezept)}
 
     def ersetzen(m):
+        if m.group(1) == "portion_g" and portion_g is not None:
+            return portion_text(portion_g * faktor)
         e = idx.get(m.group(1))
         if e is None:
             return m.group(0)
@@ -121,8 +127,8 @@ def abschnitt_naehrwerte(r, erg):
         f"- **Makroverteilung (Energie):** Protein {prozent(e_p, e_sum)} · Kohlenhydrate {prozent(e_k, e_sum)} · Fett {prozent(e_f, e_sum)}",
     ]
     art = "gemessen" if erg["gargewicht_gemessen"] else "geschätzt aus Garfaktoren"
-    out.append(f"- **Gewicht fertig:** ca. {gramm(round(erg['gargewicht_gesamt'], -1))} gesamt · "
-               f"**ca. {gramm(round(erg['gargewicht_portion'], -1))} pro Portion** ({art})")
+    out.append(f"- **Gewicht fertig:** {portion_text(erg['gargewicht_gesamt'])} gesamt · "
+               f"**{portion_text(erg['gargewicht_portion'])} pro Portion** ({art})")
     out.append("- **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, "
                "dann kannst du nach Gramm loggen.")
     return out
@@ -154,6 +160,18 @@ def abschnitt_schritte(r):
         timer = f" ⏱ {s['timer_min']} min" if s.get("timer_min") else ""
         out.append(f"{i}. **{s['titel']}**{timer}: {ersetze_platzhalter(s['text'], r)}")
     return out
+
+
+def variante_text(v, db):
+    """Text-Variante unverändert; strukturierte Variante mit gerechneter Makro-Änderung."""
+    if isinstance(v, str):
+        return v
+    text = f"**{v['titel']}:** {v['text']}"
+    if v.get("aenderung"):
+        d = nw.variante_delta(v["aenderung"], db)
+        text += (f" ({nw.vorzeichen(d['kcal'], 0, ' kcal')}, {nw.vorzeichen(d['protein'], 1, ' g')} Protein, "
+                 f"{nw.vorzeichen(d['fett'], 1, ' g')} Fett pro Portion)")
+    return text
 
 
 def abschnitt_aufbewahrung(r):
@@ -206,9 +224,9 @@ def rezept_markdown(r, db):
         abschnitt_schritte(r),
         abschnitt_liste("Zeitablauf", r.get("zeitablauf") or ["Keine parallelen Arbeitsschritte nötig."], r),
         abschnitt_liste("Häufige Fehler", r["fehler"], r),
-        ["## Anrichten", "", ersetze_platzhalter(r["anrichten"], r)],
+        ["## Anrichten", "", ersetze_platzhalter(r["anrichten"], r, portion_g=erg["gargewicht_portion"])],
         abschnitt_aufbewahrung(r),
-        abschnitt_liste("Varianten & Austausch", r["varianten"], r),
+        abschnitt_liste("Varianten & Austausch", [variante_text(v, db) for v in r["varianten"]], r),
         abschnitt_liste("Tipps", r["tipps"], r),
         abschnitt_berechnung(r, erg, db),
     ]

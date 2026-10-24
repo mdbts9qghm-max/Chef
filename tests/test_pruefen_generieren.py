@@ -144,3 +144,31 @@ def test_rezeptbuch_aussortiert(echte_rezepte, db):
     rezepte[0]["bewertung"] = {"sterne": 2, "kommentar": "zu trocken", "datum": "2026-10-22"}
     md = gen.rezeptbuch_markdown(rezepte, db)
     assert "(aussortiert)" in md
+
+
+# --- Varianten ------------------------------------------------------------------------
+def test_variante_delta_und_vorzeichen(mini_db):
+    d = nw.variante_delta({"Testhuhn": 100, "Testreis": -50}, mini_db)   # (100 − 175) / 2
+    assert d["kcal"] == -37.5
+    assert nw.vorzeichen(d["kcal"], 0, " kcal") == "−38 kcal"
+    assert nw.vorzeichen(5.25, 1, " g") == "+5,3 g"
+    assert nw.vorzeichen(0.04, 1, " g") == "±0 g"
+
+
+def test_variante_text(mini_db):
+    v = {"titel": "Mehr Huhn", "text": "100 g Testhuhn extra.", "aenderung": {"Testhuhn": 100}}
+    assert gen.variante_text(v, mini_db) == "**Mehr Huhn:** 100 g Testhuhn extra. (+50 kcal, +10 g Protein, +1 g Fett pro Portion)"
+    assert gen.variante_text("**Tipp:** ohne Änderung", mini_db) == "**Tipp:** ohne Änderung"
+
+
+def test_variante_unbekannte_zutat(chicken, db):
+    chicken["varianten"][0] = {"titel": "X", "text": "Y", "aenderung": {"Drachenfrucht": 50}}
+    assert any("Variante" in f for f in fehler(chicken, db))
+
+
+def test_portion_g_platzhalter(chicken, db):
+    chicken["anrichten"] = "Pro Teller {portion_g}."
+    assert pruefen.pruefe_rezept(chicken, db, chicken["id"]).ok
+    erg = nw.rezept_naehrwerte(chicken, db)
+    md = gen.rezept_markdown(chicken, db)
+    assert f"Pro Teller ca. {nw.gramm(round(erg['gargewicht_portion'], -1))}." in md

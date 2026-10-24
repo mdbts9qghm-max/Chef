@@ -1,0 +1,63 @@
+id: overnight-oats-cheesecake
+name: Overnight Oats „Himbeer-Cheesecake“
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Cheesecake Overnight Oats“"
+  link: null
+  aenderungen: "Doppelrahmfrischkäse und Kekse durch Skyr, Frischkäse light und einen Löffel Knuspermüsli ersetzt, Zucker durch Vanille-Whey; ca. 40 g mehr Protein pro Glas."
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 0, wartezeit: 480}
+ausstattung: ["2 Schraubgläser à 500 ml", Mikrowelle]
+zutaten:
+  - gruppe: Oats
+  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 200, hinweis: "200 ml"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
+  - gruppe: Cheesecake-Creme
+  - {id: skyr, zutat: Skyr natur, g: 300}
+  - {id: frischkaese, zutat: Frischkäse light, g: 60, anzeige: "2 EL"}
+  - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
+  - gruppe: Topping
+  - {id: himbeeren, zutat: Himbeeren TK, g: 150}
+  - {id: muesli, zutat: Knuspermüsli, g: 20, anzeige: "2 EL", hinweis: "als „Keksboden“"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+mise_en_place:
+  - "{himbeeren} 1 Minute bei 600 W in der Mikrowelle antauen und mit einer Gabel grob zerdrücken, sodass ein Püree mit Stückchen entsteht."
+schritte:
+  - titel: Oats anrühren
+    text: "{hafer}, {milch} und {whey} in einer Schüssel 30 Sekunden kräftig verrühren, bis kein Pulver mehr zu sehen ist. Je zur Hälfte in die beiden Gläser füllen."
+    timer_min: null
+  - titel: Cheesecake-Schicht
+    text: "{skyr}, {frischkaese} und {zitrone} glatt rühren (ca. 30 Sekunden), bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind. Auf die Haferschicht verteilen und glatt streichen."
+    timer_min: null
+  - titel: Himbeeren und ziehen lassen
+    text: "Himbeer-Püree auf die Creme geben, Gläser verschließen und mindestens 8 Stunden (über Nacht) in den Kühlschrank stellen. Fertig, wenn die Haferflocken die Flüssigkeit aufgesogen haben und die untere Schicht cremig-fest ist."
+    timer_min: null
+  - titel: Knusper drauf
+    text: "Direkt vor dem Essen {muesli} und {mandeln} auf die Gläser verteilen."
+    timer_min: null
+zeitablauf:
+  - "Abends ansetzen (10 Minuten), morgens nur noch Knusper darüber."
+fehler:
+  - "**Zu fest und pappig:** zu wenig Flüssigkeit oder sehr grobe Flocken. Lösung: zarte Haferflocken verwenden, morgens bei Bedarf 2 EL Milch unterrühren (nicht mitgerechnet)."
+  - "**Creme wässrig:** Himbeeren nicht angetaut und in die Creme gerührt. Lösung: Püree nur obenauf geben, nicht unterrühren."
+  - "**Knusper weich:** schon abends daraufgestreut. Lösung: erst kurz vor dem Essen."
+anrichten: "Pro Glas {portion_g}: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeeren, oben 10 g Knuspermüsli und 7 g Mandeln. Direkt aus dem Glas löffeln, Löffel bis zum Boden durchstechen."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "Kalt essen. Wer es warm mag: ohne Knusper 1½ Minuten bei 600 W, umrühren."
+  separat: "Knuspermüsli und Mandeln in einem kleinen Döschen separat aufbewahren."
+varianten:
+  - {titel: Mehr Protein, text: "Skyr auf 400 g erhöhen.", aenderung: {"Skyr natur": 100}}
+  - {titel: Blaubeer-Cheesecake, text: "Heidelbeeren statt Himbeeren.", aenderung: {"Himbeeren TK": -150, "Heidelbeeren TK": 150}}
+  - {titel: Weniger kcal, text: "Mandeln weglassen.", aenderung: {"Mandeln gehobelt": -15}}
+tipps:
+  - "Eine Prise Salz in der Cheesecake-Creme hebt den Frischkäse-Geschmack hervor."
+  - "Für 3 Tage gleich 3 Doppelportionen ansetzen: Die Oats werden mit jedem Tag etwas weicher, bleiben aber gut."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

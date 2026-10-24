@@ -112,9 +112,10 @@ GARPROBE_WOERTER = ["Kerntemperatur", "Garprobe"]
 FISCH_MAX_KUEHLSCHRANK_TAGE = 2
 MAX_KUEHLSCHRANK_TAGE = 4
 
-# Ofenschritte müssen Temperatur und beide Modi nennen. Erkannt wird ein Ofenschritt
-# an diesen Wörtern („aus dem Ofen nehmen“ zählt bewusst nicht).
-OFEN_WOERTER = ["backen", "in den Ofen", "im Ofen", "rösten im"]
+# Ofenschritte müssen Temperatur und beide Modi nennen. Erkannt wird ein Ofenschritt an
+# diesen Wörtern; Ofenschritte nennen daher immer die Schiene. „backen“ allein zählt nicht
+# (Pfanne, Waffeleisen), „aus dem Ofen nehmen“ ebenfalls nicht.
+OFEN_WOERTER = ["Schiene", "Backofen", "in den Ofen", "im Ofen"]
 OFEN_PFLICHT = ["°C", "Ober-/Unterhitze", "Umluft"]
 AIRFRYER_WOERTER = ["Airfryer"]
 HERD_WOERTER = ["Pfanne", "Topf"]   # Schritt am Herd → Herdstufe „Stufe X von 9“ erwartet (Warnung)
@@ -148,6 +149,11 @@ MD_ABSCHNITTE = [
     "Tipps",
     "Nährwert-Berechnung",
 ]
+
+# Sonder-Platzhalter, die keine Zutat sind: {portion_g} = berechnetes Gewicht pro Portion
+SONDER_PLATZHALTER = {"portion_g"}
+# Zutaten, die nie auf die Einkaufsliste kommen
+NICHT_EINKAUFEN = {"Wasser"}
 
 HINWEIS_SCHAETZWERTE = (
     "Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten "

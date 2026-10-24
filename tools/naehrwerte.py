@@ -83,6 +83,12 @@ def rezept_naehrwerte(rezept, db, faktor=1.0):
     }
 
 
+def variante_delta(aenderung, db):
+    """Änderung pro Portion für {zutat: delta_g} (negativ = weniger/weglassen)."""
+    return {k: sum(db[z][k] * g / 100 for z, g in aenderung.items()) / config.PORTIONEN
+            for k in NAEHRSTOFFE}
+
+
 def atwater_kcal(w, polyol_kh=0.0):
     a = config.ATWATER
     return (a["protein"] * w["protein"] + a["kh"] * (w["kh"] - polyol_kh)
@@ -194,6 +200,14 @@ def zahl(x, nachkomma=1):
         if "." in s:
             s = s.rstrip("0").rstrip(".")
     return s.replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def vorzeichen(x, nachkomma=1, einheit=""):
+    """„+13 kcal“, „−2,6 g“, „±0 kcal“ (gerundet, mit echtem Minuszeichen)."""
+    r = rund(x, nachkomma)
+    if r == 0:
+        return f"±0{einheit}"
+    return ("+" if r > 0 else "−") + zahl(abs(r), nachkomma) + einheit
 
 
 def gramm(g):

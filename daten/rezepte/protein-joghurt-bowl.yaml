@@ -1,0 +1,55 @@
+id: protein-joghurt-bowl
+name: Protein-Joghurt-Bowl mit Knuspermüsli & Beeren
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Frühstück
+geschmack: süß
+kueche: International / Fusion
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 6, kochen: 4, wartezeit: 0}
+ausstattung: ["Pfanne 24 cm", "2 Schüsseln", Mikrowelle]
+zutaten:
+  - gruppe: Creme
+  - {id: skyr, zutat: Skyr natur, g: 400, hinweis: "kalt aus dem Kühlschrank"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
+  - gruppe: Knusper
+  - {id: hafer, zutat: Haferflocken zart, g: 30, anzeige: "3 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
+  - {id: muesli, zutat: Knuspermüsli, g: 60, hinweis: "Schoko- oder Nuss-Sorte"}
+  - gruppe: Topping
+  - {id: beeren, zutat: Beerenmischung TK, g: 120, hinweis: "gefroren"}
+  - {id: pb, zutat: Erdnussbutter 100 % Erdnüsse, name: Erdnussbutter, g: 25, anzeige: "1 gehäufter EL"}
+mise_en_place:
+  - "{beeren} in eine kleine Schüssel geben und 60–90 Sekunden bei 600 W in der Mikrowelle antauen, bis sie Saft ziehen, aber noch kalt sind."
+  - "{hafer:n}, {mandeln:n} und {muesli:n} bereitstellen."
+schritte:
+  - titel: Knusper rösten
+    text: "{hafer} und {mandeln} ohne Fett in die Pfanne (24 cm) geben und auf Stufe 6 von 9 unter ständigem Schwenken 3–4 Minuten rösten, bis die Mandeln goldgelb sind und es nussig duftet. Sofort auf einen Teller geben, sonst rösten sie nach und werden bitter."
+    timer_min: 4
+  - titel: Creme anrühren
+    text: "{skyr} mit {whey} und 2 EL kaltem Wasser in einer Schüssel mit dem Löffel glatt rühren (ca. 30 Sekunden), bis keine Pulverklümpchen mehr zu sehen sind. Die Creme soll dick und glänzend sein wie Pudding; ist sie zu fest, noch 1 EL Wasser dazu."
+    timer_min: null
+  - titel: Schichten
+    text: "Creme auf 2 Schalen verteilen. Je die Hälfte der angetauten Beeren samt Saft, die Hälfte von {muesli} und die Hälfte der gerösteten Hafer-Mandel-Mischung daraufgeben. {pb} kurz glatt rühren und mit einem Teelöffel darüberträufeln."
+    timer_min: null
+zeitablauf:
+  - "Während die Beeren in der Mikrowelle antauen: Hafer und Mandeln rösten."
+fehler:
+  - "**Müsli wird matschig:** zu früh auf die Creme gegeben. Lösung: Knusper erst direkt vor dem Essen darüberstreuen."
+  - "**Creme klumpt:** Whey direkt in den kalten Skyr gekippt. Lösung: mit 2 EL Wasser zügig verrühren, notfalls 10 Sekunden mit dem Schneebesen."
+  - "**Mandeln bitter:** zu heiß oder zu lange geröstet. Lösung: Stufe 6 von 9 nicht überschreiten und beim ersten goldenen Schimmer vom Herd."
+anrichten: "Pro Schale die Hälfte der Vanille-Creme, darauf 60 g Beeren, 30 g Knuspermüsli, die Hälfte des Hafer-Mandel-Knuspers und gut 12 g Erdnussbutter: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 0
+  einfrierbar: false
+  aufwaermen: "Nicht aufwärmen, kalt essen. Die geröstete Hafer-Mandel-Mischung hält sich in einem Schraubglas 1 Woche, die Vanille-Creme 2 Tage im Kühlschrank."
+varianten:
+  - {titel: Mehr Protein, text: "200 g Skyr zusätzlich (Creme mit 1 EL Wasser mehr anrühren).", aenderung: {"Skyr natur": 200}}
+  - {titel: Weniger kcal, text: "Erdnussbutter und Knuspermüsli weglassen; der geröstete Hafer-Mandel-Knusper reicht als Crunch.", aenderung: {"Erdnussbutter 100 % Erdnüsse": -25, "Knuspermüsli": -60}}
+  - {titel: Schoko-Bowl, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao in die Creme rühren.", aenderung: {"Whey Protein Vanille": -40, "Whey Protein Schoko": 40, "Kakaopulver stark entölt": 10}}
+tipps:
+  - "Eine Prise Zimt in der Creme macht sie dessertartiger, ohne nennenswerte kcal."
+  - "Gleich die dreifache Menge Hafer-Mandel-Knusper rösten und im Glas aufheben: spart morgens 4 Minuten."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}
