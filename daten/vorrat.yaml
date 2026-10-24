@@ -1,0 +1,17 @@
+# Vorrat zu Hause. g: Menge in Gramm, oder null = „vorhanden, Menge unbekannt“ (deckt den Wochenbedarf).
+# haltbar_bis: optional (z. B. für Reste angebrochener Packungen aus der Vorwoche).
+# Stand: 24.10.2026 (Onboarding: Öle & Saucen, Backen & Trockenwaren vorhanden)
+vorrat:
+  - {zutat: Rapsöl, g: null}
+  - {zutat: Olivenöl, g: null}
+  - {zutat: Sojasauce, g: null}
+  - {zutat: Senf mittelscharf, g: null}
+  - {zutat: Tomatenmark, g: null}
+  - {zutat: Honig, g: null}
+  - {zutat: Backpulver, g: null}
+  - {zutat: Weizenmehl Type 405, g: null}
+  - {zutat: Speisestärke, g: null}
+  - {zutat: Kakaopulver stark entölt, g: null}
+  - {zutat: Haferflocken zart, g: null}
+  - {zutat: Basmatireis ungekocht, g: null}
+  - {zutat: Hartweizennudeln ungekocht, g: null}

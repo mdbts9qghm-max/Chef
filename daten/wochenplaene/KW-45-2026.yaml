@@ -1,0 +1,63 @@
+# Wochenplan KW 45/2026 (Mo 2.11. – So 8.11.)
+# Schichten (aus profil.yaml berechnet): Mo Nacht · Di–Do frei · Fr Tag · Sa Nacht · So frei
+# Meal-Prep-Tag: Do 5.11. (letzter freier Tag vor der Tagschicht am Fr)
+kw: 45
+jahr: 2026
+einkauf:
+  - {tag: Sa, datum: 2026-10-31, art: gross}
+  - {tag: Sa, datum: 2026-11-07, art: gross}
+tage:
+  - datum: 2026-11-02          # Nachtschicht 19–7
+    fruehstueck: {rezept: protein-joghurt-bowl, kochen: true}
+    mittag: {rezept: protein-lasagne, kochen: true, notiz: "vor der Schicht"}
+    abend: {rezept: lachs-reis-bowl, kochen: true, ladungen: 2, box: true, notiz: "nachmittags mitkochen, Box für die Nacht"}
+    snack: null
+    extras: [{zutat: Mandeln gehobelt, g: 30, text: "30 g Mandeln für die Nacht"}]
+    auswaerts: null
+  - datum: 2026-11-03          # frei (nach der Nacht ausschlafen)
+    fruehstueck: {rezept: protein-kaiserschmarrn, kochen: true}
+    mittag: {rezept: lachs-reis-bowl, rest_von: 2026-11-02/abend}
+    abend: {rezept: shakshuka-feta, kochen: true}
+    snack: {rezept: erdnuss-kakao-protein-balls, kochen: true}
+    auswaerts: null
+  - datum: 2026-11-04          # frei
+    fruehstueck: {rezept: fruehstuecks-brownie, kochen: true}
+    mittag: {rezept: ofen-lachs-mediterran, kochen: true}
+    abend: {rezept: chili-con-carne, kochen: true, ladungen: 2, einfrieren: true, notiz: "zweite Ladung = Mittagsbox Fr"}
+    snack: null
+    extras: [{zutat: Erdnussbutter 100 % Erdnüsse, g: 30, text: "2 EL Erdnussbutter (z. B. auf den Brownie)"}]
+    auswaerts: null
+  - datum: 2026-11-05          # frei · Meal-Prep-Tag
+    fruehstueck: {rezept: protein-french-toast, kochen: true}
+    mittag: {rezept: frikadellen-kartoffelpueree, kochen: true, ladungen: 2, einfrieren: true, notiz: "zweite Ladung = Abendessen Fr"}
+    abend: {rezept: keema-curry-pute, kochen: true, einfrieren: true}
+    snack: null
+    extras: [{zutat: Erdnussbutter 100 % Erdnüsse, g: 40, text: "2½ EL Erdnussbutter (z. B. zum Apfel)"}]
+    auswaerts: null
+  - datum: 2026-11-06          # Tagschicht 7–19
+    fruehstueck: {rezept: heidelbeer-protein-muffins, kochen: true, gekocht_am: 2026-11-05, box: true}
+    mittag: {rezept: chili-con-carne, rest_von: 2026-11-04/abend, box: true}
+    abend: {rezept: frikadellen-kartoffelpueree, rest_von: 2026-11-05/mittag, notiz: "nur aufwärmen"}
+    snack: null
+    extras:
+      - {zutat: Mandeln gehobelt, g: 30, text: "30 g Mandeln in die Arbeitstasche"}
+      - {zutat: Erdnussbutter 100 % Erdnüsse, g: 20, text: "1 gehäufter EL Erdnussbutter"}
+    auswaerts: null
+  - datum: 2026-11-07          # Nachtschicht 19–7 · Einkauf morgens
+    fruehstueck: {rezept: protein-waffeln, kochen: true}
+    mittag: {rezept: smash-burger, kochen: true, notiz: "vor der Schicht"}
+    abend: {rezept: wrap-hack-putenhack, kochen: true, ladungen: 2, box: true, notiz: "nachmittags mitkochen, Box für die Nacht"}
+    snack: null
+    extras:
+      - {zutat: Mandeln gehobelt, g: 15, text: "15 g Mandeln"}
+      - {zutat: Erdnussbutter 100 % Erdnüsse, g: 30, text: "2 EL Erdnussbutter (z. B. auf die Waffeln)"}
+    auswaerts: null
+  - datum: 2026-11-08          # frei
+    fruehstueck: {rezept: protein-bananenbrot, kochen: true}
+    mittag: {rezept: wrap-hack-putenhack, rest_von: 2026-11-07/abend}
+    abend: {rezept: marry-me-chicken, kochen: true}
+    snack: null
+    extras:
+      - {zutat: Mandeln gehobelt, g: 30, text: "30 g Mandeln"}
+      - {zutat: Erdnussbutter 100 % Erdnüsse, g: 20, text: "1 gehäufter EL Erdnussbutter (aufs Bananenbrot)"}
+    auswaerts: null

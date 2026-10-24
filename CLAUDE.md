@@ -22,7 +22,8 @@ Jedes Rezept so genau, dass man es ohne Nachdenken nachkochen kann. **Jede Zahl 
 - **Kerntemperaturen:** Geflügel 74 °C · Hack 72 °C · Schweinefilet 63 °C · Lachs 50–55 °C glasig / 60 °C durch · Schmorgerichte Gabelprobe.
 - **Haltbarkeit:** Fisch/Garnelen max. 2 Tage gekühlt, sonst max. 3–4 Tage. Reis binnen 1 h kühlen.
 - **Plausibilität:** 4P + 4KH + 9F + 2Ballast vs. kcal: pro Zutat ±5 % **oder** ±5 kcal/100 g (Polyole ausgenommen), pro Rezept streng ±5 %.
-- **Planung (8.2):** P ≥ 145 g · kcal ± 100 · F ± 15 (nie < 70) · KH ± 20. Abends keine gleiche Küche/Proteinquelle an Folgetagen. 1–2 Sterne nie, 3 Sterne max. 1×/Woche. Einkauf nur **Samstag** ⇒ Fisch/Garnelen/Hack frisch nur Sa–Mo, danach TK + Auftau-Erinnerung. Anpassen: `faktor` (0,25er-Schritte, max. 1,5) → Snack → einfaches Extra.
+- **Schichten:** 5-Tage-Zyklus Tag 7–19 · Nacht 19–7 · 3× frei (Start Tag So 1.11.2026, `profil.yaml`). Boxen: Tag → Frühstück + Mittag, Nacht → Abend (Mikrowelle vorhanden). Meal Prep am letzten freien Tag vor der Tagschicht.
+- **Planung (8.2):** P ≥ 145 g · kcal ± 100 · F ± 15 (nie < 70) · KH ± 20. Abends keine gleiche Küche/Proteinquelle an Folgetagen. 1–2 Sterne nie, 3 Sterne max. 1×/Woche. Einkauf nur **Samstag** ⇒ Fisch/Garnelen/Hack frisch nur Sa–Mo, übriges Frischfleisch max. 4 Tage, sonst einfrieren (`einfrieren: true`) + Auftau-Erinnerung. Fehlendes Fett über Extras (Mandeln/Erdnussbutter). Anpassen: `faktor` (0,25er-Schritte, max. 1,5) → Snack → einfaches Extra.
 - **Auswärts:** Platzhalter 950 kcal / 40 P / 45 F / 90 KH, Rest des Tages proteinreich + fettarm, keine Zutaten auf der Liste.
 - **Einkaufsliste:** berechnet (nie geschrieben), Vorrat abziehen, auf Packungen runden, nach Abteilungen, Kosten vs. Budget 100 €, Reste → `vorrat.yaml`, Kontrollrechnung.
 - **Import:** eigene Worte, keine Texte/Fotos aus Posts übernehmen; Unklares gesammelt in einer Liste nachfragen.
@@ -38,7 +39,8 @@ pip install -r requirements.txt          # pyyaml, pytest, playwright (Chromium 
 python3 tools/pruefen.py                 # alle Prüfungen (SPEC 12.1)
 python3 tools/generieren.py              # Markdown + Web-App erzeugen
 python3 tools/bestand.py                 # Soll/Ist gegen SPEC 5.1–5.3, schreibt rezeptplan.md
-python3 tools/einkauf.py KW-44-2026      # Einkaufsliste aus Wochenplan
+python3 tools/wochenplan.py KW-45-2026   # Wochenplan prüfen + wochenplaene/KW-45-2026.md erzeugen
+python3 tools/einkauf.py KW-45-2026      # Einkaufsliste (--reste-uebernehmen: Reste → vorrat.yaml)
 python3 -m pytest                        # Tests (SPEC 12.2)
 ```
 
@@ -63,7 +65,7 @@ python3 -m pytest                        # Tests (SPEC 12.2)
 - [x] **Phase 2 – Grundlagen** (22.10.2026, Beispielrezepte abgenommen 24.10.2026): ✓ zutaten.csv (91 Zutaten, alle plausibel), ✓ packungen.csv, ✓ config.py, ✓ naehrwerte.py, ✓ pruefen.py, ✓ generieren.py (Markdown), ✓ 44 Tests, ✓ Beispielrezepte `fruehstuecks-brownie` + `marry-me-chicken`. Zutatenbestand nach Phase 4 getrimmt (✓).
 - [x] **Phase 3 – Rezeptliste** (24.10.2026): 50 Gerichte in `daten/rezeptplan.yaml` → `rezeptplan.md`, Abgleich 5.1–5.3 per `tools/bestand.py` (Plan erfüllt alle Vorgaben), „Spaghetti“ → „Hartweizennudeln ungekocht“, „Rote Currypaste“ neu
 - [x] **Phase 4 – Rezepte schreiben** (24.10.2026): alle 50 Rezepte, 0 Fehler/Warnungen, alle 26 Vorgaben aus SPEC 5 erfüllt (50/50 High Protein), 90 genutzte Zutaten (89 ohne Wasser). Befund für Phase 5: Rezepte eher fettarm (Ø 17–20 g Fett/Mahlzeit) → Fettziel 86–116 g braucht oft Snack/Extra (z. B. Nüsse).
-- [ ] **Phase 5 – Wochenplanung & Einkauf:** einkauf.py, Wochenplan-Generierung, Tests, erster echter Wochenplan
+- [x] **Phase 5 – Wochenplanung & Einkauf** (24.10.2026): `wochenplan.py` (Schichtzyklus, Tagessummen, Regeln 8.2, Markdown), `einkauf.py` (Vorrat, Packungen, Abteilungen, Kosten, Reste, Kontrollrechnung, 2 Einkaufstermine), 86 Tests, erster Plan KW 45 (7/7 Tage regelkonform, Ø 2.271 kcal / 177 g P / 87 g F / 185 g KH). Offen: Wochenkosten ca. 154 € > Budget 100 €; zweiter Samstagseinkauf überschneidet sich künftig mit dem Einkauf der Folgewoche (zusammenführen).
 - [ ] **Phase 6 – Web-App:** Ansichten 10.2, JSON-LD, MacroFactor-Button, PWA, Playwright-Screenshots
 - [ ] **Phase 7 – Import & Komfort:** Import, Kühlschrank-Modus, Bewertungen
 - [ ] **Phase 8 – Livegang:** GitHub Pages (Achtung: privates Repo braucht bezahlten Plan, sonst Repo öffentlich), MacroFactor-Test, README

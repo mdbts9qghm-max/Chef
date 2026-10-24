@@ -55,7 +55,7 @@ ausstattung:
   ofen: {modi: [Ober-/Unterhitze, Umluft]}
   geraete: [Airfryer, Standmixer, Waffeleisen, Mikrowelle]
   pfannen: ["Pfanne 28 cm", "Pfanne 24 cm"]
-  formen: ["Auflaufform 20 × 20 cm", "Auflaufform ca. 30 × 20 cm"]
+  formen: ["Auflaufform 20 × 20 cm", "Auflaufform ca. 30 × 20 cm", "Muffinblech 12er"]
   # Töpfe, Pürierstab, Reiskocher: nicht abgefragt – bei Bedarf ergänzen
 
 einkauf:
@@ -79,6 +79,26 @@ veroeffentlichen:
   rezeptbuch: true
   wochenplaene: true
   einkaufslisten: true
+
+# Schichtarbeit (Onboarding Phase 5, 24.10.2026): 5-Tage-Zyklus ab dem Startdatum
+schichten:
+  zyklus: [Tag, Nacht, frei, frei, frei]
+  start: 2026-11-01            # erster Tag im Zyklus = Tagschicht
+  zeiten: {Tag: "07:00–19:00", Nacht: "19:00–07:00"}
+  mikrowelle_arbeit: true
+  # Mitgenommene Mahlzeiten (Box) je Schichttyp
+  boxen: {Tag: [fruehstueck, mittag], Nacht: [abend]}
+  # Meal Prep am letzten freien Tag vor der Tagschicht, sonst frisch kochen
+  kochtag_regel: letzter freier Tag vor Tagschicht
+
+# Essenszeiten je Tagtyp (für die Zeitpläne im Wochenplan)
+essenszeiten:
+  Tag:   {fruehstueck: "09:30", mittag: "13:00", abend: "19:45", snack: "16:00"}
+  Nacht: {fruehstueck: "14:00", mittag: "17:30", abend: "01:00", snack: "04:00"}
+  frei:  {fruehstueck: "08:30", mittag: "12:30", abend: "18:30", snack: "15:30"}
+
+# Fettziel: fehlendes Fett über Snacks/Extras ausgleichen (Rezepte bleiben unverändert)
+fett_strategie: extras
 
 region:
   sprache: de

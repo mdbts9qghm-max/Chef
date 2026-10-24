@@ -65,6 +65,55 @@ KUECHEN = [
     "International / Fusion",
 ]
 
+# --- Wochenplanung (SPEC 8) ------------------------------------------------------
+WOCHENPLAENE_DIR = DATEN / "wochenplaene"
+VORRAT_YAML = DATEN / "vorrat.yaml"
+AUSGABE_WOCHENPLAENE = WURZEL / "wochenplaene"
+AUSGABE_EINKAUF = WURZEL / "einkaufslisten"
+
+_PL = PROFIL["planung"]
+PLAN_PROTEIN_MIN = _PL["protein_min_g"]             # Priorität 1
+PLAN_KCAL_TOLERANZ = _PL["kcal_toleranz"]           # Ziel ± 100
+PLAN_FETT_TOLERANZ = _PL["fett_toleranz_g"]
+PLAN_FETT_MIN = _PL["fett_min_g"]                   # nie darunter
+PLAN_KH_TOLERANZ = _PL["kh_toleranz_g"]
+FAKTOR_SCHRITT = _PL["faktor_schritt"]
+FAKTOR_MAX = _PL["faktor_max"]
+FRISCH_MAX_TAGE = _PL["frisch_max_tage_nach_einkauf"]   # Fisch, Garnelen, Hack
+# Übriges Frischfleisch (Hähnchen, Pute, Rind, Schwein am Stück): Entscheidung 16, sonst einfrieren
+FLEISCH_FRISCH_MAX_TAGE = 4
+DREI_STERNE_MAX = _PL["drei_sterne_max_pro_woche"]
+AUSWAERTS = {"kcal": _PL["auswaerts_platzhalter"]["kcal"], "protein": _PL["auswaerts_platzhalter"]["protein_g"],
+             "fett": _PL["auswaerts_platzhalter"]["fett_g"], "kh": _PL["auswaerts_platzhalter"]["kh_g"]}
+AUSWAERTS_TIPPS = [
+    "Steak, Fisch oder Hähnchen mit Kartoffeln oder Reis statt Pasta in Sahnesauce.",
+    "Sauce und Dressing extra bestellen und nur die Hälfte nehmen.",
+    "Beim Griechen/Türken: Grillteller mit Tzatziki und Salat statt Pommes-Platte.",
+    "Ein Getränk ohne Zucker; Dessert lieber zu Hause (z. B. Protein-Mousse).",
+]
+
+SLOTS = ["fruehstueck", "mittag", "abend", "snack"]
+SLOT_NAMEN = {"fruehstueck": "Frühstück", "mittag": "Mittag", "abend": "Abend", "snack": "Snack"}
+WOCHENTAGE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+WOCHENTAGE_LANG = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+
+SCHICHTEN = PROFIL.get("schichten") or {}
+ESSENSZEITEN = PROFIL.get("essenszeiten") or {}
+MEAL_PREP_START = "15:00"
+BOX_FERTIG_VOR_SCHICHT_MIN = 30     # Box-Mahlzeiten am Schichttag so früh fertig           # Beginn eines Meal-Prep-Blocks am Kochtag
+WARTEZEIT_VORABEND_MIN = 240        # ab 4 h Wartezeit (Overnight Oats, Marinade über Nacht) am Vorabend ansetzen
+
+# Fehlendes Fett/Protein über einfache Extras ausgleichen (SPEC 8.2, Schritt 3)
+EXTRAS_KATALOG = {
+    "mandeln": {"zutat": "Mandeln gehobelt", "g": 30, "text": "30 g Mandeln (pur oder über das Frühstück)"},
+    "erdnussbutter": {"zutat": "Erdnussbutter 100 % Erdnüsse", "g": 20, "text": "1 gehäufter EL Erdnussbutter"},
+    "skyr_honig": {"zutat": "Skyr natur", "g": 250, "text": "250 g Skyr (mit 1 TL Honig)"},
+}
+
+# Einkauf: lange haltbare Produkte zählen als Vorratskauf (nicht ins Wochenbudget)
+VORRATSKAUF_AB_TAGEN = 180
+TK_ABTEILUNG = "Tiefkühl"
+
 # --- Startbestand (SPEC 5) -----------------------------------------------------
 REZEPTPLAN_YAML = DATEN / "rezeptplan.yaml"
 REZEPTPLAN_MD = WURZEL / "rezeptplan.md"

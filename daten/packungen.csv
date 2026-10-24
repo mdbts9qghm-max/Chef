@@ -1,5 +1,5 @@
 # Packungsgrößen und Preise orientiert an Lidl/Aldi (Stand 10/2026, Schätzwerte), REWE wo Discounter nichts führt.
-# haltbar_tage_offen: nach dem Öffnen im Kühlschrank bzw. bei Trockenware lange (365).
+# haltbar_tage_offen: nach dem Öffnen im Kühlschrank bzw. bei Trockenware lange (365); TK-Ware angebrochen im Gefrierfach 90.
 zutat,abteilung,packung_g,packung_text,preis_eur,haltbar_tage_offen
 Hähnchenbrustfilet roh,Fleisch & Fisch,400,400-g-Schale,4.99,2
 Hähnchenoberkeule ohne Haut roh,Fleisch & Fisch,600,600-g-Schale,5.49,2
@@ -10,9 +10,9 @@ Rinderhackfleisch 15 % Fett roh,Fleisch & Fisch,500,500-g-Schale,4.99,1
 Rinderhüftsteak roh,Fleisch & Fisch,400,400-g-Schale (2 Steaks),8.99,2
 Rindergulasch roh,Fleisch & Fisch,500,500-g-Schale,6.99,2
 Schweinefilet roh,Fleisch & Fisch,500,500-g-Stück,6.99,2
-Lachsfilet ohne Haut roh,Tiefkühl,500,500-g-Beutel TK (4 Filets),7.99,1
-Kabeljaufilet roh,Tiefkühl,400,400-g-Packung TK,5.49,1
-Garnelen roh geschält,Tiefkühl,400,400-g-Beutel TK,6.49,1
+Lachsfilet ohne Haut roh,Tiefkühl,500,500-g-Beutel TK (4 Filets),7.99,90
+Kabeljaufilet roh,Tiefkühl,400,400-g-Packung TK,5.49,90
+Garnelen roh geschält,Tiefkühl,400,400-g-Beutel TK,6.49,90
 Ei Gr. M ohne Schale,Kühlregal & Milchprodukte,600,10er-Packung Gr. M (ca. 600 g ohne Schale),2.99,21
 Eiklar flüssig,Kühlregal & Milchprodukte,500,500-g-Flasche,2.49,3
 Magerquark,Kühlregal & Milchprodukte,500,500-g-Becher,1.29,4
@@ -51,9 +51,9 @@ Knuspermüsli,Trockenwaren,500,500-g-Packung,2.29,60
 Honig,Trockenwaren,500,500-g-Glas,3.99,365
 Erythrit,Trockenwaren,500,500-g-Packung,3.99,365
 Banane geschält,Obst & Gemüse,800,Bund ca. 1 kg (ca. 800 g geschält),1.49,5
-Heidelbeeren TK,Tiefkühl,500,500-g-Beutel TK,2.99,2
-Himbeeren TK,Tiefkühl,500,500-g-Beutel TK,2.99,2
-Beerenmischung TK,Tiefkühl,750,750-g-Beutel TK,3.49,2
+Heidelbeeren TK,Tiefkühl,500,500-g-Beutel TK,2.99,90
+Himbeeren TK,Tiefkühl,500,500-g-Beutel TK,2.99,90
+Beerenmischung TK,Tiefkühl,750,750-g-Beutel TK,3.49,90
 Apfel,Obst & Gemüse,1000,1-kg-Beutel,1.99,14
 Sauerkirschen Glas abgetropft,Konserven & Saucen,350,720-ml-Glas (350 g abgetropft),1.49,4
 Zitronensaft,Konserven & Saucen,200,200-ml-Flasche,0.79,60
