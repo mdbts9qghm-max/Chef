@@ -28,13 +28,15 @@ Jedes Rezept so genau, dass man es ohne Nachdenken nachkochen kann. **Jede Zahl 
 
 ## Arbeitsweise
 - Jede Phase im **Plan-Modus** starten, OK abwarten. Am Ende: Prüfungen + Tests, Fortschrittsliste aktualisieren, Git-Commit vorschlagen (erst nach OK committen/pushen).
-- Nach jeder Datenänderung: `python3 tools/pruefen.py` → `python3 tools/generieren.py` → ggf. veröffentlichen.
+- Nach jeder Datenänderung: `python3 tools/pruefen.py` → `python3 tools/generieren.py` → `python3 tools/bestand.py` → ggf. veröffentlichen.
+- Phase 4: Rezepte in der Reihenfolge von `daten/rezeptplan.yaml`, id und Küche wie im Plan (Test prüft das).
 
 ## Befehle (Entwicklung)
 ```bash
 pip install -r requirements.txt          # pyyaml, pytest, playwright (Chromium ist vorinstalliert)
 python3 tools/pruefen.py                 # alle Prüfungen (SPEC 12.1)
 python3 tools/generieren.py              # Markdown + Web-App erzeugen
+python3 tools/bestand.py                 # Soll/Ist gegen SPEC 5.1–5.3, schreibt rezeptplan.md
 python3 tools/einkauf.py KW-44-2026      # Einkaufsliste aus Wochenplan
 python3 -m pytest                        # Tests (SPEC 12.2)
 ```
@@ -57,8 +59,8 @@ python3 -m pytest                        # Tests (SPEC 12.2)
 
 ## Fortschritt
 - [x] **Phase 1 – Planung & Onboarding** (22.10.2026): Onboarding, SPEC.md, CLAUDE.md, profil.yaml, Ordnergerüst, Git
-- [ ] **Phase 2 – Grundlagen** (22.10.2026, wartet auf Abnahme der Beispielrezepte): ✓ zutaten.csv (91 Zutaten, alle plausibel), ✓ packungen.csv, ✓ config.py, ✓ naehrwerte.py, ✓ pruefen.py, ✓ generieren.py (Markdown), ✓ 44 Tests, ✓ Beispielrezepte `fruehstuecks-brownie` + `marry-me-chicken`. Offen: Zutatenbestand nach Phase 4 auf ≤ 90 genutzte Zutaten trimmen.
-- [ ] **Phase 3 – Rezeptliste:** rezeptplan.md mit 50 Gerichten, Abgleich 5.1–5.3, OK abwarten
+- [x] **Phase 2 – Grundlagen** (22.10.2026, Beispielrezepte abgenommen 24.10.2026): ✓ zutaten.csv (91 Zutaten, alle plausibel), ✓ packungen.csv, ✓ config.py, ✓ naehrwerte.py, ✓ pruefen.py, ✓ generieren.py (Markdown), ✓ 44 Tests, ✓ Beispielrezepte `fruehstuecks-brownie` + `marry-me-chicken`. Offen: Zutatenbestand nach Phase 4 auf ≤ 90 genutzte Zutaten trimmen.
+- [x] **Phase 3 – Rezeptliste** (24.10.2026): 50 Gerichte in `daten/rezeptplan.yaml` → `rezeptplan.md`, Abgleich 5.1–5.3 per `tools/bestand.py` (Plan erfüllt alle Vorgaben), „Spaghetti“ → „Hartweizennudeln ungekocht“, „Rote Currypaste“ neu
 - [ ] **Phase 4 – Rezepte schreiben:** Runde 1/5 · 2/5 · 3/5 · 4/5 · 5/5, Abschlussübersicht
 - [ ] **Phase 5 – Wochenplanung & Einkauf:** einkauf.py, Wochenplan-Generierung, Tests, erster echter Wochenplan
 - [ ] **Phase 6 – Web-App:** Ansichten 10.2, JSON-LD, MacroFactor-Button, PWA, Playwright-Screenshots

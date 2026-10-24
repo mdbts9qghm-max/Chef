@@ -65,6 +65,29 @@ KUECHEN = [
     "International / Fusion",
 ]
 
+# --- Startbestand (SPEC 5) -----------------------------------------------------
+REZEPTPLAN_YAML = DATEN / "rezeptplan.yaml"
+REZEPTPLAN_MD = WURZEL / "rezeptplan.md"
+BESTAND_GESAMT = 50
+BEREICHE_SOLL = {"Frühstück": 15, "Snack": 5, "Hauptgericht": 30}       # exakt (5.1)
+FRUEHSTUECK_MIN = {"Meal Prep": 4, "Schnelle Rezepte": 5}               # 5.1
+KUECHEN_SOLL = {                                                        # exakt, nur Hauptgerichte (5.2)
+    "Deutsch": 4, "Italienisch": 5, "Asiatisch": 5, "Mexikanisch": 3, "Indisch": 3,
+    "Griechisch & Mediterran": 3, "Türkisch & Orientalisch": 3, "Amerikanisch": 3,
+    "International / Fusion": 1,
+}
+BESTAND_MIN = {                                                         # Mindestwerte (5.3)
+    "Meal Prep": 12, "Schnelle Rezepte": 15, "Kalorienarm": 6, "High Protein": 45, "Inspiration": 15,
+}
+PROTEINQUELLE_MAX_HAUPTGERICHTE = 10
+# 5.3 zählt „Fisch und Garnelen“ und „Skyr/Quark/Hüttenkäse“ als je eine Quelle
+PROTEIN_GRUPPEN = {
+    "haehnchen": "Hähnchen", "pute": "Pute", "rind": "Rind", "schwein": "Schwein",
+    "fisch": "Fisch & Garnelen", "garnelen": "Fisch & Garnelen", "ei": "Eier",
+    "milchprotein": "Skyr/Quark/Hüttenkäse", "pflanzlich": "Pflanzlich",
+}
+ZUTATEN_MAX = 90
+
 # --- Plausibilität (SPEC 12.1 + Entscheidung 16) -------------------------------
 ATWATER = {"protein": 4, "kh": 4, "fett": 9, "ballaststoffe": 2}
 PLAUSI_PROZENT = 5.0              # max. Abweichung in %

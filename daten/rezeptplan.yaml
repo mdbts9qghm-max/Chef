@@ -1,0 +1,57 @@
+# Rezeptplan für den Startbestand (SPEC 5). Abgestimmt am 24.10.2026.
+# bereich: Frühstück | Snack | Hauptgericht · protein: Hauptproteinquelle (wie typ in zutaten.csv)
+# tags: geplante Kategorien (MP, S, KA); verbindlich ist, was pruefen.py aus den Werten berechnet.
+rezepte:
+  # --- Frühstück, süß (15) ---
+  - {nr: 1, id: fruehstuecks-brownie, name: Frühstücks-Brownie, bereich: Frühstück, kueche: Amerikanisch, protein: milchprotein, protein_text: "Skyr + Whey", ziel_kcal: 606, inspiration: true, tags: [MP]}
+  - {nr: 2, id: protein-joghurt-bowl, name: "Protein-Joghurt-Bowl mit Knuspermüsli & Beeren", bereich: Frühstück, kueche: International / Fusion, protein: milchprotein, protein_text: "Skyr + Whey", ziel_kcal: 560, inspiration: false, tags: [S]}
+  - {nr: 3, id: protein-pancakes, name: "Protein-Pancakes mit Heidelbeeren & Honig", bereich: Frühstück, kueche: Amerikanisch, protein: milchprotein, protein_text: "Magerquark + Ei", ziel_kcal: 590, inspiration: true, tags: [S]}
+  - {nr: 4, id: protein-waffeln, name: "Protein-Waffeln mit Kirschen & Vanille-Skyr", bereich: Frühstück, kueche: Amerikanisch, protein: milchprotein, protein_text: "Magerquark + Whey", ziel_kcal: 600, inspiration: false, tags: [S]}
+  - {nr: 5, id: overnight-oats-cheesecake, name: "Overnight Oats „Himbeer-Cheesecake“", bereich: Frühstück, kueche: Amerikanisch, protein: milchprotein, protein_text: "Skyr + Whey", ziel_kcal: 570, inspiration: true, tags: [MP, S]}
+  - {nr: 6, id: overnight-oats-apfelstrudel, name: "Overnight Oats „Apfelstrudel“", bereich: Frühstück, kueche: Deutsch, protein: milchprotein, protein_text: "Magerquark + Whey", ziel_kcal: 570, inspiration: false, tags: [MP, S]}
+  - {nr: 7, id: quark-auflauf-kirschen, name: "Quark-Auflauf mit Kirschen", bereich: Frühstück, kueche: Deutsch, protein: milchprotein, protein_text: "Magerquark + Ei", ziel_kcal: 580, inspiration: false, tags: [MP]}
+  - {nr: 8, id: protein-french-toast, name: "Protein-French-Toast mit Beeren", bereich: Frühstück, kueche: Amerikanisch, protein: ei, protein_text: "Ei + Eiklar + Skyr", ziel_kcal: 580, inspiration: true, tags: [S]}
+  - {nr: 9, id: protein-kaiserschmarrn, name: "Protein-Kaiserschmarrn mit Apfel-Beeren-Kompott", bereich: Frühstück, kueche: Deutsch, protein: milchprotein, protein_text: "Magerquark + Ei", ziel_kcal: 600, inspiration: false, tags: [S]}
+  - {nr: 10, id: protein-milchreis, name: "Protein-Milchreis mit Zimt & Kirschen", bereich: Frühstück, kueche: Deutsch, protein: milchprotein, protein_text: "Milch + Whey", ziel_kcal: 580, inspiration: false, tags: [MP]}
+  - {nr: 11, id: protein-griessbrei, name: "Protein-Grießbrei mit Zimt-Apfel", bereich: Frühstück, kueche: Deutsch, protein: milchprotein, protein_text: "Milch + Whey", ziel_kcal: 560, inspiration: false, tags: [S]}
+  - {nr: 12, id: protein-bananenbrot, name: Protein-Bananenbrot, bereich: Frühstück, kueche: Amerikanisch, protein: milchprotein, protein_text: "Skyr + Ei + Whey", ziel_kcal: 590, inspiration: true, tags: [MP]}
+  - {nr: 13, id: heidelbeer-protein-muffins, name: Heidelbeer-Protein-Muffins, bereich: Frühstück, kueche: Amerikanisch, protein: milchprotein, protein_text: "Magerquark + Ei", ziel_kcal: 570, inspiration: false, tags: [MP]}
+  - {nr: 14, id: skyr-tiramisu-bowl, name: Skyr-Tiramisu-Bowl, bereich: Frühstück, kueche: Italienisch, protein: milchprotein, protein_text: "Skyr + Whey", ziel_kcal: 560, inspiration: true, tags: [S]}
+  - {nr: 15, id: protein-crepes, name: "Protein-Crêpes mit Vanille-Quark & Beeren", bereich: Frühstück, kueche: International / Fusion, protein: ei, protein_text: "Ei + Magerquark", ziel_kcal: 590, inspiration: false, tags: [S]}
+  # --- Snacks & Desserts, süß (5) ---
+  - {nr: 16, id: protein-mousse-au-chocolat, name: Protein-Mousse au Chocolat, bereich: Snack, kueche: International / Fusion, protein: milchprotein, protein_text: "Skyr + Whey", ziel_kcal: 260, inspiration: true, tags: [S]}
+  - {nr: 17, id: skyr-cheesecake-im-glas, name: Skyr-Cheesecake im Glas, bereich: Snack, kueche: Amerikanisch, protein: milchprotein, protein_text: "Skyr + Magerquark", ziel_kcal: 300, inspiration: false, tags: [S, MP]}
+  - {nr: 18, id: beeren-nice-cream, name: "Beeren-Nice-Cream (Protein-Eis aus dem Mixer)", bereich: Snack, kueche: International / Fusion, protein: milchprotein, protein_text: "Skyr + Whey", ziel_kcal: 240, inspiration: true, tags: [S]}
+  - {nr: 19, id: erdnuss-kakao-protein-balls, name: Erdnuss-Kakao-Protein-Balls, bereich: Snack, kueche: International / Fusion, protein: milchprotein, protein_text: "Whey + Erdnussbutter", ziel_kcal: 320, inspiration: true, tags: [MP]}
+  - {nr: 20, id: quarkcreme-banane-zimt, name: "Quarkcreme mit Banane & Zimt", bereich: Snack, kueche: Deutsch, protein: milchprotein, protein_text: Magerquark, ziel_kcal: 260, inspiration: false, tags: [S]}
+  # --- Hauptgerichte (30) ---
+  - {nr: 21, id: putenschnitzel-airfryer, name: "Putenschnitzel aus dem Airfryer mit Bratkartoffeln", bereich: Hauptgericht, kueche: Deutsch, protein: pute, ziel_kcal: 720, inspiration: false, tags: []}
+  - {nr: 22, id: frikadellen-kartoffelpueree, name: "Frikadellen mit Kartoffelpüree", bereich: Hauptgericht, kueche: Deutsch, protein: rind, protein_text: "Rinderhack + Quark", ziel_kcal: 750, inspiration: false, tags: [MP]}
+  - {nr: 23, id: rindergulasch, name: "Rindergulasch mit Salzkartoffeln", bereich: Hauptgericht, kueche: Deutsch, protein: rind, ziel_kcal: 700, inspiration: false, tags: [MP]}
+  - {nr: 24, id: schweinefilet-senf-rahm, name: "Schweinefilet in Senf-Rahm mit Kartoffeln", bereich: Hauptgericht, kueche: Deutsch, protein: schwein, ziel_kcal: 530, inspiration: false, tags: [KA]}
+  - {nr: 25, id: protein-lasagne, name: "High-Protein-Lasagne mit Magerquark", bereich: Hauptgericht, kueche: Italienisch, protein: rind, ziel_kcal: 780, inspiration: false, tags: [MP]}
+  - {nr: 26, id: haehnchen-piccata, name: "Hähnchen-Piccata mit Zitronen-Pasta", bereich: Hauptgericht, kueche: Italienisch, protein: haehnchen, ziel_kcal: 720, inspiration: false, tags: [S]}
+  - {nr: 27, id: gnocchi-al-forno, name: "Gnocchi al Forno mit Putenhack & Mozzarella", bereich: Hauptgericht, kueche: Italienisch, protein: pute, ziel_kcal: 760, inspiration: true, tags: [MP]}
+  - {nr: 28, id: knoblauch-garnelen-pasta, name: "Knoblauch-Garnelen-Pasta mit Tomaten", bereich: Hauptgericht, kueche: Italienisch, protein: garnelen, ziel_kcal: 540, inspiration: true, tags: [S, KA]}
+  - {nr: 29, id: tagliata-hueftsteak, name: "Tagliata vom Hüftsteak mit Parmesan-Kartoffeln", bereich: Hauptgericht, kueche: Italienisch, protein: rind, ziel_kcal: 540, inspiration: false, tags: [S, KA]}
+  - {nr: 30, id: teriyaki-haehnchen-bowl, name: "Teriyaki-Hähnchen-Bowl mit Reis", bereich: Hauptgericht, kueche: Asiatisch, protein: haehnchen, ziel_kcal: 740, inspiration: false, tags: [MP]}
+  - {nr: 31, id: korean-beef-bowl, name: Korean Beef Bowl, bereich: Hauptgericht, kueche: Asiatisch, protein: rind, ziel_kcal: 720, inspiration: true, tags: [S]}
+  - {nr: 32, id: thai-curry-garnelen, name: "Rotes Thai-Curry mit Garnelen & Reis", bereich: Hauptgericht, kueche: Asiatisch, protein: garnelen, ziel_kcal: 540, inspiration: false, tags: [KA]}
+  - {nr: 33, id: mie-nudeln-pute, name: "Gebratene Mie-Nudeln mit Pute", bereich: Hauptgericht, kueche: Asiatisch, protein: pute, ziel_kcal: 540, inspiration: false, tags: [S, KA]}
+  - {nr: 34, id: lachs-reis-bowl, name: "Lachs-Reis-Bowl mit Sriracha-Skyr", bereich: Hauptgericht, kueche: Asiatisch, protein: fisch, protein_text: Lachs, ziel_kcal: 760, inspiration: true, tags: [S]}
+  - {nr: 35, id: haehnchen-burrito-bowl, name: Hähnchen-Burrito-Bowl, bereich: Hauptgericht, kueche: Mexikanisch, protein: haehnchen, ziel_kcal: 760, inspiration: true, tags: [MP]}
+  - {nr: 36, id: chili-con-carne, name: "Chili con Carne mit Reis", bereich: Hauptgericht, kueche: Mexikanisch, protein: rind, ziel_kcal: 740, inspiration: false, tags: [MP]}
+  - {nr: 37, id: wrap-hack-putenhack, name: "Wrap-Hack aus der Pfanne mit Putenhack & Käse", bereich: Hauptgericht, kueche: Mexikanisch, protein: pute, ziel_kcal: 700, inspiration: true, tags: [S]}
+  - {nr: 38, id: butter-chicken, name: "Butter Chicken mit Skyr & Reis", bereich: Hauptgericht, kueche: Indisch, protein: haehnchen, ziel_kcal: 760, inspiration: true, tags: [MP]}
+  - {nr: 39, id: kabeljau-curry, name: "Kabeljau-Curry mit Reis", bereich: Hauptgericht, kueche: Indisch, protein: fisch, protein_text: Kabeljau, ziel_kcal: 530, inspiration: false, tags: [KA]}
+  - {nr: 40, id: keema-curry-pute, name: "Keema-Curry mit Putenhack & Kichererbsen", bereich: Hauptgericht, kueche: Indisch, protein: pute, ziel_kcal: 720, inspiration: false, tags: [MP]}
+  - {nr: 41, id: gyros-bowl, name: "Gyros-Bowl mit Skyr-Tzatziki & Reis", bereich: Hauptgericht, kueche: Griechisch & Mediterran, protein: schwein, protein_text: Schweinefilet, ziel_kcal: 750, inspiration: true, tags: []}
+  - {nr: 42, id: puten-souvlaki, name: "Puten-Souvlaki mit Ofenkartoffeln & Feta", bereich: Hauptgericht, kueche: Griechisch & Mediterran, protein: pute, ziel_kcal: 540, inspiration: false, tags: [KA]}
+  - {nr: 43, id: ofen-lachs-mediterran, name: "Ofen-Lachs mediterran mit Kartoffeln & Tomaten", bereich: Hauptgericht, kueche: Griechisch & Mediterran, protein: fisch, protein_text: Lachs, ziel_kcal: 720, inspiration: false, tags: []}
+  - {nr: 44, id: koefte-reis, name: "Köfte mit Joghurt-Knoblauch-Sauce & Reis", bereich: Hauptgericht, kueche: Türkisch & Orientalisch, protein: rind, ziel_kcal: 760, inspiration: false, tags: [MP]}
+  - {nr: 45, id: doener-bowl, name: "Döner-Bowl mit Hähnchen", bereich: Hauptgericht, kueche: Türkisch & Orientalisch, protein: haehnchen, ziel_kcal: 760, inspiration: true, tags: []}
+  - {nr: 46, id: shakshuka-feta, name: "Shakshuka mit Feta & Toast", bereich: Hauptgericht, kueche: Türkisch & Orientalisch, protein: ei, ziel_kcal: 700, inspiration: false, tags: [S]}
+  - {nr: 47, id: marry-me-chicken, name: "Marry Me Chicken mit Reis", bereich: Hauptgericht, kueche: Amerikanisch, protein: haehnchen, ziel_kcal: 741, inspiration: true, tags: [MP]}
+  - {nr: 48, id: smash-burger, name: "Smash Burger mit Ofen-Kartoffelspalten", bereich: Hauptgericht, kueche: Amerikanisch, protein: rind, ziel_kcal: 800, inspiration: true, tags: []}
+  - {nr: 49, id: philly-cheesesteak-wrap, name: Philly-Cheesesteak-Wrap, bereich: Hauptgericht, kueche: Amerikanisch, protein: rind, ziel_kcal: 720, inspiration: true, tags: [S]}
+  - {nr: 50, id: cottage-cheese-mac-and-cheese, name: "Cottage-Cheese-Mac-and-Cheese mit Putenbrust", bereich: Hauptgericht, kueche: International / Fusion, protein: pute, ziel_kcal: 760, inspiration: true, tags: [S]}
