@@ -1,0 +1,66 @@
+id: gnocchi-al-forno
+name: Gnocchi al Forno mit Putenhack & Mozzarella
+hauptkategorie: meal-prep
+kategorien_manuell: [Meal Prep]
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Italienisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Baked Gnocchi“ / „One-Pan Gnocchi“"
+  link: null
+  aenderungen: "Sahne-Tomatensauce und Vollfett-Mozzarella durch reine Tomatensauce mit Putenhack und Mozzarella light ersetzt; dadurch ca. 50 g Protein pro Portion."
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 30, wartezeit: 0}
+ausstattung: [Backofen, "Pfanne 28 cm", "Auflaufform 20 × 20 cm", Fleischthermometer]
+zutaten:
+  - gruppe: Sauce
+  - {id: hack, zutat: Putenhackfleisch roh, name: Putenhackfleisch, g: 300}
+  - {id: oel, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 60, anzeige: "½ Zwiebel"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: tomatenmark, zutat: Tomatenmark, g: 20, anzeige: "1 gehäufter EL"}
+  - {id: tomaten, zutat: Gehackte Tomaten Dose, name: gehackte Tomaten, g: 400, anzeige: "1 Dose"}
+  - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 2, anzeige: "2 TL"}
+  - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
+  - {id: salz, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: wasser, zutat: Wasser, g: 100, hinweis: "100 ml"}
+  - gruppe: Auflauf
+  - {id: gnocchi, zutat: Kartoffelgnocchi Kühlregal, name: Gnocchi, g: 400, hinweis: "aus dem Kühlregal, ungekocht"}
+  - {id: mozzarella, zutat: Mozzarella light, g: 100, hinweis: "abgetropft, in Scheiben"}
+mise_en_place:
+  - "Backofen auf 200 °C Ober-/Unterhitze (180 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "{zwiebel} fein würfeln, {knoblauch} hacken, {mozzarella} in dünne Scheiben schneiden."
+schritte:
+  - titel: Hack anbraten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen, {hack} hineingeben, 2 Minuten anbraten, dann zerkrümeln und weitere 3 Minuten braten, bis es rundum hell und leicht gebräunt ist."
+    timer_min: 5
+  - titel: Sauce kochen
+    text: "Auf Stufe 5 von 9 schalten, Zwiebel und Knoblauch 2 Minuten mitbraten, {tomatenmark} 1 Minute anrösten. {tomaten}, {wasser}, {oregano}, {chili}, {salz} und {pfeffer} dazu und 5 Minuten köcheln. Garprobe: Das Hack ist komplett durch (72 °C Kerntemperatur, kein rosa Kern)."
+    timer_min: 8
+  - titel: Gnocchi unterheben
+    text: "{gnocchi} roh in die Sauce rühren, alles in die Auflaufform geben und glatt streichen. Mozzarellascheiben darauf verteilen."
+    timer_min: null
+  - titel: Überbacken
+    text: "Auf mittlerer Schiene bei 200 °C Ober-/Unterhitze (180 °C Umluft) 15–18 Minuten backen, bis der Mozzarella blubbert und goldbraune Flecken hat und die Gnocchi weich sind (Probe: eine Gnocchi zerdrücken)."
+    timer_min: 18
+zeitablauf:
+  - "Während der Ofen vorheizt: Hack anbraten und Sauce kochen. Die Gnocchi müssen nicht vorgekocht werden, sie garen in der Sauce."
+fehler:
+  - "**Gnocchi hart:** Sauce zu dick. Lösung: die 100 ml Wasser nicht weglassen, die Gnocchi ziehen Flüssigkeit."
+  - "**Matschige Gnocchi:** vorgekocht. Lösung: roh in die Sauce, sie garen im Ofen."
+  - "**Käse zäh statt gebräunt:** zu wenig Oberhitze. Lösung: die letzten 2 Minuten den Grill zuschalten (dabeibleiben)."
+anrichten: "Auflauf halbieren, eine Hälfte ({portion_g}) pro Teller. Für Meal Prep jede Hälfte in eine Box."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Mikrowelle 600 W, 3 Minuten abgedeckt, mit 1 EL Wasser; nach der Hälfte umrühren."
+varianten:
+  - {titel: Mit Rinderhack, text: "300 g Rinderhack 5 % statt Putenhack.", aenderung: {"Putenhackfleisch roh": -300, "Rinderhackfleisch 5 % Fett roh": 300}}
+  - {titel: Mit Spinat, text: "100 g Babyspinat mit den Gnocchi unterheben.", aenderung: {"Babyspinat": 100}}
+  - {titel: Weniger kcal, text: "Gnocchi auf 300 g reduzieren.", aenderung: {"Kartoffelgnocchi Kühlregal": -100}}
+tipps:
+  - "Ein paar Blätter frisches Basilikum nach dem Backen (falls vorhanden) machen es zum Restaurant-Gericht."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

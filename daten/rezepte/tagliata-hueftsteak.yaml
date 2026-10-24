@@ -1,0 +1,60 @@
+id: tagliata-hueftsteak
+name: Tagliata vom Hüftsteak mit Parmesan-Kartoffeln
+hauptkategorie: kalorienarm
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Italienisch
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 5, kochen: 20, wartezeit: 0}
+ausstattung: [Airfryer, "Pfanne 28 cm (Edelstahl oder Gusseisen)", Fleischthermometer, Schneidebrett]
+zutaten:
+  - gruppe: Parmesan-Kartoffeln
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 350, hinweis: "mit Schale, gut gewaschen"}
+  - {id: oel_k, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: salz_k, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
+  - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 1, anzeige: "1 TL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 15, anzeige: "1½ EL"}
+  - gruppe: Steak
+  - {id: steak, zutat: Rinderhüftsteak roh, name: Hüftsteaks, g: 400, anzeige: "2 Hüftsteaks à 200 g", hinweis: "2,5 cm dick, 30 Minuten vorher aus dem Kühlschrank"}
+  - {id: oel_s, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: salz_s, zutat: Salz, g: 1.5, anzeige: "¼ TL", hinweis: "grob, falls vorhanden"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen", hinweis: "frisch gemahlen"}
+  - gruppe: Topping
+  - {id: tomaten, zutat: Tomaten, name: Kirschtomaten, g: 150, hinweis: "halbiert"}
+  - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
+mise_en_place:
+  - "{steak} 30 Minuten vor dem Braten aus dem Kühlschrank nehmen und trocken tupfen."
+  - "{kartoffeln} in 1,5 cm Würfel schneiden, mit {oel_k}, {salz_k} und {oregano} mischen."
+  - "{tomaten} halbieren und mit {zitrone} mischen."
+schritte:
+  - titel: Kartoffeln im Airfryer
+    text: "Airfryer auf 200 °C 3 Minuten vorheizen. Kartoffelwürfel in den Korb geben und bei 200 °C 18–20 Minuten garen, nach 8 und 14 Minuten schütteln. In den letzten 3 Minuten {parmesan} darüberstreuen. Fertig, wenn sie außen goldbraun-knusprig und innen weich sind."
+    timer_min: 20
+  - titel: Steaks braten
+    text: "Nach 8 Minuten Kartoffel-Garzeit: Pfanne (28 cm) auf Stufe 9 von 9 3 Minuten sehr heiß werden lassen. Steaks mit {oel_s} einreiben und hineinlegen. 3 Minuten nicht bewegen, bis eine dunkle Kruste entsteht, wenden und weitere 2–3 Minuten braten. Medium bei 54–56 °C Kerntemperatur (rosa Mitte), durch bei 63 °C."
+    timer_min: 6
+  - titel: Ruhen und aufschneiden
+    text: "Steaks auf ein Brett legen, mit {salz_s} und {pfeffer} würzen und 4 Minuten ruhen lassen. Dann quer zur Faser in 1 cm Streifen schneiden."
+    timer_min: 4
+zeitablauf:
+  - "Kartoffeln zuerst in den Airfryer; nach 8 Minuten die Pfanne aufheizen. Steaks ruhen, während die Kartoffeln die letzten Minuten mit Parmesan garen."
+fehler:
+  - "**Keine Kruste:** Pfanne nicht heiß genug oder Steak nass. Lösung: 3 Minuten auf Stufe 9 vorheizen, Fleisch trocken tupfen; Ceran braucht Zeit."
+  - "**Fleischsaft läuft aus:** sofort angeschnitten. Lösung: 4 Minuten ruhen lassen."
+  - "**Zäh beim Kauen:** längs zur Faser geschnitten. Lösung: quer zur Faser in Streifen schneiden."
+anrichten: "Pro Teller die Hälfte der Steakstreifen fächerartig, die Hälfte der Parmesan-Kartoffeln und der Zitronen-Tomaten daneben: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "Steakstreifen kalt essen (z. B. auf Brot) oder nur 30 Sekunden in heißer Pfanne schwenken; Kartoffeln im Airfryer 180 °C, 4 Minuten."
+varianten:
+  - {titel: Mehr kcal, text: "Kartoffeln auf 550 g erhöhen.", aenderung: {"Kartoffeln festkochend roh": 200}}
+  - {titel: Mit Babyspinat, text: "Steakstreifen auf 100 g Babyspinat anrichten (Rucola-Ersatz).", aenderung: {"Babyspinat": 100}}
+  - {titel: Mit Putenbrust, text: "400 g Putenbrust statt Rind, bis 74 °C Kerntemperatur braten.", aenderung: {"Rinderhüftsteak roh": -400, "Putenbrustfilet roh": 400}}
+tipps:
+  - "Salz erst nach dem Braten: Die Kruste wird gleichmäßiger."
+  - "Wer Rucola mag: eine Handvoll unter die Tomaten; in Italien gehört er dazu (nicht mitgerechnet: ca. +5 kcal)."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

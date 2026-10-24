@@ -1,0 +1,73 @@
+id: protein-lasagne
+name: High-Protein-Lasagne mit Magerquark
+hauptkategorie: meal-prep
+kategorien_manuell: [Meal Prep]
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Italienisch
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 20, kochen: 55, wartezeit: 10}
+ausstattung: [Backofen, "Auflaufform 20 × 20 cm", "Pfanne 28 cm", Schneebesen, Fleischthermometer]
+zutaten:
+  - gruppe: Bolognese
+  - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 350}
+  - {id: oel, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: tomatenmark, zutat: Tomatenmark, g: 30, anzeige: "2 EL"}
+  - {id: tomaten, zutat: Gehackte Tomaten Dose, name: gehackte Tomaten, g: 400, anzeige: "1 Dose"}
+  - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 2, anzeige: "2 TL"}
+  - {id: salz_b, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: wasser, zutat: Wasser, g: 100, hinweis: "100 ml"}
+  - gruppe: Quark-„Béchamel“
+  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 100, hinweis: "100 ml"}
+  - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}
+  - {id: salz_q, zutat: Salz, g: 1, anzeige: "2 Prisen"}
+  - gruppe: Schichten
+  - {id: platten, zutat: Lasagneplatten ungekocht, name: Lasagneplatten, g: 120, anzeige: "ca. 6 Platten", hinweis: "ohne Vorkochen"}
+  - {id: mozzarella, zutat: Mozzarella light, g: 100, hinweis: "abgetropft, in Würfeln"}
+mise_en_place:
+  - "Backofen auf 190 °C Ober-/Unterhitze (170 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "{zwiebel} fein würfeln, {knoblauch} hacken. {mozzarella} in 1 cm Würfel schneiden."
+  - "{quark}, {milch}, {ei}, {parmesan} und {salz_q} mit dem Schneebesen glatt rühren."
+schritte:
+  - titel: Hack anbraten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. {hack} hineingeben, 2 Minuten nicht bewegen, dann zerkrümeln und insgesamt 5–6 Minuten braten, bis es krümelig und gebräunt ist. Bei Hack gilt: durchgaren auf mindestens 72 °C Kerntemperatur, kein rosa mehr; in der Sauce wird das sicher erreicht."
+    timer_min: 6
+  - titel: Bolognese köcheln
+    text: "Auf Stufe 5 von 9 schalten, Zwiebel und Knoblauch 2 Minuten mitbraten. {tomatenmark} 1 Minute anrösten, dann {tomaten}, {wasser} (damit die Dose ausschwenken), {oregano}, {salz_b} und {pfeffer} dazugeben. Auf Stufe 3 von 9 8 Minuten köcheln, bis die Sauce leicht eingedickt, aber noch saftig ist (die Platten brauchen Flüssigkeit)."
+    timer_min: 10
+  - titel: Schichten
+    text: "In der Form schichten: ein Viertel der Bolognese, {platten:n} (passend brechen; insgesamt {platten}), ein Drittel der Quarkcreme, Bolognese, Platten, Quarkcreme, Bolognese, Platten, restliche Bolognese und obenauf die restliche Quarkcreme. Mozzarellawürfel darauf verteilen. Alle Platten müssen bedeckt sein."
+    timer_min: null
+  - titel: Backen
+    text: "Mit Alufolie abgedeckt auf mittlerer Schiene bei 190 °C Ober-/Unterhitze (170 °C Umluft) 25 Minuten backen, dann ohne Folie weitere 15 Minuten, bis der Käse goldbraun ist und ein Messer ohne Widerstand durch die Platten gleitet."
+    timer_min: 40
+  - titel: Ruhen
+    text: "10 Minuten ruhen lassen, dann lässt sie sich sauber schneiden."
+    timer_min: 10
+zeitablauf:
+  - "Während der Ofen vorheizt: Hack anbraten und die Bolognese köcheln, nebenbei die Quarkcreme rühren."
+fehler:
+  - "**Platten hart:** Sauce zu dick oder Platten nicht bedeckt. Lösung: Bolognese saftig lassen und die oberste Lage komplett mit Creme bedecken."
+  - "**Quarkcreme ausgeflockt:** ohne Ei. Lösung: Das Ei bindet die Creme, nicht weglassen."
+  - "**Lasagne läuft beim Schneiden auseinander:** sofort angeschnitten. Lösung: 10 Minuten ruhen lassen."
+anrichten: "Lasagne halbieren, eine Hälfte ({portion_g}) pro Teller. Für Meal Prep jede Hälfte in eine ofenfeste Box."
+aufbewahrung:
+  kuehlschrank_tage: 4
+  einfrierbar: true
+  einfrieren_monate: 3
+  aufwaermen: "Mikrowelle 600 W, 3–4 Minuten abgedeckt, oder im Backofen auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 20 Minuten mit Folie."
+varianten:
+  - {titel: Mit Putenhack, text: "350 g Putenhack statt Rinderhack.", aenderung: {"Rinderhackfleisch 5 % Fett roh": -350, "Putenhackfleisch roh": 350}}
+  - {titel: Mit Spinat, text: "100 g Babyspinat roh zwischen die Schichten legen.", aenderung: {"Babyspinat": 100}}
+  - {titel: Weniger kcal, text: "Mozzarella auf 50 g reduzieren.", aenderung: {"Mozzarella light": -50}}
+tipps:
+  - "Eine Prise Zimt (Messerspitze) in der Bolognese ist ein italienischer Großmutter-Trick: Sie schmeckt runder."
+  - "Am Vortag geschichtet und über Nacht gekühlt wird sie noch saftiger; dann 10 Minuten länger backen."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

@@ -1,0 +1,67 @@
+id: knoblauch-garnelen-pasta
+name: Knoblauch-Garnelen-Pasta mit Tomaten
+hauptkategorie: kalorienarm
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Italienisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „High-Protein Garlic Shrimp Pasta“"
+  link: null
+  aenderungen: "Butter-Sahne-Sauce durch Olivenöl, Tomaten und Nudelwasser ersetzt, Garnelen-Anteil verdoppelt; ca. 300 kcal weniger als die Butterversion."
+schwierigkeit: leicht
+zeit: {vorbereitung: 7, kochen: 15, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm", "Topf ca. 3 l", Sieb]
+zutaten:
+  - gruppe: Pasta
+  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Spaghetti, g: 140}
+  - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
+  - gruppe: Garnelen-Sauce
+  - {id: garnelen, zutat: Garnelen roh geschält, name: Garnelen, g: 320, hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
+  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - {id: knoblauch, zutat: Knoblauch, g: 12, anzeige: "4 Zehen"}
+  - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
+  - {id: tomaten, zutat: Tomaten, name: Kirschtomaten, g: 200, hinweis: "halbiert"}
+  - {id: tomatenmark, zutat: Tomatenmark, g: 15, anzeige: "1 EL"}
+  - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
+  - {id: salz, zutat: Salz, g: 1, anzeige: "2 Prisen"}
+  - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 10, anzeige: "2 EL gehackt"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 15, anzeige: "1½ EL"}
+mise_en_place:
+  - "{garnelen} am Vorabend in einer Schüssel abgedeckt im Kühlschrank auftauen. Vor dem Kochen abspülen und gründlich trocken tupfen."
+  - "3 l Wasser mit {salz_wasser} auf Stufe 9 von 9 aufkochen."
+  - "{knoblauch} in dünne Scheiben schneiden, {tomaten} halbieren, {petersilie} hacken."
+schritte:
+  - titel: Pasta kochen
+    text: "{pasta} ins sprudelnde Wasser geben und nach Packungsangabe minus 1 Minute bissfest kochen. 150 ml Nudelwasser abnehmen, dann abgießen."
+    timer_min: 9
+  - titel: Garnelen braten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen. Garnelen nebeneinander hineinlegen, mit {salz} würzen und 1½ Minuten pro Seite braten. Garprobe: Sie sind rosa-orange, nicht mehr glasig und biegen sich zu einem lockeren C (Kerntemperatur ca. 63 °C). Ein festes O heißt übergart. Herausnehmen."
+    timer_min: 3
+  - titel: Sauce
+    text: "Auf Stufe 5 von 9 schalten, Knoblauch und {chili} 1 Minute anschwitzen, bis der Knoblauch hellgolden ist (nicht braun). Kirschtomaten und {tomatenmark} dazugeben und 3 Minuten braten, bis die Tomaten aufplatzen. 100 ml Nudelwasser angießen."
+    timer_min: 4
+  - titel: Schwenken
+    text: "Pasta und Garnelen in die Pfanne geben, auf Stufe 4 von 9 {zitrone} und Petersilie dazu und 1 Minute schwenken, bis die Sauce die Nudeln glänzend überzieht; bei Bedarf noch Nudelwasser. Mit {parmesan} bestreuen."
+    timer_min: 1
+zeitablauf:
+  - "Während das Wasser aufkocht: Knoblauch, Tomaten und Petersilie schneiden."
+  - "Garnelen braten, sobald die Pasta im Wasser ist; die Sauce entsteht in den letzten 5 Minuten."
+fehler:
+  - "**Garnelen gummiartig:** zu lange gebraten. Lösung: maximal 1½ Minuten pro Seite, sie garen in der Sauce nach."
+  - "**Knoblauch bitter:** braun geröstet. Lösung: Stufe 5 von 9, nur bis hellgolden."
+  - "**Sauce wässrig:** Garnelen nicht trocken getupft. Lösung: gründlich abtupfen, sonst kochen sie statt zu braten."
+anrichten: "Pro Teller die Hälfte der Pasta mit Garnelen: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 1
+  einfrierbar: false
+  aufwaermen: "Am besten frisch essen. Reste am nächsten Tag in der Pfanne auf Stufe 5 von 9 mit 2 EL Wasser 2–3 Minuten, nur bis heiß."
+varianten:
+  - {titel: Mehr kcal, text: "Pasta auf 180 g erhöhen (für normale Tage statt Spielraum-Tag).", aenderung: {"Hartweizennudeln ungekocht": 40}}
+  - {titel: Mit Hähnchen, text: "320 g Hähnchenbrust in Streifen statt Garnelen, bis 74 °C Kerntemperatur braten.", aenderung: {"Garnelen roh geschält": -320, "Hähnchenbrustfilet roh": 320}}
+  - {titel: Mit Spinat, text: "100 g Babyspinat in der Sauce zusammenfallen lassen.", aenderung: {"Babyspinat": 100}}
+tipps:
+  - "TK-Garnelen über Nacht im Kühlschrank auftauen lassen, nicht in warmem Wasser: Sie bleiben saftiger."
+  - "Abgeriebene Zitronenschale zum Schluss bringt Frische ohne Säure."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

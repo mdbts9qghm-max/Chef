@@ -1,7 +1,7 @@
 <!-- Generiert aus daten/rezeptplan.yaml – nicht von Hand bearbeiten. -->
 # Rezeptplan: Startbestand mit 50 Rezepten
 
-Stand: 21 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
+Stand: 31 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
 
 ## Frühstück, süß (15)
 
@@ -37,16 +37,16 @@ Stand: 21 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 
 | Nr. | Gericht | id | Küche | Hauptprotein | Ziel-kcal | Inspiration | Tags | Status |
 |---:|---|---|---|---|---:|---|---|---|
-| 21 | Putenschnitzel aus dem Airfryer mit Bratkartoffeln | `putenschnitzel-airfryer` | Deutsch | Pute | 720 | nein | – | offen |
-| 22 | Frikadellen mit Kartoffelpüree | `frikadellen-kartoffelpueree` | Deutsch | Rinderhack + Quark | 750 | nein | MP | offen |
-| 23 | Rindergulasch mit Salzkartoffeln | `rindergulasch` | Deutsch | Rind | 700 | nein | MP | offen |
-| 24 | Schweinefilet in Senf-Rahm mit Kartoffeln | `schweinefilet-senf-rahm` | Deutsch | Schwein | 530 | nein | KA | offen |
-| 25 | High-Protein-Lasagne mit Magerquark | `protein-lasagne` | Italienisch | Rind | 780 | nein | MP | offen |
-| 26 | Hähnchen-Piccata mit Zitronen-Pasta | `haehnchen-piccata` | Italienisch | Hähnchen | 720 | nein | S | offen |
-| 27 | Gnocchi al Forno mit Putenhack & Mozzarella | `gnocchi-al-forno` | Italienisch | Pute | 760 | ja | MP | offen |
-| 28 | Knoblauch-Garnelen-Pasta mit Tomaten | `knoblauch-garnelen-pasta` | Italienisch | Fisch & Garnelen | 540 | ja | S, KA | offen |
-| 29 | Tagliata vom Hüftsteak mit Parmesan-Kartoffeln | `tagliata-hueftsteak` | Italienisch | Rind | 540 | nein | S, KA | offen |
-| 30 | Teriyaki-Hähnchen-Bowl mit Reis | `teriyaki-haehnchen-bowl` | Asiatisch | Hähnchen | 740 | nein | MP | offen |
+| 21 | Putenschnitzel aus dem Airfryer mit Bratkartoffeln | `putenschnitzel-airfryer` | Deutsch | Pute | 720 | nein | – | ✓ geschrieben (653 kcal) |
+| 22 | Frikadellen mit Kartoffelpüree | `frikadellen-kartoffelpueree` | Deutsch | Rinderhack + Quark | 750 | nein | MP | ✓ geschrieben (707 kcal) |
+| 23 | Rindergulasch mit Salzkartoffeln | `rindergulasch` | Deutsch | Rind | 700 | nein | MP | ✓ geschrieben (658 kcal) |
+| 24 | Schweinefilet in Senf-Rahm mit Kartoffeln | `schweinefilet-senf-rahm` | Deutsch | Schwein | 530 | nein | KA | ✓ geschrieben (479 kcal) |
+| 25 | High-Protein-Lasagne mit Magerquark | `protein-lasagne` | Italienisch | Rind | 780 | nein | MP | ✓ geschrieben (802 kcal) |
+| 26 | Hähnchen-Piccata mit Zitronen-Pasta | `haehnchen-piccata` | Italienisch | Hähnchen | 720 | nein | S | ✓ geschrieben (699 kcal) |
+| 27 | Gnocchi al Forno mit Putenhack & Mozzarella | `gnocchi-al-forno` | Italienisch | Pute | 760 | ja | MP | ✓ geschrieben (706 kcal) |
+| 28 | Knoblauch-Garnelen-Pasta mit Tomaten | `knoblauch-garnelen-pasta` | Italienisch | Fisch & Garnelen | 540 | ja | S, KA | ✓ geschrieben (493 kcal) |
+| 29 | Tagliata vom Hüftsteak mit Parmesan-Kartoffeln | `tagliata-hueftsteak` | Italienisch | Rind | 540 | nein | S, KA | ✓ geschrieben (462 kcal) |
+| 30 | Teriyaki-Hähnchen-Bowl mit Reis | `teriyaki-haehnchen-bowl` | Asiatisch | Hähnchen | 740 | nein | MP | ✓ geschrieben (637 kcal) |
 | 31 | Korean Beef Bowl | `korean-beef-bowl` | Asiatisch | Rind | 720 | ja | S | offen |
 | 32 | Rotes Thai-Curry mit Garnelen & Reis | `thai-curry-garnelen` | Asiatisch | Fisch & Garnelen | 540 | nein | KA | offen |
 | 33 | Gebratene Mie-Nudeln mit Pute | `mie-nudeln-pute` | Asiatisch | Pute | 540 | nein | S, KA | offen |
@@ -99,30 +99,34 @@ Stand: 21 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
 
-## Ist-Stand der geschriebenen Rezepte (21)
+## Ist-Stand der geschriebenen Rezepte (31)
 
 Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.
 
 | Anforderung | Soll | Ist | |
 |---|---:|---:|---|
-| Rezepte gesamt | 50 | 21 | ✓ |
+| Rezepte gesamt | 50 | 31 | ✓ |
 | Bereich Frühstück | 15 | 15 | ✓ |
 | Bereich Snack | 5 | 5 | ✓ |
-| Bereich Hauptgericht | 30 | 1 | ✓ |
+| Bereich Hauptgericht | 30 | 11 | ✓ |
 | Frühstück Meal Prep | ≥ 4 | 7 | ✓ |
 | Frühstück Schnelle Rezepte | ≥ 5 | 10 | ✓ |
-| Küche Deutsch | 4 | 0 | ✓ |
-| Küche Italienisch | 5 | 0 | ✓ |
-| Küche Asiatisch | 5 | 0 | ✓ |
+| Küche Deutsch | 4 | 4 | ✓ |
+| Küche Italienisch | 5 | 5 | ✓ |
+| Küche Asiatisch | 5 | 1 | ✓ |
 | Küche Mexikanisch | 3 | 0 | ✓ |
 | Küche Indisch | 3 | 0 | ✓ |
 | Küche Griechisch & Mediterran | 3 | 0 | ✓ |
 | Küche Türkisch & Orientalisch | 3 | 0 | ✓ |
 | Küche Amerikanisch | 3 | 1 | ✓ |
 | Küche International / Fusion | 1 | 0 | ✓ |
-| Meal Prep | ≥ 12 | 10 | offen |
-| Schnelle Rezepte | ≥ 15 | 15 | ✓ |
-| Kalorienarme Hauptgerichte | ≥ 6 | 0 | offen |
-| High Protein | ≥ 45 | 21 | offen |
-| Inspiration | ≥ 15 | 10 | offen |
-| Hauptprotein Hähnchen | ≤ 10 | 1 | ✓ |
+| Meal Prep | ≥ 12 | 15 | ✓ |
+| Schnelle Rezepte | ≥ 15 | 18 | ✓ |
+| Kalorienarme Hauptgerichte | ≥ 6 | 3 | offen |
+| High Protein | ≥ 45 | 31 | offen |
+| Inspiration | ≥ 15 | 12 | offen |
+| Hauptprotein Rind | ≤ 10 | 4 | ✓ |
+| Hauptprotein Hähnchen | ≤ 10 | 3 | ✓ |
+| Hauptprotein Pute | ≤ 10 | 2 | ✓ |
+| Hauptprotein Fisch & Garnelen | ≤ 10 | 1 | ✓ |
+| Hauptprotein Schwein | ≤ 10 | 1 | ✓ |

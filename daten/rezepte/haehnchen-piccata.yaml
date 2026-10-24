@@ -1,0 +1,67 @@
+id: haehnchen-piccata
+name: Hähnchen-Piccata mit Zitronen-Pasta
+hauptkategorie: schnell
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Italienisch
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 8, kochen: 17, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm", "Topf ca. 3 l", "2 tiefe Teller", Fleischthermometer, Gefrierbeutel]
+zutaten:
+  - gruppe: Hähnchen
+  - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilets, g: 360, anzeige: "2 Hähnchenbrustfilets"}
+  - {id: salz_h, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 15, anzeige: "1½ EL"}
+  - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 30, anzeige: "3 EL"}
+  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - gruppe: Zitronen-Pasta
+  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Spaghetti, g: 160}
+  - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: bruehe, zutat: Gemüsebrühe zubereitet, name: Gemüsebrühe, g: 100, hinweis: "100 ml"}
+  - {id: zitrone, zutat: Zitronensaft, g: 30, anzeige: "2 EL", hinweis: "frisch gepresst, ca. ½ Zitrone"}
+  - {id: butter, zutat: Butter, g: 10, anzeige: "2 TL", hinweis: "kalt"}
+  - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 10, anzeige: "2 EL gehackt"}
+mise_en_place:
+  - "Für die Pasta 3 l Wasser mit {salz_wasser} im Topf auf Stufe 9 von 9 zum Kochen bringen (ca. 8 Minuten)."
+  - "{haehnchen} waagerecht halbieren (4 dünne Schnitzel), zwischen Gefrierbeutel auf 1 cm flach klopfen, mit {salz_h} und {pfeffer} würzen."
+  - "Teller 1: {mehl}. Teller 2: {ei} mit {parmesan} verquirlt. {knoblauch} fein hacken, {petersilie} hacken."
+schritte:
+  - titel: Pasta kochen
+    text: "{pasta} ins sprudelnde Wasser geben und nach Packungsangabe minus 1 Minute kochen (meist 8–9 Minuten), bis sie bissfest ist. Vor dem Abgießen 100 ml Nudelwasser abnehmen."
+    timer_min: 9
+  - titel: Piccata braten
+    text: "Schnitzel in Mehl wenden, abklopfen und durch die Ei-Parmesan-Mischung ziehen. {oel} in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). Schnitzel 3 Minuten braten, bis die Hülle goldgelb ist, wenden und 2–3 Minuten weiterbraten. Fertig bei 74 °C Kerntemperatur. Auf einen Teller legen."
+    timer_min: 6
+  - titel: Zitronensauce
+    text: "Auf Stufe 5 von 9 schalten, Knoblauch 30 Sekunden im Bratfett anschwitzen. Mit {bruehe} und {zitrone} ablöschen, Bratensatz lösen und 2 Minuten einköcheln lassen. Vom Herd ziehen und {butter} einschwenken, bis die Sauce leicht bindet."
+    timer_min: 3
+  - titel: Pasta schwenken
+    text: "Abgegossene Pasta in die Pfanne geben, auf Stufe 4 von 9 mit 3–4 EL Nudelwasser und der Petersilie 1 Minute schwenken, bis die Sauce die Nudeln glänzend überzieht. Hähnchen obenauf legen."
+    timer_min: 1
+zeitablauf:
+  - "Während das Nudelwasser aufkocht: Hähnchen klopfen und Paniertstraße vorbereiten."
+  - "Pasta ins Wasser, dann sofort mit dem Hähnchen beginnen. Sauce machen, während die Pasta die letzten Minuten kocht."
+fehler:
+  - "**Hülle löst sich:** Schnitzel nicht abgeklopft oder zu früh gewendet. Lösung: überschüssiges Mehl abklopfen, erst wenden, wenn die Unterseite fest ist."
+  - "**Sauce zu sauer:** zu viel Zitrone. Lösung: mit 1 EL Nudelwasser mehr und der Butter ausgleichen."
+  - "**Pasta trocken:** kein Nudelwasser verwendet. Lösung: Nudelwasser aufheben, die Stärke bindet die Sauce."
+anrichten: "Pro Teller die Hälfte der Zitronen-Pasta mit 2 Piccata-Schnitzeln obendrauf: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "In der Pfanne auf Stufe 5 von 9 mit 2 EL Wasser 3–4 Minuten."
+  separat: "Hähnchen und Pasta getrennt lagern."
+varianten:
+  - {titel: Mit Putenschnitzel, text: "360 g Putenbrust statt Hähnchen.", aenderung: {"Hähnchenbrustfilet roh": -360, "Putenbrustfilet roh": 360}}
+  - {titel: Weniger kcal, text: "Pasta auf 110 g reduzieren.", aenderung: {"Hartweizennudeln ungekocht": -50}}
+  - {titel: Mit Spinat, text: "100 g Babyspinat mit der Pasta unterschwenken.", aenderung: {"Babyspinat": 100}}
+tipps:
+  - "Abgeriebene Zitronenschale zum Schluss über die Pasta: viel mehr Zitronenaroma ohne mehr Säure."
+  - "Wer Kapern im Vorrat hat: 1 EL mit dem Knoblauch anschwitzen, das ist die klassische Piccata."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

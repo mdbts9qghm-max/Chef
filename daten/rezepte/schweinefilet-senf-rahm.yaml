@@ -1,0 +1,65 @@
+id: schweinefilet-senf-rahm
+name: Schweinefilet in Senf-Rahm mit Kartoffeln
+hauptkategorie: kalorienarm
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Deutsch
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 10, kochen: 25, wartezeit: 5}
+ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l", Fleischthermometer]
+zutaten:
+  - gruppe: Fleisch
+  - {id: filet, zutat: Schweinefilet roh, name: Schweinefilet, g: 400, hinweis: "Sehnen entfernt"}
+  - {id: oel, zutat: Rapsöl, g: 6, anzeige: "2 TL"}
+  - {id: salz_f, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - gruppe: Senf-Rahm
+  - {id: zwiebel, zutat: Zwiebel, g: 50, anzeige: "½ Zwiebel"}
+  - {id: senf, zutat: Senf mittelscharf, name: Senf, g: 20, anzeige: "1 gehäufter EL"}
+  - {id: bruehe, zutat: Gemüsebrühe zubereitet, name: Gemüsebrühe, g: 100, hinweis: "100 ml"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 150, hinweis: "150 ml"}
+  - {id: staerke, zutat: Speisestärke, g: 5, anzeige: "1 TL"}
+  - {id: frischkaese, zutat: Frischkäse light, g: 40, anzeige: "1 gehäufter EL"}
+  - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 5, anzeige: "1 EL gehackt"}
+  - gruppe: Beilage
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 400, hinweis: "geschält gewogen"}
+  - {id: salz_wasser, zutat: Salz, name: Salz fürs Kochwasser, g: 10, anzeige: "2 TL", nicht_mitgerechnet: true}
+mise_en_place:
+  - "{kartoffeln} schälen und halbieren (große vierteln)."
+  - "{filet} trocken tupfen und in 6 Medaillons à 3 cm schneiden, mit dem Handballen leicht flach drücken. Mit {salz_f} und {pfeffer} würzen."
+  - "{zwiebel} fein würfeln. {petersilie} hacken. {staerke} mit 2 EL von {milch} glatt rühren, dann mit der restlichen Milch und {bruehe} mischen."
+schritte:
+  - titel: Kartoffeln kochen
+    text: "Kartoffeln im Topf knapp mit Wasser bedecken, {salz_wasser} dazu, auf Stufe 9 von 9 aufkochen und auf Stufe 5 von 9 18–20 Minuten kochen, bis ein Messer leicht hineingleitet."
+    timer_min: 20
+  - titel: Medaillons braten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen (ca. 2 min). Medaillons 3 Minuten braten, bis sie unten goldbraun sind, wenden und 2–3 Minuten weiterbraten. Bei 60 °C Kerntemperatur herausnehmen, in Alufolie wickeln und 5 Minuten ruhen lassen: Sie ziehen auf 63 °C nach und bleiben innen zartrosa."
+    timer_min: 6
+  - titel: Senf-Rahm
+    text: "Auf Stufe 5 von 9 zurückschalten, Zwiebel im Bratfett 2 Minuten glasig dünsten. {senf} einrühren, die Milch-Brühe-Mischung angießen und den Bratensatz lösen. Unter Rühren 2 Minuten köcheln, bis die Sauce sämig wird. Auf Stufe 3 von 9 herunterschalten, {frischkaese} einrühren, bis er geschmolzen ist."
+    timer_min: 4
+  - titel: Zusammenführen
+    text: "Medaillons samt ausgetretenem Saft in die Sauce legen und 1 Minute ziehen lassen (nicht mehr kochen). Mit Petersilie bestreuen."
+    timer_min: 1
+zeitablauf:
+  - "Kartoffeln zuerst aufsetzen; nach 10 Minuten mit den Medaillons beginnen. Während das Fleisch ruht, die Sauce machen."
+fehler:
+  - "**Fleisch grau und trocken:** über 63 °C gegart. Lösung: bei 60 °C herausnehmen und ruhen lassen."
+  - "**Sauce flockt:** Frischkäse sprudelnd gekocht. Lösung: erst auf Stufe 3 von 9 einrühren."
+  - "**Sauce zu scharf:** sehr scharfer Senf. Lösung: mittelscharfen Senf verwenden, 1 TL Honig gleicht aus (+16 kcal)."
+anrichten: "Pro Teller 3 Medaillons, die Hälfte der Kartoffeln und die Hälfte der Sauce: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "Sauce mit Medaillons im Topf auf Stufe 3 von 9 3–4 Minuten erwärmen (nicht kochen), Kartoffeln in der Mikrowelle 600 W, 1½ Minuten."
+varianten:
+  - {titel: Mit Putenbrust, text: "400 g Putenbrust in Medaillons statt Schwein, bis 74 °C Kerntemperatur garen.", aenderung: {"Schweinefilet roh": -400, "Putenbrustfilet roh": 400}}
+  - {titel: Mehr kcal, text: "Kartoffeln auf 600 g erhöhen (für Tage mit mehr Bedarf).", aenderung: {"Kartoffeln festkochend roh": 200}}
+  - {titel: Mit Nudeln, text: "120 g Hartweizennudeln statt Kartoffeln.", aenderung: {"Kartoffeln festkochend roh": -400, "Hartweizennudeln ungekocht": 120}}
+tipps:
+  - "Halb mittelscharfer, halb körniger Senf (falls vorhanden) macht die Sauce optisch schöner."
+  - "Das Filet erst kurz vor dem Braten salzen, sonst zieht es Wasser."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

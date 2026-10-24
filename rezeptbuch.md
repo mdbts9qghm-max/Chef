@@ -1,13 +1,38 @@
 <!-- Generiert – nicht von Hand bearbeiten. -->
 # Rezeptbuch
 
-21 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
+31 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
 
 ## High Protein
 
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
 | [Marry Me Chicken mit Reis](rezepte/high-protein/marry-me-chicken.md) | Mittag/Abend | Amerikanisch | 741 | 64,7 g | 35 min | High Protein, Meal Prep | – |
+| [Putenschnitzel aus dem Airfryer mit Bratkartoffeln](rezepte/high-protein/putenschnitzel-airfryer.md) | Mittag/Abend | Deutsch | 653 | 56,6 g | 40 min | High Protein | – |
+
+## Schnelle Rezepte
+
+| Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
+|---|---|---|---:|---:|---:|---|---|
+| [Hähnchen-Piccata mit Zitronen-Pasta](rezepte/schnell/haehnchen-piccata.md) | Mittag/Abend | Italienisch | 699 | 62,2 g | 25 min | High Protein, Schnelle Rezepte | – |
+
+## Meal Prep
+
+| Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
+|---|---|---|---:|---:|---:|---|---|
+| [Frikadellen mit Kartoffelpüree](rezepte/meal-prep/frikadellen-kartoffelpueree.md) | Mittag/Abend | Deutsch | 707 | 61,1 g | 40 min | High Protein, Meal Prep | – |
+| [Gnocchi al Forno mit Putenhack & Mozzarella](rezepte/meal-prep/gnocchi-al-forno.md) | Mittag/Abend | Italienisch | 706 | 51 g | 40 min | High Protein, Meal Prep | – |
+| [High-Protein-Lasagne mit Magerquark](rezepte/meal-prep/protein-lasagne.md) | Mittag/Abend | Italienisch | 802 | 81 g | 75 min | High Protein, Meal Prep | – |
+| [Rindergulasch mit Salzkartoffeln](rezepte/meal-prep/rindergulasch.md) | Mittag/Abend | Deutsch | 658 | 61,1 g | 120 min | High Protein, Meal Prep | – |
+| [Teriyaki-Hähnchen-Bowl mit Reis](rezepte/meal-prep/teriyaki-haehnchen-bowl.md) | Mittag/Abend | Asiatisch | 637 | 56 g | 32 min | High Protein, Meal Prep | – |
+
+## Kalorienarm
+
+| Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
+|---|---|---|---:|---:|---:|---|---|
+| [Knoblauch-Garnelen-Pasta mit Tomaten](rezepte/kalorienarm/knoblauch-garnelen-pasta.md) | Mittag/Abend | Italienisch | 493 | 41,7 g | 22 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
+| [Schweinefilet in Senf-Rahm mit Kartoffeln](rezepte/kalorienarm/schweinefilet-senf-rahm.md) | Mittag/Abend | Deutsch | 479 | 52,1 g | 35 min | High Protein, Kalorienarm | – |
+| [Tagliata vom Hüftsteak mit Parmesan-Kartoffeln](rezepte/kalorienarm/tagliata-hueftsteak.md) | Mittag/Abend | Italienisch | 462 | 50,7 g | 25 min | High Protein, Schnelle Rezepte, Kalorienarm | – |
 
 ## Frühstück & Snacks
 

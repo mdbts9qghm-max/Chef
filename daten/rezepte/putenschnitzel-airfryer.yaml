@@ -1,0 +1,66 @@
+id: putenschnitzel-airfryer
+name: Putenschnitzel aus dem Airfryer mit Bratkartoffeln
+hauptkategorie: high-protein
+kategorien_manuell: []
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Deutsch
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 15, kochen: 25, wartezeit: 0}
+ausstattung: [Airfryer, "Pfanne 28 cm mit Deckel", "3 tiefe Teller zum Panieren", Fleischthermometer, Gefrierbeutel, Nudelholz]
+zutaten:
+  - gruppe: Schnitzel
+  - {id: pute, zutat: Putenbrustfilet roh, name: Putenschnitzel, g: 360, anzeige: "2 dünne Putenschnitzel", hinweis: "roh"}
+  - {id: salz_s, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+  - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
+  - {id: paprika, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 1, anzeige: "½ TL"}
+  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 20, anzeige: "2 EL"}
+  - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
+  - {id: panko, zutat: Paniermehl, g: 50, anzeige: "5 EL"}
+  - {id: oel_s, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL", hinweis: "oder 2 Zitronenspalten"}
+  - gruppe: Bratkartoffeln
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: festkochende Kartoffeln, g: 500, hinweis: "geschält gewogen"}
+  - {id: oel_k, zutat: Rapsöl, g: 12, anzeige: "1 EL"}
+  - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
+  - {id: salz_k, zutat: Salz, g: 2, anzeige: "⅓ TL"}
+mise_en_place:
+  - "{kartoffeln} schälen und in 3 mm dünne Scheiben schneiden (mit dem Gemüsehobel geht es am schnellsten). {zwiebel} halbieren und in feine Streifen schneiden."
+  - "{pute:n} zwischen Gefrierbeutel legen und mit dem Nudelholz auf 1 cm Dicke klopfen. Mit {salz_s}, {pfeffer} und {paprika} würzen."
+  - "Paniertstraße aufbauen: Teller 1 {mehl}, Teller 2 {ei} mit 1 EL Wasser verquirlt, Teller 3 {panko}."
+schritte:
+  - titel: Bratkartoffeln starten
+    text: "{oel_k} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen (ca. 2 min). Kartoffelscheiben möglichst in einer Lage hineingeben, Deckel auflegen und 8 Minuten braten, nach 4 Minuten einmal wenden. Dann den Deckel abnehmen, auf Stufe 6 von 9 schalten und weitere 10–12 Minuten ohne Deckel braten, nur alle 3 Minuten wenden, bis die Scheiben goldbraun und knusprig sind."
+    timer_min: 20
+  - titel: Panieren
+    text: "Schnitzel nacheinander im Mehl wenden (überschüssiges abklopfen), durch das Ei ziehen und im Paniermehl wenden, leicht andrücken. Die Panade nicht fest anpressen, sonst wird sie nicht wellig."
+    timer_min: null
+  - titel: Schnitzel im Airfryer
+    text: "Airfryer auf 200 °C 3 Minuten vorheizen. Schnitzel nebeneinander in den Korb legen und beide Seiten mit {oel_s} beträufeln oder bepinseln. Bei 200 °C 10–12 Minuten garen, nach 6 Minuten wenden. Fertig, wenn die Panade goldbraun ist und das Thermometer an der dicksten Stelle 74 °C Kerntemperatur zeigt."
+    timer_min: 12
+  - titel: Zwiebeln und fertigstellen
+    text: "In den letzten 4 Minuten der Bratkartoffeln die Zwiebelstreifen und {salz_k} untermischen und mitbraten, bis die Zwiebeln weich und leicht gebräunt sind."
+    timer_min: 4
+zeitablauf:
+  - "Bratkartoffeln zuerst starten; während sie mit Deckel braten, die Schnitzel panieren."
+  - "Nach dem ersten Wenden ohne Deckel: Airfryer vorheizen und die Schnitzel garen. Beides ist nach ca. 25 Minuten gleichzeitig fertig."
+fehler:
+  - "**Panade trocken und blass:** ohne Öl in den Airfryer. Lösung: Öl nicht weglassen, es sorgt für die goldene Farbe."
+  - "**Bratkartoffeln zerfallen:** zu oft gewendet oder mehligkochende Kartoffeln. Lösung: festkochende Sorte, nur alle 3 Minuten wenden."
+  - "**Schnitzel innen trocken:** zu dick oder zu lange. Lösung: auf 1 cm klopfen, ab 70 °C Kerntemperatur genau messen."
+anrichten: "Pro Teller 1 Schnitzel mit der Hälfte der Bratkartoffeln und {zitrone:n} zum Beträufeln ({zitrone} insgesamt): {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "Schnitzel im Airfryer bei 180 °C 4–5 Minuten, Bratkartoffeln in der Pfanne auf Stufe 6 von 9 mit 1 TL Wasser 4 Minuten. Mikrowelle macht die Panade weich."
+  separat: "Schnitzel und Kartoffeln getrennt lagern."
+varianten:
+  - {titel: Hähnchenschnitzel, text: "360 g Hähnchenbrust statt Pute, gleiche Garzeit.", aenderung: {"Putenbrustfilet roh": -360, "Hähnchenbrustfilet roh": 360}}
+  - {titel: Mit Kartoffelpüree, text: "Statt Bratkartoffeln Püree aus 500 g Kartoffeln, 120 ml Milch und 10 g Butter; Öl der Kartoffeln entfällt.", aenderung: {"Rapsöl": -12, "Zwiebel": -80, "Milch 1,5 % Fett": 120, "Butter": 10}}
+  - {titel: Weniger kcal, text: "Kartoffeln auf 350 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -150}}
+tipps:
+  - "Panko statt normalem Paniermehl macht die Panade noch krosser; die Nährwerte sind praktisch gleich."
+  - "Etwas Senf (1 TL) auf die Schnitzel streichen, bevor sie ins Mehl kommen: würziger und die Panade hält besser."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

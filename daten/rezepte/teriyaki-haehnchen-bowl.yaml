@@ -1,0 +1,65 @@
+id: teriyaki-haehnchen-bowl
+name: Teriyaki-Hähnchen-Bowl mit Reis
+hauptkategorie: meal-prep
+kategorien_manuell: [Meal Prep]
+mahlzeit: Mittag/Abend
+geschmack: herzhaft
+kueche: Asiatisch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 22, wartezeit: 0}
+ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l mit Deckel", Fleischthermometer]
+zutaten:
+  - gruppe: Reis
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150}
+  - gruppe: Teriyaki-Sauce
+  - {id: soja, zutat: Sojasauce, g: 40, anzeige: "3 EL"}
+  - {id: honig, zutat: Honig, g: 25, anzeige: "1 gehäufter EL"}
+  - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
+  - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
+  - {id: staerke, zutat: Speisestärke, g: 8, anzeige: "1½ TL"}
+  - gruppe: Hähnchen & Gemüse
+  - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilet, g: 400}
+  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: paprika, zutat: Paprika rot, name: rote Paprika, g: 150, anzeige: "1 Paprika"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 5, anzeige: "1 TL"}
+  - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 30, anzeige: "2 Stangen"}
+mise_en_place:
+  - "{reis} waschen, bis das Wasser fast klar ist."
+  - "{haehnchen} in 2,5 cm Würfel schneiden. {paprika} in 2 cm Stücke. {fruehlingszwiebeln} in feine Ringe."
+  - "Teriyaki-Sauce: {ingwer} und {knoblauch} fein reiben, mit {soja}, {honig}, {staerke} und 80 ml Wasser glatt rühren."
+schritte:
+  - titel: Reis kochen
+    text: "Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen lassen und 5 Minuten zugedeckt neben dem Herd ruhen lassen."
+    timer_min: 12
+  - titel: Hähnchen anbraten
+    text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. Hähnchenwürfel in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 2 Minuten weiterbraten, bis sie rundum goldbraun sind."
+    timer_min: 5
+  - titel: Paprika dazu
+    text: "Paprika zugeben und auf Stufe 7 von 9 2 Minuten mitbraten, sie soll noch Biss haben."
+    timer_min: 2
+  - titel: Glasieren
+    text: "Teriyaki-Sauce noch einmal umrühren und angießen. Auf Stufe 6 von 9 unter Rühren 2–3 Minuten köcheln, bis die Sauce dick und glänzend wird und das Hähnchen überzieht. Fertig bei 74 °C Kerntemperatur im dicksten Würfel. Vom Herd nehmen, {sesamoel} unterrühren."
+    timer_min: 3
+zeitablauf:
+  - "Reis zuerst aufsetzen. Während er quillt: Hähnchen braten und glasieren; beides ist gleichzeitig fertig."
+fehler:
+  - "**Sauce verbrennt:** Honig karamellisiert bei zu viel Hitze. Lösung: auf Stufe 6 von 9 zurück, sobald die Sauce in der Pfanne ist."
+  - "**Hähnchen kocht statt brät:** Pfanne zu voll. Lösung: in einer Lage, notfalls in 2 Portionen."
+  - "**Sauce zu salzig:** normale statt milder Sojasauce. Lösung: 1 EL Sojasauce durch Wasser ersetzen."
+anrichten: "Pro Bowl die Hälfte des Reises, daneben das Teriyaki-Hähnchen mit Paprika, mit Frühlingszwiebeln bestreut: {portion_g} pro Portion. Für Meal Prep Reis und Hähnchen nebeneinander in eine Box."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Mikrowelle 600 W, 2½–3 Minuten abgedeckt mit 1 EL Wasser über dem Reis, nach der Hälfte umrühren."
+  separat: "Reis innerhalb von 1 Stunde flach ausgebreitet abkühlen und kühlen. Frühlingszwiebeln erst beim Essen."
+varianten:
+  - {titel: Mit Lachs, text: "400 g Lachs in Würfeln statt Hähnchen, nur 1 Minute pro Seite braten; dann nur 2 Tage haltbar.", aenderung: {"Hähnchenbrustfilet roh": -400, "Lachsfilet ohne Haut roh": 400}}
+  - {titel: Mit Mie-Nudeln, text: "150 g Mie-Nudeln statt Reis.", aenderung: {"Basmatireis ungekocht": -150, "Mie-Nudeln ungekocht": 150}}
+  - {titel: Weniger kcal, text: "Reis auf 100 g, Honig auf 15 g reduzieren.", aenderung: {"Basmatireis ungekocht": -50, "Honig": -10}}
+tipps:
+  - "Ein Spritzer Sriracha in die Sauce für eine scharfe Variante."
+  - "Frisch geriebener Ingwer macht den Unterschied zu fertiger Teriyaki-Sauce."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}
