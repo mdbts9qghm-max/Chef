@@ -1,0 +1,56 @@
+id: protein-griessbrei
+name: Protein-Grießbrei mit Zimt-Apfel
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Deutsch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 5, kochen: 12, wartezeit: 0}
+ausstattung: ["Topf ca. 2 l", "Pfanne 24 cm", Schneebesen]
+zutaten:
+  - gruppe: Grießbrei
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 350, hinweis: "350 ml"}
+  - {id: wasser, zutat: Wasser, g: 150, hinweis: "150 ml"}
+  - {id: griess, zutat: Weichweizengrieß, name: Grieß, g: 90}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+  - {id: quark, zutat: Magerquark, g: 150}
+  - {id: whey, zutat: Whey Protein Vanille, g: 50, anzeige: "1⅔ Messlöffel"}
+  - gruppe: Zimt-Apfel
+  - {id: apfel, zutat: Apfel, g: 110, anzeige: "1 kleiner Apfel", hinweis: "entkernt gewogen"}
+  - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 2, anzeige: "1 TL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 35, anzeige: "3½ EL"}
+mise_en_place:
+  - "{apfel} vierteln, entkernen und in 1 cm Würfel schneiden."
+  - "{quark} und {whey} in einer Schüssel mit 3 EL Wasser glatt rühren."
+schritte:
+  - titel: Apfel und Mandeln anrösten
+    text: "{mandeln} ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten rösten, bis sie hellbraun sind. Apfelwürfel, {zimt} und 2 EL Wasser dazugeben und 4 Minuten auf Stufe 5 von 9 dünsten, bis die Äpfel weich sind, aber noch Biss haben. Beiseitestellen."
+    timer_min: 6
+  - titel: Grieß kochen
+    text: "{milch}, {wasser} und {salz} im Topf auf Stufe 7 von 9 aufkochen (ca. 4 Minuten, dabeibleiben). {griess} mit dem Schneebesen einrieseln lassen und dabei ständig rühren, damit keine Klümpchen entstehen. Auf Stufe 2 von 9 herunterschalten und 3 Minuten unter Rühren quellen lassen, bis der Brei dick wird und blubbert."
+    timer_min: 7
+  - titel: Protein unterrühren
+    text: "Vom Herd ziehen, 2 Minuten abkühlen lassen und dann die Quark-Whey-Mischung kräftig unterrühren. Der Brei wird dabei cremig und glänzend; ist er zu fest, 2–3 EL Wasser dazu."
+    timer_min: 2
+zeitablauf:
+  - "Während die Milch aufkocht: Äpfel und Mandeln in der Pfanne zubereiten."
+fehler:
+  - "**Klümpchen:** Grieß auf einmal hineingekippt. Lösung: langsam einrieseln lassen und mit dem Schneebesen rühren."
+  - "**Whey flockt aus:** direkt in den kochenden Brei. Lösung: Topf vom Herd, 2 Minuten warten, Whey mit Quark vorrühren."
+  - "**Milch übergekocht:** Ceran reagiert träge. Lösung: beim ersten Aufsteigen sofort vom heißen Feld ziehen."
+anrichten: "Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geben: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "Mit 3 EL Wasser 1½ Minuten bei 600 W, nach der Hälfte umrühren; kalt schmeckt er wie Grießpudding."
+  separat: "Zimt-Apfel getrennt lagern."
+varianten:
+  - {titel: Mit Kirschen, text: "110 g Sauerkirschen statt Apfel, kalt darauf.", aenderung: {"Apfel": -110, "Sauerkirschen Glas abgetropft": 110}}
+  - {titel: Schoko-Grieß, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao.", aenderung: {"Whey Protein Vanille": -50, "Whey Protein Schoko": 50, "Kakaopulver stark entölt": 10}}
+  - {titel: Weniger kcal, text: "Mandeln auf 15 g reduzieren.", aenderung: {"Mandeln gehobelt": -20}}
+tipps:
+  - "Für Kindheitsgefühl: obendrauf eine Prise Zimt und 1 TL Erythrit mischen und darüberstreuen (Zimt-„Zucker“ ohne Zucker)."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

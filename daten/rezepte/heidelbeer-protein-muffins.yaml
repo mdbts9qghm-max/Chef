@@ -1,0 +1,61 @@
+id: heidelbeer-protein-muffins
+name: Heidelbeer-Protein-Muffins
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Amerikanisch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 22, wartezeit: 10}
+ausstattung: [Backofen, Standmixer, "Muffinblech für 12 (oder 8 Silikonförmchen)", "8 Papierförmchen"]
+zutaten:
+  - gruppe: Teig
+  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 50, hinweis: "50 ml"}
+  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1 EL"}
+  - {id: erythrit, zutat: Erythrit, g: 20, anzeige: "2 EL"}
+  - {id: backpulver, zutat: Backpulver, g: 6, anzeige: "1½ TL"}
+  - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+  - gruppe: Obst
+  - {id: heidelbeeren, zutat: Heidelbeeren TK, g: 120, hinweis: "gefroren verwenden"}
+mise_en_place:
+  - "Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "8 Mulden des Muffinblechs mit Papierförmchen auslegen."
+schritte:
+  - titel: Teig mixen
+    text: "{hafer} im Standmixer 15 Sekunden fein mahlen. {quark}, {eier}, {whey}, {milch}, {oel}, {erythrit}, {backpulver}, {zitrone} und {salz} dazugeben und 20 Sekunden glatt mixen."
+    timer_min: null
+  - titel: Heidelbeeren unterheben
+    text: "Teig in eine Schüssel geben und zwei Drittel von {heidelbeeren} mit dem Löffel unterheben (gefroren, sonst färben sie den Teig lila). Auf die 8 Förmchen verteilen (je ca. 85 g, fast randvoll) und die restlichen Beeren obenauf drücken."
+    timer_min: null
+  - titel: Backen
+    text: "Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 20–22 Minuten backen. Fertig, wenn die Muffins goldbraun gewölbt sind und ein Holzstäbchen sauber herauskommt."
+    timer_min: 22
+  - titel: Auskühlen
+    text: "Blech herausnehmen und die Muffins 10 Minuten im Blech ruhen lassen, dann herausheben und auf einem Gitter auskühlen lassen. Erst nach dem Auskühlen lösen sie sich gut vom Papier."
+    timer_min: 10
+zeitablauf:
+  - "Während der Ofen vorheizt: Teig mixen und einfüllen."
+fehler:
+  - "**Kleben am Papier:** warm gelöst. Lösung: komplett auskühlen lassen; Silikonförmchen sind die sichere Alternative."
+  - "**Beeren sinken nach unten:** Teig zu flüssig oder Beeren aufgetaut. Lösung: gefrorene Beeren, Teig nicht verdünnen."
+  - "**Gummiartig:** Teig zu lange gemixt. Lösung: nach dem Mahlen nur noch 20 Sekunden mixen."
+anrichten: "4 Muffins ({portion_g}) sind eine Portion. Dazu passt ein Kaffee."
+aufbewahrung:
+  kuehlschrank_tage: 4
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Kalt oder 20–30 Sekunden bei 600 W pro 2 Muffins. Gefroren über Nacht im Kühlschrank auftauen."
+varianten:
+  - {titel: Mehr Protein, text: "Dazu je 100 g Skyr mit Zimt.", aenderung: {"Skyr natur": 200}}
+  - {titel: Himbeer-Muffins, text: "Himbeeren statt Heidelbeeren.", aenderung: {"Heidelbeeren TK": -120, "Himbeeren TK": 120}}
+  - {titel: Schoko-Stückchen, text: "15 g gehackte Zartbitterschokolade mit den Beeren unterheben.", aenderung: {"Zartbitterschokolade 70 %": 15}}
+tipps:
+  - "Abgeriebene Zitronenschale (½ Bio-Zitrone) im Teig macht sie zu Blueberry-Lemon-Muffins."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

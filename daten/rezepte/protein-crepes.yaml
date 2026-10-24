@@ -1,0 +1,63 @@
+id: protein-crepes
+name: Protein-Crêpes mit Vanille-Quark & Beeren
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Frühstück
+geschmack: süß
+kueche: International / Fusion
+inspiration: null
+schwierigkeit: mittel
+zeit: {vorbereitung: 7, kochen: 18, wartezeit: 0}
+ausstattung: ["Pfanne 24 cm (beschichtet)", Schneebesen, Kelle, Mikrowelle]
+zutaten:
+  - gruppe: Teig
+  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 80}
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
+  - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 100, hinweis: "100 ml"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 150, hinweis: "150 ml"}
+  - {id: whey_teig, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+  - {id: oel, zutat: Rapsöl, g: 6, anzeige: "2 TL"}
+  - gruppe: Füllung
+  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: whey_fuellung, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
+  - {id: beeren, zutat: Beerenmischung TK, g: 150}
+  - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+mise_en_place:
+  - "{beeren} 1½ Minuten bei 600 W in der Mikrowelle auftauen."
+  - "{quark} mit {whey_fuellung} und 2 EL Wasser glatt rühren."
+schritte:
+  - titel: Teig rühren
+    text: "{mehl}, {eier}, {eiklar}, {milch}, {whey_teig} und {salz} mit dem Schneebesen 1 Minute zu einem glatten, dünnflüssigen Teig rühren (wie Sahne). 3 Minuten ruhen lassen."
+    timer_min: 3
+  - titel: Crêpes backen
+    text: "Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten vorheizen und mit Küchenpapier hauchdünn mit {oel:n} auswischen. Eine kleine Kelle Teig (ca. 75 g) hineingießen und die Pfanne sofort schwenken, bis der Boden dünn bedeckt ist. 1 Minute backen, bis der Rand sich löst und die Unterseite hellbraun gefleckt ist, wenden und 30 Sekunden fertig backen. Vor jedem Crêpe nachfetten, insgesamt {oel}. Ergibt 6 Crêpes."
+    timer_min: 2
+  - titel: Füllen
+    text: "Jeden Crêpe mit 2 EL Vanille-Quark bestreichen, ein paar Beeren daraufgeben und zu einem Dreieck falten (halbieren, dann noch einmal halbieren)."
+    timer_min: null
+  - titel: Fertigstellen
+    text: "Restliche Beeren samt Saft darübergeben, mit {honig} beträufeln und {mandeln} bestreuen."
+    timer_min: null
+zeitablauf:
+  - "Während der Teig ruht: Pfanne vorheizen und Füllung anrühren."
+fehler:
+  - "**Erster Crêpe misslingt:** Pfanne nicht heiß genug. Lösung: ganz normal; 2 Minuten vorheizen und den ersten als Test sehen."
+  - "**Zu dick:** zu viel Teig. Lösung: Kelle nur zu ¾ füllen und sofort schwenken."
+  - "**Reißen beim Wenden:** zu früh. Lösung: warten, bis sich der Rand von selbst hochbiegt."
+anrichten: "Pro Teller 3 gefüllte Crêpes mit Beeren, Honig und Mandeln: {portion_g} pro Portion."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Ungefüllte Crêpes in der Pfanne ohne Fett auf Stufe 5 von 9, 20 Sekunden pro Seite."
+  separat: "Crêpes mit Backpapier dazwischen stapeln, Füllung getrennt."
+varianten:
+  - {titel: Schoko-Banane, text: "1 Banane (100 g) statt Beeren und 10 g Backkakao in die Füllung, Honig weglassen.", aenderung: {"Beerenmischung TK": -150, "Banane geschält": 100, "Kakaopulver stark entölt": 10, "Honig": -10}}
+  - {titel: Mehr Protein, text: "Füllung mit 150 g Skyr zusätzlich.", aenderung: {"Skyr natur": 150}}
+  - {titel: Weniger kcal, text: "Honig und Mandeln weglassen.", aenderung: {"Honig": -10, "Mandeln gehobelt": -15}}
+tipps:
+  - "Ein Spritzer Zitronensaft und etwas Zitronenschale in der Füllung machen sie frischer."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

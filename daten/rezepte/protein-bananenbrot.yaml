@@ -1,0 +1,65 @@
+id: protein-bananenbrot
+name: Protein-Bananenbrot
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Frühstück
+geschmack: süß
+kueche: Amerikanisch
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Protein Banana Bread“"
+  link: null
+  aenderungen: "Mehl, Zucker und Butter durch Haferflocken, Skyr und Vanille-Whey ersetzt; nur 10 g Schokolade obenauf. Statt Kastenform als flaches Blech-Bananenbrot in der 20 × 20-Form, das gart gleichmäßiger."
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 28, wartezeit: 15}
+ausstattung: [Backofen, Standmixer, "Auflaufform 20 × 20 cm", Backpapier]
+zutaten:
+  - gruppe: Teig
+  - {id: banane, zutat: Banane geschält, name: Bananen, g: 140, anzeige: "1½ sehr reife Bananen", hinweis: "braun gesprenkelt"}
+  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: skyr, zutat: Skyr natur, g: 200}
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
+  - {id: backpulver, zutat: Backpulver, g: 6, anzeige: "1½ TL"}
+  - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 3, anzeige: "1½ TL"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+  - gruppe: Topping
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 20, anzeige: "2 EL"}
+  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 10, anzeige: "2 Rippchen", hinweis: "grob gehackt"}
+mise_en_place:
+  - "Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost in die mittlere Schiene."
+  - "Form mit Backpapier auslegen. {schoko} grob hacken."
+  - "Von {banane:n} 4 dünne Längsscheiben (ca. 20 g) für die Deko abschneiden, den Rest in Stücke brechen."
+schritte:
+  - titel: Teig mixen
+    text: "Bananenstücke, {hafer}, {skyr}, {eier}, {whey}, {backpulver}, {zimt} und {salz} im Standmixer 30–40 Sekunden auf höchster Stufe zu einem glatten, dickflüssigen Teig mixen."
+    timer_min: null
+  - titel: Einfüllen
+    text: "Teig in die Form streichen (ca. 2 cm hoch), Bananenscheiben darauflegen, {mandeln} und die gehackte Schokolade darüberstreuen."
+    timer_min: null
+  - titel: Backen
+    text: "Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 25–28 Minuten backen. Fertig, wenn die Oberfläche goldbraun ist und ein Holzstäbchen in der Mitte fast sauber herauskommt (ein paar feuchte Krümel sind gut)."
+    timer_min: 28
+  - titel: Auskühlen
+    text: "Form herausnehmen und 15 Minuten in der Form auskühlen lassen, dann am Backpapier herausheben. Warm ist es sehr weich, nach dem Auskühlen schnittfest."
+    timer_min: 15
+zeitablauf:
+  - "Während der Ofen vorheizt: Teig mixen und einfüllen."
+fehler:
+  - "**Speckig in der Mitte:** zu früh herausgenommen oder Bananen zu groß gewogen. Lösung: Stäbchenprobe, notfalls 3 Minuten länger."
+  - "**Wenig süß:** Bananen nicht reif genug. Lösung: nur braun gesprenkelte Bananen verwenden; grüne bringen kaum Süße."
+  - "**Trocken:** zu lange gebacken. Lösung: lieber früher prüfen, es gart beim Auskühlen nach."
+anrichten: "In 8 Stücke schneiden, 4 Stücke ({portion_g}) sind eine Portion. Für Meal Prep je 4 Stücke in eine Box."
+aufbewahrung:
+  kuehlschrank_tage: 4
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Kalt, oder 30 Sekunden bei 600 W in der Mikrowelle; auch getoastet in der Pfanne ohne Fett auf Stufe 5 von 9, 1 Minute pro Seite."
+varianten:
+  - {titel: Mehr Protein, text: "Dazu je 100 g Skyr als Topping.", aenderung: {"Skyr natur": 200}}
+  - {titel: Schoko-Bananenbrot, text: "10 g Backkakao in den Teig und Whey Protein Schoko statt Vanille.", aenderung: {"Kakaopulver stark entölt": 10, "Whey Protein Vanille": -40, "Whey Protein Schoko": 40}}
+  - {titel: Mit Erdnussbutter, text: "20 g Erdnussbutter warm über das ausgekühlte Brot träufeln.", aenderung: {"Erdnussbutter 100 % Erdnüsse": 20}}
+tipps:
+  - "Am Tag 2 schmeckt es noch saftiger. Gut gekühlt und in einer Pfanne kurz angeröstet wird es außen karamellig."
+  - "Eine Prise Salz und viel Zimt sind der Trick, damit es nach Bäckerei-Bananenbrot schmeckt."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

@@ -1,0 +1,52 @@
+id: protein-mousse-au-chocolat
+name: Protein-Mousse au Chocolat
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Snack
+geschmack: süß
+kueche: International / Fusion
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „2-Zutaten-Protein-Mousse“ (Skyr + Schoko-Whey)"
+  link: null
+  aenderungen: "Sahne, Eigelb und Zucker der klassischen Mousse durch Skyr und Schoko-Whey ersetzt; 20 g echte Zartbitterschokolade für den Geschmack. Ca. 250 kcal weniger als klassische Mousse pro Portion."
+schwierigkeit: leicht
+zeit: {vorbereitung: 8, kochen: 2, wartezeit: 0}
+ausstattung: [Mikrowelle, Schneebesen, "2 Gläser"]
+zutaten:
+  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 20, anzeige: "4 Rippchen"}
+  - {id: skyr, zutat: Skyr natur, g: 300}
+  - {id: whey, zutat: Whey Protein Schoko, g: 30, anzeige: "1 Messlöffel"}
+  - {id: kakao, zutat: Kakaopulver stark entölt, name: Backkakao, g: 10, anzeige: "2 TL"}
+  - {id: salz, zutat: Salz, g: 0.3, anzeige: "1 kleine Prise"}
+  - {id: himbeeren, zutat: Himbeeren TK, g: 60, hinweis: "angetaut, zum Garnieren"}
+mise_en_place:
+  - "{himbeeren} bei Zimmertemperatur antauen lassen (ca. 15 Minuten) oder 30 Sekunden bei 600 W."
+schritte:
+  - titel: Schokolade schmelzen
+    text: "{schoko} in Stücke brechen und in einer Tasse bei 600 W in der Mikrowelle schmelzen: 2 × 30 Sekunden, dazwischen umrühren. Fertig, wenn sie glatt glänzt; Reste schmelzen beim Rühren."
+    timer_min: 1
+  - titel: Mousse aufschlagen
+    text: "{skyr}, {whey}, {kakao} und {salz} mit dem Schneebesen 1 Minute kräftig aufschlagen, bis die Masse luftig und glatt ist. Die warme Schokolade in dünnem Strahl unter ständigem Schlagen einlaufen lassen; so bilden sich feine Schokostückchen wie in Stracciatella."
+    timer_min: null
+  - titel: Abfüllen
+    text: "In 2 Gläser füllen und mit den Himbeeren garnieren. Sofort essen oder 30 Minuten kalt stellen, dann wird die Mousse fester."
+    timer_min: null
+zeitablauf:
+  - "Während die Schokolade schmilzt: Skyr-Masse aufschlagen."
+fehler:
+  - "**Schokolade wird fest und klumpt:** Skyr zu kalt und auf einmal hinein. Lösung: in dünnem Strahl unter Schlagen – gewollte Schokostückchen sind okay."
+  - "**Schmeckt nach Eiweiß:** Kakao oder Salz vergessen. Lösung: beides nicht weglassen."
+  - "**Schokolade verbrannt:** zu lange in der Mikrowelle. Lösung: in 30-Sekunden-Schritten."
+anrichten: "Pro Glas {portion_g} Mousse mit 30 g Himbeeren obenauf."
+aufbewahrung:
+  kuehlschrank_tage: 2
+  einfrierbar: false
+  aufwaermen: "Nicht aufwärmen, gekühlt essen."
+varianten:
+  - {titel: Mokka-Mousse, text: "2 EL kalten Espresso (30 ml) unterrühren.", aenderung: {"Kaffee zubereitet": 30}}
+  - {titel: Mehr Protein, text: "Skyr auf 400 g erhöhen.", aenderung: {"Skyr natur": 100}}
+  - {titel: Erdnuss-Mousse, text: "15 g Erdnussbutter mit aufschlagen.", aenderung: {"Erdnussbutter 100 % Erdnüsse": 15}}
+tipps:
+  - "Ein paar Flocken Meersalz obendrauf machen sie wie aus dem Restaurant."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

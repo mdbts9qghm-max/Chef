@@ -1,0 +1,55 @@
+id: skyr-cheesecake-im-glas
+name: Skyr-Cheesecake im Glas
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Snack
+geschmack: süß
+kueche: Amerikanisch
+inspiration: null
+schwierigkeit: leicht
+zeit: {vorbereitung: 10, kochen: 2, wartezeit: 0}
+ausstattung: ["2 Gläser à 300 ml", Mikrowelle]
+zutaten:
+  - gruppe: Boden
+  - {id: muesli, zutat: Knuspermüsli, g: 30, anzeige: "3 EL"}
+  - {id: butter, zutat: Butter, g: 5, anzeige: "1 TL"}
+  - gruppe: Creme
+  - {id: skyr, zutat: Skyr natur, g: 250}
+  - {id: quark, zutat: Magerquark, g: 100}
+  - {id: frischkaese, zutat: Frischkäse light, g: 50, anzeige: "2 gehäufte EL"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
+  - {id: erythrit, zutat: Erythrit, g: 10, anzeige: "1 EL"}
+  - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
+  - gruppe: Topping
+  - {id: himbeeren, zutat: Himbeeren TK, g: 80}
+mise_en_place:
+  - "{himbeeren} 45 Sekunden bei 600 W antauen und mit der Gabel leicht zerdrücken."
+schritte:
+  - titel: Boden
+    text: "{butter} in einer Tasse 20 Sekunden bei 600 W schmelzen. {muesli} in einem Gefrierbeutel mit dem Nudelholz grob zerbröseln, mit der Butter mischen und auf die 2 Gläser verteilen, fest andrücken."
+    timer_min: null
+  - titel: Creme
+    text: "{skyr}, {quark}, {frischkaese}, {whey}, {erythrit} und {zitrone} 1 Minute glatt rühren, bis die Creme glänzt. Auf den Boden füllen."
+    timer_min: null
+  - titel: Topping
+    text: "Himbeeren auf die Creme geben. Sofort essen oder mindestens 1 Stunde kühlen, dann wird die Creme schnittfester."
+    timer_min: null
+zeitablauf:
+  - "Während die Butter schmilzt: Müsli zerbröseln."
+fehler:
+  - "**Boden matschig:** Himbeersaft läuft durch. Lösung: Himbeeren nur obenauf, Creme als Sperre dazwischen."
+  - "**Creme klumpt:** Frischkäse zu kalt. Lösung: 1 Minute länger rühren oder Frischkäse 10 Minuten vorher rausnehmen."
+anrichten: "Pro Glas {portion_g}: Boden, Cheesecake-Creme und 40 g Himbeeren."
+aufbewahrung:
+  kuehlschrank_tage: 3
+  einfrierbar: false
+  aufwaermen: "Nicht aufwärmen, gekühlt essen."
+  separat: "Für 3 Tage: Boden in einem extra Döschen, erst beim Essen darüber, dann bleibt er knusprig."
+varianten:
+  - {titel: Blaubeer, text: "Heidelbeeren statt Himbeeren.", aenderung: {"Himbeeren TK": -80, "Heidelbeeren TK": 80}}
+  - {titel: Kirsch, text: "80 g Sauerkirschen statt Himbeeren.", aenderung: {"Himbeeren TK": -80, "Sauerkirschen Glas abgetropft": 80}}
+  - {titel: Mehr Protein, text: "Whey auf 30 g erhöhen.", aenderung: {"Whey Protein Vanille": 10}}
+tipps:
+  - "Abgeriebene Zitronenschale in der Creme: schmeckt sofort nach New-York-Cheesecake."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

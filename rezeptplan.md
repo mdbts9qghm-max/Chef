@@ -1,7 +1,7 @@
 <!-- Generiert aus daten/rezeptplan.yaml – nicht von Hand bearbeiten. -->
 # Rezeptplan: Startbestand mit 50 Rezepten
 
-Stand: 11 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
+Stand: 21 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = schnell, KA = kalorienarm); verbindlich sind die von `pruefen.py` berechneten Kategorien.
 
 ## Frühstück, süß (15)
 
@@ -17,21 +17,21 @@ Stand: 11 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | 8 | Protein-French-Toast mit Beeren | `protein-french-toast` | Amerikanisch | Ei + Eiklar + Skyr | 580 | ja | S | ✓ geschrieben (576 kcal) |
 | 9 | Protein-Kaiserschmarrn mit Apfel-Beeren-Kompott | `protein-kaiserschmarrn` | Deutsch | Magerquark + Ei | 600 | nein | S | ✓ geschrieben (570 kcal) |
 | 10 | Protein-Milchreis mit Zimt & Kirschen | `protein-milchreis` | Deutsch | Milch + Whey | 580 | nein | MP | ✓ geschrieben (556 kcal) |
-| 11 | Protein-Grießbrei mit Zimt-Apfel | `protein-griessbrei` | Deutsch | Milch + Whey | 560 | nein | S | offen |
-| 12 | Protein-Bananenbrot | `protein-bananenbrot` | Amerikanisch | Skyr + Ei + Whey | 590 | ja | MP | offen |
-| 13 | Heidelbeer-Protein-Muffins | `heidelbeer-protein-muffins` | Amerikanisch | Magerquark + Ei | 570 | nein | MP | offen |
-| 14 | Skyr-Tiramisu-Bowl | `skyr-tiramisu-bowl` | Italienisch | Skyr + Whey | 560 | ja | S | offen |
-| 15 | Protein-Crêpes mit Vanille-Quark & Beeren | `protein-crepes` | International / Fusion | Ei + Magerquark | 590 | nein | S | offen |
+| 11 | Protein-Grießbrei mit Zimt-Apfel | `protein-griessbrei` | Deutsch | Milch + Whey | 560 | nein | S | ✓ geschrieben (518 kcal) |
+| 12 | Protein-Bananenbrot | `protein-bananenbrot` | Amerikanisch | Skyr + Ei + Whey | 590 | ja | MP | ✓ geschrieben (569 kcal) |
+| 13 | Heidelbeer-Protein-Muffins | `heidelbeer-protein-muffins` | Amerikanisch | Magerquark + Ei | 570 | nein | MP | ✓ geschrieben (541 kcal) |
+| 14 | Skyr-Tiramisu-Bowl | `skyr-tiramisu-bowl` | Italienisch | Skyr + Whey | 560 | ja | S | ✓ geschrieben (528 kcal) |
+| 15 | Protein-Crêpes mit Vanille-Quark & Beeren | `protein-crepes` | International / Fusion | Ei + Magerquark | 590 | nein | S | ✓ geschrieben (562 kcal) |
 
 ## Snacks & Desserts, süß (5)
 
 | Nr. | Gericht | id | Küche | Hauptprotein | Ziel-kcal | Inspiration | Tags | Status |
 |---:|---|---|---|---|---:|---|---|---|
-| 16 | Protein-Mousse au Chocolat | `protein-mousse-au-chocolat` | International / Fusion | Skyr + Whey | 260 | ja | S | offen |
-| 17 | Skyr-Cheesecake im Glas | `skyr-cheesecake-im-glas` | Amerikanisch | Skyr + Magerquark | 300 | nein | S, MP | offen |
-| 18 | Beeren-Nice-Cream (Protein-Eis aus dem Mixer) | `beeren-nice-cream` | International / Fusion | Skyr + Whey | 240 | ja | S | offen |
-| 19 | Erdnuss-Kakao-Protein-Balls | `erdnuss-kakao-protein-balls` | International / Fusion | Whey + Erdnussbutter | 320 | ja | MP | offen |
-| 20 | Quarkcreme mit Banane & Zimt | `quarkcreme-banane-zimt` | Deutsch | Magerquark | 260 | nein | S | offen |
+| 16 | Protein-Mousse au Chocolat | `protein-mousse-au-chocolat` | International / Fusion | Skyr + Whey | 260 | ja | S | ✓ geschrieben (234 kcal) |
+| 17 | Skyr-Cheesecake im Glas | `skyr-cheesecake-im-glas` | Amerikanisch | Skyr + Magerquark | 300 | nein | S, MP | ✓ geschrieben (285 kcal) |
+| 18 | Beeren-Nice-Cream (Protein-Eis aus dem Mixer) | `beeren-nice-cream` | International / Fusion | Skyr + Whey | 240 | ja | S | ✓ geschrieben (208 kcal) |
+| 19 | Erdnuss-Kakao-Protein-Balls | `erdnuss-kakao-protein-balls` | International / Fusion | Whey + Erdnussbutter | 320 | ja | MP | ✓ geschrieben (313 kcal) |
+| 20 | Quarkcreme mit Banane & Zimt | `quarkcreme-banane-zimt` | Deutsch | Magerquark | 260 | nein | S | ✓ geschrieben (221 kcal) |
 
 ## Hauptgerichte (30)
 
@@ -99,18 +99,18 @@ Stand: 11 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
 
-## Ist-Stand der geschriebenen Rezepte (11)
+## Ist-Stand der geschriebenen Rezepte (21)
 
 Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.
 
 | Anforderung | Soll | Ist | |
 |---|---:|---:|---|
-| Rezepte gesamt | 50 | 11 | ✓ |
-| Bereich Frühstück | 15 | 10 | ✓ |
-| Bereich Snack | 5 | 0 | ✓ |
+| Rezepte gesamt | 50 | 21 | ✓ |
+| Bereich Frühstück | 15 | 15 | ✓ |
+| Bereich Snack | 5 | 5 | ✓ |
 | Bereich Hauptgericht | 30 | 1 | ✓ |
-| Frühstück Meal Prep | ≥ 4 | 5 | ✓ |
-| Frühstück Schnelle Rezepte | ≥ 5 | 7 | ✓ |
+| Frühstück Meal Prep | ≥ 4 | 7 | ✓ |
+| Frühstück Schnelle Rezepte | ≥ 5 | 10 | ✓ |
 | Küche Deutsch | 4 | 0 | ✓ |
 | Küche Italienisch | 5 | 0 | ✓ |
 | Küche Asiatisch | 5 | 0 | ✓ |
@@ -120,9 +120,9 @@ Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst be
 | Küche Türkisch & Orientalisch | 3 | 0 | ✓ |
 | Küche Amerikanisch | 3 | 1 | ✓ |
 | Küche International / Fusion | 1 | 0 | ✓ |
-| Meal Prep | ≥ 12 | 6 | offen |
-| Schnelle Rezepte | ≥ 15 | 7 | offen |
+| Meal Prep | ≥ 12 | 10 | offen |
+| Schnelle Rezepte | ≥ 15 | 15 | ✓ |
 | Kalorienarme Hauptgerichte | ≥ 6 | 0 | offen |
-| High Protein | ≥ 45 | 11 | offen |
-| Inspiration | ≥ 15 | 5 | offen |
+| High Protein | ≥ 45 | 21 | offen |
+| Inspiration | ≥ 15 | 10 | offen |
 | Hauptprotein Hähnchen | ≤ 10 | 1 | ✓ |

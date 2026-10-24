@@ -1,0 +1,53 @@
+id: erdnuss-kakao-protein-balls
+name: Erdnuss-Kakao-Protein-Balls
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: [Meal Prep]
+mahlzeit: Snack
+geschmack: süß
+kueche: International / Fusion
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „No-Bake Protein Balls“"
+  link: null
+  aenderungen: "Datteln und Honig durch Schoko-Whey und Erythrit ersetzt, Erdnussbutter auf 30 g reduziert; dadurch ca. 10 g Protein pro 100 kcal statt 4 g."
+schwierigkeit: leicht
+zeit: {vorbereitung: 15, kochen: 0, wartezeit: 30}
+ausstattung: [Schüssel, Teigschaber, "Dose mit Deckel"]
+zutaten:
+  - {id: hafer, zutat: Haferflocken zart, g: 35, anzeige: "3½ EL"}
+  - {id: pb, zutat: Erdnussbutter 100 % Erdnüsse, name: Erdnussbutter, g: 30, anzeige: "2 EL"}
+  - {id: whey, zutat: Whey Protein Schoko, g: 65, anzeige: "ca. 2 Messlöffel"}
+  - {id: kakao, zutat: Kakaopulver stark entölt, name: Backkakao, g: 15, anzeige: "1½ EL"}
+  - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 40, hinweis: "40 ml, nach Bedarf"}
+  - {id: erythrit, zutat: Erythrit, g: 10, anzeige: "1 EL"}
+  - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
+mise_en_place:
+  - "{pb} glatt rühren (Öl, das sich oben abgesetzt hat, unterrühren)."
+schritte:
+  - titel: Teig kneten
+    text: "{hafer}, {whey}, {kakao}, {erythrit} und {salz} in einer Schüssel mischen. Erdnussbutter und {milch} zugeben und mit dem Teigschaber, dann mit den Händen 1–2 Minuten zu einem formbaren Teig kneten. Er soll wie Knete sein: nicht krümelig, nicht klebrig. Ist er krümelig, teelöffelweise Wasser dazu."
+    timer_min: null
+  - titel: Formen
+    text: "Mit leicht angefeuchteten Händen 10 gleich große Kugeln formen (je ca. 19 g)."
+    timer_min: null
+  - titel: Kühlen
+    text: "In die Dose legen und mindestens 30 Minuten in den Kühlschrank stellen, bis sie fest sind."
+    timer_min: 30
+zeitablauf:
+  - "Gleich die doppelte Menge machen: Sie halten 5 Tage, für 4 Snack-Tage reicht eine Ladung."
+fehler:
+  - "**Teig zerbröselt:** zu wenig Flüssigkeit, Whey-Sorten saugen unterschiedlich. Lösung: teelöffelweise Wasser zugeben."
+  - "**Kleben an den Händen:** zu feucht. Lösung: 1 EL Haferflocken extra (nicht mitgerechnet: +37 kcal) oder Hände anfeuchten."
+anrichten: "5 Balls ({portion_g}) sind eine Portion."
+aufbewahrung:
+  kuehlschrank_tage: 4
+  einfrierbar: true
+  einfrieren_monate: 2
+  aufwaermen: "Nicht aufwärmen. Gefroren 10 Minuten antauen lassen."
+varianten:
+  - {titel: Mit Schoko-Kern, text: "In jede Kugel ein Stückchen Zartbitterschokolade drücken (10 g gesamt).", aenderung: {"Zartbitterschokolade 70 %": 10}}
+  - {titel: Mandel-Kruste, text: "In 10 g gehobelten, zerdrückten Mandeln wälzen.", aenderung: {"Mandeln gehobelt": 10}}
+  - {titel: Mehr Protein, text: "Whey auf 75 g erhöhen, dafür 1 EL Milch mehr.", aenderung: {"Whey Protein Schoko": 10, "Milch 1,5 % Fett": 15}}
+tipps:
+  - "Ein paar Flocken Meersalz außen drücken: schmeckt wie Salted-Peanut-Praline."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}

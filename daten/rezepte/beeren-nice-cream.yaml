@@ -1,0 +1,47 @@
+id: beeren-nice-cream
+name: Beeren-Nice-Cream (Protein-Eis aus dem Mixer)
+hauptkategorie: fruehstueck-snacks
+kategorien_manuell: []
+mahlzeit: Snack
+geschmack: süß
+kueche: International / Fusion
+inspiration:
+  quelle: "TikTok-/Instagram-Trend „Nice Cream / Protein Ice Cream“"
+  link: null
+  aenderungen: "Statt gefrorener Banane als Basis (viel Zucker) TK-Beeren mit Skyr und Vanille-Whey: weniger Zucker, ca. 23 g Protein pro Portion."
+schwierigkeit: leicht
+zeit: {vorbereitung: 5, kochen: 0, wartezeit: 0}
+ausstattung: [Standmixer, Teigschaber]
+zutaten:
+  - {id: beeren, zutat: Beerenmischung TK, g: 300, hinweis: "direkt aus dem Gefrierfach"}
+  - {id: skyr, zutat: Skyr natur, g: 200, hinweis: "eiskalt"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
+  - {id: honig, zutat: Honig, g: 15, anzeige: "1 EL"}
+mise_en_place:
+  - "Zwei Schalen 10 Minuten ins Gefrierfach stellen, dann schmilzt das Eis langsamer."
+schritte:
+  - titel: Mixen
+    text: "{beeren}, {skyr}, {whey} und {honig} in den Standmixer geben. Mit Pulsieren beginnen (5 × 2 Sekunden), dann 30–60 Sekunden auf mittlerer Stufe mixen und zwischendurch mit dem Teigschaber nach unten schieben. Fertig, wenn eine cremige Softeis-Masse entsteht, die auf dem Löffel stehen bleibt."
+    timer_min: null
+  - titel: Servieren
+    text: "Sofort in die vorgekühlten Schalen füllen. Für festeres Eis 20 Minuten ins Gefrierfach stellen (nicht länger, sonst wird es steinhart)."
+    timer_min: null
+zeitablauf:
+  - "Während die Schalen kühlen: Zutaten abwiegen."
+fehler:
+  - "**Mixer dreht leer:** zu wenig Flüssigkeit. Lösung: 1–2 EL Wasser zugeben und öfter pulsieren."
+  - "**Zu flüssig:** zu lange gemixt oder Beeren angetaut. Lösung: Beeren direkt aus dem Gefrierfach, kurz mixen."
+anrichten: "Pro Schale {portion_g} Nice Cream. Optional mit 2–3 frischen Beeren garnieren (nicht mitgerechnet)."
+aufbewahrung:
+  kuehlschrank_tage: 0
+  einfrierbar: true
+  einfrieren_monate: 1
+  aufwaermen: "Gefroren: 15 Minuten antauen lassen und kurz durchmixen, sonst sehr hart."
+varianten:
+  - {titel: Schoko-Kirsch, text: "Whey Protein Schoko statt Vanille, Hälfte der Beeren durch Sauerkirschen ersetzen (gefroren).", aenderung: {"Whey Protein Vanille": -30, "Whey Protein Schoko": 30, "Beerenmischung TK": -150, "Sauerkirschen Glas abgetropft": 150}}
+  - {titel: Ohne Honig, text: "Honig weglassen, 1 EL Erythrit (10 g) statt dessen.", aenderung: {"Honig": -15, "Erythrit": 10}}
+  - {titel: Mehr Protein, text: "Skyr auf 300 g erhöhen.", aenderung: {"Skyr natur": 100}}
+tipps:
+  - "Eine Prise Salz und ein Spritzer Zitronensaft machen den Beerengeschmack intensiver."
+gargewicht_g: null
+bewertung: {sterne: null, kommentar: null, datum: null}
