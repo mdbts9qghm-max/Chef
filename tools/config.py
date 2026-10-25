@@ -245,6 +245,9 @@ SONDER_PLATZHALTER = {"portion_g"}
 # Zutaten, die nie auf die Einkaufsliste kommen
 NICHT_EINKAUFEN = {"Wasser"}
 
+# Öffentliche Adresse der Web-App (SPEC 10.4); leer = nur relative Links
+WEB_URL = (PROFIL.get("web_url") or "").rstrip("/") + "/" if PROFIL.get("web_url") else ""
+
 HINWEIS_SCHAETZWERTE = (
     "Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten "
     "und können je nach Produkt abweichen."

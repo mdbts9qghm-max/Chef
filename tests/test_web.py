@@ -180,3 +180,42 @@ def test_einkaufsliste_merkt_haken(seite, server):
     assert seite.locator(".liste").first.locator("li").last.locator("input").is_checked()
     seite.click("#zuruecksetzen")
     assert seite.locator(".liste input:checked").count() == 0
+
+
+# --- Livegang (Phase 8) --------------------------------------------------------------------
+def test_oeffentliche_adresse_in_rezeptseiten(webdir):
+    basis = config.WEB_URL
+    assert basis.startswith("https://") and basis.endswith("/")
+    pfad = webdir / "rezept" / "marry-me-chicken.html"
+    ld = json_ld(pfad)
+    assert ld["url"] == f"{basis}rezept/marry-me-chicken.html"
+    assert ld["image"] == f"{basis}icons/icon-512.png" and (webdir / "icons" / "icon-512.png").exists()
+    html = pfad.read_text(encoding="utf-8")
+    assert f'<link rel="canonical" href="{ld["url"]}">' in html
+    assert f'<meta property="og:url" content="{ld["url"]}">' in html
+
+
+def test_ohne_adresse_nur_relative_links(tmp_path):
+    web.generiere_web(ziel=tmp_path, basis_url="")
+    pfad = tmp_path / "rezept" / "marry-me-chicken.html"
+    assert "url" not in json_ld(pfad) and "image" not in json_ld(pfad)
+    assert "canonical" not in pfad.read_text(encoding="utf-8")
+
+
+def test_pages_workflow():
+    import yaml
+    wf = yaml.safe_load((config.WURZEL / ".github" / "workflows" / "pages.yml").read_text(encoding="utf-8"))
+    schritte = wf["jobs"]["deploy"]["steps"]
+    hochladen = next(s for s in schritte if s.get("uses", "").startswith("actions/upload-pages-artifact"))
+    assert hochladen["with"]["path"] == "web"
+    assert any(s.get("uses", "").startswith("actions/deploy-pages") for s in schritte)
+    assert wf["permissions"]["pages"] == "write" and wf["permissions"]["id-token"] == "write"
+    assert wf[True]["push"]["branches"] == ["main"]          # YAML 1.1 liest „on“ als True
+
+
+def test_live_pruefung_mit_lokalen_dateien(webdir):
+    import veroeffentlichen as vo
+    laden = lambda url: (webdir / url.removeprefix("https://x/")).read_text(encoding="utf-8")
+    assert vo.live_pruefen("https://x/", laden) == []
+    kaputt = lambda url: (_ for _ in ()).throw(OSError("404")) if url.endswith("sw.js") else laden(url)
+    assert vo.live_pruefen("https://x/", kaputt) == ["sw.js: 404"]

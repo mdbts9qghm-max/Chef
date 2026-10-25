@@ -79,6 +79,8 @@ veroeffentlichen:
   rezeptbuch: true
   wochenplaene: true
   einkaufslisten: true
+# Öffentliche Adresse der Web-App (GitHub Pages) – für Canonical-Link, JSON-LD url/image und Vorschau
+web_url: https://mdbts9qghm-max.github.io/Chef/
 
 # Schichtarbeit (Onboarding Phase 5, 24.10.2026): 5-Tage-Zyklus ab dem Startdatum
 schichten:

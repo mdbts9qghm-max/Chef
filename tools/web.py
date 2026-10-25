@@ -137,10 +137,10 @@ def einkaufbare_zeilen(erg):
             if not e.get("nicht_mitgerechnet") and e["zutat"] not in config.NICHT_EINKAUFEN]
 
 
-def json_ld(r, erg):
+def json_ld(r, erg, basis_url=""):
     p = erg["portion"]
     z = r["zeit"]
-    return {
+    ld = {
         "@context": "https://schema.org",
         "@type": "Recipe",
         "name": r["name"],
@@ -168,6 +168,22 @@ def json_ld(r, erg):
             "sodiumContent": f"{nw.rund(p['salz'] * 400)} mg",     # Natrium = Salz × 0,4
         },
     }
+    if basis_url:
+        ld["url"] = f"{basis_url}rezept/{r['id']}.html"
+        ld["image"] = f"{basis_url}icons/icon-512.png"
+    return ld
+
+
+def teilen_kopf(r, ld):
+    """Canonical-Link und Open-Graph-Tags (nur mit öffentlicher Adresse)."""
+    if "url" not in ld:
+        return ""
+    return (f'<link rel="canonical" href="{esc(ld["url"])}">\n'
+            f'<meta property="og:type" content="article">\n'
+            f'<meta property="og:title" content="{esc(r["name"])}">\n'
+            f'<meta property="og:description" content="{esc(ld["description"])}">\n'
+            f'<meta property="og:url" content="{esc(ld["url"])}">\n'
+            f'<meta property="og:image" content="{esc(ld["image"])}">\n')
 
 
 def liste_html(eintraege, r, nummeriert=False):
@@ -175,7 +191,7 @@ def liste_html(eintraege, r, nummeriert=False):
     return f"<{tag}>" + "".join(f"<li>{text_html(t, r)}</li>" for t in eintraege) + f"</{tag}>"
 
 
-def rezept_seite(r, db):
+def rezept_seite(r, db, basis_url=""):
     erg = nw.rezept_naehrwerte(r, db)
     p = erg["portion"]
     kats = nw.kategorien(r, p)
@@ -289,8 +305,9 @@ Orientierung: {esc(gen.portion_text(erg['gargewicht_gesamt']))} gesamt, <strong>
     mf = "\n".join(f"{gramm(e['g'])} {e['zutat']}" for e, _ in einkaufbare_zeilen(erg))
     out.append(f'<script type="application/json" id="kochdaten">{json.dumps(koch, ensure_ascii=False).replace("</", "<\\/")}</script>')
     out.append(f'<pre id="macrofactor-text" hidden>{esc(mf)}</pre>')
-    ld = json.dumps(json_ld(r, erg), ensure_ascii=False, indent=1).replace("</", "<\\/")
-    kopf_extra = f'<script type="application/ld+json">\n{ld}\n</script>\n'
+    daten = json_ld(r, erg, basis_url)
+    ld = json.dumps(daten, ensure_ascii=False, indent=1).replace("</", "<\\/")
+    kopf_extra = teilen_kopf(r, daten) + f'<script type="application/ld+json">\n{ld}\n</script>\n'
     if sterne is not None and sterne <= 2:
         out.insert(0, '<p class="hinweis">Dieses Rezept ist aussortiert (1–2 Sterne) und wird nicht mehr geplant.</p>')
     return r["name"], "\n".join(out), kopf_extra
@@ -525,10 +542,11 @@ def schreibe(pfad, text):
     pfad.write_text(text, encoding="utf-8")
 
 
-def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None):
+def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
     db = db or nw.lade_zutaten()
     rezepte = rezepte if rezepte is not None else nw.lade_alle_rezepte()
     flags = flags or config.PROFIL.get("veroeffentlichen", {})
+    basis_url = config.WEB_URL if basis_url is None else basis_url
     if ziel.exists():
         shutil.rmtree(ziel)
     ziel.mkdir(parents=True)
@@ -567,7 +585,7 @@ def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None):
     schreibe(ziel / "index.html", seite("Heute", heute, 0, "heute", links=rel(0)))
     schreibe(ziel / "rezepte.html", seite("Rezeptbuch", rezeptbuch_seite(rezepte, db), 0, "rezepte", links=rel(0)))
     for r in rezepte.values():
-        titel, inhalt, kopf = rezept_seite(r, db)
+        titel, inhalt, kopf = rezept_seite(r, db, basis_url)
         schreibe(ziel / "rezept" / f"{r['id']}.html", seite(titel, inhalt, 1, "rezepte", kopf, links=rel(1)))
     schreibe(ziel / "manifest.webmanifest", json.dumps(manifest(), ensure_ascii=False, indent=1))
     dateien = precache_liste(ziel)
