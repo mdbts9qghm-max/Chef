@@ -219,23 +219,38 @@ def abschnitt_berechnung(r, erg, db):
     return out
 
 
+HINWEIS_EIGEN = "Eigenes Rezept aus der App: Nährwerte gerechnet, Text von dir."
+
+
+def ist_eigen(r):
+    return (r.get("herkunft") or {}).get("art") == "eigen"
+
+
 def rezept_markdown(r, db):
     erg = nw.rezept_naehrwerte(r, db)
     kats = nw.kategorien(r, erg["portion"])
+    eigen = ist_eigen(r)
+    kopf_teil = abschnitt_kopf(r, kats)
+    if eigen:
+        kopf_teil += ["", f"> {HINWEIS_EIGEN}"]
     teile = [
-        abschnitt_kopf(r, kats),
+        kopf_teil,
         abschnitt_naehrwerte(r, erg),
         abschnitt_zutaten(r),
-        abschnitt_liste("Mise en place", r["mise_en_place"], r),
+        None if eigen and not r.get("mise_en_place") else abschnitt_liste("Mise en place", r["mise_en_place"], r),
         abschnitt_schritte(r),
+        None if eigen and not r.get("zeitablauf") else
         abschnitt_liste("Zeitablauf", r.get("zeitablauf") or ["Keine parallelen Arbeitsschritte nötig."], r),
-        abschnitt_liste("Häufige Fehler", r["fehler"], r),
+        None if eigen and not r.get("fehler") else abschnitt_liste("Häufige Fehler", r["fehler"], r),
+        None if eigen and not r.get("anrichten") else
         ["## Anrichten", "", ersetze_platzhalter(r["anrichten"], r, portion_g=erg["gargewicht_portion"])],
         abschnitt_aufbewahrung(r),
+        None if eigen and not r.get("varianten") else
         abschnitt_liste("Varianten & Austausch", [variante_text(v, db) for v in r["varianten"]], r),
-        abschnitt_liste("Tipps", r["tipps"], r),
+        None if eigen and not r.get("tipps") else abschnitt_liste("Tipps", r["tipps"], r),
         abschnitt_berechnung(r, erg, db),
     ]
+    teile = [t for t in teile if t is not None]
     kopf = "<!-- Generiert aus daten/rezepte/{}.yaml – nicht von Hand bearbeiten. -->".format(r["id"])
     return kopf + "\n" + "\n\n".join("\n".join(t) for t in teile) + "\n"
 

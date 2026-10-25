@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eigenes Rezept · Rezeptbuch</title>
+<meta name="theme-color" content="#2f6b4f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121714" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Rezeptbuch">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body data-basis="">
+<header class="kopf"><h1>Eigenes Rezept</h1></header>
+<main>
+<p class="leise">Zutaten kommen aus deiner Zutatenliste, die Nährwerte rechnet die App sofort mit.
+„Auf GitHub speichern“ öffnet GitHub mit der fertigen Rezeptdatei – dort nur noch <strong>„Commit changes“</strong> tippen.
+Nach 1–2 Minuten ist das Rezept in der App und steht dem Planer zur Verfügung.</p>
+<form id="rezept-form" class="formular" autocomplete="off">
+<section class="karte"><h2>Grunddaten</h2>
+<label>Name <input type="text" name="name" required maxlength="80" placeholder="z. B. Hähnchen-Reis-Pfanne"></label>
+<div class="zwei"><label>Mahlzeit <select name="mahlzeit"><option value="Frühstück">Frühstück</option><option value="Mittag/Abend" selected>Mittag/Abend</option><option value="Snack">Snack</option></select></label>
+<label>Geschmack <select name="geschmack"><option value="süß">süß</option><option value="herzhaft" selected>herzhaft</option></select></label></div>
+<div class="zwei"><label>Küche <select name="kueche"><option value="Deutsch">Deutsch</option><option value="Italienisch">Italienisch</option><option value="Asiatisch">Asiatisch</option><option value="Mexikanisch">Mexikanisch</option><option value="Indisch">Indisch</option><option value="Griechisch &amp; Mediterran">Griechisch &amp; Mediterran</option><option value="Türkisch &amp; Orientalisch">Türkisch &amp; Orientalisch</option><option value="Amerikanisch">Amerikanisch</option><option value="International / Fusion" selected>International / Fusion</option></select></label>
+<label>Schwierigkeit <select name="schwierigkeit"><option value="leicht" selected>leicht</option><option value="mittel">mittel</option><option value="aufwendig">aufwendig</option></select></label></div>
+<div class="drei"><label>Vorbereitung (min) <input type="number" name="vorbereitung" min="0" value="10" inputmode="numeric"></label>
+<label>Kochen (min) <input type="number" name="kochen" min="0" value="20" inputmode="numeric"></label>
+<label>Wartezeit (min) <input type="number" name="wartezeit" min="0" value="0" inputmode="numeric"></label></div>
+<div class="zwei"><label>Haltbar im Kühlschrank (Tage) <input type="number" name="tage" min="0" max="4" value="2" inputmode="numeric"></label>
+<label class="haken"><input type="checkbox" name="einfrierbar"> einfrierbar</label></div></section>
+<section class="karte"><h2>Zutaten <span class="leise">(Gramm für 2 Portionen)</span></h2>
+<datalist id="zutaten-liste"><option value="Apfel"><option value="Babyspinat"><option value="Backpulver"><option value="Banane geschält"><option value="Basmatireis ungekocht"><option value="Beerenmischung TK"><option value="Burger-Brötchen"><option value="Butter"><option value="Chiliflocken"><option value="Currypulver"><option value="Ei Gr. M ohne Schale"><option value="Eiklar flüssig"><option value="Erdnussbutter 100 % Erdnüsse"><option value="Erythrit"><option value="Feta 45 % Fett i. Tr."><option value="Frischkäse light"><option value="Frühlingszwiebeln"><option value="Garam Masala"><option value="Garnelen roh geschält"><option value="Gehackte Tomaten Dose"><option value="Gemüsebrühe zubereitet"><option value="Getrocknete Tomaten in Öl abgetropft"><option value="Haferflocken zart"><option value="Hartweizennudeln ungekocht"><option value="Heidelbeeren TK"><option value="Himbeeren TK"><option value="Honig"><option value="Hähnchenbrustfilet roh"><option value="Hähnchenoberkeule ohne Haut roh"><option value="Ingwer frisch"><option value="Kabeljaufilet roh"><option value="Kaffee zubereitet"><option value="Kakaopulver stark entölt"><option value="Kartoffelgnocchi Kühlregal"><option value="Kartoffeln festkochend roh"><option value="Kichererbsen abgetropft"><option value="Kidneybohnen abgetropft"><option value="Knoblauch"><option value="Knuspermüsli"><option value="Kokosmilch light"><option value="Kreuzkümmel gemahlen"><option value="Körniger Frischkäse"><option value="Lachsfilet ohne Haut roh"><option value="Lasagneplatten ungekocht"><option value="Magerquark"><option value="Mais abgetropft"><option value="Mandeln gehobelt"><option value="Mie-Nudeln ungekocht"><option value="Milch 1,5 % Fett"><option value="Milchreis ungekocht"><option value="Mozzarella light"><option value="Olivenöl"><option value="Oregano getrocknet"><option value="Paniermehl"><option value="Paprika rot"><option value="Paprikapulver edelsüß"><option value="Parmesan gerieben"><option value="Petersilie frisch"><option value="Pfeffer schwarz gemahlen"><option value="Putenbrustfilet roh"><option value="Putenhackfleisch roh"><option value="Rapsöl"><option value="Reibekäse light"><option value="Rindergulasch roh"><option value="Rinderhackfleisch 15 % Fett roh"><option value="Rinderhackfleisch 5 % Fett roh"><option value="Rinderhüftsteak roh"><option value="Rote Currypaste"><option value="Salatgurke"><option value="Salz"><option value="Sauerkirschen Glas abgetropft"><option value="Schweinefilet roh"><option value="Senf mittelscharf"><option value="Sesamöl geröstet"><option value="Skyr natur"><option value="Sojasauce"><option value="Speisestärke"><option value="Sriracha"><option value="Tomaten"><option value="Tomatenmark"><option value="Vollkorntoast"><option value="Weichweizengrieß"><option value="Weizen-Tortilla-Wraps"><option value="Weizenmehl Type 405"><option value="Whey Protein Schoko"><option value="Whey Protein Vanille"><option value="Zartbitterschokolade 70 %"><option value="Zimt gemahlen"><option value="Zitronensaft"><option value="Zwiebel"></datalist>
+<ul id="zutaten-zeilen" class="zzeilen"></ul>
+<button type="button" id="zutat-plus">＋ Zutat</button>
+<p class="leise">Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben – dafür braucht es Nährwerte.</p></section>
+<section class="karte"><h2>Zubereitung</h2>
+<label>Schritte <span class="leise">(ein Schritt pro Zeile)</span><textarea name="schritte" rows="6"
+placeholder="Reis kochen.&#10;Hähnchen würfeln und in Öl auf Stufe 7 von 9 braten (74 °C Kerntemperatur).&#10;…"></textarea></label>
+<label>Tipps <span class="leise">(optional, einer pro Zeile)</span><textarea name="tipps" rows="2"></textarea></label></section>
+<section class="karte sticky-werte"><h2>Nährwerte pro Portion</h2><div id="rezept-werte" aria-live="polite"></div>
+<ul id="rezept-probleme" class="probleme"></ul>
+<div class="knopfreihe"><button type="button" class="primaer" id="rezept-speichern" disabled>💾 Auf GitHub speichern</button>
+<button type="button" id="rezept-verwerfen">Entwurf verwerfen</button></div>
+<details><summary>Vorschau der Rezeptdatei</summary><pre id="rezept-yaml"></pre></details></section>
+</form>
+</main>
+<footer class="fuss">Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen. Die Pläne sind eine Empfehlung und ersetzen keine Ernährungs- oder ärztliche Beratung.</footer>
+<nav class="tabs" aria-label="Hauptnavigation"><a href="index.html"><span aria-hidden="true">🏠</span>Heute</a><a href="rezepte.html" aria-current="page"><span aria-hidden="true">📖</span>Rezepte</a><a href="woche/KW-45-2026.html"><span aria-hidden="true">🗓️</span>Woche</a><a href="einkauf/KW-45-2026.html"><span aria-hidden="true">🛒</span>Einkauf</a></nav>
+<script src="assets/daten.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

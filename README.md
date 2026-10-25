@@ -22,12 +22,19 @@ Persönliches High-Protein-Rezeptbuch, Wochenplaner auf Basis der MacroFactor-Zi
 
 | Ansicht | Was du dort machst |
 |---|---|
-| **Heute** | Mahlzeiten des Tages mit Uhrzeit, Schicht, Tagessumme vs. Ziel, Erinnerungen (z. B. Auftauen) |
-| **Rezepte** | Suchen („lachs“), filtern (Mahlzeit, Kategorie, Küche), sortieren |
-| **Rezeptseite** | alle Abschnitte, Portionsrechner (1–6), Varianten, Nährwerte |
+| **Heute** | Schicht-Banner (☀️ Tag · 🌙 Nacht · 🏠 frei, 🛒 Einkauf, 🍱 Meal Prep), Mahlzeiten mit Uhrzeit, **4 Makro-Ringe** (grauer Bogen = Zielbereich, ✓ = im Ziel), Erinnerungen (z. B. Auftauen) |
+| **Rezepte** | Suchen („lachs“), filtern (Mahlzeit, Kategorie, Küche), sortieren; Makro-Streifen und farbige Kategorien; **＋ Eigenes Rezept** |
+| **Rezeptseite** | alle Abschnitte, Makro-Ring (Anteil Protein/Fett/KH), Anteil am Tagesziel, Portionsrechner (1–6), Varianten; **🗑 Rezept löschen** |
 | **Kochmodus** | Schritt für Schritt groß, Timer mit Ton, Bildschirm bleibt an |
-| **Woche** | Tageskarten mit Schicht, Boxen, Meal-Prep-Tag |
+| **Woche** | Wochenleiste in Schichtfarben, Diagramme kcal/Protein/Fett pro Tag mit Zielbereich, Tageskarten mit 📦 Box · ↻ Rest · ❄️ Auftauen |
 | **Einkauf** | Liste nach Abteilungen, Haken bleiben gespeichert, „Zurücksetzen“ für die nächste Woche; **Budget** direkt eintragen, die App zeigt sofort, ob die Woche hineinpasst |
+
+## Eigene Rezepte hinzufügen und löschen
+1. **Rezepte → ＋ Eigenes Rezept:** Name, Mahlzeit, Küche, Zeiten; Zutaten aus der Liste wählen und Gramm (für 2 Portionen) eintragen; ein Schritt pro Zeile. Die App rechnet die Nährwerte pro Portion sofort und zeigt, ob das Gericht in den Korridor passt.
+2. **Auf GitHub speichern** → GitHub öffnet sich mit der fertigen Rezeptdatei → **„Commit changes“** tippen (einmalig bei GitHub angemeldet sein).
+3. GitHub prüft das Rezept und baut die App neu – nach 1–2 Minuten ist es im Rezeptbuch und steht dem Planer zur Verfügung. Der Entwurf bleibt bis dahin auf dem iPhone gespeichert.
+4. **Löschen:** auf der Rezeptseite „🗑 Rezept löschen“ → bei GitHub „Commit changes“. Steht das Rezept in einem aktuellen Plan, warnt die App – dann erst „tauschen“.
+Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben (dafür braucht es Nährwerte).
 
 ## MacroFactor
 - **Link-Import:** In MacroFactor ein neues Rezept über den Import per Link anlegen und die Adresse der Rezeptseite einfügen (z. B. `https://mdbts9qghm-max.github.io/Chef/rezept/marry-me-chicken.html`). Die Seite enthält das Standard-Rezeptformat (schema.org/Recipe) mit Zutaten in Gramm, 2 Portionen und Nährwerten.

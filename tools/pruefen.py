@@ -33,6 +33,11 @@ def texte(rezept):
     return t
 
 
+def ist_eigen(rezept):
+    """Eigenes Rezept aus dem App-Formular (herkunft.art = eigen)."""
+    return (rezept.get("herkunft") or {}).get("art") == "eigen"
+
+
 def korridor_schluessel(rezept):
     if rezept["mahlzeit"] == "Frühstück":
         return "fruehstueck"
@@ -44,6 +49,11 @@ def korridor_schluessel(rezept):
 def pruefe_rezept(rezept, db, dateiname=None):
     rid = rezept.get("id", dateiname or "?")
     e = Ergebnis(rid)
+    eigen = ist_eigen(rezept)
+
+    def weich(text):
+        """Text-/Umfangsregeln: bei eigenen Rezepten aus der App nur Warnung (Entscheidung 25.10.2026)."""
+        (e.warnungen if eigen else e.fehler).append(text)
 
     # Pflichtfelder, id, Dateiname
     fehlend = [f for f in config.PFLICHTFELDER if f not in rezept]
@@ -99,24 +109,24 @@ def pruefe_rezept(rezept, db, dateiname=None):
             benutzt.add(m.group(1))
     for i in ids:
         if i not in benutzt:
-            e.fehler.append(f"Zutat {{{i}}} wird in keinem Text verwendet")
+            weich(f"Zutat {{{i}}} wird in keinem Text verwendet")
 
     # Zielwerte der Mahlzeit (SPEC 3)
     portion = erg["portion"]
     k = config.KORRIDORE[korridor_schluessel(rezept)]
     kcal, prot = nw.rund(portion["kcal"]), nw.rund(portion["protein"], 1)
     if k.get("kcal_min") is not None and kcal < k["kcal_min"]:
-        e.fehler.append(f"{kcal} kcal pro Portion < Minimum {k['kcal_min']}")
+        weich(f"{kcal} kcal pro Portion < Minimum {k['kcal_min']}")
     if k.get("kcal_max") is not None and kcal > k["kcal_max"]:
-        e.fehler.append(f"{kcal} kcal pro Portion > Maximum {k['kcal_max']}")
+        weich(f"{kcal} kcal pro Portion > Maximum {k['kcal_max']}")
     if prot < k["protein_min"]:
-        e.fehler.append(f"{prot} g Protein pro Portion < Minimum {k['protein_min']}")
+        weich(f"{prot} g Protein pro Portion < Minimum {k['protein_min']}")
 
     # Hauptkategorie erfüllt
     kats = nw.kategorien(rezept, portion)
     haupt = config.HAUPTKATEGORIEN[rezept["hauptkategorie"]]
     if haupt not in kats:
-        e.fehler.append(f"Hauptkategorie „{haupt}“ ist nicht erfüllt (berechnet: {', '.join(kats) or '–'})")
+        weich(f"Hauptkategorie „{haupt}“ ist nicht erfüllt (berechnet: {', '.join(kats) or '–'})")
     manuell = set(rezept.get("kategorien_manuell") or []) - {"Meal Prep"}
     if manuell:
         e.fehler.append(f"kategorien_manuell darf nur „Meal Prep“ enthalten, nicht {', '.join(manuell)}")
@@ -147,19 +157,19 @@ def pruefe_rezept(rezept, db, dateiname=None):
     alle_schritte = " ".join(s.get("text", "") for s in schritte)
     if nw.enthaelt_typ(rezept, db, config.FLEISCH_FISCH):
         if not any(w in alle_schritte for w in config.GARPROBE_WOERTER):
-            e.fehler.append("Fleisch/Fisch ohne Kerntemperatur oder Garprobe in den Schritten")
+            weich("Fleisch/Fisch ohne Kerntemperatur oder Garprobe in den Schritten")
 
     # Ofen-, Airfryer- und Herdschritte
     for n, s in enumerate(schritte, 1):
         t = s.get("text", "")
         if not s.get("titel"):
-            e.fehler.append(f"Schritt {n} ohne Titel")
+            weich(f"Schritt {n} ohne Titel")
         if any(w in t for w in config.OFEN_WOERTER):
             fehlt = [w for w in config.OFEN_PFLICHT if w not in t]
             if fehlt:
-                e.fehler.append(f"Schritt {n} (Ofen): es fehlt {', '.join(fehlt)}")
+                weich(f"Schritt {n} (Ofen): es fehlt {', '.join(fehlt)}")
         if any(w in t for w in config.AIRFRYER_WOERTER) and "°C" not in t:
-            e.fehler.append(f"Schritt {n} (Airfryer): Temperatur fehlt")
+            weich(f"Schritt {n} (Airfryer): Temperatur fehlt")
         if any(w in t for w in config.HERD_WOERTER) and "Stufe" not in t and "°C" not in t:
             e.warnungen.append(f"Schritt {n}: Pfanne/Topf ohne Herdstufe")
         if s.get("timer_min") is not None and not isinstance(s["timer_min"], (int, float)):
@@ -170,9 +180,9 @@ def pruefe_rezept(rezept, db, dateiname=None):
                            ("tipps", config.TIPPS_ANZAHL)]:
         n = len(rezept[feld] or [])
         if not lo <= n <= hi:
-            e.fehler.append(f"{feld}: {n} Einträge, erlaubt {lo}–{hi}")
+            weich(f"{feld}: {n} Einträge, erlaubt {lo}–{hi}")
     if not rezept["mise_en_place"]:
-        e.fehler.append("Mise en place ist leer")
+        weich("Mise en place ist leer")
     if not schritte:
         e.fehler.append("Keine Zubereitungsschritte")
 

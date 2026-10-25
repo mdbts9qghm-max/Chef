@@ -25,6 +25,139 @@ APP_NAME = "Rezeptbuch"
 esc = html.escape
 zahl, gramm = nw.zahl, nw.gramm
 
+# Symbole (immer zusammen mit Text – Farbe/Icon nie allein bedeutungstragend)
+SCHICHT_ICON = {"Tag": "☀️", "Nacht": "🌙", "frei": "🏠"}
+SCHICHT_NAME = {"Tag": "Tagschicht", "Nacht": "Nachtschicht", "frei": "frei"}
+SLOT_ICON = {"fruehstueck": "🥣", "mittag": "🍽️", "abend": "🍲", "snack": "🍫"}
+KAT_ICON = {"High Protein": "💪", "Schnelle Rezepte": "⚡", "Meal Prep": "🍱", "Kalorienarm": "🪶", "Frühstück & Snacks": "🥣"}
+KAT_KLASSE = {"High Protein": "hp", "Schnelle Rezepte": "schnell", "Meal Prep": "prep", "Kalorienarm": "leicht",
+              "Frühstück & Snacks": "fs"}
+KUECHE_ICON = {"Deutsch": "🥨", "Italienisch": "🍝", "Asiatisch": "🥢", "Mexikanisch": "🌮", "Indisch": "🍛",
+               "Griechisch & Mediterran": "🫒", "Türkisch & Orientalisch": "🧆", "Amerikanisch": "🍔",
+               "International / Fusion": "🌍"}
+ABT_ICON = {"Obst & Gemüse": "🥦", "Fleisch & Fisch": "🥩", "Kühlregal": "🥛", "Brot & Backwaren": "🍞",
+            "Trockenwaren": "🌾", "Konserven & Saucen": "🥫", "Gewürze & Öle": "🧂", "Tiefkühl": "❄️", "Sonstiges": "📦"}
+MAKRO = [("kcal", "kcal", "kcal"), ("protein", "Protein", "g"), ("fett", "Fett", "g"), ("kh", "KH", "g")]
+
+
+def korridor():
+    """Erlaubte Tagesspanne je Makro (SPEC 8.2) – für Ringe und Diagramme."""
+    z = config.TAGESZIELE
+    return {"kcal": [z["kcal"] - config.PLAN_KCAL_TOLERANZ, z["kcal"] + config.PLAN_KCAL_TOLERANZ],
+            "protein": [config.PLAN_PROTEIN_MIN, None],
+            "fett": [max(config.PLAN_FETT_MIN, z["fett"] - config.PLAN_FETT_TOLERANZ), z["fett"] + config.PLAN_FETT_TOLERANZ],
+            "kh": [z["kh"] - config.PLAN_KH_TOLERANZ, z["kh"] + config.PLAN_KH_TOLERANZ]}
+
+
+def kat_chips(kats):
+    return "".join(f'<li class="chip kat-{KAT_KLASSE.get(k, "x")}"><span aria-hidden="true">{KAT_ICON.get(k, "")}</span> {esc(k)}</li>'
+                   for k in kats)
+
+
+def donut_svg(teile, groesse=132, dicke=18):
+    """Ring aus Anteilen [(label, wert, css-var)] mit 2-px-Lücken; Beschriftung steht daneben (Legende)."""
+    r = (groesse - dicke) / 2
+    umfang = 2 * 3.141592653589793 * r
+    summe = sum(w for _, w, _ in teile) or 1
+    pos, boegen = 0.0, []
+    for label, w, var in teile:
+        laenge = umfang * w / summe
+        sichtbar = max(laenge - 2, 0.1)
+        boegen.append(f'<circle r="{r:.1f}" cx="{groesse / 2}" cy="{groesse / 2}" fill="none" stroke="var({var})" '
+                      f'stroke-width="{dicke}" stroke-dasharray="{sichtbar:.1f} {umfang - sichtbar:.1f}" '
+                      f'stroke-dashoffset="{-pos:.1f}" transform="rotate(-90 {groesse / 2} {groesse / 2})">'
+                      f'<title>{esc(label)}: {round(100 * w / summe)} %</title></circle>')
+        pos += laenge
+    return (f'<svg class="donut" viewBox="0 0 {groesse} {groesse}" width="{groesse}" height="{groesse}" role="img" '
+            f'aria-label="Makroverteilung">{"".join(boegen)}</svg>')
+
+
+def tag_balken(summe):
+    """4 Mini-Balken (Anteil am Tagesziel) mit Beschriftung."""
+    z, out = config.TAGESZIELE, []
+    for k, label, einheit in MAKRO:
+        pz = summe[k] / z[k] * 100
+        out.append(f'<div class="mini"><span class="ml">{label}</span><span class="ms"><span class="mf m-{k}" '
+                   f'style="width:{min(pz, 100):.0f}%"></span></span><span class="mw">{zahl(summe[k], 0)} {einheit}</span></div>')
+    return '<div class="minis">' + "".join(out) + "</div>"
+
+
+def wochen_diagramm(tage, schluessel, titel, einheit):
+    """Säulen pro Tag mit Ziel-Korridor (eine Achse, Werte direkt beschriftet)."""
+    lo, hi = korridor()[schluessel]
+    werte = [t["summe"][schluessel] for t in tage]
+    oben = max(werte + [hi or lo]) * 1.08
+    unten = 0 if schluessel != "kcal" else 1500
+    b, h, pad = 300, 120, 18
+    sp = (b - 8) / len(tage)
+    y = lambda v: pad + (h - pad - 16) * (1 - (v - unten) / (oben - unten))
+    teile = []
+    band_oben = y(hi) if hi else pad
+    teile.append(f'<rect x="4" y="{band_oben:.1f}" width="{b - 8}" height="{y(lo) - band_oben:.1f}" class="band"/>')
+    for i, (t, v) in enumerate(zip(tage, werte)):
+        x = 4 + i * sp + sp * 0.2
+        w = sp * 0.6
+        ok = v >= lo and (hi is None or v <= hi)
+        tag = config.WOCHENTAGE[wp.datum(t["datum"]).weekday()]
+        teile.append(f'<rect x="{x:.1f}" y="{y(v):.1f}" width="{w:.1f}" height="{h - 16 - y(v):.1f}" rx="4" class="saeule m-{schluessel}">'
+                     f'<title>{tag}: {zahl(v, 0)} {einheit}{"" if ok else " (außerhalb)"}</title></rect>')
+        teile.append(f'<text x="{x + w / 2:.1f}" y="{y(v) - 4:.1f}" class="wert">{zahl(v, 0)}{"" if ok else "!"}</text>')
+        teile.append(f'<text x="{x + w / 2:.1f}" y="{h - 3}" class="achse">{tag}</text>')
+    spanne = f"{zahl(lo, 0)}–{zahl(hi, 0)}" if hi else f"ab {zahl(lo, 0)}"
+    return (f'<figure class="diagramm"><figcaption>{titel} pro Tag <span class="leise">· Zielbereich {spanne} {einheit} (grau)</span></figcaption>'
+            f'<svg viewBox="0 0 {b} {h}" role="img" aria-label="{titel} pro Tag">{"".join(teile)}</svg></figure>')
+
+
+def woche_seite(pd, md, einkauf_link, nachbarn):
+    tage = pd["tage"]
+    leiste = []
+    for t in tage:
+        d = wp.datum(t["datum"])
+        extra = ("🛒" if t["einkauf"] else "") + ("🍱" if t["mealprep"] else "")
+        leiste.append(f'<a class="wtag s-{t["schicht"].lower()}" href="#tag-{t["datum"]}"><span class="wt">'
+                      f'{config.WOCHENTAGE[d.weekday()]}</span><span class="dz">{d.day}</span>'
+                      f'<span class="ic" aria-label="{SCHICHT_NAME[t["schicht"]]}">{SCHICHT_ICON[t["schicht"]]}</span>'
+                      f'<span class="ex">{extra}</span></a>')
+    navi = " ".join(f'<a class="knopf" href="{href}">{text}</a>' for text, href in nachbarn)
+    legende = ('<p class="legende">☀️ Tagschicht · 🌙 Nachtschicht · 🏠 frei · 🛒 Einkauf · 🍱 Meal Prep · '
+               '📦 Box · ↻ Rest · ❄️ einfrieren/auftauen</p>')
+    n = len(tage)
+    mittel = {k: sum(t["summe"][k] for t in tage) / n for k in ("kcal", "protein", "fett", "kh")}
+    kopf = (f'<div class="wochenleiste" role="navigation" aria-label="Tage">{"".join(leiste)}</div>{legende}'
+            f'<div class="knopfreihe">{einkauf_link}{navi}</div>'
+            f'<section class="karte"><h2>Woche im Überblick</h2>'
+            f'<p class="leise">Ø pro Tag: {zahl(mittel["kcal"], 0)} kcal · {zahl(mittel["protein"], 0)} g Protein · '
+            f'{zahl(mittel["fett"], 0)} g Fett · {zahl(mittel["kh"], 0)} g KH</p>'
+            f'{wochen_diagramm(tage, "kcal", "Kalorien", "kcal")}{wochen_diagramm(tage, "protein", "Protein", "g")}'
+            f'{wochen_diagramm(tage, "fett", "Fett", "g")}</section>')
+    karten = []
+    for t in tage:
+        d = wp.datum(t["datum"])
+        marken = []
+        if t["einkauf"]:
+            marken.append(f'<span class="marke">🛒 {"Starteinkauf" if t["start_einkauf"] else "Einkauf"}</span>')
+        if t["mealprep"]:
+            marken.append('<span class="marke">🍱 Meal Prep</span>')
+        kacheln = []
+        for m in t["mahlzeiten"]:
+            sym = ("📦 " if m["box"] else "") + ("↻ " if m["rest"] else "") + ("❄️ " if m["einfrieren"] else "")
+            fak = f' · ×{zahl(m["faktor"], 2)}' if m["faktor"] != 1 else ""
+            kacheln.append(f'<a class="mkachel" href="../rezept/{m["id"]}.html"><span class="slot">{SLOT_ICON[m["slot"]]} '
+                           f'{m["label"]}{" · " + m["zeit"] if m["zeit"] else ""}</span><span class="name">{esc(m["name"])}</span>'
+                           f'<span class="werte">{sym}{m["kcal"]} kcal · {zahl(m["protein"], 0)} g P{fak}</span></a>')
+        if t["auswaerts"]:
+            kacheln.append(f'<div class="mkachel"><span class="slot">🍴 Auswärts</span><span class="name">{esc(t["auswaerts"])}</span>'
+                           f'<span class="werte">Platzhalter</span></div>')
+        erinn = "".join(f"<li>{esc(x)}</li>" for x in t["erinnerungen"])
+        karten.append(f'<section class="karte tag s-{t["schicht"].lower()}" id="tag-{t["datum"]}">'
+                      f'<div class="band"><span>{SCHICHT_ICON[t["schicht"]]} <strong>{config.WOCHENTAGE_LANG[d.weekday()]}, '
+                      f'{d.strftime("%d.%m.")}</strong> · {SCHICHT_NAME[t["schicht"]]}{" " + t["schichtzeit"] if t["schichtzeit"] else ""}</span>'
+                      f'{"".join(marken)}</div><div class="mkacheln">{"".join(kacheln)}</div>{tag_balken(t["summe"])}'
+                      f'{f"<details><summary>Erinnerungen für morgen</summary><ul>{erinn}</ul></details>" if erinn else ""}</section>')
+    details = f'<details class="karte"><summary><strong>Zeitpläne &amp; alle Details (Text)</strong></summary>{md_html(md)}</details>'
+    return kopf + "".join(karten) + details
+
+
 TABS = [("heute", "index.html", "🏠", "Heute"), ("rezepte", "rezepte.html", "📖", "Rezepte"),
         ("woche", None, "🗓️", "Woche"), ("einkauf", None, "🛒", "Einkauf")]
 
@@ -200,17 +333,17 @@ def rezept_seite(r, db, basis_url=""):
     sterne = (r.get("bewertung") or {}).get("sterne")
     out = []
     # 1 Kopf
-    chips = "".join(f'<li class="chip">{esc(k)}</li>' for k in kats)
+    chips = kat_chips(kats)
     zeile = (f"Vorbereitung {z.get('vorbereitung', 0)} min · Kochen {z.get('kochen', 0)} min · Wartezeit "
              f"{z.get('wartezeit', 0)} min · <strong>Gesamt {nw.gesamtzeit(r) + z.get('wartezeit', 0)} min</strong>")
     kopf = [f'<ul class="chips">{chips}</ul>', "<table>",
             f"<tr><th>Bewertung</th><td>{esc(gen.sterne(r.get('bewertung')))}</td></tr>",
-            f"<tr><th>Küche</th><td>{esc(r['kueche'])}</td></tr>",
+            f"<tr><th>Küche</th><td>{KUECHE_ICON.get(r['kueche'], '')} {esc(r['kueche'])}</td></tr>",
             f"<tr><th>Mahlzeit</th><td>{esc(r['mahlzeit'])} ({esc(r['geschmack'])})</td></tr>",
             f"<tr><th>Portionen</th><td>{config.PORTIONEN}</td></tr>",
             f"<tr><th>Schwierigkeit</th><td>{esc(r['schwierigkeit'])}</td></tr>",
             f"<tr><th>Zeit</th><td>{zeile}</td></tr>",
-            f"<tr><th>Ausstattung</th><td>{esc(', '.join(r['ausstattung']))}</td></tr>"]
+            f"<tr><th>Ausstattung</th><td>{esc(', '.join(r['ausstattung']) or '–')}</td></tr>"]
     if r.get("inspiration"):
         i = r["inspiration"]
         kopf.append(f"<tr><th>Inspiration</th><td>{inline(i['quelle'])}. Geändert: {inline(i['aenderungen'])}</td></tr>")
@@ -233,7 +366,21 @@ def rezept_seite(r, db, basis_url=""):
                   for a, b, s, w in zeilen)
     e_p, e_k, e_f = 4 * p["protein"], 4 * p["kh"], 9 * p["fett"]
     e_sum = e_p + e_k + e_f
-    out.append(f"""<section class="karte"><h2>Nährwerte pro Portion</h2>
+    legende = "".join(f'<li><span class="punkt m-{k}"></span>{n}<strong>{gen.prozent(v, e_sum)}</strong>'
+                      f'<span class="leise">{zahl(g_)} g</span></li>'
+                      for k, n, v, g_ in (("protein", "Protein", e_p, p["protein"]), ("fett", "Fett", e_f, p["fett"]),
+                                          ("kh", "KH", e_k, p["kh"])))
+    ziele_balken = "".join(
+        f'<div class="mini"><span class="ml">{n}</span><span class="ms"><span class="mf m-{k}" style="width:{min(100, w / s * 100):.0f}%">'
+        f'</span></span><span class="mw">{gen.prozent(w, s)}</span></div>'
+        for k, n, w, s in (("kcal", "kcal", p["kcal"], ziel["kcal"]), ("protein", "Protein", p["protein"], ziel["protein"]),
+                           ("fett", "Fett", p["fett"], ziel["fett"]), ("kh", "KH", p["kh"], ziel["kh"])))
+    visual = (f'<div class="makro-visual">{donut_svg([("Protein", e_p, "--p"), ("Fett", e_f, "--f"), ("KH", e_k, "--kh")])}'
+              f'<div class="donut-mitte"><strong>{zahl(p["kcal"], 0)}</strong><span>kcal</span></div>'
+              f'<ul class="legende-liste">{legende}</ul></div>'
+              f'<span class="plakette">💪 {zahl(p["protein"] / p["kcal"] * 100)} g Protein pro 100 kcal</span>'
+              f'<h3>Anteil am Tagesziel</h3><div class="minis">{ziele_balken}</div>')
+    out.append(f"""<section class="karte"><h2>Nährwerte pro Portion</h2>{visual}
 <div class="tabelle"><table><tr><th>Nährwert</th><th class="zahl">pro Portion</th><th class="zahl">Tagesziel</th></tr>{tab}</table></div>
 <p class="leise">Protein pro 100 kcal: {zahl(p['protein'] / p['kcal'] * 100)} g · Makroverteilung: Protein {gen.prozent(e_p, e_sum)} ·
 KH {gen.prozent(e_k, e_sum)} · Fett {gen.prozent(e_f, e_sum)}</p>
@@ -257,14 +404,22 @@ Orientierung: {esc(gen.portion_text(erg['gargewicht_gesamt']))} gesamt, <strong>
 <p class="leise" id="faktor-hinweis" hidden>Mengen sind umgerechnet; Nährwerte pro Portion bleiben gleich.</p>
 <div class="tabelle"><table><tr><th>Zutat</th><th>Menge</th><th>Hinweis</th></tr>{''.join(zeilen_z)}</table></div></section>""")
     # 4–11
-    out.append(f'<section class="karte"><h2>Mise en place</h2>{liste_html(r["mise_en_place"], r)}</section>')
+    eigen = gen.ist_eigen(r)
+    leer = lambda feld: eigen and not r.get(feld)          # eigene Rezepte: leere Abschnitte weglassen
+    if eigen:
+        out.insert(0, f'<p class="hinweis">✍️ {esc(gen.HINWEIS_EIGEN)}</p>')
+    if not leer("mise_en_place"):
+        out.append(f'<section class="karte"><h2>Mise en place</h2>{liste_html(r["mise_en_place"], r)}</section>')
     schritte = "".join(f"<li><strong>{esc(s['titel'])}</strong>{' ⏱ ' + str(s['timer_min']) + ' min' if s.get('timer_min') else ''}: "
                        f"{text_html(s['text'], r)}</li>" for s in r["schritte"])
     out.append(f'<section class="karte"><h2>Zubereitung</h2><ol class="schritte">{schritte}</ol></section>')
-    out.append(f'<section class="karte"><h2>Zeitablauf</h2>'
-               f'{liste_html(r.get("zeitablauf") or ["Keine parallelen Arbeitsschritte nötig."], r)}</section>')
-    out.append(f'<section class="karte"><h2>Häufige Fehler</h2>{liste_html(r["fehler"], r)}</section>')
-    out.append(f'<section class="karte"><h2>Anrichten</h2><p>{text_html(r["anrichten"], r, erg["gargewicht_portion"])}</p></section>')
+    if not leer("zeitablauf"):
+        out.append(f'<section class="karte"><h2>Zeitablauf</h2>'
+                   f'{liste_html(r.get("zeitablauf") or ["Keine parallelen Arbeitsschritte nötig."], r)}</section>')
+    if not leer("fehler"):
+        out.append(f'<section class="karte"><h2>Häufige Fehler</h2>{liste_html(r["fehler"], r)}</section>')
+    if not leer("anrichten"):
+        out.append(f'<section class="karte"><h2>Anrichten</h2><p>{text_html(r["anrichten"], r, erg["gargewicht_portion"])}</p></section>')
     a = r["aufbewahrung"]
     tage = a.get("kuehlschrank_tage") or 0
     auf = [f"<li><strong>Kühlschrank:</strong> {f'{tage} Tage' if tage else 'nicht geeignet, frisch essen'}</li>",
@@ -274,8 +429,10 @@ Orientierung: {esc(gen.portion_text(erg['gargewicht_gesamt']))} gesamt, <strong>
         auf.append(f"<li><strong>Separat lagern:</strong> {inline(a['separat'])}</li>")
     out.append(f'<section class="karte"><h2>Meal Prep &amp; Aufbewahrung</h2><ul>{"".join(auf)}</ul></section>')
     var = "".join(f"<li>{inline(gen.variante_text(v, db))}</li>" for v in r["varianten"])
-    out.append(f'<section class="karte"><h2>Varianten &amp; Austausch</h2><ul>{var}</ul></section>')
-    out.append(f'<section class="karte"><h2>Tipps</h2>{liste_html(r["tipps"], r)}</section>')
+    if not leer("varianten"):
+        out.append(f'<section class="karte"><h2>Varianten &amp; Austausch</h2><ul>{var}</ul></section>')
+    if not leer("tipps"):
+        out.append(f'<section class="karte"><h2>Tipps</h2>{liste_html(r["tipps"], r)}</section>')
     # 12 Berechnung
     ber = []
     for e, w in erg["zeilen"]:
@@ -310,10 +467,66 @@ Orientierung: {esc(gen.portion_text(erg['gargewicht_gesamt']))} gesamt, <strong>
     kopf_extra = teilen_kopf(r, daten) + f'<script type="application/ld+json">\n{ld}\n</script>\n'
     if sterne is not None and sterne <= 2:
         out.insert(0, '<p class="hinweis">Dieses Rezept ist aussortiert (1–2 Sterne) und wird nicht mehr geplant.</p>')
+    if config.PROFIL.get("github_repo"):
+        out.append(f'<div class="knopfreihe"><button type="button" class="gefahr" id="loeschen" data-id="{r["id"]}" '
+                   f'data-name="{esc(r["name"])}">🗑 Rezept löschen</button></div>')
     return r["name"], "\n".join(out), kopf_extra
 
 
 # --- Rezeptbuch ---------------------------------------------------------------------------
+def makro_streifen(p):
+    """Gestapelter Balken: Anteil der kcal aus Protein / Fett / KH, mit Beschriftung."""
+    e = {"protein": 4 * p["protein"], "fett": 9 * p["fett"], "kh": 4 * p["kh"]}
+    s = sum(e.values()) or 1
+    teile = "".join(f'<span class="m-{k}" style="width:{100 * v / s:.1f}%" title="{n} {round(100 * v / s)} %"></span>'
+                    for (k, v), n in zip(e.items(), ("Protein", "Fett", "KH")))
+    text = f'P {round(100 * e["protein"] / s)} % · F {round(100 * e["fett"] / s)} % · KH {round(100 * e["kh"] / s)} %'
+    return f'<div class="streifen" role="img" aria-label="Makroverteilung {text}">{teile}</div><div class="streifen-text">{text}</div>'
+
+
+def zutaten_json(db):
+    """Nährwerte je 100 g für das Rezept-Formular: [Name, kcal, P, F, KH, Zucker, Ballaststoffe, Typ]."""
+    return [[n, w["kcal"], w["protein"], w["fett"], w["kh"], w["zucker"], w["ballaststoffe"], w.get("typ") or ""]
+            for n, w in sorted(db.items()) if n not in config.NICHT_EINKAUFEN]
+
+
+def rezept_neu_seite(db):
+    """Formular für eigene Rezepte; app.js rechnet live und erzeugt die YAML für GitHub."""
+    opt = lambda werte, gewaehlt=None: "".join(f'<option value="{esc(w)}"{" selected" if w == gewaehlt else ""}>{esc(w)}</option>'
+                                             for w in werte)
+    namen = "".join(f'<option value="{esc(n)}">' for n, *_ in zutaten_json(db))
+    return f"""<p class="leise">Zutaten kommen aus deiner Zutatenliste, die Nährwerte rechnet die App sofort mit.
+„Auf GitHub speichern“ öffnet GitHub mit der fertigen Rezeptdatei – dort nur noch <strong>„Commit changes“</strong> tippen.
+Nach 1–2 Minuten ist das Rezept in der App und steht dem Planer zur Verfügung.</p>
+<form id="rezept-form" class="formular" autocomplete="off">
+<section class="karte"><h2>Grunddaten</h2>
+<label>Name <input type="text" name="name" required maxlength="80" placeholder="z. B. Hähnchen-Reis-Pfanne"></label>
+<div class="zwei"><label>Mahlzeit <select name="mahlzeit">{opt(config.MAHLZEITEN, "Mittag/Abend")}</select></label>
+<label>Geschmack <select name="geschmack">{opt(config.GESCHMACK, "herzhaft")}</select></label></div>
+<div class="zwei"><label>Küche <select name="kueche">{opt(config.KUECHEN, "International / Fusion")}</select></label>
+<label>Schwierigkeit <select name="schwierigkeit">{opt(config.SCHWIERIGKEIT, "leicht")}</select></label></div>
+<div class="drei"><label>Vorbereitung (min) <input type="number" name="vorbereitung" min="0" value="10" inputmode="numeric"></label>
+<label>Kochen (min) <input type="number" name="kochen" min="0" value="20" inputmode="numeric"></label>
+<label>Wartezeit (min) <input type="number" name="wartezeit" min="0" value="0" inputmode="numeric"></label></div>
+<div class="zwei"><label>Haltbar im Kühlschrank (Tage) <input type="number" name="tage" min="0" max="4" value="2" inputmode="numeric"></label>
+<label class="haken"><input type="checkbox" name="einfrierbar"> einfrierbar</label></div></section>
+<section class="karte"><h2>Zutaten <span class="leise">(Gramm für {config.PORTIONEN} Portionen)</span></h2>
+<datalist id="zutaten-liste">{namen}</datalist>
+<ul id="zutaten-zeilen" class="zzeilen"></ul>
+<button type="button" id="zutat-plus">＋ Zutat</button>
+<p class="leise">Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben – dafür braucht es Nährwerte.</p></section>
+<section class="karte"><h2>Zubereitung</h2>
+<label>Schritte <span class="leise">(ein Schritt pro Zeile)</span><textarea name="schritte" rows="6"
+placeholder="Reis kochen.&#10;Hähnchen würfeln und in Öl auf Stufe 7 von 9 braten (74 °C Kerntemperatur).&#10;…"></textarea></label>
+<label>Tipps <span class="leise">(optional, einer pro Zeile)</span><textarea name="tipps" rows="2"></textarea></label></section>
+<section class="karte sticky-werte"><h2>Nährwerte pro Portion</h2><div id="rezept-werte" aria-live="polite"></div>
+<ul id="rezept-probleme" class="probleme"></ul>
+<div class="knopfreihe"><button type="button" class="primaer" id="rezept-speichern" disabled>💾 Auf GitHub speichern</button>
+<button type="button" id="rezept-verwerfen">Entwurf verwerfen</button></div>
+<details><summary>Vorschau der Rezeptdatei</summary><pre id="rezept-yaml"></pre></details></section>
+</form>"""
+
+
 def rezeptbuch_seite(rezepte, db):
     karten = []
     for r in sorted(rezepte.values(), key=lambda r: r["name"]):
@@ -330,11 +543,16 @@ def rezeptbuch_seite(rezepte, db):
             f'data-suche="{esc(suche)}"><a class="kachel-link" href="rezept/{r["id"]}.html" style="text-decoration:none;color:inherit;display:block">'
             f'<h3>{esc(r["name"])}</h3><div class="zahlen"><span>{zahl(p["kcal"], 0)} kcal</span><span>{zahl(p["protein"], 0)} g Protein</span>'
             f'<span>⏱ {nw.gesamtzeit(r)} min</span><span>{esc(bew)}</span></div>'
-            f'<ul class="chips"><li class="chip grau">{esc(r["mahlzeit"])}</li><li class="chip grau">{esc(r["kueche"])}</li>'
-            + "".join(f'<li class="chip">{esc(k)}</li>' for k in kats if k != "Frühstück & Snacks") + "</ul></a></li>")
+            f'{makro_streifen(p)}'
+            f'<ul class="chips"><li class="chip grau">{esc(r["mahlzeit"])}</li><li class="chip grau">'
+            f'<span aria-hidden="true">{KUECHE_ICON.get(r["kueche"], "")}</span> {esc(r["kueche"])}</li>'
+            + kat_chips([k for k in kats if k != "Frühstück & Snacks"])
+            + ('<li class="chip grau">✍️ eigenes</li>' if gen.ist_eigen(r) else "") + "</ul></a></li>")
     opt = lambda werte: "".join(f'<option value="{esc(w)}">{esc(t)}</option>' for w, t in werte)
     kuechen = sorted({r["kueche"] for r in rezepte.values()})
-    inhalt = f"""<form id="filter" class="filter" role="search">
+    neu_knopf = ('<div class="knopfreihe"><a class="knopf primaer" href="rezept-neu.html">＋ Eigenes Rezept</a></div>'
+                 if config.PROFIL.get("github_repo") else "")
+    inhalt = neu_knopf + f"""<form id="filter" class="filter" role="search">
 <input type="search" name="suche" placeholder="Suchen: Name oder Zutat" aria-label="Rezepte durchsuchen">
 <select name="kategorie" aria-label="Kategorie">{opt([("", "Alle Kategorien")] + [(k, k) for k in config.KATEGORIE_REIHENFOLGE])}</select>
 <select name="kueche" aria-label="Küche">{opt([("", "Alle Küchen")] + [(k, k) for k in kuechen])}</select>
@@ -428,6 +646,7 @@ def lade_plaene():
 def plan_daten(plan, rezepte, db, pruefung):
     """Kompakte Plandaten für die Heute-Ansicht."""
     alle = {(e.datum.isoformat(), e.slot): e for e in wp.eintraege(plan)}
+    einkauf_tage = {wp.datum(x["datum"]): x.get("art") for x in plan.get("einkauf", [])}
     tage = []
     for i, tag in enumerate(plan["tage"]):
         d = wp.datum(tag["datum"])
@@ -444,12 +663,17 @@ def plan_daten(plan, rezepte, db, pruefung):
             eintrag = alle[(d.isoformat(), slot)]
             mahl.append({"slot": slot, "label": config.SLOT_NAMEN[slot], "id": r["id"], "name": r["name"],
                          "kcal": round(w["kcal"]), "protein": round(w["protein"], 1), "kochen": eintrag.kochen and eintrag.gekocht_am == d,
-                         "rest": bool(e.get("rest_von")), "box": bool(e.get("box")) or slot in box_slots, "zeit": zeiten.get(slot, "")})
+                         "rest": bool(e.get("rest_von")), "box": bool(e.get("box")) or slot in box_slots, "zeit": zeiten.get(slot, ""),
+                         "einfrieren": bool(e.get("einfrieren")), "vorbereiten": bool(e.get("gekocht_am")),
+                         "faktor": float(e.get("faktor", 1.0))})
         extras = [{"text": x.get("text") or x["zutat"], "kcal": round(wp.extra_werte(x, db)["kcal"]),
                    "protein": round(wp.extra_werte(x, db)["protein"], 1)} for x in tag.get("extras") or []]
         summe = wp.tagessumme(tag, rezepte, db)
         aus = tag.get("auswaerts")
+        morgen = d + dt.timedelta(1)
         tage.append({"datum": d.isoformat(), "schicht": s, "schichtzeit": (config.SCHICHTEN.get("zeiten") or {}).get(s, ""),
+                     "einkauf": d in einkauf_tage, "start_einkauf": d in einkauf_tage and einkauf_tage[d] == "start",
+                     "mealprep": s == "frei" and wp.schicht(morgen, plan.get("schichten")) == "Tag",
                      "mahlzeiten": mahl, "extras": extras, "auswaerts": f"{config.SLOT_NAMEN.get(aus['mahlzeit'], '')} auswärts" if aus else None,
                      "summe": {k: round(summe[k], 1) for k in ("kcal", "protein", "fett", "kh")},
                      "erinnerungen": wp.erinnerungen_morgen(plan, i, rezepte, pruefung)})
@@ -464,14 +688,14 @@ def einkauf_seite(plan, rezepte, db):
            'Haken werden auf diesem Gerät gespeichert.</p>',
            '<div class="knopfreihe"><button type="button" id="zuruecksetzen">↺ Alle Haken zurücksetzen</button></div>']
     for liste in listen:
-        out.append(f'<section class="karte"><h2>Einkauf {config.WOCHENTAGE_LANG[liste.datum.weekday()]}, '
-                   f'{liste.datum.strftime("%d.%m.%Y")}</h2>')
+        out.append(f'<section class="karte"><h2>🛒 Einkauf {config.WOCHENTAGE_LANG[liste.datum.weekday()]}, '
+                   f'{liste.datum.strftime("%d.%m.%Y")}{esc(ek.start_hinweis(plan, liste.datum))}</h2>')
         kaufen = [z for z in liste.zeilen if z.pakete > 0]
         for abt in reihenfolge + sorted({ek.abteilung(z) for z in kaufen} - set(reihenfolge)):
             teil = sorted((z for z in kaufen if ek.abteilung(z) == abt), key=lambda z: z.zutat)
             if not teil:
                 continue
-            out.append(f'<h3>{esc(abt)}</h3><ul class="liste">')
+            out.append(f'<h3><span aria-hidden="true">{ABT_ICON.get(abt, "📦")}</span> {esc(abt)}</h3><ul class="liste">')
             for z in teil:
                 pk = z.packung
                 menge = pk["packung_text"] if z.pakete == 1 else f"{z.pakete} × {pk['packung_text']}"
@@ -496,12 +720,29 @@ def einkauf_seite(plan, rezepte, db):
             out.append("<h3>Schon da (Reste aus dem vorherigen Einkauf)</h3><p class='leise'>"
                        + esc(", ".join(f"{z.zutat} {gramm(z.bedarf)}" for z in sorted(schon, key=lambda z: z.zutat))) + "</p>")
         out.append("</section>")
+    out.append(kosten_balken(listen))
     out.append(budget_html(ek.kosten(listen)))
     md = ek.einkauf_markdown(plan, rezepte, db, listen, reste)
     if "## Reste" in md:
         out.append(md_html(md[md.index("## Reste"):]))
     out.append("</div>")
     return "\n".join(out)
+
+
+def kosten_balken(listen):
+    """Kosten je Abteilung (Wochenbedarf, ohne Vorratskäufe) als beschriftete horizontale Balken."""
+    abt = {}
+    for l in listen:
+        for z in l.zeilen:
+            if z.pakete and not z.vorratskauf:
+                abt[ek.abteilung(z)] = abt.get(ek.abteilung(z), 0.0) + z.kosten
+    if not abt:
+        return ""
+    groesster = max(abt.values())
+    zeilen = "".join(f'<div class="kbalken"><span class="kl">{ABT_ICON.get(a, "📦")} {esc(a)}</span><span class="ks">'
+                     f'<span style="width:{100 * v / groesster:.0f}%"></span></span><span class="kw">{zahl(v, 2)} €</span></div>'
+                     for a, v in sorted(abt.items(), key=lambda x: -x[1]))
+    return f'<section class="karte"><h2>Wofür das Geld ausgegeben wird</h2>{zeilen}</section>'
 
 
 def budget_html(k):
@@ -583,27 +824,36 @@ def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
     rel = lambda tiefe: {k: v for k, v in links.items()}
 
     plan_json = []
-    for plan in plaene:
+    for i, plan in enumerate(plaene):
         pr = wp.pruefe_plan(plan, rezepte, db)
-        plan_json.append(plan_daten(plan, rezepte, db, pr))
+        pd = plan_daten(plan, rezepte, db, pr)
+        plan_json.append(pd)
         md = wp.wochenplan_markdown(plan, rezepte, db, pr)
         # Web: Tage als Karten – die breite Übersichtstabelle passt nicht aufs iPhone
         md = re.sub(r"## Übersicht\n.*?(?=\n## )", "", md, count=1, flags=re.S)
-        einkauf_link = (f'<p><a class="knopf" href="../einkauf/{plan["name"]}.html">🛒 Einkaufsliste</a></p>'
+        einkauf_link = (f'<a class="knopf primaer" href="../einkauf/{plan["name"]}.html">🛒 Einkaufsliste</a>'
                         if flags.get("einkaufslisten", True) else "")
+        nachbarn = ([(f"← KW {plaene[i - 1]['kw']}", f"{plaene[i - 1]['name']}.html")] if i else []) + \
+                   ([(f"KW {plaene[i + 1]['kw']} →", f"{plaene[i + 1]['name']}.html")] if i + 1 < len(plaene) else [])
         schreibe(ziel / "woche" / f"{plan['name']}.html",
-                 seite(f"Woche KW {plan['kw']}/{plan['jahr']}", einkauf_link + md_html(md), 1, "woche", links=rel(1)))
+                 seite(f"Woche KW {plan['kw']}/{plan['jahr']}", woche_seite(pd, md, einkauf_link, nachbarn), 1, "woche",
+                       links=rel(1)))
         if flags.get("einkaufslisten", True):
             schreibe(ziel / "einkauf" / f"{plan['name']}.html",
                      seite(f"Einkauf KW {plan['kw']}/{plan['jahr']}", einkauf_seite(plan, rezepte, db), 1, "einkauf", links=rel(1)))
 
-    daten = {"ziele": config.TAGESZIELE, "plaene": plan_json, "budget": ek.budget(),
-             "einkauf": links.get("einkauf")}
+    daten = {"ziele": config.TAGESZIELE, "korridor": korridor(), "plaene": plan_json, "budget": ek.budget(),
+             "einkauf": links.get("einkauf"), "einkaufslisten": bool(flags.get("einkaufslisten", True)),
+             "github": config.PROFIL.get("github_repo"), "korridore": config.KORRIDORE,
+             "zutaten": zutaten_json(db), "kuechen": config.KUECHEN, "ids": sorted(rezepte),
+             "namen": sorted(r["name"].lower() for r in rezepte.values())}
     schreibe(ziel / "assets" / "daten.js", "window.REZEPTBUCH = " + json.dumps(daten, ensure_ascii=False) + ";\n")
     heute = ('<div id="heute"><noscript><p>Für die Tagesansicht bitte JavaScript aktivieren. '
              '<a href="rezepte.html">Zum Rezeptbuch</a></p></noscript></div>')
     schreibe(ziel / "index.html", seite("Heute", heute, 0, "heute", links=rel(0)))
     schreibe(ziel / "rezepte.html", seite("Rezeptbuch", rezeptbuch_seite(rezepte, db), 0, "rezepte", links=rel(0)))
+    if config.PROFIL.get("github_repo"):
+        schreibe(ziel / "rezept-neu.html", seite("Eigenes Rezept", rezept_neu_seite(db), 0, "rezepte", links=rel(0)))
     for r in rezepte.values():
         titel, inhalt, kopf = rezept_seite(r, db, basis_url)
         schreibe(ziel / "rezept" / f"{r['id']}.html", seite(titel, inhalt, 1, "rezepte", kopf, links=rel(1)))

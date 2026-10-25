@@ -131,7 +131,7 @@ def test_heute_zeigt_plan(seite, server):
     plan = yaml.safe_load((config.WOCHENPLAENE_DIR / "KW-45-2026.yaml").read_text(encoding="utf-8"))
     abend = next(t["abend"]["rezept"] for t in plan["tage"] if str(t["datum"]) == "2026-11-05")
     assert nw.lade_alle_rezepte()[abend]["name"] in seite.inner_text("#heute")
-    assert seite.locator(".balken").count() == 4
+    assert seite.locator(".ring").count() == 4 and seite.locator(".schicht-banner").count() == 1
     seite.goto(server + "index.html?datum=2026-10-20")
     assert "nichts geplant" in seite.inner_text("#heute")
 
@@ -214,6 +214,12 @@ def test_pages_workflow():
     assert any(s.get("uses", "").startswith("actions/deploy-pages") for s in schritte)
     assert wf["permissions"]["pages"] == "write" and wf["permissions"]["id-token"] == "write"
     assert wf[True]["push"]["branches"] == ["main"]          # YAML 1.1 liest „on“ als True
+    assert "daten/**" in wf[True]["push"]["paths"]           # Rezepte aus der App lösen den Bau aus
+    namen = [s.get("run", "") for s in schritte]
+    i_pruefen = next(i for i, r in enumerate(namen) if "pruefen.py" in r)
+    i_bauen = next(i for i, r in enumerate(namen) if "generieren.py" in r)
+    i_hoch = schritte.index(hochladen)
+    assert i_pruefen < i_bauen < i_hoch                      # erst prüfen, dann bauen, dann hochladen
 
 
 def test_live_pruefung_mit_lokalen_dateien(webdir):
@@ -248,3 +254,81 @@ def test_budget_zeigt_verbrauch(seite, server):
     k = json.loads(seite.inner_text("#kostendaten"))
     assert k["verbrauch"] + k["reste"] == pytest.approx(k["woche"], abs=0.02)
     assert "davon verbraucht" in seite.inner_text("#budget-ergebnis").lower()
+
+
+# --- Visuell (Ringe, Kalender, Diagramme) -----------------------------------------------------
+def test_woche_als_kalender(seite, server):
+    seite.goto(server + "woche/KW-44-2026.html")
+    assert seite.locator(".wtag").count() == 7 and seite.locator("section.karte.tag[id^=tag-]").count() == 7
+    assert seite.locator(".diagramm svg").count() == 3
+    assert "Starteinkauf" in seite.inner_text("section.karte.tag[id^=tag-] >> nth=0")
+    assert seite.evaluate("document.documentElement.scrollWidth") <= 390
+    assert seite.fehler == []
+
+
+def test_rezeptseite_makro_diagramm(seite, server):
+    seite.goto(server + "rezept/marry-me-chicken.html")
+    assert seite.locator("svg.donut circle").count() == 3
+    assert seite.locator(".legende-liste li").count() == 3 and seite.locator(".plakette").count() == 1
+
+
+def test_einkauf_icons_und_kostenbalken(seite, server):
+    seite.goto(server + "einkauf/KW-44-2026.html")
+    assert seite.locator(".kbalken").count() >= 3
+    assert "🥩" in seite.inner_text("main")
+    assert seite.locator(".budgetbalken .blinie").count() == 1
+
+
+# --- Eigene Rezepte -----------------------------------------------------------------------------
+def rezept_ausfuellen(seite, name):
+    seite.fill("input[name=name]", name)
+    for i, (z, g) in enumerate([("Hähnchenbrustfilet roh", "400"), ("Basmatireis ungekocht", "150"), ("Olivenöl", "15")]):
+        seite.locator(".zname").nth(i).fill(z)
+        seite.locator(".zg").nth(i).fill(g)
+    seite.fill("textarea[name=schritte]", "Reis kochen.\nHähnchen würfeln und auf Stufe 7 von 9 braten, bis 74 °C {Kerntemperatur}.")
+
+
+def test_eigenes_rezept_ergibt_gueltige_datei(seite, server, db):
+    import urllib.parse
+    import generieren as gen
+    import pruefen
+    seite.goto(server + "rezept-neu.html")
+    seite.evaluate("localStorage.clear()")
+    seite.reload()
+    rezept_ausfuellen(seite, "Hähnchen-Reis-Pfanne Test")
+    text = seite.locator("#rezept-yaml").text_content()
+    r = yaml.safe_load(text)
+    assert r["id"] == "haehnchen-reis-pfanne-test" and r["herkunft"]["art"] == "eigen"
+    assert "{" not in r["schritte"][1]["text"]                          # Klammern entschärft (kein Platzhalter)
+    erg = pruefen.pruefe_rezept(r, db, r["id"])
+    assert erg.ok, erg.fehler
+    assert gen.rezept_markdown(r, db) and web.rezept_seite(r, db)[1]
+    url = seite.locator("#rezept-speichern").get_attribute("data-url")
+    teile = urllib.parse.urlparse(url)
+    q = urllib.parse.parse_qs(teile.query)
+    assert teile.netloc == "github.com" and teile.path == f"/{config.PROFIL['github_repo']}/new/main"
+    assert q["filename"] == ["daten/rezepte/haehnchen-reis-pfanne-test.yaml"] and q["value"] == [text]
+    assert seite.locator("#rezept-speichern").is_enabled()
+    seite.reload()                                                       # Entwurf bleibt erhalten
+    assert seite.input_value("input[name=name]") == "Hähnchen-Reis-Pfanne Test"
+    assert seite.fehler == []
+
+
+def test_eigenes_rezept_doppelter_name(seite, server):
+    seite.goto(server + "rezept-neu.html")
+    seite.evaluate("localStorage.clear()")
+    seite.reload()
+    rezept_ausfuellen(seite, "Marry Me Chicken mit Reis")
+    assert "gibt es schon" in seite.inner_text("#rezept-probleme")
+    assert not seite.locator("#rezept-speichern").is_enabled()
+
+
+def test_loeschen_warnt_bei_geplantem_rezept(seite, server):
+    plan = yaml.safe_load((config.WOCHENPLAENE_DIR / "KW-44-2026.yaml").read_text(encoding="utf-8"))
+    rid = plan["tage"][0]["mittag"]["rezept"]
+    meldungen = []
+    seite.on("dialog", lambda d: (meldungen.append(d.message), d.dismiss()))
+    seite.goto(server + f"rezept/{rid}.html?datum=2026-10-26")
+    seite.click("#loeschen")
+    assert meldungen and "steht im Wochenplan" in meldungen[0]
+    assert "rezept/" in seite.url                                        # abgebrochen → bleibt auf der Seite

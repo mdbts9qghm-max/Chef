@@ -53,7 +53,7 @@ def test_echte_rezepte_im_plan_und_passend(echte_rezepte, db):
     plan = {p["id"]: p for p in bestand.lade_plan()}
     for r in echte_rezepte.values():
         if r["id"] not in plan:
-            assert (r.get("herkunft") or {}).get("art") in ("import", "neu"), r["id"]
+            assert (r.get("herkunft") or {}).get("art") in ("import", "neu", "eigen"), r["id"]
             continue
         e = bestand.eintrag_aus_rezept(r, db)
         assert e["bereich"] == plan[r["id"]]["bereich"]

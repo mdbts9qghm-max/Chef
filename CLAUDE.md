@@ -39,7 +39,7 @@ pip install -r requirements.txt          # pyyaml, pytest, playwright (Chromium 
 python3 tools/pruefen.py                 # alle Prüfungen (SPEC 12.1)
 python3 tools/generieren.py              # Markdown + Web-App erzeugen
 python3 tools/bestand.py                 # Soll/Ist gegen SPEC 5.1–5.3, schreibt rezeptplan.md
-python3 tools/planer.py KW-46-2026 [--budget 100] [--starts 24] [--behalten]   # Woche automatisch planen (günstig, regelkonform)
+python3 tools/planer.py KW-46-2026 [--budget 100] [--starts 24] [--behalten] [--einkauf JJJJ-MM-TT …]   # Woche automatisch planen (günstig, regelkonform; --einkauf z. B. für einen Starteinkauf)
 python3 tools/wochenplan.py KW-45-2026   # Wochenplan prüfen + wochenplaene/KW-45-2026.md erzeugen
 python3 tools/einkauf.py KW-45-2026      # Einkaufsliste (--reste-uebernehmen: Reste → vorrat.yaml)
 python3 -m pytest                        # Tests (SPEC 12.2), Playwright nutzt /opt/pw-browsers/chromium
@@ -56,6 +56,7 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 - **Kühlschrank:** fragen, was heute schon gegessen wurde → `kuehlschrank.py … --gegessen …` → Top 3 mit Faktor zeigen; nichts Passendes → neues Gericht vorschlagen; gefällt es, als Rezept mit `herkunft: {art: neu}` aufnehmen.
 - **Bewerten:** `bewerten.py` → bei Kommentaren („zu trocken“, „zu wenig süß“) Rezept anpassen und Makro-Unterschied vorher/nachher zeigen → prüfen, generieren.
 - **Woche planen:** Kurzfragen aus 8.1 (Wünsche, Auswärts-Termine) → Wünsche als `fest: true` bzw. `auswaerts` in die Plandatei → `planer.py KW-XX-JJJJ --behalten` (mehr `--starts` = günstiger, ca. 0,4 s pro Start) → Übersicht mit Tageswerten, Einkauf/Verbrauch/Reste → nach dem Einkauf `einkauf.py … --reste-uebernehmen`.
+- **Eigene Rezepte (App):** Formular `rezept-neu.html` → YAML mit `herkunft: {art: eigen}` → GitHub „new file“ → Workflow prüft (`pruefen.py`) und baut (`generieren.py`). Für `eigen` sind Text-/Umfangs-/Korridorregeln nur Warnungen (`pruefen.weich`), leere Abschnitte werden weggelassen. Löschen über GitHub „delete“. Kommt ein eigenes Rezept dazu, lokal `git pull` vor der nächsten Änderung.
 - **Startbestand:** SPEC 5 (genau 50, Verteilung) gilt nur für die Rezepte aus `rezeptplan.yaml`; Importe/neue Rezepte kommen dazu.
 
 ## Befehle im Alltag (SPEC 14)
@@ -86,6 +87,8 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 - [x] **Phase 8 – Livegang** (25.10.2026): Repo ist öffentlich → Pages kostenlos; Workflow `.github/workflows/pages.yml` veröffentlicht `web/` bei jedem Push auf main (einmalig Settings → Pages → Source „GitHub Actions“); `web_url` in `profil.yaml` → Canonical, JSON-LD `url`/`image`, Open Graph; `veroeffentlichen.py` (+ `--live`); README mit Alltagsanleitung; 126 Tests. Offen: MacroFactor-Link-Import gemeinsam testen, sobald Pages live ist.
 - [x] **Nachbesserung** (25.10.2026): Rezept 51 gelöscht; Budget in der App änderbar (Einkaufsseite, localStorage) + Befehl „Budget: [€]“; alle 50 Rezepte fettreicher bei gleichem Protein (Ø Fett Frühstück 17→21 g, Hauptgericht 20→26 g, kalorienarm 13→17 g, Snack 6→9 g; weniger Reis/Nudeln/Kartoffeln); KW 45 neu: 7/7 Tage regelkonform **ohne Extras** (Ø 2.326 kcal / 194 g P / 89 g F / 180 g KH, Wochenkosten ca. 161 €); 130 Tests. Befund: Pläne liegen bei ~180–210 g Protein, deshalb ist Fett ≥ 86 g nur knapp erreichbar.
 - [x] **Günstiger planen** (25.10.2026): `tools/planer.py` (Struktur aus Schichtplan, lokale Suche mit echten Packungskosten, Wiederholungsregeln, `--behalten`); Wiederholungsregeln auch in `pruefe_plan`; Einkaufsliste/App zeigen Einkauf, Verbrauch und Reste; Tests nutzen einen eingefrorenen Plan (`tests/daten/`); KW 45 neu: Einkauf 146,85 € (vorher 161 €), Verbrauch 97,82 €, Reste 49 €; 138 Tests. Befund: 100 € **Einkauf** sind mit Rezepten/Packungen/Protein ~190 g nicht erreichbar (Untergrenze ~145 €), der **Verbrauch** liegt unter 100 €.
+
+- [x] **Start & visuell** (25.10.2026): Plan KW 44 (26.10.–1.11.) mit einmaligem Starteinkauf Mo 26.10. (`planer.py --einkauf`, art: start), Einkauf ca. 142 €; App: Makro-Ringe (Heute), Makro-Ring + Zielbalken (Rezept), Wochenkalender mit Schichtfarben und Diagrammen, Icons/Farben (Kategorien, Küchen, Abteilungen), Kostenbalken und Budget-Balken; Farben mit dataviz-Validator geprüft (hell/dunkel); eigene Rezepte per App-Formular über GitHub anlegen/löschen, Workflow prüft und baut vor dem Veröffentlichen; Tabs zeigen auf die aktuelle Woche; 146 Tests. **Am Sa 31.10.:** Reste aus KW 44 eintragen (`einkauf.py KW-44-2026 --reste-uebernehmen`), dann KW 45 neu planen.
 
 ## Entscheidungen
 Siehe `SPEC.md`, Abschnitt 16.

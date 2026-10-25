@@ -81,6 +81,8 @@ veroeffentlichen:
   einkaufslisten: true
 # Öffentliche Adresse der Web-App (GitHub Pages) – für Canonical-Link, JSON-LD url/image und Vorschau
 web_url: https://mdbts9qghm-max.github.io/Chef/
+# GitHub-Repository (Eigentümer/Name) – für „Eigenes Rezept“ und „Rezept löschen“ in der App
+github_repo: mdbts9qghm-max/Chef
 
 # Schichtarbeit (Onboarding Phase 5, 24.10.2026): 5-Tage-Zyklus ab dem Startdatum
 schichten:

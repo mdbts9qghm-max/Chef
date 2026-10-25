@@ -109,12 +109,13 @@ class Daten:
 
 # --- Bewertung eines Kandidaten -------------------------------------------------------------
 class Planer:
-    def __init__(self, name, daten=None, budget=None, fest=None, auswaerts=None):
+    def __init__(self, name, daten=None, budget=None, fest=None, auswaerts=None, termine=None):
         self.name = name
         self.kw, self.jahr, self.tage = woche(name)
         self.d = daten or Daten()
         self.budget = budget if budget is not None else ek.budget()
-        self.termine = einkaufstermine(self.tage)
+        self.termine = sorted(termine) if termine else einkaufstermine(self.tage)
+        self.start_einkauf = bool(termine) and min(termine) >= self.tage[0]   # einmaliger Einkauf in der Woche
         self.auswaerts = auswaerts or {}                       # datum → Slot
         self.st = struktur(self.tage, self.auswaerts)
         self.fest = fest or {}                                 # (datum, slot) → rezept
@@ -300,7 +301,8 @@ class Planer:
             tag["auswaerts"] = {"mahlzeit": self.auswaerts[d]} if d in self.auswaerts else None
             tage.append(tag)
         return {"kw": self.kw, "jahr": self.jahr, "name": self.name,
-                "einkauf": [{"tag": config.WOCHENTAGE[t.weekday()], "datum": t, "art": "gross"} for t in self.termine],
+                "einkauf": [{"tag": config.WOCHENTAGE[t.weekday()], "datum": t,
+                             "art": "start" if self.start_einkauf and t == self.termine[0] else "gross"} for t in self.termine],
                 "tage": tage}
 
     def einfrieren(self, e):
@@ -331,7 +333,7 @@ class Planer:
                 f"# Meal-Prep-Tag: {', '.join(prep) or '–'} (Vorbereitung für die Tagschicht)",
                 f"# Erstellt mit tools/planer.py · Einkauf ca. {nw.zahl(kosten, 2)} € (Budget {self.budget} €)",
                 f"kw: {plan['kw']}", f"jahr: {plan['jahr']}", "einkauf:"]
-        kopf += [f"  - {{tag: {e['tag']}, datum: {e['datum'].isoformat()}, art: gross}}" for e in plan["einkauf"]]
+        kopf += [f"  - {{tag: {e['tag']}, datum: {e['datum'].isoformat()}, art: {e['art']}}}" for e in plan["einkauf"]]
         kopf.append("tage:")
         for tag in plan["tage"]:
             d = tag["datum"]
@@ -399,10 +401,12 @@ def main(argv=None):
     a.add_argument("--budget", type=float, default=None)
     a.add_argument("--starts", type=int, default=None)
     a.add_argument("--behalten", action="store_true")
+    a.add_argument("--einkauf", nargs="+", type=dt.date.fromisoformat, default=None,
+                   help="Einkaufstermine (JJJJ-MM-TT) statt der Samstage aus dem Profil, z. B. Starteinkauf")
     args = a.parse_args(argv)
     pfad = config.WOCHENPLAENE_DIR / f"{args.plan}.yaml"
     fest, aus = vorgaben(pfad) if args.behalten else ({}, {})
-    p = Planer(args.plan, budget=args.budget, fest=fest, auswaerts=aus)
+    p = Planer(args.plan, budget=args.budget, fest=fest, auswaerts=aus, termine=args.einkauf)
     fehler, kosten, _, plan, k, pr = p.planen(args.starts, ausgabe=print)
     if fehler:
         print(f"Kein regelkonformer Plan gefunden (bester: {fehler} Fehler) – nichts geschrieben:")

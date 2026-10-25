@@ -1,11 +1,12 @@
-# Veröffentlicht den committeten Ordner web/ auf GitHub Pages (SPEC 10.4).
+# Prüft die Daten, baut die Web-App aus daten/ neu und veröffentlicht sie auf GitHub Pages (SPEC 10.4).
+# Läuft auch, wenn in der App ein eigenes Rezept gespeichert oder gelöscht wird (Commit auf daten/rezepte/).
 # Einmalig nötig: Settings → Pages → Source: „GitHub Actions“.
 name: Pages
 
 on:
   push:
     branches: [main]
-    paths: ["web/**", ".github/workflows/pages.yml"]
+    paths: ["daten/**", "tools/**", "web/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -25,6 +26,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Abhängigkeiten
+        run: pip install "pyyaml>=6.0"
+      - name: Rezepte prüfen (bei Fehlern bleibt die bisherige App online)
+        run: python3 tools/pruefen.py
+      - name: Web-App neu bauen
+        run: python3 tools/generieren.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

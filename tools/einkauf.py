@@ -215,6 +215,12 @@ def budget():
     return config.PROFIL["einkauf"].get("budget_eur_pro_woche")
 
 
+def start_hinweis(plan, datum):
+    """„ · Starteinkauf“ für einen einmaligen Einkauf außerhalb des Samstagsrhythmus (art: start)."""
+    art = next((e.get("art") for e in plan.get("einkauf", []) if wp.datum(e["datum"]) == datum), None)
+    return " · Starteinkauf (einmalig)" if art == "start" else ""
+
+
 SPAR_WHEY = "Whey in der größeren 2,5-kg-Packung kaufen (online meist 30–40 % günstiger pro kg)"
 
 
@@ -227,7 +233,7 @@ def einkauf_markdown(plan, rezepte, db, listen, reste):
            "plus Extras, abzüglich Vorrat, aufgerundet auf Packungen.", ""]
     for liste in listen:
         tag = config.WOCHENTAGE_LANG[liste.datum.weekday()]
-        out += [f"## Einkauf {tag}, {liste.datum.strftime('%d.%m.%Y')}", ""]
+        out += [f"## Einkauf {tag}, {liste.datum.strftime('%d.%m.%Y')}{start_hinweis(plan, liste.datum)}", ""]
         kaufen = [z for z in liste.zeilen if z.pakete > 0]
         kosten_abt = {}
         for abt in reihenfolge + sorted({abteilung(z) for z in kaufen} - set(reihenfolge)):

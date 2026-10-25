@@ -67,6 +67,55 @@
     });
   }
 
+  var SCHICHT = { Tag: ["☀️", "Tagschicht"], Nacht: ["🌙", "Nachtschicht"], frei: ["🏠", "frei"] };
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function svgEl(tag, attrs) {
+    var e = document.createElementNS(SVGNS, tag);
+    Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+    return e;
+  }
+  // Ring: Ist-Wert als Bogen (Makrofarbe), Zielbereich als dünner grauer Außenbogen, Zahl + Einheit in der Mitte
+  function ring(k, label, einheit, ist, soll, band) {
+    var lo = band[0], hi = band[1], max = (hi || soll * 1.1) * 1.15, gr = 92, r = 34, u = 2 * Math.PI * r;
+    var ok = ist >= lo && (hi === null || ist <= hi);
+    var svg = svgEl("svg", { viewBox: "0 0 " + gr + " " + gr, width: gr, height: gr, role: "img",
+      "aria-label": label + " " + zahl(ist, 0) + " " + einheit + (ok ? ", im Ziel" : ", außerhalb des Ziels") });
+    var c = gr / 2, dreh = "rotate(-90 " + c + " " + c + ")";
+    svg.appendChild(svgEl("circle", { cx: c, cy: c, r: r, fill: "none", class: "spur", "stroke-width": 10 }));
+    var ru = 2 * Math.PI * (r + 9), von = lo / max, bis = (hi || max) / max;
+    svg.appendChild(svgEl("circle", { cx: c, cy: c, r: r + 9, fill: "none", class: "zielbogen", "stroke-width": 3,
+      "stroke-dasharray": ((bis - von) * ru).toFixed(1) + " " + ru.toFixed(1), "stroke-dashoffset": (-von * ru).toFixed(1), transform: dreh }));
+    var anteil = Math.min(ist / max, 1);
+    svg.appendChild(svgEl("circle", { cx: c, cy: c, r: r, fill: "none", class: "bogen m-" + k, "stroke-width": 10, "stroke-linecap": "round",
+      "stroke-dasharray": Math.max(anteil * u, 0.1).toFixed(1) + " " + u.toFixed(1), transform: dreh }));
+    var t1 = svgEl("text", { x: c, y: c + 2, class: "rz" }); t1.textContent = zahl(ist, 0);
+    var t2 = svgEl("text", { x: c, y: c + 16, class: "re" }); t2.textContent = einheit + (ok ? " ✓" : "");
+    svg.appendChild(t1); svg.appendChild(t2);
+    var ziel = hi ? zahl(lo, 0) + "–" + zahl(hi, 0) : "ab " + zahl(lo, 0);
+    return el("figure", { class: "ring" + (ok ? " ok" : "") }, [svg, el("figcaption", { html: "<strong>" + label + "</strong><br>Ziel " + ziel + " " + einheit })]);
+  }
+
+  // Tabs „Woche“/„Einkauf“ zeigen auf den Plan der aktuellen Woche (sonst den nächsten, sonst den letzten)
+  function aktuellerPlan(iso) {
+    var drin = null, naechster = null;
+    D.plaene.forEach(function (p) {
+      var von = p.tage[0].datum, bis = p.tage[p.tage.length - 1].datum;
+      if (iso >= von && iso <= bis) drin = p;
+      if (von > iso && (!naechster || von < naechster.tage[0].datum)) naechster = p;
+    });
+    return drin || naechster || D.plaene[D.plaene.length - 1] || null;
+  }
+  function tabsAktualisieren() {
+    var p = aktuellerPlan(heuteIso());
+    if (!p) return;
+    Array.prototype.forEach.call(document.querySelectorAll("nav.tabs a"), function (a) {
+      var t = a.textContent;
+      if (/Woche/.test(t)) a.setAttribute("href", basis + "woche/" + p.name + ".html");
+      if (/Einkauf/.test(t) && D.einkaufslisten) a.setAttribute("href", basis + "einkauf/" + p.name + ".html");
+    });
+    if (D.einkaufslisten) D.einkauf = "einkauf/" + p.name + ".html";
+  }
+
   // --- Heute ------------------------------------------------------------------------
   function heute() {
     var ziel = document.getElementById("heute");
@@ -75,8 +124,13 @@
     D.plaene.forEach(function (p) { p.tage.forEach(function (t) { if (t.datum === iso) { tag = t; plan = p; } }); });
     var d = new Date(iso + "T12:00:00");
     ziel.innerHTML = "";
-    ziel.appendChild(el("p", { class: "leise", text: WOCHENTAGE[d.getDay()] + ", " + datumDe(iso) +
-      (tag ? " · " + (tag.schicht === "frei" ? "frei" : tag.schicht + "schicht " + tag.schichtzeit) : "") }));
+    ziel.appendChild(el("p", { class: "leise", text: WOCHENTAGE[d.getDay()] + ", " + datumDe(iso) }));
+    if (tag) {
+      var marken = (tag.einkauf ? '<span class="marke">🛒 ' + (tag.start_einkauf ? "Starteinkauf" : "Einkauf") + "</span>" : "") +
+        (tag.mealprep ? '<span class="marke">🍱 Meal Prep für morgen</span>' : "");
+      ziel.appendChild(el("div", { class: "schicht-banner s-" + tag.schicht.toLowerCase(), html: "<span>" + SCHICHT[tag.schicht][0] + " <strong>" +
+        SCHICHT[tag.schicht][1] + "</strong>" + (tag.schichtzeit ? " " + tag.schichtzeit : "") + "</span>" + marken }));
+    }
     if (!tag) {
       var naechster = null;
       D.plaene.forEach(function (p) { p.tage.forEach(function (t) { if (t.datum > iso && (!naechster || t.datum < naechster.datum)) naechster = t; }); });
@@ -92,7 +146,7 @@
     }
     var mk = el("div", { class: "karte" }, [el("h2", { text: "Mahlzeiten" })]);
     tag.mahlzeiten.forEach(function (m) {
-      var info = m.box ? "📦 " : "";
+      var info = (m.box ? "📦 " : "") + (m.einfrieren ? "❄️ " : "");
       var a = el("a", { class: "mahlzeit", href: basis + "rezept/" + m.id + ".html" }, [
         el("span", { class: "slot", text: m.label + (m.zeit ? " · " + m.zeit : "") }),
         el("span", { class: "name", text: info + m.name + (m.rest ? " (Rest)" : "") }),
@@ -108,13 +162,12 @@
     ziel.appendChild(mk);
 
     var bk = el("div", { class: "karte" }, [el("h2", { text: "Tagessumme" })]);
-    [["kcal", "Kalorien", "kcal", "--kcal"], ["protein", "Protein", "g", "--p"], ["fett", "Fett", "g", "--f"], ["kh", "Kohlenhydrate", "g", "--kh"]]
-      .forEach(function (b) {
-        var ist = tag.summe[b[0]], soll = D.ziele[b[0]], pz = Math.min(100, ist / soll * 100);
-        bk.appendChild(el("div", { class: "balken" }, [
-          el("div", { class: "zeile", html: "<span>" + b[1] + "</span><span>" + zahl(ist, 0) + " / " + zahl(soll, 0) + " " + b[2] + "</span>" }),
-          el("div", { class: "spur" }, [el("div", { class: "fuellung", style: "width:" + pz.toFixed(1) + "%;background:var(" + b[3] + ")" })])]));
-      });
+    var ringe = el("div", { class: "ringe" });
+    [["kcal", "Kalorien", "kcal"], ["protein", "Protein", "g"], ["fett", "Fett", "g"], ["kh", "KH", "g"]].forEach(function (b) {
+      ringe.appendChild(ring(b[0], b[1], b[2], tag.summe[b[0]], D.ziele[b[0]], D.korridor[b[0]]));
+    });
+    bk.appendChild(ringe);
+    bk.appendChild(el("p", { class: "leise", text: "Grauer Bogen = Zielbereich · ✓ = im Ziel" }));
     ziel.appendChild(bk);
 
     var kochen = tag.mahlzeiten.filter(function (m) { return m.kochen; });
@@ -329,6 +382,19 @@
     budget();
   }
 
+  // Balken: Verbrauch (kräftig) + Reste (hell) = Einkauf, senkrechte Linie = Budget; alles beschriftet
+  function budgetBalken(k, b) {
+    var max = Math.max(k.woche, b) * 1.08, pz = function (v) { return (100 * v / max).toFixed(1) + "%"; };
+    var spur = el("div", { class: "bspur", role: "img", "aria-label": "Einkauf " + euro(k.woche) + ", davon verbraucht " +
+      euro(k.verbrauch) + ", Budget " + euro(b) }, [
+      el("span", { class: "bverbrauch", style: "width:" + pz(k.verbrauch) }),
+      el("span", { class: "breste", style: "width:" + pz(k.reste) }),
+      el("span", { class: "blinie", style: "left:" + pz(b) })]);
+    var leg = el("div", { class: "blegende", html: '<span><i class="bverbrauch"></i>verbraucht ' + euro(k.verbrauch) + '</span>' +
+      '<span><i class="breste"></i>Reste ' + euro(k.reste) + '</span><span><i class="blinie-l"></i>Budget ' + euro(b) + "</span>" });
+    return el("div", { class: "budgetbalken" }, [spur, leg]);
+  }
+
   function budget() {
     var karte = document.getElementById("budget");
     if (!karte) return;
@@ -342,6 +408,7 @@
         euro(k.vorrat) + " (z. B. Whey, Gewürze, Öl – reichen mehrere Wochen)." }));
       ergebnis.appendChild(el("p", { class: "leise", html: "Davon verbraucht diese Woche ca. <strong>" + euro(k.verbrauch) +
         "</strong>; Reste für ca. " + euro(k.reste) + " bleiben für die nächsten Wochen." }));
+      if (b > 0) ergebnis.appendChild(budgetBalken(k, b));
       if (!(b > 0)) return;
       if (k.verbrauch <= b && k.woche > b) ergebnis.appendChild(el("p", { class: "ok", text: "✓ Verbrauch im Budget." }));
       if (gesamt <= b) {
@@ -368,5 +435,162 @@
     zeige();
   }
 
-  heute(); rezeptbuch(); rezeptseite(); einkauf();
+  // --- Rezept löschen (über GitHub) --------------------------------------------------------
+  function loeschen() {
+    var knopf = document.getElementById("loeschen");
+    if (!knopf || !D.github) return;
+    knopf.addEventListener("click", function () {
+      var id = knopf.dataset.id, heute = heuteIso(), tage = [];
+      D.plaene.forEach(function (p) { p.tage.forEach(function (t) {
+        if (t.datum >= heute && t.mahlzeiten.some(function (m) { return m.id === id; })) tage.push(datumDe(t.datum));
+      }); });
+      var text = tage.length
+        ? "Achtung: „" + knopf.dataset.name + "“ steht im Wochenplan am " + tage.join(", ") + ".\nErst in Claude „tauschen“ sagen, sonst ist der Plan ungültig.\n\nTrotzdem zu GitHub wechseln und löschen?"
+        : "„" + knopf.dataset.name + "“ wirklich löschen?\nDu landest bei GitHub und bestätigst dort mit „Commit changes“. Nach 1–2 Minuten ist es aus der App verschwunden.";
+      if (window.confirm(text)) location.href = "https://github.com/" + D.github + "/delete/main/daten/rezepte/" + id + ".yaml";
+    });
+  }
+
+  // --- Eigenes Rezept (Formular → YAML → GitHub) ---------------------------------------------
+  function slug(name) {
+    return name.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+  }
+  function rezeptFormular() {
+    var form = document.getElementById("rezept-form");
+    if (!form) return;
+    var DB = {}; D.zutaten.forEach(function (z) { DB[z[0]] = z; });
+    var liste = document.getElementById("zutaten-zeilen"), ausgabe = document.getElementById("rezept-werte");
+    var ENTWURF = "rezept-entwurf";
+    function zeile(name, g) {
+      var li = el("li", { class: "zzeile" }, [
+        el("input", { type: "text", list: "zutaten-liste", class: "zname", placeholder: "Zutat suchen …", value: name || "", "aria-label": "Zutat" }),
+        el("input", { type: "number", class: "zg", min: "0", step: "1", inputmode: "decimal", placeholder: "g", value: g || "", "aria-label": "Gramm für 2 Portionen" }),
+        el("button", { type: "button", class: "zweg", "aria-label": "Zutat entfernen", text: "✕" })]);
+      li.querySelector(".zweg").addEventListener("click", function () { li.remove(); aktualisieren(); });
+      liste.appendChild(li);
+    }
+    function lesen() {
+      var f = {}; Array.prototype.forEach.call(form.elements, function (e) {
+        if (e.name) f[e.name] = e.type === "checkbox" ? e.checked : e.value;
+      });
+      f.zutaten = Array.prototype.map.call(liste.children, function (li) {
+        return { zutat: li.querySelector(".zname").value.trim(), g: parseFloat(li.querySelector(".zg").value) || 0 };
+      }).filter(function (z) { return z.zutat || z.g; });
+      return f;
+    }
+    function werte(f) {
+      var s = { kcal: 0, protein: 0, fett: 0, kh: 0, zucker: 0 };
+      f.zutaten.forEach(function (z) { var w = DB[z.zutat]; if (!w) return;
+        s.kcal += w[1] * z.g / 100; s.protein += w[2] * z.g / 100; s.fett += w[3] * z.g / 100; s.kh += w[4] * z.g / 100; s.zucker += w[5] * z.g / 100; });
+      Object.keys(s).forEach(function (k) { s[k] /= 2; });
+      return s;
+    }
+    function korridorSchluessel(f, p) {
+      if (f.mahlzeit === "Frühstück") return "fruehstueck";
+      if (f.mahlzeit === "Snack") return "snack";
+      var k = D.korridore.kalorienarm;
+      return p.kcal <= k.kcal_max && p.protein >= k.protein_min ? "kalorienarm" : "hauptgericht";
+    }
+    function kategorien(f, p) {
+      var k = [], zeit = (+f.vorbereitung || 0) + (+f.kochen || 0);
+      if (p.protein >= 40 || (p.kcal > 0 && p.protein / p.kcal * 100 >= 10)) k.push("High Protein");
+      if (zeit <= 25) k.push("Schnelle Rezepte");
+      if (f.mahlzeit === "Mittag/Abend" && korridorSchluessel(f, p) === "kalorienarm") k.push("Kalorienarm");
+      if (f.mahlzeit !== "Mittag/Abend") k.push("Frühstück & Snacks");
+      return k;
+    }
+    function hauptkategorie(f, kats) {
+      if (f.mahlzeit !== "Mittag/Abend") return "fruehstueck-snacks";
+      if (kats.indexOf("Kalorienarm") >= 0) return "kalorienarm";
+      if (kats.indexOf("High Protein") >= 0) return "high-protein";
+      if (kats.indexOf("Schnelle Rezepte") >= 0) return "schnell";
+      return "high-protein";
+    }
+    function schritte(f) {
+      return f.schritte.split("\n").map(function (t) { return t.trim(); }).filter(Boolean);
+    }
+    function ohneKlammern(t) { return t.replace(/[{]/g, "(").replace(/[}]/g, ")"); }
+    function yaml(f, p, kats) {
+      var q = function (t) { return JSON.stringify(ohneKlammern(String(t))); };
+      var tage = Math.max(0, Math.min(4, parseInt(f.tage, 10) || 0));
+      var z = f.zutaten.filter(function (x) { return DB[x.zutat] && x.g > 0; });
+      var out = ["# Eigenes Rezept aus der App (" + heuteIso() + ")", "id: " + slug(f.name), "name: " + q(f.name),
+        "hauptkategorie: " + hauptkategorie(f, kats), "kategorien_manuell: []", "mahlzeit: " + q(f.mahlzeit),
+        "geschmack: " + f.geschmack, "kueche: " + q(f.kueche), "herkunft: {art: eigen, quelle: App, datum: " + heuteIso() + "}",
+        "schwierigkeit: " + f.schwierigkeit,
+        "zeit: {vorbereitung: " + (parseInt(f.vorbereitung, 10) || 0) + ", kochen: " + (parseInt(f.kochen, 10) || 0) +
+          ", wartezeit: " + (parseInt(f.wartezeit, 10) || 0) + "}",
+        "ausstattung: []", "zutaten:"];
+      z.forEach(function (x, i) { out.push("  - {id: z" + (i + 1) + ", zutat: " + q(x.zutat) + ", g: " + Math.round(x.g * 10) / 10 + "}"); });
+      out.push("mise_en_place: []", "schritte:");
+      schritte(f).forEach(function (t, i) {
+        out.push("  - titel: " + q("Schritt " + (i + 1)), "    text: " + q(t), "    timer_min: null");
+      });
+      var tipps = (f.tipps || "").split("\n").map(function (t) { return t.trim(); }).filter(Boolean);
+      out.push("zeitablauf: []", "fehler: []", 'anrichten: ""',
+        "aufbewahrung: {kuehlschrank_tage: " + tage + ", einfrierbar: " + (f.einfrierbar ? "true" : "false") + ", aufwaermen: " +
+          q(tage ? "Abgedeckt in der Mikrowelle bei 600 W warm machen." : "Frisch essen.") + "}",
+        "varianten: []", "tipps: [" + tipps.map(q).join(", ") + "]", "gargewicht_g: null",
+        "bewertung: {sterne: null, kommentar: null, datum: null}");
+      return out.join("\n") + "\n";
+    }
+    function aktualisieren() {
+      var f = lesen(), p = werte(f), kats = kategorien(f, p), ks = korridorSchluessel(f, p), k = D.korridore[ks];
+      try { window.localStorage.setItem(ENTWURF, JSON.stringify(f)); } catch (e) { /* privat */ }
+      var unbekannt = f.zutaten.filter(function (z) { return z.zutat && !DB[z.zutat]; }).map(function (z) { return z.zutat; });
+      var id = slug(f.name || ""), probleme = [];
+      if (!f.name || !f.name.trim()) probleme.push("Name fehlt");
+      else if (D.ids.indexOf(id) >= 0 || (D.namen || []).indexOf(f.name.trim().toLowerCase()) >= 0) probleme.push("Ein Rezept mit diesem Namen gibt es schon – bitte anders benennen");
+      if (!f.zutaten.some(function (z) { return DB[z.zutat] && z.g > 0; })) probleme.push("Mindestens eine Zutat mit Gramm");
+      if (!schritte(f).length) probleme.push("Mindestens ein Schritt");
+      if (unbekannt.length) probleme.push("Nicht in der Zutatenliste (werden weggelassen – in Claude ergänzen lassen): " + unbekannt.join(", "));
+      var kcalOk = (k.kcal_min == null || p.kcal >= k.kcal_min) && (k.kcal_max == null || p.kcal <= k.kcal_max);
+      var pOk = p.protein >= k.protein_min;
+      ausgabe.innerHTML = "";
+      ausgabe.appendChild(el("div", { class: "fwerte" }, [
+        el("div", { html: "<strong>" + zahl(p.kcal, 0) + "</strong><span>kcal</span>" }),
+        el("div", { html: "<strong>" + zahl(p.protein, 0) + "</strong><span>g Protein</span>" }),
+        el("div", { html: "<strong>" + zahl(p.fett, 0) + "</strong><span>g Fett</span>" }),
+        el("div", { html: "<strong>" + zahl(p.kh, 0) + "</strong><span>g KH</span>" })]));
+      ausgabe.appendChild(el("p", { class: kcalOk && pOk ? "ok" : "warn", text: (kcalOk && pOk ? "✓ " : "⚠️ ") + "Pro Portion · Ziel " +
+        (ks === "hauptgericht" ? "Hauptgericht" : ks === "kalorienarm" ? "Kalorienarm" : ks === "fruehstueck" ? "Frühstück" : "Snack") + ": " +
+        (k.kcal_min != null ? zahl(k.kcal_min, 0) + "–" : "bis ") + zahl(k.kcal_max, 0) + " kcal, ab " + k.protein_min + " g Protein" +
+        (kcalOk && pOk ? "" : " (Rezept geht trotzdem, der Planer gleicht über die Portion aus)") }));
+      ausgabe.appendChild(el("p", { class: "leise", text: "Kategorien: " + (kats.join(" · ") || "–") }));
+      var hinweise = document.getElementById("rezept-probleme");
+      hinweise.innerHTML = "";
+      probleme.forEach(function (t) { hinweise.appendChild(el("li", { text: t })); });
+      var bereit = !probleme.some(function (t) { return t.indexOf("Nicht in der Zutatenliste") < 0; });
+      var knopf = document.getElementById("rezept-speichern");
+      knopf.disabled = !bereit || !D.github;
+      knopf.dataset.url = bereit && D.github ? "https://github.com/" + D.github + "/new/main?filename=" +
+        encodeURIComponent("daten/rezepte/" + id + ".yaml") + "&value=" + encodeURIComponent(yaml(f, p, kats)) : "";
+      document.getElementById("rezept-yaml").textContent = bereit ? yaml(f, p, kats) : "";
+    }
+    var gespeichert = null;
+    try { gespeichert = JSON.parse(window.localStorage.getItem(ENTWURF) || "null"); } catch (e) { gespeichert = null; }
+    if (gespeichert) {
+      Array.prototype.forEach.call(form.elements, function (e) {
+        if (e.name && gespeichert[e.name] !== undefined) { if (e.type === "checkbox") e.checked = gespeichert[e.name]; else e.value = gespeichert[e.name]; }
+      });
+      (gespeichert.zutaten || []).forEach(function (z) { zeile(z.zutat, z.g); });
+    }
+    if (!liste.children.length) { zeile(); zeile(); zeile(); }
+    document.getElementById("zutat-plus").addEventListener("click", function () { zeile(); });
+    form.addEventListener("input", aktualisieren);
+    form.addEventListener("submit", function (e) { e.preventDefault(); });
+    document.getElementById("rezept-speichern").addEventListener("click", function () {
+      var url = this.dataset.url;
+      if (url) location.href = url;
+    });
+    document.getElementById("rezept-verwerfen").addEventListener("click", function () {
+      if (!window.confirm("Entwurf wirklich verwerfen?")) return;
+      try { window.localStorage.removeItem(ENTWURF); } catch (e) { /* privat */ }
+      form.reset(); liste.innerHTML = ""; zeile(); zeile(); zeile(); aktualisieren();
+    });
+    aktualisieren();
+  }
+
+  tabsAktualisieren(); heute(); rezeptbuch(); rezeptseite(); einkauf(); loeschen(); rezeptFormular();
 })();
