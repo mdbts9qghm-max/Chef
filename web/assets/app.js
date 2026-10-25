@@ -116,6 +116,12 @@
     if (D.einkaufslisten) D.einkauf = "einkauf/" + p.name + ".html";
   }
 
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  // Rezept-Link mit dem Portionsfaktor aus dem Plan (Rezeptseite zeigt dann genau diese Portion)
+  function rezeptLink(m) {
+    return basis + "rezept/" + m.id + ".html" + (m.faktor && m.faktor !== 1 ? "?faktor=" + m.faktor : "");
+  }
+
   // --- Heute ------------------------------------------------------------------------
   function heute() {
     var ziel = document.getElementById("heute");
@@ -147,9 +153,10 @@
     var mk = el("div", { class: "karte" }, [el("h2", { text: "Mahlzeiten" })]);
     tag.mahlzeiten.forEach(function (m) {
       var info = (m.box ? "📦 " : "") + (m.einfrieren ? "❄️ " : "");
-      var a = el("a", { class: "mahlzeit", href: basis + "rezept/" + m.id + ".html" }, [
+      var a = el("a", { class: "mahlzeit", href: rezeptLink(m) }, [
         el("span", { class: "slot", text: m.label + (m.zeit ? " · " + m.zeit : "") }),
-        el("span", { class: "name", text: info + m.name + (m.rest ? " (Rest)" : "") }),
+        el("span", { class: "name", html: esc(info + m.name + (m.rest ? " (Rest)" : "")) +
+          (m.faktor && m.faktor !== 1 ? ' <span class="faktor">×' + zahl(m.faktor, 2) + "</span>" : "") }),
         el("span", { class: "werte", html: zahl(m.kcal, 0) + " kcal<br>" + zahl(m.protein, 0) + " g P" })]);
       mk.appendChild(a);
     });
@@ -173,7 +180,7 @@
     var kochen = tag.mahlzeiten.filter(function (m) { return m.kochen; });
     if (kochen.length) {
       ziel.appendChild(el("div", { class: "knopfreihe" }, [el("a", { class: "knopf primaer",
-        href: basis + "rezept/" + kochen[0].id + ".html#kochmodus", text: "Jetzt kochen: " + kochen[0].name })]));
+        href: rezeptLink(kochen[0]) + "#kochmodus", text: "Jetzt kochen: " + kochen[0].name })]));
     }
     if (tag.erinnerungen.length) {
       var ek = el("div", { class: "karte" }, [el("h2", { text: "Erinnerungen für morgen" })]);
@@ -243,6 +250,19 @@
       anzahl = Math.max(1, Math.min(6, n)); faktor = anzahl / basisPortionen;
       out.textContent = anzahl; skalieren();
       document.getElementById("faktor-hinweis").hidden = faktor === 1;
+    }
+    // ?faktor=1.25 aus Heute/Woche: Portion wie im Plan (Mengen × Faktor, Nährwerte der Plan-Portion)
+    var pf = parseFloat(new URLSearchParams(location.search).get("faktor"));
+    var box = document.getElementById("plan-faktor");
+    if (box && pf > 0 && pf <= 2 && pf !== 1 && Math.abs(pf * 4 - Math.round(pf * 4)) < 1e-9) {
+      faktor = pf; skalieren();
+      out.textContent = basisPortionen + " × " + zahl(pf, 2);
+      var d = box.dataset;
+      box.innerHTML = "📅 <strong>Im Plan mit Faktor " + zahl(pf, 2) + "</strong>: alle Mengen × " + zahl(pf, 2) +
+        ". Deine Portion: <strong>" + zahl(d.kcal * pf, 0) + " kcal · " + zahl(d.protein * pf, 0) + " g Protein</strong> · " +
+        zahl(d.fett * pf, 0) + " g Fett · " + zahl(d.kh * pf, 0) + " g KH. In MacroFactor " + zahl(pf, 2) +
+        " Portionen loggen (oder nach Gramm). Die Nährwerte unten gelten für die Grundportion.";
+      box.hidden = false;
     }
     rechner.querySelector("[data-schritt='-1']").addEventListener("click", function () { setze(anzahl - 1); });
     rechner.querySelector("[data-schritt='1']").addEventListener("click", function () { setze(anzahl + 1); });

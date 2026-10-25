@@ -340,3 +340,21 @@ def test_loeschen_warnt_bei_geplantem_rezept(seite, server):
     seite.click("#loeschen")
     assert meldungen and "steht im Wochenplan" in meldungen[0]
     assert "rezept/" in seite.url                                        # abgebrochen → bleibt auf der Seite
+
+
+def test_faktor_aus_plan_auf_rezeptseite(seite, server, echte_rezepte, db):
+    plan = yaml.safe_load((config.WOCHENPLAENE_DIR / "KW-44-2026.yaml").read_text(encoding="utf-8"))
+    tag = next(t for t in plan["tage"] if any((t[s] or {}).get("faktor", 1) != 1 for s in ("fruehstueck", "mittag", "abend")))
+    slot = next(s for s in ("fruehstueck", "mittag", "abend") if (tag[s] or {}).get("faktor", 1) != 1)
+    rid, f = tag[slot]["rezept"], tag[slot]["faktor"]
+    p = nw.rezept_naehrwerte(echte_rezepte[rid], db)["portion"]
+    seite.goto(server + f"index.html?datum={tag['datum']}")
+    link = seite.locator(f"#heute a.mahlzeit[href*='{rid}']").first
+    assert f"faktor={f:g}" in link.get_attribute("href") and "×" in link.inner_text()
+    link.click()
+    banner = seite.inner_text("#plan-faktor")
+    assert f"{nw.rund(p['kcal'] * f):,}".replace(",", ".") + " kcal" in banner           # Plan-Portion wie auf „Heute“
+    zelle = seite.locator(".m[data-art=zelle]").first
+    g = float(zelle.get_attribute("data-g"))
+    assert nw.gramm(g * f).replace(" g", "") in zelle.inner_text()
+    assert seite.fehler == []

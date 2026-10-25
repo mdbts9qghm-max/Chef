@@ -142,7 +142,8 @@ def woche_seite(pd, md, einkauf_link, nachbarn):
         for m in t["mahlzeiten"]:
             sym = ("📦 " if m["box"] else "") + ("↻ " if m["rest"] else "") + ("❄️ " if m["einfrieren"] else "")
             fak = f' · ×{zahl(m["faktor"], 2)}' if m["faktor"] != 1 else ""
-            kacheln.append(f'<a class="mkachel" href="../rezept/{m["id"]}.html"><span class="slot">{SLOT_ICON[m["slot"]]} '
+            q = f'?faktor={m["faktor"]:g}' if m["faktor"] != 1 else ""
+            kacheln.append(f'<a class="mkachel" href="../rezept/{m["id"]}.html{q}"><span class="slot">{SLOT_ICON[m["slot"]]} '
                            f'{m["label"]}{" · " + m["zeit"] if m["zeit"] else ""}</span><span class="name">{esc(m["name"])}</span>'
                            f'<span class="werte">{sym}{m["kcal"]} kcal · {zahl(m["protein"], 0)} g P{fak}</span></a>')
         if t["auswaerts"]:
@@ -350,6 +351,8 @@ def rezept_seite(r, db, basis_url=""):
     kopf.append("</table>")
     out.append(f'<p class="leise"><strong>{zahl(p["kcal"], 0)} kcal · {zahl(p["protein"])} g Protein</strong> pro Portion · '
                f'⏱ {nw.gesamtzeit(r)} min</p>')
+    out.append(f'<p class="hinweis" id="plan-faktor" hidden data-kcal="{p["kcal"]:.2f}" data-protein="{p["protein"]:.2f}" '
+               f'data-fett="{p["fett"]:.2f}" data-kh="{p["kh"]:.2f}"></p>')
     out.append('<div class="knopfreihe"><button type="button" class="primaer" id="kochmodus-start">👩‍🍳 Kochmodus</button>'
                '<button type="button" id="macrofactor">📋 Für MacroFactor kopieren</button></div>')
     out.append('<section class="karte">' + "".join(kopf) + "</section>")
