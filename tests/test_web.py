@@ -133,15 +133,16 @@ def test_heute_zeigt_plan(seite, server):
     assert "nichts geplant" in seite.inner_text("#heute")
 
 
-def test_rezeptbuch_suche_und_filter(seite, server):
+def test_rezeptbuch_suche_und_filter(seite, server, echte_rezepte):
     seite.goto(server + "rezepte.html")
     sichtbar = lambda: seite.locator(".kachel:not([hidden])").count()
-    assert sichtbar() == 50
+    alle = len(echte_rezepte)
+    assert sichtbar() == alle
     seite.fill("input[name=suche]", "lachs")
-    assert 0 < sichtbar() < 50
+    assert 0 < sichtbar() < alle
     seite.fill("input[name=suche]", "")
     seite.select_option("select[name=mahlzeit]", "Snack")
-    assert sichtbar() == 5
+    assert sichtbar() == sum(r["mahlzeit"] == "Snack" for r in echte_rezepte.values())
 
 
 def test_portionsrechner_skaliert(seite, server):

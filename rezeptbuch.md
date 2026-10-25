@@ -1,7 +1,7 @@
 <!-- Generiert – nicht von Hand bearbeiten. -->
 # Rezeptbuch
 
-50 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
+51 Rezepte · Nährwerte pro Portion · Tagesziel 2.275 kcal / 149 g Protein
 
 ## High Protein
 
@@ -58,6 +58,7 @@
 | Rezept | Mahlzeit | Küche | kcal | Protein | Zeit | Kategorien | Bewertung |
 |---|---|---|---:|---:|---:|---|---|
 | [Beeren-Nice-Cream (Protein-Eis aus dem Mixer)](rezepte/fruehstueck-snacks/beeren-nice-cream.md) | Snack | International / Fusion | 208 | 23,6 g | 5 min | High Protein, Schnelle Rezepte, Frühstück & Snacks | – |
+| [Cookie-Dough-Protein-Dip mit Apfelspalten](rezepte/fruehstueck-snacks/cookie-dough-protein-dip.md) | Snack | Amerikanisch | 311 | 31,7 g | 7 min | High Protein, Schnelle Rezepte, Frühstück & Snacks | – |
 | [Erdnuss-Kakao-Protein-Balls](rezepte/fruehstueck-snacks/erdnuss-kakao-protein-balls.md) | Snack | International / Fusion | 313 | 31,8 g | 15 min | High Protein, Schnelle Rezepte, Meal Prep, Frühstück & Snacks | – |
 | [Frühstücks-Brownie](rezepte/fruehstueck-snacks/fruehstuecks-brownie.md) | Frühstück | Amerikanisch | 606 | 48,9 g | 35 min | High Protein, Meal Prep, Frühstück & Snacks | – |
 | [Heidelbeer-Protein-Muffins](rezepte/fruehstueck-snacks/heidelbeer-protein-muffins.md) | Frühstück | Amerikanisch | 541 | 45,5 g | 32 min | High Protein, Meal Prep, Frühstück & Snacks | – |

@@ -49,10 +49,12 @@ def test_rezeptplan_erfuellt_spec():
 
 
 def test_echte_rezepte_im_plan_und_passend(echte_rezepte, db):
-    """Jedes geschriebene Rezept steht im Plan und hat dort Bereich und Küche."""
+    """Rezepte des Startbestands passen zum Plan (Bereich, Küche, Protein); alle anderen haben eine Herkunft (Import/neu)."""
     plan = {p["id"]: p for p in bestand.lade_plan()}
     for r in echte_rezepte.values():
-        assert r["id"] in plan, r["id"]
+        if r["id"] not in plan:
+            assert (r.get("herkunft") or {}).get("art") in ("import", "neu"), r["id"]
+            continue
         e = bestand.eintrag_aus_rezept(r, db)
         assert e["bereich"] == plan[r["id"]]["bereich"]
         assert e["kueche"] == plan[r["id"]]["kueche"]
@@ -60,8 +62,10 @@ def test_echte_rezepte_im_plan_und_passend(echte_rezepte, db):
 
 
 def test_bestand_gegen_spec(echte_rezepte, db):
-    """Zwischenstand: keine Verstöße. Sobald 50 Rezepte existieren: alle Vorgaben aus 5.1–5.3 exakt."""
-    ist = [bestand.eintrag_aus_rezept(r, db) for r in echte_rezepte.values()]
+    """Startbestand: Zwischenstand ohne Verstöße; mit 50 Rezepten alle Vorgaben aus 5.1–5.3 exakt.
+    Spätere Importe zählen nicht zum Startbestand."""
+    start = bestand.startbestand(bestand.lade_plan(), echte_rezepte)
+    ist = [bestand.eintrag_aus_rezept(r, db) for r in start.values()]
     vollstaendig = len(ist) >= config.BESTAND_GESAMT
     zeilen = bestand.auswerten(ist, vollstaendig=vollstaendig)
     assert [z for z in zeilen if z[3] is False] == []
@@ -74,3 +78,15 @@ def test_zutaten_der_rezepte_existieren_und_limit(echte_rezepte, db):
     genutzt = {z["zutat"] for r in echte_rezepte.values() for z in nw.zutaten_eintraege(r)}
     assert genutzt <= set(db)
     assert len(genutzt - config.NICHT_EINKAUFEN) <= config.ZUTATEN_MAX
+
+
+def test_import_bricht_startbestand_nicht(echte_rezepte, db):
+    import copy
+    r = copy.deepcopy(echte_rezepte)
+    extra = copy.deepcopy(r["beeren-nice-cream"])
+    extra.update(id="import-test", herkunft={"art": "import", "quelle": "Test", "datum": "2026-10-25"})
+    r["import-test"] = extra
+    start = bestand.startbestand(bestand.lade_plan(), r)
+    assert "import-test" not in start and len(start) == config.BESTAND_GESAMT
+    zeilen = bestand.auswerten([bestand.eintrag_aus_rezept(x, db) for x in start.values()])
+    assert all(z[3] is True for z in zeilen)

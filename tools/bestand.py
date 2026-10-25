@@ -15,6 +15,12 @@ BEREICH_AUS_MAHLZEIT = {"Frühstück": "Frühstück", "Snack": "Snack", "Mittag/
 TAG_KATEGORIE = {"MP": "Meal Prep", "S": "Schnelle Rezepte", "KA": "Kalorienarm"}
 
 
+def startbestand(plan, rezepte):
+    """Nur die Rezepte aus dem Rezeptplan (SPEC 5 gilt für den Startbestand, nicht für spätere Importe)."""
+    ids = {p["id"] for p in plan}
+    return {rid: r for rid, r in rezepte.items() if rid in ids}
+
+
 def lade_plan(pfad=config.REZEPTPLAN_YAML):
     with open(pfad, encoding="utf-8") as f:
         return yaml.safe_load(f)["rezepte"]
@@ -116,16 +122,21 @@ def rezeptplan_markdown(plan, rezepte, db):
         out.append("")
     out += ["## Abgleich des Plans mit SPEC 5.1–5.3", ""]
     out += tabelle(auswerten([eintrag_aus_plan(p) for p in plan]))
-    ist = [eintrag_aus_rezept(r, db) for r in rezepte.values()]
+    ist = [eintrag_aus_rezept(r, db) for r in startbestand(plan, rezepte).values()]
     vollstaendig = len(ist) >= config.BESTAND_GESAMT
     hinweis = ("Bestand vollständig: alle Vorgaben werden exakt geprüft." if vollstaendig else
                "Zwischenstand: exakte Sollwerte gelten hier als Obergrenze, Mindestwerte erst bei 50 Rezepten.")
-    out += ["", f"## Ist-Stand der geschriebenen Rezepte ({len(ist)})", "", hinweis, ""]
+    out += ["", f"## Ist-Stand des Startbestands ({len(ist)})", "", hinweis, ""]
     out += tabelle(auswerten(ist, vollstaendig=vollstaendig))
     plan_ids = {p["id"] for p in plan}
     extra = sorted(vorhanden - plan_ids)
     if extra:
-        out += ["", f"**Nicht im Plan:** {', '.join(extra)}"]
+        out += ["", f"## Weitere Rezepte (Import und neue Rezepte, {len(extra)})", "",
+                "Zählen nicht zum Startbestand aus SPEC 5.", ""]
+        for rid in extra:
+            r = rezepte[rid]
+            h = (r.get("herkunft") or {})
+            out.append(f"- {r['name']} (`{rid}`, {r['mahlzeit']}, {r['kueche']})" + (f" – {h.get('art')}: {h.get('quelle')}" if h else ""))
     return "\n".join(out) + "\n"
 
 
@@ -134,7 +145,7 @@ def main():
     plan = lade_plan()
     rezepte = nw.lade_alle_rezepte()
     plan_zeilen = auswerten([eintrag_aus_plan(p) for p in plan])
-    ist = [eintrag_aus_rezept(r, db) for r in rezepte.values()]
+    ist = [eintrag_aus_rezept(r, db) for r in startbestand(plan, rezepte).values()]
     ist_zeilen = auswerten(ist, vollstaendig=len(ist) >= config.BESTAND_GESAMT)
     print("Plan:", "alle Vorgaben erfüllt" if all(z[3] is not False for z in plan_zeilen) else "VERSTÖSSE")
     for z in plan_zeilen:

@@ -99,7 +99,7 @@ Stand: 50 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
 
-## Ist-Stand der geschriebenen Rezepte (50)
+## Ist-Stand des Startbestands (50)
 
 Bestand vollständig: alle Vorgaben werden exakt geprüft.
 
@@ -131,3 +131,9 @@ Bestand vollständig: alle Vorgaben werden exakt geprüft.
 | Hauptprotein Fisch & Garnelen | ≤ 10 | 5 | ✓ |
 | Hauptprotein Schwein | ≤ 10 | 2 | ✓ |
 | Hauptprotein Eier | ≤ 10 | 1 | ✓ |
+
+## Weitere Rezepte (Import und neue Rezepte, 1)
+
+Zählen nicht zum Startbestand aus SPEC 5.
+
+- Cookie-Dough-Protein-Dip mit Apfelspalten (`cookie-dough-protein-dip`, Snack, Amerikanisch) – import: import/cookie-dough-dip-1.png, -2.png (fiktiver Test-Post)

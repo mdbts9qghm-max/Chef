@@ -43,7 +43,16 @@ python3 tools/wochenplan.py KW-45-2026   # Wochenplan prüfen + wochenplaene/KW-
 python3 tools/einkauf.py KW-45-2026      # Einkaufsliste (--reste-uebernehmen: Reste → vorrat.yaml)
 python3 -m pytest                        # Tests (SPEC 12.2), Playwright nutzt /opt/pw-browsers/chromium
 python3 tools/web.py                     # nur die Web-App neu erzeugen (macht generieren.py automatisch)
+python3 tools/importieren.py             # Neues in import/ auflisten (--erledigt <name>, --link <url> --rezept <id>, --aehnlich <id>)
+python3 tools/kuehlschrank.py "Hähnchen, Reis" [--gegessen kcal,P,F,KH] [--mahlzeit Mittag/Abend]
+python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile wird ersetzt
 ```
+
+## Arbeitsabläufe (Phase 7)
+- **Import:** `importieren.py` → Screenshots ansehen / Text lesen / Link abrufen (Instagram blockiert oft → um Screenshot bitten, nicht raten) → Mengen mit `importieren.umrechnen` (Tabelle `config.UMRECHNUNG`) → Rezept nach Schema 6.4 + Standard 7 **in eigenen Worten**, an Makros angepasst, mit `inspiration` und `herkunft: {art: import, quelle, datum}` → `importieren.py --aehnlich <id>` (ab 0,65: fragen „Variante oder eigenes Rezept?“) → Unklares in **einer** Liste nachfragen → prüfen, generieren, `--erledigt`/`--link` → Zusammenfassung (kcal/Protein, offene Fragen).
+- **Kühlschrank:** fragen, was heute schon gegessen wurde → `kuehlschrank.py … --gegessen …` → Top 3 mit Faktor zeigen; nichts Passendes → neues Gericht vorschlagen; gefällt es, als Rezept mit `herkunft: {art: neu}` aufnehmen.
+- **Bewerten:** `bewerten.py` → bei Kommentaren („zu trocken“, „zu wenig süß“) Rezept anpassen und Makro-Unterschied vorher/nachher zeigen → prüfen, generieren.
+- **Startbestand:** SPEC 5 (genau 50, Verteilung) gilt nur für die Rezepte aus `rezeptplan.yaml`; Importe/neue Rezepte kommen dazu.
 
 ## Befehle im Alltag (SPEC 14)
 | Befehl | Was passiert |
@@ -68,7 +77,7 @@ python3 tools/web.py                     # nur die Web-App neu erzeugen (macht g
 - [x] **Phase 4 – Rezepte schreiben** (24.10.2026): alle 50 Rezepte, 0 Fehler/Warnungen, alle 26 Vorgaben aus SPEC 5 erfüllt (50/50 High Protein), 90 genutzte Zutaten (89 ohne Wasser). Befund für Phase 5: Rezepte eher fettarm (Ø 17–20 g Fett/Mahlzeit) → Fettziel 86–116 g braucht oft Snack/Extra (z. B. Nüsse).
 - [x] **Phase 5 – Wochenplanung & Einkauf** (24.10.2026): `wochenplan.py` (Schichtzyklus, Tagessummen, Regeln 8.2, Markdown), `einkauf.py` (Vorrat, Packungen, Abteilungen, Kosten, Reste, Kontrollrechnung, 2 Einkaufstermine), 86 Tests, erster Plan KW 45 (7/7 Tage regelkonform, Ø 2.271 kcal / 177 g P / 87 g F / 185 g KH). Offen: Wochenkosten ca. 154 € > Budget 100 €; zweiter Samstagseinkauf überschneidet sich künftig mit dem Einkauf der Folgewoche (zusammenführen).
 - [x] **Phase 6 – Web-App** (25.10.2026): `tools/web.py` (von `generieren.py` aufgerufen) erzeugt `web/` – Heute, Rezeptbuch (Suche/Filter/Sortierung), 50 Rezeptseiten (JSON-LD, Portionsrechner, Kochmodus mit Timer/Wake Lock, MacroFactor-Kopie), Wochenplan als Tageskarten, Einkaufsliste mit gespeicherten Haken, PWA (Manifest, Icons, Service Worker). 97 Tests inkl. Playwright (390 × 844).
-- [ ] **Phase 7 – Import & Komfort:** Import, Kühlschrank-Modus, Bewertungen
+- [x] **Phase 7 – Import & Komfort** (25.10.2026): `importieren.py` (Eingang, Umrechnung, Ähnlichkeit, Ablage), `kuehlschrank.py` (Abgleich mit Grundvorrat/optional, Faktor nach Restmakros), `bewerten.py`; Test-Import eines fiktiven TikTok-Screenshots → Rezept Nr. 51 `cookie-dough-protein-dip`; Bestand trennt Startbestand und Importe; 122 Tests.
 - [ ] **Phase 8 – Livegang:** GitHub Pages (Achtung: privates Repo braucht bezahlten Plan, sonst Repo öffentlich), MacroFactor-Test, README
 
 ## Entscheidungen

@@ -137,6 +137,47 @@ PROTEIN_GRUPPEN = {
 }
 ZUTATEN_MAX = 90
 
+# --- Import (SPEC 9) -----------------------------------------------------------
+IMPORT_DIR = WURZEL / "import"
+IMPORT_ERLEDIGT = IMPORT_DIR / "erledigt"
+IMPORT_LINKS = IMPORT_DIR / "links.txt"
+BILD_ENDUNGEN = {".png", ".jpg", ".jpeg", ".heic", ".webp"}
+AEHNLICH_SCHWELLE = 0.65         # ab hier fragen: Variante oder eigenes Rezept? (Bestand max. 0,52, Dubletten ≥ 0,8)
+# Ungenaue Mengenangaben → Gramm. Schlüssel: Einheit → {Teil des Zutatennamens: g pro Einheit}; "_" = Standard.
+# Quellen: übliche Messlöffel (Whey 30 g), US-Cup 240 ml, Löffelmaße nach Dichte der Zutat.
+UMRECHNUNG = {
+    "scoop": {"Whey": 30, "_": 30},
+    "messlöffel": {"Whey": 30, "_": 30},
+    "cup": {"Haferflocken": 90, "Mehl": 125, "Grieß": 170, "Reis": 185, "Milch": 245, "Skyr": 245, "Quark": 245,
+            "Frischkäse": 230, "Erdnussbutter": 250, "Beeren": 140, "Heidelbeeren": 140, "Himbeeren": 125,
+            "Mandeln": 95, "Honig": 340, "Erythrit": 190, "Kakao": 85, "Schokolade": 170, "_": 240},
+    "el": {"Öl": 13, "Honig": 21, "Erdnussbutter": 16, "Kakao": 7, "Mehl": 10, "Haferflocken": 8, "Whey": 7,
+           "Skyr": 15, "Quark": 15, "Sojasauce": 16, "Tomatenmark": 15, "Erythrit": 10, "Mandeln": 8, "_": 15},
+    "tl": {"Öl": 4.5, "Honig": 7, "Backpulver": 4, "Zimt": 2.5, "Salz": 6, "Paprikapulver": 2, "Kreuzkümmel": 2,
+           "Oregano": 1, "Pfeffer": 2, "Senf": 5, "Vanille": 4, "_": 5},
+    "prise": {"_": 0.5},
+    "ei": {"_": 60},
+}
+UMRECHNUNG_ALIAS = {"scoops": "scoop", "cups": "cup", "tasse": "cup", "tassen": "cup", "esslöffel": "el",
+                    "tbsp": "el", "teelöffel": "tl", "tsp": "tl", "prisen": "prise", "eier": "ei", "egg": "ei", "eggs": "ei"}
+
+# --- Kühlschrank-Modus (SPEC 11.1) ------------------------------------------------
+# Grundvorrat (zählt als vorhanden, wird aber als „aus dem Vorrat“ angezeigt): lange haltbare Produkte
+# (haltbar offen ≥ VORRATSKAUF_AB_TAGEN), alles aus vorrat.yaml und diese frischen Standards:
+KUEHLSCHRANK_GRUNDVORRAT = {"Zwiebel", "Knoblauch", "Salz"}
+KUEHLSCHRANK_GRUNDVORRAT_ABTEILUNGEN = {"Trockenwaren", "Konserven & Saucen", "Gewürze & Öle"}   # ungeöffnet lange haltbar
+KUEHLSCHRANK_OPTIONAL_ANTEIL = 0.05   # frische Kleinigkeiten unter 5 % des Gewichts: optional, zählen nicht als „fehlt“
+KUEHLSCHRANK_MAX_FEHLEND = 2          # max. 1–2 fehlende Hauptzutaten (SPEC 11.1)
+KUEHLSCHRANK_FAKTOREN = [0.5, 0.75, 1.0, 1.25, 1.5]
+# Alltagswörter → Suchbegriff in den Zutatennamen
+KUEHLSCHRANK_SYNONYME = {
+    "pasta": "nudeln", "spaghetti": "nudeln", "penne": "nudeln", "makkaroni": "nudeln", "nudel": "nudeln",
+    "ei": "ei gr", "eier": "ei gr", "hack": "hackfleisch", "hühnchen": "hähnchen", "huhn": "hähnchen",
+    "chicken": "hähnchen", "cottage cheese": "körniger", "hüttenkäse": "körniger", "joghurt": "skyr",
+    "pute": "puten", "truthahn": "puten", "rind": "rind", "kartoffel": "kartoffeln", "tomate": "tomaten",
+    "beeren": "beeren", "wraps": "tortilla", "wrap": "tortilla", "käse": "käse", "frischkäse": "frischkäse",
+}
+
 # --- Plausibilität (SPEC 12.1 + Entscheidung 16) -------------------------------
 ATWATER = {"protein": 4, "kh": 4, "fett": 9, "ballaststoffe": 2}
 PLAUSI_PROZENT = 5.0              # max. Abweichung in %
