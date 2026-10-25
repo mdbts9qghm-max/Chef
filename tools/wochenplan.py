@@ -289,6 +289,18 @@ def pruefe_plan(plan, rezepte, db, packungen=None):
             vorher_abend = jetzt
         else:
             vorher_abend = None
+    # Wiederholungen (Entscheidung 25.10.2026): Hauptgericht max. 1 Kochvorgang, Frühstück/Snack max. 2 Tage
+    koch_haupt = [e.rezept_id for e in alle if e.kochen and e.slot in ("mittag", "abend")]
+    for rid in sorted(set(koch_haupt)):
+        if koch_haupt.count(rid) > config.PLANER_HAUPT_MAX_KOCHEN:
+            p.fehler.append(f"„{rezepte[rid]['name']}“ wird {koch_haupt.count(rid)}× gekocht "
+                            f"(max. {config.PLANER_HAUPT_MAX_KOCHEN}× pro Woche, Reste zählen nicht)")
+    for slot, maxi in (("fruehstueck", config.PLANER_FRUEHSTUECK_MAX_TAGE), ("snack", config.PLANER_SNACK_MAX_TAGE)):
+        ids = [e.rezept_id for e in alle if e.slot == slot]
+        for rid in sorted(set(ids)):
+            if ids.count(rid) > maxi:
+                p.fehler.append(f"„{rezepte[rid]['name']}“ an {ids.count(rid)} Tagen als {config.SLOT_NAMEN[slot]} "
+                                f"(max. {maxi})")
     if len(drei_sterne) > config.DREI_STERNE_MAX:
         p.fehler.append(f"3-Sterne-Rezepte {len(drei_sterne)}× in der Woche (max. {config.DREI_STERNE_MAX})")
     return p

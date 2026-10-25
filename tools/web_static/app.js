@@ -340,7 +340,10 @@
       ergebnis.innerHTML = "";
       ergebnis.appendChild(el("p", { html: "Wochenbedarf ca. <strong>" + euro(k.woche) + "</strong>, dazu einmalige Vorratskäufe ca. " +
         euro(k.vorrat) + " (z. B. Whey, Gewürze, Öl – reichen mehrere Wochen)." }));
+      ergebnis.appendChild(el("p", { class: "leise", html: "Davon verbraucht diese Woche ca. <strong>" + euro(k.verbrauch) +
+        "</strong>; Reste für ca. " + euro(k.reste) + " bleiben für die nächsten Wochen." }));
       if (!(b > 0)) return;
+      if (k.verbrauch <= b && k.woche > b) ergebnis.appendChild(el("p", { class: "ok", text: "✓ Verbrauch im Budget." }));
       if (gesamt <= b) {
         ergebnis.appendChild(el("p", { class: "ok", text: "✓ Im Budget – noch " + euro(b - gesamt) + " Luft." }));
         return;

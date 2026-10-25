@@ -1,6 +1,7 @@
 import copy
 import datetime as dt
 import math
+from pathlib import Path
 
 import pytest
 import yaml
@@ -21,9 +22,12 @@ def packungen():
     return wp.lade_packungen()
 
 
+TESTPLAN = Path(__file__).parent / "daten" / "KW-45-2026.yaml"   # eingefrorener Plan: Tests unabhängig von „Woche planen“
+
+
 @pytest.fixture
 def plan():
-    return wp.lade_plan("KW-45-2026")
+    return wp.lade_plan(TESTPLAN)
 
 
 def tag_von(plan, iso):
@@ -226,3 +230,10 @@ def test_kosten_teuerste_posten_je_zutat(plan, rezepte, db, packungen):
     namen = [t["zutat"] for t in k["teuer"]]
     assert len(namen) == len(set(namen)) == 3                 # Zutat aus beiden Einkäufen nur einmal
     assert k["woche"] + k["vorrat"] == pytest.approx(sum(z.kosten for l in listen for z in l.zeilen if z.pakete))
+
+
+def test_kosten_verbrauch_und_reste(plan, rezepte, db, packungen):
+    listen, _ = ek.berechne(plan, rezepte, db, packungen)
+    k = ek.kosten(listen)
+    assert 0 < k["verbrauch"] <= k["woche"]
+    assert k["verbrauch"] + k["reste"] == pytest.approx(k["woche"])

@@ -507,6 +507,7 @@ def einkauf_seite(plan, rezepte, db):
 def budget_html(k):
     """Budget-Karte: Betrag ist in der App änderbar (app.js rechnet mit den Kostendaten live)."""
     daten = json.dumps({"woche": round(k["woche"], 2), "vorrat": round(k["vorrat"], 2),
+                        "verbrauch": round(k["verbrauch"], 2), "reste": round(k["reste"], 2),
                         "teuer": [{"zutat": t["zutat"], "kosten": round(t["kosten"], 2)} for t in k["teuer"]],
                         "spar_whey": ek.SPAR_WHEY}, ensure_ascii=False).replace("</", "<\\/")
     standard = ek.budget() or 0

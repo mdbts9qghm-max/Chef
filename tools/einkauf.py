@@ -202,7 +202,11 @@ def kosten(listen, anzahl_teuer=3):
         if not z.vorratskauf:
             pro_zutat[z.zutat] = pro_zutat.get(z.zutat, 0.0) + z.kosten
     teuer = sorted(pro_zutat.items(), key=lambda x: -x[1])[:anzahl_teuer]
-    return {"woche": sum(z.kosten for z in gekauft if not z.vorratskauf),
+    # Verbrauch: anteiliger Wert dessen, was diese Woche aus dem Einkauf gegessen wird; der Rest bleibt als Vorrat
+    verbrauch = sum(min(z.bedarf - z.aus_bestand, z.pakete * z.packung["packung_g"]) / z.packung["packung_g"]
+                    * z.kosten / z.pakete for z in gekauft if not z.vorratskauf)
+    woche = sum(z.kosten for z in gekauft if not z.vorratskauf)
+    return {"woche": woche, "verbrauch": verbrauch, "reste": woche - verbrauch,
             "vorrat": sum(z.kosten for z in gekauft if z.vorratskauf),
             "teuer": [{"zutat": zutat, "kosten": k} for zutat, k in teuer]}
 
@@ -272,6 +276,9 @@ def einkauf_markdown(plan, rezepte, db, listen, reste):
         out += ["## Budget", ""]
         out.append(f"Wochenbedarf gesamt ca. **{zahl(k['woche'], 2)} €**, dazu einmalige Vorratskäufe ca. "
                    f"{zahl(k['vorrat'], 2)} € (z. B. Whey, Gewürze, Öl – reichen mehrere Wochen). Budget: {budget_eur} €.")
+        out += ["", f"Davon wird diese Woche ca. **{zahl(k['verbrauch'], 2)} €** verbraucht"
+                    f"{' (im Budget)' if k['verbrauch'] <= budget_eur else ''}; angebrochene Packungen für ca. "
+                    f"{zahl(k['reste'], 2)} € bleiben als Reste für die nächsten Wochen."]
         if k["woche"] + k["vorrat"] > budget_eur:
             out += ["", f"⚠️ Mit Vorratskäufen über Budget ({zahl(k['woche'] + k['vorrat'], 2)} €)."
                     if k["woche"] <= budget_eur else "⚠️ Schon der Wochenbedarf liegt über dem Budget.",

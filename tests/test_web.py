@@ -7,6 +7,7 @@ import threading
 from pathlib import Path
 
 import pytest
+import yaml
 
 import config
 import naehrwerte as nw
@@ -127,7 +128,9 @@ def test_alle_seiten_ohne_js_fehler(seite, server, webdir):
 def test_heute_zeigt_plan(seite, server):
     seite.goto(server + "index.html?datum=2026-11-05")
     assert seite.locator(".mahlzeit").count() >= 3
-    assert "Gnocchi al Forno" in seite.inner_text("#heute")
+    plan = yaml.safe_load((config.WOCHENPLAENE_DIR / "KW-45-2026.yaml").read_text(encoding="utf-8"))
+    abend = next(t["abend"]["rezept"] for t in plan["tage"] if str(t["datum"]) == "2026-11-05")
+    assert nw.lade_alle_rezepte()[abend]["name"] in seite.inner_text("#heute")
     assert seite.locator(".balken").count() == 4
     seite.goto(server + "index.html?datum=2026-10-20")
     assert "nichts geplant" in seite.inner_text("#heute")
@@ -238,3 +241,10 @@ def test_budget_in_der_app_aenderbar(seite, server):
     seite.click("#budget-standard")
     assert seite.input_value("#budget-betrag") == str(config.PROFIL["einkauf"]["budget_eur_pro_woche"])
     assert seite.fehler == []
+
+
+def test_budget_zeigt_verbrauch(seite, server):
+    seite.goto(server + "einkauf/KW-45-2026.html")
+    k = json.loads(seite.inner_text("#kostendaten"))
+    assert k["verbrauch"] + k["reste"] == pytest.approx(k["woche"], abs=0.02)
+    assert "davon verbraucht" in seite.inner_text("#budget-ergebnis").lower()

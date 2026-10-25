@@ -35,11 +35,13 @@ Persönliches High-Protein-Rezeptbuch, Wochenplaner auf Basis der MacroFactor-Zi
 - **Nach Gramm loggen:** Fertiges Gericht wiegen und als Gesamtgewicht eintragen. Die Rezeptseite nennt das geschätzte Gargewicht als Orientierung.
 
 ## Wochenrhythmus
-1. **Samstag:** „Woche planen“ → Wochenplan + Einkaufsliste → einkaufen (nur samstags).
+1. **Samstag:** „Woche planen“ → der Planer stellt eine regelkonforme, möglichst günstige Woche zusammen (gleiches Frühstück/gleicher Snack darf 2× vorkommen, Reste werden mitgeplant) → Einkaufsliste → einkaufen (nur samstags).
+   Wünsche (z. B. „Sonntag Marry Me Chicken“) bleiben fest stehen, der Rest wird darum herum geplant.
 2. **Meal Prep** am letzten freien Tag vor der Tagschicht (steht im Plan, mit Zeitplan).
 3. **Tagschicht (7–19 Uhr):** Boxen für Frühstück + Mittag · **Nachtschicht (19–7 Uhr):** Box für das Abendessen (Mikrowelle).
 4. Eingefrorenes Fleisch/Fisch: Auftau-Erinnerung erscheint am Vortag unter **Heute**.
 5. Nach dem Kochen bewerten, damit der Planer lernt, was gut ankommt.
+6. **Reste übernehmen:** Angebrochene Packungen wandern in den Vorrat und werden in der nächsten Woche zuerst verplant – so sinkt der Einkauf Richtung Verbrauch. Die Einkaufsliste zeigt beides: *Einkauf* und *davon verbraucht*.
 
 ## Befehle im Alltag (einfach an Claude schreiben)
 | Befehl | Beispiel | Was passiert |
@@ -76,6 +78,7 @@ python3 tools/veroeffentlichen.py --live      # Live-Seite prüfen (erreichbar, 
 python3 tools/pruefen.py                      # alle Prüfungen
 python3 tools/generieren.py                   # Markdown + Web-App
 python3 tools/wochenplan.py KW-45-2026        # Wochenplan prüfen + Markdown
+python3 tools/planer.py KW-46-2026 --budget 100   # Woche automatisch planen (--behalten: „fest: true“-Einträge bleiben)
 python3 tools/einkauf.py KW-45-2026           # Einkaufsliste (--reste-uebernehmen)
 python3 tools/importieren.py                  # Neues in import/
 python3 tools/kuehlschrank.py "Hähnchen, Reis" --gegessen 1150,85,45,110

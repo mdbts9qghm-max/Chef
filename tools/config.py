@@ -83,6 +83,18 @@ FRISCH_MAX_TAGE = _PL["frisch_max_tage_nach_einkauf"]   # Fisch, Garnelen, Hack
 # Übriges Frischfleisch (Hähnchen, Pute, Rind, Schwein am Stück): Entscheidung 16, sonst einfrieren
 FLEISCH_FRISCH_MAX_TAGE = 4
 DREI_STERNE_MAX = _PL["drei_sterne_max_pro_woche"]
+
+# --- Planer (tools/planer.py, Entscheidung 25.10.2026: günstiger planen) --------------
+PLANER_FAKTOREN = [0.75, 1.0, 1.25, 1.5]          # 0,25er-Schritte, max. FAKTOR_MAX
+PLANER_FRUEHSTUECK_MAX_TAGE = 2                   # gleiches Frühstück an max. 2 Tagen (1× backen, 2 Ladungen)
+PLANER_SNACK_MAX_TAGE = 2                         # gleicher Snack an max. 2 Tagen
+PLANER_HAUPT_MAX_KOCHEN = 1                       # jedes Hauptgericht max. 1 Kochvorgang (= max. 2 Mahlzeiten)
+# Sicherheitsabstand zu den harten Grenzen aus 8.2 (Rundung, Gewichtsschwankung)
+PLANER_RAND = {"protein": 1.0, "kcal": 10.0, "fett": 1.0, "kh": 2.0}
+PLANER_STARTS = 24                                # Neustarts der lokalen Suche
+PLANER_SEED = 45
+# Gewichte der Zielfunktion: harte Regeln ≫ Kosten ≫ Bequemlichkeit
+PLANER_GEWICHT = {"regel": 1000.0, "makro": 400.0, "kosten": 1.0, "ueber_budget": 6.0, "faktor": 0.8, "snack": 0.4}
 AUSWAERTS = {"kcal": _PL["auswaerts_platzhalter"]["kcal"], "protein": _PL["auswaerts_platzhalter"]["protein_g"],
              "fett": _PL["auswaerts_platzhalter"]["fett_g"], "kh": _PL["auswaerts_platzhalter"]["kh_g"]}
 AUSWAERTS_TIPPS = [
