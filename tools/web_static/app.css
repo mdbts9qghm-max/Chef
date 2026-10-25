@@ -21,6 +21,7 @@
   }
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }   /* sonst überschreibt z. B. .kachel { display: block } das Ausblenden */
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--text);

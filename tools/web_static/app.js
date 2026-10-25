@@ -218,6 +218,7 @@
       document.getElementById("treffer").textContent = n + " von " + kacheln.length + " Rezepten";
     }
     form.addEventListener("input", anwenden);
+    form.addEventListener("change", anwenden);          // Safari (iPhone) meldet bei <select> oft nur „change“
     form.addEventListener("submit", function (e) { e.preventDefault(); });
     anwenden();
   }
@@ -579,6 +580,7 @@
     if (!liste.children.length) { zeile(); zeile(); zeile(); }
     document.getElementById("zutat-plus").addEventListener("click", function () { zeile(); });
     form.addEventListener("input", aktualisieren);
+    form.addEventListener("change", aktualisieren);
     form.addEventListener("submit", function (e) { e.preventDefault(); });
     document.getElementById("rezept-speichern").addEventListener("click", function () {
       var url = this.dataset.url;

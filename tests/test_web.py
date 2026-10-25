@@ -138,7 +138,8 @@ def test_heute_zeigt_plan(seite, server):
 
 def test_rezeptbuch_suche_und_filter(seite, server, echte_rezepte):
     seite.goto(server + "rezepte.html")
-    sichtbar = lambda: seite.locator(".kachel:not([hidden])").count()
+    # wirklich sichtbar (nicht nur ohne hidden-Attribut): CSS darf das Ausblenden nicht überschreiben
+    sichtbar = lambda: seite.evaluate("[...document.querySelectorAll('.kachel')].filter(k => k.offsetParent !== null).length")
     alle = len(echte_rezepte)
     assert sichtbar() == alle
     seite.fill("input[name=suche]", "lachs")
@@ -146,6 +147,13 @@ def test_rezeptbuch_suche_und_filter(seite, server, echte_rezepte):
     seite.fill("input[name=suche]", "")
     seite.select_option("select[name=mahlzeit]", "Snack")
     assert sichtbar() == sum(r["mahlzeit"] == "Snack" for r in echte_rezepte.values())
+    seite.select_option("select[name=mahlzeit]", "")
+    seite.select_option("select[name=kueche]", "Italienisch")
+    assert sichtbar() == sum(r["kueche"] == "Italienisch" for r in echte_rezepte.values())
+    # nur „change“ wie Safari: Filter muss trotzdem greifen
+    seite.evaluate("""() => { const s = document.querySelector('select[name=kueche]'); s.value = '';
+        s.dispatchEvent(new Event('change', {bubbles: true})); }""")
+    assert sichtbar() == alle
 
 
 def test_portionsrechner_skaliert(seite, server):
