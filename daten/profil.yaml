@@ -39,7 +39,8 @@ mahlzeit_korridore:
 # Planungsregeln (SPEC 8.2)
 planung:
   protein_min_g: 145            # Priorität 1
-  kcal_toleranz: 100            # Priorität 2: Ziel ± 100
+  kcal_unter_ziel_max: 100      # Priorität 2: höchstens 100 kcal unter dem Ziel (2.175)
+  kcal_ueber_ziel_max: 0        # nie über dem Ziel (Entscheidung 26.10.2026: max. 2.275 kcal)
   fett_toleranz_g: 15
   fett_min_g: 70                # nie darunter
   kh_toleranz_g: 20

@@ -73,7 +73,8 @@ AUSGABE_EINKAUF = WURZEL / "einkaufslisten"
 
 _PL = PROFIL["planung"]
 PLAN_PROTEIN_MIN = _PL["protein_min_g"]             # Priorität 1
-PLAN_KCAL_TOLERANZ = _PL["kcal_toleranz"]           # Ziel ± 100
+PLAN_KCAL_MIN = TAGESZIELE["kcal"] - _PL["kcal_unter_ziel_max"]   # Priorität 2: 2.175 …
+PLAN_KCAL_MAX = TAGESZIELE["kcal"] + _PL["kcal_ueber_ziel_max"]    # … bis 2.275 (nie über dem Ziel)
 PLAN_FETT_TOLERANZ = _PL["fett_toleranz_g"]
 PLAN_FETT_MIN = _PL["fett_min_g"]                   # nie darunter
 PLAN_KH_TOLERANZ = _PL["kh_toleranz_g"]
@@ -90,8 +91,9 @@ PLANER_FRUEHSTUECK_MAX_TAGE = 2                   # gleiches Frühstück an max.
 PLANER_SNACK_MAX_TAGE = 2                         # gleicher Snack an max. 2 Tagen
 PLANER_HAUPT_MAX_KOCHEN = 1                       # jedes Hauptgericht max. 1 Kochvorgang (= max. 2 Mahlzeiten)
 # Sicherheitsabstand zu den harten Grenzen aus 8.2 (Rundung, Gewichtsschwankung)
-PLANER_RAND = {"protein": 1.0, "kcal": 10.0, "fett": 1.0, "kh": 2.0}
-PLANER_STARTS = 24                                # Neustarts der lokalen Suche
+# klein gehalten, seit kcal nie über dem Ziel liegen dürfen (Entscheidung 26.10.2026) – sonst kaum lösbar
+PLANER_RAND = {"protein": 0.2, "kcal": 2.0, "fett": 0.2, "kh": 0.5}
+PLANER_STARTS = 300                                # Neustarts der lokalen Suche
 PLANER_SEED = 45
 # Gewichte der Zielfunktion: harte Regeln ≫ Kosten ≫ Bequemlichkeit
 PLANER_GEWICHT = {"regel": 1000.0, "makro": 400.0, "kosten": 1.0, "ueber_budget": 6.0, "faktor": 0.8, "snack": 0.4}

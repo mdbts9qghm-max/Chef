@@ -265,8 +265,9 @@ def pruefe_plan(plan, rezepte, db, packungen=None):
         kurz = tag_kurz(d)
         if summe["protein"] < config.PLAN_PROTEIN_MIN:
             p.fehler.append(f"{kurz}: Protein {zahl(summe['protein'])} g < {config.PLAN_PROTEIN_MIN} g")
-        if abs(summe["kcal"] - ziel["kcal"]) > config.PLAN_KCAL_TOLERANZ:
-            p.fehler.append(f"{kurz}: {zahl(summe['kcal'], 0)} kcal, Ziel {zahl(ziel['kcal'], 0)} ± {config.PLAN_KCAL_TOLERANZ}")
+        if not config.PLAN_KCAL_MIN <= summe["kcal"] <= config.PLAN_KCAL_MAX:
+            p.fehler.append(f"{kurz}: {zahl(summe['kcal'], 0)} kcal, erlaubt {zahl(config.PLAN_KCAL_MIN, 0)}–"
+                            f"{zahl(config.PLAN_KCAL_MAX, 0)}")
         if abs(summe["fett"] - ziel["fett"]) > config.PLAN_FETT_TOLERANZ or summe["fett"] < config.PLAN_FETT_MIN:
             p.fehler.append(f"{kurz}: Fett {zahl(summe['fett'])} g, Ziel {ziel['fett']} ± {config.PLAN_FETT_TOLERANZ} g")
         if abs(summe["kh"] - ziel["kh"]) > config.PLAN_KH_TOLERANZ:

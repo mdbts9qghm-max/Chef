@@ -78,13 +78,15 @@ def test_auswaerts_erzeugt_keine_zutaten(rezepte):
 
 
 # --- Echter Plan -------------------------------------------------------------------------
-def test_echter_plan_kw45_erfuellt_alle_regeln(plan, rezepte, db, packungen):
+@pytest.mark.parametrize("name", ["KW-44-2026", "KW-45-2026"])
+def test_echter_plan_erfuellt_alle_regeln(name, rezepte, db, packungen):
+    plan = wp.lade_plan(name)                                  # echte Pläne (nicht der eingefrorene Testplan)
     p = wp.pruefe_plan(plan, rezepte, db, packungen)
     assert p.fehler == []
     for tag in plan["tage"]:
         s = wp.tagessumme(tag, rezepte, db)
         assert s["protein"] >= config.PLAN_PROTEIN_MIN
-        assert abs(s["kcal"] - config.TAGESZIELE["kcal"]) <= config.PLAN_KCAL_TOLERANZ
+        assert config.PLAN_KCAL_MIN <= s["kcal"] <= config.PLAN_KCAL_MAX
         assert config.PLAN_FETT_MIN <= s["fett"] and abs(s["fett"] - config.TAGESZIELE["fett"]) <= config.PLAN_FETT_TOLERANZ
         assert abs(s["kh"] - config.TAGESZIELE["kh"]) <= config.PLAN_KH_TOLERANZ
 

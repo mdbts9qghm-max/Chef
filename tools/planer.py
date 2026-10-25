@@ -187,7 +187,8 @@ class Planer:
         for d in self.tage:
             v = self.tageswerte(m, d)
             s += G["makro"] * (max(0, config.PLAN_PROTEIN_MIN + rand["protein"] - v["protein"]) * 2
-                               + max(0, abs(v["kcal"] - z["kcal"]) - (config.PLAN_KCAL_TOLERANZ - rand["kcal"])) / 10
+                               + (max(0, config.PLAN_KCAL_MIN + rand["kcal"] - v["kcal"])
+                                  + max(0, v["kcal"] - (config.PLAN_KCAL_MAX - rand["kcal"]))) / 10
                                + max(0, max(config.PLAN_FETT_MIN, z["fett"] - config.PLAN_FETT_TOLERANZ) + rand["fett"] - v["fett"])
                                + max(0, v["fett"] - (z["fett"] + config.PLAN_FETT_TOLERANZ - rand["fett"]))
                                + max(0, abs(v["kh"] - z["kh"]) - (config.PLAN_KH_TOLERANZ - rand["kh"])))

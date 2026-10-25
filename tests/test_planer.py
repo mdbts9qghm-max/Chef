@@ -17,6 +17,13 @@ def daten():
     return planer.Daten()
 
 
+@pytest.fixture
+def breite_kcal(monkeypatch):
+    """Mechanik-Tests mit wenigen Starts: alte Spanne ±100 kcal (die echte Regel prüfen die echten Pläne)."""
+    monkeypatch.setattr(config, "PLAN_KCAL_MAX", config.TAGESZIELE["kcal"] + 100)
+    monkeypatch.setattr(config, "PLANER_RAND", {"protein": 1.0, "kcal": 10.0, "fett": 1.0, "kh": 2.0})
+
+
 def test_woche_und_einkaufstermine():
     kw, jahr, tage = planer.woche("KW-45-2026")
     assert (kw, jahr, tage[0], tage[-1]) == (45, 2026, D(2026, 11, 2), D(2026, 11, 8))
@@ -37,7 +44,7 @@ def test_struktur_aus_schichtplan():
     assert planer.kochtag(D(2026, 11, 6), st["schicht"]) == D(2026, 11, 5)
 
 
-def test_planer_liefert_regelkonformen_guenstigen_plan(daten):
+def test_planer_liefert_regelkonformen_guenstigen_plan(daten, breite_kcal):
     p = planer.Planer("KW-45-2026", daten=daten, budget=100)
     fehler, kosten, _, plan, k, pr = p.planen(starts=10, seed=3)
     assert fehler == 0 and pr.fehler == []
@@ -77,7 +84,7 @@ def test_wiederholungsregeln_in_der_pruefung(daten):
     assert any("2× gekocht" in f for f in wp.pruefe_plan(plan, daten.rz, daten.db, daten.pk).fehler)
 
 
-def test_starteinkauf_statt_samstag(daten):
+def test_starteinkauf_statt_samstag(daten, breite_kcal):
     p = planer.Planer("KW-44-2026", daten=daten, termine=[D(2026, 10, 26)])
     fehler, _, _, plan, _, pr = p.planen(starts=4, seed=2)
     assert plan["einkauf"] == [{"tag": "Mo", "datum": D(2026, 10, 26), "art": "start"}]

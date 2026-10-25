@@ -43,7 +43,7 @@ MAKRO = [("kcal", "kcal", "kcal"), ("protein", "Protein", "g"), ("fett", "Fett",
 def korridor():
     """Erlaubte Tagesspanne je Makro (SPEC 8.2) – für Ringe und Diagramme."""
     z = config.TAGESZIELE
-    return {"kcal": [z["kcal"] - config.PLAN_KCAL_TOLERANZ, z["kcal"] + config.PLAN_KCAL_TOLERANZ],
+    return {"kcal": [config.PLAN_KCAL_MIN, config.PLAN_KCAL_MAX],
             "protein": [config.PLAN_PROTEIN_MIN, None],
             "fett": [max(config.PLAN_FETT_MIN, z["fett"] - config.PLAN_FETT_TOLERANZ), z["fett"] + config.PLAN_FETT_TOLERANZ],
             "kh": [z["kh"] - config.PLAN_KH_TOLERANZ, z["kh"] + config.PLAN_KH_TOLERANZ]}
