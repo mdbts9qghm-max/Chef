@@ -41,7 +41,8 @@ python3 tools/generieren.py              # Markdown + Web-App erzeugen
 python3 tools/bestand.py                 # Soll/Ist gegen SPEC 5.1–5.3, schreibt rezeptplan.md
 python3 tools/wochenplan.py KW-45-2026   # Wochenplan prüfen + wochenplaene/KW-45-2026.md erzeugen
 python3 tools/einkauf.py KW-45-2026      # Einkaufsliste (--reste-uebernehmen: Reste → vorrat.yaml)
-python3 -m pytest                        # Tests (SPEC 12.2)
+python3 -m pytest                        # Tests (SPEC 12.2), Playwright nutzt /opt/pw-browsers/chromium
+python3 tools/web.py                     # nur die Web-App neu erzeugen (macht generieren.py automatisch)
 ```
 
 ## Befehle im Alltag (SPEC 14)
@@ -66,7 +67,7 @@ python3 -m pytest                        # Tests (SPEC 12.2)
 - [x] **Phase 3 – Rezeptliste** (24.10.2026): 50 Gerichte in `daten/rezeptplan.yaml` → `rezeptplan.md`, Abgleich 5.1–5.3 per `tools/bestand.py` (Plan erfüllt alle Vorgaben), „Spaghetti“ → „Hartweizennudeln ungekocht“, „Rote Currypaste“ neu
 - [x] **Phase 4 – Rezepte schreiben** (24.10.2026): alle 50 Rezepte, 0 Fehler/Warnungen, alle 26 Vorgaben aus SPEC 5 erfüllt (50/50 High Protein), 90 genutzte Zutaten (89 ohne Wasser). Befund für Phase 5: Rezepte eher fettarm (Ø 17–20 g Fett/Mahlzeit) → Fettziel 86–116 g braucht oft Snack/Extra (z. B. Nüsse).
 - [x] **Phase 5 – Wochenplanung & Einkauf** (24.10.2026): `wochenplan.py` (Schichtzyklus, Tagessummen, Regeln 8.2, Markdown), `einkauf.py` (Vorrat, Packungen, Abteilungen, Kosten, Reste, Kontrollrechnung, 2 Einkaufstermine), 86 Tests, erster Plan KW 45 (7/7 Tage regelkonform, Ø 2.271 kcal / 177 g P / 87 g F / 185 g KH). Offen: Wochenkosten ca. 154 € > Budget 100 €; zweiter Samstagseinkauf überschneidet sich künftig mit dem Einkauf der Folgewoche (zusammenführen).
-- [ ] **Phase 6 – Web-App:** Ansichten 10.2, JSON-LD, MacroFactor-Button, PWA, Playwright-Screenshots
+- [x] **Phase 6 – Web-App** (25.10.2026): `tools/web.py` (von `generieren.py` aufgerufen) erzeugt `web/` – Heute, Rezeptbuch (Suche/Filter/Sortierung), 50 Rezeptseiten (JSON-LD, Portionsrechner, Kochmodus mit Timer/Wake Lock, MacroFactor-Kopie), Wochenplan als Tageskarten, Einkaufsliste mit gespeicherten Haken, PWA (Manifest, Icons, Service Worker). 97 Tests inkl. Playwright (390 × 844).
 - [ ] **Phase 7 – Import & Komfort:** Import, Kühlschrank-Modus, Bewertungen
 - [ ] **Phase 8 – Livegang:** GitHub Pages (Achtung: privates Repo braucht bezahlten Plan, sonst Repo öffentlich), MacroFactor-Test, README
 

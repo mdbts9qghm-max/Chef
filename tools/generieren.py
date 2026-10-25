@@ -1,4 +1,4 @@
-"""Generiert Rezept-Markdown (SPEC 7) und rezeptbuch.md aus den YAML-Daten.
+"""Generiert Rezept-Markdown (SPEC 7), rezeptbuch.md und die Web-App (tools/web.py) aus den YAML-Daten.
 
 CLI: python3 tools/generieren.py   → bricht ab, wenn pruefen.py Fehler meldet
 """
@@ -27,6 +27,15 @@ def mengentext(eintrag, faktor=1.0):
     return g
 
 
+def name_anhaengen(eintrag):
+    """Braucht die Stückangabe den Zutatennamen dahinter? („1 Prise“ ja, „2 Eier Gr. M“ nein)"""
+    anz = eintrag.get("anzeige")
+    if not anz:
+        return True
+    stamm = anzeigename(eintrag).split()[0].lower().rstrip("ns")
+    return stamm not in anz.lower()
+
+
 def platzhalter_text(eintrag, faktor=1.0):
     """{id} → Menge + Name: „120 g Haferflocken“. Mit anzeige: „2 Eier Gr. M (120 g)“, wenn
     die Anzeige den Namen schon enthält, sonst „1 Prise Salz (0,5 g)“."""
@@ -34,10 +43,7 @@ def platzhalter_text(eintrag, faktor=1.0):
     name = anzeigename(eintrag)
     anz = eintrag.get("anzeige")
     if anz:
-        stamm = name.split()[0].lower().rstrip("ns")
-        if stamm in anz.lower():
-            return f"{anz} ({g})"
-        return f"{anz} {name} ({g})"
+        return f"{anz} {name} ({g})" if name_anhaengen(eintrag) else f"{anz} ({g})"
     return f"{g} {name}"
 
 
@@ -279,6 +285,9 @@ def generiere_alles():
     config.REZEPTBUCH_MD.write_text(rezeptbuch_markdown(list(rezepte.values()), db), encoding="utf-8")
     warnungen = sum(len(e.warnungen) for e in ergebnisse)
     print(f"{len(rezepte)} Rezepte generiert, rezeptbuch.md aktualisiert ({warnungen} Warnungen).")
+    import web   # erst hier, weil web.py dieses Modul importiert
+    info = web.generiere_web(rezepte, db)
+    print(f"Web-App erzeugt: {info['seiten']} Dateien in web/, Service-Worker-Version {info['version']}.")
     return 0
 
 

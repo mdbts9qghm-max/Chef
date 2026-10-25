@@ -448,15 +448,7 @@ def wochenplan_markdown(plan, rezepte, db, pruefung=None):
                 h = int(z[0][:2])
                 return (h + 24 if h < 6 else h, z[0])
             out += ["**Zeitplan:**"] + [f"- {zt} {txt}" for zt, txt in sorted(plan_zeilen, key=sortier)] + [""]
-        # Erinnerungen für morgen
-        morgen = d + dt.timedelta(days=1)
-        erinn = list(pruefung.erinnerungen.get(morgen, []))
-        if i + 1 < len(tage):
-            sm = schicht(morgen, plan.get("schichten"))
-            for slot in (config.SCHICHTEN.get("boxen") or {}).get(sm, []):
-                if tage[i + 1].get(slot):
-                    erinn.append(f"Box für {config.SLOT_NAMEN[slot]} ({rezepte[tage[i + 1][slot]['rezept']]['name']}) "
-                                 f"für die {sm}schicht packen")
+        erinn = erinnerungen_morgen(plan, i, rezepte, pruefung)
         if erinn:
             out += ["**Erinnerungen für morgen:**"] + [f"- [ ] {x}" for x in erinn] + [""]
 
@@ -503,6 +495,20 @@ def wochenplan_markdown(plan, rezepte, db, pruefung=None):
     out.append(f"**Einschätzung:** {tage_ok} von {n} Tagen erfüllen alle Regeln aus SPEC 8.2. " + einschaetzung(avg, summen))
     out += ["", f"*{config.HINWEIS_SCHAETZWERTE} Der Plan ist eine Empfehlung und ersetzt keine Ernährungs- oder ärztliche Beratung.*"]
     return "\n".join(out) + "\n"
+
+
+def erinnerungen_morgen(plan, i, rezepte, pruefung):
+    """Erinnerungen am Tag i für den Folgetag: Auftauen, Ansetzen, Boxen packen."""
+    tage = plan["tage"]
+    morgen = datum(tage[i]["datum"]) + dt.timedelta(days=1)
+    erinn = list(pruefung.erinnerungen.get(morgen, []))
+    if i + 1 < len(tage):
+        sm = schicht(morgen, plan.get("schichten"))
+        for slot in (config.SCHICHTEN.get("boxen") or {}).get(sm, []):
+            if tage[i + 1].get(slot):
+                erinn.append(f"Box für {config.SLOT_NAMEN[slot]} ({rezepte[tage[i + 1][slot]['rezept']]['name']}) "
+                             f"für die {sm}schicht packen")
+    return erinn
 
 
 def einschaetzung(avg, summen):
