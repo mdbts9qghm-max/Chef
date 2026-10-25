@@ -16,15 +16,15 @@ zutaten:
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
   - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 15, anzeige: "1½ EL"}
   - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
-  - {id: parmesan, zutat: Parmesan gerieben, g: 30, anzeige: "3 EL"}
-  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 40, anzeige: "4 EL"}
+  - {id: oel, zutat: Olivenöl, g: 15, anzeige: "1½ EL"}
   - gruppe: Zitronen-Pasta
-  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Spaghetti, g: 160}
+  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Spaghetti, g: 135}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: bruehe, zutat: Gemüsebrühe zubereitet, name: Gemüsebrühe, g: 100, hinweis: "100 ml"}
   - {id: zitrone, zutat: Zitronensaft, g: 30, anzeige: "2 EL", hinweis: "frisch gepresst, ca. ½ Zitrone"}
-  - {id: butter, zutat: Butter, g: 10, anzeige: "2 TL", hinweis: "kalt"}
+  - {id: butter, zutat: Butter, g: 20, anzeige: "2 EL", hinweis: "kalt"}
   - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 10, anzeige: "2 EL gehackt"}
 mise_en_place:
   - "Für die Pasta 3 l Wasser mit {salz_wasser} im Topf auf Stufe 9 von 9 zum Kochen bringen (ca. 8 Minuten)."
@@ -58,7 +58,7 @@ aufbewahrung:
   separat: "Hähnchen und Pasta getrennt lagern."
 varianten:
   - {titel: Mit Putenschnitzel, text: "360 g Putenbrust statt Hähnchen.", aenderung: {"Hähnchenbrustfilet roh": -360, "Putenbrustfilet roh": 360}}
-  - {titel: Weniger kcal, text: "Pasta auf 110 g reduzieren.", aenderung: {"Hartweizennudeln ungekocht": -50}}
+  - {titel: Weniger kcal, text: "Pasta auf 110 g reduzieren.", aenderung: {"Hartweizennudeln ungekocht": -25}}
   - {titel: Mit Spinat, text: "100 g Babyspinat mit der Pasta unterschwenken.", aenderung: {"Babyspinat": 100}}
 tipps:
   - "Abgeriebene Zitronenschale zum Schluss über die Pasta: viel mehr Zitronenaroma ohne mehr Säure."

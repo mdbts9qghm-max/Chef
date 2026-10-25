@@ -12,7 +12,7 @@ ausstattung: [Backofen, "Auflaufform 20 × 20 cm", "Pfanne 28 cm", Schneebesen, 
 zutaten:
   - gruppe: Bolognese
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 350}
-  - {id: oel, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "1 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 30, anzeige: "2 EL"}
@@ -22,13 +22,13 @@ zutaten:
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
   - {id: wasser, zutat: Wasser, g: 100, hinweis: "100 ml"}
   - gruppe: Quark-„Béchamel“
-  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: quark, zutat: Magerquark, g: 260, hinweis: "½ Becher plus 1 EL"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 100, hinweis: "100 ml"}
   - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
   - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}
   - {id: salz_q, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Schichten
-  - {id: platten, zutat: Lasagneplatten ungekocht, name: Lasagneplatten, g: 120, anzeige: "ca. 6 Platten", hinweis: "ohne Vorkochen"}
+  - {id: platten, zutat: Lasagneplatten ungekocht, name: Lasagneplatten, g: 110, anzeige: "ca. 6 Platten", hinweis: "ohne Vorkochen"}
   - {id: mozzarella, zutat: Mozzarella light, g: 100, hinweis: "abgetropft, in Würfeln"}
 mise_en_place:
   - "Backofen auf 190 °C Ober-/Unterhitze (170 °C Umluft) vorheizen, Rost in die mittlere Schiene."

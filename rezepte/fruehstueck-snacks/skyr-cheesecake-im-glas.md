@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 285 kcal | 13 % |
-| Protein | 30,9 g | 21 % |
-| Fett | 8,2 g | 8 % |
-| davon gesättigt | 4,2 g |  |
-| Kohlenhydrate | 25,1 g | 13 % |
-| davon Zucker | 13,1 g |  |
-| Ballaststoffe | 2,9 g |  |
+| Kalorien | 296 kcal | 13 % |
+| Protein | 31,2 g | 21 % |
+| Fett | 9,9 g | 10 % |
+| davon gesättigt | 5,4 g |  |
+| Kohlenhydrate | 23,8 g | 12 % |
+| davon Zucker | 12,9 g |  |
+| Ballaststoffe | 2,8 g |  |
 | Salz | 0,5 g |  |
 
-- **Protein pro 100 kcal:** 10,8 g
-- **Makroverteilung (Energie):** Protein 42 % · Kohlenhydrate 34 % · Fett 25 %
-- **Gewicht fertig:** ca. 550 g gesamt · **ca. 280 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 10,6 g
+- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 31 % · Fett 29 %
+- **Gewicht fertig:** ca. 560 g gesamt · **ca. 280 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -33,10 +33,10 @@
 | Zutat | Menge | Hinweis |
 |---|---|---|
 | **Boden** | | |
-| Knuspermüsli | 3 EL (30 g) |  |
-| Butter | 1 TL (5 g) |  |
+| Knuspermüsli | 2½ EL (25 g) |  |
+| Butter | 1 EL (10 g) |  |
 | **Creme** | | |
-| Skyr natur | 250 g |  |
+| Skyr natur | 260 g |  |
 | Magerquark | 100 g |  |
 | Frischkäse light | 2 gehäufte EL (50 g) |  |
 | Whey Protein Vanille | ⅔ Messlöffel (20 g) |  |
@@ -51,8 +51,8 @@
 
 ## Zubereitung
 
-1. **Boden**: 1 TL Butter (5 g) in einer Tasse 20 Sekunden bei 600 W schmelzen. 3 EL Knuspermüsli (30 g) in einem Gefrierbeutel mit dem Nudelholz grob zerbröseln, mit der Butter mischen und auf die 2 Gläser verteilen, fest andrücken.
-2. **Creme**: 250 g Skyr natur, 100 g Magerquark, 2 gehäufte EL Frischkäse light (50 g), ⅔ Messlöffel Whey Protein Vanille (20 g), 1 EL Erythrit (10 g) und 1 TL Zitronensaft (5 g) 1 Minute glatt rühren, bis die Creme glänzt. Auf den Boden füllen.
+1. **Boden**: 1 EL Butter (10 g) in einer Tasse 20 Sekunden bei 600 W schmelzen. 2½ EL Knuspermüsli (25 g) in einem Gefrierbeutel mit dem Nudelholz grob zerbröseln, mit der Butter mischen und auf die 2 Gläser verteilen, fest andrücken.
+2. **Creme**: 260 g Skyr natur, 100 g Magerquark, 2 gehäufte EL Frischkäse light (50 g), ⅔ Messlöffel Whey Protein Vanille (20 g), 1 EL Erythrit (10 g) und 1 TL Zitronensaft (5 g) 1 Minute glatt rühren, bis die Creme glänzt. Auf den Boden füllen.
 3. **Topping**: Himbeeren auf die Creme geben. Sofort essen oder mindestens 1 Stunde kühlen, dann wird die Creme schnittfester.
 
 ## Zeitablauf
@@ -89,18 +89,18 @@ Pro Glas ca. 280 g: Boden, Cheesecake-Creme und 40 g Himbeeren.
 
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
-| Knuspermüsli | 30 g | 129 | 2,7 | 4,5 | 18,6 |
-| Butter | 5 g | 37 | 0 | 4,1 | 0 |
-| Skyr natur | 250 g | 158 | 27,5 | 0,5 | 10 |
+| Knuspermüsli | 25 g | 108 | 2,3 | 3,8 | 15,5 |
+| Butter | 10 g | 74 | 0,1 | 8,2 | 0,1 |
+| Skyr natur | 260 g | 164 | 28,6 | 0,5 | 10,4 |
 | Magerquark | 100 g | 67 | 12 | 0,3 | 4 |
 | Frischkäse light | 50 g | 72 | 3,5 | 5,5 | 2 |
 | Whey Protein Vanille | 20 g | 77 | 15 | 1,2 | 1,6 |
 | Erythrit | 10 g | 0 | 0 | 0 | 10 |
 | Zitronensaft | 5 g | 1 | 0 | 0 | 0,2 |
 | Himbeeren TK | 80 g | 30 | 1 | 0,2 | 3,8 |
-| **Summe** | | **570** | **61,8** | **16,3** | **50,3** |
-| **Pro Portion (÷ 2)** | | **285** | **30,9** | **8,2** | **25,1** |
+| **Summe** | | **592** | **62,5** | **19,7** | **47,6** |
+| **Pro Portion (÷ 2)** | | **296** | **31,2** | **9,9** | **23,8** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 567 kcal gegenüber 570 kcal → Abweichung -0,5 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 589 kcal gegenüber 592 kcal → Abweichung -0,5 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

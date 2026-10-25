@@ -8,25 +8,26 @@ kueche: Asiatisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Korean Ground Beef Bowl“"
   link: null
-  aenderungen: "Rinderhack 20 % durch 5 % Fett ersetzt, braunen Zucker durch weniger Honig, Gochujang durch Sriracha (lange haltbar, auch in anderen Rezepten im Einsatz). Spart ca. 200 kcal pro Portion."
+  aenderungen: "Rinderhack 20 % durch 5 % Fett ersetzt, braunen Zucker durch weniger Honig, Gochujang durch Sriracha (lange haltbar, auch in anderen Rezepten im Einsatz). Spart ca. 160 kcal pro Portion; dafür gibt es ein Spiegelei obendrauf."
 schwierigkeit: leicht
 zeit: {vorbereitung: 5, kochen: 20, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l mit Deckel", Reibe]
 zutaten:
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 100}
   - gruppe: Beef
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 400}
-  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: oel, zutat: Rapsöl, g: 12, anzeige: "1 EL"}
   - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
   - gruppe: Sauce
   - {id: soja, zutat: Sojasauce, g: 30, anzeige: "2 EL"}
-  - {id: honig, zutat: Honig, g: 20, anzeige: "1 EL"}
+  - {id: honig, zutat: Honig, g: 15, anzeige: "1 EL"}
   - {id: sriracha, zutat: Sriracha, g: 10, anzeige: "2 TL"}
-  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 5, anzeige: "1 TL"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 10, anzeige: "2 TL"}
   - {id: chili, zutat: Chiliflocken, g: 1, anzeige: "2 Prisen"}
   - gruppe: Topping
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
   - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 30, anzeige: "2 Stangen"}
 mise_en_place:
   - "{reis} waschen, bis das Wasser fast klar ist."
@@ -34,24 +35,27 @@ mise_en_place:
   - "{soja}, {honig}, {sriracha}, {sesamoel} und {chili} in einer Tasse verrühren."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten zugedeckt neben dem Herd ruhen lassen."
+    text: "Reis mit 180 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten zugedeckt neben dem Herd ruhen lassen."
     timer_min: 12
   - titel: Hack krümelig braten
-    text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. {hack} hineingeben und 2 Minuten nicht bewegen, damit eine Kruste entsteht. Dann zerkrümeln und 4–5 Minuten weiterbraten, bis es durchgehend braun und an den Rändern knusprig ist (72 °C Kerntemperatur, kein rosa mehr)."
+    text: "Zwei Drittel von {oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. {hack} hineingeben und 2 Minuten nicht bewegen, damit eine Kruste entsteht. Dann zerkrümeln und 4–5 Minuten weiterbraten, bis es durchgehend braun und an den Rändern knusprig ist (72 °C Kerntemperatur, kein rosa mehr)."
     timer_min: 7
   - titel: Aromaten
     text: "Auf Stufe 6 von 9 schalten, Knoblauch, Ingwer und die weißen Frühlingszwiebel-Ringe 1 Minute mitbraten, bis es duftet."
     timer_min: 1
   - titel: Glasieren
-    text: "Sauce angießen und auf Stufe 6 von 9 1–2 Minuten unter Rühren einköcheln, bis das Hack glänzend überzogen ist und keine Flüssigkeit mehr am Pfannenboden steht."
+    text: "Sauce angießen und auf Stufe 6 von 9 1–2 Minuten unter Rühren einköcheln, bis das Hack glänzend überzogen ist und keine Flüssigkeit mehr am Pfannenboden steht. In eine Schüssel geben und warm halten."
     timer_min: 2
+  - titel: Spiegeleier
+    text: "Pfanne mit Küchenpapier auswischen, restliches Öl hineingeben und auf Stufe 5 von 9 erhitzen. {eier} hineinschlagen und 3–4 Minuten braten, bis das Eiweiß fest und der Rand knusprig ist, das Eigelb aber noch flüssig."
+    timer_min: 4
 zeitablauf:
   - "Reis zuerst aufsetzen. Während er quillt: Hack braten und glasieren (ca. 10 Minuten)."
 fehler:
   - "**Hack grau und wässrig:** zu früh zerkrümelt oder Pfanne nicht heiß. Lösung: Stufe 8, 2 Minuten liegen lassen."
   - "**Sauce brennt an:** Honig bei zu viel Hitze. Lösung: auf Stufe 6 von 9 zurück, bevor die Sauce dazukommt."
   - "**Zu scharf:** Sriracha-Sorten unterscheiden sich. Lösung: mit 1 TL starten und nachwürzen."
-anrichten: "Pro Bowl die Hälfte des Reises, daneben die Hälfte des Beefs, mit den grünen Frühlingszwiebel-Ringen bestreut: {portion_g} pro Portion."
+anrichten: "Pro Bowl die Hälfte des Reises, daneben die Hälfte des Beefs, 1 Spiegelei obendrauf, mit den grünen Frühlingszwiebel-Ringen bestreut: {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: true
@@ -60,7 +64,7 @@ aufbewahrung:
   separat: "Reis innerhalb von 1 Stunde abkühlen und kühlen."
 varianten:
   - {titel: Mit Putenhack, text: "400 g Putenhack statt Rinderhack.", aenderung: {"Rinderhackfleisch 5 % Fett roh": -400, "Putenhackfleisch roh": 400}}
-  - {titel: Mit Spiegelei, text: "Pro Bowl 1 Spiegelei obendrauf (in 1 TL Öl gebraten).", aenderung: {"Ei Gr. M ohne Schale": 120, "Rapsöl": 5}}
+  - {titel: Ohne Ei, text: "Spiegeleier weglassen; dann ohne das restliche Öl.", aenderung: {"Ei Gr. M ohne Schale": -120, "Rapsöl": -4}}
   - {titel: Mit Gurke, text: "150 g Salatgurke in Scheiben als frische Beilage.", aenderung: {"Salatgurke": 150}}
 tipps:
   - "Gurkenscheiben mit einer Prise Salz und 1 TL Zitronensaft 5 Minuten ziehen lassen: schneller Pickle-Ersatz."

@@ -23,9 +23,9 @@ Jedes Rezept so genau, dass man es ohne Nachdenken nachkochen kann. **Jede Zahl 
 - **Haltbarkeit:** Fisch/Garnelen max. 2 Tage gekühlt, sonst max. 3–4 Tage. Reis binnen 1 h kühlen.
 - **Plausibilität:** 4P + 4KH + 9F + 2Ballast vs. kcal: pro Zutat ±5 % **oder** ±5 kcal/100 g (Polyole ausgenommen), pro Rezept streng ±5 %.
 - **Schichten:** 5-Tage-Zyklus Tag 7–19 · Nacht 19–7 · 3× frei (Start Tag So 1.11.2026, `profil.yaml`). Boxen: Tag → Frühstück + Mittag, Nacht → Abend (Mikrowelle vorhanden). Meal Prep am letzten freien Tag vor der Tagschicht.
-- **Planung (8.2):** P ≥ 145 g · kcal ± 100 · F ± 15 (nie < 70) · KH ± 20. Abends keine gleiche Küche/Proteinquelle an Folgetagen. 1–2 Sterne nie, 3 Sterne max. 1×/Woche. Einkauf nur **Samstag** ⇒ Fisch/Garnelen/Hack frisch nur Sa–Mo, übriges Frischfleisch max. 4 Tage, sonst einfrieren (`einfrieren: true`) + Auftau-Erinnerung. Fehlendes Fett über Extras (Mandeln/Erdnussbutter). Anpassen: `faktor` (0,25er-Schritte, max. 1,5) → Snack → einfaches Extra.
+- **Planung (8.2):** P ≥ 145 g · kcal ± 100 · F ± 15 (nie < 70) · KH ± 20. Abends keine gleiche Küche/Proteinquelle an Folgetagen. 1–2 Sterne nie, 3 Sterne max. 1×/Woche. Einkauf nur **Samstag** ⇒ Fisch/Garnelen/Hack frisch nur Sa–Mo, übriges Frischfleisch max. 4 Tage, sonst einfrieren (`einfrieren: true`) + Auftau-Erinnerung. Fett kommt aus den Rezepten (`fett_strategie: rezepte`, Ø-Ziele je Gruppe in `config.FETT_ZIEL_PRO_MAHLZEIT`); Extras (Mandeln/Erdnussbutter) nur als Notlösung. Anpassen: `faktor` (0,25er-Schritte, 0,75–1,5) → Snack → Rezept tauschen → einfaches Extra.
 - **Auswärts:** Platzhalter 950 kcal / 40 P / 45 F / 90 KH, Rest des Tages proteinreich + fettarm, keine Zutaten auf der Liste.
-- **Einkaufsliste:** berechnet (nie geschrieben), Vorrat abziehen, auf Packungen runden, nach Abteilungen, Kosten vs. Budget 100 €, Reste → `vorrat.yaml`, Kontrollrechnung.
+- **Einkaufsliste:** berechnet (nie geschrieben), Vorrat abziehen, auf Packungen runden, nach Abteilungen, Kosten vs. Budget (`profil.yaml`, in der App pro Gerät änderbar), Reste → `vorrat.yaml`, Kontrollrechnung.
 - **Import:** eigene Worte, keine Texte/Fotos aus Posts übernehmen; Unklares gesammelt in einer Liste nachfragen.
 
 ## Arbeitsweise
@@ -70,6 +70,7 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 | **anpassen [Rezept]** | Rezept ändern, Nährwerte neu rechnen |
 | **Ziele: [kcal, P, F, KH]** | `profil.yaml` aktualisieren, aktuelle Pläne neu prüfen |
 | **Vorrat** | `vorrat.yaml` anzeigen und aktualisieren |
+| **Budget: [€]** | `einkauf.budget_eur_pro_woche` in `profil.yaml` setzen (Planung + Standardwert der App), Einkaufsliste neu rechnen |
 | **Web-App aktualisieren** | generieren, prüfen, veröffentlichen |
 
 ## Fortschritt
@@ -79,8 +80,9 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 - [x] **Phase 4 – Rezepte schreiben** (24.10.2026): alle 50 Rezepte, 0 Fehler/Warnungen, alle 26 Vorgaben aus SPEC 5 erfüllt (50/50 High Protein), 90 genutzte Zutaten (89 ohne Wasser). Befund für Phase 5: Rezepte eher fettarm (Ø 17–20 g Fett/Mahlzeit) → Fettziel 86–116 g braucht oft Snack/Extra (z. B. Nüsse).
 - [x] **Phase 5 – Wochenplanung & Einkauf** (24.10.2026): `wochenplan.py` (Schichtzyklus, Tagessummen, Regeln 8.2, Markdown), `einkauf.py` (Vorrat, Packungen, Abteilungen, Kosten, Reste, Kontrollrechnung, 2 Einkaufstermine), 86 Tests, erster Plan KW 45 (7/7 Tage regelkonform, Ø 2.271 kcal / 177 g P / 87 g F / 185 g KH). Offen: Wochenkosten ca. 154 € > Budget 100 €; zweiter Samstagseinkauf überschneidet sich künftig mit dem Einkauf der Folgewoche (zusammenführen).
 - [x] **Phase 6 – Web-App** (25.10.2026): `tools/web.py` (von `generieren.py` aufgerufen) erzeugt `web/` – Heute, Rezeptbuch (Suche/Filter/Sortierung), 50 Rezeptseiten (JSON-LD, Portionsrechner, Kochmodus mit Timer/Wake Lock, MacroFactor-Kopie), Wochenplan als Tageskarten, Einkaufsliste mit gespeicherten Haken, PWA (Manifest, Icons, Service Worker). 97 Tests inkl. Playwright (390 × 844).
-- [x] **Phase 7 – Import & Komfort** (25.10.2026): `importieren.py` (Eingang, Umrechnung, Ähnlichkeit, Ablage), `kuehlschrank.py` (Abgleich mit Grundvorrat/optional, Faktor nach Restmakros), `bewerten.py`; Test-Import eines fiktiven TikTok-Screenshots → Rezept Nr. 51 `cookie-dough-protein-dip`; Bestand trennt Startbestand und Importe; 122 Tests.
+- [x] **Phase 7 – Import & Komfort** (25.10.2026): `importieren.py` (Eingang, Umrechnung, Ähnlichkeit, Ablage), `kuehlschrank.py` (Abgleich mit Grundvorrat/optional, Faktor nach Restmakros), `bewerten.py`; Test-Import eines fiktiven TikTok-Screenshots durchgespielt (Rezept danach auf Wunsch wieder gelöscht); Bestand trennt Startbestand und Importe; 122 Tests.
 - [x] **Phase 8 – Livegang** (25.10.2026): Repo ist öffentlich → Pages kostenlos; Workflow `.github/workflows/pages.yml` veröffentlicht `web/` bei jedem Push auf main (einmalig Settings → Pages → Source „GitHub Actions“); `web_url` in `profil.yaml` → Canonical, JSON-LD `url`/`image`, Open Graph; `veroeffentlichen.py` (+ `--live`); README mit Alltagsanleitung; 126 Tests. Offen: MacroFactor-Link-Import gemeinsam testen, sobald Pages live ist.
+- [x] **Nachbesserung** (25.10.2026): Rezept 51 gelöscht; Budget in der App änderbar (Einkaufsseite, localStorage) + Befehl „Budget: [€]“; alle 50 Rezepte fettreicher bei gleichem Protein (Ø Fett Frühstück 17→21 g, Hauptgericht 20→26 g, kalorienarm 13→17 g, Snack 6→9 g; weniger Reis/Nudeln/Kartoffeln); KW 45 neu: 7/7 Tage regelkonform **ohne Extras** (Ø 2.326 kcal / 194 g P / 89 g F / 180 g KH, Wochenkosten ca. 161 €); 130 Tests. Befund: Pläne liegen bei ~180–210 g Protein, deshalb ist Fett ≥ 86 g nur knapp erreichbar.
 
 ## Entscheidungen
 Siehe `SPEC.md`, Abschnitt 16.

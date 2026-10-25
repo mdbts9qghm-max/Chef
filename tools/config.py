@@ -118,6 +118,9 @@ TK_ABTEILUNG = "Tiefkühl"
 REZEPTPLAN_YAML = DATEN / "rezeptplan.yaml"
 REZEPTPLAN_MD = WURZEL / "rezeptplan.md"
 BESTAND_GESAMT = 50
+# Fettstrategie „rezepte“ (Entscheidung 25.10.2026): Ø Fett pro Portion je Gruppe, damit Pläne ohne Nüsse-Extras
+# das Fettziel erreichen. Gruppe = Hauptkategorie „kalorienarm“, sonst Mahlzeit. Wird von bestand.py geprüft.
+FETT_ZIEL_PRO_MAHLZEIT = {"Frühstück": (19, 24), "Mittag/Abend": (24, 30), "Kalorienarm": (14, 20), "Snack": (7, 12)}
 BEREICHE_SOLL = {"Frühstück": 15, "Snack": 5, "Hauptgericht": 30}       # exakt (5.1)
 FRUEHSTUECK_MIN = {"Meal Prep": 4, "Schnelle Rezepte": 5}               # 5.1
 KUECHEN_SOLL = {                                                        # exakt, nur Hauptgerichte (5.2)

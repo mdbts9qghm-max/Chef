@@ -4,7 +4,7 @@
 - **Bewertung:** noch nicht bewertet
 - **Kategorien:** High Protein · Schnelle Rezepte · Frühstück & Snacks (Hauptkategorie: Frühstück & Snacks)
 - **Küche:** Italienisch
-- **Inspiration:** TikTok-/Instagram-Trend „Tiramisu Oats / Protein Tiramisu“. Geändert: Mascarpone und Löffelbiskuits durch Skyr, Frischkäse light und in Espresso getränkte Haferflocken ersetzt; Zucker durch Vanille-Whey. Spart gegenüber klassischem Tiramisu ca. 400 kcal pro Portion.
+- **Inspiration:** TikTok-/Instagram-Trend „Tiramisu Oats / Protein Tiramisu“. Geändert: Mascarpone und Löffelbiskuits durch Skyr, Frischkäse light und in Espresso getränkte Haferflocken ersetzt; Zucker durch Vanille-Whey. Spart gegenüber klassischem Tiramisu ca. 360 kcal pro Portion.
 - **Mahlzeit:** Frühstück (süß)
 - **Portionen:** 2
 - **Schwierigkeit:** leicht
@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 528 kcal | 23 % |
-| Protein | 53,5 g | 36 % |
-| Fett | 13,9 g | 14 % |
-| davon gesättigt | 7,4 g |  |
-| Kohlenhydrate | 43,2 g | 23 % |
-| davon Zucker | 15,7 g |  |
-| Ballaststoffe | 6,5 g |  |
-| Salz | 0,8 g |  |
+| Kalorien | 564 kcal | 25 % |
+| Protein | 54,7 g | 37 % |
+| Fett | 18,1 g | 18 % |
+| davon gesättigt | 10,4 g |  |
+| Kohlenhydrate | 41,5 g | 22 % |
+| davon Zucker | 18 g |  |
+| Ballaststoffe | 6,3 g |  |
+| Salz | 1 g |  |
 
-- **Protein pro 100 kcal:** 10,1 g
-- **Makroverteilung (Energie):** Protein 42 % · Kohlenhydrate 34 % · Fett 24 %
-- **Gewicht fertig:** ca. 870 g gesamt · **ca. 440 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,7 g
+- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 30 % · Fett 30 %
+- **Gewicht fertig:** ca. 920 g gesamt · **ca. 460 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -34,25 +34,25 @@
 | Zutat | Menge | Hinweis |
 |---|---|---|
 | **Kaffee-Boden** | | |
-| Haferflocken zart | 90 g |  |
+| Haferflocken zart | 75 g |  |
 | Espresso oder starker Kaffee | 120 g | 120 ml, abgekühlt |
 | **Creme** | | |
 | Skyr natur | 500 g | 1 Becher |
-| Frischkäse light | 100 g |  |
+| Frischkäse light | 150 g |  |
 | Whey Protein Vanille | ca. 1⅓ Messlöffel (40 g) |  |
 | **Topping** | | |
 | Backkakao | 2 TL (8 g) |  |
-| Zartbitterschokolade | 3 Rippchen (15 g) | fein gerieben |
+| Zartbitterschokolade | 5 Rippchen (25 g) | fein gerieben |
 
 ## Mise en place
 
 - 120 g Espresso oder starker Kaffee kochen und abkühlen lassen (oder vom Morgenkaffee abzweigen).
-- 3 Rippchen Zartbitterschokolade (15 g) fein reiben.
+- 5 Rippchen Zartbitterschokolade (25 g) fein reiben.
 
 ## Zubereitung
 
-1. **Kaffee-Boden** ⏱ 3 min: 90 g Haferflocken zart auf die 2 Schalen verteilen und mit dem Kaffee übergießen, kurz andrücken. 3 Minuten ziehen lassen, bis die Flocken den Kaffee aufgesogen haben (wie getränkte Löffelbiskuits).
-2. **Creme**: 500 g Skyr natur, 100 g Frischkäse light und ca. 1⅓ Messlöffel Whey Protein Vanille (40 g) 1 Minute kräftig glatt rühren, bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind.
+1. **Kaffee-Boden** ⏱ 3 min: 75 g Haferflocken zart auf die 2 Schalen verteilen und mit dem Kaffee übergießen, kurz andrücken. 3 Minuten ziehen lassen, bis die Flocken den Kaffee aufgesogen haben (wie getränkte Löffelbiskuits).
+2. **Creme**: 500 g Skyr natur, 150 g Frischkäse light und ca. 1⅓ Messlöffel Whey Protein Vanille (40 g) 1 Minute kräftig glatt rühren, bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind.
 3. **Schichten**: Creme auf den Kaffee-Boden verteilen und glatt streichen. 2 TL Backkakao (8 g) durch ein kleines Sieb darüberstäuben und die geriebene Schokolade darüberstreuen.
 
 ## Zeitablauf
@@ -67,7 +67,7 @@
 
 ## Anrichten
 
-Pro Schale ca. 440 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g Kakao und knapp 8 g Schokolade.
+Pro Schale ca. 460 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g Kakao und gut 12 g Schokolade.
 
 ## Meal Prep & Aufbewahrung
 
@@ -79,7 +79,7 @@ Pro Schale ca. 440 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g 
 
 - **Mehr Protein:** Whey auf 60 g erhöhen und 2 EL Kaffee mehr in die Creme. (+39 kcal, +7,5 g Protein, +0,6 g Fett pro Portion)
 - **Mit Kirschen:** 60 g Sauerkirschen zwischen Boden und Creme. (+19 kcal, +0,2 g Protein, ±0 g Fett pro Portion)
-- **Weniger kcal:** Schokolade weglassen, nur Kakao. (−42 kcal, −0,6 g Protein, −3,1 g Fett pro Portion)
+- **Weniger kcal:** Schokolade weglassen, nur Kakao. (−70 kcal, −1 g Protein, −5,1 g Fett pro Portion)
 
 ## Tipps
 
@@ -90,16 +90,16 @@ Pro Schale ca. 440 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g 
 
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
-| Haferflocken zart | 90 g | 335 | 12,2 | 6,3 | 52,8 |
+| Haferflocken zart | 75 g | 279 | 10,1 | 5,3 | 44 |
 | Kaffee zubereitet | 120 g | 2 | 0,1 | 0 | 0,4 |
 | Skyr natur | 500 g | 315 | 55 | 1 | 20 |
-| Frischkäse light | 100 g | 143 | 7 | 11 | 4 |
+| Frischkäse light | 150 g | 215 | 10,5 | 16,5 | 6 |
 | Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
 | Kakaopulver stark entölt | 8 g | 23 | 1,6 | 0,9 | 1 |
-| Zartbitterschokolade 70 % | 15 g | 84 | 1,2 | 6,2 | 5,1 |
-| **Summe** | | **1.056** | **107,1** | **27,7** | **86,5** |
-| **Pro Portion (÷ 2)** | | **528** | **53,5** | **13,9** | **43,2** |
+| Zartbitterschokolade 70 % | 25 g | 140 | 2 | 10,3 | 8,5 |
+| **Summe** | | **1.128** | **109,3** | **36,3** | **83** |
+| **Pro Portion (÷ 2)** | | **564** | **54,7** | **18,1** | **41,5** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.050 kcal gegenüber 1.056 kcal → Abweichung -0,6 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.121 kcal gegenüber 1.128 kcal → Abweichung -0,6 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

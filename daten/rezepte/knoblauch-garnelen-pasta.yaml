@@ -8,17 +8,17 @@ kueche: Italienisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „High-Protein Garlic Shrimp Pasta“"
   link: null
-  aenderungen: "Butter-Sahne-Sauce durch Olivenöl, Tomaten und Nudelwasser ersetzt, Garnelen-Anteil verdoppelt; ca. 300 kcal weniger als die Butterversion."
+  aenderungen: "Butter-Sahne-Sauce durch Olivenöl, Tomaten und Nudelwasser ersetzt, Garnelen-Anteil verdoppelt; ca. 270 kcal weniger als die Butterversion."
 schwierigkeit: leicht
 zeit: {vorbereitung: 7, kochen: 15, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm", "Topf ca. 3 l", Sieb]
 zutaten:
   - gruppe: Pasta
-  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Spaghetti, g: 140}
+  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Spaghetti, g: 120}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
   - gruppe: Garnelen-Sauce
   - {id: garnelen, zutat: Garnelen roh geschält, name: Garnelen, g: 320, hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
-  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - {id: oel, zutat: Olivenöl, g: 20, anzeige: "2 EL"}
   - {id: knoblauch, zutat: Knoblauch, g: 12, anzeige: "4 Zehen"}
   - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
   - {id: tomaten, zutat: Tomaten, name: Kirschtomaten, g: 200, hinweis: "halbiert"}
@@ -26,7 +26,7 @@ zutaten:
   - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
   - {id: salz, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 10, anzeige: "2 EL gehackt"}
-  - {id: parmesan, zutat: Parmesan gerieben, g: 15, anzeige: "1½ EL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 25, anzeige: "2½ EL"}
 mise_en_place:
   - "{garnelen} am Vorabend in einer Schüssel abgedeckt im Kühlschrank auftauen. Vor dem Kochen abspülen und gründlich trocken tupfen."
   - "3 l Wasser mit {salz_wasser} auf Stufe 9 von 9 aufkochen."
@@ -57,7 +57,7 @@ aufbewahrung:
   einfrierbar: false
   aufwaermen: "Am besten frisch essen. Reste am nächsten Tag in der Pfanne auf Stufe 5 von 9 mit 2 EL Wasser 2–3 Minuten, nur bis heiß."
 varianten:
-  - {titel: Mehr kcal, text: "Pasta auf 180 g erhöhen (für normale Tage statt Spielraum-Tag).", aenderung: {"Hartweizennudeln ungekocht": 40}}
+  - {titel: Mehr kcal, text: "Pasta auf 180 g erhöhen (für normale Tage statt Spielraum-Tag).", aenderung: {"Hartweizennudeln ungekocht": 60}}
   - {titel: Mit Hähnchen, text: "320 g Hähnchenbrust in Streifen statt Garnelen, bis 74 °C Kerntemperatur braten.", aenderung: {"Garnelen roh geschält": -320, "Hähnchenbrustfilet roh": 320}}
   - {titel: Mit Spinat, text: "100 g Babyspinat in der Sauce zusammenfallen lassen.", aenderung: {"Babyspinat": 100}}
 tipps:

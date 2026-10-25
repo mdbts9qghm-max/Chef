@@ -8,23 +8,23 @@ kueche: International / Fusion
 inspiration:
   quelle: "TikTok-Trend „Cottage Cheese Mac and Cheese“"
   link: null
-  aenderungen: "Käsesauce aus Butter, Mehl, Sahne und Cheddar durch gemixten körnigen Frischkäse, Milch und Reibekäse light ersetzt, dazu gebratene Putenbrust. Ca. 70 g Protein pro Portion statt 25 g."
+  aenderungen: "Käsesauce aus Butter, Mehl, Sahne und Cheddar durch gemixten körnigen Frischkäse, Milch und Reibekäse light ersetzt, dazu gebratene Putenbrust. Ca. 75 g Protein pro Portion statt 25 g."
 schwierigkeit: leicht
 zeit: {vorbereitung: 5, kochen: 18, wartezeit: 0}
 ausstattung: ["Topf ca. 3 l", "Pfanne 24 cm", Standmixer, Fleischthermometer]
 zutaten:
   - gruppe: Pasta
-  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Makkaroni, g: 160}
+  - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Makkaroni, g: 130}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
   - gruppe: Käsesauce
   - {id: huettenkaese, zutat: Körniger Frischkäse, name: körniger Frischkäse, g: 200, anzeige: "1 Becher"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 100, hinweis: "100 ml"}
-  - {id: kaese, zutat: Reibekäse light, g: 60}
+  - {id: kaese, zutat: Reibekäse light, g: 100}
   - {id: senf, zutat: Senf mittelscharf, name: Senf, g: 5, anzeige: "1 TL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 1, anzeige: "½ TL"}
   - gruppe: Putenbrust
   - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 300}
-  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
   - {id: knoblauch, zutat: Knoblauch, g: 3, anzeige: "1 Zehe"}
   - {id: salz, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
@@ -60,7 +60,7 @@ aufbewahrung:
 varianten:
   - {titel: Überbacken, text: "In die 20 × 20-Form füllen, 20 g Reibekäse extra darüber und im Backofen auf mittlerer Schiene bei 220 °C Ober-/Unterhitze (200 °C Umluft) 8 Minuten gratinieren.", aenderung: {"Reibekäse light": 20}}
   - {titel: Mit Hähnchen, text: "300 g Hähnchenbrust statt Pute.", aenderung: {"Putenbrustfilet roh": -300, "Hähnchenbrustfilet roh": 300}}
-  - {titel: Weniger kcal, text: "Pasta auf 110 g reduzieren.", aenderung: {"Hartweizennudeln ungekocht": -50}}
+  - {titel: Weniger kcal, text: "Pasta auf 100 g reduzieren.", aenderung: {"Hartweizennudeln ungekocht": -30}}
 tipps:
   - "Eine Prise Muskat oder Knoblauchpulver in der Sauce (falls vorhanden) macht sie noch käsiger."
 gargewicht_g: null

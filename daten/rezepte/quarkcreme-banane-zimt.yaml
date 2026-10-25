@@ -13,9 +13,9 @@ zutaten:
   - {id: quark, zutat: Magerquark, g: 300}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 50, hinweis: "50 ml"}
   - {id: whey, zutat: Whey Protein Vanille, g: 15, anzeige: "½ Messlöffel"}
-  - {id: banane, zutat: Banane geschält, name: Banane, g: 100, anzeige: "1 kleine Banane"}
+  - {id: banane, zutat: Banane geschält, name: Banane, g: 80, anzeige: "1 kleine Banane"}
   - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 2, anzeige: "1 TL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 10, anzeige: "1 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 25, anzeige: "2½ EL"}
 mise_en_place:
   - "{banane} schälen und in 5 mm Scheiben schneiden."
 schritte:
@@ -33,14 +33,14 @@ zeitablauf:
 fehler:
   - "**Creme fest und stumpf:** zu kurz geschlagen. Lösung: wirklich 1 Minute schlagen, dann wird Magerquark luftig."
   - "**Banane braun:** zu früh geschnitten. Lösung: erst kurz vor dem Servieren schneiden."
-anrichten: "Pro Schale {portion_g}: Quarkcreme mit Banane, Zimt und 5 g Mandeln."
+anrichten: "Pro Schale {portion_g}: Quarkcreme mit Banane, Zimt und gut 12 g Mandeln."
 aufbewahrung:
   kuehlschrank_tage: 1
   einfrierbar: false
   aufwaermen: "Nicht aufwärmen, kalt essen."
   separat: "Banane erst beim Essen schneiden."
 varianten:
-  - {titel: Mit Beeren, text: "150 g Beerenmischung statt Banane.", aenderung: {"Banane geschält": -100, "Beerenmischung TK": 150}}
+  - {titel: Mit Beeren, text: "150 g Beerenmischung statt Banane.", aenderung: {"Banane geschält": -80, "Beerenmischung TK": 150}}
   - {titel: Mit Erdnussbutter, text: "10 g Erdnussbutter darüberträufeln.", aenderung: {"Erdnussbutter 100 % Erdnüsse": 10}}
 tipps:
   - "Auch als Nachtisch nach dem Abendessen: noch 10 Minuten ins Gefrierfach, dann schmeckt sie wie Frozen Yogurt."

@@ -4,7 +4,7 @@
 - **Bewertung:** noch nicht bewertet
 - **Kategorien:** High Protein · Schnelle Rezepte · Frühstück & Snacks (Hauptkategorie: Frühstück & Snacks)
 - **Küche:** Amerikanisch
-- **Inspiration:** TikTok-/Instagram-Trend „Cottage Cheese / Protein Pancakes“. Geändert: Mehl durch fein gemixte Haferflocken ersetzt, Buttermilch durch Magerquark und Eiklar, Zucker weggelassen (Süße aus Whey und Honig), nur 6 g Öl für die Pfanne.
+- **Inspiration:** TikTok-/Instagram-Trend „Cottage Cheese / Protein Pancakes“. Geändert: Mehl durch fein gemixte Haferflocken ersetzt, Buttermilch durch Magerquark und Eiklar, Zucker weggelassen (Süße aus Whey und Honig), 12 g Öl für die Pfanne (gibt knusprige Ränder).
 - **Mahlzeit:** Frühstück (süß)
 - **Portionen:** 2
 - **Schwierigkeit:** leicht
@@ -15,17 +15,17 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 567 kcal | 25 % |
+| Kalorien | 597 kcal | 26 % |
 | Protein | 55,5 g | 37 % |
-| Fett | 14,7 g | 15 % |
-| davon gesättigt | 3,8 g |  |
-| Kohlenhydrate | 49,3 g | 26 % |
+| Fett | 20,1 g | 20 % |
+| davon gesättigt | 4,9 g |  |
+| Kohlenhydrate | 45,1 g | 24 % |
 | davon Zucker | 19,5 g |  |
-| Ballaststoffe | 7,9 g |  |
+| Ballaststoffe | 7,2 g |  |
 | Salz | 1,7 g |  |
 
-- **Protein pro 100 kcal:** 9,8 g
-- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 36 % · Fett 24 %
+- **Protein pro 100 kcal:** 9,3 g
+- **Makroverteilung (Energie):** Protein 38 % · Kohlenhydrate 31 % · Fett 31 %
 - **Gewicht fertig:** ca. 940 g gesamt · **ca. 470 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
@@ -34,31 +34,31 @@
 | Zutat | Menge | Hinweis |
 |---|---|---|
 | **Teig** | | |
-| Haferflocken zart | 100 g |  |
+| Haferflocken zart | 85 g |  |
 | Magerquark | 250 g | ½ Becher |
-| Eier | 2 Eier Gr. M (120 g) |  |
-| Eiklar | 100 g | aus der Flasche, 100 ml |
+| Eier | 3 Eier Gr. M (180 g) |  |
+| Eiklar | 40 g | aus der Flasche, 40 ml |
 | Whey Protein Vanille | 1 Messlöffel (30 g) |  |
 | Milch | 50 g | 50 ml |
 | Backpulver | 1½ TL (6 g) |  |
 | Salz | 1 Prise (0,5 g) |  |
-| Rapsöl | 2 TL (6 g) | zum Ausbacken |
+| Rapsöl | 1 EL (12 g) | zum Ausbacken |
 | **Topping** | | |
 | Heidelbeeren TK | 120 g |  |
-| Skyr natur | 150 g |  |
+| Skyr natur | 160 g |  |
 | Honig | 2 TL (10 g) |  |
 
 ## Mise en place
 
 - 120 g Heidelbeeren TK in einer Schüssel 1½ Minuten bei 600 W in der Mikrowelle auftauen, bis sie weich sind und Saft gezogen haben.
-- 2 TL Rapsöl (6 g) in einem Schälchen bereitstellen und ein Stück Küchenpapier daneben legen.
+- 1 EL Rapsöl (12 g) in einem Schälchen bereitstellen und ein Stück Küchenpapier daneben legen.
 
 ## Zubereitung
 
-1. **Teig mixen** ⏱ 2 min: 100 g Haferflocken zart im Standmixer 15 Sekunden auf höchster Stufe zu feinem Mehl mahlen. 250 g Magerquark, 2 Eier Gr. M (120 g), 100 g Eiklar, 1 Messlöffel Whey Protein Vanille (30 g), 50 g Milch, 1½ TL Backpulver (6 g) und 1 Prise Salz (0,5 g) dazugeben und 20 Sekunden mixen, bis ein glatter, dickflüssiger Teig entsteht. 2 Minuten stehen lassen, damit der Hafer quillt; der Teig soll langsam vom Löffel fließen.
+1. **Teig mixen** ⏱ 2 min: 85 g Haferflocken zart im Standmixer 15 Sekunden auf höchster Stufe zu feinem Mehl mahlen. 250 g Magerquark, 3 Eier Gr. M (180 g), 40 g Eiklar, 1 Messlöffel Whey Protein Vanille (30 g), 50 g Milch, 1½ TL Backpulver (6 g) und 1 Prise Salz (0,5 g) dazugeben und 20 Sekunden mixen, bis ein glatter, dickflüssiger Teig entsteht. 2 Minuten stehen lassen, damit der Hafer quillt; der Teig soll langsam vom Löffel fließen.
 2. **Pfanne vorbereiten** ⏱ 2 min: Pfanne (28 cm) auf Stufe 6 von 9 ca. 2 Minuten vorheizen. Ein Drittel des Öls hineingeben und mit Küchenpapier dünn verteilen. Test: Ein Tropfen Teig soll sofort leise zischen und am Rand fest werden.
 3. **Ausbacken** ⏱ 4 min: Pro Pancake 2 EL Teig (ca. 55 g) in die Pfanne geben, 3–4 Stück gleichzeitig, 8 cm Durchmesser. 2 Minuten backen, bis sich auf der Oberfläche Bläschen bilden und der Rand matt wird, dann wenden und weitere 1–1½ Minuten backen, bis beide Seiten goldbraun sind. Auf Stufe 5 von 9 herunterschalten, wenn sie zu schnell bräunen. Pfanne vor jeder Runde mit etwas Öl auswischen. Ergibt ca. 14 Pancakes.
-4. **Topping**: 150 g Skyr natur glatt rühren. Pancakes auf 2 Teller stapeln, Skyr und die Heidelbeeren samt Saft darauf verteilen, mit 2 TL Honig (10 g) beträufeln.
+4. **Topping**: 160 g Skyr natur glatt rühren. Pancakes auf 2 Teller stapeln, Skyr und die Heidelbeeren samt Saft darauf verteilen, mit 2 TL Honig (10 g) beträufeln.
 
 ## Zeitablauf
 
@@ -73,7 +73,7 @@
 
 ## Anrichten
 
-Pro Teller 7 Pancakes, darauf 75 g Skyr, 60 g Heidelbeeren mit Saft und 1 TL Honig: ca. 470 g pro Portion.
+Pro Teller 7 Pancakes, darauf 80 g Skyr, 60 g Heidelbeeren mit Saft und 1 TL Honig: ca. 470 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -86,7 +86,7 @@ Pro Teller 7 Pancakes, darauf 75 g Skyr, 60 g Heidelbeeren mit Saft und 1 TL Hon
 
 - **Schoko-Pancakes:** Whey Protein Schoko statt Vanille, dazu 10 g Backkakao in den Teig. (+14 kcal, +0,6 g Protein, +0,6 g Fett pro Portion)
 - **Bananen-Pancakes:** 1 kleine Banane (100 g) in Scheiben auf die rohe Teigseite legen, bevor gewendet wird; Honig weglassen. (+31 kcal, +0,5 g Protein, +0,1 g Fett pro Portion)
-- **Mehr Protein:** Skyr-Topping auf 300 g verdoppeln. (+47 kcal, +8,3 g Protein, +0,2 g Fett pro Portion)
+- **Mehr Protein:** Skyr-Topping auf 320 g verdoppeln. (+50 kcal, +8,8 g Protein, +0,2 g Fett pro Portion)
 
 ## Tipps
 
@@ -97,21 +97,21 @@ Pro Teller 7 Pancakes, darauf 75 g Skyr, 60 g Heidelbeeren mit Saft und 1 TL Hon
 
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
-| Haferflocken zart | 100 g | 372 | 13,5 | 7 | 58,7 |
+| Haferflocken zart | 85 g | 316 | 11,5 | 6 | 49,9 |
 | Magerquark | 250 g | 168 | 30 | 0,8 | 10 |
-| Ei Gr. M ohne Schale | 120 g | 168 | 15,1 | 11,9 | 0,8 |
-| Eiklar flüssig | 100 g | 48 | 10,9 | 0,2 | 0,7 |
+| Ei Gr. M ohne Schale | 180 g | 252 | 22,7 | 17,8 | 1,3 |
+| Eiklar flüssig | 40 g | 19 | 4,4 | 0,1 | 0,3 |
 | Whey Protein Vanille | 30 g | 116 | 22,5 | 1,8 | 2,4 |
 | Milch 1,5 % Fett | 50 g | 24 | 1,7 | 0,8 | 2,4 |
 | Backpulver | 6 g | 3 | 0 | 0 | 0,7 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
-| Rapsöl | 6 g | 54 | 0 | 6 | 0 |
+| Rapsöl | 12 g | 108 | 0 | 12 | 0 |
 | Heidelbeeren TK | 120 g | 56 | 0,7 | 0,7 | 8,9 |
-| Skyr natur | 150 g | 95 | 16,5 | 0,3 | 6 |
+| Skyr natur | 160 g | 101 | 17,6 | 0,3 | 6,4 |
 | Honig | 10 g | 32 | 0 | 0 | 8 |
-| **Summe** | | **1.135** | **111** | **29,4** | **98,6** |
-| **Pro Portion (÷ 2)** | | **567** | **55,5** | **14,7** | **49,3** |
+| **Summe** | | **1.195** | **111,1** | **40,2** | **90,2** |
+| **Pro Portion (÷ 2)** | | **597** | **55,5** | **20,1** | **45,1** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.135 kcal gegenüber 1.135 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.196 kcal gegenüber 1.195 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

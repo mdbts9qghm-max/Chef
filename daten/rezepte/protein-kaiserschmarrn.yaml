@@ -12,13 +12,13 @@ ausstattung: ["Pfanne 28 cm (beschichtet) mit Deckel", "kleiner Topf ca. 1 l", S
 zutaten:
   - gruppe: Teig
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 180, anzeige: "3 Eier Gr. M", hinweis: "getrennt"}
-  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
-  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 80}
+  - {id: quark, zutat: Magerquark, g: 260, hinweis: "½ Becher plus 1 EL"}
+  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 72}
   - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 80, hinweis: "80 ml"}
   - {id: backpulver, zutat: Backpulver, g: 3, anzeige: "½ TL"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
-  - {id: butter, zutat: Butter, g: 10, anzeige: "2 TL"}
+  - {id: butter, zutat: Butter, g: 15, anzeige: "1½ EL"}
   - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
   - {id: erythrit, zutat: Erythrit, g: 10, anzeige: "1 EL", hinweis: "im Mixer zu Puder gemahlen"}
   - gruppe: Kompott
@@ -56,7 +56,7 @@ aufbewahrung:
 varianten:
   - {titel: Mehr Protein, text: "Dazu je 100 g Skyr als Dip.", aenderung: {"Skyr natur": 200}}
   - {titel: Mit Kirschen, text: "120 g abgetropfte Sauerkirschen statt Apfel-Beeren-Kompott, kalt dazu.", aenderung: {"Apfel": -150, "Beerenmischung TK": -100, "Sauerkirschen Glas abgetropft": 120}}
-  - {titel: Weniger kcal, text: "Butter auf 5 g und Mandeln weglassen.", aenderung: {"Butter": -5, "Mandeln gehobelt": -15}}
+  - {titel: Weniger kcal, text: "Butter auf 5 g reduzieren und Mandeln weglassen.", aenderung: {"Butter": -10, "Mandeln gehobelt": -15}}
 tipps:
   - "Erythrit im Mixer 10 Sekunden zu Puder mahlen: sieht aus wie Puderzucker und klumpt nicht."
   - "Der Kaiserschmarrn wird luftiger, wenn die Eier Zimmertemperatur haben."

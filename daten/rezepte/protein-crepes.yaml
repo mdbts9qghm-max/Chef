@@ -11,19 +11,19 @@ zeit: {vorbereitung: 7, kochen: 18, wartezeit: 0}
 ausstattung: ["Pfanne 24 cm (beschichtet)", Schneebesen, Kelle, Mikrowelle]
 zutaten:
   - gruppe: Teig
-  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 80}
+  - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 70}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
   - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 100, hinweis: "100 ml"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 150, hinweis: "150 ml"}
   - {id: whey_teig, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
-  - {id: oel, zutat: Rapsöl, g: 6, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "1 EL"}
   - gruppe: Füllung
   - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
   - {id: whey_fuellung, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
   - {id: beeren, zutat: Beerenmischung TK, g: 150}
   - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 25, anzeige: "2½ EL"}
 mise_en_place:
   - "{beeren} 1½ Minuten bei 600 W in der Mikrowelle auftauen."
   - "{quark} mit {whey_fuellung} und 2 EL Wasser glatt rühren."
@@ -56,7 +56,7 @@ aufbewahrung:
 varianten:
   - {titel: Schoko-Banane, text: "1 Banane (100 g) statt Beeren und 10 g Backkakao in die Füllung, Honig weglassen.", aenderung: {"Beerenmischung TK": -150, "Banane geschält": 100, "Kakaopulver stark entölt": 10, "Honig": -10}}
   - {titel: Mehr Protein, text: "Füllung mit 150 g Skyr zusätzlich.", aenderung: {"Skyr natur": 150}}
-  - {titel: Weniger kcal, text: "Honig und Mandeln weglassen.", aenderung: {"Honig": -10, "Mandeln gehobelt": -15}}
+  - {titel: Weniger kcal, text: "Honig und Mandeln weglassen.", aenderung: {"Honig": -10, "Mandeln gehobelt": -25}}
 tipps:
   - "Ein Spritzer Zitronensaft und etwas Zitronenschale in der Füllung machen sie frischer."
 gargewicht_g: null

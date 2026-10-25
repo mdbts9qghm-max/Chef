@@ -27,7 +27,7 @@ Persönliches High-Protein-Rezeptbuch, Wochenplaner auf Basis der MacroFactor-Zi
 | **Rezeptseite** | alle Abschnitte, Portionsrechner (1–6), Varianten, Nährwerte |
 | **Kochmodus** | Schritt für Schritt groß, Timer mit Ton, Bildschirm bleibt an |
 | **Woche** | Tageskarten mit Schicht, Boxen, Meal-Prep-Tag |
-| **Einkauf** | Liste nach Abteilungen, Haken bleiben gespeichert, „Zurücksetzen“ für die nächste Woche |
+| **Einkauf** | Liste nach Abteilungen, Haken bleiben gespeichert, „Zurücksetzen“ für die nächste Woche; **Budget** direkt eintragen, die App zeigt sofort, ob die Woche hineinpasst |
 
 ## MacroFactor
 - **Link-Import:** In MacroFactor ein neues Rezept über den Import per Link anlegen und die Adresse der Rezeptseite einfügen (z. B. `https://mdbts9qghm-max.github.io/Chef/rezept/marry-me-chicken.html`). Die Seite enthält das Standard-Rezeptformat (schema.org/Recipe) mit Zutaten in Gramm, 2 Portionen und Nährwerten.
@@ -55,6 +55,7 @@ Persönliches High-Protein-Rezeptbuch, Wochenplaner auf Basis der MacroFactor-Zi
 | **anpassen [Rezept]** | „anpassen Bananenbrot süßer“ | Rezept ändern, Nährwerte neu |
 | **Ziele: [kcal, P, F, KH]** | „Ziele: 2200, 150, 95, 185“ | neue Ziele aus MacroFactor, Pläne neu prüfen |
 | **Vorrat** | „Vorrat: Olivenöl leer“ | `vorrat.yaml` anzeigen/aktualisieren |
+| **Budget: [€]** | „Budget: 150“ | Budget für die Planung setzen (in der App änderst du es nur für die Anzeige auf deinem iPhone) |
 | **Web-App aktualisieren** | | prüfen, generieren, testen, veröffentlichen |
 
 ## Veröffentlichen (GitHub Pages)

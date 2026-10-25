@@ -14,17 +14,17 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 518 kcal | 23 % |
-| Protein | 42,5 g | 29 % |
-| Fett | 14 g | 14 % |
-| davon gesättigt | 3,6 g |  |
-| Kohlenhydrate | 52 g | 27 % |
-| davon Zucker | 19,5 g |  |
-| Ballaststoffe | 5,8 g |  |
+| Kalorien | 544 kcal | 24 % |
+| Protein | 43,5 g | 29 % |
+| Fett | 19,1 g | 19 % |
+| davon gesättigt | 3,9 g |  |
+| Kohlenhydrate | 45,7 g | 24 % |
+| davon Zucker | 19,9 g |  |
+| Ballaststoffe | 6,7 g |  |
 | Salz | 0,6 g |  |
 
-- **Protein pro 100 kcal:** 8,2 g
-- **Makroverteilung (Energie):** Protein 34 % · Kohlenhydrate 41 % · Fett 25 %
+- **Protein pro 100 kcal:** 8 g
+- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 35 % · Fett 33 %
 - **Gewicht fertig:** ca. 870 g gesamt · **ca. 440 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
@@ -35,14 +35,14 @@
 | **Grießbrei** | | |
 | Milch | 350 g | 350 ml |
 | Wasser | 150 g | 150 ml |
-| Grieß | 90 g |  |
+| Grieß | 70 g |  |
 | Salz | 1 Prise (0,5 g) |  |
 | Magerquark | 150 g |  |
 | Whey Protein Vanille | 1⅔ Messlöffel (50 g) |  |
 | **Zimt-Apfel** | | |
 | Apfel | 1 kleiner Apfel (110 g) | entkernt gewogen |
 | Zimt | 1 TL (2 g) |  |
-| gehobelte Mandeln | 3½ EL (35 g) |  |
+| gehobelte Mandeln | 5½ EL (55 g) |  |
 
 ## Mise en place
 
@@ -51,8 +51,8 @@
 
 ## Zubereitung
 
-1. **Apfel und Mandeln anrösten** ⏱ 6 min: 3½ EL gehobelte Mandeln (35 g) ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten rösten, bis sie hellbraun sind. Apfelwürfel, 1 TL Zimt (2 g) und 2 EL Wasser dazugeben und 4 Minuten auf Stufe 5 von 9 dünsten, bis die Äpfel weich sind, aber noch Biss haben. Beiseitestellen.
-2. **Grieß kochen** ⏱ 7 min: 350 g Milch, 150 g Wasser und 1 Prise Salz (0,5 g) im Topf auf Stufe 7 von 9 aufkochen (ca. 4 Minuten, dabeibleiben). 90 g Grieß mit dem Schneebesen einrieseln lassen und dabei ständig rühren, damit keine Klümpchen entstehen. Auf Stufe 2 von 9 herunterschalten und 3 Minuten unter Rühren quellen lassen, bis der Brei dick wird und blubbert.
+1. **Apfel und Mandeln anrösten** ⏱ 6 min: 5½ EL gehobelte Mandeln (55 g) ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten rösten, bis sie hellbraun sind. Apfelwürfel, 1 TL Zimt (2 g) und 2 EL Wasser dazugeben und 4 Minuten auf Stufe 5 von 9 dünsten, bis die Äpfel weich sind, aber noch Biss haben. Beiseitestellen.
+2. **Grieß kochen** ⏱ 7 min: 350 g Milch, 150 g Wasser und 1 Prise Salz (0,5 g) im Topf auf Stufe 7 von 9 aufkochen (ca. 4 Minuten, dabeibleiben). 70 g Grieß mit dem Schneebesen einrieseln lassen und dabei ständig rühren, damit keine Klümpchen entstehen. Auf Stufe 2 von 9 herunterschalten und 3 Minuten unter Rühren quellen lassen, bis der Brei dick wird und blubbert.
 3. **Protein unterrühren** ⏱ 2 min: Vom Herd ziehen, 2 Minuten abkühlen lassen und dann die Quark-Whey-Mischung kräftig unterrühren. Der Brei wird dabei cremig und glänzend; ist er zu fest, 2–3 EL Wasser dazu.
 
 ## Zeitablauf
@@ -80,7 +80,7 @@ Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geb
 
 - **Mit Kirschen:** 110 g Sauerkirschen statt Apfel, kalt darauf. (+4 kcal, +0,2 g Protein, −0,1 g Fett pro Portion)
 - **Schoko-Grieß:** Whey Protein Schoko statt Vanille und 10 g Backkakao. (+14 kcal, +0,3 g Protein, +0,7 g Fett pro Portion)
-- **Weniger kcal:** Mandeln auf 15 g reduzieren. (−60 kcal, −2,1 g Protein, −5,2 g Fett pro Portion)
+- **Weniger kcal:** Mandeln auf 15 g reduzieren. (−120 kcal, −4,2 g Protein, −10,4 g Fett pro Portion)
 
 ## Tipps
 
@@ -92,16 +92,16 @@ Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geb
 |---|---:|---:|---:|---:|---:|
 | Milch 1,5 % Fett | 350 g | 165 | 11,9 | 5,3 | 16,8 |
 | Wasser | 150 g | 0 | 0 | 0 | 0 |
-| Weichweizengrieß | 90 g | 303 | 9,9 | 0,9 | 62,1 |
+| Weichweizengrieß | 70 g | 236 | 7,7 | 0,7 | 48,3 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
 | Magerquark | 150 g | 101 | 18 | 0,5 | 6 |
 | Whey Protein Vanille | 50 g | 193 | 37,5 | 3 | 4 |
 | Apfel | 110 g | 59 | 0,3 | 0,2 | 12,5 |
 | Zimt gemahlen | 2 g | 5 | 0,1 | 0 | 0,6 |
-| Mandeln gehobelt | 35 g | 210 | 7,4 | 18,2 | 2,1 |
-| **Summe** | | **1.036** | **85,1** | **28** | **104,1** |
-| **Pro Portion (÷ 2)** | | **518** | **42,5** | **14** | **52** |
+| Mandeln gehobelt | 55 g | 330 | 11,6 | 28,6 | 3,3 |
+| **Summe** | | **1.088** | **87,1** | **38,2** | **91,5** |
+| **Pro Portion (÷ 2)** | | **544** | **43,5** | **19,1** | **45,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.032 kcal gegenüber 1.036 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.085 kcal gegenüber 1.088 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

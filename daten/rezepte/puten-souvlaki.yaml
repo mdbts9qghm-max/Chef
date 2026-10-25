@@ -12,18 +12,18 @@ ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", "Pfanne 28 cm", "6 Holzsp
 zutaten:
   - gruppe: Souvlaki
   - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 350}
-  - {id: oel_s, zutat: Olivenöl, g: 10, anzeige: "2 TL"}
+  - {id: oel_s, zutat: Olivenöl, g: 15, anzeige: "1½ EL"}
   - {id: zitrone, zutat: Zitronensaft, g: 15, anzeige: "1 EL"}
   - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 2, anzeige: "2 TL"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: salz_s, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
   - gruppe: Ofenkartoffeln
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 300, hinweis: "mit Schale, gut gewaschen"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 270, hinweis: "mit Schale, gut gewaschen"}
   - {id: oel_k, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
   - {id: salz_k, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Beilage
-  - {id: skyr, zutat: Skyr natur, g: 100}
+  - {id: skyr, zutat: Skyr natur, g: 110}
   - {id: gurke, zutat: Salatgurke, g: 80, anzeige: "¼ Gurke"}
   - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 40}
 mise_en_place:
@@ -53,7 +53,7 @@ aufbewahrung:
   separat: "Skyr-Gurke und Feta getrennt lagern."
 varianten:
   - {titel: Mit Hähnchen, text: "350 g Hähnchenbrust statt Pute.", aenderung: {"Putenbrustfilet roh": -350, "Hähnchenbrustfilet roh": 350}}
-  - {titel: Mehr kcal, text: "Kartoffeln auf 500 g erhöhen.", aenderung: {"Kartoffeln festkochend roh": 200}}
+  - {titel: Mehr kcal, text: "Kartoffeln auf 500 g erhöhen.", aenderung: {"Kartoffeln festkochend roh": 230}}
   - {titel: Mit Paprika, text: "1 rote Paprika (150 g) in Stücken mit auf die Spieße stecken.", aenderung: {"Paprika rot": 150}}
 tipps:
   - "Zum Schluss ein paar Tropfen Zitronensaft über die Spieße: typisch griechisch."

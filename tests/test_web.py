@@ -127,7 +127,7 @@ def test_alle_seiten_ohne_js_fehler(seite, server, webdir):
 def test_heute_zeigt_plan(seite, server):
     seite.goto(server + "index.html?datum=2026-11-05")
     assert seite.locator(".mahlzeit").count() >= 3
-    assert "Keema-Curry" in seite.inner_text("#heute")
+    assert "Gnocchi al Forno" in seite.inner_text("#heute")
     assert seite.locator(".balken").count() == 4
     seite.goto(server + "index.html?datum=2026-10-20")
     assert "nichts geplant" in seite.inner_text("#heute")
@@ -148,11 +148,11 @@ def test_rezeptbuch_suche_und_filter(seite, server, echte_rezepte):
 def test_portionsrechner_skaliert(seite, server):
     seite.goto(server + "rezept/marry-me-chicken.html")
     zelle = seite.locator(".m[data-art=zelle]").first
-    assert zelle.inner_text() == "150 g"
+    assert zelle.inner_text() == "120 g"
     seite.click("[data-schritt='1']")
     seite.click("[data-schritt='1']")
     assert seite.inner_text("#portionen output") == "4"
-    assert zelle.inner_text() == "300 g"
+    assert zelle.inner_text() == "240 g"
     assert "4 Hähnchenbrustfilets (800 g)" in seite.inner_text("main")
 
 
@@ -219,3 +219,22 @@ def test_live_pruefung_mit_lokalen_dateien(webdir):
     assert vo.live_pruefen("https://x/", laden) == []
     kaputt = lambda url: (_ for _ in ()).throw(OSError("404")) if url.endswith("sw.js") else laden(url)
     assert vo.live_pruefen("https://x/", kaputt) == ["sw.js: 404"]
+
+
+def test_budget_in_der_app_aenderbar(seite, server):
+    seite.goto(server + "einkauf/KW-45-2026.html")
+    k = json.loads(seite.inner_text("#kostendaten"))
+    gesamt = k["woche"] + k["vorrat"]
+    assert seite.input_value("#budget-betrag") == str(config.PROFIL["einkauf"]["budget_eur_pro_woche"])
+    seite.fill("#budget-betrag", str(int(gesamt) + 50))
+    assert "Im Budget" in seite.inner_text("#budget-ergebnis")
+    seite.fill("#budget-betrag", "50")
+    assert "⚠️" in seite.inner_text("#budget-ergebnis") and "Sparvorschläge" in seite.inner_text("#budget-ergebnis")
+    seite.reload()
+    assert seite.input_value("#budget-betrag") == "50"                  # bleibt auf dem Gerät gespeichert
+    seite.goto(server + "index.html?datum=2026-11-05")
+    assert "Budget 50 €" in seite.inner_text("#heute")
+    seite.goto(server + "einkauf/KW-45-2026.html")
+    seite.click("#budget-standard")
+    assert seite.input_value("#budget-betrag") == str(config.PROFIL["einkauf"]["budget_eur_pro_woche"])
+    assert seite.fehler == []

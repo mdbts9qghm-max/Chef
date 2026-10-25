@@ -11,21 +11,21 @@ zeit: {vorbereitung: 7, kochen: 16, wartezeit: 0}
 ausstattung: [Waffeleisen, Standmixer, "kleiner Topf ca. 1 l", Backpinsel]
 zutaten:
   - gruppe: Teig
-  - {id: hafer, zutat: Haferflocken zart, g: 80}
+  - {id: hafer, zutat: Haferflocken zart, g: 70}
   - {id: quark, zutat: Magerquark, g: 200}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
   - {id: whey_teig, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 80, hinweis: "80 ml"}
   - {id: backpulver, zutat: Backpulver, g: 6, anzeige: "1½ TL"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
-  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL", hinweis: "für das Waffeleisen"}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "1 EL", hinweis: "für das Waffeleisen"}
   - gruppe: Kirschen
   - {id: kirschen, zutat: Sauerkirschen Glas abgetropft, name: Sauerkirschen, g: 115, hinweis: "abgetropft, 4 EL Saft auffangen"}
   - {id: staerke, zutat: Speisestärke, g: 5, anzeige: "1 TL"}
   - gruppe: Vanille-Skyr
   - {id: skyr, zutat: Skyr natur, g: 200}
   - {id: whey_skyr, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 10, anzeige: "1 gehäufter EL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 22, anzeige: "2 EL"}
 mise_en_place:
   - "Waffeleisen auf mittlere Stufe vorheizen (bei Geräten mit Regler: Stufe 3 von 5), bis die Kontrollleuchte erlischt."
   - "{kirschen} in einem Sieb abtropfen lassen, dabei 4 EL (60 ml) Saft auffangen. {staerke} mit 2 EL vom kalten Saft glatt rühren."
@@ -49,7 +49,7 @@ fehler:
   - "**Waffel klebt und reißt:** Eisen nicht heiß genug oder zu früh geöffnet. Lösung: Kontrollleuchte abwarten und erst öffnen, wenn kein Dampf mehr kommt."
   - "**Waffeln weich statt knusprig:** aufeinandergestapelt. Lösung: nebeneinander auf ein Gitter legen, dann bleiben sie außen kross."
   - "**Kompott flüssig:** Stärke nicht aufgekocht. Lösung: Stärke bindet erst beim Kochen, 30 Sekunden sprudeln lassen."
-anrichten: "Pro Teller 2 Waffeln, darauf 105 g Vanille-Skyr, die Hälfte des Kirschkompotts und gut 7 g gehobelte Mandeln: {portion_g} pro Portion."
+anrichten: "Pro Teller 2 Waffeln, darauf 105 g Vanille-Skyr, die Hälfte des Kirschkompotts und 11 g gehobelte Mandeln: {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 2
   einfrierbar: true
@@ -59,7 +59,7 @@ aufbewahrung:
 varianten:
   - {titel: Mehr Protein, text: "Vanille-Skyr auf 350 g erhöhen.", aenderung: {"Skyr natur": 150}}
   - {titel: Beeren statt Kirschen, text: "150 g TK-Beerenmischung kurz mit der Stärke aufkochen statt Sauerkirschen.", aenderung: {"Sauerkirschen Glas abgetropft": -115, "Beerenmischung TK": 150}}
-  - {titel: Weniger kcal, text: "Mandeln weglassen und nur 3 Waffeln backen (Rest einfrieren).", aenderung: {"Mandeln gehobelt": -15}}
+  - {titel: Weniger kcal, text: "Mandeln weglassen und nur 3 Waffeln backen (Rest einfrieren).", aenderung: {"Mandeln gehobelt": -22}}
 tipps:
   - "Eine Prise Zimt und etwas abgeriebene Zitronenschale im Teig: schmeckt nach Bäckerei-Waffel."
   - "Die Waffeln eignen sich als Vorrat: 4 Stück auf Vorrat backen, einfrieren und morgens in den Toaster."

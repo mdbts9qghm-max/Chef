@@ -140,6 +140,20 @@ def rezeptplan_markdown(plan, rezepte, db):
     return "\n".join(out) + "\n"
 
 
+def fett_gruppen(rezepte, db):
+    """Ø Fett pro Portion je Gruppe → {gruppe: (Ø, (min, max), ok)}."""
+    gruppen = {}
+    for r in rezepte.values():
+        g = "Kalorienarm" if r["hauptkategorie"] == "kalorienarm" else r["mahlzeit"]
+        gruppen.setdefault(g, []).append(nw.rezept_naehrwerte(r, db)["portion"]["fett"])
+    out = {}
+    for g, werte in gruppen.items():
+        lo, hi = config.FETT_ZIEL_PRO_MAHLZEIT[g]
+        mittel = sum(werte) / len(werte)
+        out[g] = (mittel, (lo, hi), lo <= mittel <= hi)
+    return out
+
+
 def main():
     db = nw.lade_zutaten()
     plan = lade_plan()
@@ -155,6 +169,9 @@ def main():
     for z in ist_zeilen:
         if z[3] is False:
             print(f"  ✗ {z[0]}: Soll {z[1]}, Ist {z[2]}")
+    fett = fett_gruppen(startbestand(plan, rezepte), db)
+    print("Fett Ø pro Portion:", " · ".join(f"{g} {nw.zahl(m)} g{'' if ok else f' ⚠️ Ziel {lo}–{hi} g'}"
+                                           for g, (m, (lo, hi), ok) in fett.items()))
     config.REZEPTPLAN_MD.write_text(rezeptplan_markdown(plan, rezepte, db), encoding="utf-8")
     print("rezeptplan.md aktualisiert.")
     return 0 if all(z[3] is not False for z in plan_zeilen + ist_zeilen) else 1

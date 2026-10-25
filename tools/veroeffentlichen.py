@@ -1,4 +1,5 @@
-"""„Web-App aktualisieren“ (SPEC 14): prüfen → generieren → bestand → Tests, dann Änderungen in web/ zeigen.
+"""„Web-App aktualisieren“ (SPEC 14): prüfen → generieren → bestand → Wochenpläne + Einkaufslisten → Tests,
+dann Änderungen in web/ zeigen.
 
 Veröffentlicht wird per Push auf main (Workflow .github/workflows/pages.yml) – committen erst nach OK.
 Aufruf: python3 tools/veroeffentlichen.py [--ohne-tests]
@@ -42,6 +43,12 @@ def live_pruefen(basis=config.WEB_URL, laden=None):
     return fehler
 
 
+def schritte():
+    plaene = sorted(p.stem for p in config.WOCHENPLAENE_DIR.glob("KW-*.yaml"))
+    return (SCHRITTE[:3] + [["tools/wochenplan.py", n] for n in plaene] + [["tools/einkauf.py", n] for n in plaene]
+            + SCHRITTE[3:])
+
+
 def main(argv):
     if "--live" in argv:
         fehler = live_pruefen()
@@ -49,7 +56,7 @@ def main(argv):
             print("✗", f)
         print("Live-Seite in Ordnung:", config.WEB_URL) if not fehler else None
         return 1 if fehler else 0
-    for schritt in SCHRITTE:
+    for schritt in schritte():
         if "--ohne-tests" in argv and "pytest" in schritt:
             continue
         print(f"→ python3 {' '.join(schritt)}")

@@ -99,8 +99,9 @@ essenszeiten:
   Nacht: {fruehstueck: "14:00", mittag: "17:30", abend: "01:00", snack: "04:00"}
   frei:  {fruehstueck: "08:30", mittag: "12:30", abend: "18:30", snack: "15:30"}
 
-# Fettziel: fehlendes Fett über Snacks/Extras ausgleichen (Rezepte bleiben unverändert)
-fett_strategie: extras
+# Fettziel (Entscheidung 25.10.2026): Rezepte sind fettreicher, Pläne treffen das Fettziel ohne Nüsse-Extras.
+# Extras (Mandeln/Erdnussbutter) nur noch als Notlösung, wenn ein Tag trotzdem unter dem Minimum liegt.
+fett_strategie: rezepte
 
 region:
   sprache: de

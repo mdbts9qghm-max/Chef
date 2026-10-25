@@ -12,7 +12,7 @@ ausstattung: ["Topf ca. 3 l mit Deckel", "Topf ca. 2 l mit Deckel", Sieb]
 zutaten:
   - gruppe: Chili
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 350}
-  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: paprika, zutat: Paprika rot, name: rote Paprika, g: 150, anzeige: "1 Paprika"}
@@ -28,7 +28,9 @@ zutaten:
   - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 5, anzeige: "1 Rippchen", hinweis: "Geheimzutat"}
   - {id: salz, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 100}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 55}
+  - gruppe: Topping
+  - {id: kaese, zutat: Reibekäse light, g: 40}
 mise_en_place:
   - "{zwiebel} und {paprika} in 1 cm Würfel schneiden. {knoblauch} hacken."
   - "{bohnen} und {mais} in einem Sieb abspülen und abtropfen lassen. {reis} waschen."
@@ -43,7 +45,7 @@ schritte:
     text: "{tomaten} und {bruehe} angießen, {salz} dazu, aufkochen und auf Stufe 3 von 9 mit schräg aufgelegtem Deckel 20 Minuten köcheln, gelegentlich umrühren. Bohnen, Mais und {schoko} unterrühren und weitere 5 Minuten köcheln. Garprobe: Das Hack ist durchgegart (72 °C Kerntemperatur ist nach dieser Zeit sicher erreicht), die Sauce sämig."
     timer_min: 25
   - titel: Reis kochen
-    text: "Nach 10 Minuten Köchelzeit den Reis mit 180 ml Wasser im kleinen Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Nach 10 Minuten Köchelzeit den Reis mit 100 ml Wasser im kleinen Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
 zeitablauf:
   - "Während das Chili köchelt, den Reis kochen. Chili schmeckt am zweiten Tag besser: ideal für Meal Prep."
@@ -51,7 +53,7 @@ fehler:
   - "**Chili wässrig:** zu kurz gekocht. Lösung: ohne Deckel 5 Minuten länger köcheln."
   - "**Zu scharf:** Chiliflocken unterschätzt. Lösung: 1 EL Skyr pro Portion darauf (nicht mitgerechnet: ca. +10 kcal)."
   - "**Bohnen zerfallen:** zu früh dazugegeben. Lösung: erst die letzten 5 Minuten."
-anrichten: "Pro Teller die Hälfte des Reises und die Hälfte des Chilis: {portion_g} pro Portion."
+anrichten: "Pro Teller die Hälfte des Reises und die Hälfte des Chilis, mit der Hälfte von {kaese} bestreut (schmilzt in 1 Minute): {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 4
   einfrierbar: true
@@ -61,7 +63,7 @@ aufbewahrung:
 varianten:
   - {titel: Mit Skyr-Topping, text: "Je 75 g Skyr als Sour-Cream-Ersatz.", aenderung: {"Skyr natur": 150}}
   - {titel: Mit Putenhack, text: "350 g Putenhack statt Rinderhack.", aenderung: {"Rinderhackfleisch 5 % Fett roh": -350, "Putenhackfleisch roh": 350}}
-  - {titel: Ohne Reis, text: "Reis weglassen und mit 30 g Reibekäse light überbacken (kalorienärmer).", aenderung: {"Basmatireis ungekocht": -100, "Reibekäse light": 30}}
+  - {titel: Ohne Reis, text: "Reis weglassen und mit 30 g Reibekäse light extra überbacken.", aenderung: {"Basmatireis ungekocht": -55, "Reibekäse light": 30}}
 tipps:
   - "Die Schokolade ist kein Fehler: Sie rundet die Säure der Tomaten ab und macht das Chili tiefer."
 gargewicht_g: null

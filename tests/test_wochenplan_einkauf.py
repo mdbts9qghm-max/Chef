@@ -101,13 +101,13 @@ def test_zu_wenig_protein(plan, rezepte, db, packungen):
 
 def test_aussortiertes_rezept_nie_geplant(plan, rezepte, db, packungen):
     r = copy.deepcopy(rezepte)
-    r["marry-me-chicken"]["bewertung"] = {"sterne": 2, "kommentar": "zu trocken", "datum": "2026-11-01"}
+    r["haehnchen-piccata"]["bewertung"] = {"sterne": 2, "kommentar": "zu trocken", "datum": "2026-11-01"}
     assert any("aussortiert" in f for f in fehler(plan, r, db, packungen))
 
 
 def test_drei_sterne_max_einmal(plan, rezepte, db, packungen):
     r = copy.deepcopy(rezepte)
-    for i in ("marry-me-chicken", "smash-burger"):
+    for i in ("haehnchen-piccata", "rindergulasch"):
         r[i]["bewertung"] = {"sterne": 3, "kommentar": None, "datum": None}
     assert any("3-Sterne" in f for f in fehler(plan, r, db, packungen))
 
@@ -159,8 +159,8 @@ def test_kontrollrechnung(plan, rezepte, db, packungen):
 def test_aufrunden_auf_packungen(plan, rezepte, db, packungen):
     listen, _ = ek.berechne(plan, rezepte, db, packungen, vorrat=[])
     z = next(z for z in listen[0].zeilen if z.zutat == "Rinderhackfleisch 5 % Fett roh")
-    assert z.bedarf == pytest.approx(350 + 2 * 350 + 2 * 400)      # Lasagne + Chili × 2 + Frikadellen × 2
-    assert z.pakete == math.ceil(z.bedarf / 400) == 5
+    assert z.bedarf == pytest.approx(2 * 350 * 0.75 + 400 * 1.25)   # Chili × 2 Ladungen × 0,75 + Frikadellen × 1,25
+    assert z.pakete == math.ceil(z.bedarf / 400) == 3
 
 
 def test_vorratsabzug(plan, rezepte, db, packungen):
@@ -178,7 +178,7 @@ def test_zwei_einkaufstermine_getrennt(plan, rezepte, db, packungen):
     listen, _ = ek.berechne(plan, rezepte, db, packungen)
     assert [l.datum for l in listen] == [dt.date(2026, 10, 31), dt.date(2026, 11, 7)]
     zweite = {z.zutat for z in listen[1].zeilen}
-    assert "Burger-Brötchen" in zweite and "Burger-Brötchen" not in {z.zutat for z in listen[0].zeilen}
+    assert "Rindergulasch roh" in zweite and "Rindergulasch roh" not in {z.zutat for z in listen[0].zeilen}
 
 
 def test_faktor_skaliert_einkauf(rezepte):
@@ -198,8 +198,9 @@ def test_reste_landen_im_vorrat(plan, rezepte, db, packungen, tmp_path):
     ek.reste_uebernehmen(reste, pfad)
     neu = {v["zutat"]: v for v in ek.lade_vorrat(pfad)}
     assert neu["Rapsöl"]["g"] is None                      # unbekannte Menge bleibt unbekannt
-    assert neu["Feta 45 % Fett i. Tr."]["g"] == round(reste["Feta 45 % Fett i. Tr."]["g"])
-    assert "haltbar_bis" in neu["Feta 45 % Fett i. Tr."]
+    rest = next(z for z, v in reste.items() if z != "Rapsöl" and v["g"])
+    assert neu[rest]["g"] == round(reste[rest]["g"])
+    assert "haltbar_bis" in neu[rest]
 
 
 def test_einkaufsliste_markdown(plan, rezepte, db, packungen):
@@ -210,3 +211,18 @@ def test_einkaufsliste_markdown(plan, rezepte, db, packungen):
         assert teil in md, teil
     reihenfolge = [md.index(f"### {a}") for a in config.PROFIL["einkauf"]["abteilungen"] if f"### {a}" in md.split("## Einkauf Samstag, 07.11.2026")[0]]
     assert reihenfolge == sorted(reihenfolge)
+
+
+def test_kw45_ohne_extras_regelkonform(rezepte, db, packungen):
+    """Fettstrategie „rezepte“: Der echte Plan trifft alle Regeln aus 8.2 ohne Nüsse-Extras."""
+    echt = wp.lade_plan(config.WOCHENPLAENE_DIR / "KW-45-2026.yaml")
+    assert all(not t.get("extras") for t in echt["tage"])
+    assert fehler(echt, rezepte, db, packungen) == []
+
+
+def test_kosten_teuerste_posten_je_zutat(plan, rezepte, db, packungen):
+    listen, _ = ek.berechne(plan, rezepte, db, packungen)
+    k = ek.kosten(listen)
+    namen = [t["zutat"] for t in k["teuer"]]
+    assert len(namen) == len(set(namen)) == 3                 # Zutat aus beiden Einkäufen nur einmal
+    assert k["woche"] + k["vorrat"] == pytest.approx(sum(z.kosten for l in listen for z in l.zeilen if z.pakete))

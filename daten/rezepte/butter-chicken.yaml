@@ -8,7 +8,7 @@ kueche: Indisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „High-Protein Butter Chicken“"
   link: null
-  aenderungen: "Sahne (meist 200 ml) durch Skyr und Frischkäse light ersetzt, Butter auf 10 g reduziert. Spart ca. 300 kcal pro Portion gegenüber dem Restaurant-Klassiker."
+  aenderungen: "Sahne (meist 200 ml) durch Skyr und Frischkäse light ersetzt, 30 g Butter statt eines ganzen Stücks für den typischen Buttergeschmack. Spart ca. 250 kcal pro Portion gegenüber dem Restaurant-Klassiker."
 schwierigkeit: mittel
 zeit: {vorbereitung: 10, kochen: 25, wartezeit: 30}
 ausstattung: ["Pfanne 28 cm mit hohem Rand", "Topf ca. 2 l mit Deckel", Fleischthermometer, Pürierstab oder Standmixer]
@@ -20,8 +20,8 @@ zutaten:
   - {id: paprika, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
   - {id: salz_m, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - gruppe: Sauce
-  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
-  - {id: butter, zutat: Butter, g: 10, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "1 EL"}
+  - {id: butter, zutat: Butter, g: 30, anzeige: "3 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
@@ -29,18 +29,18 @@ zutaten:
   - {id: curry, zutat: Currypulver, g: 3, anzeige: "1 TL"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 30, anzeige: "2 EL"}
   - {id: tomaten, zutat: Gehackte Tomaten Dose, name: gehackte Tomaten, g: 200, anzeige: "½ Dose"}
-  - {id: frischkaese, zutat: Frischkäse light, g: 40, anzeige: "1 gehäufter EL"}
-  - {id: skyr_s, zutat: Skyr natur, name: Skyr, g: 100}
+  - {id: frischkaese, zutat: Frischkäse light, g: 60, anzeige: "2 EL"}
+  - {id: skyr_s, zutat: Skyr natur, name: Skyr, g: 115}
   - {id: salz_s, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 115}
 mise_en_place:
   - "{haehnchen} in 3 cm Würfel schneiden und mit {skyr_m}, {garam}, {paprika} und {salz_m} mischen. Abgedeckt 30 Minuten (oder bis 12 Stunden) im Kühlschrank marinieren."
   - "{zwiebel} grob würfeln, {knoblauch} und {ingwer} fein reiben. {reis} waschen."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Reis mit 205 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
   - titel: Hähnchen anbraten
     text: "{oel} in der Pfanne auf Stufe 8 von 9 erhitzen. Hähnchen samt Marinade in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 2 Minuten anbraten, bis es Röstspuren hat (innen noch nicht durch). Herausnehmen."
@@ -70,7 +70,7 @@ aufbewahrung:
 varianten:
   - {titel: Mit Pute, text: "400 g Putenbrust statt Hähnchen.", aenderung: {"Hähnchenbrustfilet roh": -400, "Putenbrustfilet roh": 400}}
   - {titel: Mit Kichererbsen, text: "120 g Kichererbsen mit dem Hähnchen in die Sauce.", aenderung: {"Kichererbsen abgetropft": 120}}
-  - {titel: Weniger kcal, text: "Reis auf 100 g reduzieren, Butter weglassen.", aenderung: {"Basmatireis ungekocht": -50, "Butter": -10}}
+  - {titel: Weniger kcal, text: "Reis auf 80 g und Butter auf 10 g reduzieren.", aenderung: {"Basmatireis ungekocht": -35, "Butter": -20}}
 tipps:
   - "Wer es länger marinieren lässt (über Nacht), bekommt zarteres und würzigeres Hähnchen."
   - "Eine Prise Zucker oder 1 TL Honig rundet die Tomatensäure ab (+16 kcal)."

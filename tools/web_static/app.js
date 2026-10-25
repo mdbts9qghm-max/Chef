@@ -10,6 +10,8 @@
     var s = Number(x).toLocaleString("de-DE", { minimumFractionDigits: 0, maximumFractionDigits: nk });
     return s;
   }
+  function euro(x) { return Number(x).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €"; }
+  function budgetWert() { var b = speicher("budget"); return typeof b === "number" && b >= 0 ? b : D.budget; }
   function gramm(g) { return zahl(g, g >= 10 ? 0 : 1) + " g"; }
   var BRUECHE = { "½": 0.5, "⅓": 1 / 3, "⅔": 2 / 3, "¼": 0.25, "¾": 0.75 };
   function bruchText(v) {
@@ -127,6 +129,9 @@
       ek.appendChild(ul); ziel.appendChild(ek);
     }
     ziel.appendChild(el("p", {}, [el("a", { href: basis + "woche/" + plan.name + ".html", text: "Ganzen Wochenplan ansehen →" })]));
+    if (D.einkauf && budgetWert()) {
+      ziel.appendChild(el("p", { class: "leise" }, [el("a", { href: basis + D.einkauf, text: "🛒 Einkaufsliste · Budget " + zahl(budgetWert(), 0) + " € →" })]));
+    }
   }
 
   // --- Rezeptbuch ---------------------------------------------------------------------
@@ -321,6 +326,43 @@
       });
       meldung("Alle Haken zurückgesetzt");
     });
+    budget();
+  }
+
+  function budget() {
+    var karte = document.getElementById("budget");
+    if (!karte) return;
+    var k = JSON.parse(document.getElementById("kostendaten").textContent);
+    var eingabe = document.getElementById("budget-betrag"), ergebnis = document.getElementById("budget-ergebnis");
+    var standard = Number(karte.dataset.standard);
+    function zeige() {
+      var b = Number(eingabe.value), gesamt = k.woche + k.vorrat;
+      ergebnis.innerHTML = "";
+      ergebnis.appendChild(el("p", { html: "Wochenbedarf ca. <strong>" + euro(k.woche) + "</strong>, dazu einmalige Vorratskäufe ca. " +
+        euro(k.vorrat) + " (z. B. Whey, Gewürze, Öl – reichen mehrere Wochen)." }));
+      if (!(b > 0)) return;
+      if (gesamt <= b) {
+        ergebnis.appendChild(el("p", { class: "ok", text: "✓ Im Budget – noch " + euro(b - gesamt) + " Luft." }));
+        return;
+      }
+      ergebnis.appendChild(el("p", { class: "warn", text: k.woche <= b ? "⚠️ Mit Vorratskäufen über Budget (" + euro(gesamt) + ", " + euro(gesamt - b) + " zu viel)."
+        : "⚠️ Schon der Wochenbedarf liegt über dem Budget (" + euro(k.woche - b) + " zu viel)." }));
+      var ul = el("ul", {});
+      k.teuer.forEach(function (t) { ul.appendChild(el("li", { text: t.zutat + " (" + euro(t.kosten) + "): günstigere Alternative im Plan tauschen oder Eigenmarke wählen" })); });
+      ul.appendChild(el("li", { text: k.spar_whey }));
+      ergebnis.appendChild(el("p", { html: "<strong>Sparvorschläge:</strong>" }));
+      ergebnis.appendChild(ul);
+    }
+    eingabe.value = budgetWert();
+    eingabe.addEventListener("input", function () {
+      var b = Number(eingabe.value);
+      if (eingabe.value !== "" && b >= 0) speicher("budget", b);
+      zeige();
+    });
+    document.getElementById("budget-standard").addEventListener("click", function () {
+      eingabe.value = standard; speicher("budget", standard); zeige(); meldung("Budget auf " + standard + " € zurückgesetzt");
+    });
+    zeige();
   }
 
   heute(); rezeptbuch(); rezeptseite(); einkauf();

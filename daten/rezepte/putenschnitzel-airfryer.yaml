@@ -18,17 +18,18 @@ zutaten:
   - {id: mehl, zutat: Weizenmehl Type 405, name: Mehl, g: 20, anzeige: "2 EL"}
   - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
   - {id: panko, zutat: Paniermehl, g: 50, anzeige: "5 EL"}
-  - {id: oel_s, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}
+  - {id: oel_s, zutat: Rapsöl, g: 15, anzeige: "1½ EL"}
   - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL", hinweis: "oder 2 Zitronenspalten"}
   - gruppe: Bratkartoffeln
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: festkochende Kartoffeln, g: 500, hinweis: "geschält gewogen"}
-  - {id: oel_k, zutat: Rapsöl, g: 12, anzeige: "1 EL"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: festkochende Kartoffeln, g: 400, hinweis: "geschält gewogen"}
+  - {id: oel_k, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
   - {id: salz_k, zutat: Salz, g: 2, anzeige: "⅓ TL"}
 mise_en_place:
   - "{kartoffeln} schälen und in 3 mm dünne Scheiben schneiden (mit dem Gemüsehobel geht es am schnellsten). {zwiebel} halbieren und in feine Streifen schneiden."
   - "{pute:n} zwischen Gefrierbeutel legen und mit dem Nudelholz auf 1 cm Dicke klopfen. Mit {salz_s}, {pfeffer} und {paprika} würzen."
-  - "Paniertstraße aufbauen: Teller 1 {mehl}, Teller 2 {ei} mit 1 EL Wasser verquirlt, Teller 3 {panko}."
+  - "Paniertstraße aufbauen: Teller 1 {mehl}, Teller 2 {ei} mit 1 EL Wasser verquirlt, Teller 3 {panko} mit {parmesan} gemischt (gibt eine würzige, goldbraune Kruste)."
 schritte:
   - titel: Bratkartoffeln starten
     text: "{oel_k} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen (ca. 2 min). Kartoffelscheiben möglichst in einer Lage hineingeben, Deckel auflegen und 8 Minuten braten, nach 4 Minuten einmal wenden. Dann den Deckel abnehmen, auf Stufe 6 von 9 schalten und weitere 10–12 Minuten ohne Deckel braten, nur alle 3 Minuten wenden, bis die Scheiben goldbraun und knusprig sind."
@@ -57,8 +58,8 @@ aufbewahrung:
   separat: "Schnitzel und Kartoffeln getrennt lagern."
 varianten:
   - {titel: Hähnchenschnitzel, text: "360 g Hähnchenbrust statt Pute, gleiche Garzeit.", aenderung: {"Putenbrustfilet roh": -360, "Hähnchenbrustfilet roh": 360}}
-  - {titel: Mit Kartoffelpüree, text: "Statt Bratkartoffeln Püree aus 500 g Kartoffeln, 120 ml Milch und 10 g Butter; Öl der Kartoffeln entfällt.", aenderung: {"Rapsöl": -12, "Zwiebel": -80, "Milch 1,5 % Fett": 120, "Butter": 10}}
-  - {titel: Weniger kcal, text: "Kartoffeln auf 350 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -150}}
+  - {titel: Mit Kartoffelpüree, text: "Statt Bratkartoffeln Püree aus 400 g Kartoffeln, 120 ml Milch und 10 g Butter; Öl der Kartoffeln entfällt.", aenderung: {"Rapsöl": -20, "Zwiebel": -80, "Milch 1,5 % Fett": 120, "Butter": 10}}
+  - {titel: Weniger kcal, text: "Kartoffeln auf 300 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -100}}
 tipps:
   - "Panko statt normalem Paniermehl macht die Panade noch krosser; die Nährwerte sind praktisch gleich."
   - "Etwas Senf (1 TL) auf die Schnitzel streichen, bevor sie ins Mehl kommen: würziger und die Panade hält besser."

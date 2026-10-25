@@ -20,22 +20,23 @@ zutaten:
   - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
   - {id: salz_k, zutat: Salz, g: 3, anzeige: "½ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
-  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
   - gruppe: Joghurt-Knoblauch-Sauce
   - {id: skyr, zutat: Skyr natur, g: 200}
   - {id: knoblauch, zutat: Knoblauch, g: 3, anzeige: "1 Zehe"}
   - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
   - {id: salz_s, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Beilage
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 140}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 95}
   - {id: tomaten, zutat: Tomaten, g: 100, anzeige: "1 Tomate"}
+  - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 40}
 mise_en_place:
   - "{zwiebel} sehr fein reiben oder hacken, {petersilie} fein hacken."
   - "Sauce: {skyr} mit fein geriebenem {knoblauch}, {zitrone} und {salz_s} verrühren."
   - "{reis} waschen. {tomaten} in Spalten schneiden."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 250 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Reis mit 170 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
   - titel: Köfte formen
     text: "{hack}, Zwiebel, Petersilie, {panko}, {kreuzkuemmel}, {paprika}, {chili}, {salz_k} und {pfeffer} 2 Minuten kräftig verkneten, bis die Masse klebrig wird. Mit nassen Händen 12 längliche Köfte formen (je ca. 40 g, 7 cm lang) und rundum dünn mit {oel} einpinseln."
@@ -49,7 +50,7 @@ fehler:
   - "**Köfte zerfallen:** zu kurz geknetet. Lösung: 2 Minuten kneten, bis die Masse klebt."
   - "**Trocken:** zu lange gegart. Lösung: bei 72 °C raus; 5 % Hack verzeiht kein Übergaren."
   - "**Sauce zu scharf:** Knoblauch sehr frisch. Lösung: nur ½ Zehe nehmen und 10 Minuten durchziehen lassen."
-anrichten: "Pro Teller die Hälfte des Reises, 6 Köfte, Tomatenspalten und die Hälfte der Sauce: {portion_g} pro Portion."
+anrichten: "Pro Teller die Hälfte des Reises, 6 Köfte, Tomatenspalten und die Hälfte der Sauce, mit der Hälfte von {feta} zerbröselt darüber: {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: true
@@ -58,7 +59,7 @@ aufbewahrung:
   separat: "Sauce und Tomaten getrennt, Reis innerhalb von 1 Stunde kühlen."
 varianten:
   - {titel: Mit Putenhack, text: "400 g Putenhack statt Rinderhack.", aenderung: {"Rinderhackfleisch 5 % Fett roh": -400, "Putenhackfleisch roh": 400}}
-  - {titel: Im Wrap, text: "Statt Reis mit Sauce und Tomaten in 2 Weizen-Tortillas.", aenderung: {"Basmatireis ungekocht": -140, "Weizen-Tortilla-Wraps": 124}}
+  - {titel: Im Wrap, text: "Statt Reis mit Sauce und Tomaten in 2 Weizen-Tortillas.", aenderung: {"Basmatireis ungekocht": -95, "Weizen-Tortilla-Wraps": 124}}
   - {titel: Mit Feta, text: "40 g Feta über die Tomaten bröseln.", aenderung: {"Feta 45 % Fett i. Tr.": 40}}
 tipps:
   - "Die Zwiebel fein reiben statt hacken: Die Köfte werden saftiger und halten besser."

@@ -14,25 +14,25 @@ zeit: {vorbereitung: 5, kochen: 20, wartezeit: 0}
 ausstattung: [Airfryer, "Topf ca. 2 l mit Deckel", Backpapier für den Airfryer]
 zutaten:
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150, hinweis: "oder Sushi-Reis"}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 140, hinweis: "oder Sushi-Reis"}
   - gruppe: Lachs
   - {id: lachs, zutat: Lachsfilet ohne Haut roh, name: Lachsfilet, g: 350, hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
   - {id: soja, zutat: Sojasauce, g: 20, anzeige: "1 EL"}
   - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
   - gruppe: Sriracha-Skyr & Topping
-  - {id: skyr, zutat: Skyr natur, g: 100}
+  - {id: skyr, zutat: Skyr natur, g: 110}
   - {id: sriracha, zutat: Sriracha, g: 15, anzeige: "1 EL"}
   - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
   - {id: gurke, zutat: Salatgurke, name: Salatgurke, g: 150, anzeige: "⅓ Gurke"}
   - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 20, anzeige: "1 Stange"}
-  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 3, anzeige: "½ TL"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 8, anzeige: "1½ TL"}
 mise_en_place:
   - "{lachs} am Vorabend im Kühlschrank auftauen und trocken tupfen. In 3 cm Würfel schneiden."
   - "{soja} und {honig} verrühren, die Lachswürfel darin wenden."
   - "{skyr}, {sriracha} und {zitrone} glatt rühren. {gurke} in dünne Scheiben, {fruehlingszwiebeln} in Ringe schneiden."
 schritte:
   - titel: Reis kochen
-    text: "{reis} waschen und mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "{reis} waschen und mit 250 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
   - titel: Lachs im Airfryer
     text: "Airfryer auf 200 °C 3 Minuten vorheizen. Lachswürfel auf Backpapier in den Korb legen (mit Abstand) und bei 200 °C 7–8 Minuten garen, bis die Ränder karamellisiert sind. Garprobe: Lachs ist innen saftig und blättert leicht auf; 50–55 °C Kerntemperatur für glasig, 60 °C für durch."
@@ -54,8 +54,8 @@ aufbewahrung:
   separat: "Gurke und Sriracha-Skyr getrennt lagern."
 varianten:
   - {titel: Mit Garnelen, text: "350 g Garnelen statt Lachs, 6 Minuten im Airfryer.", aenderung: {"Lachsfilet ohne Haut roh": -350, "Garnelen roh geschält": 350}}
-  - {titel: Weniger kcal, text: "Reis auf 100 g reduzieren.", aenderung: {"Basmatireis ungekocht": -50}}
-  - {titel: Mehr Protein, text: "Sriracha-Skyr auf 200 g Skyr verdoppeln.", aenderung: {"Skyr natur": 100}}
+  - {titel: Weniger kcal, text: "Reis auf 100 g reduzieren.", aenderung: {"Basmatireis ungekocht": -40}}
+  - {titel: Mehr Protein, text: "Sriracha-Skyr auf 220 g Skyr verdoppeln.", aenderung: {"Skyr natur": 110}}
 tipps:
   - "TikTok-Trick: Reis und Lachs in der Schüssel mit dem Löffel zerdrücken und mischen – so schmeckt jeder Bissen nach allem."
 gargewicht_g: null

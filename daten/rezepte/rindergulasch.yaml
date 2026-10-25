@@ -11,8 +11,8 @@ zeit: {vorbereitung: 15, kochen: 105, wartezeit: 0}
 ausstattung: ["Bräter oder schwerer Topf ca. 3 l mit Deckel", "Topf ca. 2 l"]
 zutaten:
   - gruppe: Gulasch
-  - {id: rind, zutat: Rindergulasch roh, name: Rindergulasch, g: 500, hinweis: "aus der Schulter, in 3 cm Würfeln"}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: rind, zutat: Rindergulasch roh, name: Rindergulasch, g: 510, hinweis: "aus der Schulter, in 3 cm Würfeln"}
+  - {id: oel, zutat: Rapsöl, g: 25, anzeige: "2½ EL"}
   - {id: zwiebeln, zutat: Zwiebel, name: Zwiebeln, g: 250, anzeige: "3 Zwiebeln"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 30, anzeige: "2 EL"}
@@ -23,7 +23,7 @@ zutaten:
   - {id: salz_g, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
   - gruppe: Salzkartoffeln
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 500, hinweis: "geschält gewogen"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 400, hinweis: "geschält gewogen"}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Kochwasser, g: 10, anzeige: "2 TL", nicht_mitgerechnet: true}
 mise_en_place:
   - "{rind} trocken tupfen; zu große Stücke auf 3 cm schneiden."
@@ -60,9 +60,9 @@ aufbewahrung:
   aufwaermen: "Im Topf auf Stufe 4 von 9 mit 2 EL Wasser 5–6 Minuten oder Mikrowelle 600 W, 3 Minuten abgedeckt, nach der Hälfte umrühren."
   separat: "Gulasch innerhalb von 1 Stunde abkühlen und kühlen."
 varianten:
-  - {titel: Mit Nudeln, text: "150 g Hartweizennudeln statt Kartoffeln.", aenderung: {"Kartoffeln festkochend roh": -500, "Hartweizennudeln ungekocht": 150}}
+  - {titel: Mit Nudeln, text: "150 g Hartweizennudeln statt Kartoffeln.", aenderung: {"Kartoffeln festkochend roh": -400, "Hartweizennudeln ungekocht": 150}}
   - {titel: Mit roter Paprika, text: "1 rote Paprika (150 g) in Streifen 20 Minuten vor Ende mitschmoren.", aenderung: {"Paprika rot": 150}}
-  - {titel: Weniger kcal, text: "Kartoffeln auf 300 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -200}}
+  - {titel: Weniger kcal, text: "Kartoffeln auf 300 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -100}}
 tipps:
   - "Ein Schuss Zitronensaft (1 TL) ganz zum Schluss hebt die Aromen."
   - "Nach dem Anbraten den Bratensatz gründlich lösen: Darin steckt der Geschmack."

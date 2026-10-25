@@ -25,8 +25,8 @@ zutaten:
   - gruppe: Topping
   - {id: skyr, zutat: Skyr natur, g: 200}
   - {id: beeren, zutat: Beerenmischung TK, g: 150}
-  - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+  - {id: honig, zutat: Honig, g: 5, anzeige: "1 TL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 25, anzeige: "2½ EL"}
 mise_en_place:
   - "{beeren} 1½ Minuten bei 600 W in der Mikrowelle auftauen."
   - "{toast} bereitlegen; leicht angetrocknetes Brot vom Vortag saugt besser und zerfällt nicht."
@@ -49,7 +49,7 @@ fehler:
   - "**Innen noch flüssig:** Hitze zu hoch, außen schnell braun. Lösung: Stufe 6 von 9, lieber 30 Sekunden länger."
   - "**Toast zerfällt:** zu lange eingeweicht oder sehr frisches Brot. Lösung: 15 Sekunden pro Seite, Brot vom Vortag."
   - "**Schmeckt nach Rührei:** Zimt und Vanille fehlen. Lösung: Zimt nicht weglassen, Vanille-Whey verwenden."
-anrichten: "Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, 1 TL Honig und 7 g Mandeln: {portion_g} pro Portion."
+anrichten: "Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, ½ TL Honig und gut 12 g Mandeln: {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 1
   einfrierbar: true
@@ -58,8 +58,8 @@ aufbewahrung:
   separat: "Topping getrennt lagern."
 varianten:
   - {titel: Mehr Protein, text: "Skyr-Topping auf 300 g erhöhen.", aenderung: {"Skyr natur": 100}}
-  - {titel: Bananen-Zimt, text: "1 kleine Banane (100 g) in Scheiben statt Beeren, Honig weglassen.", aenderung: {"Beerenmischung TK": -150, "Banane geschält": 100, "Honig": -10}}
-  - {titel: Weniger kcal, text: "Mandeln weglassen und nur 1 TL Öl verwenden.", aenderung: {"Mandeln gehobelt": -15, "Rapsöl": -4}}
+  - {titel: Bananen-Zimt, text: "1 kleine Banane (100 g) in Scheiben statt Beeren, Honig weglassen.", aenderung: {"Beerenmischung TK": -150, "Banane geschält": 100, "Honig": -5}}
+  - {titel: Weniger kcal, text: "Mandeln weglassen und nur 1 TL Öl verwenden.", aenderung: {"Mandeln gehobelt": -25, "Rapsöl": -4}}
 tipps:
   - "Eine Prise Salz in der Eiermilch macht den Geschmack runder und süßer."
   - "Für Extra-Crunch die Scheiben vor dem Braten auf einer Seite in gehobelte Mandeln drücken."

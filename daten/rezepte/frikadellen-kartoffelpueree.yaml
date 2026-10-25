@@ -12,7 +12,7 @@ ausstattung: ["Pfanne 28 cm", "Topf ca. 3 l", Kartoffelstampfer, Fleischthermome
 zutaten:
   - gruppe: Frikadellen
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 400}
-  - {id: quark, zutat: Magerquark, g: 80, hinweis: "macht sie saftig"}
+  - {id: quark, zutat: Magerquark, g: 85, hinweis: "macht sie saftig"}
   - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
   - {id: panko, zutat: Paniermehl, g: 30, anzeige: "3 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
@@ -22,10 +22,10 @@ zutaten:
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
   - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
   - gruppe: Kartoffelpüree
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 500, hinweis: "geschält gewogen; mehligkochende werden noch cremiger"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 470, hinweis: "geschält gewogen; mehligkochende werden noch cremiger"}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Kochwasser, g: 10, anzeige: "2 TL", nicht_mitgerechnet: true}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 150, hinweis: "150 ml, warm"}
-  - {id: butter, zutat: Butter, g: 10, anzeige: "2 TL"}
+  - {id: butter, zutat: Butter, g: 15, anzeige: "1½ EL"}
   - {id: salz_p, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
 mise_en_place:
   - "{kartoffeln} schälen und in 3 cm große Stücke schneiden."
@@ -58,8 +58,8 @@ aufbewahrung:
   aufwaermen: "Mikrowelle 600 W, 2½–3 Minuten abgedeckt, Püree mit 2 EL Milch oder Wasser (nicht mitgerechnet) verrühren. Frikadellen schmecken auch kalt."
 varianten:
   - {titel: Mit Putenhack, text: "400 g Putenhack statt Rinderhack.", aenderung: {"Rinderhackfleisch 5 % Fett roh": -400, "Putenhackfleisch roh": 400}}
-  - {titel: Weniger kcal, text: "Kartoffeln auf 350 g reduzieren und Butter weglassen.", aenderung: {"Kartoffeln festkochend roh": -150, "Butter": -10}}
-  - {titel: Als Burger-Patty, text: "Masse zu 4 Patties formen und mit 2 Burger-Brötchen statt Püree servieren.", aenderung: {"Kartoffeln festkochend roh": -500, "Milch 1,5 % Fett": -150, "Butter": -10, "Burger-Brötchen": 150}}
+  - {titel: Weniger kcal, text: "Kartoffeln auf 350 g reduzieren und Butter weglassen.", aenderung: {"Kartoffeln festkochend roh": -120, "Butter": -15}}
+  - {titel: Als Burger-Patty, text: "Masse zu 4 Patties formen und mit 2 Burger-Brötchen statt Püree servieren.", aenderung: {"Kartoffeln festkochend roh": -470, "Milch 1,5 % Fett": -150, "Butter": -15, "Burger-Brötchen": 150}}
 tipps:
   - "Eine Prise geriebene Muskatnuss im Püree (falls vorhanden) gibt den Klassiker-Geschmack."
   - "Der Magerquark ersetzt das eingeweichte Brötchen: Die Frikadellen werden saftig und bekommen extra Protein."

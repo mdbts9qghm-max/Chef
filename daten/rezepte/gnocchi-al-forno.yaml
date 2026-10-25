@@ -8,14 +8,14 @@ kueche: Italienisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Baked Gnocchi“ / „One-Pan Gnocchi“"
   link: null
-  aenderungen: "Sahne-Tomatensauce und Vollfett-Mozzarella durch reine Tomatensauce mit Putenhack und Mozzarella light ersetzt; dadurch ca. 50 g Protein pro Portion."
+  aenderungen: "Sahne-Tomatensauce und Vollfett-Mozzarella durch reine Tomatensauce mit Putenhack und Mozzarella light ersetzt; dadurch über 50 g Protein pro Portion."
 schwierigkeit: leicht
 zeit: {vorbereitung: 10, kochen: 30, wartezeit: 0}
 ausstattung: [Backofen, "Pfanne 28 cm", "Auflaufform 20 × 20 cm", Fleischthermometer]
 zutaten:
   - gruppe: Sauce
   - {id: hack, zutat: Putenhackfleisch roh, name: Putenhackfleisch, g: 300}
-  - {id: oel, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: oel, zutat: Olivenöl, g: 15, anzeige: "1½ EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 60, anzeige: "½ Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 20, anzeige: "1 gehäufter EL"}
@@ -26,8 +26,8 @@ zutaten:
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
   - {id: wasser, zutat: Wasser, g: 100, hinweis: "100 ml"}
   - gruppe: Auflauf
-  - {id: gnocchi, zutat: Kartoffelgnocchi Kühlregal, name: Gnocchi, g: 400, hinweis: "aus dem Kühlregal, ungekocht"}
-  - {id: mozzarella, zutat: Mozzarella light, g: 100, hinweis: "abgetropft, in Scheiben"}
+  - {id: gnocchi, zutat: Kartoffelgnocchi Kühlregal, name: Gnocchi, g: 330, hinweis: "aus dem Kühlregal, ungekocht"}
+  - {id: mozzarella, zutat: Mozzarella light, g: 150, hinweis: "abgetropft, in Scheiben"}
 mise_en_place:
   - "Backofen auf 200 °C Ober-/Unterhitze (180 °C Umluft) vorheizen, Rost in die mittlere Schiene."
   - "{zwiebel} fein würfeln, {knoblauch} hacken, {mozzarella} in dünne Scheiben schneiden."
@@ -59,7 +59,7 @@ aufbewahrung:
 varianten:
   - {titel: Mit Rinderhack, text: "300 g Rinderhack 5 % statt Putenhack.", aenderung: {"Putenhackfleisch roh": -300, "Rinderhackfleisch 5 % Fett roh": 300}}
   - {titel: Mit Spinat, text: "100 g Babyspinat mit den Gnocchi unterheben.", aenderung: {"Babyspinat": 100}}
-  - {titel: Weniger kcal, text: "Gnocchi auf 300 g reduzieren.", aenderung: {"Kartoffelgnocchi Kühlregal": -100}}
+  - {titel: Weniger kcal, text: "Gnocchi auf 250 g reduzieren.", aenderung: {"Kartoffelgnocchi Kühlregal": -80}}
 tipps:
   - "Ein paar Blätter frisches Basilikum nach dem Backen (falls vorhanden) machen es zum Restaurant-Gericht."
 gargewicht_g: null

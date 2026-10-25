@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 221 kcal | 10 % |
-| Protein | 26,1 g | 18 % |
-| Fett | 4 g | 4 % |
-| davon gesättigt | 1,1 g |  |
-| Kohlenhydrate | 18,9 g | 10 % |
-| davon Zucker | 16,4 g |  |
-| Ballaststoffe | 2,2 g |  |
+| Kalorien | 256 kcal | 11 % |
+| Protein | 27,6 g | 19 % |
+| Fett | 7,9 g | 8 % |
+| davon gesättigt | 1,4 g |  |
+| Kohlenhydrate | 17,2 g | 9 % |
+| davon Zucker | 15 g |  |
+| Ballaststoffe | 2,9 g |  |
 | Salz | 0,2 g |  |
 
-- **Protein pro 100 kcal:** 11,8 g
-- **Makroverteilung (Energie):** Protein 48 % · Kohlenhydrate 35 % · Fett 17 %
-- **Gewicht fertig:** ca. 470 g gesamt · **ca. 240 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 10,8 g
+- **Makroverteilung (Energie):** Protein 44 % · Kohlenhydrate 28 % · Fett 28 %
+- **Gewicht fertig:** ca. 470 g gesamt · **ca. 230 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -35,17 +35,17 @@
 | Magerquark | 300 g |  |
 | Milch | 50 g | 50 ml |
 | Whey Protein Vanille | ½ Messlöffel (15 g) |  |
-| Banane | 1 kleine Banane (100 g) |  |
+| Banane | 1 kleine Banane (80 g) |  |
 | Zimt | 1 TL (2 g) |  |
-| gehobelte Mandeln | 1 EL (10 g) |  |
+| gehobelte Mandeln | 2½ EL (25 g) |  |
 
 ## Mise en place
 
-- 1 kleine Banane (100 g) schälen und in 5 mm Scheiben schneiden.
+- 1 kleine Banane (80 g) schälen und in 5 mm Scheiben schneiden.
 
 ## Zubereitung
 
-1. **Mandeln rösten** ⏱ 2 min: 1 EL gehobelte Mandeln (10 g) ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 1½–2 Minuten goldbraun rösten, sofort auf einen Teller geben.
+1. **Mandeln rösten** ⏱ 2 min: 2½ EL gehobelte Mandeln (25 g) ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 1½–2 Minuten goldbraun rösten, sofort auf einen Teller geben.
 2. **Creme aufschlagen**: 300 g Magerquark, 50 g Milch, ½ Messlöffel Whey Protein Vanille (15 g) und die Hälfte von 1 TL Zimt (2 g) mit dem Schneebesen 1 Minute luftig aufschlagen, bis die Creme hell und cremig ist.
 3. **Anrichten**: Creme auf 2 Schalen verteilen, Bananenscheiben darauf legen, mit dem restlichen Zimt und den gerösteten Mandeln bestreuen.
 
@@ -60,7 +60,7 @@
 
 ## Anrichten
 
-Pro Schale ca. 240 g: Quarkcreme mit Banane, Zimt und 5 g Mandeln.
+Pro Schale ca. 230 g: Quarkcreme mit Banane, Zimt und gut 12 g Mandeln.
 
 ## Meal Prep & Aufbewahrung
 
@@ -71,7 +71,7 @@ Pro Schale ca. 240 g: Quarkcreme mit Banane, Zimt und 5 g Mandeln.
 
 ## Varianten & Austausch
 
-- **Mit Beeren:** 150 g Beerenmischung statt Banane. (−16 kcal, +0,1 g Protein, +0,2 g Fett pro Portion)
+- **Mit Beeren:** 150 g Beerenmischung statt Banane. (−6 kcal, +0,2 g Protein, +0,2 g Fett pro Portion)
 - **Mit Erdnussbutter:** 10 g Erdnussbutter darüberträufeln. (+30 kcal, +1,3 g Protein, +2,5 g Fett pro Portion)
 
 ## Tipps
@@ -85,12 +85,12 @@ Pro Schale ca. 240 g: Quarkcreme mit Banane, Zimt und 5 g Mandeln.
 | Magerquark | 300 g | 201 | 36 | 0,9 | 12 |
 | Milch 1,5 % Fett | 50 g | 24 | 1,7 | 0,8 | 2,4 |
 | Whey Protein Vanille | 15 g | 58 | 11,3 | 0,9 | 1,2 |
-| Banane geschält | 100 g | 94 | 1,1 | 0,2 | 21 |
+| Banane geschält | 80 g | 75 | 0,9 | 0,2 | 16,8 |
 | Zimt gemahlen | 2 g | 5 | 0,1 | 0 | 0,6 |
-| Mandeln gehobelt | 10 g | 60 | 2,1 | 5,2 | 0,6 |
-| **Summe** | | **441** | **52,2** | **8** | **37,8** |
-| **Pro Portion (÷ 2)** | | **221** | **26,1** | **4** | **18,9** |
+| Mandeln gehobelt | 25 g | 150 | 5,3 | 13 | 1,5 |
+| **Summe** | | **512** | **55,2** | **15,7** | **34,5** |
+| **Pro Portion (÷ 2)** | | **256** | **27,6** | **7,9** | **17,2** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 440 kcal gegenüber 441 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 512 kcal gegenüber 512 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

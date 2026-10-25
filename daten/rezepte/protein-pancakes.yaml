@@ -8,24 +8,24 @@ kueche: Amerikanisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Cottage Cheese / Protein Pancakes“"
   link: null
-  aenderungen: "Mehl durch fein gemixte Haferflocken ersetzt, Buttermilch durch Magerquark und Eiklar, Zucker weggelassen (Süße aus Whey und Honig), nur 6 g Öl für die Pfanne."
+  aenderungen: "Mehl durch fein gemixte Haferflocken ersetzt, Buttermilch durch Magerquark und Eiklar, Zucker weggelassen (Süße aus Whey und Honig), 12 g Öl für die Pfanne (gibt knusprige Ränder)."
 schwierigkeit: leicht
 zeit: {vorbereitung: 5, kochen: 18, wartezeit: 0}
 ausstattung: [Standmixer, "Pfanne 28 cm (beschichtet)", Pfannenwender, Mikrowelle]
 zutaten:
   - gruppe: Teig
-  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: hafer, zutat: Haferflocken zart, g: 85}
   - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
-  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
-  - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 100, hinweis: "aus der Flasche, 100 ml"}
+  - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 180, anzeige: "3 Eier Gr. M"}
+  - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 40, hinweis: "aus der Flasche, 40 ml"}
   - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 50, hinweis: "50 ml"}
   - {id: backpulver, zutat: Backpulver, g: 6, anzeige: "1½ TL"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
-  - {id: oel, zutat: Rapsöl, g: 6, anzeige: "2 TL", hinweis: "zum Ausbacken"}
+  - {id: oel, zutat: Rapsöl, g: 12, anzeige: "1 EL", hinweis: "zum Ausbacken"}
   - gruppe: Topping
   - {id: heidelbeeren, zutat: Heidelbeeren TK, g: 120}
-  - {id: skyr, zutat: Skyr natur, g: 150}
+  - {id: skyr, zutat: Skyr natur, g: 160}
   - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
 mise_en_place:
   - "{heidelbeeren} in einer Schüssel 1½ Minuten bei 600 W in der Mikrowelle auftauen, bis sie weich sind und Saft gezogen haben."
@@ -50,7 +50,7 @@ fehler:
   - "**Pancakes reißen beim Wenden:** zu früh gewendet oder zu groß. Lösung: erst wenden, wenn der Rand matt ist, und nicht größer als 8 cm backen."
   - "**Außen dunkel, innen roh:** Pfanne zu heiß. Lösung: Ceran auf Stufe 5–6 von 9; der Teig braucht Zeit, um durchzugaren."
   - "**Flach und gummiartig:** Teig zu lange gemixt oder Backpulver vergessen. Lösung: nur bis glatt mixen und die 2 Minuten Ruhezeit einhalten."
-anrichten: "Pro Teller 7 Pancakes, darauf 75 g Skyr, 60 g Heidelbeeren mit Saft und 1 TL Honig: {portion_g} pro Portion."
+anrichten: "Pro Teller 7 Pancakes, darauf 80 g Skyr, 60 g Heidelbeeren mit Saft und 1 TL Honig: {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 2
   einfrierbar: true
@@ -60,7 +60,7 @@ aufbewahrung:
 varianten:
   - {titel: Schoko-Pancakes, text: "Whey Protein Schoko statt Vanille, dazu 10 g Backkakao in den Teig.", aenderung: {"Whey Protein Vanille": -30, "Whey Protein Schoko": 30, "Kakaopulver stark entölt": 10}}
   - {titel: Bananen-Pancakes, text: "1 kleine Banane (100 g) in Scheiben auf die rohe Teigseite legen, bevor gewendet wird; Honig weglassen.", aenderung: {"Banane geschält": 100, "Honig": -10}}
-  - {titel: Mehr Protein, text: "Skyr-Topping auf 300 g verdoppeln.", aenderung: {"Skyr natur": 150}}
+  - {titel: Mehr Protein, text: "Skyr-Topping auf 320 g verdoppeln.", aenderung: {"Skyr natur": 160}}
 tipps:
   - "Eine Prise Zimt und ein paar Tropfen Zitronensaft im Topping lassen die Heidelbeeren intensiver schmecken."
   - "Je kleiner die Pancakes, desto fluffiger: Der Hafer-Quark-Teig ist schwerer als klassischer Mehlteig."

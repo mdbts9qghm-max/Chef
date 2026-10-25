@@ -11,18 +11,18 @@ zeit: {vorbereitung: 10, kochen: 22, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l mit Deckel", Fleischthermometer]
 zutaten:
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 125}
   - gruppe: Teriyaki-Sauce
   - {id: soja, zutat: Sojasauce, g: 40, anzeige: "3 EL"}
-  - {id: honig, zutat: Honig, g: 25, anzeige: "1 gehäufter EL"}
+  - {id: honig, zutat: Honig, g: 15, anzeige: "1 EL"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: staerke, zutat: Speisestärke, g: 8, anzeige: "1½ TL"}
   - gruppe: Hähnchen & Gemüse
-  - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilet, g: 400}
-  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilet, g: 410}
+  - {id: oel, zutat: Rapsöl, g: 22, anzeige: "2 EL"}
   - {id: paprika, zutat: Paprika rot, name: rote Paprika, g: 150, anzeige: "1 Paprika"}
-  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 5, anzeige: "1 TL"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 10, anzeige: "2 TL"}
   - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 30, anzeige: "2 Stangen"}
 mise_en_place:
   - "{reis} waschen, bis das Wasser fast klar ist."
@@ -30,7 +30,7 @@ mise_en_place:
   - "Teriyaki-Sauce: {ingwer} und {knoblauch} fein reiben, mit {soja}, {honig}, {staerke} und 80 ml Wasser glatt rühren."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen lassen und 5 Minuten zugedeckt neben dem Herd ruhen lassen."
+    text: "Reis mit 225 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen lassen und 5 Minuten zugedeckt neben dem Herd ruhen lassen."
     timer_min: 12
   - titel: Hähnchen anbraten
     text: "{oel} in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. Hähnchenwürfel in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 2 Minuten weiterbraten, bis sie rundum goldbraun sind."
@@ -55,9 +55,9 @@ aufbewahrung:
   aufwaermen: "Mikrowelle 600 W, 2½–3 Minuten abgedeckt mit 1 EL Wasser über dem Reis, nach der Hälfte umrühren."
   separat: "Reis innerhalb von 1 Stunde flach ausgebreitet abkühlen und kühlen. Frühlingszwiebeln erst beim Essen."
 varianten:
-  - {titel: Mit Lachs, text: "400 g Lachs in Würfeln statt Hähnchen, nur 1 Minute pro Seite braten; dann nur 2 Tage haltbar.", aenderung: {"Hähnchenbrustfilet roh": -400, "Lachsfilet ohne Haut roh": 400}}
-  - {titel: Mit Mie-Nudeln, text: "150 g Mie-Nudeln statt Reis.", aenderung: {"Basmatireis ungekocht": -150, "Mie-Nudeln ungekocht": 150}}
-  - {titel: Weniger kcal, text: "Reis auf 100 g, Honig auf 15 g reduzieren.", aenderung: {"Basmatireis ungekocht": -50, "Honig": -10}}
+  - {titel: Mit Lachs, text: "400 g Lachs in Würfeln statt Hähnchen, nur 1 Minute pro Seite braten; dann nur 2 Tage haltbar.", aenderung: {"Hähnchenbrustfilet roh": -410, "Lachsfilet ohne Haut roh": 400}}
+  - {titel: Mit Mie-Nudeln, text: "150 g Mie-Nudeln statt Reis.", aenderung: {"Basmatireis ungekocht": -125, "Mie-Nudeln ungekocht": 150}}
+  - {titel: Weniger kcal, text: "Reis auf 100 g, Honig auf 10 g reduzieren.", aenderung: {"Basmatireis ungekocht": -25, "Honig": -5}}
 tipps:
   - "Ein Spritzer Sriracha in die Sauce für eine scharfe Variante."
   - "Frisch geriebener Ingwer macht den Unterschied zu fertiger Teriyaki-Sauce."

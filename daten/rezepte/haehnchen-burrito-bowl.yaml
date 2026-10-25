@@ -8,17 +8,17 @@ kueche: Mexikanisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Chipotle-Style Burrito Bowl Meal Prep“"
   link: null
-  aenderungen: "Sour Cream und Guacamole durch Skyr ersetzt, Reibekäse light statt Cheddar, Bohnen und Mais als Sättigung; ca. 70 g Protein pro Bowl."
+  aenderungen: "Sour Cream und Guacamole durch Skyr ersetzt, Reibekäse light statt Cheddar, Bohnen und Mais als Sättigung; gut 75 g Protein pro Bowl."
 schwierigkeit: leicht
 zeit: {vorbereitung: 12, kochen: 20, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l mit Deckel", Fleischthermometer, Sieb]
 zutaten:
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 130}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 95}
   - {id: salz_r, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Hähnchen
   - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilet, g: 400}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
   - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 2, anzeige: "1 TL"}
   - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 1, anzeige: "1 TL"}
@@ -31,14 +31,14 @@ zutaten:
   - {id: zwiebel, zutat: Zwiebel, g: 40, anzeige: "½ kleine Zwiebel", hinweis: "am besten rot"}
   - {id: zitrone, zutat: Zitronensaft, g: 15, anzeige: "1 EL", hinweis: "oder Limette"}
   - {id: skyr, zutat: Skyr natur, g: 100}
-  - {id: kaese, zutat: Reibekäse light, g: 40}
+  - {id: kaese, zutat: Reibekäse light, g: 90}
 mise_en_place:
   - "{reis} waschen. {bohnen} und {mais} in einem Sieb abspülen und abtropfen lassen."
   - "{haehnchen} in 2 cm Würfel schneiden und mit {oel}, {paprikapulver}, {kreuzkuemmel}, {oregano}, {chili} und {salz_h} mischen."
   - "Salsa: {tomaten} in 1 cm Würfel, {zwiebel} sehr fein würfeln, beides mit {zitrone} mischen."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 235 ml Wasser und {salz_r} im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Reis mit 170 ml Wasser und {salz_r} im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
   - titel: Hähnchen braten
     text: "Pfanne (28 cm) ohne weiteres Öl auf Stufe 8 von 9 2 Minuten erhitzen. Gewürzte Hähnchenwürfel in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 3–4 Minuten weiterbraten, bis sie rundum gebräunt sind und 74 °C Kerntemperatur erreichen."
@@ -61,7 +61,7 @@ aufbewahrung:
 varianten:
   - {titel: Als Burrito, text: "Alles in 2 Weizen-Tortillas rollen und in der Pfanne ohne Fett 1 Minute pro Seite anrösten.", aenderung: {"Weizen-Tortilla-Wraps": 124}}
   - {titel: Mit Rinderhack, text: "400 g Rinderhack 5 % statt Hähnchen (72 °C Kerntemperatur).", aenderung: {"Hähnchenbrustfilet roh": -400, "Rinderhackfleisch 5 % Fett roh": 400}}
-  - {titel: Weniger kcal, text: "Reis auf 80 g und Käse auf 20 g reduzieren.", aenderung: {"Basmatireis ungekocht": -50, "Reibekäse light": -20}}
+  - {titel: Weniger kcal, text: "Reis auf 60 g und Käse auf 40 g reduzieren.", aenderung: {"Basmatireis ungekocht": -35, "Reibekäse light": -50}}
 tipps:
   - "Eine Prise Kreuzkümmel in den Skyr: schmeckt wie Chipotle-Dip."
 gargewicht_g: null

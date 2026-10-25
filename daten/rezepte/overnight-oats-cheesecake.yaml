@@ -14,7 +14,7 @@ zeit: {vorbereitung: 10, kochen: 0, wartezeit: 480}
 ausstattung: ["2 Schraubgläser à 500 ml", Mikrowelle]
 zutaten:
   - gruppe: Oats
-  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: hafer, zutat: Haferflocken zart, g: 80}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 200, hinweis: "200 ml"}
   - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
   - gruppe: Cheesecake-Creme
@@ -24,7 +24,7 @@ zutaten:
   - gruppe: Topping
   - {id: himbeeren, zutat: Himbeeren TK, g: 150}
   - {id: muesli, zutat: Knuspermüsli, g: 20, anzeige: "2 EL", hinweis: "als „Keksboden“"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 15, anzeige: "1½ EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 35, anzeige: "3½ EL"}
 mise_en_place:
   - "{himbeeren} 1 Minute bei 600 W in der Mikrowelle antauen und mit einer Gabel grob zerdrücken, sodass ein Püree mit Stückchen entsteht."
 schritte:
@@ -46,7 +46,7 @@ fehler:
   - "**Zu fest und pappig:** zu wenig Flüssigkeit oder sehr grobe Flocken. Lösung: zarte Haferflocken verwenden, morgens bei Bedarf 2 EL Milch unterrühren (nicht mitgerechnet)."
   - "**Creme wässrig:** Himbeeren nicht angetaut und in die Creme gerührt. Lösung: Püree nur obenauf geben, nicht unterrühren."
   - "**Knusper weich:** schon abends daraufgestreut. Lösung: erst kurz vor dem Essen."
-anrichten: "Pro Glas {portion_g}: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeeren, oben 10 g Knuspermüsli und 7 g Mandeln. Direkt aus dem Glas löffeln, Löffel bis zum Boden durchstechen."
+anrichten: "Pro Glas {portion_g}: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeeren, oben 10 g Knuspermüsli und gut 17 g Mandeln. Direkt aus dem Glas löffeln, Löffel bis zum Boden durchstechen."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: false
@@ -55,7 +55,7 @@ aufbewahrung:
 varianten:
   - {titel: Mehr Protein, text: "Skyr auf 400 g erhöhen.", aenderung: {"Skyr natur": 100}}
   - {titel: Blaubeer-Cheesecake, text: "Heidelbeeren statt Himbeeren.", aenderung: {"Himbeeren TK": -150, "Heidelbeeren TK": 150}}
-  - {titel: Weniger kcal, text: "Mandeln weglassen.", aenderung: {"Mandeln gehobelt": -15}}
+  - {titel: Weniger kcal, text: "Mandeln weglassen.", aenderung: {"Mandeln gehobelt": -35}}
 tipps:
   - "Eine Prise Salz in der Cheesecake-Creme hebt den Frischkäse-Geschmack hervor."
   - "Für 3 Tage gleich 3 Doppelportionen ansetzen: Die Oats werden mit jedem Tag etwas weicher, bleiben aber gut."

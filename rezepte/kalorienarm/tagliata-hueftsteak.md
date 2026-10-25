@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 462 kcal | 20 % |
-| Protein | 50,7 g | 34 % |
-| Fett | 14,5 g | 14 % |
-| davon gesättigt | 4,9 g |  |
-| Kohlenhydrate | 29,8 g | 16 % |
-| davon Zucker | 3,5 g |  |
-| Ballaststoffe | 4,9 g |  |
+| Kalorien | 483 kcal | 21 % |
+| Protein | 51,2 g | 34 % |
+| Fett | 17,7 g | 18 % |
+| davon gesättigt | 5,7 g |  |
+| Kohlenhydrate | 27,5 g | 14 % |
+| davon Zucker | 3,4 g |  |
+| Ballaststoffe | 4,6 g |  |
 | Salz | 1,9 g |  |
 
-- **Protein pro 100 kcal:** 11 g
-- **Makroverteilung (Energie):** Protein 45 % · Kohlenhydrate 26 % · Fett 29 %
-- **Gewicht fertig:** ca. 780 g gesamt · **ca. 390 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 10,6 g
+- **Makroverteilung (Energie):** Protein 43 % · Kohlenhydrate 23 % · Fett 34 %
+- **Gewicht fertig:** ca. 760 g gesamt · **ca. 380 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -33,11 +33,11 @@
 | Zutat | Menge | Hinweis |
 |---|---|---|
 | **Parmesan-Kartoffeln** | | |
-| Kartoffeln | 350 g | mit Schale, gut gewaschen |
-| Olivenöl | 1 TL (5 g) |  |
+| Kartoffeln | 320 g | mit Schale, gut gewaschen |
+| Olivenöl | 1 EL (10 g) |  |
 | Salz | ¼ TL (1,5 g) |  |
 | Oregano | 1 TL (1 g) |  |
-| Parmesan gerieben | 1½ EL (15 g) |  |
+| Parmesan gerieben | 2 EL (20 g) |  |
 | **Steak** | | |
 | Hüftsteaks | 2 Hüftsteaks à 200 g (400 g) | 2,5 cm dick, 30 Minuten vorher aus dem Kühlschrank |
 | Olivenöl | 1 TL (5 g) |  |
@@ -50,12 +50,12 @@
 ## Mise en place
 
 - 2 Hüftsteaks à 200 g (400 g) 30 Minuten vor dem Braten aus dem Kühlschrank nehmen und trocken tupfen.
-- 350 g Kartoffeln in 1,5 cm Würfel schneiden, mit 1 TL Olivenöl (5 g), ¼ TL Salz (1,5 g) und 1 TL Oregano (1 g) mischen.
+- 320 g Kartoffeln in 1,5 cm Würfel schneiden, mit 1 EL Olivenöl (10 g), ¼ TL Salz (1,5 g) und 1 TL Oregano (1 g) mischen.
 - 150 g Kirschtomaten halbieren und mit 2 TL Zitronensaft (10 g) mischen.
 
 ## Zubereitung
 
-1. **Kartoffeln im Airfryer** ⏱ 20 min: Airfryer auf 200 °C 3 Minuten vorheizen. Kartoffelwürfel in den Korb geben und bei 200 °C 18–20 Minuten garen, nach 8 und 14 Minuten schütteln. In den letzten 3 Minuten 1½ EL Parmesan gerieben (15 g) darüberstreuen. Fertig, wenn sie außen goldbraun-knusprig und innen weich sind.
+1. **Kartoffeln im Airfryer** ⏱ 20 min: Airfryer auf 200 °C 3 Minuten vorheizen. Kartoffelwürfel in den Korb geben und bei 200 °C 18–20 Minuten garen, nach 8 und 14 Minuten schütteln. In den letzten 3 Minuten 2 EL Parmesan gerieben (20 g) darüberstreuen. Fertig, wenn sie außen goldbraun-knusprig und innen weich sind.
 2. **Steaks braten** ⏱ 6 min: Nach 8 Minuten Kartoffel-Garzeit: Pfanne (28 cm) auf Stufe 9 von 9 3 Minuten sehr heiß werden lassen. Steaks mit 1 TL Olivenöl (5 g) einreiben und hineinlegen. 3 Minuten nicht bewegen, bis eine dunkle Kruste entsteht, wenden und weitere 2–3 Minuten braten. Medium bei 54–56 °C Kerntemperatur (rosa Mitte), durch bei 63 °C.
 3. **Ruhen und aufschneiden** ⏱ 4 min: Steaks auf ein Brett legen, mit ¼ TL Salz (1,5 g) und 2 Prisen Pfeffer (1 g) würzen und 4 Minuten ruhen lassen. Dann quer zur Faser in 1 cm Streifen schneiden.
 
@@ -71,7 +71,7 @@
 
 ## Anrichten
 
-Pro Teller die Hälfte der Steakstreifen fächerartig, die Hälfte der Parmesan-Kartoffeln und der Zitronen-Tomaten daneben: ca. 390 g pro Portion.
+Pro Teller die Hälfte der Steakstreifen fächerartig, die Hälfte der Parmesan-Kartoffeln und der Zitronen-Tomaten daneben: ca. 380 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -81,7 +81,7 @@ Pro Teller die Hälfte der Steakstreifen fächerartig, die Hälfte der Parmesan-
 
 ## Varianten & Austausch
 
-- **Mehr kcal:** Kartoffeln auf 550 g erhöhen. (+75 kcal, +2 g Protein, +0,1 g Fett pro Portion)
+- **Mehr kcal:** Kartoffeln auf 550 g erhöhen. (+86 kcal, +2,3 g Protein, +0,1 g Fett pro Portion)
 - **Mit Babyspinat:** Steakstreifen auf 100 g Babyspinat anrichten (Rucola-Ersatz). (+11 kcal, +1,5 g Protein, +0,2 g Fett pro Portion)
 - **Mit Putenbrust:** 400 g Putenbrust statt Rind, bis 74 °C Kerntemperatur braten. (−26 kcal, +4 g Protein, −5 g Fett pro Portion)
 
@@ -94,20 +94,20 @@ Pro Teller die Hälfte der Steakstreifen fächerartig, die Hälfte der Parmesan-
 
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
-| Kartoffeln festkochend roh | 350 g | 263 | 7 | 0,4 | 54,6 |
-| Olivenöl | 5 g | 45 | 0 | 5 | 0 |
+| Kartoffeln festkochend roh | 320 g | 240 | 6,4 | 0,3 | 49,9 |
+| Olivenöl | 10 g | 90 | 0 | 10 | 0 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
 | Oregano getrocknet | 1 g | 3 | 0,1 | 0 | 0,3 |
-| Parmesan gerieben | 15 g | 57 | 4,8 | 4,2 | 0 |
+| Parmesan gerieben | 20 g | 76 | 6,4 | 5,6 | 0 |
 | Rinderhüftsteak roh | 400 g | 480 | 88 | 14 | 0 |
 | Olivenöl | 5 g | 45 | 0 | 5 | 0 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 1 g | 3 | 0,1 | 0 | 0,4 |
 | Tomaten | 150 g | 27 | 1,4 | 0,3 | 3,9 |
 | Zitronensaft | 10 g | 2 | 0 | 0 | 0,5 |
-| **Summe** | | **924** | **101,4** | **28,9** | **59,6** |
-| **Pro Portion (÷ 2)** | | **462** | **50,7** | **14,5** | **29,8** |
+| **Summe** | | **966** | **102,4** | **35,3** | **54,9** |
+| **Pro Portion (÷ 2)** | | **483** | **51,2** | **17,7** | **27,5** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 924 kcal gegenüber 924 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 965 kcal gegenüber 966 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

@@ -8,7 +8,7 @@ kueche: International / Fusion
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Nice Cream / Protein Ice Cream“"
   link: null
-  aenderungen: "Statt gefrorener Banane als Basis (viel Zucker) TK-Beeren mit Skyr und Vanille-Whey: weniger Zucker, ca. 23 g Protein pro Portion."
+  aenderungen: "Statt gefrorener Banane als Basis (viel Zucker) TK-Beeren mit Skyr und Vanille-Whey: weniger Zucker, ca. 26 g Protein pro Portion."
 schwierigkeit: leicht
 zeit: {vorbereitung: 5, kochen: 0, wartezeit: 0}
 ausstattung: [Standmixer, Teigschaber]
@@ -16,9 +16,12 @@ zutaten:
   - {id: beeren, zutat: Beerenmischung TK, g: 300, hinweis: "direkt aus dem Gefrierfach"}
   - {id: skyr, zutat: Skyr natur, g: 200, hinweis: "eiskalt"}
   - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
-  - {id: honig, zutat: Honig, g: 15, anzeige: "1 EL"}
+  - {id: honig, zutat: Honig, g: 5, anzeige: "1 TL"}
+  - gruppe: Topping
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 20, anzeige: "2 EL"}
 mise_en_place:
   - "Zwei Schalen 10 Minuten ins Gefrierfach stellen, dann schmilzt das Eis langsamer."
+  - "{mandeln} ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten goldbraun rösten und auf einem Teller abkühlen lassen."
 schritte:
   - titel: Mixen
     text: "{beeren}, {skyr}, {whey} und {honig} in den Standmixer geben. Mit Pulsieren beginnen (5 × 2 Sekunden), dann 30–60 Sekunden auf mittlerer Stufe mixen und zwischendurch mit dem Teigschaber nach unten schieben. Fertig, wenn eine cremige Softeis-Masse entsteht, die auf dem Löffel stehen bleibt."
@@ -31,7 +34,7 @@ zeitablauf:
 fehler:
   - "**Mixer dreht leer:** zu wenig Flüssigkeit. Lösung: 1–2 EL Wasser zugeben und öfter pulsieren."
   - "**Zu flüssig:** zu lange gemixt oder Beeren angetaut. Lösung: Beeren direkt aus dem Gefrierfach, kurz mixen."
-anrichten: "Pro Schale {portion_g} Nice Cream. Optional mit 2–3 frischen Beeren garnieren (nicht mitgerechnet)."
+anrichten: "Pro Schale {portion_g} Nice Cream, mit der Hälfte der gerösteten Mandeln bestreut. Optional mit 2–3 frischen Beeren garnieren (nicht mitgerechnet)."
 aufbewahrung:
   kuehlschrank_tage: 0
   einfrierbar: true
@@ -39,7 +42,7 @@ aufbewahrung:
   aufwaermen: "Gefroren: 15 Minuten antauen lassen und kurz durchmixen, sonst sehr hart."
 varianten:
   - {titel: Schoko-Kirsch, text: "Whey Protein Schoko statt Vanille, Hälfte der Beeren durch Sauerkirschen ersetzen (gefroren).", aenderung: {"Whey Protein Vanille": -30, "Whey Protein Schoko": 30, "Beerenmischung TK": -150, "Sauerkirschen Glas abgetropft": 150}}
-  - {titel: Ohne Honig, text: "Honig weglassen, 1 EL Erythrit (10 g) statt dessen.", aenderung: {"Honig": -15, "Erythrit": 10}}
+  - {titel: Ohne Honig, text: "Honig weglassen, 1 TL Erythrit (5 g) statt dessen.", aenderung: {"Honig": -5, "Erythrit": 5}}
   - {titel: Mehr Protein, text: "Skyr auf 300 g erhöhen.", aenderung: {"Skyr natur": 100}}
 tipps:
   - "Eine Prise Salz und ein Spritzer Zitronensaft machen den Beerengeschmack intensiver."

@@ -194,14 +194,33 @@ def abteilung(z):
     return z.packung["abteilung"] if z.packung else "Sonstiges"
 
 
+def kosten(listen, anzahl_teuer=3):
+    """Gesamtkosten der Woche: Wochenbedarf, Vorratskäufe (halten lange) und die teuersten Wochenposten."""
+    gekauft = [z for l in listen for z in l.zeilen if z.pakete]
+    pro_zutat = {}                                     # beide Einkaufstermine zusammen
+    for z in gekauft:
+        if not z.vorratskauf:
+            pro_zutat[z.zutat] = pro_zutat.get(z.zutat, 0.0) + z.kosten
+    teuer = sorted(pro_zutat.items(), key=lambda x: -x[1])[:anzahl_teuer]
+    return {"woche": sum(z.kosten for z in gekauft if not z.vorratskauf),
+            "vorrat": sum(z.kosten for z in gekauft if z.vorratskauf),
+            "teuer": [{"zutat": zutat, "kosten": k} for zutat, k in teuer]}
+
+
+def budget():
+    return config.PROFIL["einkauf"].get("budget_eur_pro_woche")
+
+
+SPAR_WHEY = "Whey in der größeren 2,5-kg-Packung kaufen (online meist 30–40 % günstiger pro kg)"
+
+
 def einkauf_markdown(plan, rezepte, db, listen, reste):
-    budget = config.PROFIL["einkauf"].get("budget_eur_pro_woche")
+    budget_eur = budget()
     reihenfolge = config.PROFIL["einkauf"]["abteilungen"]
     out = [f"<!-- Generiert aus daten/wochenplaene/{plan['name']}.yaml – nicht von Hand bearbeiten. -->",
            f"# Einkaufsliste KW {plan['kw']}/{plan['jahr']}", "",
            f"Zum [Wochenplan](../wochenplaene/{plan['name']}.md). Mengen = Bedarf aller Rezepte × Faktor × Ladungen "
            "plus Extras, abzüglich Vorrat, aufgerundet auf Packungen.", ""]
-    gesamt_woche = gesamt_vorrat = 0.0
     for liste in listen:
         tag = config.WOCHENTAGE_LANG[liste.datum.weekday()]
         out += [f"## Einkauf {tag}, {liste.datum.strftime('%d.%m.%Y')}", ""]
@@ -243,26 +262,23 @@ def einkauf_markdown(plan, rezepte, db, listen, reste):
         if kosten_abt:
             woche = sum(v["woche"] for v in kosten_abt.values())
             vor = sum(v["vorrat"] for v in kosten_abt.values())
-            gesamt_woche += woche
-            gesamt_vorrat += vor
             out += ["### Kostenschätzung", "", "| Abteilung | Wochenbedarf | Vorratskauf (hält lange) |", "|---|---:|---:|"]
             for abt, v in kosten_abt.items():
                 out.append(f"| {abt} | {zahl(v['woche'], 2)} € | {zahl(v['vorrat'], 2)} € |")
             out += [f"| **Summe** | **{zahl(woche, 2)} €** | **{zahl(vor, 2)} €** |", ""]
     # Budget
-    if budget:
+    if budget_eur:
+        k = kosten(listen)
         out += ["## Budget", ""]
-        out.append(f"Wochenbedarf gesamt ca. **{zahl(gesamt_woche, 2)} €**, dazu einmalige Vorratskäufe ca. "
-                   f"{zahl(gesamt_vorrat, 2)} € (z. B. Whey, Gewürze, Nüsse – reichen mehrere Wochen). Budget: {budget} €.")
-        if gesamt_woche + gesamt_vorrat > budget:
-            teuer = sorted((z for l in listen for z in l.zeilen if z.pakete and not z.vorratskauf),
-                           key=lambda z: -z.kosten)[:3]
-            out += ["", f"⚠️ Mit Vorratskäufen über Budget ({zahl(gesamt_woche + gesamt_vorrat, 2)} €)."
-                    if gesamt_woche <= budget else f"⚠️ Schon der Wochenbedarf liegt über dem Budget.",
+        out.append(f"Wochenbedarf gesamt ca. **{zahl(k['woche'], 2)} €**, dazu einmalige Vorratskäufe ca. "
+                   f"{zahl(k['vorrat'], 2)} € (z. B. Whey, Gewürze, Öl – reichen mehrere Wochen). Budget: {budget_eur} €.")
+        if k["woche"] + k["vorrat"] > budget_eur:
+            out += ["", f"⚠️ Mit Vorratskäufen über Budget ({zahl(k['woche'] + k['vorrat'], 2)} €)."
+                    if k["woche"] <= budget_eur else "⚠️ Schon der Wochenbedarf liegt über dem Budget.",
                     "", "**Sparvorschläge:**"]
-            out += [f"- {z.zutat} ({zahl(z.kosten, 2)} €): günstigere Alternative im Plan tauschen oder Eigenmarke wählen"
-                    for z in teuer]
-            out.append("- Whey in der größeren 2,5-kg-Packung kaufen (online meist 30–40 % günstiger pro kg)")
+            out += [f"- {t['zutat']} ({zahl(t['kosten'], 2)} €): günstigere Alternative im Plan tauschen oder Eigenmarke wählen"
+                    for t in k["teuer"]]
+            out.append(f"- {SPAR_WHEY}")
         out.append("")
     # Reste
     if reste:

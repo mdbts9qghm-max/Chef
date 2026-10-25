@@ -11,19 +11,19 @@ zeit: {vorbereitung: 8, kochen: 12, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm mit hohem Rand oder Wok", "Topf ca. 2 l", Fleischthermometer]
 zutaten:
   - gruppe: Nudeln
-  - {id: mie, zutat: Mie-Nudeln ungekocht, name: Mie-Nudeln, g: 100, anzeige: "2 Nudelnester"}
+  - {id: mie, zutat: Mie-Nudeln ungekocht, name: Mie-Nudeln, g: 90, anzeige: "knapp 2 Nudelnester"}
   - gruppe: Pfanne
-  - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 350}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 360}
+  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1½ EL"}
   - {id: paprika, zutat: Paprika rot, name: rote Paprika, g: 100, anzeige: "⅔ Paprika"}
   - {id: fruehlingszwiebeln, zutat: Frühlingszwiebeln, g: 30, anzeige: "2 Stangen"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 5, anzeige: "1 cm Stück"}
   - gruppe: Sauce
   - {id: soja, zutat: Sojasauce, g: 30, anzeige: "2 EL"}
-  - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}
+  - {id: honig, zutat: Honig, g: 5, anzeige: "1 TL"}
   - {id: sriracha, zutat: Sriracha, g: 5, anzeige: "1 TL"}
-  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 3, anzeige: "½ TL"}
+  - {id: sesamoel, zutat: Sesamöl geröstet, name: geröstetes Sesamöl, g: 8, anzeige: "1½ TL"}
 mise_en_place:
   - "1,5 l Wasser im Topf auf Stufe 9 von 9 aufkochen."
   - "{pute} in 1 cm dünne Streifen schneiden. {paprika} in feine Streifen, {fruehlingszwiebeln} in 3 cm Stücke. {knoblauch} und {ingwer} fein hacken."
@@ -54,8 +54,8 @@ aufbewahrung:
   aufwaermen: "In der Pfanne auf Stufe 6 von 9 mit 1 EL Wasser 3 Minuten oder Mikrowelle 600 W, 2 Minuten."
 varianten:
   - {titel: Mit Ei, text: "2 Eier zum Schluss in die Pfanne schlagen und unter Rühren stocken lassen.", aenderung: {"Ei Gr. M ohne Schale": 120}}
-  - {titel: Mit Garnelen, text: "350 g Garnelen statt Pute (nur 2 Tage haltbar).", aenderung: {"Putenbrustfilet roh": -350, "Garnelen roh geschält": 350}}
-  - {titel: Mehr kcal, text: "Mie-Nudeln auf 150 g erhöhen.", aenderung: {"Mie-Nudeln ungekocht": 50}}
+  - {titel: Mit Garnelen, text: "360 g Garnelen statt Pute (nur 2 Tage haltbar).", aenderung: {"Putenbrustfilet roh": -360, "Garnelen roh geschält": 360}}
+  - {titel: Mehr kcal, text: "Mie-Nudeln auf 150 g erhöhen.", aenderung: {"Mie-Nudeln ungekocht": 60}}
 tipps:
   - "Die Pfanne richtig heiß werden lassen: Das gibt das typische Wok-Aroma, auch auf Ceran."
 gargewicht_g: null

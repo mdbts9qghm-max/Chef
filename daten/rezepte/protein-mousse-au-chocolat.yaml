@@ -8,12 +8,12 @@ kueche: International / Fusion
 inspiration:
   quelle: "TikTok-/Instagram-Trend „2-Zutaten-Protein-Mousse“ (Skyr + Schoko-Whey)"
   link: null
-  aenderungen: "Sahne, Eigelb und Zucker der klassischen Mousse durch Skyr und Schoko-Whey ersetzt; 20 g echte Zartbitterschokolade für den Geschmack. Ca. 250 kcal weniger als klassische Mousse pro Portion."
+  aenderungen: "Sahne, Eigelb und Zucker der klassischen Mousse durch Skyr und Schoko-Whey ersetzt; 30 g echte Zartbitterschokolade für den Geschmack. Ca. 220 kcal weniger als klassische Mousse pro Portion."
 schwierigkeit: leicht
 zeit: {vorbereitung: 8, kochen: 2, wartezeit: 0}
 ausstattung: [Mikrowelle, Schneebesen, "2 Gläser"]
 zutaten:
-  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 20, anzeige: "4 Rippchen"}
+  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 30, anzeige: "6 Rippchen"}
   - {id: skyr, zutat: Skyr natur, g: 300}
   - {id: whey, zutat: Whey Protein Schoko, g: 30, anzeige: "1 Messlöffel"}
   - {id: kakao, zutat: Kakaopulver stark entölt, name: Backkakao, g: 10, anzeige: "2 TL"}

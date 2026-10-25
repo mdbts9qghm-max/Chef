@@ -90,3 +90,10 @@ def test_import_bricht_startbestand_nicht(echte_rezepte, db):
     assert "import-test" not in start and len(start) == config.BESTAND_GESAMT
     zeilen = bestand.auswerten([bestand.eintrag_aus_rezept(x, db) for x in start.values()])
     assert all(z[3] is True for z in zeilen)
+
+
+def test_fett_pro_mahlzeit_im_ziel(echte_rezepte, db):
+    """Fettstrategie „rezepte“: Ø Fett je Gruppe in der Zielspanne, damit Pläne ohne Nüsse-Extras auskommen."""
+    fett = bestand.fett_gruppen(bestand.startbestand(bestand.lade_plan(), echte_rezepte), db)
+    assert set(fett) == set(config.FETT_ZIEL_PRO_MAHLZEIT)
+    assert all(ok for _, _, ok in fett.values()), fett

@@ -8,21 +8,21 @@ kueche: Italienisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Tiramisu Oats / Protein Tiramisu“"
   link: null
-  aenderungen: "Mascarpone und Löffelbiskuits durch Skyr, Frischkäse light und in Espresso getränkte Haferflocken ersetzt; Zucker durch Vanille-Whey. Spart gegenüber klassischem Tiramisu ca. 400 kcal pro Portion."
+  aenderungen: "Mascarpone und Löffelbiskuits durch Skyr, Frischkäse light und in Espresso getränkte Haferflocken ersetzt; Zucker durch Vanille-Whey. Spart gegenüber klassischem Tiramisu ca. 360 kcal pro Portion."
 schwierigkeit: leicht
 zeit: {vorbereitung: 10, kochen: 0, wartezeit: 0}
 ausstattung: ["2 Schalen oder Gläser à 500 ml", Reibe]
 zutaten:
   - gruppe: Kaffee-Boden
-  - {id: hafer, zutat: Haferflocken zart, g: 90}
+  - {id: hafer, zutat: Haferflocken zart, g: 75}
   - {id: kaffee, zutat: Kaffee zubereitet, name: Espresso oder starker Kaffee, g: 120, hinweis: "120 ml, abgekühlt"}
   - gruppe: Creme
   - {id: skyr, zutat: Skyr natur, g: 500, hinweis: "1 Becher"}
-  - {id: frischkaese, zutat: Frischkäse light, g: 100}
+  - {id: frischkaese, zutat: Frischkäse light, g: 150}
   - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
   - gruppe: Topping
   - {id: kakao, zutat: Kakaopulver stark entölt, name: Backkakao, g: 8, anzeige: "2 TL"}
-  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 15, anzeige: "3 Rippchen", hinweis: "fein gerieben"}
+  - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 25, anzeige: "5 Rippchen", hinweis: "fein gerieben"}
 mise_en_place:
   - "{kaffee} kochen und abkühlen lassen (oder vom Morgenkaffee abzweigen)."
   - "{schoko} fein reiben."
@@ -42,7 +42,7 @@ fehler:
   - "**Boden zu nass:** zu viel Kaffee. Lösung: genau 60 ml pro Schale, die Flocken sollen feucht sein, nicht schwimmen."
   - "**Kakao klumpt:** direkt aus der Dose gestreut. Lösung: durch ein Teesieb stäuben."
   - "**Creme zu fest:** Skyr sehr dick. Lösung: 1–2 EL Kaffee in die Creme rühren."
-anrichten: "Pro Schale {portion_g}: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g Kakao und knapp 8 g Schokolade."
+anrichten: "Pro Schale {portion_g}: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g Kakao und gut 12 g Schokolade."
 aufbewahrung:
   kuehlschrank_tage: 2
   einfrierbar: false
@@ -50,7 +50,7 @@ aufbewahrung:
 varianten:
   - {titel: Mehr Protein, text: "Whey auf 60 g erhöhen und 2 EL Kaffee mehr in die Creme.", aenderung: {"Whey Protein Vanille": 20}}
   - {titel: Mit Kirschen, text: "60 g Sauerkirschen zwischen Boden und Creme.", aenderung: {"Sauerkirschen Glas abgetropft": 60}}
-  - {titel: Weniger kcal, text: "Schokolade weglassen, nur Kakao.", aenderung: {"Zartbitterschokolade 70 %": -15}}
+  - {titel: Weniger kcal, text: "Schokolade weglassen, nur Kakao.", aenderung: {"Zartbitterschokolade 70 %": -25}}
 tipps:
   - "Eine Prise Salz in der Creme und ein paar Tropfen Bittermandel-Aroma (falls vorhanden, nicht mitgerechnet) bringen den Amaretto-Geschmack."
   - "Über Nacht durchziehen lassen: die beste Tiramisu-Konsistenz."

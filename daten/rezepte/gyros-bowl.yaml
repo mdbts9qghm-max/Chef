@@ -8,7 +8,7 @@ kueche: Griechisch & Mediterran
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Gyros Bowl / Greek Chicken Bowl Meal Prep“"
   link: null
-  aenderungen: "Fettes Schweinenackensteak durch Schweinefilet ersetzt, Tzatziki aus Skyr statt griechischem Joghurt 10 %; ca. 250 kcal weniger als ein Gyros-Teller mit Pommes."
+  aenderungen: "Fettes Schweinenackensteak durch Schweinefilet ersetzt, Tzatziki aus Skyr statt griechischem Joghurt 10 %; ca. 220 kcal weniger als ein Gyros-Teller mit Pommes."
 schwierigkeit: leicht
 zeit: {vorbereitung: 15, kochen: 20, wartezeit: 30}
 ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l mit Deckel", Reibe, Fleischthermometer]
@@ -22,25 +22,25 @@ zutaten:
   - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 1, anzeige: "½ TL"}
   - {id: salz_g, zutat: Salz, g: 2.5, anzeige: "½ TL knapp"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1½ EL"}
   - gruppe: Skyr-Tzatziki
   - {id: skyr, zutat: Skyr natur, g: 200}
   - {id: gurke, zutat: Salatgurke, g: 120, anzeige: "⅓ Gurke"}
   - {id: knoblauch_t, zutat: Knoblauch, name: Knoblauch, g: 3, anzeige: "1 Zehe"}
-  - {id: olivenoel, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: olivenoel, zutat: Olivenöl, g: 10, anzeige: "1 EL"}
   - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
   - {id: salz_t, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Bowl
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 120}
   - {id: tomaten, zutat: Tomaten, g: 100, anzeige: "1 Tomate"}
-  - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 40}
+  - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 70}
 mise_en_place:
   - "{filet} in 5 mm dünne Scheiben, dann in Streifen schneiden. {zwiebel} in feine Streifen, {knoblauch_g} fein hacken. Alles mit {paprika}, {oregano}, {kreuzkuemmel}, {salz_g}, {pfeffer} und der Hälfte des Öls mischen und 30 Minuten (oder über Nacht) im Kühlschrank ziehen lassen."
   - "Tzatziki: {gurke} grob raspeln, mit {salz_t} mischen und 5 Minuten stehen lassen, dann kräftig ausdrücken. Mit {skyr}, fein geriebenem {knoblauch_t}, {olivenoel} und {zitrone} verrühren."
   - "{reis} waschen. {tomaten} würfeln, {feta} zerbröseln."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Reis mit 215 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
   - titel: Gyros braten
     text: "Restliches {oel:n} in der Pfanne (28 cm) auf Stufe 8 von 9 stark erhitzen (ca. 3 min). Fleisch mit Zwiebeln in einer Lage hineingeben, 3 Minuten nicht bewegen, damit Röstkanten entstehen, dann wenden und 3–4 Minuten weiterbraten, bis alles knusprig gebräunt ist. Fertig bei 63 °C Kerntemperatur in den dicksten Streifen. Bei kleiner Pfanne in 2 Portionen braten."
@@ -51,7 +51,7 @@ fehler:
   - "**Gyros gekocht statt gebraten:** Pfanne zu voll oder nicht heiß. Lösung: Stufe 8, in einer Lage, notfalls in 2 Durchgängen."
   - "**Tzatziki wässrig:** Gurke nicht ausgedrückt. Lösung: salzen, 5 Minuten warten, kräftig ausdrücken."
   - "**Fleisch zäh:** zu dick geschnitten. Lösung: 5 mm Scheiben, gegen die Faser."
-anrichten: "Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Hälfte des Tzatzikis und 20 g Feta obenauf: {portion_g} pro Portion."
+anrichten: "Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Hälfte des Tzatzikis und 35 g Feta obenauf: {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: false
@@ -59,8 +59,8 @@ aufbewahrung:
   separat: "Tzatziki, Tomaten und Feta getrennt lagern. Reis innerhalb von 1 Stunde kühlen."
 varianten:
   - {titel: Mit Hähnchen, text: "400 g Hähnchenbrust statt Schweinefilet, bis 74 °C Kerntemperatur braten.", aenderung: {"Schweinefilet roh": -400, "Hähnchenbrustfilet roh": 400}}
-  - {titel: Als Wrap, text: "Statt Reis in 2 Weizen-Tortillas wickeln.", aenderung: {"Basmatireis ungekocht": -150, "Weizen-Tortilla-Wraps": 124}}
-  - {titel: Weniger kcal, text: "Reis auf 100 g, Feta weglassen.", aenderung: {"Basmatireis ungekocht": -50, "Feta 45 % Fett i. Tr.": -40}}
+  - {titel: Als Wrap, text: "Statt Reis in 2 Weizen-Tortillas wickeln.", aenderung: {"Basmatireis ungekocht": -120, "Weizen-Tortilla-Wraps": 124}}
+  - {titel: Weniger kcal, text: "Reis auf 80 g, Feta weglassen.", aenderung: {"Basmatireis ungekocht": -40, "Feta 45 % Fett i. Tr.": -70}}
 tipps:
   - "Über Nacht marinieren und richtig heiß braten: Dann schmeckt es wie vom Drehspieß."
 gargewicht_g: null

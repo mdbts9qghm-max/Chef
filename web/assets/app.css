@@ -34,7 +34,7 @@ h3 { font-size: 1.05rem; margin: 1.2em 0 .4em; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; padding: 0; list-style: none; }
 .chip { background: var(--akzent-hell); color: var(--akzent); border-radius: 999px; padding: 2px 10px; font-size: .82rem; font-weight: 600; }
 .chip.grau { background: var(--fl2); color: var(--text2); }
-.knopf, button, select, input[type=search] {
+.knopf, button, select, input[type=search], input[type=number] {
   font: inherit; min-height: 44px; border-radius: 12px; border: 1px solid var(--linie); background: var(--fl); color: var(--text);
   padding: 8px 14px;
 }
@@ -117,6 +117,9 @@ li { margin: .35em 0; }
 .liste .detail { font-size: .85rem; color: var(--text2); }
 .liste li.erledigt .titel { text-decoration: line-through; color: var(--text2); }
 .warn { color: var(--warn); }
+.ok { color: var(--ok); }
+.budget-eingabe { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.budget-eingabe input { width: 7em; font-size: 1.1em; }
 
 /* Wochenplan */
 .tag .schicht { float: right; }

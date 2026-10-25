@@ -11,10 +11,10 @@ zeit: {vorbereitung: 10, kochen: 20, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm mit hohem Rand oder Wok", "Topf ca. 2 l mit Deckel"]
 zutaten:
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 100, hinweis: "oder Jasminreis"}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 90, hinweis: "oder Jasminreis"}
   - gruppe: Curry
-  - {id: garnelen, zutat: Garnelen roh geschält, name: Garnelen, g: 400, hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
-  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: garnelen, zutat: Garnelen roh geschält, name: Garnelen, g: 410, hinweis: "TK, über Nacht im Kühlschrank aufgetaut"}
+  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "1 EL"}
   - {id: currypaste, zutat: Rote Currypaste, g: 30, anzeige: "2 EL"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 5, anzeige: "1 cm Stück"}
@@ -29,7 +29,7 @@ mise_en_place:
   - "{reis} waschen. {paprika} in 1 cm breite Streifen schneiden. {knoblauch} und {ingwer} fein reiben. {fruehlingszwiebeln} in Ringe schneiden."
 schritte:
   - titel: Reis kochen
-    text: "Reis mit 180 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Reis mit 160 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
   - titel: Paste anrösten
     text: "{oel} in der Pfanne auf Stufe 6 von 9 erhitzen. {currypaste}, Knoblauch und Ingwer 1 Minute unter Rühren anrösten, bis es intensiv duftet."
@@ -52,8 +52,8 @@ aufbewahrung:
   einfrierbar: false
   aufwaermen: "Am besten frisch. Reste am nächsten Tag im Topf auf Stufe 4 von 9 3 Minuten, nur bis heiß."
 varianten:
-  - {titel: Mit Hähnchen, text: "400 g Hähnchenbrust in Streifen statt Garnelen, 6–7 Minuten köcheln bis 74 °C Kerntemperatur; dann 3 Tage haltbar.", aenderung: {"Garnelen roh geschält": -400, "Hähnchenbrustfilet roh": 400}}
-  - {titel: Mehr kcal, text: "Reis auf 150 g erhöhen.", aenderung: {"Basmatireis ungekocht": 50}}
+  - {titel: Mit Hähnchen, text: "400 g Hähnchenbrust in Streifen statt Garnelen, 6–7 Minuten köcheln bis 74 °C Kerntemperatur; dann 3 Tage haltbar.", aenderung: {"Garnelen roh geschält": -410, "Hähnchenbrustfilet roh": 400}}
+  - {titel: Mehr kcal, text: "Reis auf 150 g erhöhen.", aenderung: {"Basmatireis ungekocht": 60}}
   - {titel: Mit Spinat, text: "100 g Babyspinat zum Schluss unterheben.", aenderung: {"Babyspinat": 100}}
 tipps:
   - "Ein paar Blätter frisches Basilikum oder Koriander (falls vorhanden) obenauf machen es authentisch."

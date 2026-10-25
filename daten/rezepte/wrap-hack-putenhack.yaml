@@ -26,7 +26,7 @@ zutaten:
   - {id: mais, zutat: Mais abgetropft, name: Mais, g: 60}
   - gruppe: Wraps
   - {id: wraps, zutat: Weizen-Tortilla-Wraps, name: Weizen-Tortillas, g: 124, anzeige: "2 große Weizen-Tortillas"}
-  - {id: kaese, zutat: Reibekäse light, g: 60}
+  - {id: kaese, zutat: Reibekäse light, g: 70}
   - {id: tomaten, zutat: Tomaten, g: 100, anzeige: "1 Tomate"}
   - {id: skyr, zutat: Skyr natur, g: 100}
 mise_en_place:

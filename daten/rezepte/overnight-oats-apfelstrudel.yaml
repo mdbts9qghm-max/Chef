@@ -11,14 +11,14 @@ zeit: {vorbereitung: 10, kochen: 4, wartezeit: 480}
 ausstattung: ["2 Schraubgläser à 500 ml", "Pfanne 24 cm", Reibe]
 zutaten:
   - gruppe: Oats
-  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: hafer, zutat: Haferflocken zart, g: 75}
   - {id: quark, zutat: Magerquark, g: 300}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 200, hinweis: "200 ml"}
   - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
   - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 3, anzeige: "1½ TL"}
   - gruppe: Apfel & Streusel
   - {id: apfel, zutat: Apfel, g: 120, anzeige: "1 kleiner Apfel", hinweis: "z. B. Elstar, entkernt gewogen"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 50, anzeige: "5 EL"}
 mise_en_place:
   - "{apfel} waschen, vierteln, entkernen und mit Schale grob raspeln."
 schritte:
@@ -40,7 +40,7 @@ fehler:
   - "**Apfel wird braun:** ganz unten nicht bedeckt. Lösung: Raspeln sofort unterrühren; die Säure vom Quark verhindert das Bräunen."
   - "**Zu fest:** Quark bindet viel Flüssigkeit. Lösung: morgens 2–3 EL Wasser unterrühren."
   - "**Fade:** Zimt zu sparsam. Lösung: die 1½ TL wirklich nehmen, eine Prise Salz hilft zusätzlich."
-anrichten: "Pro Glas {portion_g}: die Oats mit Apfel, darauf 15 g geröstete Mandeln."
+anrichten: "Pro Glas {portion_g}: die Oats mit Apfel, darauf 25 g geröstete Mandeln."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: false
@@ -48,7 +48,7 @@ aufbewahrung:
   separat: "Geröstete Mandeln im Schraubglas, nicht im Kühlschrank."
 varianten:
   - {titel: Süßer mit Banane, text: "1 kleine Banane (100 g) zerdrückt unterrühren.", aenderung: {"Banane geschält": 100}}
-  - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -15}}
+  - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -25}}
   - {titel: Schoko-Apfel, text: "Whey Protein Schoko statt Vanille und 1 TL Backkakao (5 g) dazu.", aenderung: {"Whey Protein Vanille": -40, "Whey Protein Schoko": 40, "Kakaopulver stark entölt": 5}}
 tipps:
   - "Ein paar Tropfen Vanillearoma (falls im Vorrat) machen es noch strudeliger, ohne nennenswerte kcal."

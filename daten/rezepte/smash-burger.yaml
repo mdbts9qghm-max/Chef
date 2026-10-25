@@ -8,21 +8,21 @@ kueche: Amerikanisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Smash Burger“"
   link: null
-  aenderungen: "Rinderhack 20 % durch 5 % ersetzt, Cheddar durch Reibekäse light, Burgersauce aus Skyr, Senf, Tomatenmark und Honig statt Mayonnaise; Kartoffelspalten aus dem Ofen statt Pommes aus der Fritteuse. Spart ca. 450 kcal pro Portion."
+  aenderungen: "Rinderhack 20 % durch 5 % ersetzt, Cheddar durch Reibekäse light, Burgersauce aus Skyr, Senf, Tomatenmark und Honig statt Mayonnaise; Kartoffelspalten aus dem Ofen statt Pommes aus der Fritteuse. Spart ca. 410 kcal pro Portion."
 schwierigkeit: mittel
 zeit: {vorbereitung: 15, kochen: 35, wartezeit: 0}
 ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", "Pfanne 28 cm (Edelstahl oder Gusseisen)", "breiter, stabiler Pfannenwender", Backpapier]
 zutaten:
   - gruppe: Kartoffelspalten
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 400, hinweis: "mit Schale, gut gewaschen"}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 330, hinweis: "mit Schale, gut gewaschen"}
+  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1½ EL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 2, anzeige: "1 TL"}
   - {id: salz_k, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - gruppe: Patties
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 360, hinweis: "eiskalt"}
   - {id: salz_p, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
-  - {id: kaese, zutat: Reibekäse light, g: 40}
+  - {id: kaese, zutat: Reibekäse light, g: 70}
   - gruppe: Burger
   - {id: buns, zutat: Burger-Brötchen, g: 150, anzeige: "2 Burger-Brötchen"}
   - {id: tomaten, zutat: Tomaten, g: 60, anzeige: "½ Tomate", hinweis: "in Scheiben"}
@@ -49,7 +49,7 @@ schritte:
     text: "2 Hackkugeln in die heiße Pfanne (weiter Stufe 9 von 9) legen, Backpapier darauf und mit dem Pfannenwender (mit der anderen Hand nachdrücken) kräftig auf 1 cm Dicke flach drücken. Backpapier abziehen, mit der Hälfte von {salz_p} und {pfeffer} würzen. 2 Minuten nicht bewegen, bis der Rand dunkelbraun und kross ist."
     timer_min: 2
   - titel: Wenden und Käse
-    text: "Patties mit dem Pfannenwender vom Boden schaben (die Kruste muss mit) und wenden. Je 10 g {kaese:n} darauf verteilen und 1 Minute braten, bis der Käse schmilzt. Bei 1 cm dünnen Patties ist 72 °C Kerntemperatur nach 3 Minuten erreicht; Garprobe: kein rosa Fleischsaft mehr. Mit den anderen 2 Kugeln und dem Rest von {kaese} genauso."
+    text: "Patties mit dem Pfannenwender vom Boden schaben (die Kruste muss mit) und wenden. Je gut 17 g {kaese:n} darauf verteilen und 1 Minute braten, bis der Käse schmilzt. Bei 1 cm dünnen Patties ist 72 °C Kerntemperatur nach 3 Minuten erreicht; Garprobe: kein rosa Fleischsaft mehr. Mit den anderen 2 Kugeln und dem Rest von {kaese} genauso."
     timer_min: 2
   - titel: Bauen
     text: "Unterseite der Brötchen mit der Hälfte der Burgersauce bestreichen, 2 Patties übereinander stapeln (Double Smash), Tomate und Zwiebelringe darauf, restliche Sauce auf den Deckel."
@@ -68,7 +68,7 @@ aufbewahrung:
 varianten:
   - {titel: Mit Putenhack, text: "360 g Putenhack statt Rind (smasht weniger kross, wird aber saftig).", aenderung: {"Rinderhackfleisch 5 % Fett roh": -360, "Putenhackfleisch roh": 360}}
   - {titel: Saftiger, text: "Hälfte des Hacks durch Rinderhack 15 % ersetzen (klassischer Smash-Geschmack).", aenderung: {"Rinderhackfleisch 5 % Fett roh": -180, "Rinderhackfleisch 15 % Fett roh": 180}}
-  - {titel: Weniger kcal, text: "Kartoffelspalten auf 250 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -150}}
+  - {titel: Weniger kcal, text: "Kartoffelspalten auf 250 g reduzieren.", aenderung: {"Kartoffeln festkochend roh": -80}}
 tipps:
   - "Das Hack eiskalt und ungeknetet in die Pfanne: Nur so entsteht die lacey crust mit Spitzenrand."
 gargewicht_g: null

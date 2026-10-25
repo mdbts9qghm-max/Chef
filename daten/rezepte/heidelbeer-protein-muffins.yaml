@@ -11,12 +11,12 @@ zeit: {vorbereitung: 10, kochen: 22, wartezeit: 10}
 ausstattung: [Backofen, Standmixer, "Muffinblech für 12 (oder 8 Silikonförmchen)", "8 Papierförmchen"]
 zutaten:
   - gruppe: Teig
-  - {id: hafer, zutat: Haferflocken zart, g: 100}
-  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: hafer, zutat: Haferflocken zart, g: 88}
+  - {id: quark, zutat: Magerquark, g: 265, hinweis: "½ Becher plus 1 EL"}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
   - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 50, hinweis: "50 ml"}
-  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1 EL"}
+  - {id: oel, zutat: Rapsöl, g: 22, anzeige: "2 EL"}
   - {id: erythrit, zutat: Erythrit, g: 20, anzeige: "2 EL"}
   - {id: backpulver, zutat: Backpulver, g: 6, anzeige: "1½ TL"}
   - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}

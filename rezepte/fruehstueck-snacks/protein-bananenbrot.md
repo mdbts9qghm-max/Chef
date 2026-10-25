@@ -15,17 +15,17 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 569 kcal | 25 % |
-| Protein | 43,6 g | 29 % |
-| Fett | 18,2 g | 18 % |
-| davon gesättigt | 5 g |  |
-| Kohlenhydrate | 53,1 g | 28 % |
-| davon Zucker | 19,5 g |  |
+| Kalorien | 577 kcal | 25 % |
+| Protein | 43,9 g | 29 % |
+| Fett | 20,4 g | 20 % |
+| davon gesättigt | 5,2 g |  |
+| Kohlenhydrate | 49,9 g | 26 % |
+| davon Zucker | 19,7 g |  |
 | Ballaststoffe | 9 g |  |
 | Salz | 1,4 g |  |
 
-- **Protein pro 100 kcal:** 7,7 g
-- **Makroverteilung (Energie):** Protein 32 % · Kohlenhydrate 39 % · Fett 30 %
+- **Protein pro 100 kcal:** 7,6 g
+- **Makroverteilung (Energie):** Protein 31 % · Kohlenhydrate 36 % · Fett 33 %
 - **Gewicht fertig:** ca. 640 g gesamt · **ca. 320 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
@@ -35,7 +35,7 @@
 |---|---|---|
 | **Teig** | | |
 | Bananen | 1½ sehr reife Bananen (140 g) | braun gesprenkelt |
-| Haferflocken zart | 100 g |  |
+| Haferflocken zart | 88 g |  |
 | Skyr natur | 200 g |  |
 | Eier | 2 Eier Gr. M (120 g) |  |
 | Whey Protein Vanille | ca. 1⅓ Messlöffel (40 g) |  |
@@ -43,7 +43,7 @@
 | Zimt | 1½ TL (3 g) |  |
 | Salz | 1 Prise (0,5 g) |  |
 | **Topping** | | |
-| gehobelte Mandeln | 2 EL (20 g) |  |
+| gehobelte Mandeln | 3 EL (30 g) |  |
 | Zartbitterschokolade | 2 Rippchen (10 g) | grob gehackt |
 
 ## Mise en place
@@ -54,8 +54,8 @@
 
 ## Zubereitung
 
-1. **Teig mixen**: Bananenstücke, 100 g Haferflocken zart, 200 g Skyr natur, 2 Eier Gr. M (120 g), ca. 1⅓ Messlöffel Whey Protein Vanille (40 g), 1½ TL Backpulver (6 g), 1½ TL Zimt (3 g) und 1 Prise Salz (0,5 g) im Standmixer 30–40 Sekunden auf höchster Stufe zu einem glatten, dickflüssigen Teig mixen.
-2. **Einfüllen**: Teig in die Form streichen (ca. 2 cm hoch), Bananenscheiben darauflegen, 2 EL gehobelte Mandeln (20 g) und die gehackte Schokolade darüberstreuen.
+1. **Teig mixen**: Bananenstücke, 88 g Haferflocken zart, 200 g Skyr natur, 2 Eier Gr. M (120 g), ca. 1⅓ Messlöffel Whey Protein Vanille (40 g), 1½ TL Backpulver (6 g), 1½ TL Zimt (3 g) und 1 Prise Salz (0,5 g) im Standmixer 30–40 Sekunden auf höchster Stufe zu einem glatten, dickflüssigen Teig mixen.
+2. **Einfüllen**: Teig in die Form streichen (ca. 2 cm hoch), Bananenscheiben darauflegen, 3 EL gehobelte Mandeln (30 g) und die gehackte Schokolade darüberstreuen.
 3. **Backen** ⏱ 28 min: Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 25–28 Minuten backen. Fertig, wenn die Oberfläche goldbraun ist und ein Holzstäbchen in der Mitte fast sauber herauskommt (ein paar feuchte Krümel sind gut).
 4. **Auskühlen** ⏱ 15 min: Form herausnehmen und 15 Minuten in der Form auskühlen lassen, dann am Backpapier herausheben. Warm ist es sehr weich, nach dem Auskühlen schnittfest.
 
@@ -95,18 +95,18 @@ In 8 Stücke schneiden, 4 Stücke (ca. 320 g) sind eine Portion. Für Meal Prep 
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Banane geschält | 140 g | 132 | 1,5 | 0,3 | 29,4 |
-| Haferflocken zart | 100 g | 372 | 13,5 | 7 | 58,7 |
+| Haferflocken zart | 88 g | 327 | 11,9 | 6,2 | 51,7 |
 | Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
 | Ei Gr. M ohne Schale | 120 g | 168 | 15,1 | 11,9 | 0,8 |
 | Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
 | Backpulver | 6 g | 3 | 0 | 0 | 0,7 |
 | Zimt gemahlen | 3 g | 7 | 0,1 | 0 | 0,8 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
-| Mandeln gehobelt | 20 g | 120 | 4,2 | 10,4 | 1,2 |
+| Mandeln gehobelt | 30 g | 180 | 6,3 | 15,6 | 1,8 |
 | Zartbitterschokolade 70 % | 10 g | 56 | 0,8 | 4,1 | 3,4 |
-| **Summe** | | **1.138** | **87,3** | **36,5** | **106,3** |
-| **Pro Portion (÷ 2)** | | **569** | **43,6** | **18,2** | **53,1** |
+| **Summe** | | **1.154** | **87,8** | **40,9** | **99,8** |
+| **Pro Portion (÷ 2)** | | **577** | **43,9** | **20,4** | **49,9** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.139 kcal gegenüber 1.138 kcal → Abweichung 0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.154 kcal gegenüber 1.154 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

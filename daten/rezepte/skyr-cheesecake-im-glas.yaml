@@ -11,10 +11,10 @@ zeit: {vorbereitung: 10, kochen: 2, wartezeit: 0}
 ausstattung: ["2 Gläser à 300 ml", Mikrowelle]
 zutaten:
   - gruppe: Boden
-  - {id: muesli, zutat: Knuspermüsli, g: 30, anzeige: "3 EL"}
-  - {id: butter, zutat: Butter, g: 5, anzeige: "1 TL"}
+  - {id: muesli, zutat: Knuspermüsli, g: 25, anzeige: "2½ EL"}
+  - {id: butter, zutat: Butter, g: 10, anzeige: "1 EL"}
   - gruppe: Creme
-  - {id: skyr, zutat: Skyr natur, g: 250}
+  - {id: skyr, zutat: Skyr natur, g: 260}
   - {id: quark, zutat: Magerquark, g: 100}
   - {id: frischkaese, zutat: Frischkäse light, g: 50, anzeige: "2 gehäufte EL"}
   - {id: whey, zutat: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}

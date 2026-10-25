@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 514 kcal | 23 % |
-| Protein | 43,1 g | 29 % |
-| Fett | 15,1 g | 15 % |
-| davon gesättigt | 8,9 g |  |
-| Kohlenhydrate | 50,3 g | 26 % |
+| Kalorien | 523 kcal | 23 % |
+| Protein | 43,6 g | 29 % |
+| Fett | 17,6 g | 17 % |
+| davon gesättigt | 9 g |  |
+| Kohlenhydrate | 46,4 g | 24 % |
 | davon Zucker | 7,3 g |  |
-| Ballaststoffe | 3,2 g |  |
+| Ballaststoffe | 3,1 g |  |
 | Salz | 4,5 g |  |
 
-- **Protein pro 100 kcal:** 8,4 g
-- **Makroverteilung (Energie):** Protein 34 % · Kohlenhydrate 40 % · Fett 27 %
-- **Gewicht fertig:** ca. 1.050 g gesamt · **ca. 530 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,3 g
+- **Makroverteilung (Energie):** Protein 34 % · Kohlenhydrate 36 % · Fett 31 %
+- **Gewicht fertig:** ca. 1.040 g gesamt · **ca. 520 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -33,10 +33,10 @@
 | Zutat | Menge | Hinweis |
 |---|---|---|
 | **Reis** | | |
-| Basmatireis | 100 g | oder Jasminreis |
+| Basmatireis | 90 g | oder Jasminreis |
 | **Curry** | | |
-| Garnelen | 400 g | TK, über Nacht im Kühlschrank aufgetaut |
-| Rapsöl | 1 TL (5 g) |  |
+| Garnelen | 410 g | TK, über Nacht im Kühlschrank aufgetaut |
+| Rapsöl | 1 EL (10 g) |  |
 | Rote Currypaste | 2 EL (30 g) |  |
 | Knoblauch | 2 Zehen (6 g) |  |
 | Ingwer | 1 cm Stück (5 g) |  |
@@ -49,13 +49,13 @@
 
 ## Mise en place
 
-- 400 g Garnelen am Vorabend im Kühlschrank auftauen, abspülen und trocken tupfen.
-- 100 g Basmatireis waschen. 1 Paprika rote Paprika (150 g) in 1 cm breite Streifen schneiden. 2 Zehen Knoblauch (6 g) und 1 cm Stück Ingwer (5 g) fein reiben. 1 Stange Frühlingszwiebeln (20 g) in Ringe schneiden.
+- 410 g Garnelen am Vorabend im Kühlschrank auftauen, abspülen und trocken tupfen.
+- 90 g Basmatireis waschen. 1 Paprika rote Paprika (150 g) in 1 cm breite Streifen schneiden. 2 Zehen Knoblauch (6 g) und 1 cm Stück Ingwer (5 g) fein reiben. 1 Stange Frühlingszwiebeln (20 g) in Ringe schneiden.
 
 ## Zubereitung
 
-1. **Reis kochen** ⏱ 12 min: Reis mit 180 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
-2. **Paste anrösten** ⏱ 1 min: 1 TL Rapsöl (5 g) in der Pfanne auf Stufe 6 von 9 erhitzen. 2 EL Rote Currypaste (30 g), Knoblauch und Ingwer 1 Minute unter Rühren anrösten, bis es intensiv duftet.
+1. **Reis kochen** ⏱ 12 min: Reis mit 160 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, dann auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
+2. **Paste anrösten** ⏱ 1 min: 1 EL Rapsöl (10 g) in der Pfanne auf Stufe 6 von 9 erhitzen. 2 EL Rote Currypaste (30 g), Knoblauch und Ingwer 1 Minute unter Rühren anrösten, bis es intensiv duftet.
 3. **Currysauce** ⏱ 5 min: 200 g Kokosmilch light und 100 g Gemüsebrühe angießen, glatt rühren und aufkochen. Paprika hineingeben und auf Stufe 5 von 9 4 Minuten köcheln, bis die Paprika bissfest ist.
 4. **Garnelen garen** ⏱ 4 min: Garnelen in die Sauce legen und auf Stufe 4 von 9 3–4 Minuten sanft köcheln. Garprobe: rundum rosa-orange, nicht mehr glasig, locker C-förmig gebogen (Kerntemperatur ca. 63 °C). Mit 2 TL Sojasauce (10 g) und 2 TL Zitronensaft (10 g) abschmecken.
 
@@ -71,7 +71,7 @@
 
 ## Anrichten
 
-Pro Teller die Hälfte des Reises und die Hälfte des Currys, mit Frühlingszwiebeln bestreut: ca. 530 g pro Portion.
+Pro Teller die Hälfte des Reises und die Hälfte des Currys, mit Frühlingszwiebeln bestreut: ca. 520 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -81,8 +81,8 @@ Pro Teller die Hälfte des Reises und die Hälfte des Currys, mit Frühlingszwie
 
 ## Varianten & Austausch
 
-- **Mit Hähnchen:** 400 g Hähnchenbrust in Streifen statt Garnelen, 6–7 Minuten köcheln bis 74 °C Kerntemperatur; dann 3 Tage haltbar. (+48 kcal, +11 g Protein, +0,4 g Fett pro Portion)
-- **Mehr kcal:** Reis auf 150 g erhöhen. (+88 kcal, +2 g Protein, +0,2 g Fett pro Portion)
+- **Mit Hähnchen:** 400 g Hähnchenbrust in Streifen statt Garnelen, 6–7 Minuten köcheln bis 74 °C Kerntemperatur; dann 3 Tage haltbar. (+44 kcal, +10,1 g Protein, +0,4 g Fett pro Portion)
+- **Mehr kcal:** Reis auf 150 g erhöhen. (+106 kcal, +2,4 g Protein, +0,2 g Fett pro Portion)
 - **Mit Spinat:** 100 g Babyspinat zum Schluss unterheben. (+11 kcal, +1,5 g Protein, +0,2 g Fett pro Portion)
 
 ## Tipps
@@ -93,9 +93,9 @@ Pro Teller die Hälfte des Reises und die Hälfte des Currys, mit Frühlingszwie
 
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
-| Basmatireis ungekocht | 100 g | 352 | 8 | 0,6 | 78 |
-| Garnelen roh geschält | 400 g | 324 | 72 | 4 | 0 |
-| Rapsöl | 5 g | 45 | 0 | 5 | 0 |
+| Basmatireis ungekocht | 90 g | 317 | 7,2 | 0,5 | 70,2 |
+| Garnelen roh geschält | 410 g | 332 | 73,8 | 4,1 | 0 |
+| Rapsöl | 10 g | 90 | 0 | 10 | 0 |
 | Rote Currypaste | 30 g | 35 | 0,8 | 1,7 | 3,6 |
 | Knoblauch | 6 g | 8 | 0,4 | 0 | 1,7 |
 | Ingwer frisch | 5 g | 4 | 0,1 | 0 | 0,8 |
@@ -105,9 +105,9 @@ Pro Teller die Hälfte des Reises und die Hälfte des Currys, mit Frühlingszwie
 | Sojasauce | 10 g | 6 | 0,8 | 0,1 | 0,5 |
 | Zitronensaft | 10 g | 2 | 0 | 0 | 0,5 |
 | Frühlingszwiebeln | 20 g | 6 | 0,4 | 0 | 0,9 |
-| **Summe** | | **1.028** | **86,1** | **30,2** | **100,6** |
-| **Pro Portion (÷ 2)** | | **514** | **43,1** | **15,1** | **50,3** |
+| **Summe** | | **1.046** | **87,1** | **35,2** | **92,8** |
+| **Pro Portion (÷ 2)** | | **523** | **43,6** | **17,6** | **46,4** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.031 kcal gegenüber 1.028 kcal → Abweichung 0,3 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.049 kcal gegenüber 1.046 kcal → Abweichung 0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

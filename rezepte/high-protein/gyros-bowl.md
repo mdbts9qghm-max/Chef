@@ -4,7 +4,7 @@
 - **Bewertung:** noch nicht bewertet
 - **Kategorien:** High Protein (Hauptkategorie: High Protein)
 - **Küche:** Griechisch & Mediterran
-- **Inspiration:** TikTok-/Instagram-Trend „Gyros Bowl / Greek Chicken Bowl Meal Prep“. Geändert: Fettes Schweinenackensteak durch Schweinefilet ersetzt, Tzatziki aus Skyr statt griechischem Joghurt 10 %; ca. 250 kcal weniger als ein Gyros-Teller mit Pommes.
+- **Inspiration:** TikTok-/Instagram-Trend „Gyros Bowl / Greek Chicken Bowl Meal Prep“. Geändert: Fettes Schweinenackensteak durch Schweinefilet ersetzt, Tzatziki aus Skyr statt griechischem Joghurt 10 %; ca. 220 kcal weniger als ein Gyros-Teller mit Pommes.
 - **Mahlzeit:** Mittag/Abend (herzhaft)
 - **Portionen:** 2
 - **Schwierigkeit:** leicht
@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 702 kcal | 31 % |
-| Protein | 65,5 g | 44 % |
-| Fett | 17 g | 17 % |
-| davon gesättigt | 5,2 g |  |
-| Kohlenhydrate | 69,3 g | 36 % |
+| Kalorien | 733 kcal | 32 % |
+| Protein | 66,8 g | 45 % |
+| Fett | 25,1 g | 25 % |
+| davon gesättigt | 7,8 g |  |
+| Kohlenhydrate | 57,7 g | 30 % |
 | davon Zucker | 8,7 g |  |
-| Ballaststoffe | 4,1 g |  |
-| Salz | 2,7 g |  |
+| Ballaststoffe | 3,8 g |  |
+| Salz | 3,1 g |  |
 
-- **Protein pro 100 kcal:** 9,3 g
-- **Makroverteilung (Energie):** Protein 38 % · Kohlenhydrate 40 % · Fett 22 %
-- **Gewicht fertig:** ca. 1.260 g gesamt · **ca. 630 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,1 g
+- **Makroverteilung (Energie):** Protein 37 % · Kohlenhydrate 32 % · Fett 31 %
+- **Gewicht fertig:** ca. 1.210 g gesamt · **ca. 610 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -42,28 +42,28 @@
 | Kreuzkümmel | ½ TL (1 g) |  |
 | Salz | ½ TL knapp (2,5 g) |  |
 | Pfeffer | 2 Prisen (1 g) |  |
-| Rapsöl | 2 TL (10 g) |  |
+| Rapsöl | 1½ EL (15 g) |  |
 | **Skyr-Tzatziki** | | |
 | Skyr natur | 200 g |  |
 | Salatgurke | ⅓ Gurke (120 g) |  |
 | Knoblauch | 1 Zehe (3 g) |  |
-| Olivenöl | 1 TL (5 g) |  |
+| Olivenöl | 1 EL (10 g) |  |
 | Zitronensaft | 1 TL (5 g) |  |
 | Salz | 2 Prisen (1 g) |  |
 | **Bowl** | | |
-| Basmatireis | 150 g |  |
+| Basmatireis | 120 g |  |
 | Tomaten | 1 Tomate (100 g) |  |
-| Feta | 40 g |  |
+| Feta | 70 g |  |
 
 ## Mise en place
 
 - 400 g Schweinefilet in 5 mm dünne Scheiben, dann in Streifen schneiden. 1 Zwiebel (80 g) in feine Streifen, 2 Zehen Knoblauch (6 g) fein hacken. Alles mit 2 TL Paprikapulver (4 g), 2 TL Oregano (2 g), ½ TL Kreuzkümmel (1 g), ½ TL knapp Salz (2,5 g), 2 Prisen Pfeffer (1 g) und der Hälfte des Öls mischen und 30 Minuten (oder über Nacht) im Kühlschrank ziehen lassen.
-- Tzatziki: ⅓ Gurke Salatgurke (120 g) grob raspeln, mit 2 Prisen Salz (1 g) mischen und 5 Minuten stehen lassen, dann kräftig ausdrücken. Mit 200 g Skyr natur, fein geriebenem 1 Zehe Knoblauch (3 g), 1 TL Olivenöl (5 g) und 1 TL Zitronensaft (5 g) verrühren.
-- 150 g Basmatireis waschen. 1 Tomate (100 g) würfeln, 40 g Feta zerbröseln.
+- Tzatziki: ⅓ Gurke Salatgurke (120 g) grob raspeln, mit 2 Prisen Salz (1 g) mischen und 5 Minuten stehen lassen, dann kräftig ausdrücken. Mit 200 g Skyr natur, fein geriebenem 1 Zehe Knoblauch (3 g), 1 EL Olivenöl (10 g) und 1 TL Zitronensaft (5 g) verrühren.
+- 120 g Basmatireis waschen. 1 Tomate (100 g) würfeln, 70 g Feta zerbröseln.
 
 ## Zubereitung
 
-1. **Reis kochen** ⏱ 12 min: Reis mit 270 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
+1. **Reis kochen** ⏱ 12 min: Reis mit 215 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
 2. **Gyros braten** ⏱ 7 min: Restliches Rapsöl in der Pfanne (28 cm) auf Stufe 8 von 9 stark erhitzen (ca. 3 min). Fleisch mit Zwiebeln in einer Lage hineingeben, 3 Minuten nicht bewegen, damit Röstkanten entstehen, dann wenden und 3–4 Minuten weiterbraten, bis alles knusprig gebräunt ist. Fertig bei 63 °C Kerntemperatur in den dicksten Streifen. Bei kleiner Pfanne in 2 Portionen braten.
 
 ## Zeitablauf
@@ -78,7 +78,7 @@
 
 ## Anrichten
 
-Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Hälfte des Tzatzikis und 20 g Feta obenauf: ca. 630 g pro Portion.
+Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Hälfte des Tzatzikis und 35 g Feta obenauf: ca. 610 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -90,8 +90,8 @@ Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Häl
 ## Varianten & Austausch
 
 - **Mit Hähnchen:** 400 g Hähnchenbrust statt Schweinefilet, bis 74 °C Kerntemperatur braten. (+2 kcal, +4 g Protein, −1,6 g Fett pro Portion)
-- **Als Wrap:** Statt Reis in 2 Weizen-Tortillas wickeln. (−76 kcal, −0,7 g Protein, +3,9 g Fett pro Portion)
-- **Weniger kcal:** Reis auf 100 g, Feta weglassen. (−140 kcal, −5,4 g Protein, −4,4 g Fett pro Portion)
+- **Als Wrap:** Statt Reis in 2 Weizen-Tortillas wickeln. (−23 kcal, +0,5 g Protein, +4 g Fett pro Portion)
+- **Weniger kcal:** Reis auf 80 g, Feta weglassen. (−161 kcal, −7,6 g Protein, −7,5 g Fett pro Portion)
 
 ## Tipps
 
@@ -109,19 +109,19 @@ Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Häl
 | Kreuzkümmel gemahlen | 1 g | 4 | 0,2 | 0,2 | 0,3 |
 | Salz | 2,5 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 1 g | 3 | 0,1 | 0 | 0,4 |
-| Rapsöl | 10 g | 90 | 0 | 10 | 0 |
+| Rapsöl | 15 g | 135 | 0 | 15 | 0 |
 | Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
 | Salatgurke | 120 g | 14 | 0,7 | 0,1 | 2,2 |
 | Knoblauch | 3 g | 4 | 0,2 | 0 | 0,9 |
-| Olivenöl | 5 g | 45 | 0 | 5 | 0 |
+| Olivenöl | 10 g | 90 | 0 | 10 | 0 |
 | Zitronensaft | 5 g | 1 | 0 | 0 | 0,2 |
 | Salz | 1 g | 0 | 0 | 0 | 0 |
-| Basmatireis ungekocht | 150 g | 528 | 12 | 0,9 | 117 |
+| Basmatireis ungekocht | 120 g | 422 | 9,6 | 0,7 | 93,6 |
 | Tomaten | 100 g | 18 | 0,9 | 0,2 | 2,6 |
-| Feta 45 % Fett i. Tr. | 40 g | 104 | 6,8 | 8,4 | 0,2 |
-| **Summe** | | **1.404** | **131** | **34,1** | **138,7** |
-| **Pro Portion (÷ 2)** | | **702** | **65,5** | **17** | **69,3** |
+| Feta 45 % Fett i. Tr. | 70 g | 181 | 11,9 | 14,7 | 0,4 |
+| **Summe** | | **1.466** | **133,7** | **50,2** | **115,4** |
+| **Pro Portion (÷ 2)** | | **733** | **66,8** | **25,1** | **57,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.401 kcal gegenüber 1.404 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.463 kcal gegenüber 1.466 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

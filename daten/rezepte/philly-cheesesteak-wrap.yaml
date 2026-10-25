@@ -22,7 +22,7 @@ zutaten:
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
   - gruppe: Käse & Wrap
   - {id: frischkaese, zutat: Frischkäse light, g: 40, anzeige: "1 gehäufter EL"}
-  - {id: kaese, zutat: Reibekäse light, g: 60}
+  - {id: kaese, zutat: Reibekäse light, g: 80}
   - {id: wraps, zutat: Weizen-Tortilla-Wraps, name: Weizen-Tortillas, g: 124, anzeige: "2 große Weizen-Tortillas"}
 mise_en_place:
   - "{steak} 15 Minuten ins Gefrierfach legen, dann quer zur Faser in hauchdünne Scheiben (2–3 mm) schneiden."
@@ -54,7 +54,7 @@ aufbewahrung:
 varianten:
   - {titel: Als Bowl, text: "Statt Wrap auf 120 g gekochtem Basmatireis (Rohgewicht) anrichten.", aenderung: {"Weizen-Tortilla-Wraps": -124, "Basmatireis ungekocht": 120}}
   - {titel: Mit Hähnchen, text: "400 g Hähnchenbrust in dünnen Streifen statt Rind, bis 74 °C Kerntemperatur braten.", aenderung: {"Rinderhüftsteak roh": -400, "Hähnchenbrustfilet roh": 400}}
-  - {titel: Weniger kcal, text: "Reibekäse auf 30 g reduzieren.", aenderung: {"Reibekäse light": -30}}
+  - {titel: Weniger kcal, text: "Reibekäse auf 30 g reduzieren.", aenderung: {"Reibekäse light": -50}}
 tipps:
   - "Ein Spritzer Senf in die Käsemischung: schmeckt mehr nach Original."
 gargewicht_g: null

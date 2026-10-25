@@ -13,25 +13,25 @@ zutaten:
   - gruppe: Quarkmasse
   - {id: quark, zutat: Magerquark, g: 500, hinweis: "1 Becher"}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
-  - {id: griess, zutat: Weichweizengrieß, name: Grieß, g: 80}
+  - {id: griess, zutat: Weichweizengrieß, name: Grieß, g: 65}
   - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
   - {id: erythrit, zutat: Erythrit, g: 20, anzeige: "2 EL"}
   - {id: backpulver, zutat: Backpulver, g: 4, anzeige: "1 TL"}
   - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
-  - {id: butter, zutat: Butter, g: 5, anzeige: "1 TL", hinweis: "für die Form"}
+  - {id: butter, zutat: Butter, g: 12, anzeige: "1 EL", hinweis: "für die Form und obenauf"}
   - gruppe: Obst & Topping
   - {id: kirschen, zutat: Sauerkirschen Glas abgetropft, name: Sauerkirschen, g: 120, hinweis: "gut abgetropft"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 20, anzeige: "2 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
 mise_en_place:
   - "Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost auf die mittlere Schiene."
-  - "Auflaufform mit {butter} ausfetten."
+  - "Auflaufform mit einem Drittel von {butter} ausfetten, den Rest in kleine Flöckchen schneiden."
   - "{kirschen} in einem Sieb mindestens 5 Minuten abtropfen lassen (Saft anderweitig verwenden)."
 schritte:
   - titel: Masse rühren
     text: "{quark}, {eier}, {griess}, {whey}, {erythrit}, {backpulver} und {zitrone} in einer Schüssel mit dem Schneebesen 1 Minute zu einer glatten Masse rühren. 5 Minuten stehen lassen, damit der Grieß quillt."
     timer_min: 5
   - titel: Schichten
-    text: "Masse in die Form geben, glatt streichen und die Kirschen gleichmäßig darauf verteilen, leicht eindrücken. {mandeln} darüberstreuen."
+    text: "Masse in die Form geben, glatt streichen und die Kirschen gleichmäßig darauf verteilen, leicht eindrücken. {mandeln} darüberstreuen und die Butterflöckchen darauf verteilen."
     timer_min: null
   - titel: Backen
     text: "Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 30–35 Minuten backen. Fertig, wenn die Oberfläche goldgelb ist, die Mandeln gebräunt sind und die Mitte beim leichten Rütteln an der Form nur noch minimal wackelt."
@@ -54,7 +54,7 @@ aufbewahrung:
 varianten:
   - {titel: Mit Beeren, text: "150 g TK-Beerenmischung gefroren statt Kirschen.", aenderung: {"Sauerkirschen Glas abgetropft": -120, "Beerenmischung TK": 150}}
   - {titel: Mehr Protein, text: "Zusätzlich 150 g Skyr in die Masse rühren, 5 Minuten länger backen.", aenderung: {"Skyr natur": 150}}
-  - {titel: Weniger kcal, text: "Mandeln weglassen.", aenderung: {"Mandeln gehobelt": -20}}
+  - {titel: Weniger kcal, text: "Mandeln weglassen.", aenderung: {"Mandeln gehobelt": -30}}
 tipps:
   - "Abgeriebene Schale einer halben Bio-Zitrone in der Masse gibt Käsekuchen-Aroma."
   - "Kalt aus dem Kühlschrank schmeckt er wie Käsekuchen ohne Boden."

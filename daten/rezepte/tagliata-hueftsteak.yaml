@@ -11,11 +11,11 @@ zeit: {vorbereitung: 5, kochen: 20, wartezeit: 0}
 ausstattung: [Airfryer, "Pfanne 28 cm (Edelstahl oder Gusseisen)", Fleischthermometer, Schneidebrett]
 zutaten:
   - gruppe: Parmesan-Kartoffeln
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 350, hinweis: "mit Schale, gut gewaschen"}
-  - {id: oel_k, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 320, hinweis: "mit Schale, gut gewaschen"}
+  - {id: oel_k, zutat: Olivenöl, g: 10, anzeige: "1 EL"}
   - {id: salz_k, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 1, anzeige: "1 TL"}
-  - {id: parmesan, zutat: Parmesan gerieben, g: 15, anzeige: "1½ EL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}
   - gruppe: Steak
   - {id: steak, zutat: Rinderhüftsteak roh, name: Hüftsteaks, g: 400, anzeige: "2 Hüftsteaks à 200 g", hinweis: "2,5 cm dick, 30 Minuten vorher aus dem Kühlschrank"}
   - {id: oel_s, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
@@ -50,7 +50,7 @@ aufbewahrung:
   einfrierbar: false
   aufwaermen: "Steakstreifen kalt essen (z. B. auf Brot) oder nur 30 Sekunden in heißer Pfanne schwenken; Kartoffeln im Airfryer 180 °C, 4 Minuten."
 varianten:
-  - {titel: Mehr kcal, text: "Kartoffeln auf 550 g erhöhen.", aenderung: {"Kartoffeln festkochend roh": 200}}
+  - {titel: Mehr kcal, text: "Kartoffeln auf 550 g erhöhen.", aenderung: {"Kartoffeln festkochend roh": 230}}
   - {titel: Mit Babyspinat, text: "Steakstreifen auf 100 g Babyspinat anrichten (Rucola-Ersatz).", aenderung: {"Babyspinat": 100}}
   - {titel: Mit Putenbrust, text: "400 g Putenbrust statt Rind, bis 74 °C Kerntemperatur braten.", aenderung: {"Rinderhüftsteak roh": -400, "Putenbrustfilet roh": 400}}
 tipps:

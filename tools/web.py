@@ -496,11 +496,29 @@ def einkauf_seite(plan, rezepte, db):
             out.append("<h3>Schon da (Reste aus dem vorherigen Einkauf)</h3><p class='leise'>"
                        + esc(", ".join(f"{z.zutat} {gramm(z.bedarf)}" for z in sorted(schon, key=lambda z: z.zutat))) + "</p>")
         out.append("</section>")
+    out.append(budget_html(ek.kosten(listen)))
     md = ek.einkauf_markdown(plan, rezepte, db, listen, reste)
-    rest = md[md.index("## Budget"):] if "## Budget" in md else md[md.index("## Reste"):]
-    out.append(md_html(rest))
+    if "## Reste" in md:
+        out.append(md_html(md[md.index("## Reste"):]))
     out.append("</div>")
     return "\n".join(out)
+
+
+def budget_html(k):
+    """Budget-Karte: Betrag ist in der App änderbar (app.js rechnet mit den Kostendaten live)."""
+    daten = json.dumps({"woche": round(k["woche"], 2), "vorrat": round(k["vorrat"], 2),
+                        "teuer": [{"zutat": t["zutat"], "kosten": round(t["kosten"], 2)} for t in k["teuer"]],
+                        "spar_whey": ek.SPAR_WHEY}, ensure_ascii=False).replace("</", "<\\/")
+    standard = ek.budget() or 0
+    return f"""<section class="karte" id="budget" data-standard="{standard}">
+<h2>Budget</h2>
+<div class="budget-eingabe"><label for="budget-betrag">€ pro Woche</label>
+<input type="number" id="budget-betrag" min="0" step="5" inputmode="decimal" value="{standard}">
+<button type="button" id="budget-standard">Standard ({zahl(standard, 0)} €)</button></div>
+<div id="budget-ergebnis" aria-live="polite"></div>
+<p class="leise">Gilt auf diesem Gerät für alle Wochen. Damit auch die Planung danach rechnet, in Claude „Budget: [€]“ sagen.</p>
+<script type="application/json" id="kostendaten">{daten}</script>
+</section>"""
 
 
 # --- PWA -----------------------------------------------------------------------------------
@@ -578,7 +596,8 @@ def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
             schreibe(ziel / "einkauf" / f"{plan['name']}.html",
                      seite(f"Einkauf KW {plan['kw']}/{plan['jahr']}", einkauf_seite(plan, rezepte, db), 1, "einkauf", links=rel(1)))
 
-    daten = {"ziele": config.TAGESZIELE, "plaene": plan_json}
+    daten = {"ziele": config.TAGESZIELE, "plaene": plan_json, "budget": ek.budget(),
+             "einkauf": links.get("einkauf")}
     schreibe(ziel / "assets" / "daten.js", "window.REZEPTBUCH = " + json.dumps(daten, ensure_ascii=False) + ";\n")
     heute = ('<div id="heute"><noscript><p>Für die Tagesansicht bitte JavaScript aktivieren. '
              '<a href="rezepte.html">Zum Rezeptbuch</a></p></noscript></div>')

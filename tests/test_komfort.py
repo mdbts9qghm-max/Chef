@@ -79,10 +79,11 @@ def test_bestand_ohne_dubletten(echte_rezepte):
 
 
 def test_importiertes_rezept_vollstaendig(echte_rezepte, db):
-    r = echte_rezepte["cookie-dough-protein-dip"]
-    assert r["herkunft"]["art"] == "import" and r["inspiration"]["aenderungen"]
+    r = copy.deepcopy(echte_rezepte["beeren-nice-cream"])
+    r.update(id="import-test", herkunft={"art": "import", "quelle": "import/test-1.png", "datum": dt.date(2026, 10, 25)},
+             inspiration={"quelle": "Test-Post", "link": None, "aenderungen": "Skyr statt Joghurt"})
     assert pruefen.pruefe_rezept(r, db, r["id"]).ok
-    assert (config.IMPORT_ERLEDIGT / "cookie-dough-dip-2.png").exists()
+    assert im.aehnliche_rezepte(r, echte_rezepte)[0][1] == "beeren-nice-cream"     # Kopie wird als Dublette erkannt
 
 
 # --- Kühlschrank ------------------------------------------------------------------------

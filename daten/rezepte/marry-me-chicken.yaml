@@ -8,13 +8,13 @@ kueche: Amerikanisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Marry Me Chicken“"
   link: null
-  aenderungen: "Schlagsahne (meist 200 ml) durch Milch 1,5 % und Frischkäse light ersetzt, Butter weggelassen und Öl auf 10 g reduziert. Spart gegenüber einer Version mit 200 g Schlagsahne und 20 g Butter ca. 275 kcal pro Portion."
+  aenderungen: "Schlagsahne (meist 200 ml) durch Milch 1,5 % und Frischkäse light ersetzt, Butter weggelassen, dafür 20 g Olivenöl. Spart gegenüber einer Version mit 200 g Schlagsahne und 20 g Butter ca. 250 kcal pro Portion."
 schwierigkeit: mittel
 zeit: {vorbereitung: 10, kochen: 25, wartezeit: 0}
 ausstattung: ["Pfanne 28 cm mit Deckel", "Topf ca. 2 l mit Deckel", Fleischthermometer]
 zutaten:
   - gruppe: Reis
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 150, hinweis: "ungekocht"}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 120, hinweis: "ungekocht"}
   - {id: salz_reis, zutat: Salz, g: 1.5, anzeige: "¼ TL", hinweis: "für den Reis"}
   - gruppe: Hähnchen
   - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilets, g: 400, anzeige: "2 Hähnchenbrustfilets", hinweis: "roh"}
@@ -22,9 +22,9 @@ zutaten:
   - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 1, anzeige: "1 TL", hinweis: "getrocknet"}
   - {id: salz_h, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise", hinweis: "schwarz, gemahlen"}
-  - {id: oel_h, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: oel_h, zutat: Olivenöl, g: 10, anzeige: "1 EL"}
   - gruppe: Sauce
-  - {id: oel_s, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
+  - {id: oel_s, zutat: Olivenöl, g: 10, anzeige: "1 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 60, anzeige: "½ mittelgroße Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
   - {id: tomaten, zutat: Getrocknete Tomaten in Öl abgetropft, name: getrocknete Tomaten in Öl, g: 40, anzeige: "ca. 6 Stück", hinweis: "gut abgetropft"}
@@ -32,19 +32,19 @@ zutaten:
   - {id: bruehe, zutat: Gemüsebrühe zubereitet, name: Gemüsebrühe, g: 100, hinweis: "100 ml, aus Pulver"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 200, hinweis: "200 ml"}
   - {id: staerke, zutat: Speisestärke, g: 5, anzeige: "1 TL"}
-  - {id: frischkaese, zutat: Frischkäse light, g: 60, anzeige: "2 EL"}
-  - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}
+  - {id: frischkaese, zutat: Frischkäse light, g: 80, anzeige: "2½ EL"}
+  - {id: parmesan, zutat: Parmesan gerieben, g: 30, anzeige: "3 EL"}
   - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
   - {id: spinat, zutat: Babyspinat, g: 50, anzeige: "2 Handvoll"}
 mise_en_place:
-  - "{reis} in einem Sieb unter kaltem Wasser waschen, bis das Wasser fast klar ist (ca. 30 Sekunden). 270 ml Wasser abmessen."
+  - "{reis} in einem Sieb unter kaltem Wasser waschen, bis das Wasser fast klar ist (ca. 30 Sekunden). 215 ml Wasser abmessen."
   - "{haehnchen:n} trocken tupfen. Jedes Filet waagerecht halbieren (Schmetterlingsschnitt), sodass 4 gleich dünne Schnitzel von ca. 1,5 cm entstehen; so garen sie gleichmäßig."
   - "{paprika}, {oregano}, {salz_h} und {pfeffer} mischen und die Schnitzel von beiden Seiten damit einreiben."
   - "{zwiebel} fein würfeln (5 mm). {knoblauch} fein hacken. {tomaten} abtropfen lassen und in feine Streifen schneiden."
   - "{milch}, {staerke} und {bruehe} in einem Messbecher glatt rühren (die Stärke vorher mit 2 EL der Milch klümpchenfrei anrühren)."
 schritte:
   - titel: Reis aufsetzen
-    text: "Reis, 270 ml Wasser und {salz_reis} im Topf (ca. 2 l) mit Deckel auf Stufe 9 von 9 aufkochen (ca. 3–4 min). Sobald es sprudelt, auf Stufe 2 von 9 herunterschalten und 12 Minuten mit Deckel quellen lassen, nicht umrühren. Dann vom Herd ziehen und 5 Minuten zugedeckt ruhen lassen. Fertig, wenn das Wasser vollständig aufgesogen ist und sich Dampflöcher an der Oberfläche zeigen."
+    text: "Reis, 215 ml Wasser und {salz_reis} im Topf (ca. 2 l) mit Deckel auf Stufe 9 von 9 aufkochen (ca. 3–4 min). Sobald es sprudelt, auf Stufe 2 von 9 herunterschalten und 12 Minuten mit Deckel quellen lassen, nicht umrühren. Dann vom Herd ziehen und 5 Minuten zugedeckt ruhen lassen. Fertig, wenn das Wasser vollständig aufgesogen ist und sich Dampflöcher an der Oberfläche zeigen."
     timer_min: 12
   - titel: Hähnchen anbraten
     text: "{oel_h} in der Pfanne (28 cm) auf Stufe 7 von 9 erhitzen, bis es schimmert (ca. 2 min auf Ceran). Schnitzel nebeneinander einlegen und 3 Minuten nicht bewegen, bis die Unterseite goldbraun ist, dann wenden und weitere 2 Minuten braten. Innen sind sie jetzt noch nicht durch. Auf einen Teller legen."
@@ -78,8 +78,8 @@ aufbewahrung:
   separat: "Reis innerhalb von 1 Stunde abkühlen (flach auf einem Teller ausbreiten) und in den Kühlschrank stellen."
 varianten:
   - {titel: Mit Putenbrust, text: "400 g Putenbrustfilet statt Hähnchen; Garzeit gleich, ebenfalls 74 °C Kerntemperatur.", aenderung: {"Hähnchenbrustfilet roh": -400, "Putenbrustfilet roh": 400}}
-  - {titel: Mit Pasta statt Reis, text: "150 g Spaghetti oder Penne statt Basmatireis, nach Packung in Salzwasser kochen.", aenderung: {"Basmatireis ungekocht": -150, "Hartweizennudeln ungekocht": 150}}
-  - {titel: Weniger kcal, text: "Reis auf 100 g reduzieren; ergibt ein leichteres Abendessen mit ca. 650 kcal.", aenderung: {"Basmatireis ungekocht": -50}}
+  - {titel: Mit Pasta statt Reis, text: "120 g Spaghetti oder Penne statt Basmatireis, nach Packung in Salzwasser kochen.", aenderung: {"Basmatireis ungekocht": -120, "Hartweizennudeln ungekocht": 120}}
+  - {titel: Weniger kcal, text: "Reis auf 80 g reduzieren; ergibt ein leichteres Abendessen.", aenderung: {"Basmatireis ungekocht": -40}}
   - {titel: Mehr Grün ohne Mehraufwand, text: "100 g zusätzlicher Babyspinat.", aenderung: {"Babyspinat": 100}}
 tipps:
   - "Ein Teelöffel vom Öl der getrockneten Tomaten statt Olivenöl in der Sauce gibt deutlich mehr Aroma (kcal bleiben gleich)."

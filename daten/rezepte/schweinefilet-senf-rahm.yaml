@@ -12,7 +12,7 @@ ausstattung: ["Pfanne 28 cm", "Topf ca. 2 l", Fleischthermometer]
 zutaten:
   - gruppe: Fleisch
   - {id: filet, zutat: Schweinefilet roh, name: Schweinefilet, g: 400, hinweis: "Sehnen entfernt"}
-  - {id: oel, zutat: Rapsöl, g: 6, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 12, anzeige: "1 EL"}
   - {id: salz_f, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
   - gruppe: Senf-Rahm
@@ -21,10 +21,10 @@ zutaten:
   - {id: bruehe, zutat: Gemüsebrühe zubereitet, name: Gemüsebrühe, g: 100, hinweis: "100 ml"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 150, hinweis: "150 ml"}
   - {id: staerke, zutat: Speisestärke, g: 5, anzeige: "1 TL"}
-  - {id: frischkaese, zutat: Frischkäse light, g: 40, anzeige: "1 gehäufter EL"}
+  - {id: frischkaese, zutat: Frischkäse light, g: 80, anzeige: "2½ EL"}
   - {id: petersilie, zutat: Petersilie frisch, name: Petersilie, g: 5, anzeige: "1 EL gehackt"}
   - gruppe: Beilage
-  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 400, hinweis: "geschält gewogen"}
+  - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 350, hinweis: "geschält gewogen"}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Kochwasser, g: 10, anzeige: "2 TL", nicht_mitgerechnet: true}
 mise_en_place:
   - "{kartoffeln} schälen und halbieren (große vierteln)."
@@ -56,8 +56,8 @@ aufbewahrung:
   aufwaermen: "Sauce mit Medaillons im Topf auf Stufe 3 von 9 3–4 Minuten erwärmen (nicht kochen), Kartoffeln in der Mikrowelle 600 W, 1½ Minuten."
 varianten:
   - {titel: Mit Putenbrust, text: "400 g Putenbrust in Medaillons statt Schwein, bis 74 °C Kerntemperatur garen.", aenderung: {"Schweinefilet roh": -400, "Putenbrustfilet roh": 400}}
-  - {titel: Mehr kcal, text: "Kartoffeln auf 600 g erhöhen (für Tage mit mehr Bedarf).", aenderung: {"Kartoffeln festkochend roh": 200}}
-  - {titel: Mit Nudeln, text: "120 g Hartweizennudeln statt Kartoffeln.", aenderung: {"Kartoffeln festkochend roh": -400, "Hartweizennudeln ungekocht": 120}}
+  - {titel: Mehr kcal, text: "Kartoffeln auf 600 g erhöhen (für Tage mit mehr Bedarf).", aenderung: {"Kartoffeln festkochend roh": 250}}
+  - {titel: Mit Nudeln, text: "120 g Hartweizennudeln statt Kartoffeln.", aenderung: {"Kartoffeln festkochend roh": -350, "Hartweizennudeln ungekocht": 120}}
 tipps:
   - "Halb mittelscharfer, halb körniger Senf (falls vorhanden) macht die Sauce optisch schöner."
   - "Das Filet erst kurz vor dem Braten salzen, sonst zieht es Wasser."

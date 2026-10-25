@@ -4,7 +4,7 @@
 - **Bewertung:** noch nicht bewertet
 - **Kategorien:** High Protein (Hauptkategorie: High Protein)
 - **Küche:** Türkisch & Orientalisch
-- **Inspiration:** TikTok-/Instagram-Trend „Döner Box / Döner Bowl zu Hause“. Geändert: Frittierte Pommes durch Airfryer-Pommes mit 5 g Öl ersetzt, fettes Dönerfleisch durch marinierte Hähnchenoberkeule ohne Haut, Knoblauchsauce aus Skyr statt Mayonnaise. Spart ca. 400 kcal gegenüber einer Döner-Box vom Imbiss.
+- **Inspiration:** TikTok-/Instagram-Trend „Döner Box / Döner Bowl zu Hause“. Geändert: Frittierte Pommes durch Airfryer-Pommes mit 5 g Öl ersetzt, fettes Dönerfleisch durch marinierte Hähnchenoberkeule ohne Haut, Knoblauchsauce aus Skyr statt Mayonnaise. Spart ca. 350 kcal gegenüber einer Döner-Box vom Imbiss.
 - **Mahlzeit:** Mittag/Abend (herzhaft)
 - **Portionen:** 2
 - **Schwierigkeit:** mittel
@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 625 kcal | 27 % |
-| Protein | 59,8 g | 40 % |
-| Fett | 19 g | 19 % |
-| davon gesättigt | 4,9 g |  |
-| Kohlenhydrate | 48,6 g | 25 % |
-| davon Zucker | 9,5 g |  |
-| Ballaststoffe | 7,6 g |  |
-| Salz | 3,2 g |  |
+| Kalorien | 665 kcal | 29 % |
+| Protein | 61,5 g | 41 % |
+| Fett | 25,7 g | 25 % |
+| davon gesättigt | 7,3 g |  |
+| Kohlenhydrate | 42,5 g | 22 % |
+| davon Zucker | 9,3 g |  |
+| Ballaststoffe | 6,8 g |  |
+| Salz | 3,6 g |  |
 
-- **Protein pro 100 kcal:** 9,6 g
-- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 32 % · Fett 28 %
-- **Gewicht fertig:** ca. 1.240 g gesamt · **ca. 620 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,2 g
+- **Makroverteilung (Energie):** Protein 38 % · Kohlenhydrate 26 % · Fett 36 %
+- **Gewicht fertig:** ca. 1.210 g gesamt · **ca. 600 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -42,9 +42,9 @@
 | Knoblauch | 2 Zehen (6 g) |  |
 | Zitronensaft | 2 TL (10 g) |  |
 | Salz | ½ TL knapp (2,5 g) |  |
-| Rapsöl | 2 TL (8 g) |  |
+| Rapsöl | 1½ EL (15 g) |  |
 | **Airfryer-Pommes** | | |
-| Kartoffeln | 500 g | geschält gewogen |
+| Kartoffeln | 420 g | geschält gewogen |
 | Rapsöl | 1 TL (5 g) |  |
 | Salz | ¼ TL (1,5 g) |  |
 | **Knoblauchsauce & Salat** | | |
@@ -54,19 +54,19 @@
 | Tomaten | 1 Tomate (100 g) |  |
 | Salatgurke | ¼ Gurke (100 g) |  |
 | Zwiebel | ½ kleine Zwiebel (40 g) | am besten rot |
-| Feta | 30 g |  |
+| Feta | 60 g |  |
 | Chiliflocken | 1 Prise (0,5 g) |  |
 
 ## Mise en place
 
 - 400 g Hähnchenoberkeulen ohne Haut in 5 mm dünne Streifen schneiden. Mit 2 EL Skyr (50 g), 2 TL Paprikapulver (4 g), 1 TL Kreuzkümmel (2 g), 1 TL Oregano (1 g), fein geriebenem 2 Zehen Knoblauch (6 g), 2 TL Zitronensaft (10 g) und ½ TL knapp Salz (2,5 g) mischen, 30 Minuten (oder über Nacht) im Kühlschrank marinieren.
-- 500 g Kartoffeln in 1 cm dicke Stifte schneiden, 10 Minuten in kaltem Wasser wässern, dann gründlich trocken tupfen und mit 1 TL Rapsöl (5 g) mischen.
-- Sauce: 150 g Skyr mit fein geriebenem 1 Zehe Knoblauch (3 g) und 1 Prise Salz (0,5 g) verrühren. 1 Tomate (100 g) und ¼ Gurke Salatgurke (100 g) würfeln, ½ kleine Zwiebel (40 g) in feine Ringe. 30 g Feta zerbröseln.
+- 420 g Kartoffeln in 1 cm dicke Stifte schneiden, 10 Minuten in kaltem Wasser wässern, dann gründlich trocken tupfen und mit 1 TL Rapsöl (5 g) mischen.
+- Sauce: 150 g Skyr mit fein geriebenem 1 Zehe Knoblauch (3 g) und 1 Prise Salz (0,5 g) verrühren. 1 Tomate (100 g) und ¼ Gurke Salatgurke (100 g) würfeln, ½ kleine Zwiebel (40 g) in feine Ringe. 60 g Feta zerbröseln.
 
 ## Zubereitung
 
 1. **Pommes im Airfryer** ⏱ 22 min: Airfryer auf 200 °C 3 Minuten vorheizen. Pommes bei 200 °C 18–22 Minuten garen, alle 6 Minuten kräftig schütteln. Fertig, wenn sie goldbraun und knusprig sind. Mit ¼ TL Salz (1,5 g) bestreuen.
-2. **Hähnchen braten** ⏱ 8 min: Nach 10 Minuten Pommes-Zeit: 2 TL Rapsöl (8 g) in der Pfanne (28 cm) auf Stufe 8 von 9 stark erhitzen. Hähnchenstreifen in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 4–5 Minuten weiterbraten, bis die Ränder dunkel und knusprig sind. Fertig bei 74 °C Kerntemperatur (Oberkeule darf auch 80 °C haben, sie bleibt saftig).
+2. **Hähnchen braten** ⏱ 8 min: Nach 10 Minuten Pommes-Zeit: 1½ EL Rapsöl (15 g) in der Pfanne (28 cm) auf Stufe 8 von 9 stark erhitzen. Hähnchenstreifen in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 4–5 Minuten weiterbraten, bis die Ränder dunkel und knusprig sind. Fertig bei 74 °C Kerntemperatur (Oberkeule darf auch 80 °C haben, sie bleibt saftig).
 
 ## Zeitablauf
 
@@ -80,7 +80,7 @@
 
 ## Anrichten
 
-Pro Bowl die Hälfte der Pommes, darauf die Hälfte des Hähnchens, daneben Tomaten, Gurke, Zwiebeln und 15 g Feta, die Hälfte der Knoblauchsauce darüber und mit 1 Prise Chiliflocken (0,5 g) bestreuen: ca. 620 g pro Portion.
+Pro Bowl die Hälfte der Pommes, darauf die Hälfte des Hähnchens, daneben Tomaten, Gurke, Zwiebeln und 30 g Feta, die Hälfte der Knoblauchsauce darüber und mit 1 Prise Chiliflocken (0,5 g) bestreuen: ca. 600 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -91,7 +91,7 @@ Pro Bowl die Hälfte der Pommes, darauf die Hälfte des Hähnchens, daneben Toma
 
 ## Varianten & Austausch
 
-- **Mit Reis statt Pommes:** 130 g Basmatireis statt Kartoffeln und Öl. (+19 kcal, +0,2 g Protein, −2,4 g Fett pro Portion)
+- **Mit Reis statt Pommes:** 130 g Basmatireis statt Kartoffeln und Öl. (+49 kcal, +1 g Protein, −2,3 g Fett pro Portion)
 - **Mit Hähnchenbrust:** 400 g Hähnchenbrust statt Oberkeule (magerer). (−26 kcal, +7,6 g Protein, −5,8 g Fett pro Portion)
 - **Scharf:** 1 EL Sriracha in die Knoblauchsauce. (+7 kcal, +0,1 g Protein, +0,1 g Fett pro Portion)
 
@@ -111,8 +111,8 @@ Pro Bowl die Hälfte der Pommes, darauf die Hälfte des Hähnchens, daneben Toma
 | Knoblauch | 6 g | 8 | 0,4 | 0 | 1,7 |
 | Zitronensaft | 10 g | 2 | 0 | 0 | 0,5 |
 | Salz | 2,5 g | 0 | 0 | 0 | 0 |
-| Rapsöl | 8 g | 72 | 0 | 8 | 0 |
-| Kartoffeln festkochend roh | 500 g | 375 | 10 | 0,5 | 78 |
+| Rapsöl | 15 g | 135 | 0 | 15 | 0 |
+| Kartoffeln festkochend roh | 420 g | 315 | 8,4 | 0,4 | 65,5 |
 | Rapsöl | 5 g | 45 | 0 | 5 | 0 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
 | Skyr natur | 150 g | 95 | 16,5 | 0,3 | 6 |
@@ -121,11 +121,11 @@ Pro Bowl die Hälfte der Pommes, darauf die Hälfte des Hähnchens, daneben Toma
 | Tomaten | 100 g | 18 | 0,9 | 0,2 | 2,6 |
 | Salatgurke | 100 g | 12 | 0,6 | 0,1 | 1,8 |
 | Zwiebel | 40 g | 12 | 0,5 | 0,1 | 2 |
-| Feta 45 % Fett i. Tr. | 30 g | 78 | 5,1 | 6,3 | 0,2 |
+| Feta 45 % Fett i. Tr. | 60 g | 155 | 10,2 | 12,6 | 0,3 |
 | Chiliflocken | 0,5 g | 2 | 0,1 | 0,1 | 0,1 |
-| **Summe** | | **1.250** | **119,5** | **38,1** | **97,3** |
-| **Pro Portion (÷ 2)** | | **625** | **59,8** | **19** | **48,6** |
+| **Summe** | | **1.331** | **123** | **51,3** | **85** |
+| **Pro Portion (÷ 2)** | | **665** | **61,5** | **25,7** | **42,5** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.241 kcal gegenüber 1.250 kcal → Abweichung -0,8 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.321 kcal gegenüber 1.331 kcal → Abweichung -0,7 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

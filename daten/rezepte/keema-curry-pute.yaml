@@ -12,7 +12,7 @@ ausstattung: ["Pfanne 28 cm mit hohem Rand", "Topf ca. 2 l mit Deckel", Sieb]
 zutaten:
   - gruppe: Keema
   - {id: hack, zutat: Putenhackfleisch roh, name: Putenhackfleisch, g: 400}
-  - {id: oel, zutat: Rapsöl, g: 8, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 12, anzeige: "1 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 100, anzeige: "1 große Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
@@ -23,8 +23,8 @@ zutaten:
   - {id: kichererbsen, zutat: Kichererbsen abgetropft, name: Kichererbsen, g: 240, anzeige: "1 Dose", hinweis: "abgetropft und abgespült"}
   - {id: salz, zutat: Salz, g: 3, anzeige: "½ TL"}
   - gruppe: Beilage
-  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 100}
-  - {id: skyr, zutat: Skyr natur, g: 100, hinweis: "als kühler Klecks"}
+  - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 90}
+  - {id: skyr, zutat: Skyr natur, g: 110, hinweis: "als kühler Klecks"}
 mise_en_place:
   - "{zwiebel} fein würfeln, {knoblauch} und {ingwer} fein reiben."
   - "{kichererbsen} abspülen und abtropfen lassen. {reis} waschen."
@@ -39,7 +39,7 @@ schritte:
     text: "{tomaten}, Kichererbsen, {salz} und 100 ml Wasser dazugeben, aufkochen und auf Stufe 3 von 9 15 Minuten köcheln, bis das Keema dick und saftig ist. Garprobe: Hack ist vollständig durch, 72 °C Kerntemperatur."
     timer_min: 15
   - titel: Reis kochen
-    text: "Während das Keema köchelt: Reis mit 180 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
+    text: "Während das Keema köchelt: Reis mit 160 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen."
     timer_min: 12
 zeitablauf:
   - "Den Reis aufsetzen, sobald das Keema köchelt."
@@ -57,7 +57,7 @@ aufbewahrung:
 varianten:
   - {titel: Mit Rinderhack, text: "400 g Rinderhack 5 % statt Pute.", aenderung: {"Putenhackfleisch roh": -400, "Rinderhackfleisch 5 % Fett roh": 400}}
   - {titel: Mit Spinat, text: "100 g Babyspinat die letzten 2 Minuten unterheben (Saag Keema).", aenderung: {"Babyspinat": 100}}
-  - {titel: Mit Fladenbrot-Ersatz, text: "Statt Reis je 1 Weizen-Tortilla in der Pfanne anrösten.", aenderung: {"Basmatireis ungekocht": -100, "Weizen-Tortilla-Wraps": 124}}
+  - {titel: Mit Fladenbrot-Ersatz, text: "Statt Reis je 1 Weizen-Tortilla in der Pfanne anrösten.", aenderung: {"Basmatireis ungekocht": -90, "Weizen-Tortilla-Wraps": 124}}
 tipps:
   - "Ein Spritzer Zitronensaft vor dem Servieren macht das Keema frischer."
 gargewicht_g: null

@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 562 kcal | 25 % |
-| Protein | 55,8 g | 37 % |
-| Fett | 15,3 g | 15 % |
-| davon gesättigt | 4,7 g |  |
-| Kohlenhydrate | 58,7 g | 31 % |
-| davon Zucker | 19,7 g |  |
-| Ballaststoffe | 3,5 g |  |
+| Kalorien | 593 kcal | 26 % |
+| Protein | 56 g | 38 % |
+| Fett | 20,7 g | 20 % |
+| davon gesättigt | 6,7 g |  |
+| Kohlenhydrate | 53,8 g | 28 % |
+| davon Zucker | 19,9 g |  |
+| Ballaststoffe | 3,8 g |  |
 | Salz | 1 g |  |
 
-- **Protein pro 100 kcal:** 9,9 g
-- **Makroverteilung (Energie):** Protein 37 % · Kohlenhydrate 39 % · Fett 23 %
-- **Gewicht fertig:** ca. 910 g gesamt · **ca. 450 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,4 g
+- **Makroverteilung (Energie):** Protein 36 % · Kohlenhydrate 34 % · Fett 30 %
+- **Gewicht fertig:** ca. 910 g gesamt · **ca. 460 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -35,26 +35,26 @@
 | **Quarkmasse** | | |
 | Magerquark | 500 g | 1 Becher |
 | Eier | 2 Eier Gr. M (120 g) |  |
-| Grieß | 80 g |  |
+| Grieß | 65 g |  |
 | Whey Protein Vanille | 1 Messlöffel (30 g) |  |
 | Erythrit | 2 EL (20 g) |  |
 | Backpulver | 1 TL (4 g) |  |
 | Zitronensaft | 2 TL (10 g) |  |
-| Butter | 1 TL (5 g) | für die Form |
+| Butter | 1 EL (12 g) | für die Form und obenauf |
 | **Obst & Topping** | | |
 | Sauerkirschen | 120 g | gut abgetropft |
-| gehobelte Mandeln | 2 EL (20 g) |  |
+| gehobelte Mandeln | 3 EL (30 g) |  |
 
 ## Mise en place
 
 - Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost auf die mittlere Schiene.
-- Auflaufform mit 1 TL Butter (5 g) ausfetten.
+- Auflaufform mit einem Drittel von 1 EL Butter (12 g) ausfetten, den Rest in kleine Flöckchen schneiden.
 - 120 g Sauerkirschen in einem Sieb mindestens 5 Minuten abtropfen lassen (Saft anderweitig verwenden).
 
 ## Zubereitung
 
-1. **Masse rühren** ⏱ 5 min: 500 g Magerquark, 2 Eier Gr. M (120 g), 80 g Grieß, 1 Messlöffel Whey Protein Vanille (30 g), 2 EL Erythrit (20 g), 1 TL Backpulver (4 g) und 2 TL Zitronensaft (10 g) in einer Schüssel mit dem Schneebesen 1 Minute zu einer glatten Masse rühren. 5 Minuten stehen lassen, damit der Grieß quillt.
-2. **Schichten**: Masse in die Form geben, glatt streichen und die Kirschen gleichmäßig darauf verteilen, leicht eindrücken. 2 EL gehobelte Mandeln (20 g) darüberstreuen.
+1. **Masse rühren** ⏱ 5 min: 500 g Magerquark, 2 Eier Gr. M (120 g), 65 g Grieß, 1 Messlöffel Whey Protein Vanille (30 g), 2 EL Erythrit (20 g), 1 TL Backpulver (4 g) und 2 TL Zitronensaft (10 g) in einer Schüssel mit dem Schneebesen 1 Minute zu einer glatten Masse rühren. 5 Minuten stehen lassen, damit der Grieß quillt.
+2. **Schichten**: Masse in die Form geben, glatt streichen und die Kirschen gleichmäßig darauf verteilen, leicht eindrücken. 3 EL gehobelte Mandeln (30 g) darüberstreuen und die Butterflöckchen darauf verteilen.
 3. **Backen** ⏱ 35 min: Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 30–35 Minuten backen. Fertig, wenn die Oberfläche goldgelb ist, die Mandeln gebräunt sind und die Mitte beim leichten Rütteln an der Form nur noch minimal wackelt.
 4. **Ruhen lassen** ⏱ 15 min: Form herausnehmen und den Auflauf 15 Minuten ruhen lassen. Er sinkt etwas ein und wird schnittfest; frisch aus dem Ofen ist er innen noch cremig.
 
@@ -70,7 +70,7 @@
 
 ## Anrichten
 
-Auflauf halbieren: eine Hälfte (ca. 450 g) pro Portion, warm oder kalt. Für Meal Prep jede Hälfte in eine Box.
+Auflauf halbieren: eine Hälfte (ca. 460 g) pro Portion, warm oder kalt. Für Meal Prep jede Hälfte in eine Box.
 
 ## Meal Prep & Aufbewahrung
 
@@ -82,7 +82,7 @@ Auflauf halbieren: eine Hälfte (ca. 450 g) pro Portion, warm oder kalt. Für Me
 
 - **Mit Beeren:** 150 g TK-Beerenmischung gefroren statt Kirschen. (−6 kcal, +0,3 g Protein, +0,2 g Fett pro Portion)
 - **Mehr Protein:** Zusätzlich 150 g Skyr in die Masse rühren, 5 Minuten länger backen. (+47 kcal, +8,3 g Protein, +0,2 g Fett pro Portion)
-- **Weniger kcal:** Mandeln weglassen. (−60 kcal, −2,1 g Protein, −5,2 g Fett pro Portion)
+- **Weniger kcal:** Mandeln weglassen. (−90 kcal, −3,2 g Protein, −7,8 g Fett pro Portion)
 
 ## Tipps
 
@@ -95,17 +95,17 @@ Auflauf halbieren: eine Hälfte (ca. 450 g) pro Portion, warm oder kalt. Für Me
 |---|---:|---:|---:|---:|---:|
 | Magerquark | 500 g | 335 | 60 | 1,5 | 20 |
 | Ei Gr. M ohne Schale | 120 g | 168 | 15,1 | 11,9 | 0,8 |
-| Weichweizengrieß | 80 g | 270 | 8,8 | 0,8 | 55,2 |
+| Weichweizengrieß | 65 g | 219 | 7,2 | 0,7 | 44,9 |
 | Whey Protein Vanille | 30 g | 116 | 22,5 | 1,8 | 2,4 |
 | Erythrit | 20 g | 0 | 0 | 0 | 20 |
 | Backpulver | 4 g | 2 | 0 | 0 | 0,5 |
 | Zitronensaft | 10 g | 2 | 0 | 0 | 0,5 |
-| Butter | 5 g | 37 | 0 | 4,1 | 0 |
+| Butter | 12 g | 89 | 0,1 | 9,8 | 0,1 |
 | Sauerkirschen Glas abgetropft | 120 g | 74 | 0,8 | 0,1 | 16,8 |
-| Mandeln gehobelt | 20 g | 120 | 4,2 | 10,4 | 1,2 |
-| **Summe** | | **1.124** | **111,5** | **30,6** | **117,4** |
-| **Pro Portion (÷ 2)** | | **562** | **55,8** | **15,3** | **58,7** |
+| Mandeln gehobelt | 30 g | 180 | 6,3 | 15,6 | 1,8 |
+| **Summe** | | **1.186** | **112** | **41,4** | **107,7** |
+| **Pro Portion (÷ 2)** | | **593** | **56** | **20,7** | **53,8** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.125 kcal gegenüber 1.124 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.187 kcal gegenüber 1.186 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

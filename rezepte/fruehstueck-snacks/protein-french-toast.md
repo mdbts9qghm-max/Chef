@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 576 kcal | 25 % |
-| Protein | 45,1 g | 30 % |
-| Fett | 19,3 g | 19 % |
-| davon gesättigt | 3,7 g |  |
-| Kohlenhydrate | 50,9 g | 27 % |
-| davon Zucker | 19,3 g |  |
-| Ballaststoffe | 9,3 g |  |
+| Kalorien | 598 kcal | 26 % |
+| Protein | 46,1 g | 31 % |
+| Fett | 21,9 g | 22 % |
+| davon gesättigt | 3,9 g |  |
+| Kohlenhydrate | 49,2 g | 26 % |
+| davon Zucker | 17,5 g |  |
+| Ballaststoffe | 9,9 g |  |
 | Salz | 1,7 g |  |
 
-- **Protein pro 100 kcal:** 7,8 g
-- **Makroverteilung (Energie):** Protein 32 % · Kohlenhydrate 36 % · Fett 31 %
-- **Gewicht fertig:** ca. 910 g gesamt · **ca. 450 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,7 g
+- **Makroverteilung (Energie):** Protein 32 % · Kohlenhydrate 34 % · Fett 34 %
+- **Gewicht fertig:** ca. 910 g gesamt · **ca. 460 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -45,8 +45,8 @@
 | **Topping** | | |
 | Skyr natur | 200 g |  |
 | Beerenmischung TK | 150 g |  |
-| Honig | 2 TL (10 g) |  |
-| gehobelte Mandeln | 1½ EL (15 g) |  |
+| Honig | 1 TL (5 g) |  |
+| gehobelte Mandeln | 2½ EL (25 g) |  |
 
 ## Mise en place
 
@@ -58,7 +58,7 @@
 1. **Eiermilch**: 2 Eier Gr. M (120 g), 150 g Eiklar, 80 g Milch, ⅔ Messlöffel Whey Protein Vanille (20 g) und 1 TL Zimt (2 g) in der flachen Schale mit einer Gabel 30 Sekunden verquirlen, bis keine Whey-Klümpchen mehr schwimmen.
 2. **Einweichen**: Toastscheiben nacheinander je 15 Sekunden pro Seite in die Eiermilch legen, bis sie vollgesogen, aber noch formstabil sind. Restliche Eiermilch gleichmäßig über die Scheiben in der Schale gießen, damit nichts übrig bleibt.
 3. **Ausbraten** ⏱ 6 min: Die Hälfte von 2 TL Rapsöl (8 g) in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). 2 Scheiben hineinlegen und 2½–3 Minuten pro Seite braten, bis sie goldbraun sind und sich in der Mitte fest anfühlen (Ei gestockt). Mit dem restlichen Öl die anderen 2 Scheiben braten.
-4. **Topping**: 200 g Skyr natur glatt rühren. Je 2 Scheiben auf einen Teller, Skyr und Beeren mit Saft darauf, mit 2 TL Honig (10 g) beträufeln und 1½ EL gehobelte Mandeln (15 g) bestreuen.
+4. **Topping**: 200 g Skyr natur glatt rühren. Je 2 Scheiben auf einen Teller, Skyr und Beeren mit Saft darauf, mit 1 TL Honig (5 g) beträufeln und 2½ EL gehobelte Mandeln (25 g) bestreuen.
 
 ## Zeitablauf
 
@@ -72,7 +72,7 @@
 
 ## Anrichten
 
-Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, 1 TL Honig und 7 g Mandeln: ca. 450 g pro Portion.
+Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, ½ TL Honig und gut 12 g Mandeln: ca. 460 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -84,8 +84,8 @@ Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, 1 TL Honig und 7 g 
 ## Varianten & Austausch
 
 - **Mehr Protein:** Skyr-Topping auf 300 g erhöhen. (+32 kcal, +5,5 g Protein, +0,1 g Fett pro Portion)
-- **Bananen-Zimt:** 1 kleine Banane (100 g) in Scheiben statt Beeren, Honig weglassen. (−1 kcal, −0,1 g Protein, −0,2 g Fett pro Portion)
-- **Weniger kcal:** Mandeln weglassen und nur 1 TL Öl verwenden. (−63 kcal, −1,6 g Protein, −5,9 g Fett pro Portion)
+- **Bananen-Zimt:** 1 kleine Banane (100 g) in Scheiben statt Beeren, Honig weglassen. (+7 kcal, −0,1 g Protein, −0,2 g Fett pro Portion)
+- **Weniger kcal:** Mandeln weglassen und nur 1 TL Öl verwenden. (−93 kcal, −2,6 g Protein, −8,5 g Fett pro Portion)
 
 ## Tipps
 
@@ -105,11 +105,11 @@ Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, 1 TL Honig und 7 g 
 | Rapsöl | 8 g | 72 | 0 | 8 | 0 |
 | Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
 | Beerenmischung TK | 150 g | 63 | 1,4 | 0,6 | 9,8 |
-| Honig | 10 g | 32 | 0 | 0 | 8 |
-| Mandeln gehobelt | 15 g | 90 | 3,2 | 7,8 | 0,9 |
-| **Summe** | | **1.152** | **90,2** | **38,6** | **101,7** |
-| **Pro Portion (÷ 2)** | | **576** | **45,1** | **19,3** | **50,9** |
+| Honig | 5 g | 16 | 0 | 0 | 4 |
+| Mandeln gehobelt | 25 g | 150 | 5,3 | 13 | 1,5 |
+| **Summe** | | **1.196** | **92,3** | **43,8** | **98,3** |
+| **Pro Portion (÷ 2)** | | **598** | **46,1** | **21,9** | **49,2** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.152 kcal gegenüber 1.152 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.196 kcal gegenüber 1.196 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

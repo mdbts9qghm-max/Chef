@@ -15,7 +15,7 @@ ausstattung: [Backofen, Standmixer, "Auflaufform 20 × 20 cm", Backpapier]
 zutaten:
   - gruppe: Teig
   - {id: banane, zutat: Banane geschält, name: Bananen, g: 140, anzeige: "1½ sehr reife Bananen", hinweis: "braun gesprenkelt"}
-  - {id: hafer, zutat: Haferflocken zart, g: 100}
+  - {id: hafer, zutat: Haferflocken zart, g: 88}
   - {id: skyr, zutat: Skyr natur, g: 200}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
   - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
@@ -23,7 +23,7 @@ zutaten:
   - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 3, anzeige: "1½ TL"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
   - gruppe: Topping
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 20, anzeige: "2 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
   - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 10, anzeige: "2 Rippchen", hinweis: "grob gehackt"}
 mise_en_place:
   - "Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost in die mittlere Schiene."
