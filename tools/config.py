@@ -182,6 +182,28 @@ UMRECHNUNG = {
 UMRECHNUNG_ALIAS = {"scoops": "scoop", "cups": "cup", "tasse": "cup", "tassen": "cup", "esslöffel": "el",
                     "tbsp": "el", "teelöffel": "tl", "tsp": "tl", "prisen": "prise", "eier": "ei", "egg": "ei", "eggs": "ei"}
 
+# --- Formular „Eigenes Rezept“ (App) --------------------------------------------------
+# Stückgewichte (essbarer Anteil) für Zeilen wie „2 Eier“, „1 Zwiebel“, „3 Zehen Knoblauch“; Brot/Wraps aus packungen.csv
+STUECK_G = {"Ei Gr. M ohne Schale": 60, "Banane geschält": 120, "Apfel": 150, "Zwiebel": 80, "Knoblauch": 4,
+            "Paprika rot": 160, "Tomaten": 80, "Salatgurke": 400, "Frühlingszwiebeln": 15, "Mozzarella light": 125,
+            "Weizen-Tortilla-Wraps": 62, "Burger-Brötchen": 75, "Vollkorntoast": 28}
+# Alltagswörter → Zutat (ergänzt KUEHLSCHRANK_SYNONYME; gesucht wird danach in den Zutatennamen)
+FORMULAR_SYNONYME = {"öl": "olivenöl", "reis": "basmatireis", "nudeln": "hartweizennudeln", "spaghetti": "hartweizennudeln",
+                     "pasta": "hartweizennudeln", "quark": "magerquark", "whey": "whey protein",
+                     "proteinpulver": "whey protein vanille", "eiweißpulver": "whey protein vanille", "milch": "milch 1",
+                     "mehl": "weizenmehl", "ei": "ei gr", "eier": "ei gr", "eiweiß": "eiklar", "joghurt": "skyr",
+                     "hähnchen": "hähnchenbrust", "hühnchen": "hähnchenbrust", "chicken": "hähnchenbrust",
+                     "hackfleisch": "rinderhackfleisch 5", "hack": "rinderhackfleisch 5", "lachs": "lachsfilet",
+                     "kartoffel": "kartoffeln", "tomate": "tomaten", "paprika": "paprika rot", "spinat": "babyspinat",
+                     "banane": "banane", "bananen": "banane", "zucker": "erythrit", "süßstoff": "erythrit",
+                     "brühe": "gemüsebrühe", "currypaste": "rote currypaste", "kokosmilch": "kokosmilch",
+                     "wrap": "tortilla", "wraps": "tortilla", "toast": "vollkorntoast", "brötchen": "burger-brötchen",
+                     "zehe": "knoblauch", "zehen": "knoblauch", "knoblauchzehe": "knoblauch", "knoblauchzehen": "knoblauch"}
+FORMULAR_EINHEITEN_STUECK = ["stück", "stk", "zehe", "zehen", "scheibe", "scheiben"]
+FORMULAR_EINHEITEN_PACKUNG = ["dose", "dosen", "packung", "packungen", "pck", "pkg", "becher", "glas", "beutel", "kugel"]
+FORMULAR_STANDARD = {"zeit_min": 30, "vorbereitung_min": 10, "kueche": "International / Fusion", "schwierigkeit": "leicht",
+                     "kuehlschrank_tage": 3, "kuehlschrank_tage_fisch": 2, "snack_suess_ab_zucker_g": 8}
+
 # --- Kühlschrank-Modus (SPEC 11.1) ------------------------------------------------
 # Grundvorrat (zählt als vorhanden, wird aber als „aus dem Vorrat“ angezeigt): lange haltbare Produkte
 # (haltbar offen ≥ VORRATSKAUF_AB_TAGEN), alles aus vorrat.yaml und diese frischen Standards:

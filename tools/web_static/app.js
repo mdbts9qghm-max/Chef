@@ -512,35 +512,115 @@
     return name.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
       .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
   }
+  // --- Eigenes Rezept: Zutatenzeilen erkennen („400 g Hähnchen“, „1 EL Öl“, „2 Eier“) -------------------
+  var BRUCH = { "½": 0.5, "¼": 0.25, "¾": 0.75, "⅓": 1 / 3, "⅔": 2 / 3 };
+  var FUELL = ["roh", "frisch", "gehackt", "gewürfelt", "geschnitten", "etwas", "ca", "circa", "nach", "geschmack", "und",
+    "oder", "von", "der", "die", "das", "mit", "zum", "für", "große", "großes", "großer", "kleine", "kleines", "kleiner", "fein"];
+  function normWort(t) { return t.toLowerCase().replace(/[^a-zäöüß0-9 %-]/g, " ").replace(/\s+/g, " ").trim(); }
+  function zahlLesen(t) {
+    t = t.replace(/\s+/g, "");
+    Object.keys(BRUCH).forEach(function (k) { t = t.replace(k, (/\d$/.test(t.split(k)[0]) ? "+" : "") + BRUCH[k]); });
+    if (/^\d+\/\d+$/.test(t)) { var b = t.split("/"); return +b[0] / +b[1]; }
+    var bis = t.split(/[-–]/);
+    if (bis.length === 2) return (zahlLesen(bis[0]) + zahlLesen(bis[1])) / 2;
+    return t.split("+").reduce(function (s, x) { return s + (parseFloat(x.replace(",", ".")) || 0); }, 0);
+  }
+  function zutatSuchen(text, DB, F) {
+    var t = normWort(text);
+    if (!t) return [];
+    var syn = F.synonyme, woerter = t.split(" ").filter(function (w) { return w && FUELL.indexOf(w) < 0; });
+    var begriffe = syn[t] ? [syn[t]] : woerter.map(function (w) { return syn[w] || w; });
+    var punkte = {};
+    Object.keys(DB).forEach(function (name) {
+      var n = name.toLowerCase(), p = 0;
+      function treffer(b, gewicht) {
+        if (b.length < 2 || n.indexOf(b) < 0) return;
+        p += gewicht + (n.indexOf(b) === 0 || n.indexOf(" " + b) >= 0 || n.indexOf("-" + b) >= 0 ? 1 : 0);
+      }
+      begriffe.forEach(function (b) { if (woerter.indexOf(b) < 0) treffer(b, 3 + b.length / 10); });   // nur Synonyme extra
+      woerter.forEach(function (w) {
+        if (w.length < 3) return;
+        treffer(w, 2);
+        var stamm = w.replace(/(en|n|s|e)$/, "");                // Mehrzahl: „Zwiebeln“ → Zwiebel
+        if (stamm !== w && stamm.length >= 3) treffer(stamm, 1.5);
+        if (n === w || n === stamm) p += 3;
+      });
+      if (p > 0) punkte[name] = p - name.length / 1000;          // gleich gut → kürzerer Name
+    });
+    return Object.keys(punkte).sort(function (x, y) { return punkte[y] - punkte[x]; }).slice(0, 6);
+  }
+  function zeileErkennen(zeile, DB, F, faktor, wahl) {
+    var roh = zeile.trim().replace(/^[-•*·]\s*/, "");
+    var einheiten = ["g", "gr", "gramm", "kg", "ml", "l", "liter"].concat(Object.keys(F.umrechnung).filter(function (e) { return e !== "ei"; }),
+      Object.keys(F.alias), F.einheiten_stueck, F.einheiten_packung);
+    var zahlMuster = "(\\d+\\s*/\\s*\\d+|\\d+(?:[.,]\\d+)?\\s*[½¼¾⅓⅔]?|[½¼¾⅓⅔])(?:\\s*[-–]\\s*(\\d+(?:[.,]\\d+)?))?";
+    var einheitMuster = "(?:(" + einheiten.map(function (e) { return e.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|") + ")\\.?(?=\\s|$))?";
+    var vorne = new RegExp("^" + zahlMuster + "\\s*" + einheitMuster + "\\s*(.*)$", "i");
+    var hinten = new RegExp("^(.*?)\\s+" + zahlMuster + "\\s*" + einheitMuster + "$", "i");
+    var m = roh.match(vorne), menge = null, einheit = "", name = roh;
+    if (m && m[4] !== undefined && m[4].trim()) { menge = zahlLesen(m[1] + (m[2] ? "-" + m[2] : "")); einheit = (m[3] || "").toLowerCase(); name = m[4]; }
+    else if ((m = roh.match(hinten))) { name = m[1]; menge = zahlLesen(m[2] + (m[3] ? "-" + m[3] : "")); einheit = (m[4] || "").toLowerCase(); }
+    name = name.replace(/^(von|vom|der|die|das)\s+/i, "");
+    var kandidaten = zutatSuchen((F.einheiten_stueck.indexOf(einheit) >= 0 && /^zehe/.test(einheit) ? "knoblauch " : "") + name, DB, F);
+    var zutat = wahl[roh] && DB[wahl[roh]] ? wahl[roh] : kandidaten[0];
+    if (zutat && kandidaten.indexOf(zutat) < 0) kandidaten.unshift(zutat);
+    var r = { text: roh, zutat: zutat || "", kandidaten: kandidaten, g: 0, problem: "" };
+    if (!zutat) { r.problem = "nicht erkannt – wird nicht mitgerechnet"; return r; }
+    if (menge === null) { r.problem = "Menge fehlt (z. B. „200 g …“)"; return r; }
+    var e = F.alias[einheit] || einheit, g = null;
+    if (e === "g" || e === "gr" || e === "gramm" || e === "ml") g = menge;
+    else if (e === "kg" || e === "l" || e === "liter") g = menge * 1000;
+    else if (F.umrechnung[e]) {
+      var tab = F.umrechnung[e], k = Object.keys(tab).filter(function (x) { return x !== "_" && zutat.toLowerCase().indexOf(x.toLowerCase()) >= 0; })[0];
+      g = menge * (k ? tab[k] : tab._);
+    } else if (F.einheiten_packung.indexOf(e) >= 0) {
+      if (F.packungen[zutat]) g = menge * F.packungen[zutat]; else r.problem = "Packungsgröße unbekannt – bitte in Gramm angeben";
+    } else if (F.stueck[zutat]) g = menge * F.stueck[zutat];
+    else r.problem = "Stückgewicht unbekannt – bitte in Gramm angeben";
+    if (g !== null) r.g = Math.round(g * faktor * 10) / 10;
+    return r;
+  }
+
   function rezeptFormular() {
     var form = document.getElementById("rezept-form");
     if (!form) return;
     var DB = {}; D.zutaten.forEach(function (z) { DB[z[0]] = z; });
-    var liste = document.getElementById("zutaten-zeilen"), ausgabe = document.getElementById("rezept-werte");
-    var ENTWURF = "rezept-entwurf";
-    function zeile(name, g) {
-      var li = el("li", { class: "zzeile" }, [
-        el("input", { type: "text", list: "zutaten-liste", class: "zname", placeholder: "Zutat suchen …", value: name || "", "aria-label": "Zutat" }),
-        el("input", { type: "number", class: "zg", min: "0", step: "1", inputmode: "decimal", placeholder: "g", value: g || "", "aria-label": "Gramm für 2 Portionen" }),
-        el("button", { type: "button", class: "zweg", "aria-label": "Zutat entfernen", text: "✕" })]);
-      li.querySelector(".zweg").addEventListener("click", function () { li.remove(); aktualisieren(); });
-      liste.appendChild(li);
-    }
+    var F = D.formular, STD = F.standard;
+    var ausgabe = document.getElementById("rezept-werte"), trefferListe = document.getElementById("zutaten-treffer");
+    var ENTWURF = "rezept-entwurf", wahl = {};
     function lesen() {
       var f = {}; Array.prototype.forEach.call(form.elements, function (e) {
-        if (e.name) f[e.name] = e.type === "checkbox" ? e.checked : e.value;
+        if (!e.name || (e.type === "radio" && !e.checked)) return;
+        f[e.name] = e.type === "checkbox" ? e.checked : e.value;
       });
-      f.zutaten = Array.prototype.map.call(liste.children, function (li) {
-        return { zutat: li.querySelector(".zname").value.trim(), g: parseFloat(li.querySelector(".zg").value) || 0 };
-      }).filter(function (z) { return z.zutat || z.g; });
+      var faktor = F.portionen / (parseInt(f.portionen, 10) || F.portionen);
+      f.zeilen = (f.zutaten_text || "").split("\n").filter(function (t) { return t.trim(); })
+        .map(function (t) { return zeileErkennen(t, DB, F, faktor, wahl); });
+      f.zutaten = f.zeilen.filter(function (z) { return z.zutat && z.g > 0; }).map(function (z) { return { zutat: z.zutat, g: z.g }; });
+      f.wahl = wahl;
       return f;
     }
     function werte(f) {
       var s = { kcal: 0, protein: 0, fett: 0, kh: 0, zucker: 0 };
       f.zutaten.forEach(function (z) { var w = DB[z.zutat]; if (!w) return;
         s.kcal += w[1] * z.g / 100; s.protein += w[2] * z.g / 100; s.fett += w[3] * z.g / 100; s.kh += w[4] * z.g / 100; s.zucker += w[5] * z.g / 100; });
-      Object.keys(s).forEach(function (k) { s[k] /= 2; });
+      Object.keys(s).forEach(function (k) { s[k] /= F.portionen; });
       return s;
+    }
+    function zeiten(f) {
+      var gesamt = f.zeit === "" || f.zeit === undefined ? STD.zeit_min : Math.max(0, parseInt(f.zeit, 10) || 0);
+      var vor = Math.min(STD.vorbereitung_min, gesamt);
+      return { vorbereitung: vor, kochen: gesamt - vor };
+    }
+    function geschmack(f, p) {
+      if (f.mahlzeit === "Frühstück") return "süß";
+      if (f.mahlzeit === "Snack") return p.zucker >= STD.snack_suess_ab_zucker_g ? "süß" : "herzhaft";
+      return "herzhaft";
+    }
+    function haltbarTage(f) {
+      if (f.tage !== "" && f.tage !== undefined) return Math.max(0, Math.min(4, parseInt(f.tage, 10) || 0));
+      var fisch = f.zutaten.some(function (z) { return /^(fisch|garnelen)/.test(DB[z.zutat][7] || ""); });
+      return fisch ? STD.kuehlschrank_tage_fisch : STD.kuehlschrank_tage;
     }
     function korridorSchluessel(f, p) {
       if (f.mahlzeit === "Frühstück") return "fruehstueck";
@@ -549,9 +629,9 @@
       return p.kcal <= k.kcal_max && p.protein >= k.protein_min ? "kalorienarm" : "hauptgericht";
     }
     function kategorien(f, p) {
-      var k = [], zeit = (+f.vorbereitung || 0) + (+f.kochen || 0);
+      var k = [], z = zeiten(f);
       if (p.protein >= 40 || (p.kcal > 0 && p.protein / p.kcal * 100 >= 10)) k.push("High Protein");
-      if (zeit <= 25) k.push("Schnelle Rezepte");
+      if (z.vorbereitung + z.kochen <= 25) k.push("Schnelle Rezepte");
       if (f.mahlzeit === "Mittag/Abend" && korridorSchluessel(f, p) === "kalorienarm") k.push("Kalorienarm");
       if (f.mahlzeit !== "Mittag/Abend") k.push("Frühstück & Snacks");
       return k;
@@ -564,21 +644,20 @@
       return "high-protein";
     }
     function schritte(f) {
-      return f.schritte.split("\n").map(function (t) { return t.trim(); }).filter(Boolean);
+      return (f.schritte || "").split("\n").map(function (t) { return t.trim(); }).filter(Boolean);
     }
     function ohneKlammern(t) { return t.replace(/[{]/g, "(").replace(/[}]/g, ")"); }
     function yaml(f, p, kats) {
       var q = function (t) { return JSON.stringify(ohneKlammern(String(t))); };
-      var tage = Math.max(0, Math.min(4, parseInt(f.tage, 10) || 0));
-      var z = f.zutaten.filter(function (x) { return DB[x.zutat] && x.g > 0; });
+      var tage = haltbarTage(f), z = zeiten(f), summe = {};
+      f.zutaten.forEach(function (x) { summe[x.zutat] = (summe[x.zutat] || 0) + x.g; });
       var out = ["# Eigenes Rezept aus der App (" + heuteIso() + ")", "id: " + slug(f.name), "name: " + q(f.name),
         "hauptkategorie: " + hauptkategorie(f, kats), "kategorien_manuell: []", "mahlzeit: " + q(f.mahlzeit),
-        "geschmack: " + f.geschmack, "kueche: " + q(f.kueche), "herkunft: {art: eigen, quelle: App, datum: " + heuteIso() + "}",
-        "schwierigkeit: " + f.schwierigkeit,
-        "zeit: {vorbereitung: " + (parseInt(f.vorbereitung, 10) || 0) + ", kochen: " + (parseInt(f.kochen, 10) || 0) +
-          ", wartezeit: " + (parseInt(f.wartezeit, 10) || 0) + "}",
+        "geschmack: " + geschmack(f, p), "kueche: " + q(f.kueche || STD.kueche), "herkunft: {art: eigen, quelle: App, datum: " + heuteIso() + "}",
+        "schwierigkeit: " + STD.schwierigkeit,
+        "zeit: {vorbereitung: " + z.vorbereitung + ", kochen: " + z.kochen + ", wartezeit: 0}",
         "ausstattung: []", "zutaten:"];
-      z.forEach(function (x, i) { out.push("  - {id: z" + (i + 1) + ", zutat: " + q(x.zutat) + ", g: " + Math.round(x.g * 10) / 10 + "}"); });
+      Object.keys(summe).forEach(function (n, i) { out.push("  - {id: z" + (i + 1) + ", zutat: " + q(n) + ", g: " + Math.round(summe[n] * 10) / 10 + "}"); });
       out.push("mise_en_place: []", "schritte:");
       schritte(f).forEach(function (t, i) {
         out.push("  - titel: " + q("Schritt " + (i + 1)), "    text: " + q(t), "    timer_min: null");
@@ -591,16 +670,38 @@
         "bewertung: {sterne: null, kommentar: null, datum: null}");
       return out.join("\n") + "\n";
     }
+    function trefferZeigen(f) {
+      trefferListe.innerHTML = "";
+      f.zeilen.forEach(function (z) {
+        var li = el("li", { class: z.problem ? "warn" : "ok" }, [el("span", { class: "zeichen", text: z.problem ? "⚠️" : "✓" }),
+          el("span", { class: "orig", text: z.text })]);
+        var ziel = el("span", { class: "ziel" });
+        if (z.kandidaten.length > 1) {
+          var sel = el("select", { "aria-label": "Zutat für „" + z.text + "“" });
+          z.kandidaten.forEach(function (k) { var o = el("option", { value: k, text: k }); if (k === z.zutat) o.selected = true; sel.appendChild(o); });
+          sel.addEventListener("change", function () { wahl[z.text] = sel.value; aktualisieren(); });
+          ziel.appendChild(sel);
+        } else if (z.zutat) ziel.appendChild(el("strong", { text: z.zutat }));
+        if (z.g > 0) ziel.appendChild(el("span", { class: "gramm", text: zahl(z.g, z.g < 10 ? 1 : 0) + " g" }));
+        if (z.problem) ziel.appendChild(el("span", { class: "grund", text: z.problem }));
+        li.appendChild(ziel);
+        trefferListe.appendChild(li);
+      });
+    }
     function aktualisieren() {
       var f = lesen(), p = werte(f), kats = kategorien(f, p), ks = korridorSchluessel(f, p), k = D.korridore[ks];
-      try { window.localStorage.setItem(ENTWURF, JSON.stringify(f)); } catch (e) { /* privat */ }
-      var unbekannt = f.zutaten.filter(function (z) { return z.zutat && !DB[z.zutat]; }).map(function (z) { return z.zutat; });
+      try {
+        var speicher = {}; Object.keys(f).forEach(function (x) { if (x !== "zeilen" && x !== "zutaten") speicher[x] = f[x]; });
+        window.localStorage.setItem(ENTWURF, JSON.stringify(speicher));
+      } catch (e) { /* privat */ }
+      trefferZeigen(f);
       var id = slug(f.name || ""), probleme = [];
       if (!f.name || !f.name.trim()) probleme.push("Name fehlt");
       else if (D.ids.indexOf(id) >= 0 || (D.namen || []).indexOf(f.name.trim().toLowerCase()) >= 0) probleme.push("Ein Rezept mit diesem Namen gibt es schon – bitte anders benennen");
-      if (!f.zutaten.some(function (z) { return DB[z.zutat] && z.g > 0; })) probleme.push("Mindestens eine Zutat mit Gramm");
+      if (!f.zutaten.length) probleme.push("Mindestens eine erkannte Zutat mit Menge");
       if (!schritte(f).length) probleme.push("Mindestens ein Schritt");
-      if (unbekannt.length) probleme.push("Nicht in der Zutatenliste (werden weggelassen – in Claude ergänzen lassen): " + unbekannt.join(", "));
+      var offen = f.zeilen.filter(function (z) { return z.problem; }).length;
+      if (offen) probleme.push(offen + (offen === 1 ? " Zeile wird" : " Zeilen werden") + " nicht mitgerechnet (⚠️ oben)");
       var kcalOk = (k.kcal_min == null || p.kcal >= k.kcal_min) && (k.kcal_max == null || p.kcal <= k.kcal_max);
       var pOk = p.protein >= k.protein_min;
       ausgabe.innerHTML = "";
@@ -617,7 +718,7 @@
       var hinweise = document.getElementById("rezept-probleme");
       hinweise.innerHTML = "";
       probleme.forEach(function (t) { hinweise.appendChild(el("li", { text: t })); });
-      var bereit = !probleme.some(function (t) { return t.indexOf("Nicht in der Zutatenliste") < 0; });
+      var bereit = !probleme.some(function (t) { return t.indexOf("nicht mitgerechnet") < 0; });
       var knopf = document.getElementById("rezept-speichern");
       knopf.disabled = !bereit || !D.github;
       knopf.dataset.url = bereit && D.github ? "https://github.com/" + D.github + "/new/main?filename=" +
@@ -627,13 +728,16 @@
     var gespeichert = null;
     try { gespeichert = JSON.parse(window.localStorage.getItem(ENTWURF) || "null"); } catch (e) { gespeichert = null; }
     if (gespeichert) {
+      if (!gespeichert.zutaten_text && Array.isArray(gespeichert.zutaten))   // Entwurf aus dem alten Formular
+        gespeichert.zutaten_text = gespeichert.zutaten.map(function (z) { return (z.g || "") + " g " + z.zutat; }).join("\n");
+      wahl = gespeichert.wahl || {};
       Array.prototype.forEach.call(form.elements, function (e) {
-        if (e.name && gespeichert[e.name] !== undefined) { if (e.type === "checkbox") e.checked = gespeichert[e.name]; else e.value = gespeichert[e.name]; }
+        if (!e.name || gespeichert[e.name] === undefined) return;
+        if (e.type === "checkbox") e.checked = gespeichert[e.name];
+        else if (e.type === "radio") e.checked = e.value === gespeichert[e.name];
+        else e.value = gespeichert[e.name];
       });
-      (gespeichert.zutaten || []).forEach(function (z) { zeile(z.zutat, z.g); });
     }
-    if (!liste.children.length) { zeile(); zeile(); zeile(); }
-    document.getElementById("zutat-plus").addEventListener("click", function () { zeile(); });
     form.addEventListener("input", aktualisieren);
     form.addEventListener("change", aktualisieren);
     form.addEventListener("submit", function (e) { e.preventDefault(); });
@@ -644,7 +748,7 @@
     document.getElementById("rezept-verwerfen").addEventListener("click", function () {
       if (!window.confirm("Entwurf wirklich verwerfen?")) return;
       try { window.localStorage.removeItem(ENTWURF); } catch (e) { /* privat */ }
-      form.reset(); liste.innerHTML = ""; zeile(); zeile(); zeile(); aktualisieren();
+      wahl = {}; form.reset(); aktualisieren();
     });
     aktualisieren();
   }

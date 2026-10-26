@@ -499,35 +499,46 @@ def zutaten_json(db):
             for n, w in sorted(db.items()) if n not in config.NICHT_EINKAUFEN]
 
 
+def formular_json():
+    """Tabellen für das Rezept-Formular: Einheiten, Stückgewichte, Synonyme, Packungsgrößen, Standardwerte."""
+    return {"umrechnung": config.UMRECHNUNG, "alias": {k: v for k, v in config.UMRECHNUNG_ALIAS.items() if v != "ei"},
+            "stueck": config.STUECK_G, "synonyme": {**config.KUEHLSCHRANK_SYNONYME, **config.FORMULAR_SYNONYME},
+            "einheiten_stueck": config.FORMULAR_EINHEITEN_STUECK, "einheiten_packung": config.FORMULAR_EINHEITEN_PACKUNG,
+            "packungen": {z: p["packung_g"] for z, p in wp.lade_packungen().items() if p.get("packung_g")},
+            "standard": config.FORMULAR_STANDARD, "portionen": config.PORTIONEN}
+
+
 def rezept_neu_seite(db):
-    """Formular für eigene Rezepte; app.js rechnet live und erzeugt die YAML für GitHub."""
+    """Kurzes Formular für eigene Rezepte; app.js erkennt die Zutatenzeilen, rechnet live und erzeugt die YAML für GitHub."""
     opt = lambda werte, gewaehlt=None: "".join(f'<option value="{esc(w)}"{" selected" if w == gewaehlt else ""}>{esc(w)}</option>'
                                              for w in werte)
-    namen = "".join(f'<option value="{esc(n)}">' for n, *_ in zutaten_json(db))
-    return f"""<p class="leise">Zutaten kommen aus deiner Zutatenliste, die Nährwerte rechnet die App sofort mit.
-„Auf GitHub speichern“ öffnet GitHub mit der fertigen Rezeptdatei – dort nur noch <strong>„Commit changes“</strong> tippen.
-Nach 1–2 Minuten ist das Rezept in der App und steht dem Planer zur Verfügung.</p>
+    std = config.FORMULAR_STANDARD
+    icon = {"Frühstück": "🍳", "Mittag/Abend": "🍽", "Snack": "🥤"}
+    mahlzeit = "".join(f'<label><input type="radio" name="mahlzeit" value="{esc(m)}"{" checked" if m == "Mittag/Abend" else ""}>'
+                       f'<span><span aria-hidden="true">{icon.get(m, "")}</span> {esc(m)}</span></label>' for m in config.MAHLZEITEN)
+    portionen = opt([str(i) for i in range(1, 7)], str(config.PORTIONEN))
+    return f"""<p class="leise">Name, Mahlzeit, Zutaten und Schritte – den Rest setzt die App. „Auf GitHub speichern“ öffnet GitHub
+mit der fertigen Rezeptdatei, dort nur noch <strong>„Commit changes“</strong> tippen. Nach 1–2 Minuten ist das Rezept in der App
+und im Planer.</p>
 <form id="rezept-form" class="formular" autocomplete="off">
-<section class="karte"><h2>Grunddaten</h2>
+<section class="karte">
 <label>Name <input type="text" name="name" required maxlength="80" placeholder="z. B. Hähnchen-Reis-Pfanne"></label>
-<div class="zwei"><label>Mahlzeit <select name="mahlzeit">{opt(config.MAHLZEITEN, "Mittag/Abend")}</select></label>
-<label>Geschmack <select name="geschmack">{opt(config.GESCHMACK, "herzhaft")}</select></label></div>
-<div class="zwei"><label>Küche <select name="kueche">{opt(config.KUECHEN, "International / Fusion")}</select></label>
-<label>Schwierigkeit <select name="schwierigkeit">{opt(config.SCHWIERIGKEIT, "leicht")}</select></label></div>
-<div class="drei"><label>Vorbereitung (min) <input type="number" name="vorbereitung" min="0" value="10" inputmode="numeric"></label>
-<label>Kochen (min) <input type="number" name="kochen" min="0" value="20" inputmode="numeric"></label>
-<label>Wartezeit (min) <input type="number" name="wartezeit" min="0" value="0" inputmode="numeric"></label></div>
-<div class="zwei"><label>Haltbar im Kühlschrank (Tage) <input type="number" name="tage" min="0" max="4" value="2" inputmode="numeric"></label>
-<label class="haken"><input type="checkbox" name="einfrierbar"> einfrierbar</label></div></section>
-<section class="karte"><h2>Zutaten <span class="leise">(Gramm für {config.PORTIONEN} Portionen)</span></h2>
-<datalist id="zutaten-liste">{namen}</datalist>
-<ul id="zutaten-zeilen" class="zzeilen"></ul>
-<button type="button" id="zutat-plus">＋ Zutat</button>
-<p class="leise">Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben – dafür braucht es Nährwerte.</p></section>
+<fieldset class="mahlzeit-wahl"><legend>Mahlzeit</legend>{mahlzeit}</fieldset></section>
+<section class="karte"><h2>Zutaten</h2>
+<label class="inline">Mengen für <select name="portionen" aria-label="Mengen für wie viele Portionen">{portionen}</select> Portionen</label>
+<label>Eine Zutat pro Zeile <textarea name="zutaten_text" rows="6" autocapitalize="sentences"
+placeholder="400 g Hähnchen&#10;150 g Reis&#10;1 EL Olivenöl&#10;2 Eier&#10;1 Dose Kidneybohnen"></textarea></label>
+<ul id="zutaten-treffer" class="treffer" aria-live="polite"></ul>
+<p class="leise">Gramm, ml, EL, TL, Stück, Dose … gehen. Zutat nicht erkannt? In Claude „Neue Zutat: …“ schreiben.</p></section>
 <section class="karte"><h2>Zubereitung</h2>
-<label>Schritte <span class="leise">(ein Schritt pro Zeile)</span><textarea name="schritte" rows="6"
+<label>Ein Schritt pro Zeile <textarea name="schritte" rows="6"
 placeholder="Reis kochen.&#10;Hähnchen würfeln und in Öl auf Stufe 7 von 9 braten (74 °C Kerntemperatur).&#10;…"></textarea></label>
-<label>Tipps <span class="leise">(optional, einer pro Zeile)</span><textarea name="tipps" rows="2"></textarea></label></section>
+<details class="mehr"><summary>Mehr Angaben (optional)</summary>
+<div class="zwei"><label>Zeit gesamt (min) <input type="number" name="zeit" min="0" placeholder="{std["zeit_min"]}" inputmode="numeric"></label>
+<label>Haltbar (Tage) <input type="number" name="tage" min="0" max="4" placeholder="automatisch" inputmode="numeric"></label></div>
+<label>Küche <select name="kueche">{opt(config.KUECHEN, std["kueche"])}</select></label>
+<label class="haken"><input type="checkbox" name="einfrierbar"> einfrierbar</label>
+<label>Tipps <span class="leise">(einer pro Zeile)</span><textarea name="tipps" rows="2"></textarea></label></details></section>
 <section class="karte sticky-werte"><h2>Nährwerte pro Portion</h2><div id="rezept-werte" aria-live="polite"></div>
 <ul id="rezept-probleme" class="probleme"></ul>
 <div class="knopfreihe"><button type="button" class="primaer" id="rezept-speichern" disabled>💾 Auf GitHub speichern</button>
@@ -881,7 +892,7 @@ def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
     daten = {"ziele": config.TAGESZIELE, "korridor": korridor(), "plaene": plan_json, "budget": ek.budget(),
              "einkauf": links.get("einkauf"), "einkaufslisten": bool(flags.get("einkaufslisten", True)),
              "github": config.PROFIL.get("github_repo"), "korridore": config.KORRIDORE,
-             "zutaten": zutaten_json(db), "kuechen": config.KUECHEN, "ids": sorted(rezepte),
+             "zutaten": zutaten_json(db), "kuechen": config.KUECHEN, "ids": sorted(rezepte), "formular": formular_json(),
              "namen": sorted(r["name"].lower() for r in rezepte.values())}
     schreibe(ziel / "assets" / "daten.js", "window.REZEPTBUCH = " + json.dumps(daten, ensure_ascii=False) + ";\n")
     heute = ('<div id="heute"><noscript><p>Für die Tagesansicht bitte JavaScript aktivieren. '

@@ -30,9 +30,9 @@ Persönliches High-Protein-Rezeptbuch, Wochenplaner auf Basis der MacroFactor-Zi
 | **Einkauf** | Liste nach Abteilungen, Haken bleiben gespeichert, „Zurücksetzen“ für die nächste Woche; **Budget** direkt eintragen, die App zeigt sofort, ob die Woche hineinpasst |
 
 ## Eigene Rezepte hinzufügen und löschen
-1. **Rezepte → ＋ Eigenes Rezept:** Name, Mahlzeit, Küche, Zeiten; Zutaten aus der Liste wählen und Gramm (für 2 Portionen) eintragen; ein Schritt pro Zeile. Die App rechnet die Nährwerte pro Portion sofort und zeigt, ob das Gericht in den Korridor passt.
-2. **Auf GitHub speichern** → GitHub öffnet sich mit der fertigen Rezeptdatei → **„Commit changes“** tippen (einmalig bei GitHub angemeldet sein).
-3. GitHub prüft das Rezept und baut die App neu – nach 1–2 Minuten ist es im Rezeptbuch und steht dem Planer zur Verfügung. Der Entwurf bleibt bis dahin auf dem iPhone gespeichert.
+1. **Rezepte → ＋ Eigenes Rezept:** Name eintragen, Mahlzeit antippen, Zutaten **so wie im Original** einfügen, eine pro Zeile (z. B. `400 g Hähnchen`, `1 EL Olivenöl`, `2 Eier`, `1 Dose Kidneybohnen`), dann die Schritte. Ist das Original für 4 Portionen, „Mengen für 4 Portionen“ einstellen.
+2. Unter den Zutaten zeigt die App, was sie erkannt hat (✓ mit Gramm, bei mehreren Möglichkeiten ein Auswahlmenü; ⚠️ = nicht erkannt, wird nicht mitgerechnet). Nährwerte pro Portion stehen sofort darunter. Geschmack, Zeit, Küche und Haltbarkeit setzt die App selbst (anpassbar unter „Mehr Angaben“).
+3. **Auf GitHub speichern** → GitHub öffnet sich mit der fertigen Rezeptdatei → **„Commit changes“** tippen (einmalig bei GitHub angemeldet sein). Nach 1–2 Minuten ist das Rezept im Rezeptbuch und im Planer.
 4. **Löschen:** auf der Rezeptseite „🗑 Rezept löschen“ → bei GitHub „Commit changes“. Steht das Rezept in einem aktuellen Plan, warnt die App – dann erst „tauschen“.
 Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben (dafür braucht es Nährwerte).
 

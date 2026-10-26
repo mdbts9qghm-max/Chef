@@ -216,9 +216,6 @@ button.gefahr { color: var(--warn); border-color: var(--warn); }
 .formular .drei { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
 .formular .haken { display: flex; align-items: center; gap: 8px; margin-top: 30px; }
 .formular .haken input { width: 22px; height: 22px; }
-.zzeilen { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 6px; }
-.zzeile { display: grid; grid-template-columns: 1fr 78px 44px; gap: 6px; }
-.zzeile input { margin: 0 !important; }
 .fwerte { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; text-align: center; }
 .fwerte div { background: var(--fl2); border-radius: 10px; padding: 6px 2px; }
 .fwerte strong { display: block; font-size: 1.2rem; } .fwerte span { font-size: .72rem; color: var(--text2); }
@@ -233,3 +230,22 @@ button.gefahr { color: var(--warn); border-color: var(--warn); }
 .vorkochen.ja, .vorkochen-karte.ja { background: var(--kat-prep); border-left: 6px solid var(--frei); }
 .vorkochen.nein { background: var(--fl2); color: var(--text2); }
 .vorkochen-karte.nein h2 { color: var(--text2); font-size: 1.05rem; }
+.mahlzeit-wahl { border: 0; padding: 0; margin: 8px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.mahlzeit-wahl legend { font-size: .9rem; font-weight: 600; margin-bottom: 4px; padding: 0; }
+.formular .mahlzeit-wahl label { margin: 0; }
+.mahlzeit-wahl input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.mahlzeit-wahl label > span { display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 48px; text-align: center;
+  border: 1px solid var(--linie); border-radius: 12px; background: var(--fl); font-size: .85rem; padding: 4px; }
+.mahlzeit-wahl input:checked + span { background: var(--akzent); color: var(--akzent-text); border-color: var(--akzent); }
+.mahlzeit-wahl input:focus-visible + span { outline: 2px solid var(--akzent); outline-offset: 2px; }
+.formular label.inline { display: flex; align-items: center; gap: 6px; font-weight: 400; }
+.formular label.inline select { display: inline-block; width: auto; margin: 0; min-height: 36px; }
+.treffer { list-style: none; margin: 0 0 6px; padding: 0; display: grid; gap: 4px; font-size: .85rem; }
+.treffer li { display: grid; grid-template-columns: 22px 1fr; gap: 2px 6px; background: var(--fl2); border-radius: 8px; padding: 6px 8px; }
+.treffer .orig { color: var(--text2); overflow-wrap: anywhere; }
+.treffer .ziel { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; min-width: 0; }
+.treffer .ziel select { width: auto; max-width: 100%; min-height: 34px; margin: 0; padding: 4px 6px; font-size: .85rem; }
+.treffer .gramm { font-weight: 700; }
+.treffer li.warn .grund { color: var(--warn); }
+.formular details.mehr { margin-top: 8px; }
+.formular details.mehr summary { font-weight: 600; min-height: 44px; display: flex; align-items: center; }

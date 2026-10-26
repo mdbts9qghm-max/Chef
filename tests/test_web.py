@@ -289,21 +289,27 @@ def test_einkauf_icons_und_kostenbalken(seite, server):
 
 
 # --- Eigene Rezepte -----------------------------------------------------------------------------
-def rezept_ausfuellen(seite, name):
+def rezept_ausfuellen(seite, name, zutaten="400 g Hähnchen\n150 g Reis\n1 EL Olivenöl\n2 Eier"):
     seite.fill("input[name=name]", name)
-    for i, (z, g) in enumerate([("Hähnchenbrustfilet roh", "400"), ("Basmatireis ungekocht", "150"), ("Olivenöl", "15")]):
-        seite.locator(".zname").nth(i).fill(z)
-        seite.locator(".zg").nth(i).fill(g)
+    seite.fill("textarea[name=zutaten_text]", zutaten)
     seite.fill("textarea[name=schritte]", "Reis kochen.\nHähnchen würfeln und auf Stufe 7 von 9 braten, bis 74 °C {Kerntemperatur}.")
+
+
+def neues_formular(seite, server):
+    seite.goto(server + "rezept-neu.html")
+    seite.evaluate("localStorage.clear()")
+    seite.reload()
+
+
+def rezept_yaml(seite):
+    return yaml.safe_load(seite.locator("#rezept-yaml").text_content())
 
 
 def test_eigenes_rezept_ergibt_gueltige_datei(seite, server, db):
     import urllib.parse
     import generieren as gen
     import pruefen
-    seite.goto(server + "rezept-neu.html")
-    seite.evaluate("localStorage.clear()")
-    seite.reload()
+    neues_formular(seite, server)
     rezept_ausfuellen(seite, "Hähnchen-Reis-Pfanne Test")
     text = seite.locator("#rezept-yaml").text_content()
     r = yaml.safe_load(text)
@@ -324,12 +330,65 @@ def test_eigenes_rezept_ergibt_gueltige_datei(seite, server, db):
 
 
 def test_eigenes_rezept_doppelter_name(seite, server):
-    seite.goto(server + "rezept-neu.html")
-    seite.evaluate("localStorage.clear()")
-    seite.reload()
+    neues_formular(seite, server)
     rezept_ausfuellen(seite, "Marry Me Chicken mit Reis")
     assert "gibt es schon" in seite.inner_text("#rezept-probleme")
     assert not seite.locator("#rezept-speichern").is_enabled()
+
+
+def test_eigenes_rezept_freitext_zutaten(seite, server):
+    neues_formular(seite, server)
+    rezept_ausfuellen(seite, "Freitext Test")
+    r = rezept_yaml(seite)
+    g = {z["zutat"]: z["g"] for z in r["zutaten"]}
+    assert g == {"Hähnchenbrustfilet roh": 400, "Basmatireis ungekocht": 150, "Olivenöl": 13, "Ei Gr. M ohne Schale": 120}
+    assert seite.locator("#zutaten-treffer li.ok").count() == 4
+    assert r["geschmack"] == "herzhaft" and r["zeit"] == {"vorbereitung": 10, "kochen": 20, "wartezeit": 0}
+    assert r["kueche"] == "International / Fusion" and r["aufbewahrung"]["kuehlschrank_tage"] == 3
+    assert seite.evaluate("document.documentElement.scrollWidth") <= 390
+    assert seite.fehler == []
+
+
+def test_eigenes_rezept_einheiten_und_portionen(seite, server):
+    neues_formular(seite, server)
+    rezept_ausfuellen(seite, "Einheiten Test", "1 Dose Kidneybohnen\n½ TL Salz\n3 Zehen Knoblauch\n1/2 kg Lachs\nHonig 2 EL\n1-2 Zwiebeln")
+    g = {z["zutat"]: z["g"] for z in rezept_yaml(seite)["zutaten"]}
+    pack = wp.lade_packungen()["Kidneybohnen abgetropft"]["packung_g"]
+    assert g == {"Kidneybohnen abgetropft": pack, "Salz": 3, "Knoblauch": 12, "Lachsfilet ohne Haut roh": 500, "Honig": 42,
+                 "Zwiebel": 120}
+    assert rezept_yaml(seite)["aufbewahrung"]["kuehlschrank_tage"] == 2       # Fisch
+    seite.select_option("select[name=portionen]", "4")                          # Original für 4 → halbe Mengen
+    g4 = {z["zutat"]: z["g"] for z in rezept_yaml(seite)["zutaten"]}
+    assert g4["Lachsfilet ohne Haut roh"] == 250 and g4["Honig"] == 21
+
+
+def test_eigenes_rezept_unbekannt_und_auswahl(seite, server):
+    neues_formular(seite, server)
+    rezept_ausfuellen(seite, "Auswahl Test", "400 g Hähnchen\n100 g Drachenfrucht\nSalz")
+    assert seite.locator("#zutaten-treffer li.warn").count() == 2
+    assert "nicht mitgerechnet" in seite.inner_text("#rezept-probleme")
+    assert seite.locator("#rezept-speichern").is_enabled()                     # trotzdem speicherbar
+    seite.locator("#zutaten-treffer select").first.select_option("Hähnchenoberkeule ohne Haut roh")
+    assert [z["zutat"] for z in rezept_yaml(seite)["zutaten"]] == ["Hähnchenoberkeule ohne Haut roh"]
+    seite.reload()                                                              # Auswahl bleibt im Entwurf
+    assert [z["zutat"] for z in rezept_yaml(seite)["zutaten"]] == ["Hähnchenoberkeule ohne Haut roh"]
+
+
+def test_eigenes_fruehstueck_ist_suess(seite, server, db):
+    import pruefen
+    neues_formular(seite, server)
+    seite.click("text=Frühstück")
+    rezept_ausfuellen(seite, "Quark Test", "250 g Quark\n60 g Haferflocken\n1 Banane\n15 g Whey")
+    r = rezept_yaml(seite)
+    assert r["mahlzeit"] == "Frühstück" and r["geschmack"] == "süß"
+    assert pruefen.pruefe_rezept(r, db, r["id"]).ok
+
+
+def test_formular_tabellen_passen_zu_zutaten(db):
+    assert set(config.STUECK_G) <= set(db)
+    namen = [n.lower() for n in db]
+    for wort, ziel in config.FORMULAR_SYNONYME.items():
+        assert any(ziel in n for n in namen), (wort, ziel)
 
 
 def test_loeschen_warnt_bei_geplantem_rezept(seite, server):
