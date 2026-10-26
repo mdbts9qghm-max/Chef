@@ -17,11 +17,11 @@ zutaten:
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
   - gruppe: Protein-Creme
   - {id: quark, zutat: Magerquark, g: 150}
-  - {id: whey, zutat: Whey Protein Vanille, g: 60, anzeige: "2 Messlöffel"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "1⅓ Messlöffel"}
   - gruppe: Topping
   - {id: kirschen, zutat: Sauerkirschen Glas abgetropft, name: Sauerkirschen, g: 50}
   - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 2, anzeige: "1 TL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 50, anzeige: "5 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 63, anzeige: "6½ EL"}
 mise_en_place:
   - "{milch} und {wasser} abmessen. {quark} und {whey} in einer Schüssel bereitstellen."
 schritte:
@@ -43,7 +43,7 @@ fehler:
   - "**Angebrannt:** Hitze zu hoch oder nicht umgerührt. Lösung: Stufe 2 von 9, Topf mit schwerem Boden, regelmäßig über den Boden kratzen."
   - "**Whey klumpt:** in heißen Reis gerührt. Lösung: 10 Minuten abkühlen lassen und mit Quark vorrühren."
   - "**Zu fest nach dem Kühlen:** normal. Lösung: vor dem Essen 2–3 EL Wasser oder Milch unterrühren (Milch nicht mitgerechnet)."
-anrichten: "Pro Schale {portion_g} Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und 25 g Mandeln."
+anrichten: "Pro Schale {portion_g} Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und gut 31 g Mandeln."
 aufbewahrung:
   kuehlschrank_tage: 3
   einfrierbar: false
@@ -51,8 +51,8 @@ aufbewahrung:
   separat: "Milchreis nach dem Kochen innerhalb von 1 Stunde in den Kühlschrank. Kirschen und Mandeln erst beim Essen dazugeben."
 varianten:
   - {titel: Apfel-Zimt, text: "120 g geriebenen Apfel statt Kirschen.", aenderung: {"Sauerkirschen Glas abgetropft": -50, "Apfel": 120}}
-  - {titel: Schoko-Milchreis, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao unterrühren.", aenderung: {"Whey Protein Vanille": -60, "Whey Protein Schoko": 60, "Kakaopulver stark entölt": 10}}
-  - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -25}}
+  - {titel: Schoko-Milchreis, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao unterrühren.", aenderung: {"Whey Protein Vanille": -40, "Whey Protein Schoko": 40, "Kakaopulver stark entölt": 10}}
+  - {titel: Weniger kcal, text: "Mandeln halbieren.", aenderung: {"Mandeln gehobelt": -31}}
 tipps:
   - "Ein Stück Zitronenschale (ohne Weißes) mitkochen und vor dem Unterrühren entfernen: klassisches Milchreis-Aroma."
   - "Eine Prise Salz ist wichtig, sie macht den Milchreis süßer, ohne Zucker."

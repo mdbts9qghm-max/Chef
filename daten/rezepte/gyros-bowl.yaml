@@ -22,9 +22,9 @@ zutaten:
   - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 1, anzeige: "½ TL"}
   - {id: salz_g, zutat: Salz, g: 2.5, anzeige: "½ TL knapp"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
-  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1½ EL"}
+  - {id: oel, zutat: Rapsöl, g: 22, anzeige: "2 EL"}
   - gruppe: Skyr-Tzatziki
-  - {id: skyr, zutat: Skyr natur, g: 200}
+  - {id: skyr, zutat: Skyr natur, g: 100}
   - {id: gurke, zutat: Salatgurke, g: 120, anzeige: "⅓ Gurke"}
   - {id: knoblauch_t, zutat: Knoblauch, name: Knoblauch, g: 3, anzeige: "1 Zehe"}
   - {id: olivenoel, zutat: Olivenöl, g: 10, anzeige: "1 EL"}

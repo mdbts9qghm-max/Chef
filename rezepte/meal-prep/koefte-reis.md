@@ -15,17 +15,17 @@
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
 | Kalorien | 701 kcal | 31 % |
-| Protein | 63 g | 42 % |
-| Fett | 25,7 g | 25 % |
-| davon gesättigt | 8 g |  |
-| Kohlenhydrate | 53 g | 28 % |
-| davon Zucker | 7,5 g |  |
+| Protein | 57,5 g | 39 % |
+| Fett | 29,1 g | 29 % |
+| davon gesättigt | 8,2 g |  |
+| Kohlenhydrate | 51 g | 27 % |
+| davon Zucker | 5,5 g |  |
 | Ballaststoffe | 3,3 g |  |
 | Salz | 3,1 g |  |
 
-- **Protein pro 100 kcal:** 9 g
-- **Makroverteilung (Energie):** Protein 36 % · Kohlenhydrate 30 % · Fett 33 %
-- **Gewicht fertig:** ca. 990 g gesamt · **ca. 490 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,2 g
+- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 29 % · Fett 38 %
+- **Gewicht fertig:** ca. 890 g gesamt · **ca. 450 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -42,9 +42,9 @@
 | Chiliflocken | 1 Prise (0,5 g) |  |
 | Salz | ½ TL (3 g) |  |
 | Pfeffer | 2 Prisen (1 g) |  |
-| Rapsöl | 2 EL (20 g) |  |
+| Rapsöl | 2½ EL (27 g) |  |
 | **Joghurt-Knoblauch-Sauce** | | |
-| Skyr natur | 200 g |  |
+| Skyr natur | 100 g |  |
 | Knoblauch | 1 Zehe (3 g) |  |
 | Zitronensaft | 1 TL (5 g) |  |
 | Salz | 2 Prisen (1 g) |  |
@@ -56,13 +56,13 @@
 ## Mise en place
 
 - ½ Zwiebel (60 g) sehr fein reiben oder hacken, 2 EL gehackt Petersilie (10 g) fein hacken.
-- Sauce: 200 g Skyr natur mit fein geriebenem 1 Zehe Knoblauch (3 g), 1 TL Zitronensaft (5 g) und 2 Prisen Salz (1 g) verrühren.
+- Sauce: 100 g Skyr natur mit fein geriebenem 1 Zehe Knoblauch (3 g), 1 TL Zitronensaft (5 g) und 2 Prisen Salz (1 g) verrühren.
 - 95 g Basmatireis waschen. 1 Tomate (100 g) in Spalten schneiden.
 
 ## Zubereitung
 
 1. **Reis kochen** ⏱ 12 min: Reis mit 170 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
-2. **Köfte formen**: 400 g Rinderhackfleisch (5 % Fett), Zwiebel, Petersilie, 2 EL Paniermehl (20 g), 1½ TL Kreuzkümmel (3 g), 1½ TL Paprikapulver (3 g), 1 Prise Chiliflocken (0,5 g), ½ TL Salz (3 g) und 2 Prisen Pfeffer (1 g) 2 Minuten kräftig verkneten, bis die Masse klebrig wird. Mit nassen Händen 12 längliche Köfte formen (je ca. 40 g, 7 cm lang) und rundum dünn mit 2 EL Rapsöl (20 g) einpinseln.
+2. **Köfte formen**: 400 g Rinderhackfleisch (5 % Fett), Zwiebel, Petersilie, 2 EL Paniermehl (20 g), 1½ TL Kreuzkümmel (3 g), 1½ TL Paprikapulver (3 g), 1 Prise Chiliflocken (0,5 g), ½ TL Salz (3 g) und 2 Prisen Pfeffer (1 g) 2 Minuten kräftig verkneten, bis die Masse klebrig wird. Mit nassen Händen 12 längliche Köfte formen (je ca. 40 g, 7 cm lang) und rundum dünn mit 2½ EL Rapsöl (27 g) einpinseln.
 3. **Köfte im Airfryer** ⏱ 10 min: Airfryer auf 200 °C 3 Minuten vorheizen. Köfte mit Abstand in den Korb legen (ggf. in 2 Durchgängen) und bei 200 °C 9–10 Minuten garen, nach 5 Minuten wenden. Fertig, wenn sie rundum gebräunt sind und 72 °C Kerntemperatur erreichen.
 
 ## Zeitablauf
@@ -77,7 +77,7 @@
 
 ## Anrichten
 
-Pro Teller die Hälfte des Reises, 6 Köfte, Tomatenspalten und die Hälfte der Sauce, mit der Hälfte von 40 g Feta zerbröselt darüber: ca. 490 g pro Portion.
+Pro Teller die Hälfte des Reises, 6 Köfte, Tomatenspalten und die Hälfte der Sauce, mit der Hälfte von 40 g Feta zerbröselt darüber: ca. 450 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -109,17 +109,17 @@ Pro Teller die Hälfte des Reises, 6 Köfte, Tomatenspalten und die Hälfte der 
 | Chiliflocken | 0,5 g | 2 | 0,1 | 0,1 | 0,1 |
 | Salz | 3 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 1 g | 3 | 0,1 | 0 | 0,4 |
-| Rapsöl | 20 g | 180 | 0 | 20 | 0 |
-| Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
+| Rapsöl | 27 g | 243 | 0 | 27 | 0 |
+| Skyr natur | 100 g | 63 | 11 | 0,2 | 4 |
 | Knoblauch | 3 g | 4 | 0,2 | 0 | 0,9 |
 | Zitronensaft | 5 g | 1 | 0 | 0 | 0,2 |
 | Salz | 1 g | 0 | 0 | 0 | 0 |
 | Basmatireis ungekocht | 95 g | 334 | 7,6 | 0,6 | 74,1 |
 | Tomaten | 100 g | 18 | 0,9 | 0,2 | 2,6 |
 | Feta 45 % Fett i. Tr. | 40 g | 104 | 6,8 | 8,4 | 0,2 |
-| **Summe** | | **1.402** | **126** | **51,5** | **106** |
-| **Pro Portion (÷ 2)** | | **701** | **63** | **25,7** | **53** |
+| **Summe** | | **1.402** | **115** | **58,3** | **102** |
+| **Pro Portion (÷ 2)** | | **701** | **57,5** | **29,1** | **51** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.404 kcal gegenüber 1.402 kcal → Abweichung 0,2 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.406 kcal gegenüber 1.402 kcal → Abweichung 0,2 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

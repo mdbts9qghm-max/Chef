@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 753 kcal | 33 % |
-| Protein | 77,6 g | 52 % |
-| Fett | 21,4 g | 21 % |
-| davon gesättigt | 6,1 g |  |
-| Kohlenhydrate | 58,5 g | 31 % |
-| davon Zucker | 7,5 g |  |
+| Kalorien | 755 kcal | 33 % |
+| Protein | 74,8 g | 50 % |
+| Fett | 23,4 g | 23 % |
+| davon gesättigt | 6,3 g |  |
+| Kohlenhydrate | 57,5 g | 30 % |
+| davon Zucker | 6,5 g |  |
 | Ballaststoffe | 8,1 g |  |
 | Salz | 3,2 g |  |
 
-- **Protein pro 100 kcal:** 10,3 g
-- **Makroverteilung (Energie):** Protein 42 % · Kohlenhydrate 32 % · Fett 26 %
-- **Gewicht fertig:** ca. 1.150 g gesamt · **ca. 570 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,9 g
+- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 31 % · Fett 28 %
+- **Gewicht fertig:** ca. 1.100 g gesamt · **ca. 550 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -38,7 +38,7 @@
 | Salz | 2 Prisen (1 g) |  |
 | **Hähnchen** | | |
 | Hähnchenbrustfilet | 400 g |  |
-| Rapsöl | 2 EL (20 g) |  |
+| Rapsöl | 2½ EL (24 g) |  |
 | Paprikapulver | 1½ TL (3 g) |  |
 | Kreuzkümmel | 1 TL (2 g) |  |
 | Oregano | 1 TL (1 g) |  |
@@ -50,13 +50,13 @@
 | Tomaten | 2 Tomaten (150 g) |  |
 | Zwiebel | ½ kleine Zwiebel (40 g) | am besten rot |
 | Zitronensaft | 1 EL (15 g) | oder Limette |
-| Skyr natur | 100 g |  |
+| Skyr natur | 50 g |  |
 | Reibekäse light | 90 g |  |
 
 ## Mise en place
 
 - 95 g Basmatireis waschen. 120 g Kidneybohnen und 80 g Mais in einem Sieb abspülen und abtropfen lassen.
-- 400 g Hähnchenbrustfilet in 2 cm Würfel schneiden und mit 2 EL Rapsöl (20 g), 1½ TL Paprikapulver (3 g), 1 TL Kreuzkümmel (2 g), 1 TL Oregano (1 g), 1 Prise Chiliflocken (0,5 g) und ⅓ TL Salz (2 g) mischen.
+- 400 g Hähnchenbrustfilet in 2 cm Würfel schneiden und mit 2½ EL Rapsöl (24 g), 1½ TL Paprikapulver (3 g), 1 TL Kreuzkümmel (2 g), 1 TL Oregano (1 g), 1 Prise Chiliflocken (0,5 g) und ⅓ TL Salz (2 g) mischen.
 - Salsa: 2 Tomaten (150 g) in 1 cm Würfel, ½ kleine Zwiebel (40 g) sehr fein würfeln, beides mit 1 EL Zitronensaft (15 g) mischen.
 
 ## Zubereitung
@@ -77,7 +77,7 @@
 
 ## Anrichten
 
-Pro Bowl in Sektoren anrichten: die Hälfte des Reises, Hähnchen, Bohnen-Mais, Salsa, je die Hälfte von 100 g Skyr natur als Klecks und von 90 g Reibekäse light obenauf: ca. 570 g pro Portion.
+Pro Bowl in Sektoren anrichten: die Hälfte des Reises, Hähnchen, Bohnen-Mais, Salsa, je die Hälfte von 50 g Skyr natur als Klecks und von 90 g Reibekäse light obenauf: ca. 550 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -103,7 +103,7 @@ Pro Bowl in Sektoren anrichten: die Hälfte des Reises, Hähnchen, Bohnen-Mais, 
 | Basmatireis ungekocht | 95 g | 334 | 7,6 | 0,6 | 74,1 |
 | Salz | 1 g | 0 | 0 | 0 | 0 |
 | Hähnchenbrustfilet roh | 400 g | 420 | 94 | 4,8 | 0 |
-| Rapsöl | 20 g | 180 | 0 | 20 | 0 |
+| Rapsöl | 24 g | 216 | 0 | 24 | 0 |
 | Paprikapulver edelsüß | 3 g | 9 | 0,4 | 0,4 | 0,6 |
 | Kreuzkümmel gemahlen | 2 g | 9 | 0,4 | 0,4 | 0,7 |
 | Oregano getrocknet | 1 g | 3 | 0,1 | 0 | 0,3 |
@@ -114,11 +114,11 @@ Pro Bowl in Sektoren anrichten: die Hälfte des Reises, Hähnchen, Bohnen-Mais, 
 | Tomaten | 150 g | 27 | 1,4 | 0,3 | 3,9 |
 | Zwiebel | 40 g | 12 | 0,5 | 0,1 | 2 |
 | Zitronensaft | 15 g | 4 | 0,1 | 0 | 0,7 |
-| Skyr natur | 100 g | 63 | 11 | 0,2 | 4 |
+| Skyr natur | 50 g | 32 | 5,5 | 0,1 | 2 |
 | Reibekäse light | 90 g | 238 | 27 | 14,4 | 0 |
-| **Summe** | | **1.506** | **155,2** | **42,9** | **117** |
-| **Pro Portion (÷ 2)** | | **753** | **77,6** | **21,4** | **58,5** |
+| **Summe** | | **1.511** | **149,7** | **46,8** | **115** |
+| **Pro Portion (÷ 2)** | | **755** | **74,8** | **23,4** | **57,5** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.507 kcal gegenüber 1.506 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.512 kcal gegenüber 1.511 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

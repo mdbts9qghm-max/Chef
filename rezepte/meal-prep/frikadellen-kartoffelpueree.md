@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 716 kcal | 31 % |
-| Protein | 61,1 g | 41 % |
-| Fett | 26,5 g | 26 % |
-| davon gesättigt | 10,3 g |  |
-| Kohlenhydrate | 55,7 g | 29 % |
-| davon Zucker | 9,9 g |  |
+| Kalorien | 717 kcal | 32 % |
+| Protein | 58,7 g | 39 % |
+| Fett | 28 g | 28 % |
+| davon gesättigt | 10,4 g |  |
+| Kohlenhydrate | 54,9 g | 29 % |
+| davon Zucker | 9,1 g |  |
 | Ballaststoffe | 7 g |  |
 | Salz | 3,3 g |  |
 
-- **Protein pro 100 kcal:** 8,5 g
-- **Makroverteilung (Energie):** Protein 35 % · Kohlenhydrate 32 % · Fett 34 %
-- **Gewicht fertig:** ca. 1.150 g gesamt · **ca. 570 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,2 g
+- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 31 % · Fett 36 %
+- **Gewicht fertig:** ca. 1.110 g gesamt · **ca. 560 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -34,7 +34,7 @@
 |---|---|---|
 | **Frikadellen** | | |
 | Rinderhackfleisch (5 % Fett) | 400 g |  |
-| Magerquark | 85 g | macht sie saftig |
+| Magerquark | 45 g | macht sie saftig |
 | Ei | 1 Ei Gr. M (60 g) |  |
 | Paniermehl | 3 EL (30 g) |  |
 | Zwiebel | 1 Zwiebel (80 g) |  |
@@ -42,7 +42,7 @@
 | Paprikapulver | 1 TL (2 g) |  |
 | Salz | ½ TL (3 g) |  |
 | Pfeffer | 2 Prisen (1 g) |  |
-| Rapsöl | 2 TL (10 g) |  |
+| Rapsöl | 1½ EL (13 g) |  |
 | **Kartoffelpüree** | | |
 | Kartoffeln | 470 g | geschält gewogen; mehligkochende werden noch cremiger |
 | Salz fürs Kochwasser | 2 TL (10 g) | nicht mitgerechnet |
@@ -59,8 +59,8 @@
 ## Zubereitung
 
 1. **Kartoffeln kochen** ⏱ 20 min: Kartoffeln im Topf mit kaltem Wasser knapp bedecken, 2 TL Salz fürs Kochwasser (10 g) dazugeben und auf Stufe 9 von 9 aufkochen. Auf Stufe 5 von 9 zurückschalten und 18–20 Minuten mit schräg aufgelegtem Deckel kochen, bis ein Messer ohne Widerstand hineingleitet.
-2. **Hackmasse**: 400 g Rinderhackfleisch (5 % Fett), 85 g Magerquark, 1 Ei Gr. M (60 g), 3 EL Paniermehl (30 g), Zwiebelwürfel, 1 EL Senf (15 g), 1 TL Paprikapulver (2 g), ½ TL Salz (3 g) und 2 Prisen Pfeffer (1 g) mit den Händen 1 Minute verkneten, bis die Masse gleichmäßig bindet. Mit nassen Händen 6 flache Frikadellen formen (je ca. 110 g, 2 cm dick, in der Mitte leicht eindrücken, damit sie sich nicht wölben).
-3. **Frikadellen braten** ⏱ 11 min: 2 TL Rapsöl (10 g) in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). Frikadellen hineinlegen und 5 Minuten braten, bis die Unterseite tiefbraun ist, wenden und auf Stufe 5 von 9 weitere 5–6 Minuten braten. Fertig bei 72 °C Kerntemperatur in der Mitte; ohne Thermometer: Fleischsaft klar, innen nicht mehr rosa.
+2. **Hackmasse**: 400 g Rinderhackfleisch (5 % Fett), 45 g Magerquark, 1 Ei Gr. M (60 g), 3 EL Paniermehl (30 g), Zwiebelwürfel, 1 EL Senf (15 g), 1 TL Paprikapulver (2 g), ½ TL Salz (3 g) und 2 Prisen Pfeffer (1 g) mit den Händen 1 Minute verkneten, bis die Masse gleichmäßig bindet. Mit nassen Händen 6 flache Frikadellen formen (je ca. 110 g, 2 cm dick, in der Mitte leicht eindrücken, damit sie sich nicht wölben).
+3. **Frikadellen braten** ⏱ 11 min: 1½ EL Rapsöl (13 g) in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). Frikadellen hineinlegen und 5 Minuten braten, bis die Unterseite tiefbraun ist, wenden und auf Stufe 5 von 9 weitere 5–6 Minuten braten. Fertig bei 72 °C Kerntemperatur in der Mitte; ohne Thermometer: Fleischsaft klar, innen nicht mehr rosa.
 4. **Püree stampfen**: Kartoffeln abgießen und 1 Minute im offenen Topf auf der ausgeschalteten, noch warmen Herdplatte (Stufe 0) ausdampfen lassen. Warme Milch, 1½ EL Butter (15 g) und ¼ TL Salz (1,5 g) dazugeben und mit dem Stampfer zu einem glatten Püree stampfen (nicht mixen, sonst wird es kleistrig).
 
 ## Zeitablauf
@@ -75,7 +75,7 @@
 
 ## Anrichten
 
-Pro Teller 3 Frikadellen und die Hälfte des Pürees: ca. 570 g pro Portion. Für Meal Prep Frikadellen und Püree nebeneinander in eine Box.
+Pro Teller 3 Frikadellen und die Hälfte des Pürees: ca. 560 g pro Portion. Für Meal Prep Frikadellen und Püree nebeneinander in eine Box.
 
 ## Meal Prep & Aufbewahrung
 
@@ -99,7 +99,7 @@ Pro Teller 3 Frikadellen und die Hälfte des Pürees: ca. 570 g pro Portion. Fü
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Rinderhackfleisch 5 % Fett roh | 400 g | 512 | 84 | 20 | 0 |
-| Magerquark | 85 g | 57 | 10,2 | 0,3 | 3,4 |
+| Magerquark | 45 g | 30 | 5,4 | 0,1 | 1,8 |
 | Ei Gr. M ohne Schale | 60 g | 84 | 7,6 | 5,9 | 0,4 |
 | Paniermehl | 30 g | 110 | 3,6 | 0,8 | 21,6 |
 | Zwiebel | 80 g | 24 | 1 | 0,2 | 3,9 |
@@ -107,14 +107,14 @@ Pro Teller 3 Frikadellen und die Hälfte des Pürees: ca. 570 g pro Portion. Fü
 | Paprikapulver edelsüß | 2 g | 6 | 0,3 | 0,3 | 0,4 |
 | Salz | 3 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 1 g | 3 | 0,1 | 0 | 0,4 |
-| Rapsöl | 10 g | 90 | 0 | 10 | 0 |
+| Rapsöl | 13 g | 117 | 0 | 13 | 0 |
 | Kartoffeln festkochend roh | 470 g | 353 | 9,4 | 0,5 | 73,3 |
 | Salz | 10 g | – | – | – | – |
 | Milch 1,5 % Fett | 150 g | 71 | 5,1 | 2,3 | 7,2 |
 | Butter | 15 g | 111 | 0,1 | 12,3 | 0,1 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
-| **Summe** | | **1.433** | **122,2** | **53,1** | **111,4** |
-| **Pro Portion (÷ 2)** | | **716** | **61,1** | **26,5** | **55,7** |
+| **Summe** | | **1.433** | **117,4** | **56** | **109,8** |
+| **Pro Portion (÷ 2)** | | **717** | **58,7** | **28** | **54,9** |
 
 **Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.440 kcal gegenüber 1.433 kcal → Abweichung 0,5 % (bestanden, Grenze ±5 %).
 

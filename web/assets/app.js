@@ -133,7 +133,7 @@
     ziel.appendChild(el("p", { class: "leise", text: WOCHENTAGE[d.getDay()] + ", " + datumDe(iso) }));
     if (tag) {
       var marken = (tag.einkauf ? '<span class="marke">🛒 ' + (tag.start_einkauf ? "Starteinkauf" : "Einkauf") + "</span>" : "") +
-        (tag.mealprep ? '<span class="marke">🍱 Meal Prep für morgen</span>' : "");
+        (tag.mealprep ? '<span class="marke">🍱 Heute vorkochen</span>' : "");
       ziel.appendChild(el("div", { class: "schicht-banner s-" + tag.schicht.toLowerCase(), html: "<span>" + SCHICHT[tag.schicht][0] + " <strong>" +
         SCHICHT[tag.schicht][1] + "</strong>" + (tag.schichtzeit ? " " + tag.schichtzeit : "") + "</span>" + marken }));
     }
@@ -156,7 +156,8 @@
       var a = el("a", { class: "mahlzeit", href: rezeptLink(m) }, [
         el("span", { class: "slot", text: m.label + (m.zeit ? " · " + m.zeit : "") }),
         el("span", { class: "name", html: esc(info + m.name + (m.rest ? " (Rest)" : "")) +
-          (m.faktor && m.faktor !== 1 ? ' <span class="faktor">×' + zahl(m.faktor, 2) + "</span>" : "") }),
+          (m.faktor && m.faktor !== 1 ? ' <span class="faktor">×' + zahl(m.faktor, 2) + "</span>" : "") +
+          (m.hinweis ? '<span class="mhinweis">' + esc(m.hinweis) + "</span>" : "") }),
         el("span", { class: "werte", html: zahl(m.kcal, 0) + " kcal<br>" + zahl(m.protein, 0) + " g P" })]);
       mk.appendChild(a);
     });
@@ -167,6 +168,19 @@
         el("span", { class: "name", text: x.text }), el("span", { class: "werte", html: zahl(x.kcal, 0) + " kcal<br>" + zahl(x.protein, 0) + " g P" })]));
     });
     ziel.appendChild(mk);
+
+    // Meal Prep: klar sagen, ob heute etwas für später mitgekocht wird
+    var vk = tag.vorkochen || [];
+    var prep = el("div", { class: "karte vorkochen-karte " + (vk.length ? "ja" : "nein") }, [
+      el("h2", { text: vk.length ? "🍱 Heute für später vorkochen" : "✓ Heute nichts vorkochen" })]);
+    if (vk.length) {
+      var pl = el("ul", {});
+      vk.forEach(function (t) { pl.appendChild(el("li", { text: t })); });
+      prep.appendChild(pl);
+    } else {
+      prep.appendChild(el("p", { class: "leise", text: "Du kochst heute nur für heute." }));
+    }
+    ziel.appendChild(prep);
 
     var bk = el("div", { class: "karte" }, [el("h2", { text: "Tagessumme" })]);
     var ringe = el("div", { class: "ringe" });

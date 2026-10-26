@@ -15,7 +15,7 @@ ausstattung: ["Pfanne 28 cm", Pfannenwender, Fleischthermometer]
 zutaten:
   - gruppe: Füllung
   - {id: hack, zutat: Putenhackfleisch roh, name: Putenhackfleisch, g: 300}
-  - {id: oel, zutat: Rapsöl, g: 5, anzeige: "1 TL"}
+  - {id: oel, zutat: Rapsöl, g: 9, anzeige: "1 EL"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 15, anzeige: "1 EL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
   - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 2, anzeige: "1 TL"}
@@ -28,7 +28,7 @@ zutaten:
   - {id: wraps, zutat: Weizen-Tortilla-Wraps, name: Weizen-Tortillas, g: 124, anzeige: "2 große Weizen-Tortillas"}
   - {id: kaese, zutat: Reibekäse light, g: 70}
   - {id: tomaten, zutat: Tomaten, g: 100, anzeige: "1 Tomate"}
-  - {id: skyr, zutat: Skyr natur, g: 100}
+  - {id: skyr, zutat: Skyr natur, g: 50}
 mise_en_place:
   - "{knoblauch} fein hacken. {tomaten} in 1 cm Würfel schneiden. {bohnen} abspülen und mit einer Gabel grob zerdrücken."
   - "{wraps} bereitlegen. Jede Tortilla vom Mittelpunkt bis zum unteren Rand einmal gerade einschneiden (ein Radius)."
@@ -48,7 +48,7 @@ fehler:
   - "**Wrap reißt beim Falten:** kalte Tortilla. Lösung: 10 Sekunden in der Mikrowelle erwärmen, dann ist sie biegsam."
   - "**Füllung läuft aus:** zu viel Flüssigkeit. Lösung: Füllung kurz abkühlen lassen und nur 3 EL Wasser verwenden."
   - "**Käse schmilzt nicht:** zu hohe Hitze, Tortilla verbrennt vorher. Lösung: Stufe 6 von 9, andrücken."
-anrichten: "Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 50 g Skyr als Dip ({skyr} insgesamt): {portion_g} pro Portion."
+anrichten: "Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 25 g Skyr als Dip ({skyr} insgesamt): {portion_g} pro Portion."
 aufbewahrung:
   kuehlschrank_tage: 2
   einfrierbar: true

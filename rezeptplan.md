@@ -7,21 +7,21 @@ Stand: 50 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 
 | Nr. | Gericht | id | Küche | Hauptprotein | Ziel-kcal | Inspiration | Tags | Status |
 |---:|---|---|---|---|---:|---|---|---|
-| 1 | Frühstücks-Brownie | `fruehstuecks-brownie` | Amerikanisch | Skyr + Whey | 606 | ja | MP | ✓ geschrieben (606 kcal) |
-| 2 | Protein-Joghurt-Bowl mit Knuspermüsli & Beeren | `protein-joghurt-bowl` | International / Fusion | Skyr + Whey | 560 | nein | S | ✓ geschrieben (579 kcal) |
-| 3 | Protein-Pancakes mit Heidelbeeren & Honig | `protein-pancakes` | Amerikanisch | Magerquark + Ei | 590 | ja | S | ✓ geschrieben (597 kcal) |
-| 4 | Protein-Waffeln mit Kirschen & Vanille-Skyr | `protein-waffeln` | Amerikanisch | Magerquark + Whey | 600 | nein | S | ✓ geschrieben (616 kcal) |
-| 5 | Overnight Oats „Himbeer-Cheesecake“ | `overnight-oats-cheesecake` | Amerikanisch | Skyr + Whey | 570 | ja | MP, S | ✓ geschrieben (587 kcal) |
+| 1 | Frühstücks-Brownie | `fruehstuecks-brownie` | Amerikanisch | Skyr + Whey | 606 | ja | MP | ✓ geschrieben (607 kcal) |
+| 2 | Protein-Joghurt-Bowl mit Knuspermüsli & Beeren | `protein-joghurt-bowl` | International / Fusion | Skyr + Whey | 560 | nein | S | ✓ geschrieben (581 kcal) |
+| 3 | Protein-Pancakes mit Heidelbeeren & Honig | `protein-pancakes` | Amerikanisch | Magerquark + Ei | 590 | ja | S | ✓ geschrieben (595 kcal) |
+| 4 | Protein-Waffeln mit Kirschen & Vanille-Skyr | `protein-waffeln` | Amerikanisch | Magerquark + Whey | 600 | nein | S | ✓ geschrieben (618 kcal) |
+| 5 | Overnight Oats „Himbeer-Cheesecake“ | `overnight-oats-cheesecake` | Amerikanisch | Skyr + Whey | 570 | ja | MP, S | ✓ geschrieben (588 kcal) |
 | 6 | Overnight Oats „Apfelstrudel“ | `overnight-oats-apfelstrudel` | Deutsch | Magerquark + Whey | 570 | nein | MP, S | ✓ geschrieben (550 kcal) |
 | 7 | Quark-Auflauf mit Kirschen | `quark-auflauf-kirschen` | Deutsch | Magerquark + Ei | 580 | nein | MP | ✓ geschrieben (593 kcal) |
 | 8 | Protein-French-Toast mit Beeren | `protein-french-toast` | Amerikanisch | Ei + Eiklar + Skyr | 580 | ja | S | ✓ geschrieben (598 kcal) |
 | 9 | Protein-Kaiserschmarrn mit Apfel-Beeren-Kompott | `protein-kaiserschmarrn` | Deutsch | Magerquark + Ei | 600 | nein | S | ✓ geschrieben (578 kcal) |
-| 10 | Protein-Milchreis mit Zimt & Kirschen | `protein-milchreis` | Deutsch | Milch + Whey | 580 | nein | MP | ✓ geschrieben (589 kcal) |
-| 11 | Protein-Grießbrei mit Zimt-Apfel | `protein-griessbrei` | Deutsch | Milch + Whey | 560 | nein | S | ✓ geschrieben (544 kcal) |
-| 12 | Protein-Bananenbrot | `protein-bananenbrot` | Amerikanisch | Skyr + Ei + Whey | 590 | ja | MP | ✓ geschrieben (577 kcal) |
-| 13 | Heidelbeer-Protein-Muffins | `heidelbeer-protein-muffins` | Amerikanisch | Magerquark + Ei | 570 | nein | MP | ✓ geschrieben (555 kcal) |
-| 14 | Skyr-Tiramisu-Bowl | `skyr-tiramisu-bowl` | Italienisch | Skyr + Whey | 560 | ja | S | ✓ geschrieben (564 kcal) |
-| 15 | Protein-Crêpes mit Vanille-Quark & Beeren | `protein-crepes` | International / Fusion | Ei + Magerquark | 590 | nein | S | ✓ geschrieben (593 kcal) |
+| 10 | Protein-Milchreis mit Zimt & Kirschen | `protein-milchreis` | Deutsch | Milch + Whey | 580 | nein | MP | ✓ geschrieben (590 kcal) |
+| 11 | Protein-Grießbrei mit Zimt-Apfel | `protein-griessbrei` | Deutsch | Milch + Whey | 560 | nein | S | ✓ geschrieben (543 kcal) |
+| 12 | Protein-Bananenbrot | `protein-bananenbrot` | Amerikanisch | Skyr + Ei + Whey | 590 | ja | MP | ✓ geschrieben (575 kcal) |
+| 13 | Heidelbeer-Protein-Muffins | `heidelbeer-protein-muffins` | Amerikanisch | Magerquark + Ei | 570 | nein | MP | ✓ geschrieben (556 kcal) |
+| 14 | Skyr-Tiramisu-Bowl | `skyr-tiramisu-bowl` | Italienisch | Skyr + Whey | 560 | ja | S | ✓ geschrieben (563 kcal) |
+| 15 | Protein-Crêpes mit Vanille-Quark & Beeren | `protein-crepes` | International / Fusion | Ei + Magerquark | 590 | nein | S | ✓ geschrieben (591 kcal) |
 
 ## Snacks & Desserts, süß (5)
 
@@ -38,10 +38,10 @@ Stand: 50 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | Nr. | Gericht | id | Küche | Hauptprotein | Ziel-kcal | Inspiration | Tags | Status |
 |---:|---|---|---|---|---:|---|---|---|
 | 21 | Putenschnitzel aus dem Airfryer mit Bratkartoffeln | `putenschnitzel-airfryer` | Deutsch | Pute | 720 | nein | – | ✓ geschrieben (721 kcal) |
-| 22 | Frikadellen mit Kartoffelpüree | `frikadellen-kartoffelpueree` | Deutsch | Rinderhack + Quark | 750 | nein | MP | ✓ geschrieben (716 kcal) |
+| 22 | Frikadellen mit Kartoffelpüree | `frikadellen-kartoffelpueree` | Deutsch | Rinderhack + Quark | 750 | nein | MP | ✓ geschrieben (717 kcal) |
 | 23 | Rindergulasch mit Salzkartoffeln | `rindergulasch` | Deutsch | Rind | 700 | nein | MP | ✓ geschrieben (694 kcal) |
 | 24 | Schweinefilet in Senf-Rahm mit Kartoffeln | `schweinefilet-senf-rahm` | Deutsch | Schwein | 530 | nein | KA | ✓ geschrieben (515 kcal) |
-| 25 | High-Protein-Lasagne mit Magerquark | `protein-lasagne` | Italienisch | Rind | 780 | nein | MP | ✓ geschrieben (810 kcal) |
+| 25 | High-Protein-Lasagne mit Magerquark | `protein-lasagne` | Italienisch | Rind | 780 | nein | MP | ✓ geschrieben (811 kcal) |
 | 26 | Hähnchen-Piccata mit Zitronen-Pasta | `haehnchen-piccata` | Italienisch | Hähnchen | 720 | nein | S | ✓ geschrieben (732 kcal) |
 | 27 | Gnocchi al Forno mit Putenhack & Mozzarella | `gnocchi-al-forno` | Italienisch | Pute | 760 | ja | MP | ✓ geschrieben (737 kcal) |
 | 28 | Knoblauch-Garnelen-Pasta mit Tomaten | `knoblauch-garnelen-pasta` | Italienisch | Fisch & Garnelen | 540 | ja | S, KA | ✓ geschrieben (521 kcal) |
@@ -50,23 +50,23 @@ Stand: 50 von 50 Rezepten geschrieben. Tags sind Planwerte (MP = Meal Prep, S = 
 | 31 | Korean Beef Bowl | `korean-beef-bowl` | Asiatisch | Rind | 720 | ja | S | ✓ geschrieben (669 kcal) |
 | 32 | Rotes Thai-Curry mit Garnelen & Reis | `thai-curry-garnelen` | Asiatisch | Fisch & Garnelen | 540 | nein | KA | ✓ geschrieben (523 kcal) |
 | 33 | Gebratene Mie-Nudeln mit Pute | `mie-nudeln-pute` | Asiatisch | Pute | 540 | nein | S, KA | ✓ geschrieben (501 kcal) |
-| 34 | Lachs-Reis-Bowl mit Sriracha-Skyr | `lachs-reis-bowl` | Asiatisch | Lachs | 760 | ja | S | ✓ geschrieben (704 kcal) |
-| 35 | Hähnchen-Burrito-Bowl | `haehnchen-burrito-bowl` | Mexikanisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (753 kcal) |
+| 34 | Lachs-Reis-Bowl mit Sriracha-Skyr | `lachs-reis-bowl` | Asiatisch | Lachs | 760 | ja | S | ✓ geschrieben (706 kcal) |
+| 35 | Hähnchen-Burrito-Bowl | `haehnchen-burrito-bowl` | Mexikanisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (755 kcal) |
 | 36 | Chili con Carne mit Reis | `chili-con-carne` | Mexikanisch | Rind | 740 | nein | MP | ✓ geschrieben (802 kcal) |
-| 37 | Wrap-Hack aus der Pfanne mit Putenhack & Käse | `wrap-hack-putenhack` | Mexikanisch | Pute | 700 | ja | S | ✓ geschrieben (666 kcal) |
-| 38 | Butter Chicken mit Skyr & Reis | `butter-chicken` | Indisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (744 kcal) |
+| 37 | Wrap-Hack aus der Pfanne mit Putenhack & Käse | `wrap-hack-putenhack` | Mexikanisch | Pute | 700 | ja | S | ✓ geschrieben (669 kcal) |
+| 38 | Butter Chicken mit Skyr & Reis | `butter-chicken` | Indisch | Hähnchen | 760 | ja | MP | ✓ geschrieben (747 kcal) |
 | 39 | Kabeljau-Curry mit Reis | `kabeljau-curry` | Indisch | Kabeljau | 530 | nein | KA | ✓ geschrieben (532 kcal) |
-| 40 | Keema-Curry mit Putenhack & Kichererbsen | `keema-curry-pute` | Indisch | Pute | 720 | nein | MP | ✓ geschrieben (784 kcal) |
+| 40 | Keema-Curry mit Putenhack & Kichererbsen | `keema-curry-pute` | Indisch | Pute | 720 | nein | MP | ✓ geschrieben (786 kcal) |
 | 41 | Gyros-Bowl mit Skyr-Tzatziki & Reis | `gyros-bowl` | Griechisch & Mediterran | Schweinefilet | 750 | ja | – | ✓ geschrieben (733 kcal) |
-| 42 | Puten-Souvlaki mit Ofenkartoffeln & Feta | `puten-souvlaki` | Griechisch & Mediterran | Pute | 540 | nein | KA | ✓ geschrieben (479 kcal) |
+| 42 | Puten-Souvlaki mit Ofenkartoffeln & Feta | `puten-souvlaki` | Griechisch & Mediterran | Pute | 540 | nein | KA | ✓ geschrieben (481 kcal) |
 | 43 | Ofen-Lachs mediterran mit Kartoffeln & Tomaten | `ofen-lachs-mediterran` | Griechisch & Mediterran | Lachs | 720 | nein | – | ✓ geschrieben (664 kcal) |
 | 44 | Köfte mit Joghurt-Knoblauch-Sauce & Reis | `koefte-reis` | Türkisch & Orientalisch | Rind | 760 | nein | MP | ✓ geschrieben (701 kcal) |
-| 45 | Döner-Bowl mit Hähnchen | `doener-bowl` | Türkisch & Orientalisch | Hähnchen | 760 | ja | – | ✓ geschrieben (665 kcal) |
+| 45 | Döner-Bowl mit Hähnchen | `doener-bowl` | Türkisch & Orientalisch | Hähnchen | 760 | ja | – | ✓ geschrieben (666 kcal) |
 | 46 | Shakshuka mit Feta & Toast | `shakshuka-feta` | Türkisch & Orientalisch | Eier | 700 | nein | S | ✓ geschrieben (679 kcal) |
 | 47 | Marry Me Chicken mit Reis | `marry-me-chicken` | Amerikanisch | Hähnchen | 741 | ja | MP | ✓ geschrieben (767 kcal) |
-| 48 | Smash Burger mit Ofen-Kartoffelspalten | `smash-burger` | Amerikanisch | Rind | 800 | ja | – | ✓ geschrieben (774 kcal) |
+| 48 | Smash Burger mit Ofen-Kartoffelspalten | `smash-burger` | Amerikanisch | Rind | 800 | ja | – | ✓ geschrieben (772 kcal) |
 | 49 | Philly-Cheesesteak-Wrap | `philly-cheesesteak-wrap` | Amerikanisch | Rind | 720 | ja | S | ✓ geschrieben (649 kcal) |
-| 50 | Cottage-Cheese-Mac-and-Cheese mit Putenbrust | `cottage-cheese-mac-and-cheese` | International / Fusion | Pute | 760 | ja | S | ✓ geschrieben (750 kcal) |
+| 50 | Cottage-Cheese-Mac-and-Cheese mit Putenbrust | `cottage-cheese-mac-and-cheese` | International / Fusion | Pute | 760 | ja | S | ✓ geschrieben (752 kcal) |
 
 ## Abgleich des Plans mit SPEC 5.1–5.3
 

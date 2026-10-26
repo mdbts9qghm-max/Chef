@@ -11,11 +11,11 @@ zeit: {vorbereitung: 6, kochen: 4, wartezeit: 0}
 ausstattung: ["Pfanne 24 cm", "2 Schüsseln", Mikrowelle]
 zutaten:
   - gruppe: Creme
-  - {id: skyr, zutat: Skyr natur, g: 400, hinweis: "kalt aus dem Kühlschrank"}
+  - {id: skyr, zutat: Skyr natur, g: 290, hinweis: "kalt aus dem Kühlschrank"}
   - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "ca. 1⅓ Messlöffel"}
   - gruppe: Knusper
   - {id: hafer, zutat: Haferflocken zart, g: 30, anzeige: "3 EL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 42, anzeige: "4 EL"}
   - {id: muesli, zutat: Knuspermüsli, g: 60, hinweis: "Schoko- oder Nuss-Sorte"}
   - gruppe: Topping
   - {id: beeren, zutat: Beerenmischung TK, g: 120, hinweis: "gefroren"}

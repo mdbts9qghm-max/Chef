@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 666 kcal | 29 % |
-| Protein | 57,8 g | 39 % |
-| Fett | 25 g | 25 % |
-| davon gesättigt | 8,9 g |  |
-| Kohlenhydrate | 48,7 g | 25 % |
-| davon Zucker | 8 g |  |
+| Kalorien | 669 kcal | 29 % |
+| Protein | 55 g | 37 % |
+| Fett | 26,9 g | 27 % |
+| davon gesättigt | 9 g |  |
+| Kohlenhydrate | 47,7 g | 25 % |
+| davon Zucker | 7 g |  |
 | Ballaststoffe | 7,8 g |  |
-| Salz | 3,2 g |  |
+| Salz | 3,1 g |  |
 
-- **Protein pro 100 kcal:** 8,7 g
-- **Makroverteilung (Energie):** Protein 36 % · Kohlenhydrate 30 % · Fett 35 %
-- **Gewicht fertig:** ca. 790 g gesamt · **ca. 390 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,2 g
+- **Makroverteilung (Energie):** Protein 34 % · Kohlenhydrate 29 % · Fett 37 %
+- **Gewicht fertig:** ca. 740 g gesamt · **ca. 370 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -35,7 +35,7 @@
 |---|---|---|
 | **Füllung** | | |
 | Putenhackfleisch | 300 g |  |
-| Rapsöl | 1 TL (5 g) |  |
+| Rapsöl | 1 EL (9 g) |  |
 | Tomatenmark | 1 EL (15 g) |  |
 | Paprikapulver | 1½ TL (3 g) |  |
 | Kreuzkümmel | 1 TL (2 g) |  |
@@ -48,7 +48,7 @@
 | Weizen-Tortillas | 2 große Weizen-Tortillas (124 g) |  |
 | Reibekäse light | 70 g |  |
 | Tomaten | 1 Tomate (100 g) |  |
-| Skyr natur | 100 g |  |
+| Skyr natur | 50 g |  |
 
 ## Mise en place
 
@@ -57,7 +57,7 @@
 
 ## Zubereitung
 
-1. **Füllung braten** ⏱ 8 min: 1 TL Rapsöl (5 g) in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. 300 g Putenhackfleisch 2 Minuten anbraten, dann zerkrümeln und 4 Minuten weiterbraten. Knoblauch, 1 EL Tomatenmark (15 g), 1½ TL Paprikapulver (3 g), 1 TL Kreuzkümmel (2 g), 1 Prise Chiliflocken (0,5 g) und ⅓ TL Salz (2 g) 1 Minute mitrösten, 3 EL Wasser dazu. Bohnen und 60 g Mais unterrühren und 1 Minute erhitzen. Garprobe: Das Hack ist durch, 72 °C Kerntemperatur, kein rosa mehr. In eine Schüssel geben, Pfanne auswischen.
+1. **Füllung braten** ⏱ 8 min: 1 EL Rapsöl (9 g) in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. 300 g Putenhackfleisch 2 Minuten anbraten, dann zerkrümeln und 4 Minuten weiterbraten. Knoblauch, 1 EL Tomatenmark (15 g), 1½ TL Paprikapulver (3 g), 1 TL Kreuzkümmel (2 g), 1 Prise Chiliflocken (0,5 g) und ⅓ TL Salz (2 g) 1 Minute mitrösten, 3 EL Wasser dazu. Bohnen und 60 g Mais unterrühren und 1 Minute erhitzen. Garprobe: Das Hack ist durch, 72 °C Kerntemperatur, kein rosa mehr. In eine Schüssel geben, Pfanne auswischen.
 2. **Wraps belegen**: Tortilla gedanklich in 4 Viertel teilen (der Schnitt liegt zwischen den unteren beiden). Unten links: ein Viertel der Hackfüllung. Oben links: 30 g Reibekäse light (von insgesamt 70 g Reibekäse light). Oben rechts: Tomatenwürfel. Unten rechts: Rest der Füllung. Viertel für Viertel im Uhrzeigersinn übereinanderklappen, bis ein dreieckiges Paket entsteht. Mit der zweiten Tortilla genauso.
 3. **Toasten** ⏱ 6 min: Pakete in der trockenen Pfanne auf Stufe 6 von 9 2–3 Minuten pro Seite toasten, mit dem Pfannenwender andrücken, bis die Tortilla goldbraun und knusprig ist und der Käse schmilzt.
 
@@ -73,7 +73,7 @@
 
 ## Anrichten
 
-Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 50 g Skyr als Dip (100 g Skyr natur insgesamt): ca. 390 g pro Portion.
+Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 25 g Skyr als Dip (50 g Skyr natur insgesamt): ca. 370 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -97,7 +97,7 @@ Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 50 g Skyr als Dip (100 g Skyr na
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Putenhackfleisch roh | 300 g | 444 | 60 | 22,5 | 0 |
-| Rapsöl | 5 g | 45 | 0 | 5 | 0 |
+| Rapsöl | 9 g | 81 | 0 | 9 | 0 |
 | Tomatenmark | 15 g | 12 | 0,6 | 0,1 | 2 |
 | Paprikapulver edelsüß | 3 g | 9 | 0,4 | 0,4 | 0,6 |
 | Kreuzkümmel gemahlen | 2 g | 9 | 0,4 | 0,4 | 0,7 |
@@ -109,10 +109,10 @@ Pro Teller 1 Wrap-Paket, diagonal halbiert, mit 50 g Skyr als Dip (100 g Skyr na
 | Weizen-Tortilla-Wraps | 124 g | 376 | 10,5 | 8,7 | 62 |
 | Reibekäse light | 70 g | 185 | 21 | 11,2 | 0 |
 | Tomaten | 100 g | 18 | 0,9 | 0,2 | 2,6 |
-| Skyr natur | 100 g | 63 | 11 | 0,2 | 4 |
-| **Summe** | | **1.333** | **115,5** | **50** | **97,3** |
-| **Pro Portion (÷ 2)** | | **666** | **57,8** | **25** | **48,7** |
+| Skyr natur | 50 g | 32 | 5,5 | 0,1 | 2 |
+| **Summe** | | **1.337** | **110** | **53,9** | **95,3** |
+| **Pro Portion (÷ 2)** | | **669** | **55** | **26,9** | **47,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.333 kcal gegenüber 1.333 kcal → Abweichung 0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.338 kcal gegenüber 1.337 kcal → Abweichung 0 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

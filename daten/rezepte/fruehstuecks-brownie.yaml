@@ -18,14 +18,14 @@ zutaten:
   - {id: banane, zutat: Banane geschält, name: Banane, g: 100, anzeige: "1 kleine, sehr reife Banane", hinweis: "braun gesprenkelt = süßer"}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M", hinweis: "Zimmertemperatur"}
   - {id: skyr, zutat: Skyr natur, g: 250, hinweis: "½ Becher"}
-  - {id: whey, zutat: Whey Protein Schoko, g: 40, anzeige: "ca. 1⅓ Messlöffel", hinweis: "Schoko- oder Brownie-Geschmack"}
+  - {id: whey, zutat: Whey Protein Schoko, g: 20, anzeige: "⅔ Messlöffel", hinweis: "Schoko- oder Brownie-Geschmack"}
   - {id: kakao, zutat: Kakaopulver stark entölt, name: Backkakao, g: 20, anzeige: "2 gehäufte EL"}
   - {id: backpulver, zutat: Backpulver, g: 4, anzeige: "1 TL"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise", hinweis: "verstärkt den Schokogeschmack"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 70, hinweis: "70 ml"}
   - gruppe: Topping
   - {id: schoko, zutat: Zartbitterschokolade 70 %, name: Zartbitterschokolade, g: 15, anzeige: "3 Rippchen", hinweis: "grob gehackt"}
-  - {id: pb, zutat: Erdnussbutter 100 % Erdnüsse, name: Erdnussbutter, g: 30, anzeige: "3 EL"}
+  - {id: pb, zutat: Erdnussbutter 100 % Erdnüsse, name: Erdnussbutter, g: 43, anzeige: "4½ EL"}
 mise_en_place:
   - "Backofen auf 180 °C Ober-/Unterhitze (160 °C Umluft) vorheizen, Rost in die mittlere Schiene."
   - "Auflaufform 20 × 20 cm mit Backpapier auslegen (Papier an zwei Seiten überstehen lassen, dann lässt sich der Brownie später herausheben)."
@@ -61,9 +61,9 @@ aufbewahrung:
   separat: "Erdnussbutter-Linien erst nach dem Abkühlen ziehen; die Stücke mit Backpapier zwischen den Lagen stapeln."
 varianten:
   - {titel: Mehr Protein, text: "Skyr auf 350 g erhöhen und die Milch weglassen.", aenderung: {"Skyr natur": 100, "Milch 1,5 % Fett": -80}}
-  - {titel: Weniger kcal, text: "Erdnussbutter weglassen.", aenderung: {"Erdnussbutter 100 % Erdnüsse": -30}}
-  - {titel: Himbeer-Brownie, text: "80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter, 2 Minuten länger backen.", aenderung: {"Himbeeren TK": 80, "Erdnussbutter 100 % Erdnüsse": -30}}
-  - {titel: Vanille statt Schoko, text: "Whey Protein Vanille statt Schoko, Backkakao weglassen, dafür 1 TL Zimt (2 g): wird ein Bananenbrot-Blondie.", aenderung: {"Whey Protein Schoko": -40, "Whey Protein Vanille": 40, "Kakaopulver stark entölt": -20, "Zimt gemahlen": 2}}
+  - {titel: Weniger kcal, text: "Erdnussbutter weglassen.", aenderung: {"Erdnussbutter 100 % Erdnüsse": -43}}
+  - {titel: Himbeer-Brownie, text: "80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter, 2 Minuten länger backen.", aenderung: {"Himbeeren TK": 80, "Erdnussbutter 100 % Erdnüsse": -43}}
+  - {titel: Vanille statt Schoko, text: "Whey Protein Vanille statt Schoko, Backkakao weglassen, dafür 1 TL Zimt (2 g): wird ein Bananenbrot-Blondie.", aenderung: {"Whey Protein Schoko": -20, "Whey Protein Vanille": 20, "Kakaopulver stark entölt": -20, "Zimt gemahlen": 2}}
 tipps:
   - "Je reifer die Banane, desto weniger merkt man, dass kein Zucker drin ist. Bananen mit braunen Flecken einfrieren und für diesen Brownie aufheben."
   - "Über Nacht im Kühlschrank wird der Brownie noch fudgiger. Wer es dessertartig mag, isst ihn kalt mit 1 Prise Meersalzflocken obendrauf."

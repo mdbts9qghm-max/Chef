@@ -12,6 +12,7 @@ import yaml
 import config
 import naehrwerte as nw
 import web
+import wochenplan as wp
 
 CHROMIUM = "/opt/pw-browsers/chromium"     # vorinstalliert, kein „playwright install“
 
@@ -358,3 +359,19 @@ def test_faktor_aus_plan_auf_rezeptseite(seite, server, echte_rezepte, db):
     g = float(zelle.get_attribute("data-g"))
     assert nw.gramm(g * f).replace(" g", "") in zelle.inner_text()
     assert seite.fehler == []
+
+
+def test_meal_prep_deutlich(seite, server, db):
+    plan = wp.lade_plan("KW-44-2026")
+    rz = nw.lade_alle_rezepte()
+    pd = web.plan_daten(plan, rz, db, wp.pruefe_plan(plan, rz, db))
+    tage = {t["datum"]: t for t in pd["tage"]}
+    assert tage["2026-10-26"]["vorkochen"]                       # Mo: Meal Prep für die Tagschicht am Di
+    assert tage["2026-10-27"]["vorkochen"] == []                 # Di (Tagschicht): nichts vorkochen
+    assert all(m["hinweis"] for m in tage["2026-10-27"]["mahlzeiten"] if m["slot"] in ("fruehstueck", "mittag"))
+    seite.goto(server + "index.html?datum=2026-10-26")
+    assert "Heute für später vorkochen" in seite.inner_text(".vorkochen-karte")
+    seite.goto(server + "index.html?datum=2026-10-27")
+    assert "Heute nichts vorkochen" in seite.inner_text(".vorkochen-karte")
+    seite.goto(server + "woche/KW-44-2026.html")
+    assert seite.locator(".vorkochen.ja").count() >= 1 and seite.locator(".vorkochen.nein").count() >= 1

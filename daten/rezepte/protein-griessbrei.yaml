@@ -16,11 +16,11 @@ zutaten:
   - {id: griess, zutat: Weichweizengrieß, name: Grieß, g: 70}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
   - {id: quark, zutat: Magerquark, g: 150}
-  - {id: whey, zutat: Whey Protein Vanille, g: 50, anzeige: "1⅔ Messlöffel"}
+  - {id: whey, zutat: Whey Protein Vanille, g: 40, anzeige: "1⅓ Messlöffel"}
   - gruppe: Zimt-Apfel
   - {id: apfel, zutat: Apfel, g: 110, anzeige: "1 kleiner Apfel", hinweis: "entkernt gewogen"}
   - {id: zimt, zutat: Zimt gemahlen, name: Zimt, g: 2, anzeige: "1 TL"}
-  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 55, anzeige: "5½ EL"}
+  - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 61, anzeige: "6 EL"}
 mise_en_place:
   - "{apfel} vierteln, entkernen und in 1 cm Würfel schneiden."
   - "{quark} und {whey} in einer Schüssel mit 3 EL Wasser glatt rühren."
@@ -48,8 +48,8 @@ aufbewahrung:
   separat: "Zimt-Apfel getrennt lagern."
 varianten:
   - {titel: Mit Kirschen, text: "110 g Sauerkirschen statt Apfel, kalt darauf.", aenderung: {"Apfel": -110, "Sauerkirschen Glas abgetropft": 110}}
-  - {titel: Schoko-Grieß, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao.", aenderung: {"Whey Protein Vanille": -50, "Whey Protein Schoko": 50, "Kakaopulver stark entölt": 10}}
-  - {titel: Weniger kcal, text: "Mandeln auf 15 g reduzieren.", aenderung: {"Mandeln gehobelt": -40}}
+  - {titel: Schoko-Grieß, text: "Whey Protein Schoko statt Vanille und 10 g Backkakao.", aenderung: {"Whey Protein Vanille": -40, "Whey Protein Schoko": 40, "Kakaopulver stark entölt": 10}}
+  - {titel: Weniger kcal, text: "Mandeln auf 15 g reduzieren.", aenderung: {"Mandeln gehobelt": -46}}
 tipps:
   - "Für Kindheitsgefühl: obendrauf eine Prise Zimt und 1 TL Erythrit mischen und darüberstreuen (Zimt-„Zucker“ ohne Zucker)."
 gargewicht_g: null

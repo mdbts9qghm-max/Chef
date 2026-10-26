@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 750 kcal | 33 % |
-| Protein | 74,5 g | 50 % |
-| Fett | 25,8 g | 26 % |
-| davon gesättigt | 9,7 g |  |
-| Kohlenhydrate | 52 g | 27 % |
-| davon Zucker | 7,2 g |  |
+| Kalorien | 752 kcal | 33 % |
+| Protein | 69,4 g | 47 % |
+| Fett | 28,6 g | 28 % |
+| davon gesättigt | 8,9 g |  |
+| Kohlenhydrate | 51 g | 27 % |
+| davon Zucker | 6,1 g |  |
 | Ballaststoffe | 2,9 g |  |
-| Salz | 2,7 g |  |
+| Salz | 2,4 g |  |
 
-- **Protein pro 100 kcal:** 9,9 g
-- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 28 % · Fett 31 %
-- **Gewicht fertig:** ca. 970 g gesamt · **ca. 490 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,2 g
+- **Makroverteilung (Energie):** Protein 38 % · Kohlenhydrate 28 % · Fett 35 %
+- **Gewicht fertig:** ca. 900 g gesamt · **ca. 450 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -37,14 +37,14 @@
 | Makkaroni | 130 g |  |
 | Salz fürs Nudelwasser | 1 EL (15 g) | nicht mitgerechnet |
 | **Käsesauce** | | |
-| körniger Frischkäse | 1 Becher (200 g) |  |
+| körniger Frischkäse | gut ½ Becher (120 g) |  |
 | Milch | 100 g | 100 ml |
 | Reibekäse light | 100 g |  |
 | Senf | 1 TL (5 g) |  |
 | Paprikapulver | ½ TL (1 g) |  |
 | **Putenbrust** | | |
 | Putenbrust | 300 g |  |
-| Rapsöl | 2 EL (20 g) |  |
+| Rapsöl | 3 EL (29 g) |  |
 | Knoblauch | 1 Zehe (3 g) |  |
 | Salz | ¼ TL (1,5 g) |  |
 | Pfeffer | 1 Prise (0,5 g) |  |
@@ -54,12 +54,12 @@
 
 - 3 l Wasser mit 1 EL Salz fürs Nudelwasser (15 g) auf Stufe 9 von 9 aufkochen.
 - 300 g Putenbrust in 2 cm Würfel schneiden, mit ¼ TL Salz (1,5 g) und 1 Prise Pfeffer (0,5 g) würzen. 1 Zehe Knoblauch (3 g) fein hacken.
-- 1 Becher körniger Frischkäse (200 g), 100 g Milch, 100 g Reibekäse light, 1 TL Senf (5 g) und ½ TL Paprikapulver (1 g) in den Standmixer geben.
+- gut ½ Becher körniger Frischkäse (120 g), 100 g Milch, 100 g Reibekäse light, 1 TL Senf (5 g) und ½ TL Paprikapulver (1 g) in den Standmixer geben.
 
 ## Zubereitung
 
 1. **Pasta kochen** ⏱ 10 min: 130 g Makkaroni nach Packungsangabe bissfest kochen (meist 9–10 Minuten). 100 ml Nudelwasser abnehmen, dann abgießen.
-2. **Pute braten** ⏱ 6 min: 2 EL Rapsöl (20 g) in der Pfanne (24 cm) auf Stufe 8 von 9 erhitzen. Putenwürfel 5–6 Minuten rundum goldbraun braten, in der letzten Minute den Knoblauch dazu. Fertig bei 74 °C Kerntemperatur. Herd aus.
+2. **Pute braten** ⏱ 6 min: 3 EL Rapsöl (29 g) in der Pfanne (24 cm) auf Stufe 8 von 9 erhitzen. Putenwürfel 5–6 Minuten rundum goldbraun braten, in der letzten Minute den Knoblauch dazu. Fertig bei 74 °C Kerntemperatur. Herd aus.
 3. **Sauce mixen**: Den Mixerinhalt 30 Sekunden zu einer glatten, cremigen Sauce mixen. Sie ist kalt dickflüssig und wird beim Erwärmen samtig.
 4. **Zusammenführen** ⏱ 2 min: Abgegossene Pasta zurück in den heißen Topf geben, auf Stufe 3 von 9 die Sauce und 3–4 EL Nudelwasser einrühren und 1–2 Minuten unter Rühren erhitzen, bis die Sauce die Nudeln cremig überzieht (nicht kochen, sonst wird sie körnig). 2 Handvoll Babyspinat (50 g) und Pute unterheben.
 
@@ -75,7 +75,7 @@
 
 ## Anrichten
 
-Pro Teller die Hälfte der Mac and Cheese mit Putenwürfeln: ca. 490 g pro Portion.
+Pro Teller die Hälfte der Mac and Cheese mit Putenwürfeln: ca. 450 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -99,20 +99,20 @@ Pro Teller die Hälfte der Mac and Cheese mit Putenwürfeln: ca. 490 g pro Porti
 |---|---:|---:|---:|---:|---:|
 | Hartweizennudeln ungekocht | 130 g | 469 | 16,3 | 2 | 92,3 |
 | Salz | 15 g | – | – | – | – |
-| Körniger Frischkäse | 200 g | 196 | 25,2 | 8,6 | 5,2 |
+| Körniger Frischkäse | 120 g | 118 | 15,1 | 5,2 | 3,1 |
 | Milch 1,5 % Fett | 100 g | 47 | 3,4 | 1,5 | 4,8 |
 | Reibekäse light | 100 g | 264 | 30 | 16 | 0 |
 | Senf mittelscharf | 5 g | 4 | 0,3 | 0,2 | 0,2 |
 | Paprikapulver edelsüß | 1 g | 3 | 0,1 | 0,1 | 0,2 |
 | Putenbrustfilet roh | 300 g | 321 | 72 | 3 | 0 |
-| Rapsöl | 20 g | 180 | 0 | 20 | 0 |
+| Rapsöl | 29 g | 261 | 0 | 29 | 0 |
 | Knoblauch | 3 g | 4 | 0,2 | 0 | 0,9 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 0,5 g | 1 | 0,1 | 0 | 0,2 |
 | Babyspinat | 50 g | 11 | 1,5 | 0,2 | 0,3 |
-| **Summe** | | **1.501** | **149** | **51,6** | **104,1** |
-| **Pro Portion (÷ 2)** | | **750** | **74,5** | **25,8** | **52** |
+| **Summe** | | **1.503** | **138,9** | **57,2** | **102** |
+| **Pro Portion (÷ 2)** | | **752** | **69,4** | **28,6** | **51** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.489 kcal gegenüber 1.501 kcal → Abweichung -0,8 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.490 kcal gegenüber 1.503 kcal → Abweichung -0,9 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

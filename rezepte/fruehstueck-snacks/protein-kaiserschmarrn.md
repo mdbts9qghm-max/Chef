@@ -15,17 +15,17 @@
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
 | Kalorien | 578 kcal | 25 % |
-| Protein | 45,5 g | 31 % |
-| Fett | 21,6 g | 21 % |
-| davon gesättigt | 8,2 g |  |
-| Kohlenhydrate | 52,5 g | 27 % |
-| davon Zucker | 19,7 g |  |
+| Protein | 40,1 g | 27 % |
+| Fett | 24,7 g | 24 % |
+| davon gesättigt | 10,2 g |  |
+| Kohlenhydrate | 50,7 g | 27 % |
+| davon Zucker | 17,9 g |  |
 | Ballaststoffe | 6,4 g |  |
-| Salz | 1,2 g |  |
+| Salz | 1,1 g |  |
 
-- **Protein pro 100 kcal:** 7,9 g
-- **Makroverteilung (Energie):** Protein 31 % · Kohlenhydrate 36 % · Fett 33 %
-- **Gewicht fertig:** ca. 890 g gesamt · **ca. 440 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 6,9 g
+- **Makroverteilung (Energie):** Protein 27 % · Kohlenhydrate 35 % · Fett 38 %
+- **Gewicht fertig:** ca. 800 g gesamt · **ca. 400 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -34,13 +34,13 @@
 |---|---|---|
 | **Teig** | | |
 | Eier | 3 Eier Gr. M (180 g) | getrennt |
-| Magerquark | 260 g | ½ Becher plus 1 EL |
+| Magerquark | 170 g | ⅓ Becher (500 g) |
 | Mehl | 72 g |  |
 | Whey Protein Vanille | 1 Messlöffel (30 g) |  |
 | Milch | 80 g | 80 ml |
 | Backpulver | ½ TL (3 g) |  |
 | Salz | 1 Prise (0,5 g) |  |
-| Butter | 1½ EL (15 g) |  |
+| Butter | 2½ EL (23 g) |  |
 | gehobelte Mandeln | 1½ EL (15 g) |  |
 | Erythrit | 1 EL (10 g) | im Mixer zu Puder gemahlen |
 | **Kompott** | | |
@@ -56,8 +56,8 @@
 ## Zubereitung
 
 1. **Kompott kochen** ⏱ 8 min: Apfelwürfel, 100 g Beerenmischung TK, ½ TL Zimt (1 g) und 3 EL Wasser im kleinen Topf auf Stufe 6 von 9 aufkochen, dann auf Stufe 3 von 9 zugedeckt 6–8 Minuten köcheln, bis die Äpfel weich sind, aber noch Form haben.
-2. **Teig anrühren** ⏱ 2 min: Eigelbe mit 260 g Magerquark, 72 g Mehl, 1 Messlöffel Whey Protein Vanille (30 g), 80 g Milch und ½ TL Backpulver (3 g) glatt rühren. Eiweiß mit 1 Prise Salz (0,5 g) 2 Minuten mit dem Schneebesen (oder 1 Minute mit dem Handrührgerät) steif schlagen, bis Spitzen stehen bleiben. Eischnee in zwei Portionen locker unterheben, nicht rühren.
-3. **Anbacken** ⏱ 6 min: 1½ EL Butter (15 g) in der Pfanne (28 cm) auf Stufe 5 von 9 schmelzen, bis sie schäumt. Teig hineingeben, glatt streichen, Deckel auflegen und 5–6 Minuten backen, bis die Unterseite goldbraun und die Oberfläche fast gestockt ist.
+2. **Teig anrühren** ⏱ 2 min: Eigelbe mit 170 g Magerquark, 72 g Mehl, 1 Messlöffel Whey Protein Vanille (30 g), 80 g Milch und ½ TL Backpulver (3 g) glatt rühren. Eiweiß mit 1 Prise Salz (0,5 g) 2 Minuten mit dem Schneebesen (oder 1 Minute mit dem Handrührgerät) steif schlagen, bis Spitzen stehen bleiben. Eischnee in zwei Portionen locker unterheben, nicht rühren.
+3. **Anbacken** ⏱ 6 min: 2½ EL Butter (23 g) in der Pfanne (28 cm) auf Stufe 5 von 9 schmelzen, bis sie schäumt. Teig hineingeben, glatt streichen, Deckel auflegen und 5–6 Minuten backen, bis die Unterseite goldbraun und die Oberfläche fast gestockt ist.
 4. **Wenden und zerreißen** ⏱ 4 min: Teig mit dem Pfannenwender vierteln, die Viertel wenden und weitere 2 Minuten backen. Dann mit zwei Pfannenwendern in mundgerechte Stücke reißen, 1½ EL gehobelte Mandeln (15 g) dazugeben und auf Stufe 6 von 9 noch 2 Minuten schwenken, bis die Stücke rundum leicht karamellisiert sind und innen nicht mehr feucht.
 
 ## Zeitablauf
@@ -72,7 +72,7 @@
 
 ## Anrichten
 
-Schmarrn halbieren, mit 1 EL Erythrit (10 g) bestäuben und je die Hälfte des Kompotts daneben geben: ca. 440 g pro Teller.
+Schmarrn halbieren, mit 1 EL Erythrit (10 g) bestäuben und je die Hälfte des Kompotts daneben geben: ca. 400 g pro Teller.
 
 ## Meal Prep & Aufbewahrung
 
@@ -85,7 +85,7 @@ Schmarrn halbieren, mit 1 EL Erythrit (10 g) bestäuben und je die Hälfte des K
 
 - **Mehr Protein:** Dazu je 100 g Skyr als Dip. (+63 kcal, +11 g Protein, +0,2 g Fett pro Portion)
 - **Mit Kirschen:** 120 g abgetropfte Sauerkirschen statt Apfel-Beeren-Kompott, kalt dazu. (−24 kcal, −0,3 g Protein, −0,3 g Fett pro Portion)
-- **Weniger kcal:** Butter auf 5 g reduzieren und Mandeln weglassen. (−82 kcal, −1,6 g Protein, −8 g Fett pro Portion)
+- **Weniger kcal:** Butter auf 5 g reduzieren und Mandeln weglassen. (−112 kcal, −1,6 g Protein, −11,3 g Fett pro Portion)
 
 ## Tipps
 
@@ -97,21 +97,21 @@ Schmarrn halbieren, mit 1 EL Erythrit (10 g) bestäuben und je die Hälfte des K
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Ei Gr. M ohne Schale | 180 g | 252 | 22,7 | 17,8 | 1,3 |
-| Magerquark | 260 g | 174 | 31,2 | 0,8 | 10,4 |
+| Magerquark | 170 g | 114 | 20,4 | 0,5 | 6,8 |
 | Weizenmehl Type 405 | 72 g | 248 | 7,2 | 0,7 | 51,8 |
 | Whey Protein Vanille | 30 g | 116 | 22,5 | 1,8 | 2,4 |
 | Milch 1,5 % Fett | 80 g | 38 | 2,7 | 1,2 | 3,8 |
 | Backpulver | 3 g | 2 | 0 | 0 | 0,4 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
-| Butter | 15 g | 111 | 0,1 | 12,3 | 0,1 |
+| Butter | 23 g | 171 | 0,2 | 18,9 | 0,1 |
 | Mandeln gehobelt | 15 g | 90 | 3,2 | 7,8 | 0,9 |
 | Erythrit | 10 g | 0 | 0 | 0 | 10 |
 | Apfel | 150 g | 81 | 0,5 | 0,3 | 17,1 |
 | Beerenmischung TK | 100 g | 42 | 0,9 | 0,4 | 6,5 |
 | Zimt gemahlen | 1 g | 2 | 0 | 0 | 0,3 |
-| **Summe** | | **1.156** | **90,9** | **43,1** | **105** |
-| **Pro Portion (÷ 2)** | | **578** | **45,5** | **21,6** | **52,5** |
+| **Summe** | | **1.156** | **80,2** | **49,4** | **101,4** |
+| **Pro Portion (÷ 2)** | | **578** | **40,1** | **24,7** | **50,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.158 kcal gegenüber 1.156 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.157 kcal gegenüber 1.156 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

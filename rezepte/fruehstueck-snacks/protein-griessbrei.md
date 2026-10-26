@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 544 kcal | 24 % |
-| Protein | 43,5 g | 29 % |
-| Fett | 19,1 g | 19 % |
+| Kalorien | 543 kcal | 24 % |
+| Protein | 40,4 g | 27 % |
+| Fett | 20,4 g | 20 % |
 | davon gesättigt | 3,9 g |  |
-| Kohlenhydrate | 45,7 g | 24 % |
-| davon Zucker | 19,9 g |  |
-| Ballaststoffe | 6,7 g |  |
+| Kohlenhydrate | 45,5 g | 24 % |
+| davon Zucker | 19,7 g |  |
+| Ballaststoffe | 7,1 g |  |
 | Salz | 0,6 g |  |
 
-- **Protein pro 100 kcal:** 8 g
-- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 35 % · Fett 33 %
-- **Gewicht fertig:** ca. 870 g gesamt · **ca. 440 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,4 g
+- **Makroverteilung (Energie):** Protein 31 % · Kohlenhydrate 35 % · Fett 35 %
+- **Gewicht fertig:** ca. 870 g gesamt · **ca. 430 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -38,20 +38,20 @@
 | Grieß | 70 g |  |
 | Salz | 1 Prise (0,5 g) |  |
 | Magerquark | 150 g |  |
-| Whey Protein Vanille | 1⅔ Messlöffel (50 g) |  |
+| Whey Protein Vanille | 1⅓ Messlöffel (40 g) |  |
 | **Zimt-Apfel** | | |
 | Apfel | 1 kleiner Apfel (110 g) | entkernt gewogen |
 | Zimt | 1 TL (2 g) |  |
-| gehobelte Mandeln | 5½ EL (55 g) |  |
+| gehobelte Mandeln | 6 EL (61 g) |  |
 
 ## Mise en place
 
 - 1 kleiner Apfel (110 g) vierteln, entkernen und in 1 cm Würfel schneiden.
-- 150 g Magerquark und 1⅔ Messlöffel Whey Protein Vanille (50 g) in einer Schüssel mit 3 EL Wasser glatt rühren.
+- 150 g Magerquark und 1⅓ Messlöffel Whey Protein Vanille (40 g) in einer Schüssel mit 3 EL Wasser glatt rühren.
 
 ## Zubereitung
 
-1. **Apfel und Mandeln anrösten** ⏱ 6 min: 5½ EL gehobelte Mandeln (55 g) ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten rösten, bis sie hellbraun sind. Apfelwürfel, 1 TL Zimt (2 g) und 2 EL Wasser dazugeben und 4 Minuten auf Stufe 5 von 9 dünsten, bis die Äpfel weich sind, aber noch Biss haben. Beiseitestellen.
+1. **Apfel und Mandeln anrösten** ⏱ 6 min: 6 EL gehobelte Mandeln (61 g) ohne Fett in der Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten rösten, bis sie hellbraun sind. Apfelwürfel, 1 TL Zimt (2 g) und 2 EL Wasser dazugeben und 4 Minuten auf Stufe 5 von 9 dünsten, bis die Äpfel weich sind, aber noch Biss haben. Beiseitestellen.
 2. **Grieß kochen** ⏱ 7 min: 350 g Milch, 150 g Wasser und 1 Prise Salz (0,5 g) im Topf auf Stufe 7 von 9 aufkochen (ca. 4 Minuten, dabeibleiben). 70 g Grieß mit dem Schneebesen einrieseln lassen und dabei ständig rühren, damit keine Klümpchen entstehen. Auf Stufe 2 von 9 herunterschalten und 3 Minuten unter Rühren quellen lassen, bis der Brei dick wird und blubbert.
 3. **Protein unterrühren** ⏱ 2 min: Vom Herd ziehen, 2 Minuten abkühlen lassen und dann die Quark-Whey-Mischung kräftig unterrühren. Der Brei wird dabei cremig und glänzend; ist er zu fest, 2–3 EL Wasser dazu.
 
@@ -67,7 +67,7 @@
 
 ## Anrichten
 
-Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geben: ca. 440 g pro Portion.
+Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geben: ca. 430 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -79,8 +79,8 @@ Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geb
 ## Varianten & Austausch
 
 - **Mit Kirschen:** 110 g Sauerkirschen statt Apfel, kalt darauf. (+4 kcal, +0,2 g Protein, −0,1 g Fett pro Portion)
-- **Schoko-Grieß:** Whey Protein Schoko statt Vanille und 10 g Backkakao. (+14 kcal, +0,3 g Protein, +0,7 g Fett pro Portion)
-- **Weniger kcal:** Mandeln auf 15 g reduzieren. (−120 kcal, −4,2 g Protein, −10,4 g Fett pro Portion)
+- **Schoko-Grieß:** Whey Protein Schoko statt Vanille und 10 g Backkakao. (+14 kcal, +0,4 g Protein, +0,7 g Fett pro Portion)
+- **Weniger kcal:** Mandeln auf 15 g reduzieren. (−138 kcal, −4,8 g Protein, −12 g Fett pro Portion)
 
 ## Tipps
 
@@ -95,13 +95,13 @@ Grießbrei auf 2 Schalen verteilen und den Zimt-Apfel mit den Mandeln darauf geb
 | Weichweizengrieß | 70 g | 236 | 7,7 | 0,7 | 48,3 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
 | Magerquark | 150 g | 101 | 18 | 0,5 | 6 |
-| Whey Protein Vanille | 50 g | 193 | 37,5 | 3 | 4 |
+| Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
 | Apfel | 110 g | 59 | 0,3 | 0,2 | 12,5 |
 | Zimt gemahlen | 2 g | 5 | 0,1 | 0 | 0,6 |
-| Mandeln gehobelt | 55 g | 330 | 11,6 | 28,6 | 3,3 |
-| **Summe** | | **1.088** | **87,1** | **38,2** | **91,5** |
-| **Pro Portion (÷ 2)** | | **544** | **43,5** | **19,1** | **45,7** |
+| Mandeln gehobelt | 61 g | 366 | 12,8 | 31,7 | 3,7 |
+| **Summe** | | **1.086** | **80,8** | **40,8** | **91,1** |
+| **Pro Portion (÷ 2)** | | **543** | **40,4** | **20,4** | **45,5** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.085 kcal gegenüber 1.088 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.083 kcal gegenüber 1.086 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

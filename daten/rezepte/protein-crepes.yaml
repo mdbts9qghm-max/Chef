@@ -17,9 +17,9 @@ zutaten:
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 150, hinweis: "150 ml"}
   - {id: whey_teig, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "1 EL"}
+  - {id: oel, zutat: Rapsöl, g: 17, anzeige: "1½ EL"}
   - gruppe: Füllung
-  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: quark, zutat: Magerquark, g: 150, hinweis: "knapp ⅓ Becher (500 g)"}
   - {id: whey_fuellung, zutat: Whey Protein Vanille, name: Whey Protein Vanille, g: 20, anzeige: "⅔ Messlöffel"}
   - {id: beeren, zutat: Beerenmischung TK, g: 150}
   - {id: honig, zutat: Honig, g: 10, anzeige: "2 TL"}

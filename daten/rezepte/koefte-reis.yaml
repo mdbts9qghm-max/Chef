@@ -20,9 +20,9 @@ zutaten:
   - {id: chili, zutat: Chiliflocken, g: 0.5, anzeige: "1 Prise"}
   - {id: salz_k, zutat: Salz, g: 3, anzeige: "½ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
-  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
+  - {id: oel, zutat: Rapsöl, g: 27, anzeige: "2½ EL"}
   - gruppe: Joghurt-Knoblauch-Sauce
-  - {id: skyr, zutat: Skyr natur, g: 200}
+  - {id: skyr, zutat: Skyr natur, g: 100}
   - {id: knoblauch, zutat: Knoblauch, g: 3, anzeige: "1 Zehe"}
   - {id: zitrone, zutat: Zitronensaft, g: 5, anzeige: "1 TL"}
   - {id: salz_s, zutat: Salz, g: 1, anzeige: "2 Prisen"}

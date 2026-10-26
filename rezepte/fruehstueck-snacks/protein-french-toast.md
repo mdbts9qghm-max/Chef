@@ -16,17 +16,17 @@
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
 | Kalorien | 598 kcal | 26 % |
-| Protein | 46,1 g | 31 % |
-| Fett | 21,9 g | 22 % |
-| davon gesättigt | 3,9 g |  |
-| Kohlenhydrate | 49,2 g | 26 % |
-| davon Zucker | 17,5 g |  |
+| Protein | 40,6 g | 27 % |
+| Fett | 25,3 g | 25 % |
+| davon gesättigt | 4,1 g |  |
+| Kohlenhydrate | 47,2 g | 25 % |
+| davon Zucker | 15,5 g |  |
 | Ballaststoffe | 9,9 g |  |
-| Salz | 1,7 g |  |
+| Salz | 1,6 g |  |
 
-- **Protein pro 100 kcal:** 7,7 g
-- **Makroverteilung (Energie):** Protein 32 % · Kohlenhydrate 34 % · Fett 34 %
-- **Gewicht fertig:** ca. 910 g gesamt · **ca. 460 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 6,8 g
+- **Makroverteilung (Energie):** Protein 28 % · Kohlenhydrate 33 % · Fett 39 %
+- **Gewicht fertig:** ca. 820 g gesamt · **ca. 410 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -41,9 +41,9 @@
 | Zimt | 1 TL (2 g) |  |
 | **Toast** | | |
 | Vollkorntoast | 4 Scheiben Vollkorntoast (160 g) |  |
-| Rapsöl | 2 TL (8 g) |  |
+| Rapsöl | 1½ EL (15 g) |  |
 | **Topping** | | |
-| Skyr natur | 200 g |  |
+| Skyr natur | 100 g |  |
 | Beerenmischung TK | 150 g |  |
 | Honig | 1 TL (5 g) |  |
 | gehobelte Mandeln | 2½ EL (25 g) |  |
@@ -57,8 +57,8 @@
 
 1. **Eiermilch**: 2 Eier Gr. M (120 g), 150 g Eiklar, 80 g Milch, ⅔ Messlöffel Whey Protein Vanille (20 g) und 1 TL Zimt (2 g) in der flachen Schale mit einer Gabel 30 Sekunden verquirlen, bis keine Whey-Klümpchen mehr schwimmen.
 2. **Einweichen**: Toastscheiben nacheinander je 15 Sekunden pro Seite in die Eiermilch legen, bis sie vollgesogen, aber noch formstabil sind. Restliche Eiermilch gleichmäßig über die Scheiben in der Schale gießen, damit nichts übrig bleibt.
-3. **Ausbraten** ⏱ 6 min: Die Hälfte von 2 TL Rapsöl (8 g) in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). 2 Scheiben hineinlegen und 2½–3 Minuten pro Seite braten, bis sie goldbraun sind und sich in der Mitte fest anfühlen (Ei gestockt). Mit dem restlichen Öl die anderen 2 Scheiben braten.
-4. **Topping**: 200 g Skyr natur glatt rühren. Je 2 Scheiben auf einen Teller, Skyr und Beeren mit Saft darauf, mit 1 TL Honig (5 g) beträufeln und 2½ EL gehobelte Mandeln (25 g) bestreuen.
+3. **Ausbraten** ⏱ 6 min: Die Hälfte von 1½ EL Rapsöl (15 g) in der Pfanne (28 cm) auf Stufe 6 von 9 erhitzen (ca. 2 min). 2 Scheiben hineinlegen und 2½–3 Minuten pro Seite braten, bis sie goldbraun sind und sich in der Mitte fest anfühlen (Ei gestockt). Mit dem restlichen Öl die anderen 2 Scheiben braten.
+4. **Topping**: 100 g Skyr natur glatt rühren. Je 2 Scheiben auf einen Teller, Skyr und Beeren mit Saft darauf, mit 1 TL Honig (5 g) beträufeln und 2½ EL gehobelte Mandeln (25 g) bestreuen.
 
 ## Zeitablauf
 
@@ -72,7 +72,7 @@
 
 ## Anrichten
 
-Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, ½ TL Honig und gut 12 g Mandeln: ca. 460 g pro Portion.
+Pro Teller 2 Scheiben French Toast, 50 g Skyr, 75 g Beeren, ½ TL Honig und gut 12 g Mandeln: ca. 410 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -83,9 +83,9 @@ Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, ½ TL Honig und gut
 
 ## Varianten & Austausch
 
-- **Mehr Protein:** Skyr-Topping auf 300 g erhöhen. (+32 kcal, +5,5 g Protein, +0,1 g Fett pro Portion)
+- **Mehr Protein:** Skyr-Topping auf 200 g erhöhen. (+32 kcal, +5,5 g Protein, +0,1 g Fett pro Portion)
 - **Bananen-Zimt:** 1 kleine Banane (100 g) in Scheiben statt Beeren, Honig weglassen. (+7 kcal, −0,1 g Protein, −0,2 g Fett pro Portion)
-- **Weniger kcal:** Mandeln weglassen und nur 1 TL Öl verwenden. (−93 kcal, −2,6 g Protein, −8,5 g Fett pro Portion)
+- **Weniger kcal:** Mandeln weglassen und nur 1 TL Öl verwenden. (−120 kcal, −2,6 g Protein, −11,5 g Fett pro Portion)
 
 ## Tipps
 
@@ -102,14 +102,14 @@ Pro Teller 2 Scheiben French Toast, 100 g Skyr, 75 g Beeren, ½ TL Honig und gut
 | Whey Protein Vanille | 20 g | 77 | 15 | 1,2 | 1,6 |
 | Zimt gemahlen | 2 g | 5 | 0,1 | 0 | 0,6 |
 | Vollkorntoast | 160 g | 410 | 14,4 | 7,2 | 67,2 |
-| Rapsöl | 8 g | 72 | 0 | 8 | 0 |
-| Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
+| Rapsöl | 15 g | 135 | 0 | 15 | 0 |
+| Skyr natur | 100 g | 63 | 11 | 0,2 | 4 |
 | Beerenmischung TK | 150 g | 63 | 1,4 | 0,6 | 9,8 |
 | Honig | 5 g | 16 | 0 | 0 | 4 |
 | Mandeln gehobelt | 25 g | 150 | 5,3 | 13 | 1,5 |
-| **Summe** | | **1.196** | **92,3** | **43,8** | **98,3** |
-| **Pro Portion (÷ 2)** | | **598** | **46,1** | **21,9** | **49,2** |
+| **Summe** | | **1.196** | **81,3** | **50,6** | **94,3** |
+| **Pro Portion (÷ 2)** | | **598** | **40,6** | **25,3** | **47,2** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.196 kcal gegenüber 1.196 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.197 kcal gegenüber 1.196 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

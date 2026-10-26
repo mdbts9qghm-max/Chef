@@ -97,3 +97,10 @@ def test_fett_pro_mahlzeit_im_ziel(echte_rezepte, db):
     fett = bestand.fett_gruppen(bestand.startbestand(bestand.lade_plan(), echte_rezepte), db)
     assert set(fett) == set(config.FETT_ZIEL_PRO_MAHLZEIT)
     assert all(ok for _, _, ok in fett.values()), fett
+
+
+def test_protein_pro_mahlzeit_im_ziel(echte_rezepte, db):
+    """Protein moderat: Ø je Gruppe in der Zielspanne (Platz für Fett bei max. 2.275 kcal/Tag)."""
+    prot = bestand.fett_gruppen(bestand.startbestand(bestand.lade_plan(), echte_rezepte), db, "protein",
+                                config.PROTEIN_ZIEL_PRO_MAHLZEIT)
+    assert all(ok for _, _, ok in prot.values()), prot

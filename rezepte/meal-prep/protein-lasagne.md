@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 810 kcal | 36 % |
-| Protein | 81 g | 54 % |
-| Fett | 26,6 g | 26 % |
-| davon gesättigt | 11,1 g |  |
-| Kohlenhydrate | 58,9 g | 31 % |
-| davon Zucker | 19,9 g |  |
+| Kalorien | 811 kcal | 36 % |
+| Protein | 75,6 g | 51 % |
+| Fett | 30 g | 30 % |
+| davon gesättigt | 11,5 g |  |
+| Kohlenhydrate | 57,1 g | 30 % |
+| davon Zucker | 18,1 g |  |
 | Ballaststoffe | 5,5 g |  |
-| Salz | 3,1 g |  |
+| Salz | 3 g |  |
 
-- **Protein pro 100 kcal:** 10 g
-- **Makroverteilung (Energie):** Protein 41 % · Kohlenhydrate 30 % · Fett 30 %
-- **Gewicht fertig:** ca. 1.450 g gesamt · **ca. 720 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 9,3 g
+- **Makroverteilung (Energie):** Protein 38 % · Kohlenhydrate 29 % · Fett 34 %
+- **Gewicht fertig:** ca. 1.370 g gesamt · **ca. 680 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -34,7 +34,7 @@
 |---|---|---|
 | **Bolognese** | | |
 | Rinderhackfleisch (5 % Fett) | 350 g |  |
-| Olivenöl | 1 EL (10 g) |  |
+| Olivenöl | 1½ EL (17 g) |  |
 | Zwiebel | 1 Zwiebel (80 g) |  |
 | Knoblauch | 2 Zehen (6 g) |  |
 | Tomatenmark | 2 EL (30 g) |  |
@@ -44,7 +44,7 @@
 | Pfeffer | 1 Prise (0,5 g) |  |
 | Wasser | 100 g | 100 ml |
 | **Quark-„Béchamel“** | | |
-| Magerquark | 260 g | ½ Becher plus 1 EL |
+| Magerquark | 170 g | ⅓ Becher (500 g) |
 | Milch | 100 g | 100 ml |
 | Ei | 1 Ei Gr. M (60 g) |  |
 | Parmesan gerieben | 2 EL (20 g) |  |
@@ -57,11 +57,11 @@
 
 - Backofen auf 190 °C Ober-/Unterhitze (170 °C Umluft) vorheizen, Rost in die mittlere Schiene.
 - 1 Zwiebel (80 g) fein würfeln, 2 Zehen Knoblauch (6 g) hacken. 100 g Mozzarella light in 1 cm Würfel schneiden.
-- 260 g Magerquark, 100 g Milch, 1 Ei Gr. M (60 g), 2 EL Parmesan gerieben (20 g) und 2 Prisen Salz (1 g) mit dem Schneebesen glatt rühren.
+- 170 g Magerquark, 100 g Milch, 1 Ei Gr. M (60 g), 2 EL Parmesan gerieben (20 g) und 2 Prisen Salz (1 g) mit dem Schneebesen glatt rühren.
 
 ## Zubereitung
 
-1. **Hack anbraten** ⏱ 6 min: 1 EL Olivenöl (10 g) in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. 350 g Rinderhackfleisch (5 % Fett) hineingeben, 2 Minuten nicht bewegen, dann zerkrümeln und insgesamt 5–6 Minuten braten, bis es krümelig und gebräunt ist. Bei Hack gilt: durchgaren auf mindestens 72 °C Kerntemperatur, kein rosa mehr; in der Sauce wird das sicher erreicht.
+1. **Hack anbraten** ⏱ 6 min: 1½ EL Olivenöl (17 g) in der Pfanne (28 cm) auf Stufe 8 von 9 erhitzen. 350 g Rinderhackfleisch (5 % Fett) hineingeben, 2 Minuten nicht bewegen, dann zerkrümeln und insgesamt 5–6 Minuten braten, bis es krümelig und gebräunt ist. Bei Hack gilt: durchgaren auf mindestens 72 °C Kerntemperatur, kein rosa mehr; in der Sauce wird das sicher erreicht.
 2. **Bolognese köcheln** ⏱ 10 min: Auf Stufe 5 von 9 schalten, Zwiebel und Knoblauch 2 Minuten mitbraten. 2 EL Tomatenmark (30 g) 1 Minute anrösten, dann 1 Dose gehackte Tomaten (400 g), 100 g Wasser (damit die Dose ausschwenken), 2 TL Oregano (2 g), ⅓ TL Salz (2 g) und 1 Prise Pfeffer (0,5 g) dazugeben. Auf Stufe 3 von 9 8 Minuten köcheln, bis die Sauce leicht eingedickt, aber noch saftig ist (die Platten brauchen Flüssigkeit).
 3. **Schichten**: In der Form schichten: ein Viertel der Bolognese, Lasagneplatten (passend brechen; insgesamt ca. 6 Platten Lasagneplatten (110 g)), ein Drittel der Quarkcreme, Bolognese, Platten, Quarkcreme, Bolognese, Platten, restliche Bolognese und obenauf die restliche Quarkcreme. Mozzarellawürfel darauf verteilen. Alle Platten müssen bedeckt sein.
 4. **Backen** ⏱ 40 min: Mit Alufolie abgedeckt auf mittlerer Schiene bei 190 °C Ober-/Unterhitze (170 °C Umluft) 25 Minuten backen, dann ohne Folie weitere 15 Minuten, bis der Käse goldbraun ist und ein Messer ohne Widerstand durch die Platten gleitet.
@@ -79,7 +79,7 @@
 
 ## Anrichten
 
-Lasagne halbieren, eine Hälfte (ca. 720 g) pro Teller. Für Meal Prep jede Hälfte in eine ofenfeste Box.
+Lasagne halbieren, eine Hälfte (ca. 680 g) pro Teller. Für Meal Prep jede Hälfte in eine ofenfeste Box.
 
 ## Meal Prep & Aufbewahrung
 
@@ -103,7 +103,7 @@ Lasagne halbieren, eine Hälfte (ca. 720 g) pro Teller. Für Meal Prep jede Häl
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Rinderhackfleisch 5 % Fett roh | 350 g | 448 | 73,5 | 17,5 | 0 |
-| Olivenöl | 10 g | 90 | 0 | 10 | 0 |
+| Olivenöl | 17 g | 153 | 0 | 17 | 0 |
 | Zwiebel | 80 g | 24 | 1 | 0,2 | 3,9 |
 | Knoblauch | 6 g | 8 | 0,4 | 0 | 1,7 |
 | Tomatenmark | 30 g | 25 | 1,3 | 0,2 | 3,9 |
@@ -112,16 +112,16 @@ Lasagne halbieren, eine Hälfte (ca. 720 g) pro Teller. Für Meal Prep jede Häl
 | Salz | 2 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 0,5 g | 1 | 0,1 | 0 | 0,2 |
 | Wasser | 100 g | 0 | 0 | 0 | 0 |
-| Magerquark | 260 g | 174 | 31,2 | 0,8 | 10,4 |
+| Magerquark | 170 g | 114 | 20,4 | 0,5 | 6,8 |
 | Milch 1,5 % Fett | 100 g | 47 | 3,4 | 1,5 | 4,8 |
 | Ei Gr. M ohne Schale | 60 g | 84 | 7,6 | 5,9 | 0,4 |
 | Parmesan gerieben | 20 g | 76 | 6,4 | 5,6 | 0 |
 | Salz | 1 g | 0 | 0 | 0 | 0 |
 | Lasagneplatten ungekocht | 110 g | 385 | 13,2 | 1,7 | 77 |
 | Mozzarella light | 100 g | 160 | 19 | 9 | 1 |
-| **Summe** | | **1.620** | **161,9** | **53,2** | **117,9** |
-| **Pro Portion (÷ 2)** | | **810** | **81** | **26,6** | **58,9** |
+| **Summe** | | **1.623** | **151,1** | **59,9** | **114,3** |
+| **Pro Portion (÷ 2)** | | **811** | **75,6** | **30** | **57,1** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.620 kcal gegenüber 1.620 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.623 kcal gegenüber 1.623 kcal → Abweichung 0 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

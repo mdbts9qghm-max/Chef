@@ -11,14 +11,14 @@ zeit: {vorbereitung: 10, kochen: 35, wartezeit: 15}
 ausstattung: [Backofen, "Auflaufform 20 × 20 cm", Schneebesen, Sieb]
 zutaten:
   - gruppe: Quarkmasse
-  - {id: quark, zutat: Magerquark, g: 500, hinweis: "1 Becher"}
+  - {id: quark, zutat: Magerquark, g: 400, hinweis: "⅘ Becher (500 g)"}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 120, anzeige: "2 Eier Gr. M"}
   - {id: griess, zutat: Weichweizengrieß, name: Grieß, g: 65}
   - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
   - {id: erythrit, zutat: Erythrit, g: 20, anzeige: "2 EL"}
   - {id: backpulver, zutat: Backpulver, g: 4, anzeige: "1 TL"}
   - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
-  - {id: butter, zutat: Butter, g: 12, anzeige: "1 EL", hinweis: "für die Form und obenauf"}
+  - {id: butter, zutat: Butter, g: 21, anzeige: "2 EL", hinweis: "für die Form und obenauf"}
   - gruppe: Obst & Topping
   - {id: kirschen, zutat: Sauerkirschen Glas abgetropft, name: Sauerkirschen, g: 120, hinweis: "gut abgetropft"}
   - {id: mandeln, zutat: Mandeln gehobelt, name: gehobelte Mandeln, g: 30, anzeige: "3 EL"}

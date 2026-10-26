@@ -92,5 +92,7 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 
 - [x] **kcal-Obergrenze** (26.10.2026): pro Tag nie mehr als 2.275 kcal (Profil `kcal_ueber_ziel_max: 0`, `config.PLAN_KCAL_MIN/MAX`); Planer-Sicherheitsabstände verkleinert, 300 Starts; KW 44 (Einkauf ca. 153 €) und KW 45 (ca. 146 €) neu geplant; Faktor aus dem Plan auf Heute/Woche/Rezeptseite sichtbar; 148 Tests.
 
+- [x] **Protein moderat & Meal Prep deutlich** (26.10.2026): Protein über Whey/Quark/Skyr gesenkt (max. halbe Menge, Fleischpackungen gleich), Ausgleich mit Fett bei gleichen kcal; Ø Frühstück 49→44 g P / 20,5→23,4 g F, Hauptgericht 62→60 g P / 26,3→27,5 g F; `config.PROTEIN_ZIEL_PRO_MAHLZEIT`; App: Karte „Heute für später vorkochen“ bzw. „Heute nichts vorkochen“, Hinweise je Mahlzeit (doppelt kochen → 2. Portion …, ↻ Rest von …, vorbereitet am …); KW 44 (Brownie Mo fest, ca. 139 €) und KW 45 (ca. 129 €) neu; 150 Tests. **Regel:** laufende/vergangene Tage nur auf ausdrücklichen Wunsch umplanen.
+
 ## Entscheidungen
 Siehe `SPEC.md`, Abschnitt 16.

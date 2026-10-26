@@ -12,7 +12,7 @@ ausstattung: ["Pfanne 28 cm", "Topf ca. 3 l", Kartoffelstampfer, Fleischthermome
 zutaten:
   - gruppe: Frikadellen
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 400}
-  - {id: quark, zutat: Magerquark, g: 85, hinweis: "macht sie saftig"}
+  - {id: quark, zutat: Magerquark, g: 45, hinweis: "macht sie saftig"}
   - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
   - {id: panko, zutat: Paniermehl, g: 30, anzeige: "3 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
@@ -20,7 +20,7 @@ zutaten:
   - {id: paprika, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 2, anzeige: "1 TL"}
   - {id: salz_f, zutat: Salz, g: 3, anzeige: "½ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 1, anzeige: "2 Prisen"}
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "2 TL"}
+  - {id: oel, zutat: Rapsöl, g: 13, anzeige: "1½ EL"}
   - gruppe: Kartoffelpüree
   - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 470, hinweis: "geschält gewogen; mehligkochende werden noch cremiger"}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Kochwasser, g: 10, anzeige: "2 TL", nicht_mitgerechnet: true}

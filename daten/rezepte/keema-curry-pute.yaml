@@ -12,7 +12,7 @@ ausstattung: ["Pfanne 28 cm mit hohem Rand", "Topf ca. 2 l mit Deckel", Sieb]
 zutaten:
   - gruppe: Keema
   - {id: hack, zutat: Putenhackfleisch roh, name: Putenhackfleisch, g: 400}
-  - {id: oel, zutat: Rapsöl, g: 12, anzeige: "1 EL"}
+  - {id: oel, zutat: Rapsöl, g: 16, anzeige: "1½ EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 100, anzeige: "1 große Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
   - {id: ingwer, zutat: Ingwer frisch, name: Ingwer, g: 10, anzeige: "2 cm Stück"}
@@ -24,7 +24,7 @@ zutaten:
   - {id: salz, zutat: Salz, g: 3, anzeige: "½ TL"}
   - gruppe: Beilage
   - {id: reis, zutat: Basmatireis ungekocht, name: Basmatireis, g: 90}
-  - {id: skyr, zutat: Skyr natur, g: 110, hinweis: "als kühler Klecks"}
+  - {id: skyr, zutat: Skyr natur, g: 60, hinweis: "als kühler Klecks"}
 mise_en_place:
   - "{zwiebel} fein würfeln, {knoblauch} und {ingwer} fein reiben."
   - "{kichererbsen} abspülen und abtropfen lassen. {reis} waschen."

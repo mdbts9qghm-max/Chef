@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 774 kcal | 34 % |
-| Protein | 62,3 g | 42 % |
-| Fett | 26,6 g | 26 % |
+| Kalorien | 772 kcal | 34 % |
+| Protein | 61,2 g | 41 % |
+| Fett | 27 g | 27 % |
 | davon gesättigt | 8,6 g |  |
-| Kohlenhydrate | 68,4 g | 36 % |
-| davon Zucker | 11,3 g |  |
+| Kohlenhydrate | 68 g | 36 % |
+| davon Zucker | 10,9 g |  |
 | Ballaststoffe | 7,2 g |  |
 | Salz | 4 g |  |
 
-- **Protein pro 100 kcal:** 8,1 g
-- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 36 % · Fett 31 %
-- **Gewicht fertig:** ca. 970 g gesamt · **ca. 480 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,9 g
+- **Makroverteilung (Energie):** Protein 32 % · Kohlenhydrate 36 % · Fett 32 %
+- **Gewicht fertig:** ca. 950 g gesamt · **ca. 470 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -35,7 +35,7 @@
 |---|---|---|
 | **Kartoffelspalten** | | |
 | Kartoffeln | 330 g | mit Schale, gut gewaschen |
-| Rapsöl | 1½ EL (15 g) |  |
+| Rapsöl | 1½ EL (16 g) |  |
 | Paprikapulver | 1 TL (2 g) |  |
 | Salz | ⅓ TL (2 g) |  |
 | **Patties** | | |
@@ -48,7 +48,7 @@
 | Tomaten | ½ Tomate (60 g) | in Scheiben |
 | Zwiebel | ½ kleine Zwiebel (40 g) | in sehr feinen Ringen |
 | **Burgersauce** | | |
-| Skyr natur | 2 EL (50 g) |  |
+| Skyr natur | 2 EL (30 g) |  |
 | Senf | 2 TL (10 g) |  |
 | Tomatenmark | 2 TL (10 g) |  |
 | Honig | 1 TL (5 g) |  |
@@ -56,9 +56,9 @@
 ## Mise en place
 
 - Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vorheizen, Rost in die mittlere Schiene.
-- 330 g Kartoffeln in Spalten schneiden (8 pro Kartoffel), mit 1½ EL Rapsöl (15 g), 1 TL Paprikapulver (2 g) und ⅓ TL Salz (2 g) mischen.
+- 330 g Kartoffeln in Spalten schneiden (8 pro Kartoffel), mit 1½ EL Rapsöl (16 g), 1 TL Paprikapulver (2 g) und ⅓ TL Salz (2 g) mischen.
 - 360 g Rinderhackfleisch (5 % Fett) in 4 Kugeln à 90 g teilen, nicht kneten, kalt stellen.
-- Burgersauce: 2 EL Skyr natur (50 g), 2 TL Senf (10 g), 2 TL Tomatenmark (10 g) und 1 TL Honig (5 g) verrühren (schmeckt wie Burger-Ketchup-Sauce). ½ Tomate (60 g) in Scheiben, ½ kleine Zwiebel (40 g) in hauchdünne Ringe schneiden.
+- Burgersauce: 2 EL Skyr natur (30 g), 2 TL Senf (10 g), 2 TL Tomatenmark (10 g) und 1 TL Honig (5 g) verrühren (schmeckt wie Burger-Ketchup-Sauce). ½ Tomate (60 g) in Scheiben, ½ kleine Zwiebel (40 g) in hauchdünne Ringe schneiden.
 - 2 Quadrate Backpapier (ca. 15 × 15 cm) zum Smashen zuschneiden.
 
 ## Zubereitung
@@ -81,7 +81,7 @@
 
 ## Anrichten
 
-Pro Teller 1 Double Smash Burger und die Hälfte der Kartoffelspalten: ca. 480 g pro Portion.
+Pro Teller 1 Double Smash Burger und die Hälfte der Kartoffelspalten: ca. 470 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -104,7 +104,7 @@ Pro Teller 1 Double Smash Burger und die Hälfte der Kartoffelspalten: ca. 480 g
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Kartoffeln festkochend roh | 330 g | 248 | 6,6 | 0,3 | 51,5 |
-| Rapsöl | 15 g | 135 | 0 | 15 | 0 |
+| Rapsöl | 16 g | 144 | 0 | 16 | 0 |
 | Paprikapulver edelsüß | 2 g | 6 | 0,3 | 0,3 | 0,4 |
 | Salz | 2 g | 0 | 0 | 0 | 0 |
 | Rinderhackfleisch 5 % Fett roh | 360 g | 461 | 75,6 | 18 | 0 |
@@ -114,13 +114,13 @@ Pro Teller 1 Double Smash Burger und die Hälfte der Kartoffelspalten: ca. 480 g
 | Burger-Brötchen | 150 g | 425 | 13,5 | 7,5 | 73,5 |
 | Tomaten | 60 g | 11 | 0,5 | 0,1 | 1,6 |
 | Zwiebel | 40 g | 12 | 0,5 | 0,1 | 2 |
-| Skyr natur | 50 g | 32 | 5,5 | 0,1 | 2 |
+| Skyr natur | 30 g | 19 | 3,3 | 0,1 | 1,2 |
 | Senf mittelscharf | 10 g | 9 | 0,6 | 0,5 | 0,5 |
 | Tomatenmark | 10 g | 8 | 0,4 | 0,1 | 1,3 |
 | Honig | 5 g | 16 | 0 | 0 | 4 |
-| **Summe** | | **1.547** | **124,6** | **53,1** | **136,8** |
-| **Pro Portion (÷ 2)** | | **774** | **62,3** | **26,6** | **68,4** |
+| **Summe** | | **1.544** | **122,4** | **54,1** | **136** |
+| **Pro Portion (÷ 2)** | | **772** | **61,2** | **27** | **68** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.553 kcal gegenüber 1.547 kcal → Abweichung 0,3 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.549 kcal gegenüber 1.544 kcal → Abweichung 0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

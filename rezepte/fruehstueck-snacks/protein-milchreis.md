@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 589 kcal | 26 % |
-| Protein | 47,6 g | 32 % |
-| Fett | 18,7 g | 19 % |
-| davon gesättigt | 4,5 g |  |
-| Kohlenhydrate | 55,1 g | 29 % |
-| davon Zucker | 20 g |  |
-| Ballaststoffe | 4,5 g |  |
+| Kalorien | 590 kcal | 26 % |
+| Protein | 41,5 g | 28 % |
+| Fett | 21,5 g | 21 % |
+| davon gesättigt | 4,4 g |  |
+| Kohlenhydrate | 54,6 g | 29 % |
+| davon Zucker | 19,6 g |  |
+| Ballaststoffe | 5,3 g |  |
 | Salz | 0,7 g |  |
 
-- **Protein pro 100 kcal:** 8,1 g
-- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 38 % · Fett 29 %
-- **Gewicht fertig:** ca. 940 g gesamt · **ca. 470 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7 g
+- **Makroverteilung (Energie):** Protein 29 % · Kohlenhydrate 38 % · Fett 33 %
+- **Gewicht fertig:** ca. 930 g gesamt · **ca. 470 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -39,22 +39,22 @@
 | Salz | 1 Prise (0,5 g) |  |
 | **Protein-Creme** | | |
 | Magerquark | 150 g |  |
-| Whey Protein Vanille | 2 Messlöffel (60 g) |  |
+| Whey Protein Vanille | 1⅓ Messlöffel (40 g) |  |
 | **Topping** | | |
 | Sauerkirschen | 50 g |  |
 | Zimt | 1 TL (2 g) |  |
-| gehobelte Mandeln | 5 EL (50 g) |  |
+| gehobelte Mandeln | 6½ EL (63 g) |  |
 
 ## Mise en place
 
-- 450 g Milch und 150 g Wasser abmessen. 150 g Magerquark und 2 Messlöffel Whey Protein Vanille (60 g) in einer Schüssel bereitstellen.
+- 450 g Milch und 150 g Wasser abmessen. 150 g Magerquark und 1⅓ Messlöffel Whey Protein Vanille (40 g) in einer Schüssel bereitstellen.
 
 ## Zubereitung
 
 1. **Aufkochen** ⏱ 5 min: Milch, Wasser, 85 g Milchreis und 1 Prise Salz (0,5 g) im Topf auf Stufe 7 von 9 unter Rühren aufkochen (ca. 5 Minuten). Sofort herunterschalten, sobald es am Rand blubbert; Milch kocht schnell über.
 2. **Quellen** ⏱ 25 min: Auf Stufe 2 von 9 zurückschalten, Deckel schräg auflegen und 25 Minuten quellen lassen. Alle 5 Minuten umrühren, dabei über den Boden kratzen. Fertig, wenn die Körner weich sind und der Reis cremig, aber noch leicht flüssig ist (er dickt beim Abkühlen nach).
-3. **Abkühlen und Protein unterrühren** ⏱ 10 min: Topf vom Herd nehmen und 10 Minuten ohne Deckel abkühlen lassen (unter 60 °C, sonst flockt das Whey). 150 g Magerquark mit 2 Messlöffel Whey Protein Vanille (60 g) und 3 EL vom Milchreis glatt rühren, dann unter den restlichen Milchreis heben.
-4. **Anrichten**: Auf 2 Schalen verteilen, 50 g Sauerkirschen daraufgeben und mit 1 TL Zimt (2 g) und 5 EL gehobelte Mandeln (50 g) bestreuen.
+3. **Abkühlen und Protein unterrühren** ⏱ 10 min: Topf vom Herd nehmen und 10 Minuten ohne Deckel abkühlen lassen (unter 60 °C, sonst flockt das Whey). 150 g Magerquark mit 1⅓ Messlöffel Whey Protein Vanille (40 g) und 3 EL vom Milchreis glatt rühren, dann unter den restlichen Milchreis heben.
+4. **Anrichten**: Auf 2 Schalen verteilen, 50 g Sauerkirschen daraufgeben und mit 1 TL Zimt (2 g) und 6½ EL gehobelte Mandeln (63 g) bestreuen.
 
 ## Zeitablauf
 
@@ -68,7 +68,7 @@
 
 ## Anrichten
 
-Pro Schale ca. 470 g Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und 25 g Mandeln.
+Pro Schale ca. 470 g Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und gut 31 g Mandeln.
 
 ## Meal Prep & Aufbewahrung
 
@@ -80,8 +80,8 @@ Pro Schale ca. 470 g Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und 25 g M
 ## Varianten & Austausch
 
 - **Apfel-Zimt:** 120 g geriebenen Apfel statt Kirschen. (+17 kcal, ±0 g Protein, +0,1 g Fett pro Portion)
-- **Schoko-Milchreis:** Whey Protein Schoko statt Vanille und 10 g Backkakao unterrühren. (+14 kcal, +0,1 g Protein, +0,7 g Fett pro Portion)
-- **Weniger kcal:** Mandeln halbieren. (−75 kcal, −2,6 g Protein, −6,5 g Fett pro Portion)
+- **Schoko-Milchreis:** Whey Protein Schoko statt Vanille und 10 g Backkakao unterrühren. (+14 kcal, +0,4 g Protein, +0,7 g Fett pro Portion)
+- **Weniger kcal:** Mandeln halbieren. (−93 kcal, −3,3 g Protein, −8,1 g Fett pro Portion)
 
 ## Tipps
 
@@ -97,13 +97,13 @@ Pro Schale ca. 470 g Milchreis mit Topping: 25 g Kirschen, ½ TL Zimt und 25 g M
 | Wasser | 150 g | 0 | 0 | 0 | 0 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
 | Magerquark | 150 g | 101 | 18 | 0,5 | 6 |
-| Whey Protein Vanille | 60 g | 232 | 45 | 3,6 | 4,8 |
+| Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
 | Sauerkirschen Glas abgetropft | 50 g | 31 | 0,4 | 0,1 | 7 |
 | Zimt gemahlen | 2 g | 5 | 0,1 | 0 | 0,6 |
-| Mandeln gehobelt | 50 g | 300 | 10,5 | 26 | 3 |
-| **Summe** | | **1.179** | **95,2** | **37,4** | **110,1** |
-| **Pro Portion (÷ 2)** | | **589** | **47,6** | **18,7** | **55,1** |
+| Mandeln gehobelt | 63 g | 378 | 13,2 | 32,8 | 3,8 |
+| **Summe** | | **1.179** | **82,9** | **42,9** | **109,3** |
+| **Pro Portion (÷ 2)** | | **590** | **41,5** | **21,5** | **54,6** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.176 kcal gegenüber 1.179 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.177 kcal gegenüber 1.179 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

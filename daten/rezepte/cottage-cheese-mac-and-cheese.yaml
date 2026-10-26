@@ -17,14 +17,14 @@ zutaten:
   - {id: pasta, zutat: Hartweizennudeln ungekocht, name: Makkaroni, g: 130}
   - {id: salz_wasser, zutat: Salz, name: Salz fürs Nudelwasser, g: 15, anzeige: "1 EL", nicht_mitgerechnet: true}
   - gruppe: Käsesauce
-  - {id: huettenkaese, zutat: Körniger Frischkäse, name: körniger Frischkäse, g: 200, anzeige: "1 Becher"}
+  - {id: huettenkaese, zutat: Körniger Frischkäse, name: körniger Frischkäse, g: 120, anzeige: "gut ½ Becher"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 100, hinweis: "100 ml"}
   - {id: kaese, zutat: Reibekäse light, g: 100}
   - {id: senf, zutat: Senf mittelscharf, name: Senf, g: 5, anzeige: "1 TL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 1, anzeige: "½ TL"}
   - gruppe: Putenbrust
   - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 300}
-  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
+  - {id: oel, zutat: Rapsöl, g: 29, anzeige: "3 EL"}
   - {id: knoblauch, zutat: Knoblauch, g: 3, anzeige: "1 Zehe"}
   - {id: salz, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}

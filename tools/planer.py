@@ -118,7 +118,9 @@ class Planer:
         self.start_einkauf = bool(termine) and min(termine) >= self.tage[0]   # einmaliger Einkauf in der Woche
         self.auswaerts = auswaerts or {}                       # datum → Slot
         self.st = struktur(self.tage, self.auswaerts)
-        self.fest = fest or {}                                 # (datum, slot) → rezept
+        # (datum, slot) → rezept oder (rezept, faktor): mit Faktor bleibt auch die Menge fest
+        self.fest = {k: (v[0] if isinstance(v, tuple) else v) for k, v in (fest or {}).items()}
+        self.fest_faktor = {k: float(v[1]) for k, v in (fest or {}).items() if isinstance(v, tuple)}
         self.ziel = config.TAGESZIELE
 
     # Mahlzeiten: (datum, slot) → dict(rezept, faktor, kochtag, rest_von, ladungen)
@@ -224,19 +226,19 @@ class Planer:
     def start(self, rnd):
         fak = config.PLANER_FAKTOREN
         w = {"h": {k: self.fest.get(k) or rnd.choice(self.d.h) for k in self.st["koch"]},
-             "hf": {k: rnd.choice(fak) for k in self.st["koch"]},
+             "hf": {k: self.fest_faktor.get(k) or rnd.choice(fak) for k in self.st["koch"]},
              "fr": {d: self.fest.get((d, "fruehstueck")) or rnd.choice(self.d.fr) for d in self.tage
                     if self.auswaerts.get(d) != "fruehstueck"},
-             "ff": {d: rnd.choice(fak) for d in self.tage},
+             "ff": {d: self.fest_faktor.get((d, "fruehstueck")) or rnd.choice(fak) for d in self.tage},
              "sn": {d: self.fest.get((d, "snack")) or rnd.choice([None] + self.d.sn) for d in self.tage}}
         return w
 
     def zuege(self, w):
         fak = config.PLANER_FAKTOREN
         out = [("h", k, r) for k in self.st["koch"] if k not in self.fest for r in self.d.h]
-        out += [("hf", k, f) for k in self.st["koch"] for f in fak]
+        out += [("hf", k, f) for k in self.st["koch"] if k not in self.fest_faktor for f in fak]
         out += [("fr", d, r) for d in w["fr"] if (d, "fruehstueck") not in self.fest for r in self.d.fr]
-        out += [("ff", d, f) for d in self.tage for f in fak]
+        out += [("ff", d, f) for d in self.tage if (d, "fruehstueck") not in self.fest_faktor for f in fak]
         out += [("sn", d, r) for d in self.tage if (d, "snack") not in self.fest for r in [None] + self.d.sn]
         return out
 

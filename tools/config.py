@@ -134,6 +134,9 @@ REZEPTPLAN_MD = WURZEL / "rezeptplan.md"
 BESTAND_GESAMT = 50
 # Fettstrategie „rezepte“ (Entscheidung 25.10.2026): Ø Fett pro Portion je Gruppe, damit Pläne ohne Nüsse-Extras
 # das Fettziel erreichen. Gruppe = Hauptkategorie „kalorienarm“, sonst Mahlzeit. Wird von bestand.py geprüft.
+# Protein moderat (Entscheidung 26.10.2026): Tage bei ca. 160–175 g statt ~190 g, damit bei max. 2.275 kcal
+# Platz für Fett bleibt. Ø Protein pro Portion je Gruppe, geprüft in bestand.py.
+PROTEIN_ZIEL_PRO_MAHLZEIT = {"Frühstück": (40, 47), "Mittag/Abend": (50, 62), "Kalorienarm": (40, 55), "Snack": (20, 35)}
 FETT_ZIEL_PRO_MAHLZEIT = {"Frühstück": (19, 24), "Mittag/Abend": (24, 30), "Kalorienarm": (14, 20), "Snack": (7, 12)}
 BEREICHE_SOLL = {"Frühstück": 15, "Snack": 5, "Hauptgericht": 30}       # exakt (5.1)
 FRUEHSTUECK_MIN = {"Meal Prep": 4, "Schnelle Rezepte": 5}               # 5.1

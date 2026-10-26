@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 577 kcal | 25 % |
-| Protein | 43,9 g | 29 % |
-| Fett | 20,4 g | 20 % |
-| davon gesättigt | 5,2 g |  |
-| Kohlenhydrate | 49,9 g | 26 % |
-| davon Zucker | 19,7 g |  |
-| Ballaststoffe | 9 g |  |
+| Kalorien | 575 kcal | 25 % |
+| Protein | 40,8 g | 27 % |
+| Fett | 21,7 g | 21 % |
+| davon gesättigt | 5,1 g |  |
+| Kohlenhydrate | 49,7 g | 26 % |
+| davon Zucker | 19,5 g |  |
+| Ballaststoffe | 9,4 g |  |
 | Salz | 1,4 g |  |
 
-- **Protein pro 100 kcal:** 7,6 g
-- **Makroverteilung (Energie):** Protein 31 % · Kohlenhydrate 36 % · Fett 33 %
-- **Gewicht fertig:** ca. 640 g gesamt · **ca. 320 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,1 g
+- **Makroverteilung (Energie):** Protein 29 % · Kohlenhydrate 36 % · Fett 35 %
+- **Gewicht fertig:** ca. 630 g gesamt · **ca. 320 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -38,12 +38,12 @@
 | Haferflocken zart | 88 g |  |
 | Skyr natur | 200 g |  |
 | Eier | 2 Eier Gr. M (120 g) |  |
-| Whey Protein Vanille | ca. 1⅓ Messlöffel (40 g) |  |
+| Whey Protein Vanille | 1 Messlöffel (30 g) |  |
 | Backpulver | 1½ TL (6 g) |  |
 | Zimt | 1½ TL (3 g) |  |
 | Salz | 1 Prise (0,5 g) |  |
 | **Topping** | | |
-| gehobelte Mandeln | 3 EL (30 g) |  |
+| gehobelte Mandeln | 3½ EL (36 g) |  |
 | Zartbitterschokolade | 2 Rippchen (10 g) | grob gehackt |
 
 ## Mise en place
@@ -54,8 +54,8 @@
 
 ## Zubereitung
 
-1. **Teig mixen**: Bananenstücke, 88 g Haferflocken zart, 200 g Skyr natur, 2 Eier Gr. M (120 g), ca. 1⅓ Messlöffel Whey Protein Vanille (40 g), 1½ TL Backpulver (6 g), 1½ TL Zimt (3 g) und 1 Prise Salz (0,5 g) im Standmixer 30–40 Sekunden auf höchster Stufe zu einem glatten, dickflüssigen Teig mixen.
-2. **Einfüllen**: Teig in die Form streichen (ca. 2 cm hoch), Bananenscheiben darauflegen, 3 EL gehobelte Mandeln (30 g) und die gehackte Schokolade darüberstreuen.
+1. **Teig mixen**: Bananenstücke, 88 g Haferflocken zart, 200 g Skyr natur, 2 Eier Gr. M (120 g), 1 Messlöffel Whey Protein Vanille (30 g), 1½ TL Backpulver (6 g), 1½ TL Zimt (3 g) und 1 Prise Salz (0,5 g) im Standmixer 30–40 Sekunden auf höchster Stufe zu einem glatten, dickflüssigen Teig mixen.
+2. **Einfüllen**: Teig in die Form streichen (ca. 2 cm hoch), Bananenscheiben darauflegen, 3½ EL gehobelte Mandeln (36 g) und die gehackte Schokolade darüberstreuen.
 3. **Backen** ⏱ 28 min: Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 25–28 Minuten backen. Fertig, wenn die Oberfläche goldbraun ist und ein Holzstäbchen in der Mitte fast sauber herauskommt (ein paar feuchte Krümel sind gut).
 4. **Auskühlen** ⏱ 15 min: Form herausnehmen und 15 Minuten in der Form auskühlen lassen, dann am Backpapier herausheben. Warm ist es sehr weich, nach dem Auskühlen schnittfest.
 
@@ -82,7 +82,7 @@ In 8 Stücke schneiden, 4 Stücke (ca. 320 g) sind eine Portion. Für Meal Prep 
 ## Varianten & Austausch
 
 - **Mehr Protein:** Dazu je 100 g Skyr als Topping. (+63 kcal, +11 g Protein, +0,2 g Fett pro Portion)
-- **Schoko-Bananenbrot:** 10 g Backkakao in den Teig und Whey Protein Schoko statt Vanille. (+14 kcal, +0,4 g Protein, +0,7 g Fett pro Portion)
+- **Schoko-Bananenbrot:** 10 g Backkakao in den Teig und Whey Protein Schoko statt Vanille. (+14 kcal, +0,6 g Protein, +0,6 g Fett pro Portion)
 - **Mit Erdnussbutter:** 20 g Erdnussbutter warm über das ausgekühlte Brot träufeln. (+61 kcal, +2,6 g Protein, +4,9 g Fett pro Portion)
 
 ## Tipps
@@ -98,15 +98,15 @@ In 8 Stücke schneiden, 4 Stücke (ca. 320 g) sind eine Portion. Für Meal Prep 
 | Haferflocken zart | 88 g | 327 | 11,9 | 6,2 | 51,7 |
 | Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
 | Ei Gr. M ohne Schale | 120 g | 168 | 15,1 | 11,9 | 0,8 |
-| Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
+| Whey Protein Vanille | 30 g | 116 | 22,5 | 1,8 | 2,4 |
 | Backpulver | 6 g | 3 | 0 | 0 | 0,7 |
 | Zimt gemahlen | 3 g | 7 | 0,1 | 0 | 0,8 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
-| Mandeln gehobelt | 30 g | 180 | 6,3 | 15,6 | 1,8 |
+| Mandeln gehobelt | 36 g | 216 | 7,6 | 18,7 | 2,2 |
 | Zartbitterschokolade 70 % | 10 g | 56 | 0,8 | 4,1 | 3,4 |
-| **Summe** | | **1.154** | **87,8** | **40,9** | **99,8** |
-| **Pro Portion (÷ 2)** | | **577** | **43,9** | **20,4** | **49,9** |
+| **Summe** | | **1.151** | **81,5** | **43,4** | **99,4** |
+| **Pro Portion (÷ 2)** | | **575** | **40,8** | **21,7** | **49,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.154 kcal gegenüber 1.154 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.152 kcal gegenüber 1.151 kcal → Abweichung 0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

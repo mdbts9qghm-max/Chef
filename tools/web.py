@@ -142,18 +142,24 @@ def woche_seite(pd, md, einkauf_link, nachbarn):
         for m in t["mahlzeiten"]:
             sym = ("📦 " if m["box"] else "") + ("↻ " if m["rest"] else "") + ("❄️ " if m["einfrieren"] else "")
             fak = f' · ×{zahl(m["faktor"], 2)}' if m["faktor"] != 1 else ""
+            hinweis = f'<span class="mhinweis">{esc(m["hinweis"])}</span>' if m["hinweis"] else ""
             q = f'?faktor={m["faktor"]:g}' if m["faktor"] != 1 else ""
             kacheln.append(f'<a class="mkachel" href="../rezept/{m["id"]}.html{q}"><span class="slot">{SLOT_ICON[m["slot"]]} '
                            f'{m["label"]}{" · " + m["zeit"] if m["zeit"] else ""}</span><span class="name">{esc(m["name"])}</span>'
-                           f'<span class="werte">{sym}{m["kcal"]} kcal · {zahl(m["protein"], 0)} g P{fak}</span></a>')
+                           f'<span class="werte">{sym}{m["kcal"]} kcal · {zahl(m["protein"], 0)} g P{fak}</span>{hinweis}</a>')
         if t["auswaerts"]:
             kacheln.append(f'<div class="mkachel"><span class="slot">🍴 Auswärts</span><span class="name">{esc(t["auswaerts"])}</span>'
                            f'<span class="werte">Platzhalter</span></div>')
         erinn = "".join(f"<li>{esc(x)}</li>" for x in t["erinnerungen"])
+        if t["vorkochen"]:
+            prep = ('<div class="vorkochen ja"><strong>🍱 Heute für später vorkochen:</strong><ul>'
+                    + "".join(f"<li>{esc(x)}</li>" for x in t["vorkochen"]) + "</ul></div>")
+        else:
+            prep = '<div class="vorkochen nein">✓ Heute nichts für später vorkochen</div>'
         karten.append(f'<section class="karte tag s-{t["schicht"].lower()}" id="tag-{t["datum"]}">'
                       f'<div class="band"><span>{SCHICHT_ICON[t["schicht"]]} <strong>{config.WOCHENTAGE_LANG[d.weekday()]}, '
                       f'{d.strftime("%d.%m.")}</strong> · {SCHICHT_NAME[t["schicht"]]}{" " + t["schichtzeit"] if t["schichtzeit"] else ""}</span>'
-                      f'{"".join(marken)}</div><div class="mkacheln">{"".join(kacheln)}</div>{tag_balken(t["summe"])}'
+                      f'{"".join(marken)}</div>{prep}<div class="mkacheln">{"".join(kacheln)}</div>{tag_balken(t["summe"])}'
                       f'{f"<details><summary>Erinnerungen für morgen</summary><ul>{erinn}</ul></details>" if erinn else ""}</section>')
     details = f'<details class="karte"><summary><strong>Zeitpläne &amp; alle Details (Text)</strong></summary>{md_html(md)}</details>'
     return kopf + "".join(karten) + details
@@ -646,9 +652,35 @@ def lade_plaene():
     return sorted(plaene, key=lambda p: (p["jahr"], p["kw"]))
 
 
+def slot_tag(e):
+    return f"{config.SLOT_NAMEN[e.slot]} {config.WOCHENTAGE[e.datum.weekday()]}"
+
+
+def meal_prep_info(liste, rezepte):
+    """Pro Eintrag ein kurzer Hinweis und pro Kochtag die Liste „heute für später vorkochen“."""
+    idx = {e.schluessel: e for e in liste}
+    hinweis, vorkochen = {}, {}
+    for e in liste:
+        if e.rest_von and e.rest_von in idx:
+            q = idx[e.rest_von]
+            hinweis[e.schluessel] = f"↻ Rest von {slot_tag(q)}"
+            hinweis[q.schluessel] = (f"🍱 am {config.WOCHENTAGE[q.gekocht_am.weekday()]} vorbereitet, doppelt → 2. Portion {slot_tag(e)}"
+                                     if q.gekocht_am < q.datum else f"🍱 doppelt kochen → 2. Portion {slot_tag(e)}")
+            if e.datum > q.gekocht_am:
+                vorkochen.setdefault(q.gekocht_am, []).append(
+                    f"{rezepte[q.rezept_id]['name']}: doppelt kochen – 2. Portion = {slot_tag(e)}{' (Box)' if e.box else ''}")
+        elif e.kochen and e.gekocht_am and e.gekocht_am < e.datum:
+            hinweis.setdefault(e.schluessel, f"🍱 vorbereitet am {config.WOCHENTAGE[e.gekocht_am.weekday()]}")
+            vorkochen.setdefault(e.gekocht_am, []).append(
+                f"{rezepte[e.rezept_id]['name']}: zubereiten für {slot_tag(e)}{' (Box)' if e.box else ''}")
+    return hinweis, vorkochen
+
+
 def plan_daten(plan, rezepte, db, pruefung):
     """Kompakte Plandaten für die Heute-Ansicht."""
-    alle = {(e.datum.isoformat(), e.slot): e for e in wp.eintraege(plan)}
+    liste = wp.eintraege(plan)
+    alle = {(e.datum.isoformat(), e.slot): e for e in liste}
+    hinweise, vorkochen = meal_prep_info(liste, rezepte)
     einkauf_tage = {wp.datum(x["datum"]): x.get("art") for x in plan.get("einkauf", [])}
     tage = []
     for i, tag in enumerate(plan["tage"]):
@@ -668,7 +700,7 @@ def plan_daten(plan, rezepte, db, pruefung):
                          "kcal": round(w["kcal"]), "protein": round(w["protein"], 1), "kochen": eintrag.kochen and eintrag.gekocht_am == d,
                          "rest": bool(e.get("rest_von")), "box": bool(e.get("box")) or slot in box_slots, "zeit": zeiten.get(slot, ""),
                          "einfrieren": bool(e.get("einfrieren")), "vorbereiten": bool(e.get("gekocht_am")),
-                         "faktor": float(e.get("faktor", 1.0))})
+                         "faktor": float(e.get("faktor", 1.0)), "hinweis": hinweise.get(eintrag.schluessel, "")})
         extras = [{"text": x.get("text") or x["zutat"], "kcal": round(wp.extra_werte(x, db)["kcal"]),
                    "protein": round(wp.extra_werte(x, db)["protein"], 1)} for x in tag.get("extras") or []]
         summe = wp.tagessumme(tag, rezepte, db)
@@ -676,7 +708,7 @@ def plan_daten(plan, rezepte, db, pruefung):
         morgen = d + dt.timedelta(1)
         tage.append({"datum": d.isoformat(), "schicht": s, "schichtzeit": (config.SCHICHTEN.get("zeiten") or {}).get(s, ""),
                      "einkauf": d in einkauf_tage, "start_einkauf": d in einkauf_tage and einkauf_tage[d] == "start",
-                     "mealprep": s == "frei" and wp.schicht(morgen, plan.get("schichten")) == "Tag",
+                     "mealprep": bool(vorkochen.get(d)), "vorkochen": vorkochen.get(d, []),
                      "mahlzeiten": mahl, "extras": extras, "auswaerts": f"{config.SLOT_NAMEN.get(aus['mahlzeit'], '')} auswärts" if aus else None,
                      "summe": {k: round(summe[k], 1) for k in ("kcal", "protein", "fett", "kh")},
                      "erinnerungen": wp.erinnerungen_morgen(plan, i, rezepte, pruefung)})

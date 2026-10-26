@@ -12,7 +12,7 @@ ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", "Pfanne 28 cm", "6 Holzsp
 zutaten:
   - gruppe: Souvlaki
   - {id: pute, zutat: Putenbrustfilet roh, name: Putenbrust, g: 350}
-  - {id: oel_s, zutat: Olivenöl, g: 15, anzeige: "1½ EL"}
+  - {id: oel_s, zutat: Olivenöl, g: 19, anzeige: "2 EL"}
   - {id: zitrone, zutat: Zitronensaft, g: 15, anzeige: "1 EL"}
   - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 2, anzeige: "2 TL"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
@@ -23,7 +23,7 @@ zutaten:
   - {id: oel_k, zutat: Olivenöl, g: 5, anzeige: "1 TL"}
   - {id: salz_k, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Beilage
-  - {id: skyr, zutat: Skyr natur, g: 110}
+  - {id: skyr, zutat: Skyr natur, g: 60}
   - {id: gurke, zutat: Salatgurke, g: 80, anzeige: "¼ Gurke"}
   - {id: feta, zutat: Feta 45 % Fett i. Tr., name: Feta, g: 40}
 mise_en_place:

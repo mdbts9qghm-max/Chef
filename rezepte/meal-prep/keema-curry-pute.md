@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 784 kcal | 34 % |
-| Protein | 62,5 g | 42 % |
-| Fett | 26 g | 26 % |
-| davon gesättigt | 5,7 g |  |
-| Kohlenhydrate | 69,7 g | 36 % |
-| davon Zucker | 12,4 g |  |
+| Kalorien | 786 kcal | 35 % |
+| Protein | 59,7 g | 40 % |
+| Fett | 27,9 g | 28 % |
+| davon gesättigt | 5,8 g |  |
+| Kohlenhydrate | 68,7 g | 36 % |
+| davon Zucker | 11,4 g |  |
 | Ballaststoffe | 11,6 g |  |
-| Salz | 3,2 g |  |
+| Salz | 3,1 g |  |
 
-- **Protein pro 100 kcal:** 8 g
-- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 37 % · Fett 31 %
-- **Gewicht fertig:** ca. 1.380 g gesamt · **ca. 690 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,6 g
+- **Makroverteilung (Energie):** Protein 31 % · Kohlenhydrate 36 % · Fett 33 %
+- **Gewicht fertig:** ca. 1.330 g gesamt · **ca. 670 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -34,7 +34,7 @@
 |---|---|---|
 | **Keema** | | |
 | Putenhackfleisch | 400 g |  |
-| Rapsöl | 1 EL (12 g) |  |
+| Rapsöl | 1½ EL (16 g) |  |
 | Zwiebel | 1 große Zwiebel (100 g) |  |
 | Knoblauch | 3 Zehen (9 g) |  |
 | Ingwer | 2 cm Stück (10 g) |  |
@@ -46,7 +46,7 @@
 | Salz | ½ TL (3 g) |  |
 | **Beilage** | | |
 | Basmatireis | 90 g |  |
-| Skyr natur | 110 g | als kühler Klecks |
+| Skyr natur | 60 g | als kühler Klecks |
 
 ## Mise en place
 
@@ -55,7 +55,7 @@
 
 ## Zubereitung
 
-1. **Zwiebeln bräunen** ⏱ 6 min: 1 EL Rapsöl (12 g) in der Pfanne auf Stufe 6 von 9 erhitzen und die Zwiebel 6 Minuten goldbraun braten; das gibt dem Keema die Tiefe.
+1. **Zwiebeln bräunen** ⏱ 6 min: 1½ EL Rapsöl (16 g) in der Pfanne auf Stufe 6 von 9 erhitzen und die Zwiebel 6 Minuten goldbraun braten; das gibt dem Keema die Tiefe.
 2. **Hack und Gewürze** ⏱ 6 min: Auf Stufe 8 von 9 schalten, 400 g Putenhackfleisch dazugeben und 5 Minuten krümelig braten. Knoblauch, Ingwer, 2 TL Garam Masala (6 g), 1½ TL Currypulver (4 g) und 1 TL Kreuzkümmel (2 g) 1 Minute mitrösten.
 3. **Köcheln** ⏱ 15 min: 1 Dose gehackte Tomaten (400 g), Kichererbsen, ½ TL Salz (3 g) und 100 ml Wasser dazugeben, aufkochen und auf Stufe 3 von 9 15 Minuten köcheln, bis das Keema dick und saftig ist. Garprobe: Hack ist vollständig durch, 72 °C Kerntemperatur.
 4. **Reis kochen** ⏱ 12 min: Während das Keema köchelt: Reis mit 160 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
@@ -72,7 +72,7 @@
 
 ## Anrichten
 
-Pro Teller die Hälfte des Reises, die Hälfte des Keemas und die Hälfte von 110 g Skyr natur obenauf: ca. 690 g pro Portion.
+Pro Teller die Hälfte des Reises, die Hälfte des Keemas und die Hälfte von 60 g Skyr natur obenauf: ca. 670 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -96,7 +96,7 @@ Pro Teller die Hälfte des Reises, die Hälfte des Keemas und die Hälfte von 11
 | Zutat | Menge | kcal | Protein | Fett | KH |
 |---|---:|---:|---:|---:|---:|
 | Putenhackfleisch roh | 400 g | 592 | 80 | 30 | 0 |
-| Rapsöl | 12 g | 108 | 0 | 12 | 0 |
+| Rapsöl | 16 g | 144 | 0 | 16 | 0 |
 | Zwiebel | 100 g | 30 | 1,2 | 0,2 | 4,9 |
 | Knoblauch | 9 g | 13 | 0,5 | 0 | 2,6 |
 | Ingwer frisch | 10 g | 8 | 0,2 | 0,1 | 1,6 |
@@ -107,10 +107,10 @@ Pro Teller die Hälfte des Reises, die Hälfte des Keemas und die Hälfte von 11
 | Kichererbsen abgetropft | 240 g | 293 | 17,3 | 6,2 | 37,4 |
 | Salz | 3 g | 0 | 0 | 0 | 0 |
 | Basmatireis ungekocht | 90 g | 317 | 7,2 | 0,5 | 70,2 |
-| Skyr natur | 110 g | 69 | 12,1 | 0,2 | 4,4 |
-| **Summe** | | **1.568** | **125** | **52** | **139,5** |
-| **Pro Portion (÷ 2)** | | **784** | **62,5** | **26** | **69,7** |
+| Skyr natur | 60 g | 38 | 6,6 | 0,1 | 2,4 |
+| **Summe** | | **1.572** | **119,5** | **55,9** | **137,5** |
+| **Pro Portion (÷ 2)** | | **786** | **59,7** | **27,9** | **68,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.572 kcal gegenüber 1.568 kcal → Abweichung 0,3 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.577 kcal gegenüber 1.572 kcal → Abweichung 0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

@@ -15,7 +15,7 @@ ausstattung: [Backofen, "Auflaufform ca. 30 × 20 cm", "Pfanne 28 cm (Edelstahl 
 zutaten:
   - gruppe: Kartoffelspalten
   - {id: kartoffeln, zutat: Kartoffeln festkochend roh, name: Kartoffeln, g: 330, hinweis: "mit Schale, gut gewaschen"}
-  - {id: oel, zutat: Rapsöl, g: 15, anzeige: "1½ EL"}
+  - {id: oel, zutat: Rapsöl, g: 16, anzeige: "1½ EL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 2, anzeige: "1 TL"}
   - {id: salz_k, zutat: Salz, g: 2, anzeige: "⅓ TL"}
   - gruppe: Patties
@@ -28,7 +28,7 @@ zutaten:
   - {id: tomaten, zutat: Tomaten, g: 60, anzeige: "½ Tomate", hinweis: "in Scheiben"}
   - {id: zwiebel, zutat: Zwiebel, g: 40, anzeige: "½ kleine Zwiebel", hinweis: "in sehr feinen Ringen"}
   - gruppe: Burgersauce
-  - {id: skyr, zutat: Skyr natur, g: 50, anzeige: "2 EL"}
+  - {id: skyr, zutat: Skyr natur, g: 30, anzeige: "2 EL"}
   - {id: senf, zutat: Senf mittelscharf, name: Senf, g: 10, anzeige: "2 TL"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 10, anzeige: "2 TL"}
   - {id: honig, zutat: Honig, g: 5, anzeige: "1 TL"}

@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 593 kcal | 26 % |
-| Protein | 52,4 g | 35 % |
-| Fett | 20,9 g | 21 % |
-| davon gesättigt | 4,5 g |  |
-| Kohlenhydrate | 45,8 g | 24 % |
-| davon Zucker | 19,6 g |  |
+| Kalorien | 591 kcal | 26 % |
+| Protein | 46,4 g | 31 % |
+| Fett | 24,2 g | 24 % |
+| davon gesättigt | 4,6 g |  |
+| Kohlenhydrate | 43,8 g | 23 % |
+| davon Zucker | 17,6 g |  |
 | Ballaststoffe | 6 g |  |
-| Salz | 1 g |  |
+| Salz | 0,9 g |  |
 
-- **Protein pro 100 kcal:** 8,8 g
-- **Makroverteilung (Energie):** Protein 36 % · Kohlenhydrate 32 % · Fett 32 %
-- **Gewicht fertig:** ca. 910 g gesamt · **ca. 460 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,9 g
+- **Makroverteilung (Energie):** Protein 32 % · Kohlenhydrate 30 % · Fett 38 %
+- **Gewicht fertig:** ca. 820 g gesamt · **ca. 410 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -39,9 +39,9 @@
 | Milch | 150 g | 150 ml |
 | Whey Protein Vanille | ⅔ Messlöffel (20 g) |  |
 | Salz | 1 Prise (0,5 g) |  |
-| Rapsöl | 1 EL (10 g) |  |
+| Rapsöl | 1½ EL (17 g) |  |
 | **Füllung** | | |
-| Magerquark | 250 g | ½ Becher |
+| Magerquark | 150 g | knapp ⅓ Becher (500 g) |
 | Whey Protein Vanille | ⅔ Messlöffel (20 g) |  |
 | Beerenmischung TK | 150 g |  |
 | Honig | 2 TL (10 g) |  |
@@ -50,12 +50,12 @@
 ## Mise en place
 
 - 150 g Beerenmischung TK 1½ Minuten bei 600 W in der Mikrowelle auftauen.
-- 250 g Magerquark mit ⅔ Messlöffel Whey Protein Vanille (20 g) und 2 EL Wasser glatt rühren.
+- 150 g Magerquark mit ⅔ Messlöffel Whey Protein Vanille (20 g) und 2 EL Wasser glatt rühren.
 
 ## Zubereitung
 
 1. **Teig rühren** ⏱ 3 min: 70 g Mehl, 2 Eier Gr. M (120 g), 100 g Eiklar, 150 g Milch, ⅔ Messlöffel Whey Protein Vanille (20 g) und 1 Prise Salz (0,5 g) mit dem Schneebesen 1 Minute zu einem glatten, dünnflüssigen Teig rühren (wie Sahne). 3 Minuten ruhen lassen.
-2. **Crêpes backen** ⏱ 2 min: Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten vorheizen und mit Küchenpapier hauchdünn mit Rapsöl auswischen. Eine kleine Kelle Teig (ca. 75 g) hineingießen und die Pfanne sofort schwenken, bis der Boden dünn bedeckt ist. 1 Minute backen, bis der Rand sich löst und die Unterseite hellbraun gefleckt ist, wenden und 30 Sekunden fertig backen. Vor jedem Crêpe nachfetten, insgesamt 1 EL Rapsöl (10 g). Ergibt 6 Crêpes.
+2. **Crêpes backen** ⏱ 2 min: Pfanne (24 cm) auf Stufe 6 von 9 2 Minuten vorheizen und mit Küchenpapier hauchdünn mit Rapsöl auswischen. Eine kleine Kelle Teig (ca. 75 g) hineingießen und die Pfanne sofort schwenken, bis der Boden dünn bedeckt ist. 1 Minute backen, bis der Rand sich löst und die Unterseite hellbraun gefleckt ist, wenden und 30 Sekunden fertig backen. Vor jedem Crêpe nachfetten, insgesamt 1½ EL Rapsöl (17 g). Ergibt 6 Crêpes.
 3. **Füllen**: Jeden Crêpe mit 2 EL Vanille-Quark bestreichen, ein paar Beeren daraufgeben und zu einem Dreieck falten (halbieren, dann noch einmal halbieren).
 4. **Fertigstellen**: Restliche Beeren samt Saft darübergeben, mit 2 TL Honig (10 g) beträufeln und 2½ EL gehobelte Mandeln (25 g) bestreuen.
 
@@ -71,7 +71,7 @@
 
 ## Anrichten
 
-Pro Teller 3 gefüllte Crêpes mit Beeren, Honig und Mandeln: ca. 460 g pro Portion.
+Pro Teller 3 gefüllte Crêpes mit Beeren, Honig und Mandeln: ca. 410 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -100,15 +100,15 @@ Pro Teller 3 gefüllte Crêpes mit Beeren, Honig und Mandeln: ca. 460 g pro Port
 | Milch 1,5 % Fett | 150 g | 71 | 5,1 | 2,3 | 7,2 |
 | Whey Protein Vanille | 20 g | 77 | 15 | 1,2 | 1,6 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
-| Rapsöl | 10 g | 90 | 0 | 10 | 0 |
-| Magerquark | 250 g | 168 | 30 | 0,8 | 10 |
+| Rapsöl | 17 g | 153 | 0 | 17 | 0 |
+| Magerquark | 150 g | 101 | 18 | 0,5 | 6 |
 | Whey Protein Vanille | 20 g | 77 | 15 | 1,2 | 1,6 |
 | Beerenmischung TK | 150 g | 63 | 1,4 | 0,6 | 9,8 |
 | Honig | 10 g | 32 | 0 | 0 | 8 |
 | Mandeln gehobelt | 25 g | 150 | 5,3 | 13 | 1,5 |
-| **Summe** | | **1.185** | **104,8** | **41,8** | **91,6** |
-| **Pro Portion (÷ 2)** | | **593** | **52,4** | **20,9** | **45,8** |
+| **Summe** | | **1.181** | **92,8** | **48,5** | **87,6** |
+| **Pro Portion (÷ 2)** | | **591** | **46,4** | **24,2** | **43,8** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.185 kcal gegenüber 1.185 kcal → Abweichung 0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.182 kcal gegenüber 1.181 kcal → Abweichung 0 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

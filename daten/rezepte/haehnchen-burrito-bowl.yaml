@@ -18,7 +18,7 @@ zutaten:
   - {id: salz_r, zutat: Salz, g: 1, anzeige: "2 Prisen"}
   - gruppe: Hähnchen
   - {id: haehnchen, zutat: Hähnchenbrustfilet roh, name: Hähnchenbrustfilet, g: 400}
-  - {id: oel, zutat: Rapsöl, g: 20, anzeige: "2 EL"}
+  - {id: oel, zutat: Rapsöl, g: 24, anzeige: "2½ EL"}
   - {id: paprikapulver, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
   - {id: kreuzkuemmel, zutat: Kreuzkümmel gemahlen, name: Kreuzkümmel, g: 2, anzeige: "1 TL"}
   - {id: oregano, zutat: Oregano getrocknet, name: Oregano, g: 1, anzeige: "1 TL"}
@@ -30,7 +30,7 @@ zutaten:
   - {id: tomaten, zutat: Tomaten, g: 150, anzeige: "2 Tomaten"}
   - {id: zwiebel, zutat: Zwiebel, g: 40, anzeige: "½ kleine Zwiebel", hinweis: "am besten rot"}
   - {id: zitrone, zutat: Zitronensaft, g: 15, anzeige: "1 EL", hinweis: "oder Limette"}
-  - {id: skyr, zutat: Skyr natur, g: 100}
+  - {id: skyr, zutat: Skyr natur, g: 50}
   - {id: kaese, zutat: Reibekäse light, g: 90}
 mise_en_place:
   - "{reis} waschen. {bohnen} und {mais} in einem Sieb abspülen und abtropfen lassen."

@@ -8,21 +8,21 @@ kueche: Amerikanisch
 inspiration:
   quelle: "TikTok-/Instagram-Trend „Cottage Cheese / Protein Pancakes“"
   link: null
-  aenderungen: "Mehl durch fein gemixte Haferflocken ersetzt, Buttermilch durch Magerquark und Eiklar, Zucker weggelassen (Süße aus Whey und Honig), 12 g Öl für die Pfanne (gibt knusprige Ränder)."
+  aenderungen: "Mehl durch fein gemixte Haferflocken ersetzt, Buttermilch durch Magerquark und Eiklar, Zucker weggelassen (Süße aus Whey und Honig), 19 g Öl für die Pfanne (gibt knusprige Ränder)."
 schwierigkeit: leicht
 zeit: {vorbereitung: 5, kochen: 18, wartezeit: 0}
 ausstattung: [Standmixer, "Pfanne 28 cm (beschichtet)", Pfannenwender, Mikrowelle]
 zutaten:
   - gruppe: Teig
   - {id: hafer, zutat: Haferflocken zart, g: 85}
-  - {id: quark, zutat: Magerquark, g: 250, hinweis: "½ Becher"}
+  - {id: quark, zutat: Magerquark, g: 150, hinweis: "knapp ⅓ Becher (500 g)"}
   - {id: eier, zutat: Ei Gr. M ohne Schale, name: Eier, g: 180, anzeige: "3 Eier Gr. M"}
   - {id: eiklar, zutat: Eiklar flüssig, name: Eiklar, g: 40, hinweis: "aus der Flasche, 40 ml"}
   - {id: whey, zutat: Whey Protein Vanille, g: 30, anzeige: "1 Messlöffel"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 50, hinweis: "50 ml"}
   - {id: backpulver, zutat: Backpulver, g: 6, anzeige: "1½ TL"}
   - {id: salz, zutat: Salz, g: 0.5, anzeige: "1 Prise"}
-  - {id: oel, zutat: Rapsöl, g: 12, anzeige: "1 EL", hinweis: "zum Ausbacken"}
+  - {id: oel, zutat: Rapsöl, g: 19, anzeige: "2 EL", hinweis: "zum Ausbacken"}
   - gruppe: Topping
   - {id: heidelbeeren, zutat: Heidelbeeren TK, g: 120}
   - {id: skyr, zutat: Skyr natur, g: 160}

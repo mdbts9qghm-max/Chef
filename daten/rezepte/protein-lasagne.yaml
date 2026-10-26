@@ -12,7 +12,7 @@ ausstattung: [Backofen, "Auflaufform 20 × 20 cm", "Pfanne 28 cm", Schneebesen, 
 zutaten:
   - gruppe: Bolognese
   - {id: hack, zutat: Rinderhackfleisch 5 % Fett roh, name: Rinderhackfleisch (5 % Fett), g: 350}
-  - {id: oel, zutat: Olivenöl, g: 10, anzeige: "1 EL"}
+  - {id: oel, zutat: Olivenöl, g: 17, anzeige: "1½ EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 6, anzeige: "2 Zehen"}
   - {id: tomatenmark, zutat: Tomatenmark, g: 30, anzeige: "2 EL"}
@@ -22,7 +22,7 @@ zutaten:
   - {id: pfeffer, zutat: Pfeffer schwarz gemahlen, name: Pfeffer, g: 0.5, anzeige: "1 Prise"}
   - {id: wasser, zutat: Wasser, g: 100, hinweis: "100 ml"}
   - gruppe: Quark-„Béchamel“
-  - {id: quark, zutat: Magerquark, g: 260, hinweis: "½ Becher plus 1 EL"}
+  - {id: quark, zutat: Magerquark, g: 170, hinweis: "⅓ Becher (500 g)"}
   - {id: milch, zutat: "Milch 1,5 % Fett", name: Milch, g: 100, hinweis: "100 ml"}
   - {id: ei, zutat: Ei Gr. M ohne Schale, name: Ei, g: 60, anzeige: "1 Ei Gr. M"}
   - {id: parmesan, zutat: Parmesan gerieben, g: 20, anzeige: "2 EL"}

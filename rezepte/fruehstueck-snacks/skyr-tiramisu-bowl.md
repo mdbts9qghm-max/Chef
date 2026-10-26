@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 564 kcal | 25 % |
-| Protein | 54,7 g | 37 % |
-| Fett | 18,1 g | 18 % |
-| davon gesättigt | 10,4 g |  |
-| Kohlenhydrate | 41,5 g | 22 % |
-| davon Zucker | 18 g |  |
-| Ballaststoffe | 6,3 g |  |
-| Salz | 1 g |  |
+| Kalorien | 563 kcal | 25 % |
+| Protein | 49,1 g | 33 % |
+| Fett | 20,5 g | 20 % |
+| davon gesättigt | 11,9 g |  |
+| Kohlenhydrate | 41,4 g | 22 % |
+| davon Zucker | 17,5 g |  |
+| Ballaststoffe | 7 g |  |
+| Salz | 0,9 g |  |
 
-- **Protein pro 100 kcal:** 9,7 g
-- **Makroverteilung (Energie):** Protein 40 % · Kohlenhydrate 30 % · Fett 30 %
-- **Gewicht fertig:** ca. 920 g gesamt · **ca. 460 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,7 g
+- **Makroverteilung (Energie):** Protein 36 % · Kohlenhydrate 30 % · Fett 34 %
+- **Gewicht fertig:** ca. 820 g gesamt · **ca. 410 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -37,22 +37,22 @@
 | Haferflocken zart | 75 g |  |
 | Espresso oder starker Kaffee | 120 g | 120 ml, abgekühlt |
 | **Creme** | | |
-| Skyr natur | 500 g | 1 Becher |
+| Skyr natur | 390 g | gut ¾ Becher (500 g) |
 | Frischkäse light | 150 g |  |
 | Whey Protein Vanille | ca. 1⅓ Messlöffel (40 g) |  |
 | **Topping** | | |
 | Backkakao | 2 TL (8 g) |  |
-| Zartbitterschokolade | 5 Rippchen (25 g) | fein gerieben |
+| Zartbitterschokolade | 7½ Rippchen (37 g) | fein gerieben |
 
 ## Mise en place
 
 - 120 g Espresso oder starker Kaffee kochen und abkühlen lassen (oder vom Morgenkaffee abzweigen).
-- 5 Rippchen Zartbitterschokolade (25 g) fein reiben.
+- 7½ Rippchen Zartbitterschokolade (37 g) fein reiben.
 
 ## Zubereitung
 
 1. **Kaffee-Boden** ⏱ 3 min: 75 g Haferflocken zart auf die 2 Schalen verteilen und mit dem Kaffee übergießen, kurz andrücken. 3 Minuten ziehen lassen, bis die Flocken den Kaffee aufgesogen haben (wie getränkte Löffelbiskuits).
-2. **Creme**: 500 g Skyr natur, 150 g Frischkäse light und ca. 1⅓ Messlöffel Whey Protein Vanille (40 g) 1 Minute kräftig glatt rühren, bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind.
+2. **Creme**: 390 g Skyr natur, 150 g Frischkäse light und ca. 1⅓ Messlöffel Whey Protein Vanille (40 g) 1 Minute kräftig glatt rühren, bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind.
 3. **Schichten**: Creme auf den Kaffee-Boden verteilen und glatt streichen. 2 TL Backkakao (8 g) durch ein kleines Sieb darüberstäuben und die geriebene Schokolade darüberstreuen.
 
 ## Zeitablauf
@@ -67,7 +67,7 @@
 
 ## Anrichten
 
-Pro Schale ca. 460 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g Kakao und gut 12 g Schokolade.
+Pro Schale ca. 410 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g Kakao und gut 18 g Schokolade.
 
 ## Meal Prep & Aufbewahrung
 
@@ -79,7 +79,7 @@ Pro Schale ca. 460 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g 
 
 - **Mehr Protein:** Whey auf 60 g erhöhen und 2 EL Kaffee mehr in die Creme. (+39 kcal, +7,5 g Protein, +0,6 g Fett pro Portion)
 - **Mit Kirschen:** 60 g Sauerkirschen zwischen Boden und Creme. (+19 kcal, +0,2 g Protein, ±0 g Fett pro Portion)
-- **Weniger kcal:** Schokolade weglassen, nur Kakao. (−70 kcal, −1 g Protein, −5,1 g Fett pro Portion)
+- **Weniger kcal:** Schokolade weglassen, nur Kakao. (−103 kcal, −1,5 g Protein, −7,6 g Fett pro Portion)
 
 ## Tipps
 
@@ -92,14 +92,14 @@ Pro Schale ca. 460 g: die Hälfte des Kaffee-Bodens, die Hälfte der Creme, 4 g 
 |---|---:|---:|---:|---:|---:|
 | Haferflocken zart | 75 g | 279 | 10,1 | 5,3 | 44 |
 | Kaffee zubereitet | 120 g | 2 | 0,1 | 0 | 0,4 |
-| Skyr natur | 500 g | 315 | 55 | 1 | 20 |
+| Skyr natur | 390 g | 246 | 42,9 | 0,8 | 15,6 |
 | Frischkäse light | 150 g | 215 | 10,5 | 16,5 | 6 |
 | Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
 | Kakaopulver stark entölt | 8 g | 23 | 1,6 | 0,9 | 1 |
-| Zartbitterschokolade 70 % | 25 g | 140 | 2 | 10,3 | 8,5 |
-| **Summe** | | **1.128** | **109,3** | **36,3** | **83** |
-| **Pro Portion (÷ 2)** | | **564** | **54,7** | **18,1** | **41,5** |
+| Zartbitterschokolade 70 % | 37 g | 207 | 3 | 15,2 | 12,6 |
+| **Summe** | | **1.126** | **98,2** | **41** | **82,7** |
+| **Pro Portion (÷ 2)** | | **563** | **49,1** | **20,5** | **41,4** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.121 kcal gegenüber 1.128 kcal → Abweichung -0,6 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.120 kcal gegenüber 1.126 kcal → Abweichung -0,5 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

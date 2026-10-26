@@ -140,15 +140,16 @@ def rezeptplan_markdown(plan, rezepte, db):
     return "\n".join(out) + "\n"
 
 
-def fett_gruppen(rezepte, db):
-    """Ø Fett pro Portion je Gruppe → {gruppe: (Ø, (min, max), ok)}."""
+def fett_gruppen(rezepte, db, naehrstoff="fett", ziele=None):
+    """Ø Fett (bzw. anderer Nährstoff) pro Portion je Gruppe → {gruppe: (Ø, (min, max), ok)}."""
+    ziele = ziele or config.FETT_ZIEL_PRO_MAHLZEIT
     gruppen = {}
     for r in rezepte.values():
         g = "Kalorienarm" if r["hauptkategorie"] == "kalorienarm" else r["mahlzeit"]
-        gruppen.setdefault(g, []).append(nw.rezept_naehrwerte(r, db)["portion"]["fett"])
+        gruppen.setdefault(g, []).append(nw.rezept_naehrwerte(r, db)["portion"][naehrstoff])
     out = {}
     for g, werte in gruppen.items():
-        lo, hi = config.FETT_ZIEL_PRO_MAHLZEIT[g]
+        lo, hi = ziele[g]
         mittel = sum(werte) / len(werte)
         out[g] = (mittel, (lo, hi), lo <= mittel <= hi)
     return out
@@ -172,6 +173,9 @@ def main():
     fett = fett_gruppen(startbestand(plan, rezepte), db)
     print("Fett Ø pro Portion:", " · ".join(f"{g} {nw.zahl(m)} g{'' if ok else f' ⚠️ Ziel {lo}–{hi} g'}"
                                            for g, (m, (lo, hi), ok) in fett.items()))
+    prot = fett_gruppen(startbestand(plan, rezepte), db, "protein", config.PROTEIN_ZIEL_PRO_MAHLZEIT)
+    print("Protein Ø pro Portion:", " · ".join(f"{g} {nw.zahl(m)} g{'' if ok else f' ⚠️ Ziel {lo}–{hi} g'}"
+                                              for g, (m, (lo, hi), ok) in prot.items()))
     config.REZEPTPLAN_MD.write_text(rezeptplan_markdown(plan, rezepte, db), encoding="utf-8")
     print("rezeptplan.md aktualisiert.")
     return 0 if all(z[3] is not False for z in plan_zeilen + ist_zeilen) else 1

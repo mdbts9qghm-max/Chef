@@ -20,7 +20,7 @@ zutaten:
   - {id: paprika, zutat: Paprikapulver edelsüß, name: Paprikapulver, g: 3, anzeige: "1½ TL"}
   - {id: salz_m, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - gruppe: Sauce
-  - {id: oel, zutat: Rapsöl, g: 10, anzeige: "1 EL"}
+  - {id: oel, zutat: Rapsöl, g: 14, anzeige: "1½ EL"}
   - {id: butter, zutat: Butter, g: 30, anzeige: "3 EL"}
   - {id: zwiebel, zutat: Zwiebel, g: 80, anzeige: "1 Zwiebel"}
   - {id: knoblauch, zutat: Knoblauch, g: 9, anzeige: "3 Zehen"}
@@ -30,7 +30,7 @@ zutaten:
   - {id: tomatenmark, zutat: Tomatenmark, g: 30, anzeige: "2 EL"}
   - {id: tomaten, zutat: Gehackte Tomaten Dose, name: gehackte Tomaten, g: 200, anzeige: "½ Dose"}
   - {id: frischkaese, zutat: Frischkäse light, g: 60, anzeige: "2 EL"}
-  - {id: skyr_s, zutat: Skyr natur, name: Skyr, g: 115}
+  - {id: skyr_s, zutat: Skyr natur, name: Skyr, g: 65}
   - {id: salz_s, zutat: Salz, g: 1.5, anzeige: "¼ TL"}
   - {id: zitrone, zutat: Zitronensaft, g: 10, anzeige: "2 TL"}
   - gruppe: Reis

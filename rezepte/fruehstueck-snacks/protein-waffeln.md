@@ -14,18 +14,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 616 kcal | 27 % |
-| Protein | 58,1 g | 39 % |
-| Fett | 21,8 g | 22 % |
-| davon gesättigt | 4,7 g |  |
-| Kohlenhydrate | 44,1 g | 23 % |
-| davon Zucker | 19,8 g |  |
+| Kalorien | 618 kcal | 27 % |
+| Protein | 50,6 g | 34 % |
+| Fett | 25,7 g | 25 % |
+| davon gesättigt | 4,6 g |  |
+| Kohlenhydrate | 43,3 g | 23 % |
+| davon Zucker | 19,2 g |  |
 | Ballaststoffe | 5,5 g |  |
-| Salz | 1,6 g |  |
+| Salz | 1,5 g |  |
 
-- **Protein pro 100 kcal:** 9,4 g
-- **Makroverteilung (Energie):** Protein 38 % · Kohlenhydrate 29 % · Fett 32 %
-- **Gewicht fertig:** ca. 870 g gesamt · **ca. 440 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,2 g
+- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 29 % · Fett 38 %
+- **Gewicht fertig:** ca. 860 g gesamt · **ca. 430 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -36,11 +36,11 @@
 | Haferflocken zart | 70 g |  |
 | Magerquark | 200 g |  |
 | Eier | 2 Eier Gr. M (120 g) |  |
-| Whey Protein Vanille | ca. 1⅓ Messlöffel (40 g) |  |
+| Whey Protein Vanille | ⅔ Messlöffel (20 g) |  |
 | Milch | 80 g | 80 ml |
 | Backpulver | 1½ TL (6 g) |  |
 | Salz | 1 Prise (0,5 g) |  |
-| Rapsöl | 1 EL (10 g) | für das Waffeleisen |
+| Rapsöl | 2 EL (19 g) | halb in den Teig, halb fürs Waffeleisen |
 | **Kirschen** | | |
 | Sauerkirschen | 115 g | abgetropft, 4 EL Saft auffangen |
 | Speisestärke | 1 TL (5 g) |  |
@@ -56,9 +56,9 @@
 
 ## Zubereitung
 
-1. **Teig mixen** ⏱ 3 min: 70 g Haferflocken zart im Standmixer 15 Sekunden fein mahlen. 200 g Magerquark, 2 Eier Gr. M (120 g), ca. 1⅓ Messlöffel Whey Protein Vanille (40 g), 80 g Milch, 1½ TL Backpulver (6 g) und 1 Prise Salz (0,5 g) dazugeben und 20 Sekunden glatt mixen. Der Teig ist dick wie Quarkcreme. 3 Minuten quellen lassen.
+1. **Teig mixen** ⏱ 3 min: 70 g Haferflocken zart im Standmixer 15 Sekunden fein mahlen. 200 g Magerquark, 2 Eier Gr. M (120 g), ⅔ Messlöffel Whey Protein Vanille (20 g), 80 g Milch, die Hälfte von Rapsöl, 1½ TL Backpulver (6 g) und 1 Prise Salz (0,5 g) dazugeben und 20 Sekunden glatt mixen. Der Teig ist dick wie Quarkcreme. 3 Minuten quellen lassen.
 2. **Kirschkompott** ⏱ 2 min: Restlichen Kirschsaft im kleinen Topf auf Stufe 7 von 9 aufkochen, angerührte Stärke einrühren und 30 Sekunden unter Rühren kochen, bis der Saft glasig und dick wird. Kirschen unterheben, vom Herd ziehen.
-3. **Waffeln backen** ⏱ 4 min: Waffeleisen mit dem Pinsel dünn mit Rapsöl einstreichen. Pro Waffel ca. 4 EL Teig (110 g) in die Mitte geben, Deckel schließen und 3½–4 Minuten backen, bis kaum noch Dampf austritt und die Waffel goldbraun ist. Erst dann öffnen, sonst reißt sie. Ergibt 4 Waffeln. Vor jeder Waffel dünn nachfetten; insgesamt 1 EL Rapsöl (10 g) verwenden.
+3. **Waffeln backen** ⏱ 4 min: Waffeleisen mit dem Pinsel dünn mit dem restlichen Rapsöl einstreichen. Pro Waffel ca. 4 EL Teig (110 g) in die Mitte geben, Deckel schließen und 3½–4 Minuten backen, bis kaum noch Dampf austritt und die Waffel goldbraun ist. Erst dann öffnen, sonst reißt sie. Ergibt 4 Waffeln. Vor jeder Waffel dünn nachfetten; insgesamt (Teig + Eisen) 2 EL Rapsöl (19 g).
 4. **Vanille-Skyr**: 200 g Skyr natur mit 1 gehäufter EL Whey Protein Vanille (10 g) und 1 EL Wasser glatt rühren. 2 EL gehobelte Mandeln (22 g) bereitstellen.
 
 ## Zeitablauf
@@ -74,7 +74,7 @@
 
 ## Anrichten
 
-Pro Teller 2 Waffeln, darauf 105 g Vanille-Skyr, die Hälfte des Kirschkompotts und 11 g gehobelte Mandeln: ca. 440 g pro Portion.
+Pro Teller 2 Waffeln, darauf 105 g Vanille-Skyr, die Hälfte des Kirschkompotts und 11 g gehobelte Mandeln: ca. 430 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -101,19 +101,19 @@ Pro Teller 2 Waffeln, darauf 105 g Vanille-Skyr, die Hälfte des Kirschkompotts 
 | Haferflocken zart | 70 g | 260 | 9,5 | 4,9 | 41,1 |
 | Magerquark | 200 g | 134 | 24 | 0,6 | 8 |
 | Ei Gr. M ohne Schale | 120 g | 168 | 15,1 | 11,9 | 0,8 |
-| Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
+| Whey Protein Vanille | 20 g | 77 | 15 | 1,2 | 1,6 |
 | Milch 1,5 % Fett | 80 g | 38 | 2,7 | 1,2 | 3,8 |
 | Backpulver | 6 g | 3 | 0 | 0 | 0,7 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
-| Rapsöl | 10 g | 90 | 0 | 10 | 0 |
+| Rapsöl | 19 g | 171 | 0 | 19 | 0 |
 | Sauerkirschen Glas abgetropft | 115 g | 71 | 0,8 | 0,1 | 16,1 |
 | Speisestärke | 5 g | 17 | 0 | 0 | 4,3 |
 | Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
 | Whey Protein Vanille | 10 g | 39 | 7,5 | 0,6 | 0,8 |
 | Mandeln gehobelt | 22 g | 132 | 4,6 | 11,4 | 1,3 |
-| **Summe** | | **1.233** | **116,2** | **43,5** | **88,2** |
-| **Pro Portion (÷ 2)** | | **616** | **58,1** | **21,8** | **44,1** |
+| **Summe** | | **1.237** | **101,2** | **51,3** | **86,6** |
+| **Pro Portion (÷ 2)** | | **618** | **50,6** | **25,7** | **43,3** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.232 kcal gegenüber 1.233 kcal → Abweichung -0,1 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.235 kcal gegenüber 1.237 kcal → Abweichung -0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

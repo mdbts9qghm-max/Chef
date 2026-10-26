@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 587 kcal | 26 % |
-| Protein | 48 g | 32 % |
-| Fett | 19,9 g | 20 % |
-| davon gesättigt | 5,6 g |  |
-| Kohlenhydrate | 48 g | 25 % |
-| davon Zucker | 19,3 g |  |
-| Ballaststoffe | 10,4 g |  |
+| Kalorien | 588 kcal | 26 % |
+| Protein | 43,2 g | 29 % |
+| Fett | 22,9 g | 23 % |
+| davon gesättigt | 5,8 g |  |
+| Kohlenhydrate | 46,2 g | 24 % |
+| davon Zucker | 17,4 g |  |
+| Ballaststoffe | 11,2 g |  |
 | Salz | 0,6 g |  |
 
-- **Protein pro 100 kcal:** 8,2 g
-- **Makroverteilung (Energie):** Protein 34 % · Kohlenhydrate 34 % · Fett 32 %
-- **Gewicht fertig:** ca. 870 g gesamt · **ca. 440 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,3 g
+- **Makroverteilung (Energie):** Protein 31 % · Kohlenhydrate 33 % · Fett 37 %
+- **Gewicht fertig:** ca. 770 g gesamt · **ca. 390 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -38,13 +38,13 @@
 | Milch | 200 g | 200 ml |
 | Whey Protein Vanille | ca. 1⅓ Messlöffel (40 g) |  |
 | **Cheesecake-Creme** | | |
-| Skyr natur | 300 g |  |
+| Skyr natur | 190 g |  |
 | Frischkäse light | 2 EL (60 g) |  |
 | Zitronensaft | 1 TL (5 g) |  |
 | **Topping** | | |
 | Himbeeren TK | 150 g |  |
 | Knuspermüsli | 2 EL (20 g) | als „Keksboden“ |
-| gehobelte Mandeln | 3½ EL (35 g) |  |
+| gehobelte Mandeln | 4½ EL (47 g) |  |
 
 ## Mise en place
 
@@ -53,9 +53,9 @@
 ## Zubereitung
 
 1. **Oats anrühren**: 80 g Haferflocken zart, 200 g Milch und ca. 1⅓ Messlöffel Whey Protein Vanille (40 g) in einer Schüssel 30 Sekunden kräftig verrühren, bis kein Pulver mehr zu sehen ist. Je zur Hälfte in die beiden Gläser füllen.
-2. **Cheesecake-Schicht**: 300 g Skyr natur, 2 EL Frischkäse light (60 g) und 1 TL Zitronensaft (5 g) glatt rühren (ca. 30 Sekunden), bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind. Auf die Haferschicht verteilen und glatt streichen.
+2. **Cheesecake-Schicht**: 190 g Skyr natur, 2 EL Frischkäse light (60 g) und 1 TL Zitronensaft (5 g) glatt rühren (ca. 30 Sekunden), bis die Creme glänzt und keine Frischkäse-Stückchen mehr zu sehen sind. Auf die Haferschicht verteilen und glatt streichen.
 3. **Himbeeren und ziehen lassen**: Himbeer-Püree auf die Creme geben, Gläser verschließen und mindestens 8 Stunden (über Nacht) in den Kühlschrank stellen. Fertig, wenn die Haferflocken die Flüssigkeit aufgesogen haben und die untere Schicht cremig-fest ist.
-4. **Knusper drauf**: Direkt vor dem Essen 2 EL Knuspermüsli (20 g) und 3½ EL gehobelte Mandeln (35 g) auf die Gläser verteilen.
+4. **Knusper drauf**: Direkt vor dem Essen 2 EL Knuspermüsli (20 g) und 4½ EL gehobelte Mandeln (47 g) auf die Gläser verteilen.
 
 ## Zeitablauf
 
@@ -69,7 +69,7 @@
 
 ## Anrichten
 
-Pro Glas ca. 440 g: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeeren, oben 10 g Knuspermüsli und gut 17 g Mandeln. Direkt aus dem Glas löffeln, Löffel bis zum Boden durchstechen.
+Pro Glas ca. 390 g: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeeren, oben 10 g Knuspermüsli und gut 23 g Mandeln. Direkt aus dem Glas löffeln, Löffel bis zum Boden durchstechen.
 
 ## Meal Prep & Aufbewahrung
 
@@ -80,9 +80,9 @@ Pro Glas ca. 440 g: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeere
 
 ## Varianten & Austausch
 
-- **Mehr Protein:** Skyr auf 400 g erhöhen. (+32 kcal, +5,5 g Protein, +0,1 g Fett pro Portion)
+- **Mehr Protein:** Skyr auf 290 g erhöhen. (+32 kcal, +5,5 g Protein, +0,1 g Fett pro Portion)
 - **Blaubeer-Cheesecake:** Heidelbeeren statt Himbeeren. (+8 kcal, −0,5 g Protein, +0,2 g Fett pro Portion)
-- **Weniger kcal:** Mandeln weglassen. (−105 kcal, −3,7 g Protein, −9,1 g Fett pro Portion)
+- **Weniger kcal:** Mandeln weglassen. (−141 kcal, −4,9 g Protein, −12,2 g Fett pro Portion)
 
 ## Tipps
 
@@ -96,15 +96,15 @@ Pro Glas ca. 440 g: unten die Oats, darüber die Cheesecake-Creme, 75 g Himbeere
 | Haferflocken zart | 80 g | 298 | 10,8 | 5,6 | 47 |
 | Milch 1,5 % Fett | 200 g | 94 | 6,8 | 3 | 9,6 |
 | Whey Protein Vanille | 40 g | 154 | 30 | 2,4 | 3,2 |
-| Skyr natur | 300 g | 189 | 33 | 0,6 | 12 |
+| Skyr natur | 190 g | 120 | 20,9 | 0,4 | 7,6 |
 | Frischkäse light | 60 g | 86 | 4,2 | 6,6 | 2,4 |
 | Zitronensaft | 5 g | 1 | 0 | 0 | 0,2 |
 | Himbeeren TK | 150 g | 56 | 2 | 0,5 | 7,2 |
 | Knuspermüsli | 20 g | 86 | 1,8 | 3 | 12,4 |
-| Mandeln gehobelt | 35 g | 210 | 7,4 | 18,2 | 2,1 |
-| **Summe** | | **1.174** | **95,9** | **39,9** | **96,1** |
-| **Pro Portion (÷ 2)** | | **587** | **48** | **19,9** | **48** |
+| Mandeln gehobelt | 47 g | 282 | 9,9 | 24,4 | 2,8 |
+| **Summe** | | **1.176** | **86,3** | **45,9** | **92,4** |
+| **Pro Portion (÷ 2)** | | **588** | **43,2** | **22,9** | **46,2** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.168 kcal gegenüber 1.174 kcal → Abweichung -0,4 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.173 kcal gegenüber 1.176 kcal → Abweichung -0,3 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

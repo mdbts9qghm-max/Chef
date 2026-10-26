@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 744 kcal | 33 % |
-| Protein | 66,4 g | 45 % |
-| Fett | 24,8 g | 25 % |
-| davon gesättigt | 11,3 g |  |
-| Kohlenhydrate | 61,2 g | 32 % |
-| davon Zucker | 12,3 g |  |
+| Kalorien | 747 kcal | 33 % |
+| Protein | 63,6 g | 43 % |
+| Fett | 26,7 g | 26 % |
+| davon gesättigt | 11,5 g |  |
+| Kohlenhydrate | 60,2 g | 32 % |
+| davon Zucker | 11,3 g |  |
 | Ballaststoffe | 4,9 g |  |
-| Salz | 2,5 g |  |
+| Salz | 2,4 g |  |
 
-- **Protein pro 100 kcal:** 8,9 g
-- **Makroverteilung (Energie):** Protein 36 % · Kohlenhydrate 33 % · Fett 30 %
-- **Gewicht fertig:** ca. 1.200 g gesamt · **ca. 600 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,5 g
+- **Makroverteilung (Energie):** Protein 35 % · Kohlenhydrate 33 % · Fett 33 %
+- **Gewicht fertig:** ca. 1.150 g gesamt · **ca. 570 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -40,7 +40,7 @@
 | Paprikapulver | 1½ TL (3 g) |  |
 | Salz | ¼ TL (1,5 g) |  |
 | **Sauce** | | |
-| Rapsöl | 1 EL (10 g) |  |
+| Rapsöl | 1½ EL (14 g) |  |
 | Butter | 3 EL (30 g) |  |
 | Zwiebel | 1 Zwiebel (80 g) |  |
 | Knoblauch | 3 Zehen (9 g) |  |
@@ -50,7 +50,7 @@
 | Tomatenmark | 2 EL (30 g) |  |
 | gehackte Tomaten | ½ Dose (200 g) |  |
 | Frischkäse light | 2 EL (60 g) |  |
-| Skyr | 115 g |  |
+| Skyr | 65 g |  |
 | Salz | ¼ TL (1,5 g) |  |
 | Zitronensaft | 2 TL (10 g) |  |
 | **Reis** | | |
@@ -64,10 +64,10 @@
 ## Zubereitung
 
 1. **Reis kochen** ⏱ 12 min: Reis mit 205 ml Wasser im Topf mit Deckel auf Stufe 9 von 9 aufkochen, auf Stufe 2 von 9 12 Minuten quellen und 5 Minuten ruhen lassen.
-2. **Hähnchen anbraten** ⏱ 5 min: 1 EL Rapsöl (10 g) in der Pfanne auf Stufe 8 von 9 erhitzen. Hähnchen samt Marinade in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 2 Minuten anbraten, bis es Röstspuren hat (innen noch nicht durch). Herausnehmen.
+2. **Hähnchen anbraten** ⏱ 5 min: 1½ EL Rapsöl (14 g) in der Pfanne auf Stufe 8 von 9 erhitzen. Hähnchen samt Marinade in einer Lage hineingeben, 3 Minuten nicht bewegen, dann wenden und 2 Minuten anbraten, bis es Röstspuren hat (innen noch nicht durch). Herausnehmen.
 3. **Sauce kochen** ⏱ 10 min: Auf Stufe 5 von 9 schalten, 3 EL Butter (30 g) in der Pfanne schmelzen, Zwiebel 4 Minuten weich dünsten. Knoblauch, Ingwer, 1 TL Garam Masala (3 g), 1 TL Currypulver (3 g) und 2 EL Tomatenmark (30 g) 1 Minute anrösten. ½ Dose gehackte Tomaten (200 g) und 100 ml Wasser dazu, 5 Minuten köcheln. Mit dem Pürierstab glatt pürieren.
 4. **Hähnchen fertig garen** ⏱ 6 min: Hähnchen zurück in die Sauce, auf Stufe 4 von 9 5–6 Minuten köcheln, bis es 74 °C Kerntemperatur erreicht.
-5. **Cremig machen**: Vom Herd ziehen, 1 Minute abkühlen lassen. 2 EL Frischkäse light (60 g), 115 g Skyr, ¼ TL Salz (1,5 g) und 2 TL Zitronensaft (10 g) einrühren, bis die Sauce cremig orange ist. Nicht mehr kochen, sonst flockt der Skyr.
+5. **Cremig machen**: Vom Herd ziehen, 1 Minute abkühlen lassen. 2 EL Frischkäse light (60 g), 65 g Skyr, ¼ TL Salz (1,5 g) und 2 TL Zitronensaft (10 g) einrühren, bis die Sauce cremig orange ist. Nicht mehr kochen, sonst flockt der Skyr.
 
 ## Zeitablauf
 
@@ -81,7 +81,7 @@
 
 ## Anrichten
 
-Pro Teller die Hälfte des Reises und die Hälfte des Butter Chickens: ca. 600 g pro Portion. Für Meal Prep nebeneinander in eine Box.
+Pro Teller die Hälfte des Reises und die Hälfte des Butter Chickens: ca. 570 g pro Portion. Für Meal Prep nebeneinander in eine Box.
 
 ## Meal Prep & Aufbewahrung
 
@@ -110,7 +110,7 @@ Pro Teller die Hälfte des Reises und die Hälfte des Butter Chickens: ca. 600 g
 | Garam Masala | 3 g | 12 | 0,4 | 0,5 | 1,4 |
 | Paprikapulver edelsüß | 3 g | 9 | 0,4 | 0,4 | 0,6 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
-| Rapsöl | 10 g | 90 | 0 | 10 | 0 |
+| Rapsöl | 14 g | 126 | 0 | 14 | 0 |
 | Butter | 30 g | 223 | 0,2 | 24,6 | 0,2 |
 | Zwiebel | 80 g | 24 | 1 | 0,2 | 3,9 |
 | Knoblauch | 9 g | 13 | 0,5 | 0 | 2,6 |
@@ -120,13 +120,13 @@ Pro Teller die Hälfte des Reises und die Hälfte des Butter Chickens: ca. 600 g
 | Tomatenmark | 30 g | 25 | 1,3 | 0,2 | 3,9 |
 | Gehackte Tomaten Dose | 200 g | 46 | 2,4 | 0,4 | 7 |
 | Frischkäse light | 60 g | 86 | 4,2 | 6,6 | 2,4 |
-| Skyr natur | 115 g | 72 | 12,7 | 0,2 | 4,6 |
+| Skyr natur | 65 g | 41 | 7,2 | 0,1 | 2,6 |
 | Salz | 1,5 g | 0 | 0 | 0 | 0 |
 | Zitronensaft | 10 g | 2 | 0 | 0 | 0,5 |
 | Basmatireis ungekocht | 115 g | 405 | 9,2 | 0,7 | 89,7 |
-| **Summe** | | **1.489** | **132,8** | **49,5** | **122,3** |
-| **Pro Portion (÷ 2)** | | **744** | **66,4** | **24,8** | **61,2** |
+| **Summe** | | **1.493** | **127,3** | **53,4** | **120,3** |
+| **Pro Portion (÷ 2)** | | **747** | **63,6** | **26,7** | **60,2** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.486 kcal gegenüber 1.489 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.491 kcal gegenüber 1.493 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

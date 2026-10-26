@@ -16,17 +16,17 @@
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
 | Kalorien | 733 kcal | 32 % |
-| Protein | 66,8 g | 45 % |
-| Fett | 25,1 g | 25 % |
-| davon gesättigt | 7,8 g |  |
-| Kohlenhydrate | 57,7 g | 30 % |
-| davon Zucker | 8,7 g |  |
+| Protein | 61,3 g | 41 % |
+| Fett | 28,5 g | 28 % |
+| davon gesättigt | 8 g |  |
+| Kohlenhydrate | 55,7 g | 29 % |
+| davon Zucker | 6,7 g |  |
 | Ballaststoffe | 3,8 g |  |
 | Salz | 3,1 g |  |
 
-- **Protein pro 100 kcal:** 9,1 g
-- **Makroverteilung (Energie):** Protein 37 % · Kohlenhydrate 32 % · Fett 31 %
-- **Gewicht fertig:** ca. 1.210 g gesamt · **ca. 610 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 8,4 g
+- **Makroverteilung (Energie):** Protein 34 % · Kohlenhydrate 31 % · Fett 35 %
+- **Gewicht fertig:** ca. 1.120 g gesamt · **ca. 560 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -42,9 +42,9 @@
 | Kreuzkümmel | ½ TL (1 g) |  |
 | Salz | ½ TL knapp (2,5 g) |  |
 | Pfeffer | 2 Prisen (1 g) |  |
-| Rapsöl | 1½ EL (15 g) |  |
+| Rapsöl | 2 EL (22 g) |  |
 | **Skyr-Tzatziki** | | |
-| Skyr natur | 200 g |  |
+| Skyr natur | 100 g |  |
 | Salatgurke | ⅓ Gurke (120 g) |  |
 | Knoblauch | 1 Zehe (3 g) |  |
 | Olivenöl | 1 EL (10 g) |  |
@@ -58,7 +58,7 @@
 ## Mise en place
 
 - 400 g Schweinefilet in 5 mm dünne Scheiben, dann in Streifen schneiden. 1 Zwiebel (80 g) in feine Streifen, 2 Zehen Knoblauch (6 g) fein hacken. Alles mit 2 TL Paprikapulver (4 g), 2 TL Oregano (2 g), ½ TL Kreuzkümmel (1 g), ½ TL knapp Salz (2,5 g), 2 Prisen Pfeffer (1 g) und der Hälfte des Öls mischen und 30 Minuten (oder über Nacht) im Kühlschrank ziehen lassen.
-- Tzatziki: ⅓ Gurke Salatgurke (120 g) grob raspeln, mit 2 Prisen Salz (1 g) mischen und 5 Minuten stehen lassen, dann kräftig ausdrücken. Mit 200 g Skyr natur, fein geriebenem 1 Zehe Knoblauch (3 g), 1 EL Olivenöl (10 g) und 1 TL Zitronensaft (5 g) verrühren.
+- Tzatziki: ⅓ Gurke Salatgurke (120 g) grob raspeln, mit 2 Prisen Salz (1 g) mischen und 5 Minuten stehen lassen, dann kräftig ausdrücken. Mit 100 g Skyr natur, fein geriebenem 1 Zehe Knoblauch (3 g), 1 EL Olivenöl (10 g) und 1 TL Zitronensaft (5 g) verrühren.
 - 120 g Basmatireis waschen. 1 Tomate (100 g) würfeln, 70 g Feta zerbröseln.
 
 ## Zubereitung
@@ -78,7 +78,7 @@
 
 ## Anrichten
 
-Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Hälfte des Tzatzikis und 35 g Feta obenauf: ca. 610 g pro Portion.
+Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Hälfte des Tzatzikis und 35 g Feta obenauf: ca. 560 g pro Portion.
 
 ## Meal Prep & Aufbewahrung
 
@@ -109,8 +109,8 @@ Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Häl
 | Kreuzkümmel gemahlen | 1 g | 4 | 0,2 | 0,2 | 0,3 |
 | Salz | 2,5 g | 0 | 0 | 0 | 0 |
 | Pfeffer schwarz gemahlen | 1 g | 3 | 0,1 | 0 | 0,4 |
-| Rapsöl | 15 g | 135 | 0 | 15 | 0 |
-| Skyr natur | 200 g | 126 | 22 | 0,4 | 8 |
+| Rapsöl | 22 g | 198 | 0 | 22 | 0 |
+| Skyr natur | 100 g | 63 | 11 | 0,2 | 4 |
 | Salatgurke | 120 g | 14 | 0,7 | 0,1 | 2,2 |
 | Knoblauch | 3 g | 4 | 0,2 | 0 | 0,9 |
 | Olivenöl | 10 g | 90 | 0 | 10 | 0 |
@@ -119,9 +119,9 @@ Pro Bowl die Hälfte des Reises, die Hälfte des Gyros, Tomatenwürfel, die Häl
 | Basmatireis ungekocht | 120 g | 422 | 9,6 | 0,7 | 93,6 |
 | Tomaten | 100 g | 18 | 0,9 | 0,2 | 2,6 |
 | Feta 45 % Fett i. Tr. | 70 g | 181 | 11,9 | 14,7 | 0,4 |
-| **Summe** | | **1.466** | **133,7** | **50,2** | **115,4** |
-| **Pro Portion (÷ 2)** | | **733** | **66,8** | **25,1** | **57,7** |
+| **Summe** | | **1.466** | **122,7** | **57** | **111,4** |
+| **Pro Portion (÷ 2)** | | **733** | **61,3** | **28,5** | **55,7** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.463 kcal gegenüber 1.466 kcal → Abweichung -0,2 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.465 kcal gegenüber 1.466 kcal → Abweichung -0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*

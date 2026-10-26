@@ -15,18 +15,18 @@
 
 | Nährwert | pro Portion | Anteil Tagesziel |
 |---|---:|---:|
-| Kalorien | 606 kcal | 27 % |
-| Protein | 49 g | 33 % |
-| Fett | 22,3 g | 22 % |
-| davon gesättigt | 7,5 g |  |
-| Kohlenhydrate | 47,2 g | 25 % |
-| davon Zucker | 19,8 g |  |
-| Ballaststoffe | 10,2 g |  |
-| Salz | 1,3 g |  |
+| Kalorien | 607 kcal | 27 % |
+| Protein | 43,5 g | 29 % |
+| Fett | 24,8 g | 25 % |
+| davon gesättigt | 7,6 g |  |
+| Kohlenhydrate | 47,1 g | 25 % |
+| davon Zucker | 19,7 g |  |
+| Ballaststoffe | 10,5 g |  |
+| Salz | 1,2 g |  |
 
-- **Protein pro 100 kcal:** 8,1 g
-- **Makroverteilung (Energie):** Protein 33 % · Kohlenhydrate 32 % · Fett 34 %
-- **Gewicht fertig:** ca. 720 g gesamt · **ca. 360 g pro Portion** (geschätzt aus Garfaktoren)
+- **Protein pro 100 kcal:** 7,2 g
+- **Makroverteilung (Energie):** Protein 30 % · Kohlenhydrate 32 % · Fett 38 %
+- **Gewicht fertig:** ca. 710 g gesamt · **ca. 360 g pro Portion** (geschätzt aus Garfaktoren)
 - **MacroFactor:** Fertiges Gericht wiegen und als Gesamtgewicht in MacroFactor eintragen, dann kannst du nach Gramm loggen.
 
 ## Zutaten (für 2 Portionen)
@@ -38,14 +38,14 @@
 | Banane | 1 kleine, sehr reife Banane (100 g) | braun gesprenkelt = süßer |
 | Eier | 2 Eier Gr. M (120 g) | Zimmertemperatur |
 | Skyr natur | 250 g | ½ Becher |
-| Whey Protein Schoko | ca. 1⅓ Messlöffel (40 g) | Schoko- oder Brownie-Geschmack |
+| Whey Protein Schoko | ⅔ Messlöffel (20 g) | Schoko- oder Brownie-Geschmack |
 | Backkakao | 2 gehäufte EL (20 g) |  |
 | Backpulver | 1 TL (4 g) |  |
 | Salz | 1 Prise (0,5 g) | verstärkt den Schokogeschmack |
 | Milch | 70 g | 70 ml |
 | **Topping** | | |
 | Zartbitterschokolade | 3 Rippchen (15 g) | grob gehackt |
-| Erdnussbutter | 3 EL (30 g) |  |
+| Erdnussbutter | 4½ EL (43 g) |  |
 
 ## Mise en place
 
@@ -56,10 +56,10 @@
 
 ## Zubereitung
 
-1. **Teig mixen**: 75 g Haferflocken zart, 1 kleine, sehr reife Banane (100 g), 2 Eier Gr. M (120 g), 250 g Skyr natur, ca. 1⅓ Messlöffel Whey Protein Schoko (40 g), 2 gehäufte EL Backkakao (20 g), 1 TL Backpulver (4 g), 1 Prise Salz (0,5 g) und 70 g Milch in den Standmixer geben. 30–40 Sekunden auf höchster Stufe mixen, bis keine Haferstücke mehr zu sehen sind. Der Teig ist dickflüssig wie Pancake-Teig; ist er zu fest zum Gießen, 1–2 EL Wasser dazu.
+1. **Teig mixen**: 75 g Haferflocken zart, 1 kleine, sehr reife Banane (100 g), 2 Eier Gr. M (120 g), 250 g Skyr natur, ⅔ Messlöffel Whey Protein Schoko (20 g), 2 gehäufte EL Backkakao (20 g), 1 TL Backpulver (4 g), 1 Prise Salz (0,5 g) und 70 g Milch in den Standmixer geben. 30–40 Sekunden auf höchster Stufe mixen, bis keine Haferstücke mehr zu sehen sind. Der Teig ist dickflüssig wie Pancake-Teig; ist er zu fest zum Gießen, 1–2 EL Wasser dazu.
 2. **Einfüllen und Topping**: Teig in die vorbereitete Form gießen und mit einem Löffelrücken glatt streichen (ca. 1,5 cm hoch). Die gehackte Zartbitterschokolade gleichmäßig darüberstreuen und leicht andrücken.
 3. **Backen** ⏱ 22 min: Auf mittlerer Schiene bei 180 °C Ober-/Unterhitze (160 °C Umluft) 20–22 Minuten backen. Fertig, wenn der Rand fest ist und sich leicht von der Form löst, die Mitte auf Fingerdruck noch leicht federt und an einem Holzstäbchen in der Mitte noch ein paar feuchte Krümel hängen. Die Mitte darf saftig sein, dann wird er brownie-artig statt kuchig.
-4. **Abkühlen und Erdnussbutter** ⏱ 10 min: Form herausnehmen und den Brownie 10 Minuten in der Form ruhen lassen; in der Zeit zieht er nach und wird fester. 3 EL Erdnussbutter (30 g) in einer kleinen Tasse 15–20 Sekunden bei 600 W in der Mikrowelle verflüssigen und mit einem Teelöffel in feinen Linien über den Brownie ziehen.
+4. **Abkühlen und Erdnussbutter** ⏱ 10 min: Form herausnehmen und den Brownie 10 Minuten in der Form ruhen lassen; in der Zeit zieht er nach und wird fester. 4½ EL Erdnussbutter (43 g) in einer kleinen Tasse 15–20 Sekunden bei 600 W in der Mikrowelle verflüssigen und mit einem Teelöffel in feinen Linien über den Brownie ziehen.
 
 ## Zeitablauf
 
@@ -87,9 +87,9 @@ Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes
 ## Varianten & Austausch
 
 - **Mehr Protein:** Skyr auf 350 g erhöhen und die Milch weglassen. (+13 kcal, +4,1 g Protein, −0,5 g Fett pro Portion)
-- **Weniger kcal:** Erdnussbutter weglassen. (−91 kcal, −3,9 g Protein, −7,4 g Fett pro Portion)
-- **Himbeer-Brownie:** 80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter, 2 Minuten länger backen. (−77 kcal, −3,4 g Protein, −7,2 g Fett pro Portion)
-- **Vanille statt Schoko:** Whey Protein Vanille statt Schoko, Backkakao weglassen, dafür 1 TL Zimt (2 g): wird ein Bananenbrot-Blondie. (−26 kcal, −1,4 g Protein, −1,2 g Fett pro Portion)
+- **Weniger kcal:** Erdnussbutter weglassen. (−131 kcal, −5,6 g Protein, −10,5 g Fett pro Portion)
+- **Himbeer-Brownie:** 80 g TK-Himbeeren gefroren auf den Teig streuen statt Erdnussbutter, 2 Minuten länger backen. (−116 kcal, −5,1 g Protein, −10,4 g Fett pro Portion)
+- **Vanille statt Schoko:** Whey Protein Vanille statt Schoko, Backkakao weglassen, dafür 1 TL Zimt (2 g): wird ein Bananenbrot-Blondie. (−26 kcal, −1,7 g Protein, −1,1 g Fett pro Portion)
 
 ## Tipps
 
@@ -104,16 +104,16 @@ Brownie am Backpapier aus der Form heben und mit einem scharfen, kurz in heißes
 | Banane geschält | 100 g | 94 | 1,1 | 0,2 | 21 |
 | Ei Gr. M ohne Schale | 120 g | 168 | 15,1 | 11,9 | 0,8 |
 | Skyr natur | 250 g | 158 | 27,5 | 0,5 | 10 |
-| Whey Protein Schoko | 40 g | 154 | 28,8 | 2,6 | 3,6 |
+| Whey Protein Schoko | 20 g | 77 | 14,4 | 1,3 | 1,8 |
 | Kakaopulver stark entölt | 20 g | 57 | 4 | 2,2 | 2,4 |
 | Backpulver | 4 g | 2 | 0 | 0 | 0,5 |
 | Salz | 0,5 g | 0 | 0 | 0 | 0 |
 | Milch 1,5 % Fett | 70 g | 33 | 2,4 | 1,1 | 3,4 |
 | Zartbitterschokolade 70 % | 15 g | 84 | 1,2 | 6,2 | 5,1 |
-| Erdnussbutter 100 % Erdnüsse | 30 g | 183 | 7,8 | 14,7 | 3,6 |
-| **Summe** | | **1.212** | **98** | **44,5** | **94,4** |
-| **Pro Portion (÷ 2)** | | **606** | **49** | **22,3** | **47,2** |
+| Erdnussbutter 100 % Erdnüsse | 43 g | 262 | 11,2 | 21,1 | 5,2 |
+| **Summe** | | **1.214** | **87** | **49,6** | **94,2** |
+| **Pro Portion (÷ 2)** | | **607** | **43,5** | **24,8** | **47,1** |
 
-**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.211 kcal gegenüber 1.212 kcal → Abweichung -0 % (bestanden, Grenze ±5 %).
+**Plausibilitätscheck:** 4 × Protein + 4 × KH + 9 × Fett + 2 × Ballaststoffe = 1.213 kcal gegenüber 1.214 kcal → Abweichung -0,1 % (bestanden, Grenze ±5 %).
 
 *Schätzwerte: Nährwerte sind berechnete Schätzwerte auf Basis von Durchschnittswerten und können je nach Produkt abweichen.*
