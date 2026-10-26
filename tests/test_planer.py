@@ -27,7 +27,7 @@ def breite_kcal(monkeypatch):
 def test_woche_und_einkaufstermine():
     kw, jahr, tage = planer.woche("KW-45-2026")
     assert (kw, jahr, tage[0], tage[-1]) == (45, 2026, D(2026, 11, 2), D(2026, 11, 8))
-    assert planer.einkaufstermine(tage) == [D(2026, 10, 31), D(2026, 11, 7)]
+    assert planer.einkaufstermine(tage) == [D(2026, 10, 31)]                 # ein Einkauf: Samstag davor
     with pytest.raises(ValueError):
         planer.woche("Woche 45")
 
@@ -114,3 +114,9 @@ def test_eigenes_minimalrezept_nur_warnungen(daten):
     assert e.ok and e.warnungen                                   # Korridor, Platzhalter, Umfang → nur Warnungen
     r["herkunft"]["art"] = "neu"
     assert not pruefen.pruefe_rezept(r, daten.db, "mein-test").ok  # für normale Rezepte bleiben es Fehler
+
+
+def test_zwei_einkaeufe_wenn_gewuenscht(monkeypatch):
+    monkeypatch.setattr(config, "EINKAUF_PRO_WOCHE", 2)
+    _, _, tage = planer.woche("KW-45-2026")
+    assert planer.einkaufstermine(tage) == [D(2026, 10, 31), D(2026, 11, 7)]

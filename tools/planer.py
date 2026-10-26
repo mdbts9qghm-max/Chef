@@ -44,9 +44,12 @@ def woche(name):
 
 
 def einkaufstermine(tage):
-    """Einkaufstag(e) aus dem Profil: letzter vor Wochenbeginn + alle innerhalb der Woche."""
+    """Einkaufstag(e) aus dem Profil: der letzte vor Wochenbeginn (Standard: ein Einkauf pro Woche),
+    bei einkauf.pro_woche > 1 zusätzlich alle innerhalb der Woche."""
     wt = [config.WOCHENTAGE.index(t["tag"]) for t in config.PROFIL["einkauf"]["tage"]]
     vorher = max(tage[0] - dt.timedelta(i) for i in range(1, 8) if (tage[0] - dt.timedelta(i)).weekday() in wt)
+    if config.EINKAUF_PRO_WOCHE <= 1:
+        return [vorher]
     return [vorher] + [d for d in tage if d.weekday() in wt]
 
 
@@ -96,8 +99,10 @@ class Daten:
         self.quelle = {i: nw.hauptproteinquelle(r, self.db) for i, r in self.rz.items()}
         self.sterne = {i: (r.get("bewertung") or {}).get("sterne") for i, r in self.rz.items()}
         self.zut = {i: [(z["zutat"], z["g"]) for z in nw.zutaten_eintraege(r)] for i, r in self.rz.items()}
-        bekannt = {v["zutat"]: v.get("g") for v in self.vorrat}
-        self.bestand = {z: (math.inf if g is None else g) for z, g in bekannt.items()}
+        self.bestand = bestand_ab(self.vorrat, None)
+
+    def bestand_ab(self, tag, woche=None):
+        return bestand_ab(self.vorrat, tag, woche)
 
     def preis(self, zutat):
         p = self.pk.get(zutat)
@@ -105,6 +110,11 @@ class Daten:
                 or p["haltbar_tage_offen"] >= config.VORRATSKAUF_AB_TAGEN):
             return None
         return p
+
+
+def bestand_ab(vorrat, tag, woche=None):
+    """Vorrat als {zutat: g} (inf = Menge unbekannt), ohne abgelaufene Reste und ohne Reste aus `woche` oder später."""
+    return {v["zutat"]: (math.inf if v.get("g") is None else v["g"]) for v in ek.gueltiger_vorrat(vorrat, tag, woche)}
 
 
 # --- Bewertung eines Kandidaten -------------------------------------------------------------
@@ -122,6 +132,7 @@ class Planer:
         self.fest = {k: (v[0] if isinstance(v, tuple) else v) for k, v in (fest or {}).items()}
         self.fest_faktor = {k: float(v[1]) for k, v in (fest or {}).items() if isinstance(v, tuple)}
         self.ziel = config.TAGESZIELE
+        self.bestand = self.d.bestand_ab(self.tage[0], name)
 
     # Mahlzeiten: (datum, slot) → dict(rezept, faktor, kochtag, rest_von, ladungen)
     def mahlzeiten(self, w):
@@ -166,7 +177,7 @@ class Planer:
             if p is None:
                 continue
             if t == 0:
-                g -= self.d.bestand.get(z, 0)
+                g -= self.bestand.get(z, 0)
             if g > 1e-6:
                 summe += math.ceil(g / p["packung_g"] - 1e-9) * p["preis"]
         return summe

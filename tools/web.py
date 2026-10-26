@@ -712,7 +712,8 @@ def plan_daten(plan, rezepte, db, pruefung):
                      "mahlzeiten": mahl, "extras": extras, "auswaerts": f"{config.SLOT_NAMEN.get(aus['mahlzeit'], '')} auswärts" if aus else None,
                      "summe": {k: round(summe[k], 1) for k in ("kcal", "protein", "fett", "kh")},
                      "erinnerungen": wp.erinnerungen_morgen(plan, i, rezepte, pruefung)})
-    return {"name": plan["name"], "kw": plan["kw"], "jahr": plan["jahr"], "tage": tage}
+    return {"name": plan["name"], "kw": plan["kw"], "jahr": plan["jahr"], "tage": tage,
+            "einkauf_tage": sorted(d.isoformat() for d in einkauf_tage)}
 
 
 def einkauf_seite(plan, rezepte, db):

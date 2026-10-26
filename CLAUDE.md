@@ -40,6 +40,7 @@ python3 tools/pruefen.py                 # alle Prüfungen (SPEC 12.1)
 python3 tools/generieren.py              # Markdown + Web-App erzeugen
 python3 tools/bestand.py                 # Soll/Ist gegen SPEC 5.1–5.3, schreibt rezeptplan.md
 python3 tools/planer.py KW-46-2026 [--budget 100] [--starts 24] [--behalten] [--einkauf JJJJ-MM-TT …]   # Woche automatisch planen (günstig, regelkonform; --einkauf z. B. für einen Starteinkauf)
+python3 tools/woche_auto.py [--heute JJJJ-MM-TT]   # Automatik (läuft Fr auf GitHub): nächste Woche planen, Reste übernehmen
 python3 tools/wochenplan.py KW-45-2026   # Wochenplan prüfen + wochenplaene/KW-45-2026.md erzeugen
 python3 tools/einkauf.py KW-45-2026      # Einkaufsliste (--reste-uebernehmen: Reste → vorrat.yaml)
 python3 -m pytest                        # Tests (SPEC 12.2), Playwright nutzt /opt/pw-browsers/chromium
@@ -55,6 +56,7 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 - **Import:** `importieren.py` → Screenshots ansehen / Text lesen / Link abrufen (Instagram blockiert oft → um Screenshot bitten, nicht raten) → Mengen mit `importieren.umrechnen` (Tabelle `config.UMRECHNUNG`) → Rezept nach Schema 6.4 + Standard 7 **in eigenen Worten**, an Makros angepasst, mit `inspiration` und `herkunft: {art: import, quelle, datum}` → `importieren.py --aehnlich <id>` (ab 0,65: fragen „Variante oder eigenes Rezept?“) → Unklares in **einer** Liste nachfragen → prüfen, generieren, `--erledigt`/`--link` → Zusammenfassung (kcal/Protein, offene Fragen).
 - **Kühlschrank:** fragen, was heute schon gegessen wurde → `kuehlschrank.py … --gegessen …` → Top 3 mit Faktor zeigen; nichts Passendes → neues Gericht vorschlagen; gefällt es, als Rezept mit `herkunft: {art: neu}` aufnehmen.
 - **Bewerten:** `bewerten.py` → bei Kommentaren („zu trocken“, „zu wenig süß“) Rezept anpassen und Makro-Unterschied vorher/nachher zeigen → prüfen, generieren.
+- **Automatik:** Workflow `woche-planen.yml` (Fr ~17–18 Uhr) → `woche_auto.py`: plant die nächste Woche (nur wenn noch kein Plan existiert), übernimmt die Reste der laufenden Woche in `vorrat.yaml` (`reste_uebernommen`, Reste mit `aus: KW-…` zählen nur für spätere Wochen, abgelaufene gar nicht), committet und veröffentlicht. **Vor jeder Änderung `git pull`** (GitHub committet selbst). Ein Einkauf pro Woche: Samstag vor Wochenbeginn (`einkauf.pro_woche: 1`).
 - **Woche planen:** Kurzfragen aus 8.1 (Wünsche, Auswärts-Termine) → Wünsche als `fest: true` bzw. `auswaerts` in die Plandatei → `planer.py KW-XX-JJJJ --behalten` (mehr `--starts` = günstiger, ca. 0,4 s pro Start) → Übersicht mit Tageswerten, Einkauf/Verbrauch/Reste → nach dem Einkauf `einkauf.py … --reste-uebernehmen`.
 - **Eigene Rezepte (App):** Formular `rezept-neu.html` → YAML mit `herkunft: {art: eigen}` → GitHub „new file“ → Workflow prüft (`pruefen.py`) und baut (`generieren.py`). Für `eigen` sind Text-/Umfangs-/Korridorregeln nur Warnungen (`pruefen.weich`), leere Abschnitte werden weggelassen. Löschen über GitHub „delete“. Kommt ein eigenes Rezept dazu, lokal `git pull` vor der nächsten Änderung.
 - **Startbestand:** SPEC 5 (genau 50, Verteilung) gilt nur für die Rezepte aus `rezeptplan.yaml`; Importe/neue Rezepte kommen dazu.
@@ -93,6 +95,8 @@ python3 tools/bewerten.py <id> <1–5> ["Kommentar"]   # nur die bewertung-Zeile
 - [x] **kcal-Obergrenze** (26.10.2026): pro Tag nie mehr als 2.275 kcal (Profil `kcal_ueber_ziel_max: 0`, `config.PLAN_KCAL_MIN/MAX`); Planer-Sicherheitsabstände verkleinert, 300 Starts; KW 44 (Einkauf ca. 153 €) und KW 45 (ca. 146 €) neu geplant; Faktor aus dem Plan auf Heute/Woche/Rezeptseite sichtbar; 148 Tests.
 
 - [x] **Protein moderat & Meal Prep deutlich** (26.10.2026): Protein über Whey/Quark/Skyr gesenkt (max. halbe Menge, Fleischpackungen gleich), Ausgleich mit Fett bei gleichen kcal; Ø Frühstück 49→44 g P / 20,5→23,4 g F, Hauptgericht 62→60 g P / 26,3→27,5 g F; `config.PROTEIN_ZIEL_PRO_MAHLZEIT`; App: Karte „Heute für später vorkochen“ bzw. „Heute nichts vorkochen“, Hinweise je Mahlzeit (doppelt kochen → 2. Portion …, ↻ Rest von …, vorbereitet am …); KW 44 (Brownie Mo fest, ca. 139 €) und KW 45 (ca. 129 €) neu; 150 Tests. **Regel:** laufende/vergangene Tage nur auf ausdrücklichen Wunsch umplanen.
+
+- [x] **Automatische Wochenplanung** (26.10.2026): `tools/woche_auto.py` + Workflow `woche-planen.yml` (freitags, auch manuell); ein Einkauf pro Woche (Sa davor); Reste automatisch in den Vorrat (einmal je Woche, mit Herkunftswoche, Ablauf beachtet); App: Einkauf-Tab = nächste anstehende Liste, „Heute einkaufen für KW …“ am Einkaufstag; KW 45 neu mit Resten aus KW 44 (Einkauf ca. 116 €); 157 Tests.
 
 ## Entscheidungen
 Siehe `SPEC.md`, Abschnitt 16.

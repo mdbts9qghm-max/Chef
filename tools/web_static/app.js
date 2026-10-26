@@ -113,7 +113,21 @@
       if (/Woche/.test(t)) a.setAttribute("href", basis + "woche/" + p.name + ".html");
       if (/Einkauf/.test(t) && D.einkaufslisten) a.setAttribute("href", basis + "einkauf/" + p.name + ".html");
     });
-    if (D.einkaufslisten) D.einkauf = "einkauf/" + p.name + ".html";
+    var e = naechsterEinkauf(heuteIso());
+    if (D.einkaufslisten && e) {
+      D.einkauf = "einkauf/" + e.plan.name + ".html";
+      Array.prototype.forEach.call(document.querySelectorAll("nav.tabs a"), function (a) {
+        if (/Einkauf/.test(a.textContent)) a.setAttribute("href", basis + D.einkauf);
+      });
+    }
+  }
+  // nächster anstehender Einkauf (heute oder später) → {plan, datum}; sonst null
+  function naechsterEinkauf(iso) {
+    var best = null;
+    D.plaene.forEach(function (p) { (p.einkauf_tage || []).forEach(function (d) {
+      if (d >= iso && (!best || d < best.datum)) best = { plan: p, datum: d };
+    }); });
+    return best;
   }
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -203,6 +217,13 @@
       ek.appendChild(ul); ziel.appendChild(ek);
     }
     ziel.appendChild(el("p", {}, [el("a", { href: basis + "woche/" + plan.name + ".html", text: "Ganzen Wochenplan ansehen →" })]));
+    var ne = naechsterEinkauf(iso);
+    if (ne && ne.datum === iso && D.einkaufslisten) {
+      ziel.insertBefore(el("a", { class: "knopf primaer einkauf-heute", href: basis + "einkauf/" + ne.plan.name + ".html",
+        text: "🛒 Heute einkaufen für KW " + ne.plan.kw + " → Einkaufsliste" }), ziel.children[2] || null);
+    } else if (!ne) {
+      ziel.appendChild(el("p", { class: "leise", text: "📅 Der nächste Wochenplan mit Einkaufsliste kommt automatisch Freitagabend." }));
+    }
     if (D.einkauf && budgetWert()) {
       ziel.appendChild(el("p", { class: "leise" }, [el("a", { href: basis + D.einkauf, text: "🛒 Einkaufsliste · Budget " + zahl(budgetWert(), 0) + " € →" })]));
     }

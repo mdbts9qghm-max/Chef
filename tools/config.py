@@ -126,6 +126,7 @@ EXTRAS_KATALOG = {
 
 # Einkauf: lange haltbare Produkte zählen als Vorratskauf (nicht ins Wochenbudget)
 VORRATSKAUF_AB_TAGEN = 180
+EINKAUF_PRO_WOCHE = PROFIL["einkauf"].get("pro_woche", 1)   # 1 = nur der Einkaufstag vor Wochenbeginn
 TK_ABTEILUNG = "Tiefkühl"
 
 # --- Startbestand (SPEC 5) -----------------------------------------------------

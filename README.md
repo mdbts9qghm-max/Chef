@@ -41,14 +41,14 @@ Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben (dafür brau
 - **Ausweichlösung:** Auf der Rezeptseite **„Für MacroFactor kopieren“** tippen – kopiert eine Zutat pro Zeile (Gramm + Name) – und in MacroFactor einfügen.
 - **Nach Gramm loggen:** Fertiges Gericht wiegen und als Gesamtgewicht eintragen. Die Rezeptseite nennt das geschätzte Gargewicht als Orientierung.
 
-## Wochenrhythmus
-1. **Samstag:** „Woche planen“ → der Planer stellt eine regelkonforme, möglichst günstige Woche zusammen (gleiches Frühstück/gleicher Snack darf 2× vorkommen, Reste werden mitgeplant) → Einkaufsliste → einkaufen (nur samstags).
-   Wünsche (z. B. „Sonntag Marry Me Chicken“) bleiben fest stehen, der Rest wird darum herum geplant.
-2. **Meal Prep** am letzten freien Tag vor der Tagschicht (steht im Plan, mit Zeitplan).
-3. **Tagschicht (7–19 Uhr):** Boxen für Frühstück + Mittag · **Nachtschicht (19–7 Uhr):** Box für das Abendessen (Mikrowelle).
-4. Eingefrorenes Fleisch/Fisch: Auftau-Erinnerung erscheint am Vortag unter **Heute**.
-5. Nach dem Kochen bewerten, damit der Planer lernt, was gut ankommt.
-6. **Reste übernehmen:** Angebrochene Packungen wandern in den Vorrat und werden in der nächsten Woche zuerst verplant – so sinkt der Einkauf Richtung Verbrauch. Die Einkaufsliste zeigt beides: *Einkauf* und *davon verbraucht*.
+## So läuft eine Woche (automatisch)
+1. **Freitagabend:** GitHub plant automatisch die nächste Woche (Mo–So) aus der Rezeptliste – passend zu deinen Schichten, max. 2.275 kcal pro Tag, genug Protein und Fett, möglichst günstig – und erstellt die **Einkaufsliste**. In der App erscheint beides von selbst.
+2. **Samstag:** einkaufen – die App zeigt unter **Heute** „🛒 Heute einkaufen für KW …“, der Tab **Einkauf** zeigt immer die nächste anstehende Liste.
+3. **Unter der Woche:** **Heute** zeigt die Mahlzeiten und klar, ob du **heute etwas für später vorkochst** (🍱 doppelt kochen → 2. Portion …) oder nicht.
+4. Fleisch/Fisch für das Wochenende wird eingefroren; die Auftau-Erinnerung kommt am Vortag.
+5. **Reste:** Was laut Plan übrig bleibt (angebrochene Packungen), wandert automatisch in den Vorrat und wird in der nächsten Woche zuerst verplant – so wird der Einkauf günstiger.
+6. **Wünsche** (z. B. „Sonntag Marry Me Chicken“, „Mittwoch auswärts“) schreibst du Claude **vor Freitag** – dann wird die Woche mit dir abgestimmt und die Automatik lässt sie stehen.
+7. Nach dem Kochen bewerten, damit der Planer lernt, was gut ankommt.
 
 ## Befehle im Alltag (einfach an Claude schreiben)
 | Befehl | Beispiel | Was passiert |

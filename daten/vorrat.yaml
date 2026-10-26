@@ -1,17 +1,230 @@
-# Vorrat zu Hause. g: Menge in Gramm, oder null = „vorhanden, Menge unbekannt“ (deckt den Wochenbedarf).
-# haltbar_bis: optional (z. B. für Reste angebrochener Packungen aus der Vorwoche).
-# Stand: 24.10.2026 (Onboarding: Öle & Saucen, Backen & Trockenwaren vorhanden)
+# Vorrat zu Hause. g: Menge in Gramm, oder null = „vorhanden, Menge unbekannt“.
 vorrat:
-  - {zutat: Rapsöl, g: null}
-  - {zutat: Olivenöl, g: null}
-  - {zutat: Sojasauce, g: null}
-  - {zutat: Senf mittelscharf, g: null}
-  - {zutat: Tomatenmark, g: null}
-  - {zutat: Honig, g: null}
-  - {zutat: Backpulver, g: null}
-  - {zutat: Weizenmehl Type 405, g: null}
-  - {zutat: Speisestärke, g: null}
-  - {zutat: Kakaopulver stark entölt, g: null}
-  - {zutat: Haferflocken zart, g: null}
-  - {zutat: Basmatireis ungekocht, g: null}
-  - {zutat: Hartweizennudeln ungekocht, g: null}
+- zutat: Rapsöl
+  g: null
+- zutat: Olivenöl
+  g: null
+- zutat: Sojasauce
+  g: null
+- zutat: Senf mittelscharf
+  g: null
+- zutat: Tomatenmark
+  g: null
+- zutat: Honig
+  g: null
+- zutat: Backpulver
+  g: null
+- zutat: Weizenmehl Type 405
+  g: null
+- zutat: Speisestärke
+  g: null
+- zutat: Kakaopulver stark entölt
+  g: null
+- zutat: Haferflocken zart
+  g: null
+- zutat: Basmatireis ungekocht
+  g: null
+- zutat: Hartweizennudeln ungekocht
+  g: null
+- zutat: Babyspinat
+  g: 125
+  haltbar_bis: '2026-11-01'
+  aus: KW-44-2026
+- zutat: Banane geschält
+  g: 310
+  haltbar_bis: '2026-11-03'
+  aus: KW-44-2026
+- zutat: Chiliflocken
+  g: 34
+  haltbar_bis: '2027-10-31'
+  aus: KW-44-2026
+- zutat: Currypulver
+  g: 38
+  haltbar_bis: '2027-10-29'
+  aus: KW-44-2026
+- zutat: Ei Gr. M ohne Schale
+  g: 60
+  haltbar_bis: '2026-11-21'
+  aus: KW-44-2026
+- zutat: Eiklar flüssig
+  g: 45
+  haltbar_bis: '2026-11-03'
+  aus: KW-44-2026
+- zutat: Erdnussbutter 100 % Erdnüsse
+  g: 204
+  haltbar_bis: '2027-01-24'
+  aus: KW-44-2026
+- zutat: Erythrit
+  g: 440
+  haltbar_bis: '2027-10-30'
+  aus: KW-44-2026
+- zutat: Feta 45 % Fett i. Tr.
+  g: 100
+  haltbar_bis: '2026-10-30'
+  aus: KW-44-2026
+- zutat: Frühlingszwiebeln
+  g: 60
+  haltbar_bis: '2026-11-05'
+  aus: KW-44-2026
+- zutat: Garam Masala
+  g: 32
+  haltbar_bis: '2027-10-29'
+  aus: KW-44-2026
+- zutat: Heidelbeeren TK
+  g: 20
+  haltbar_bis: '2027-01-29'
+  aus: KW-44-2026
+- zutat: Himbeeren TK
+  g: 380
+  haltbar_bis: '2027-01-29'
+  aus: KW-44-2026
+- zutat: Ingwer frisch
+  g: 48
+  haltbar_bis: '2026-11-12'
+  aus: KW-44-2026
+- zutat: Kabeljaufilet roh
+  g: 185
+  haltbar_bis: '2027-01-27'
+  aus: KW-44-2026
+- zutat: Kichererbsen abgetropft
+  g: 60
+  haltbar_bis: '2026-10-31'
+  aus: KW-44-2026
+- zutat: Kidneybohnen abgetropft
+  g: 100
+  haltbar_bis: '2026-11-03'
+  aus: KW-44-2026
+- zutat: Knoblauch
+  g: 102
+  haltbar_bis: '2026-11-30'
+  aus: KW-44-2026
+- zutat: Kokosmilch light
+  g: 100
+  haltbar_bis: '2026-11-01'
+  aus: KW-44-2026
+- zutat: Kreuzkümmel gemahlen
+  g: 30
+  haltbar_bis: '2027-10-31'
+  aus: KW-44-2026
+- zutat: Lachsfilet ohne Haut roh
+  g: 125
+  haltbar_bis: '2027-01-29'
+  aus: KW-44-2026
+- zutat: Lasagneplatten ungekocht
+  g: 390
+  haltbar_bis: '2027-10-30'
+  aus: KW-44-2026
+- zutat: Magerquark
+  g: 380
+  haltbar_bis: '2026-11-04'
+  aus: KW-44-2026
+- zutat: Mais abgetropft
+  g: 195
+  haltbar_bis: '2026-11-03'
+  aus: KW-44-2026
+- zutat: Mandeln gehobelt
+  g: 121
+  haltbar_bis: '2027-01-27'
+  aus: KW-44-2026
+- zutat: Milch 1,5 % Fett
+  g: 430
+  haltbar_bis: '2026-11-04'
+  aus: KW-44-2026
+- zutat: Mozzarella light
+  g: 25
+  haltbar_bis: '2026-11-01'
+  aus: KW-44-2026
+- zutat: Oregano getrocknet
+  g: 13
+  haltbar_bis: '2027-10-30'
+  aus: KW-44-2026
+- zutat: Paprika rot
+  g: 75
+  haltbar_bis: '2026-10-31'
+  aus: KW-44-2026
+- zutat: Paprikapulver edelsüß
+  g: 38
+  haltbar_bis: '2027-10-31'
+  aus: KW-44-2026
+- zutat: Parmesan gerieben
+  g: 18
+  haltbar_bis: '2026-11-13'
+  aus: KW-44-2026
+- zutat: Petersilie frisch
+  g: 22
+  haltbar_bis: '2026-10-30'
+  aus: KW-44-2026
+- zutat: Pfeffer schwarz gemahlen
+  g: 50
+  haltbar_bis: '2027-10-30'
+  aus: KW-44-2026
+- zutat: Putenhackfleisch roh
+  g: 50
+  haltbar_bis: '2026-11-01'
+  aus: KW-44-2026
+- zutat: Reibekäse light
+  g: 95
+  haltbar_bis: '2026-11-05'
+  aus: KW-44-2026
+- zutat: Rinderhackfleisch 5 % Fett roh
+  g: 50
+  haltbar_bis: '2026-10-31'
+  aus: KW-44-2026
+- zutat: Salatgurke
+  g: 25
+  haltbar_bis: '2026-11-04'
+  aus: KW-44-2026
+- zutat: Salz
+  g: 476
+  haltbar_bis: '2054-03-17'
+  aus: KW-44-2026
+- zutat: Sesamöl geröstet
+  g: 190
+  haltbar_bis: '2027-04-29'
+  aus: KW-44-2026
+- zutat: Skyr natur
+  g: 10
+  haltbar_bis: '2026-11-04'
+  aus: KW-44-2026
+- zutat: Sriracha
+  g: 132
+  haltbar_bis: '2027-04-29'
+  aus: KW-44-2026
+- zutat: Tomaten
+  g: 350
+  haltbar_bis: '2026-11-05'
+  aus: KW-44-2026
+- zutat: Vollkorntoast
+  g: 100
+  haltbar_bis: '2026-10-31'
+  aus: KW-44-2026
+- zutat: Weizen-Tortilla-Wraps
+  g: 184
+  haltbar_bis: '2026-11-05'
+  aus: KW-44-2026
+- zutat: Whey Protein Schoko
+  g: 770
+  haltbar_bis: '2027-10-31'
+  aus: KW-44-2026
+- zutat: Whey Protein Vanille
+  g: 800
+  haltbar_bis: '2027-10-31'
+  aus: KW-44-2026
+- zutat: Zartbitterschokolade 70 %
+  g: 95
+  haltbar_bis: '2027-04-29'
+  aus: KW-44-2026
+- zutat: Zimt gemahlen
+  g: 44
+  haltbar_bis: '2027-10-29'
+  aus: KW-44-2026
+- zutat: Zitronensaft
+  g: 138
+  haltbar_bis: '2026-12-30'
+  aus: KW-44-2026
+- zutat: Zwiebel
+  g: 525
+  haltbar_bis: '2026-11-29'
+  aus: KW-44-2026
+reste_uebernommen:
+- KW-44-2026

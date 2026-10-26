@@ -375,3 +375,24 @@ def test_meal_prep_deutlich(seite, server, db):
     assert "Heute nichts vorkochen" in seite.inner_text(".vorkochen-karte")
     seite.goto(server + "woche/KW-44-2026.html")
     assert seite.locator(".vorkochen.ja").count() >= 1 and seite.locator(".vorkochen.nein").count() >= 1
+
+
+def test_workflow_woche_planen():
+    wf = yaml.safe_load((config.WURZEL / ".github" / "workflows" / "woche-planen.yml").read_text(encoding="utf-8"))
+    assert wf[True]["schedule"][0]["cron"].split()[4] == "5"               # freitags
+    assert "workflow_dispatch" in wf[True]
+    assert wf["permissions"] == {"contents": "write", "pages": "write", "id-token": "write"}
+    schritte = wf["jobs"]["planen"]["steps"]
+    text = [s.get("run", "") + s.get("uses", "") for s in schritte]
+    reihenfolge = ["woche_auto.py", "pruefen.py", "generieren.py", "git push", "upload-pages-artifact", "deploy-pages"]
+    pos = [next(i for i, t in enumerate(text) if r in t) for r in reihenfolge]
+    assert pos == sorted(pos)
+
+
+def test_einkauf_tab_zeigt_naechsten_einkauf(seite, server):
+    seite.goto(server + "index.html?datum=2026-10-30")                  # Fr in KW 44 → Einkauf Sa für KW 45
+    assert seite.locator("nav.tabs a", has_text="Einkauf").get_attribute("href").endswith("einkauf/KW-45-2026.html")
+    assert seite.locator("nav.tabs a", has_text="Woche").get_attribute("href").endswith("woche/KW-44-2026.html")
+    seite.goto(server + "index.html?datum=2026-10-31")
+    assert "Heute einkaufen für KW 45" in seite.inner_text("#heute")
+    assert seite.fehler == []

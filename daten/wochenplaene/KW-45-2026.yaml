@@ -1,52 +1,51 @@
 # Wochenplan KW 45/2026 (Mo 02.11. – So 08.11.)
 # Schichten (aus profil.yaml): Mo Nacht · Di frei · Mi frei · Do frei · Fr Tag · Sa Nacht · So frei
 # Meal-Prep-Tag: Do 05.11. (Vorbereitung für die Tagschicht)
-# Erstellt mit tools/planer.py · Einkauf ca. 128,51 € (Budget 100 €)
+# Erstellt mit tools/planer.py · Einkauf ca. 116,09 € (Budget 100 €)
 kw: 45
 jahr: 2026
 einkauf:
   - {tag: Sa, datum: 2026-10-31, art: gross}
-  - {tag: Sa, datum: 2026-11-07, art: gross}
 tage:
   - datum: 2026-11-02          # Nachtschicht 19:00–07:00
-    fruehstueck: {rezept: protein-milchreis, kochen: true}
-    mittag: {rezept: korean-beef-bowl, kochen: true, notiz: "vor der Schicht"}
-    abend: {rezept: lachs-reis-bowl, kochen: true, ladungen: 2, box: true, notiz: "nachmittags mitkochen, Box für die Nacht; zweite Ladung = Mittag Di"}
-    snack: {rezept: protein-mousse-au-chocolat, kochen: true, ladungen: 2, box: true}
+    fruehstueck: {rezept: fruehstuecks-brownie, kochen: true, faktor: 0.75}
+    mittag: {rezept: kabeljau-curry, kochen: true, faktor: 1.25, notiz: "vor der Schicht"}
+    abend: {rezept: wrap-hack-putenhack, kochen: true, faktor: 1.25, ladungen: 2, box: true, notiz: "nachmittags mitkochen, Box für die Nacht; zweite Ladung = Mittag Di"}
+    snack: {rezept: erdnuss-kakao-protein-balls, kochen: true, ladungen: 2, box: true}
     auswaerts: null
   - datum: 2026-11-03          # frei
-    fruehstueck: {rezept: heidelbeer-protein-muffins, kochen: true, faktor: 1.25}
-    mittag: {rezept: lachs-reis-bowl, rest_von: 2026-11-02/abend}
-    abend: {rezept: keema-curry-pute, kochen: true, faktor: 0.75, ladungen: 2, einfrieren: true, notiz: "zweite Ladung = Mittag Mi"}
-    snack: {rezept: protein-mousse-au-chocolat, rest_von: 2026-11-02/snack}
+    fruehstueck: {rezept: protein-french-toast, kochen: true}
+    mittag: {rezept: wrap-hack-putenhack, rest_von: 2026-11-02/abend, faktor: 1.25}
+    abend: {rezept: lachs-reis-bowl, kochen: true, faktor: 0.75, ladungen: 2, notiz: "zweite Ladung = Mittag Mi"}
+    snack: {rezept: quarkcreme-banane-zimt, kochen: true}
     auswaerts: null
   - datum: 2026-11-04          # frei
-    fruehstueck: {rezept: protein-milchreis, kochen: true, faktor: 1.5}
-    mittag: {rezept: keema-curry-pute, rest_von: 2026-11-03/abend, faktor: 0.75}
-    abend: {rezept: ofen-lachs-mediterran, kochen: true, faktor: 0.75}
-    snack: {rezept: quarkcreme-banane-zimt, kochen: true}
+    fruehstueck: {rezept: protein-joghurt-bowl, kochen: true, faktor: 1.25}
+    mittag: {rezept: lachs-reis-bowl, rest_von: 2026-11-03/abend, faktor: 0.75}
+    abend: {rezept: putenschnitzel-airfryer, kochen: true}
+    snack: {rezept: skyr-cheesecake-im-glas, kochen: true, ladungen: 2}
     auswaerts: null
   - datum: 2026-11-05          # frei
-    fruehstueck: {rezept: protein-waffeln, kochen: true, faktor: 1.25, ladungen: 2}
-    mittag: {rezept: gyros-bowl, kochen: true, faktor: 1.25, ladungen: 2, einfrieren: true, notiz: "zweite Ladung = Abend Fr"}
-    abend: {rezept: gnocchi-al-forno, kochen: true, faktor: 0.75, ladungen: 2, einfrieren: true, notiz: "zweite Ladung = Mittag Fr"}
-    snack: null
+    fruehstueck: {rezept: protein-crepes, kochen: true, faktor: 0.75}
+    mittag: {rezept: keema-curry-pute, kochen: true, ladungen: 2, einfrieren: true, notiz: "zweite Ladung = Abend Fr"}
+    abend: {rezept: shakshuka-feta, kochen: true, ladungen: 2, notiz: "zweite Ladung = Mittag Fr"}
+    snack: {rezept: skyr-cheesecake-im-glas, rest_von: 2026-11-04/snack}
     auswaerts: null
   - datum: 2026-11-06          # Tagschicht 07:00–19:00
-    fruehstueck: {rezept: protein-waffeln, rest_von: 2026-11-05/fruehstueck, faktor: 1.25, box: true}
-    mittag: {rezept: gnocchi-al-forno, rest_von: 2026-11-05/abend, faktor: 0.75, box: true}
-    abend: {rezept: gyros-bowl, rest_von: 2026-11-05/mittag, faktor: 1.25}
-    snack: null
+    fruehstueck: {rezept: overnight-oats-cheesecake, kochen: true, faktor: 0.75, gekocht_am: 2026-11-05, box: true}
+    mittag: {rezept: shakshuka-feta, rest_von: 2026-11-05/abend, box: true}
+    abend: {rezept: keema-curry-pute, rest_von: 2026-11-05/mittag}
+    snack: {rezept: erdnuss-kakao-protein-balls, rest_von: 2026-11-02/snack, box: true}
     auswaerts: null
   - datum: 2026-11-07          # Nachtschicht 19:00–07:00
-    fruehstueck: {rezept: protein-bananenbrot, kochen: true, faktor: 1.5}
-    mittag: {rezept: koefte-reis, kochen: true, faktor: 1.25, notiz: "vor der Schicht"}
-    abend: {rezept: shakshuka-feta, kochen: true, faktor: 0.75, ladungen: 2, box: true, notiz: "nachmittags mitkochen, Box für die Nacht; zweite Ladung = Mittag So"}
-    snack: null
+    fruehstueck: {rezept: protein-kaiserschmarrn, kochen: true, faktor: 0.75}
+    mittag: {rezept: korean-beef-bowl, kochen: true, faktor: 1.5, einfrieren: true, notiz: "vor der Schicht"}
+    abend: {rezept: smash-burger, kochen: true, faktor: 0.75, ladungen: 2, einfrieren: true, box: true, notiz: "nachmittags mitkochen, Box für die Nacht; zweite Ladung = Mittag So"}
+    snack: {rezept: quarkcreme-banane-zimt, kochen: true, box: true}
     auswaerts: null
   - datum: 2026-11-08          # frei
-    fruehstueck: {rezept: quark-auflauf-kirschen, kochen: true, faktor: 1.5}
-    mittag: {rezept: shakshuka-feta, rest_von: 2026-11-07/abend, faktor: 0.75}
-    abend: {rezept: frikadellen-kartoffelpueree, kochen: true, faktor: 0.75}
-    snack: {rezept: quarkcreme-banane-zimt, kochen: true}
+    fruehstueck: {rezept: protein-kaiserschmarrn, kochen: true, faktor: 1.5}
+    mittag: {rezept: smash-burger, rest_von: 2026-11-07/abend, faktor: 0.75}
+    abend: {rezept: haehnchen-piccata, kochen: true, faktor: 0.75, einfrieren: true}
+    snack: {rezept: protein-mousse-au-chocolat, kochen: true}
     auswaerts: null

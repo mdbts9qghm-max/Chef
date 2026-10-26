@@ -1,0 +1,55 @@
+# Plant jeden Freitag automatisch die nächste Woche (Mo–So) aus der Rezeptliste, erzeugt die Einkaufsliste
+# für den Samstagseinkauf, committet das Ergebnis und veröffentlicht die Web-App.
+# Ein schon vorhandener Plan (z. B. mit Claude abgestimmt) wird nie überschrieben.
+name: Woche planen
+
+on:
+  schedule:
+    - cron: "17 16 * * 5"        # Freitag 16:17 UTC = 17:17 (Winterzeit) bzw. 18:17 (Sommerzeit) in Berlin
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: woche-planen
+  cancel-in-progress: false
+
+jobs:
+  planen:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Abhängigkeiten
+        run: pip install "pyyaml>=6.0"
+      - name: Nächste Woche planen (Plan + Einkaufsliste)
+        run: python3 tools/woche_auto.py --starts 200
+      - name: Rezepte und Pläne prüfen
+        run: python3 tools/pruefen.py
+      - name: Web-App neu bauen
+        run: python3 tools/generieren.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "Wochenplaner"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nichts Neues."
+          else
+            git commit -m "Wochenplan $(ls daten/wochenplaene | sort -t- -k3,3n -k2,2n | tail -1 | sed 's/.yaml//') automatisch"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4

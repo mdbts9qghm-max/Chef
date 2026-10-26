@@ -62,6 +62,7 @@ ausstattung:
 einkauf:
   supermaerkte: [REWE, Lidl/Aldi]
   tage: [{tag: Sa, art: gross}]           # 1× pro Woche
+  pro_woche: 1                            # ein Einkauf je Wochenplan: Samstag vor Wochenbeginn (Entscheidung 26.10.2026)
   budget_eur_pro_woche: 100
   # Reihenfolge der Abteilungen in der Einkaufsliste – an den eigenen Laden anpassbar
   abteilungen:

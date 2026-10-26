@@ -27,6 +27,34 @@ def lade_vorrat(pfad=config.VORRAT_YAML):
         return (yaml.safe_load(f) or {}).get("vorrat") or []
 
 
+def kw_schluessel(name):
+    """„KW-45-2026“ → (2026, 45) zum Vergleichen von Wochen."""
+    _, kw, jahr = name.split("-")
+    return int(jahr), int(kw)
+
+
+def gueltiger_vorrat(vorrat, ab, woche=None):
+    """Vorrat für eine Woche: ohne Reste, die vor `ab` ablaufen, und ohne Reste aus dieser oder späteren Wochen
+    (die entstehen erst durch deren Einkauf)."""
+    out = []
+    for v in vorrat:
+        if ab is not None and v.get("haltbar_bis") and wp.datum(v["haltbar_bis"]) < ab:
+            continue
+        if woche and v.get("aus") and kw_schluessel(v["aus"]) >= kw_schluessel(woche):
+            continue
+        out.append(v)
+    return out
+
+
+def lade_vorrat_datei(pfad=config.VORRAT_YAML):
+    """Ganze vorrat.yaml (vorrat + reste_uebernommen)."""
+    if not Path(pfad).exists():
+        return {"vorrat": [], "reste_uebernommen": []}
+    with open(pfad, encoding="utf-8") as f:
+        d = yaml.safe_load(f) or {}
+    return {"vorrat": d.get("vorrat") or [], "reste_uebernommen": d.get("reste_uebernommen") or []}
+
+
 # --- Bedarf ------------------------------------------------------------------------
 @dataclass
 class Nutzung:
@@ -115,6 +143,7 @@ def berechne(plan, rezepte, db, packungen=None, vorrat=None):
     """Listen je Einkaufstermin, Restbestand nach der Woche, Kontrollwerte."""
     packungen = packungen if packungen is not None else wp.lade_packungen()
     vorrat = vorrat if vorrat is not None else lade_vorrat()
+    vorrat = gueltiger_vorrat(vorrat, min(wp.datum(t["datum"]) for t in plan["tage"]), plan.get("name"))
     bestand = {}            # zutat → g (math.inf = vorhanden, Menge unbekannt)
     for v in vorrat:
         bestand[v["zutat"]] = math.inf if v.get("g") is None else bestand.get(v["zutat"], 0) + v["g"]
@@ -324,9 +353,12 @@ def rest_hinweis(zutat, r, db):
     return (", " + ", ".join(teile)) if teile else ""
 
 
-def reste_uebernehmen(reste, pfad=config.VORRAT_YAML):
-    """Reste nach der Woche in vorrat.yaml eintragen (Mengen addieren, Haltbarkeit setzen)."""
-    daten = {"vorrat": lade_vorrat(pfad)}
+def reste_uebernehmen(reste, pfad=config.VORRAT_YAML, woche=None):
+    """Reste nach der Woche in vorrat.yaml eintragen (Mengen setzen, Haltbarkeit setzen).
+    Mit `woche` wird vermerkt, dass diese Woche übernommen ist (kein zweites Mal) → False, wenn schon geschehen."""
+    daten = lade_vorrat_datei(pfad)
+    if woche and woche in daten["reste_uebernommen"]:
+        return False
     idx = {v["zutat"]: v for v in daten["vorrat"]}
     for zutat, r in reste.items():
         if zutat in idx and idx[zutat].get("g") is None:
@@ -337,9 +369,16 @@ def reste_uebernehmen(reste, pfad=config.VORRAT_YAML):
         eintrag["g"] = round(r["g"])
         if r["haltbar_bis"]:
             eintrag["haltbar_bis"] = r["haltbar_bis"].isoformat()
+        if woche:
+            eintrag["aus"] = woche              # Rest aus dieser Woche (zählt erst für spätere Wochen)
+    if woche:
+        daten["reste_uebernommen"].append(woche)
+    if not daten["reste_uebernommen"]:
+        del daten["reste_uebernommen"]
     with open(pfad, "w", encoding="utf-8") as f:
         f.write("# Vorrat zu Hause. g: Menge in Gramm, oder null = „vorhanden, Menge unbekannt“.\n")
         yaml.safe_dump(daten, f, allow_unicode=True, sort_keys=False)
+    return True
 
 
 def main(argv):
@@ -355,8 +394,10 @@ def main(argv):
     k = kontrolle(plan, rezepte, listen)
     print(f"{ziel.relative_to(config.WURZEL)} geschrieben · Kontrollrechnung {'stimmt' if k['stimmt'] else 'STIMMT NICHT'}")
     if "--reste-uebernehmen" in argv:
-        reste_uebernehmen(reste)
-        print(f"{len(reste)} Reste in daten/vorrat.yaml übernommen.")
+        if reste_uebernehmen(reste, woche=plan["name"]):
+            print(f"{len(reste)} Reste in daten/vorrat.yaml übernommen.")
+        else:
+            print(f"Reste aus {plan['name']} waren schon übernommen – nichts geändert.")
     return 0 if k["stimmt"] else 1
 
 
