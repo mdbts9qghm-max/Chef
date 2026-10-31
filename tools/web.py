@@ -10,6 +10,7 @@ import re
 import shutil
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config  # noqa: E402
@@ -124,7 +125,8 @@ def woche_seite(pd, md, einkauf_link, nachbarn):
     n = len(tage)
     mittel = {k: sum(t["summe"][k] for t in tage) / n for k in ("kcal", "protein", "fett", "kh")}
     kopf = (f'<div class="wochenleiste" role="navigation" aria-label="Tage">{"".join(leiste)}</div>{legende}'
-            f'<div class="knopfreihe">{einkauf_link}{navi}</div>'
+            f'<div class="knopfreihe">{einkauf_link}<a class="knopf" href="../baukasten.html?woche={pd["name"]}">✏️ Bearbeiten</a>'
+            f'{navi}</div>'
             f'<section class="karte"><h2>Woche im Überblick</h2>'
             f'<p class="leise">Ø pro Tag: {zahl(mittel["kcal"], 0)} kcal · {zahl(mittel["protein"], 0)} g Protein · '
             f'{zahl(mittel["fett"], 0)} g Fett · {zahl(mittel["kh"], 0)} g KH</p>'
@@ -331,7 +333,7 @@ def liste_html(eintraege, r, nummeriert=False):
     return f"<{tag}>" + "".join(f"<li>{text_html(t, r)}</li>" for t in eintraege) + f"</{tag}>"
 
 
-def rezept_seite(r, db, basis_url=""):
+def rezept_seite(r, db, basis_url="", vorschlag=False):
     erg = nw.rezept_naehrwerte(r, db)
     p = erg["portion"]
     kats = nw.kategorien(r, p)
@@ -476,7 +478,10 @@ Orientierung: {esc(gen.portion_text(erg['gargewicht_gesamt']))} gesamt, <strong>
     kopf_extra = teilen_kopf(r, daten) + f'<script type="application/ld+json">\n{ld}\n</script>\n'
     if sterne is not None and sterne <= 2:
         out.insert(0, '<p class="hinweis">Dieses Rezept ist aussortiert (1–2 Sterne) und wird nicht mehr geplant.</p>')
-    if config.PROFIL.get("github_repo"):
+    if vorschlag:
+        out.insert(0, '<p class="hinweis vorschlag-banner">✨ <strong>Vorschlag</strong> – noch nicht im Rezeptbuch. '
+                      '<a href="../vorschlaege.html">Aufnehmen oder verwerfen</a></p>')
+    elif config.PROFIL.get("github_repo"):
         out.append(f'<div class="knopfreihe"><button type="button" class="gefahr" id="loeschen" data-id="{r["id"]}" '
                    f'data-name="{esc(r["name"])}">🗑 Rezept löschen</button></div>')
     return r["name"], "\n".join(out), kopf_extra
@@ -547,7 +552,7 @@ placeholder="Reis kochen.&#10;Hähnchen würfeln und in Öl auf Stufe 7 von 9 br
 </form>"""
 
 
-def rezeptbuch_seite(rezepte, db):
+def rezeptbuch_seite(rezepte, db, vorschlaege=0):
     karten = []
     for r in sorted(rezepte.values(), key=lambda r: r["name"]):
         p = nw.rezept_naehrwerte(r, db)["portion"]
@@ -570,7 +575,9 @@ def rezeptbuch_seite(rezepte, db):
             + ('<li class="chip grau">✍️ eigenes</li>' if gen.ist_eigen(r) else "") + "</ul></a></li>")
     opt = lambda werte: "".join(f'<option value="{esc(w)}">{esc(t)}</option>' for w, t in werte)
     kuechen = sorted({r["kueche"] for r in rezepte.values()})
-    neu_knopf = ('<div class="knopfreihe"><a class="knopf primaer" href="rezept-neu.html">＋ Eigenes Rezept</a></div>'
+    neu_knopf = ('<div class="knopfreihe">'
+                 + (f'<a class="knopf vorschlag-knopf" href="vorschlaege.html">✨ Neue Vorschläge ({vorschlaege})</a>' if vorschlaege else "")
+                 + '<a class="knopf primaer" href="rezept-neu.html">＋ Eigenes Rezept</a></div>'
                  if config.PROFIL.get("github_repo") else "")
     inhalt = neu_knopf + f"""<form id="filter" class="filter" role="search">
 <input type="search" name="suche" placeholder="Suchen: Name oder Zutat" aria-label="Rezepte durchsuchen">
@@ -843,13 +850,141 @@ def precache_liste(wurzel=WEB):
     return sorted(p.relative_to(wurzel).as_posix() for p in wurzel.rglob("*") if p.is_file() and p.name != "sw.js")
 
 
+# --- Baukasten: Woche in der App selbst zusammenstellen -----------------------------------------
+def json_wert(x):
+    return x.isoformat() if isinstance(x, (dt.date, dt.datetime)) else str(x)
+
+
+def baukasten_rezept(r, db, pk):
+    p = nw.rezept_naehrwerte(r, db)["portion"]
+    return {"name": r["name"], "mahlzeit": r["mahlzeit"], "geschmack": r["geschmack"], "kueche": r["kueche"],
+            "quelle": nw.hauptproteinquelle(r, db), "sterne": (r.get("bewertung") or {}).get("sterne"),
+            "tage": r["aufbewahrung"].get("kuehlschrank_tage") or 0, "zeit": nw.gesamtzeit(r),
+            "kategorien": nw.kategorien(r, p), "eigen": gen.ist_eigen(r),
+            "p": {k: round(p[k], 4) for k in ("kcal", "protein", "fett", "kh", "zucker")},
+            # Einkaufsmengen wie einkauf.nutzungen (ohne „nicht mitgerechnet“ und ohne Wasser)
+            "zutaten": [[z["zutat"], z["g"]] for z in nw.zutaten_eintraege(r)
+                        if not z.get("nicht_mitgerechnet") and z["zutat"] not in config.NICHT_EINKAUFEN],
+            "frische": [list(x) for x in wp.frische_typen(r, db, pk)],
+            "wartezeit": r["zeit"].get("wartezeit", 0)}
+
+
+def baukasten_wochen(plaene, rezepte, db, heute=None):
+    """Wochen, die die App zusammenstellen kann: Tage, Schichten, Einkaufstermin(e) und Vorrat zu Wochenbeginn
+    (gültiger Vorrat + Reste der Vorwoche laut Plan, falls noch nicht übernommen – wie woche_auto/eingang)."""
+    import planer
+    import woche_auto
+    heute = heute or woche_auto.heute_berlin()
+    vorrat = ek.lade_vorrat_datei()
+    nach_name = {pl["name"]: pl for pl in plaene}
+    montag = heute - dt.timedelta(days=heute.weekday())
+    out = []
+    for i in range(-config.BAUKASTEN_WOCHEN_VOR, config.BAUKASTEN_WOCHEN_NACH + 1):
+        mo = montag + dt.timedelta(weeks=i)
+        jahr, kw, _ = mo.isocalendar()
+        name = f"KW-{kw:02d}-{jahr}"
+        _, _, tage = planer.woche(name)
+        plan = nach_name.get(name)
+        termine = (sorted(wp.datum(e["datum"]) for e in plan["einkauf"]) if plan and plan.get("einkauf")
+                   else planer.einkaufstermine(tage))
+        bestand = {}
+        for v in ek.gueltiger_vorrat(vorrat["vorrat"], tage[0], name):
+            bestand[v["zutat"]] = None if v.get("g") is None or bestand.get(v["zutat"], 0) is None \
+                else bestand.get(v["zutat"], 0) + v["g"]
+        vor_mo = mo - dt.timedelta(weeks=1)
+        vj, vkw, _ = vor_mo.isocalendar()
+        vorname = f"KW-{vkw:02d}-{vj}"
+        vorplan = nach_name.get(vorname)
+        reste_vorwoche = vorplan is not None and vorname not in vorrat["reste_uebernommen"]
+        if reste_vorwoche:
+            _, reste = ek.berechne(vorplan, rezepte, db, vorrat=vorrat["vorrat"])
+            for zutat, r in reste.items():
+                if r["haltbar_bis"] is None or r["haltbar_bis"] >= tage[0]:
+                    if bestand.get(zutat, 0) is not None:
+                        bestand[zutat] = bestand.get(zutat, 0) + r["g"]
+        out.append({"name": name, "kw": kw, "jahr": jahr, "tage": [d.isoformat() for d in tage],
+                    "schichten": [wp.schicht(d) for d in tage], "einkauf": [t.isoformat() for t in termine],
+                    "einkauf_art": [next((e.get("art", "gross") for e in (plan or {}).get("einkauf", [])
+                                          if wp.datum(e["datum"]) == t), "gross") for t in termine],
+                    "bestand": bestand, "reste_vorwoche": vorname if reste_vorwoche else None,
+                    "plan": name in nach_name})
+    return out
+
+
+def baukasten_daten(plaene, rezepte, db, heute=None):
+    pk = wp.lade_packungen()
+    regeln = {"ziele": config.TAGESZIELE, "kcal_min": config.PLAN_KCAL_MIN, "kcal_max": config.PLAN_KCAL_MAX,
+              "protein_min": config.PLAN_PROTEIN_MIN, "fett_toleranz": config.PLAN_FETT_TOLERANZ,
+              "fett_min": config.PLAN_FETT_MIN, "kh_toleranz": config.PLAN_KH_TOLERANZ,
+              "faktoren": config.PLANER_FAKTOREN, "max_ladungen": config.BAUKASTEN_MAX_LADUNGEN,
+              "fruehstueck_max_tage": config.PLANER_FRUEHSTUECK_MAX_TAGE, "snack_max_tage": config.PLANER_SNACK_MAX_TAGE,
+              "haupt_max_kochen": config.PLANER_HAUPT_MAX_KOCHEN, "drei_sterne_max": config.DREI_STERNE_MAX,
+              "boxen": config.SCHICHTEN.get("boxen") or {}, "schichtzeiten": config.SCHICHTEN.get("zeiten") or {},
+              "slots": config.SLOTS, "slot_namen": config.SLOT_NAMEN, "wochentage": config.WOCHENTAGE,
+              "wochentage_lang": config.WOCHENTAGE_LANG, "gewicht": config.BAUKASTEN_GEWICHT,
+              "auswaerts": config.AUSWAERTS, "vorratskauf_ab": config.VORRATSKAUF_AB_TAGEN,
+              "tk_abteilung": config.TK_ABTEILUNG, "abteilungen": config.PROFIL["einkauf"]["abteilungen"],
+              "abt_icon": ABT_ICON, "protein_gruppen": config.PROTEIN_GRUPPEN, "korridore": config.KORRIDORE,
+              "schicht_icon": SCHICHT_ICON, "schicht_name": SCHICHT_NAME, "slot_icon": SLOT_ICON,
+              "kueche_icon": KUECHE_ICON, "kat_icon": KAT_ICON, "wartezeit_vorabend": config.WARTEZEIT_VORABEND_MIN}
+    return {"regeln": regeln,
+            "rezepte": {i: baukasten_rezept(r, db, pk) for i, r in sorted(rezepte.items())},
+            "packungen": {z: [x["abteilung"], x["packung_g"], x["packung_text"], x["preis"], x["haltbar_tage_offen"]]
+                          for z, x in pk.items()},
+            "wochen": baukasten_wochen(plaene, rezepte, db, heute),
+            "plaene": {pl["name"]: {"einkauf": pl.get("einkauf", []), "tage": pl["tage"]} for pl in plaene},
+            "erstellt": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}   # verwirft gespeicherte Entwürfe
+
+
+def baukasten_seite():
+    return """<div id="baukasten" class="baukasten"><noscript><p>Der Baukasten braucht JavaScript.</p></noscript></div>"""
+
+
+# --- Rezept-Vorschläge (wöchentlich von Claude entworfen) ---------------------------------------
+def lade_vorschlaege(ordner=None):
+    return pruefen.lade_vorschlaege(ordner)
+
+
+def vorschlaege_seite(vorschlaege, db):
+    repo = config.PROFIL.get("github_repo")
+    if not vorschlaege:
+        return ('<p class="leise">Gerade keine offenen Vorschläge. Jeden Donnerstag kommen neue dazu – '
+                'oder in Claude „neue Rezepte“ schreiben.</p>')
+    karten = []
+    for r in sorted(vorschlaege.values(), key=lambda r: (config.MAHLZEITEN.index(r["mahlzeit"]), r["name"])):
+        p = nw.rezept_naehrwerte(r, db)["portion"]
+        h, insp = r.get("herkunft") or {}, r.get("inspiration") or {}
+        link = insp.get("link") or (h.get("quelle") if str(h.get("quelle") or "").startswith("http") else None)
+        idee = esc(insp.get("quelle") or "")
+        q_html = f'<a href="{esc(link)}" rel="noopener" target="_blank">{idee or "Inspiration"}</a>' if link else idee
+        ok = (f"https://github.com/{repo}/new/main?filename=" + quote(f"daten/vorschlaege/{r['id']}.ok")
+              + "&value=" + quote(f"aufnehmen: {r['id']}\n"))
+        weg = f"https://github.com/{repo}/delete/main/daten/vorschlaege/{r['id']}.yaml"
+        karten.append(
+            f'<li class="karte vorschlag" data-id="{r["id"]}"><h3>{esc(r["name"])}</h3>'
+            f'<div class="zahlen"><span>{zahl(p["kcal"], 0)} kcal</span><span>{zahl(p["protein"], 0)} g Protein</span>'
+            f'<span>⏱ {nw.gesamtzeit(r)} min</span></div>{makro_streifen(p)}'
+            f'<ul class="chips"><li class="chip grau">{esc(r["mahlzeit"])}</li><li class="chip grau">'
+            f'<span aria-hidden="true">{KUECHE_ICON.get(r["kueche"], "")}</span> {esc(r["kueche"])}</li>'
+            + kat_chips([k for k in nw.kategorien(r, p) if k != "Frühstück & Snacks"]) + "</ul>"
+            f'<p class="leise">Idee: {q_html}</p>'
+            f'<div class="knopfreihe"><a class="knopf" href="vorschlag/{r["id"]}.html">Ansehen</a>'
+            f'<a class="knopf primaer aufnehmen" href="{ok}">✓ Aufnehmen</a>'
+            f'<a class="knopf gefahr verwerfen" href="{weg}">✕ Verwerfen</a></div></li>')
+    return ('<p class="leise">Jeden Donnerstag entwirft Claude neue Rezepte passend zu deinen Kategorien und Zielen – in '
+            'eigenen Worten, inspiriert von Blogs, TikTok, Instagram und Kochseiten. <strong>✓ Aufnehmen</strong> bzw. '
+            '<strong>✕ Verwerfen</strong> öffnet GitHub, dort „Commit changes“ tippen. Aufgenommene Rezepte stehen nach '
+            '1–2 Minuten im Rezeptbuch und im Baukasten.</p>'
+            f'<ul class="vorschlaege">{"".join(karten)}</ul>')
+
+
 # --- Alles erzeugen ----------------------------------------------------------------------------
 def schreibe(pfad, text):
     pfad.parent.mkdir(parents=True, exist_ok=True)
     pfad.write_text(text, encoding="utf-8")
 
 
-def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
+def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None, heute=None):
     db = db or nw.lade_zutaten()
     rezepte = rezepte if rezepte is not None else nw.lade_alle_rezepte()
     flags = flags or config.PROFIL.get("veroeffentlichen", {})
@@ -861,6 +996,7 @@ def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
     (ziel / "assets").mkdir()
     shutil.copy(STATIC / "app.css", ziel / "assets" / "app.css")
     shutil.copy(STATIC / "app.js", ziel / "assets" / "app.js")
+    shutil.copy(STATIC / "baukasten.js", ziel / "assets" / "baukasten.js")
 
     plaene = lade_plaene() if flags.get("wochenplaene", True) else []
     links = {}
@@ -895,10 +1031,22 @@ def generiere_web(rezepte=None, db=None, ziel=WEB, flags=None, basis_url=None):
              "zutaten": zutaten_json(db), "kuechen": config.KUECHEN, "ids": sorted(rezepte), "formular": formular_json(),
              "namen": sorted(r["name"].lower() for r in rezepte.values())}
     schreibe(ziel / "assets" / "daten.js", "window.REZEPTBUCH = " + json.dumps(daten, ensure_ascii=False) + ";\n")
-    heute = ('<div id="heute"><noscript><p>Für die Tagesansicht bitte JavaScript aktivieren. '
+    heute_html = ('<div id="heute"><noscript><p>Für die Tagesansicht bitte JavaScript aktivieren. '
              '<a href="rezepte.html">Zum Rezeptbuch</a></p></noscript></div>')
-    schreibe(ziel / "index.html", seite("Heute", heute, 0, "heute", links=rel(0)))
-    schreibe(ziel / "rezepte.html", seite("Rezeptbuch", rezeptbuch_seite(rezepte, db), 0, "rezepte", links=rel(0)))
+    schreibe(ziel / "index.html", seite("Heute", heute_html, 0, "heute", links=rel(0)))
+    vorschlaege = {i: v for i, v in lade_vorschlaege().items() if i not in rezepte}
+    schreibe(ziel / "rezepte.html", seite("Rezeptbuch", rezeptbuch_seite(rezepte, db, len(vorschlaege)), 0, "rezepte",
+                                          links=rel(0)))
+    schreibe(ziel / "vorschlaege.html", seite("Neue Vorschläge", vorschlaege_seite(vorschlaege, db), 0, "rezepte",
+                                              links=rel(0)))
+    for r in vorschlaege.values():
+        titel, inhalt, kopf = rezept_seite(r, db, "", vorschlag=True)
+        schreibe(ziel / "vorschlag" / f"{r['id']}.html", seite(titel, inhalt, 1, "rezepte", kopf, links=rel(1)))
+    if flags.get("wochenplaene", True):
+        schreibe(ziel / "assets" / "baukasten-daten.js", "window.BAUKASTEN = " + json.dumps(
+            baukasten_daten(plaene, rezepte, db, heute), ensure_ascii=False, default=json_wert) + ";\n")
+        skripte = '<script defer src="assets/baukasten-daten.js"></script>\n<script defer src="assets/baukasten.js"></script>\n'
+        schreibe(ziel / "baukasten.html", seite("Woche zusammenstellen", baukasten_seite(), 0, "woche", skripte, links=rel(0)))
     if config.PROFIL.get("github_repo"):
         schreibe(ziel / "rezept-neu.html", seite("Eigenes Rezept", rezept_neu_seite(db), 0, "rezepte", links=rel(0)))
     for r in rezepte.values():

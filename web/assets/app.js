@@ -145,6 +145,14 @@
     var d = new Date(iso + "T12:00:00");
     ziel.innerHTML = "";
     ziel.appendChild(el("p", { class: "leise", text: WOCHENTAGE[d.getDay()] + ", " + datumDe(iso) }));
+    // Baukasten: nächste Woche noch nicht festgelegt → Hinweis
+    var montag = new Date(Date.parse(iso + "T12:00:00Z") + ((8 - (d.getDay() || 7)) % 7 || 7) * 864e5).toISOString().slice(0, 10);
+    var geplant = D.plaene.some(function (p) { return p.tage.some(function (t) { return t.datum >= montag; }); });
+    if (!geplant) {
+      ziel.appendChild(el("a", { class: "karte baukasten-hinweis", href: basis + "baukasten.html" }, [
+        el("strong", { text: "✏️ Nächste Woche zusammenstellen" }),
+        el("span", { class: "leise", text: " · ab " + datumDe(montag) + " – Mahlzeiten wählen, die Einkaufsliste entsteht mit." })]));
+    }
     if (tag) {
       var marken = (tag.einkauf ? '<span class="marke">🛒 ' + (tag.start_einkauf ? "Starteinkauf" : "Einkauf") + "</span>" : "") +
         (tag.mealprep ? '<span class="marke">🍱 Heute vorkochen</span>' : "");
@@ -159,7 +167,7 @@
         karte.appendChild(el("p", { html: "Der nächste Plan beginnt am <strong>" + datumDe(naechster.datum) + "</strong>." }));
         karte.appendChild(el("a", { class: "knopf primaer", href: basis + "index.html?datum=" + naechster.datum, text: "Diesen Tag ansehen" }));
       } else {
-        karte.appendChild(el("p", { text: "Sag in Claude „Woche planen“, dann erscheint hier dein Tag." }));
+        karte.appendChild(el("a", { class: "knopf primaer", href: basis + "baukasten.html", text: "✏️ Woche zusammenstellen" }));
       }
       ziel.appendChild(karte);
       return;

@@ -233,13 +233,26 @@ def bericht(ergebnisse):
     return "\n".join(zeilen)
 
 
+def lade_vorschlaege(ordner=None):
+    """Rezept-Vorschläge (daten/vorschlaege/*.yaml ohne verlauf.yaml) – werden genauso streng geprüft."""
+    ordner = Path(ordner or config.VORSCHLAEGE_DIR)
+    if not ordner.exists():
+        return {}
+    return {p.stem: nw.lade_rezept(p) for p in sorted(ordner.glob("*.yaml")) if p.name != config.VORSCHLAEGE_VERLAUF.name}
+
+
 def main(argv):
     rezepte = nw.lade_alle_rezepte()
+    vorschlaege = lade_vorschlaege()
     if argv:
         rezepte = {k: v for k, v in rezepte.items() if k in argv}
+        vorschlaege = {k: v for k, v in vorschlaege.items() if k in argv}
     ergebnisse = pruefe_alle(rezepte)
     print(bericht(ergebnisse))
-    return 0 if all(e.ok for e in ergebnisse) else 1
+    erg_v = pruefe_alle(vorschlaege) if vorschlaege else []
+    if erg_v:
+        print("\nVorschläge (daten/vorschlaege/):\n" + bericht(erg_v))
+    return 0 if all(e.ok for e in ergebnisse + erg_v) else 1
 
 
 if __name__ == "__main__":

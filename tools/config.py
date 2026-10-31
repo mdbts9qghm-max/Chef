@@ -68,6 +68,9 @@ KUECHEN = [
 # --- Wochenplanung (SPEC 8) ------------------------------------------------------
 WOCHENPLAENE_DIR = DATEN / "wochenplaene"
 VORRAT_YAML = DATEN / "vorrat.yaml"
+BAUKASTEN_DIR = DATEN / "baukasten"          # Eingang: in der App zusammengestellte Wochen (eingang.py übernimmt sie)
+VORSCHLAEGE_DIR = DATEN / "vorschlaege"      # wöchentliche Rezept-Vorschläge (noch nicht im Rezeptbuch)
+VORSCHLAEGE_VERLAUF = VORSCHLAEGE_DIR / "verlauf.yaml"
 AUSGABE_WOCHENPLAENE = WURZEL / "wochenplaene"
 AUSGABE_EINKAUF = WURZEL / "einkaufslisten"
 
@@ -203,6 +206,17 @@ FORMULAR_EINHEITEN_STUECK = ["stück", "stk", "zehe", "zehen", "scheibe", "schei
 FORMULAR_EINHEITEN_PACKUNG = ["dose", "dosen", "packung", "packungen", "pck", "pkg", "becher", "glas", "beutel", "kugel"]
 FORMULAR_STANDARD = {"zeit_min": 30, "vorbereitung_min": 10, "kueche": "International / Fusion", "schwierigkeit": "leicht",
                      "kuehlschrank_tage": 3, "kuehlschrank_tage_fisch": 2, "snack_suess_ab_zucker_g": 8}
+
+# --- Baukasten (Woche in der App selbst zusammenstellen) --------------------------------
+BAUKASTEN_MAX_LADUNGEN = 2                   # ein Kochvorgang reicht für max. 2 Mahlzeiten
+BAUKASTEN_WOCHEN_VOR = 1                     # Wochendaten für die App: ab Vorwoche …
+BAUKASTEN_WOCHEN_NACH = 5                    # … bis 5 Wochen nach dem Bauen
+# Bewertung eines Tages (Faktor-Wahl, Sortierung „passt am besten“, Auffüllen): Strafpunkte je Einheit
+BAUKASTEN_GEWICHT = {"protein_fehlt": 12.0, "kcal_ueber": 25.0, "kcal_unter": 3.0, "fett": 2.0, "kh": 1.0,
+                     "faktor": 6.0, "regel": 400.0, "packung": 4.0, "kosten": 3.0}   # kosten: je € Mehrkosten im Einkauf
+VORSCHLAEGE_PRO_WOCHE = {"Frühstück": 2, "Mittag/Abend": 3, "Snack": 1}
+VORSCHLAEGE_MAX_ALTER_TAGE = 28
+VORSCHLAEGE_AEHNLICH_MAX = 0.65
 
 # --- Kühlschrank-Modus (SPEC 11.1) ------------------------------------------------
 # Grundvorrat (zählt als vorhanden, wird aber als „aus dem Vorrat“ angezeigt): lange haltbare Produkte

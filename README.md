@@ -41,14 +41,19 @@ Zutat fehlt in der Liste? In Claude „Neue Zutat: …“ schreiben (dafür brau
 - **Ausweichlösung:** Auf der Rezeptseite **„Für MacroFactor kopieren“** tippen – kopiert eine Zutat pro Zeile (Gramm + Name) – und in MacroFactor einfügen.
 - **Nach Gramm loggen:** Fertiges Gericht wiegen und als Gesamtgewicht eintragen. Die Rezeptseite nennt das geschätzte Gargewicht als Orientierung.
 
-## So läuft eine Woche (automatisch)
-1. **Freitagabend:** GitHub plant automatisch die nächste Woche (Mo–So) aus der Rezeptliste – passend zu deinen Schichten, max. 2.275 kcal pro Tag, genug Protein und Fett, möglichst günstig – und erstellt die **Einkaufsliste**. In der App erscheint beides von selbst.
-2. **Samstag:** einkaufen – die App zeigt unter **Heute** „🛒 Heute einkaufen für KW …“, der Tab **Einkauf** zeigt immer die nächste anstehende Liste.
-3. **Unter der Woche:** **Heute** zeigt die Mahlzeiten und klar, ob du **heute etwas für später vorkochst** (🍱 doppelt kochen → 2. Portion …) oder nicht.
-4. Fleisch/Fisch für das Wochenende wird eingefroren; die Auftau-Erinnerung kommt am Vortag.
-5. **Reste:** Was laut Plan übrig bleibt (angebrochene Packungen), wandert automatisch in den Vorrat und wird in der nächsten Woche zuerst verplant – so wird der Einkauf günstiger.
-6. **Wünsche** (z. B. „Sonntag Marry Me Chicken“, „Mittwoch auswärts“) schreibst du Claude **vor Freitag** – dann wird die Woche mit dir abgestimmt und die Automatik lässt sie stehen.
-7. Nach dem Kochen bewerten, damit der Planer lernt, was gut ankommt.
+## So läuft eine Woche (Baukasten)
+1. **Donnerstag:** Claude legt ca. 6 **neue Rezept-Vorschläge** in die App (Rezepte → „✨ Neue Vorschläge“), entworfen aus Ideen von Food-Blogs, TikTok, Instagram und Kochseiten – in eigenen Worten, passend zu deinen Zielen. **✓ Aufnehmen** oder **✕ Verwerfen** öffnet GitHub → „Commit changes“.
+2. **Woche zusammenstellen** (Tab Woche → „✏️ Bearbeiten“ oder auf Heute „✏️ Nächste Woche zusammenstellen“):
+   - Auf einen Platz tippen (z. B. Di Abend) → Rezept wählen. Oben stehen die Rezepte, die den Tag am besten ins Ziel bringen, mit Mehrkosten im Einkauf (💶) und Hinweisen („gestern Abend schon Italienisch“).
+   - **Doppelt kochen** ist dort vorausgewählt, wo es der Schichtplan vorsieht (Abend → Mittag am nächsten Tag, vor der Tagschicht Mittag → Abend).
+   - Ist der Tag voll, wählt die App die Portionen (×0,75–1,5) so, dass er ins Ziel passt; mit –/＋ legst du sie selbst fest.
+   - **✨ Rest auffüllen** füllt nur die leeren Plätze. **🛒 Einkaufsliste** zeigt die Liste live.
+   - **💾 Woche festlegen** → GitHub → „Commit changes“. Nach 1–2 Minuten zeigen Heute, Woche und Einkauf die neue Woche.
+3. **Freitagabend:** Hast du nichts festgelegt, plant GitHub die Woche automatisch (Sicherheitsnetz) – im Baukasten kannst du sie danach komplett umbauen.
+4. **Samstag:** einkaufen – **Heute** zeigt „🛒 Heute einkaufen für KW …“, der Tab **Einkauf** die Liste.
+5. **Unter der Woche:** **Heute** zeigt die Mahlzeiten und klar, ob du heute etwas für später vorkochst. Fleisch für später wird eingefroren, die Auftau-Erinnerung kommt am Vortag.
+6. **Reste:** Was laut Plan übrig bleibt, wandert automatisch in den Vorrat und wird nächste Woche zuerst verbraucht.
+7. Nach dem Kochen bewerten (1–2 Sterne = aussortiert).
 
 ## Befehle im Alltag (einfach an Claude schreiben)
 | Befehl | Beispiel | Was passiert |

@@ -181,6 +181,9 @@ def pruefe_plan(plan, rezepte, db, packungen=None):
     alle = eintraege(plan)
     idx = {e.schluessel: e for e in alle}
     ziel = config.TAGESZIELE
+    # Selbst zusammengestellte Woche (Baukasten): Zielwerte, Abwechslung und Wiederholungen sind nur Hinweise –
+    # Lebensmittelsicherheit und Struktur bleiben Fehler
+    ziel_regel = p.warnungen if plan.get("quelle") == "baukasten" else p.fehler
 
     for e in alle:
         wo = f"{tag_kurz(e.datum)} {config.SLOT_NAMEN[e.slot]}"
@@ -264,14 +267,14 @@ def pruefe_plan(plan, rezepte, db, packungen=None):
         summe = tagessumme(tag, rezepte, db)
         kurz = tag_kurz(d)
         if summe["protein"] < config.PLAN_PROTEIN_MIN:
-            p.fehler.append(f"{kurz}: Protein {zahl(summe['protein'])} g < {config.PLAN_PROTEIN_MIN} g")
+            ziel_regel.append(f"{kurz}: Protein {zahl(summe['protein'])} g < {config.PLAN_PROTEIN_MIN} g")
         if not config.PLAN_KCAL_MIN <= summe["kcal"] <= config.PLAN_KCAL_MAX:
-            p.fehler.append(f"{kurz}: {zahl(summe['kcal'], 0)} kcal, erlaubt {zahl(config.PLAN_KCAL_MIN, 0)}–"
+            ziel_regel.append(f"{kurz}: {zahl(summe['kcal'], 0)} kcal, erlaubt {zahl(config.PLAN_KCAL_MIN, 0)}–"
                             f"{zahl(config.PLAN_KCAL_MAX, 0)}")
         if abs(summe["fett"] - ziel["fett"]) > config.PLAN_FETT_TOLERANZ or summe["fett"] < config.PLAN_FETT_MIN:
-            p.fehler.append(f"{kurz}: Fett {zahl(summe['fett'])} g, Ziel {ziel['fett']} ± {config.PLAN_FETT_TOLERANZ} g")
+            ziel_regel.append(f"{kurz}: Fett {zahl(summe['fett'])} g, Ziel {ziel['fett']} ± {config.PLAN_FETT_TOLERANZ} g")
         if abs(summe["kh"] - ziel["kh"]) > config.PLAN_KH_TOLERANZ:
-            p.fehler.append(f"{kurz}: KH {zahl(summe['kh'])} g, Ziel {ziel['kh']} ± {config.PLAN_KH_TOLERANZ} g")
+            ziel_regel.append(f"{kurz}: KH {zahl(summe['kh'])} g, Ziel {ziel['kh']} ± {config.PLAN_KH_TOLERANZ} g")
         for s in config.SLOTS:
             if tag.get(s):
                 st = (rezepte[tag[s]["rezept"]].get("bewertung") or {}).get("sterne")
@@ -284,9 +287,9 @@ def pruefe_plan(plan, rezepte, db, packungen=None):
             jetzt = (r["kueche"], nw.hauptproteinquelle(r, db))
             if vorher_abend and not plan.get("gleiche_kueche_erlaubt"):
                 if jetzt[0] == vorher_abend[0]:
-                    p.fehler.append(f"{kurz}: Abendessen wieder {jetzt[0]} wie am Vortag")
+                    ziel_regel.append(f"{kurz}: Abendessen wieder {jetzt[0]} wie am Vortag")
                 if jetzt[1] == vorher_abend[1]:
-                    p.fehler.append(f"{kurz}: Abendessen wieder mit {config.PROTEIN_GRUPPEN.get(jetzt[1], jetzt[1])} wie am Vortag")
+                    ziel_regel.append(f"{kurz}: Abendessen wieder mit {config.PROTEIN_GRUPPEN.get(jetzt[1], jetzt[1])} wie am Vortag")
             vorher_abend = jetzt
         else:
             vorher_abend = None
@@ -294,16 +297,16 @@ def pruefe_plan(plan, rezepte, db, packungen=None):
     koch_haupt = [e.rezept_id for e in alle if e.kochen and e.slot in ("mittag", "abend")]
     for rid in sorted(set(koch_haupt)):
         if koch_haupt.count(rid) > config.PLANER_HAUPT_MAX_KOCHEN:
-            p.fehler.append(f"„{rezepte[rid]['name']}“ wird {koch_haupt.count(rid)}× gekocht "
+            ziel_regel.append(f"„{rezepte[rid]['name']}“ wird {koch_haupt.count(rid)}× gekocht "
                             f"(max. {config.PLANER_HAUPT_MAX_KOCHEN}× pro Woche, Reste zählen nicht)")
     for slot, maxi in (("fruehstueck", config.PLANER_FRUEHSTUECK_MAX_TAGE), ("snack", config.PLANER_SNACK_MAX_TAGE)):
         ids = [e.rezept_id for e in alle if e.slot == slot]
         for rid in sorted(set(ids)):
             if ids.count(rid) > maxi:
-                p.fehler.append(f"„{rezepte[rid]['name']}“ an {ids.count(rid)} Tagen als {config.SLOT_NAMEN[slot]} "
+                ziel_regel.append(f"„{rezepte[rid]['name']}“ an {ids.count(rid)} Tagen als {config.SLOT_NAMEN[slot]} "
                                 f"(max. {maxi})")
     if len(drei_sterne) > config.DREI_STERNE_MAX:
-        p.fehler.append(f"3-Sterne-Rezepte {len(drei_sterne)}× in der Woche (max. {config.DREI_STERNE_MAX})")
+        ziel_regel.append(f"3-Sterne-Rezepte {len(drei_sterne)}× in der Woche (max. {config.DREI_STERNE_MAX})")
     return p
 
 

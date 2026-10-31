@@ -249,3 +249,60 @@ button.gefahr { color: var(--warn); border-color: var(--warn); }
 .treffer li.warn .grund { color: var(--warn); }
 .formular details.mehr { margin-top: 8px; }
 .formular details.mehr summary { font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+/* Baukasten */
+.bk-plaetze { display: grid; gap: 6px; margin: 8px 0; }
+.bk-platzreihe { display: grid; grid-template-columns: 1fr auto; gap: 6px; align-items: stretch; }
+.bk-platz { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; width: 100%; text-align: left; min-height: 52px;
+  border: 1px dashed var(--linie); border-radius: 12px; background: var(--fl); color: var(--text); padding: 6px 10px; font: inherit; }
+.bk-platz.voll { border-style: solid; }
+.bk-platz.auswaerts { background: var(--fl2); }
+.bk-platz .slot { font-size: .75rem; color: var(--text2); font-weight: 600; }
+.bk-platz .name { font-weight: 600; }
+.bk-platz .werte { font-size: .8rem; color: var(--text2); }
+.bk-platz:disabled { opacity: .7; }
+.bk-faktor { display: flex; flex-direction: column; gap: 4px; }
+.bk-faktor button { min-width: 44px; flex: 1; border-radius: 10px; font-size: 1.1rem; padding: 0; }
+.bk-makros { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px; margin-top: 4px; }
+.bk-makro { display: grid; gap: 2px; font-size: .75rem; }
+.bk-spur { position: relative; display: block; height: 6px; background: var(--fl2); border-radius: 3px; }
+.bk-fuell { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 3px; background: var(--text2); }
+.bk-makro.bk-m-kcal .bk-fuell { background: var(--kcal); } .bk-makro.bk-m-protein .bk-fuell { background: var(--p); }
+.bk-makro.bk-m-fett .bk-fuell { background: var(--f); } .bk-makro.bk-m-kh .bk-fuell { background: var(--kh); }
+.bk-ziel { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--text); }
+.bk-status { margin: 6px 0 0; font-size: .85rem; }
+.bk-tag.gesperrt { opacity: .75; }
+.bk-leiste { position: sticky; bottom: calc(64px + env(safe-area-inset-bottom)); z-index: 5; display: flex; align-items: center;
+  justify-content: space-between; gap: 10px; background: var(--fl); border: 1px solid var(--linie); border-radius: var(--radius);
+  padding: 8px 10px; margin-top: 10px; box-shadow: 0 -2px 12px rgba(0,0,0,.12); }
+.bk-leiste .bk-kosten { margin: 0; line-height: 1.25; }
+.bk-leiste button { min-height: 44px; }
+.bk-platz, .bk-faktor button { scroll-margin: 90px 0 150px; }
+.bk-kosten { font-size: .88rem; margin-bottom: 6px; }
+.bk-hinweise ul { padding-left: 18px; margin: 4px 0; font-size: .88rem; }
+body.bk-offen { overflow: hidden; }
+.bk-fenster { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.45); display: flex; align-items: flex-end; justify-content: center; }
+.bk-fenster-innen { background: var(--bg, var(--fl)); color: var(--text); width: 100%; max-width: 640px; max-height: 88vh; overflow-y: auto;
+  border-radius: 16px 16px 0 0; padding: 12px 16px calc(16px + env(safe-area-inset-bottom)); }
+.bk-fenster-kopf { display: flex; align-items: center; justify-content: space-between; gap: 8px; position: sticky; top: -12px;
+  background: inherit; padding: 6px 0; z-index: 1; }
+.bk-fenster-kopf h2 { font-size: 1.05rem; margin: 0; }
+.bk-zu { min-width: 44px; min-height: 44px; border-radius: 22px; }
+.bk-doppelt { display: flex; align-items: center; gap: 8px; font-weight: 600; margin: 4px 0 8px; }
+.bk-doppelt input { width: 22px; height: 22px; accent-color: var(--akzent); }
+.bk-optionen, .bk-kandidaten { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 6px; }
+.bk-option, .bk-kandidat { width: 100%; text-align: left; border-radius: 12px; padding: 8px 10px; min-height: 44px; font: inherit;
+  border: 1px solid var(--linie); background: var(--fl); color: var(--text); display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.bk-option.rest { border-color: var(--akzent); background: var(--akzent-hell); }
+.bk-kandidat .name { font-weight: 600; }
+.bk-kandidat .werte { font-size: .8rem; color: var(--text2); }
+.bk-marken { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: .76rem; }
+.bk-marken .warn { color: var(--warn); } .bk-marken .ok { color: var(--ok); }
+.bk-suche { display: block; width: 100%; font: inherit; min-height: 44px; border-radius: 10px; border: 1px solid var(--linie);
+  background: var(--fl); color: var(--text); padding: 8px 10px; margin-bottom: 8px; }
+#bk-yaml { white-space: pre-wrap; font-size: .72rem; background: var(--fl2); padding: 8px; border-radius: 8px; overflow-x: auto; }
+.vorschlaege { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.vorschlag h3 { margin: 0 0 4px; }
+.knopf.gefahr { color: var(--warn); border-color: var(--warn); }
+.baukasten-hinweis { display: block; text-decoration: none; color: var(--text); border-left: 6px solid var(--akzent); }
+.bk-wochen { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 6px; }
+.bk-wochen .knopf { text-align: center; font-size: .85rem; }

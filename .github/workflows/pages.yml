@@ -1,5 +1,7 @@
 # Prüft die Daten, baut die Web-App aus daten/ neu und veröffentlicht sie auf GitHub Pages (SPEC 10.4).
-# Läuft auch, wenn in der App ein eigenes Rezept gespeichert oder gelöscht wird (Commit auf daten/rezepte/).
+# Läuft auch bei Commits aus der App: eigenes Rezept (daten/rezepte/), Woche aus dem Baukasten (daten/baukasten/),
+# Vorschlag aufnehmen/verwerfen (daten/vorschlaege/). tools/eingang.py übernimmt den Eingang und committet das Ergebnis;
+# ein Push mit dem GitHub-Token startet keinen weiteren Lauf, deshalb wird im selben Lauf veröffentlicht.
 # Einmalig nötig: Settings → Pages → Source: „GitHub Actions“.
 name: Pages
 
@@ -10,13 +12,13 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -31,10 +33,24 @@ jobs:
           python-version: "3.12"
       - name: Abhängigkeiten
         run: pip install "pyyaml>=6.0"
+      - name: Eingang aus der App übernehmen (Baukasten-Woche, Vorschläge)
+        run: python3 tools/eingang.py
       - name: Rezepte prüfen (bei Fehlern bleibt die bisherige App online)
         run: python3 tools/pruefen.py
       - name: Web-App neu bauen
         run: python3 tools/generieren.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "Rezeptbuch-App"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daten wochenplaene einkaufslisten rezepte rezeptbuch.md
+          if git diff --cached --quiet; then
+            echo "Nichts Neues."
+          else
+            git commit -m "Aus der App übernommen (Baukasten/Vorschläge)"
+            git pull --rebase origin main
+            git push
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
