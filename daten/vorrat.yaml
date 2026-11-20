@@ -27,61 +27,61 @@ vorrat:
 - zutat: Hartweizennudeln ungekocht
   g: null
 - zutat: Babyspinat
-  g: 75
-  haltbar_bis: '2026-11-18'
-  aus: KW-46-2026
+  g: 38
+  haltbar_bis: '2026-11-22'
+  aus: KW-47-2026
 - zutat: Banane geschält
-  g: 75
-  haltbar_bis: '2026-11-12'
-  aus: KW-45-2026
+  g: 700
+  haltbar_bis: '2026-11-25'
+  aus: KW-47-2026
 - zutat: Chiliflocken
-  g: 28
-  haltbar_bis: '2027-11-10'
-  aus: KW-46-2026
+  g: 26
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Currypulver
-  g: 10
-  haltbar_bis: '2027-11-15'
-  aus: KW-46-2026
+  g: 49
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Ei Gr. M ohne Schale
-  g: 15
-  haltbar_bis: '2026-12-06'
-  aus: KW-46-2026
+  g: 225
+  haltbar_bis: '2026-12-13'
+  aus: KW-47-2026
 - zutat: Eiklar flüssig
   g: 50
   haltbar_bis: '2026-11-13'
   aus: KW-46-2026
 - zutat: Erdnussbutter 100 % Erdnüsse
-  g: 20
-  haltbar_bis: '2027-02-13'
-  aus: KW-46-2026
+  g: 267
+  haltbar_bis: '2027-02-18'
+  aus: KW-47-2026
 - zutat: Erythrit
-  g: 218
-  haltbar_bis: '2027-11-15'
-  aus: KW-46-2026
+  g: 143
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Feta 45 % Fett i. Tr.
   g: 120
   haltbar_bis: '2026-11-09'
   aus: KW-45-2026
 - zutat: Frühlingszwiebeln
-  g: 10
-  haltbar_bis: '2026-11-18'
-  aus: KW-46-2026
+  g: 42
+  haltbar_bis: '2026-11-25'
+  aus: KW-47-2026
 - zutat: Garam Masala
-  g: 6
-  haltbar_bis: '2027-11-15'
-  aus: KW-46-2026
+  g: 28
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Heidelbeeren TK
-  g: 160
-  haltbar_bis: '2027-02-13'
-  aus: KW-46-2026
+  g: 330
+  haltbar_bis: '2027-02-20'
+  aus: KW-47-2026
 - zutat: Himbeeren TK
-  g: 43
-  haltbar_bis: '2027-02-11'
-  aus: KW-46-2026
+  g: 423
+  haltbar_bis: '2027-02-18'
+  aus: KW-47-2026
 - zutat: Ingwer frisch
-  g: 65
-  haltbar_bis: '2026-11-29'
-  aus: KW-46-2026
+  g: 22
+  haltbar_bis: '2026-12-06'
+  aus: KW-47-2026
 - zutat: Kabeljaufilet roh
   g: 62
   haltbar_bis: '2027-02-13'
@@ -95,9 +95,9 @@ vorrat:
   haltbar_bis: '2026-11-05'
   aus: KW-45-2026
 - zutat: Knoblauch
-  g: 181
-  haltbar_bis: '2026-12-15'
-  aus: KW-46-2026
+  g: 109
+  haltbar_bis: '2026-12-22'
+  aus: KW-47-2026
 - zutat: Kokosmilch light
   g: 200
   haltbar_bis: '2026-11-18'
@@ -107,149 +107,149 @@ vorrat:
   haltbar_bis: '2027-11-10'
   aus: KW-46-2026
 - zutat: Lachsfilet ohne Haut roh
-  g: 75
-  haltbar_bis: '2027-02-11'
-  aus: KW-46-2026
+  g: 50
+  haltbar_bis: '2027-02-18'
+  aus: KW-47-2026
 - zutat: Lasagneplatten ungekocht
   g: 390
   haltbar_bis: '2027-10-30'
   aus: KW-44-2026
 - zutat: Magerquark
-  g: 360
-  haltbar_bis: '2026-11-19'
-  aus: KW-46-2026
+  g: 41
+  haltbar_bis: '2026-11-26'
+  aus: KW-47-2026
 - zutat: Mais abgetropft
   g: 45
   haltbar_bis: '2026-11-05'
   aus: KW-45-2026
 - zutat: Mandeln gehobelt
-  g: 22
-  haltbar_bis: '2027-02-11'
-  aus: KW-46-2026
+  g: 17
+  haltbar_bis: '2027-02-18'
+  aus: KW-47-2026
 - zutat: Milch 1,5 % Fett
-  g: 195
-  haltbar_bis: '2026-11-19'
-  aus: KW-46-2026
+  g: 665
+  haltbar_bis: '2026-11-26'
+  aus: KW-47-2026
 - zutat: Mozzarella light
-  g: 25
-  haltbar_bis: '2026-11-01'
-  aus: KW-44-2026
+  g: 12
+  haltbar_bis: '2026-11-24'
+  aus: KW-47-2026
 - zutat: Oregano getrocknet
-  g: 13
-  haltbar_bis: '2027-10-30'
-  aus: KW-44-2026
+  g: 8
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Paprika rot
   g: 75
-  haltbar_bis: '2026-10-31'
-  aus: KW-44-2026
+  haltbar_bis: '2026-11-23'
+  aus: KW-47-2026
 - zutat: Paprikapulver edelsüß
-  g: 6
-  haltbar_bis: '2027-11-14'
-  aus: KW-46-2026
+  g: 37
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Parmesan gerieben
   g: 8
   haltbar_bis: '2026-11-28'
   aus: KW-46-2026
 - zutat: Petersilie frisch
-  g: 20
-  haltbar_bis: '2026-11-16'
-  aus: KW-46-2026
+  g: 12
+  haltbar_bis: '2026-11-22'
+  aus: KW-47-2026
 - zutat: Pfeffer schwarz gemahlen
-  g: 46
-  haltbar_bis: '2027-11-14'
-  aus: KW-46-2026
+  g: 42
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Putenhackfleisch roh
-  g: 50
-  haltbar_bis: '2026-11-06'
-  aus: KW-45-2026
-- zutat: Reibekäse light
-  g: 65
-  haltbar_bis: '2026-11-17'
-  aus: KW-46-2026
-- zutat: Rinderhackfleisch 5 % Fett roh
-  g: 60
-  haltbar_bis: '2026-11-08'
-  aus: KW-45-2026
-- zutat: Salatgurke
   g: 175
-  haltbar_bis: '2026-11-17'
-  aus: KW-46-2026
+  haltbar_bis: '2026-11-23'
+  aus: KW-47-2026
+- zutat: Reibekäse light
+  g: 85
+  haltbar_bis: '2026-11-24'
+  aus: KW-47-2026
+- zutat: Rinderhackfleisch 5 % Fett roh
+  g: 160
+  haltbar_bis: '2026-11-18'
+  aus: KW-47-2026
+- zutat: Salatgurke
+  g: 110
+  haltbar_bis: '2026-11-24'
+  aus: KW-47-2026
 - zutat: Salz
-  g: 417
-  haltbar_bis: '2054-04-01'
-  aus: KW-46-2026
+  g: 383
+  haltbar_bis: '2054-04-08'
+  aus: KW-47-2026
 - zutat: Sesamöl geröstet
-  g: 127
-  haltbar_bis: '2027-05-12'
-  aus: KW-46-2026
+  g: 96
+  haltbar_bis: '2027-05-19'
+  aus: KW-47-2026
 - zutat: Skyr natur
-  g: 377
-  haltbar_bis: '2026-11-17'
-  aus: KW-46-2026
+  g: 57
+  haltbar_bis: '2026-11-26'
+  aus: KW-47-2026
 - zutat: Sriracha
-  g: 64
-  haltbar_bis: '2027-05-12'
-  aus: KW-46-2026
+  g: 29
+  haltbar_bis: '2027-05-19'
+  aus: KW-47-2026
 - zutat: Tomaten
-  g: 10
-  haltbar_bis: '2026-11-12'
-  aus: KW-45-2026
+  g: 210
+  haltbar_bis: '2026-11-25'
+  aus: KW-47-2026
 - zutat: Vollkorntoast
-  g: 40
-  haltbar_bis: '2026-11-15'
-  aus: KW-46-2026
+  g: 260
+  haltbar_bis: '2026-11-23'
+  aus: KW-47-2026
 - zutat: Weizen-Tortilla-Wraps
   g: 244
   haltbar_bis: '2026-11-07'
   aus: KW-45-2026
 - zutat: Whey Protein Schoko
-  g: 405
-  haltbar_bis: '2027-11-15'
-  aus: KW-46-2026
+  g: 195
+  haltbar_bis: '2027-11-20'
+  aus: KW-47-2026
 - zutat: Whey Protein Vanille
-  g: 142
-  haltbar_bis: '2027-11-15'
-  aus: KW-46-2026
+  g: 802
+  haltbar_bis: '2027-11-22'
+  aus: KW-47-2026
 - zutat: Zartbitterschokolade 70 %
-  g: 94
-  haltbar_bis: '2027-05-09'
-  aus: KW-46-2026
+  g: 19
+  haltbar_bis: '2027-05-19'
+  aus: KW-47-2026
 - zutat: Zimt gemahlen
-  g: 32
-  haltbar_bis: '2027-11-10'
-  aus: KW-46-2026
+  g: 29
+  haltbar_bis: '2027-11-19'
+  aus: KW-47-2026
 - zutat: Zitronensaft
-  g: 147
-  haltbar_bis: '2027-01-14'
-  aus: KW-46-2026
+  g: 106
+  haltbar_bis: '2027-01-21'
+  aus: KW-47-2026
 - zutat: Zwiebel
-  g: 325
-  haltbar_bis: '2026-12-15'
-  aus: KW-46-2026
+  g: 660
+  haltbar_bis: '2026-12-22'
+  aus: KW-47-2026
 - zutat: Apfel
   g: 552
   haltbar_bis: '2026-11-24'
   aus: KW-46-2026
 - zutat: Beerenmischung TK
-  g: 112
-  haltbar_bis: '2027-02-06'
-  aus: KW-45-2026
+  g: 150
+  haltbar_bis: '2027-02-18'
+  aus: KW-47-2026
 - zutat: Burger-Brötchen
   g: 75
-  haltbar_bis: '2026-11-10'
-  aus: KW-45-2026
+  haltbar_bis: '2026-11-20'
+  aus: KW-47-2026
 - zutat: Butter
-  g: 42
-  haltbar_bis: '2026-12-13'
-  aus: KW-46-2026
+  g: 12
+  haltbar_bis: '2026-12-22'
+  aus: KW-47-2026
 - zutat: Frischkäse light
-  g: 20
-  haltbar_bis: '2026-11-18'
-  aus: KW-46-2026
+  g: 160
+  haltbar_bis: '2026-11-27'
+  aus: KW-47-2026
 - zutat: Gehackte Tomaten Dose
-  g: 50
-  haltbar_bis: '2026-11-18'
-  aus: KW-46-2026
+  g: 150
+  haltbar_bis: '2026-11-25'
+  aus: KW-47-2026
 - zutat: Gemüsebrühe zubereitet
   g: 5850
   haltbar_bis: '2027-11-12'
@@ -259,9 +259,9 @@ vorrat:
   haltbar_bis: '2026-11-14'
   aus: KW-46-2026
 - zutat: Kartoffeln festkochend roh
-  g: 505
-  haltbar_bis: '2026-11-28'
-  aus: KW-46-2026
+  g: 10
+  haltbar_bis: '2026-12-01'
+  aus: KW-47-2026
 - zutat: Knuspermüsli
   g: 280
   haltbar_bis: '2027-01-12'
@@ -271,30 +271,39 @@ vorrat:
   haltbar_bis: '2027-11-14'
   aus: KW-46-2026
 - zutat: Putenbrustfilet roh
-  g: 70
-  haltbar_bis: '2026-11-16'
-  aus: KW-46-2026
+  g: 245
+  haltbar_bis: '2026-11-21'
+  aus: KW-47-2026
 - zutat: Körniger Frischkäse
-  g: 20
-  haltbar_bis: '2026-11-16'
-  aus: KW-46-2026
+  g: 130
+  haltbar_bis: '2026-11-23'
+  aus: KW-47-2026
 - zutat: Mie-Nudeln ungekocht
   g: 115
   haltbar_bis: '2027-11-10'
   aus: KW-46-2026
 - zutat: Milchreis ungekocht
-  g: 415
-  haltbar_bis: '2027-11-10'
-  aus: KW-46-2026
+  g: 288
+  haltbar_bis: '2027-11-19'
+  aus: KW-47-2026
 - zutat: Sauerkirschen Glas abgetropft
-  g: 290
-  haltbar_bis: '2026-11-16'
-  aus: KW-46-2026
+  g: 100
+  haltbar_bis: '2026-11-23'
+  aus: KW-47-2026
 - zutat: Weichweizengrieß
   g: 235
   haltbar_bis: '2027-11-12'
   aus: KW-46-2026
+- zutat: Kartoffelgnocchi Kühlregal
+  g: 252
+  haltbar_bis: '2026-11-25'
+  aus: KW-47-2026
+- zutat: Schweinefilet roh
+  g: 200
+  haltbar_bis: '2026-11-22'
+  aus: KW-47-2026
 reste_uebernommen:
 - KW-44-2026
 - KW-45-2026
 - KW-46-2026
+- KW-47-2026
